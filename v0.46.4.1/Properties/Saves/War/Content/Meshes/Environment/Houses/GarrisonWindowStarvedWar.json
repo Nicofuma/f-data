@@ -1,0 +1,99 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "GarrisonWindowStarvedWar",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "GarrisonWindowStarvedWar",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1516"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "GarrisonWindowStarvedWar",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant WoodBarnPlanks",
+            "ObjectPath": "War/Content/Materials/Environment/Props/WoodBarnPlanks.0"
+          },
+          "MaterialSlotName": "TrenchWoodPlanks",
+          "ImportedMaterialSlotName": "TrenchWoodPlanks",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 238.89366,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant GarrisonFlag",
+            "ObjectPath": "War/Content/Materials/Structures/GarrisonFlag.0"
+          },
+          "MaterialSlotName": "Material #7924",
+          "ImportedMaterialSlotName": "Material #7924",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 288.49207,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 251.40335,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.28391266,
+          "Y": 0.12661839,
+          "Z": -3.325737
+        },
+        "BoxExtent": {
+          "X": 84.40051,
+          "Y": 6.644909,
+          "Z": 95.93758
+        },
+        "SphereRadius": 125.964554
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup GarrisonWindowStarvedWar:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Houses/GarrisonWindowStarvedWar.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision GarrisonWindowStarvedWar:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Houses/GarrisonWindowStarvedWar.1"
+    },
+    "LightingGuid": "C78CE057-44ED6030-7FF0058C-1C7142EA",
+    "RenderData": null
+  }
+]

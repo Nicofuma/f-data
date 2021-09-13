@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FortIModCabinet02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "FortIModCabinet02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x12E3"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FortIModCabinet02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortIModDesk01",
+            "ObjectPath": "War/Content/Materials/Structures/FortIModDesk01.0"
+          },
+          "MaterialSlotName": "FortIModDesk",
+          "ImportedMaterialSlotName": "FortIModDesk",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 429.91525,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 429.91525,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 2.8113403,
+          "Y": 1.4004822,
+          "Z": 97.15428
+        },
+        "BoxExtent": {
+          "X": 69.29048,
+          "Y": 37.03901,
+          "Z": 97.15428
+        },
+        "SphereRadius": 124.94804
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FortIModCabinet02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/FortIModCabinet02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FortIModCabinet02:NavCollision_4",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/FortIModCabinet02.1"
+    },
+    "LightingGuid": "C778E51E-4243F02C-A36D3F8D-30926E77",
+    "RenderData": null
+  }
+]

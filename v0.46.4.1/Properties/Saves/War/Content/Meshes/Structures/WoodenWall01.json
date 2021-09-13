@@ -1,0 +1,106 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Outer": "WoodenWall01",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -0.67941284,
+              "Y": -4.3315706,
+              "Z": 142.566
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 443.31836,
+            "Y": 28.313688,
+            "Z": 288.4961,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_7",
+    "Outer": "WoodenWall01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0xA946"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "WoodenWall01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant WoodRepeating03",
+            "ObjectPath": "War/Content/Materials/Environment/WoodRepeating03.0"
+          },
+          "MaterialSlotName": "WoodRepeating03",
+          "ImportedMaterialSlotName": "WoodRepeating03",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 208.43723,
+            "LocalUVDensities": 797.59595,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 797.59595,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.67941284,
+          "Y": -4.3315706,
+          "Z": 142.566
+        },
+        "BoxExtent": {
+          "X": 221.65918,
+          "Y": 14.156844,
+          "Z": 144.24805
+        },
+        "SphereRadius": 263.79883
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup WoodenWall01:BodySetup_1",
+      "ObjectPath": "War/Content/Meshes/Structures/WoodenWall01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision WoodenWall01:NavCollision_7",
+      "ObjectPath": "War/Content/Meshes/Structures/WoodenWall01.1"
+    },
+    "LightingGuid": "EE704B23-4DE14EF8-E2DDDA82-37064ABD",
+    "RenderData": null
+  }
+]

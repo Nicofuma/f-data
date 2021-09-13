@@ -1,0 +1,78 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "WoodShard02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "WoodShard02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x101F"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "WoodShard02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TreeInteriorNoDecay",
+            "ObjectPath": "War/Content/Materials/Environment/Props/TreeInteriorNoDecay.0"
+          },
+          "MaterialSlotName": "TreeInterior",
+          "ImportedMaterialSlotName": "TreeInterior",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 63.316654,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 1.1801814,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 2.2122252,
+          "Y": 4.8698726,
+          "Z": 33.70239
+        },
+        "SphereRadius": 33.984585
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup WoodShard02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/TreeBranches/WoodShard02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision WoodShard02:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/TreeBranches/WoodShard02.1"
+    },
+    "LightingGuid": "915B18A7-481C0F95-B052B487-6207285F",
+    "RenderData": null
+  }
+]

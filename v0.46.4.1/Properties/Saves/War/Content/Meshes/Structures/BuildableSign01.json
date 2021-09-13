@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "BuildableSign01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "BuildableSign01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1387"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "BuildableSign01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BuildableSignPost",
+            "ObjectPath": "War/Content/Materials/Structures/BuildableSignPost.0"
+          },
+          "MaterialSlotName": "Material #26",
+          "ImportedMaterialSlotName": "BuildableSignPost",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 164.34166,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 164.34166,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -1.1444092E-05,
+          "Z": 63.68704
+        },
+        "BoxExtent": {
+          "X": 50.7392,
+          "Y": 20.695915,
+          "Z": 77.89592
+        },
+        "SphereRadius": 92.010506
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup BuildableSign01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/BuildableSign01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision BuildableSign01:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Structures/BuildableSign01.1"
+    },
+    "LightingGuid": "8F73B85D-44CB2A23-D4870AB4-69BABDE4",
+    "RenderData": null
+  }
+]

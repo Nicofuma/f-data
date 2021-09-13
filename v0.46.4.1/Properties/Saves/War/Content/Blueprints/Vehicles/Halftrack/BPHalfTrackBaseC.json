@@ -1,0 +1,949 @@
+[
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "BPHalfTrackBaseC_C",
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPHalfTrackBaseC_C",
+    "Super": "BPHalfTrackBase_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPHalfTrackBaseC_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.45"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler BPHalfTrackBaseC_C:InheritableComponentHandler",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.16"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty BPHalfTrackBaseC_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.0"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function BPHalfTrackBaseC_C:ExecuteUbergraph_BPHalfTrackBaseC",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.9"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass BPHalfTrackBase_C",
+      "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBase.1"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty BPHalfTrackBaseC_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.0"
+      },
+      {
+        "ObjectName": "Function BPHalfTrackBaseC_C:BPOnVehicleOn",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.10"
+      },
+      {
+        "ObjectName": "Function BPHalfTrackBaseC_C:ExecuteUbergraph_BPHalfTrackBaseC",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.9"
+      },
+      {
+        "ObjectName": "ObjectProperty BPHalfTrackBaseC_C:RearSeat3",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.7"
+      },
+      {
+        "ObjectName": "ObjectProperty BPHalfTrackBaseC_C:SpotLight_R",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.20"
+      },
+      {
+        "ObjectName": "ObjectProperty BPHalfTrackBaseC_C:SpotLight_L",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.19"
+      },
+      {
+        "ObjectName": "ObjectProperty BPHalfTrackBaseC_C:Light_L",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.17"
+      },
+      {
+        "ObjectName": "ObjectProperty BPHalfTrackBaseC_C:Light_R",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.18"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 655360,
+    "ClassWithin": null,
+    "ClassConfigName": "/Game/Animation/HalfTrack/Halftrack_Prototype/ABP_PrototypeHalftrackC_720895",
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPHalfTrackBaseC_C",
+    "Name": "Default__BPHalfTrackBaseC_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "IdleLoop": {
+        "ObjectName": "AudioComponent Default__BPHalfTrackBaseC_C:IdleLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.6"
+      },
+      "RearLeftTireDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPHalfTrackBaseC_C:RearLeftTireDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.26"
+      },
+      "RearLeftTireDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPHalfTrackBaseC_C:RearLeftTireDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.25"
+      },
+      "RearRightTireDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPHalfTrackBaseC_C:RearRightTireDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.28"
+      },
+      "RearRightTireDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPHalfTrackBaseC_C:RearRightTireDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.27"
+      },
+      "MainDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPHalfTrackBaseC_C:MainDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.22"
+      },
+      "MainDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPHalfTrackBaseC_C:MainDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.21"
+      },
+      "SkiddingDirtPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPHalfTrackBaseC_C:SkiddingDirtPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.29"
+      },
+      "ArmourDirectionBoneNamesList": [
+        {
+          "ArmourDirection": "EArmourDirection::Left",
+          "BoneNamesList": [
+            "trackPivot_L"
+          ]
+        },
+        {
+          "ArmourDirection": "EArmourDirection::Right",
+          "BoneNamesList": [
+            "trackPivot_R"
+          ]
+        }
+      ],
+      "DestroyedMesh": {
+        "ObjectName": "StaticMeshComponent Default__BPHalfTrackBaseC_C:DestroyedMesh",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.51"
+      },
+      "MinorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPHalfTrackBaseC_C:MinorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.24"
+      },
+      "MajorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPHalfTrackBaseC_C:MajorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.23"
+      },
+      "DriveLoop": {
+        "ObjectName": "AudioComponent Default__BPHalfTrackBaseC_C:DriveLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.5"
+      },
+      "BackUpSFXLoop": {
+        "ObjectName": "AudioComponent Default__BPHalfTrackBaseC_C:BackUpSFXLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.4"
+      },
+      "CameraRigComponent": {
+        "ObjectName": "PlayerCameraRigComponent Default__BPHalfTrackBaseC_C:CameraRigVehicle",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.30"
+      },
+      "FrontAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__BPHalfTrackBaseC_C:FrontAxelCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.33"
+      },
+      "RearAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__BPHalfTrackBaseC_C:RearAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.36"
+      },
+      "FrontLeftRollCastLocation": {
+        "ObjectName": "SceneComponent Default__BPHalfTrackBaseC_C:FrontRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.34"
+      },
+      "FrontRightRollCastLocation": {
+        "ObjectName": "SceneComponent Default__BPHalfTrackBaseC_C:RearRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.37"
+      },
+      "LeftSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__BPHalfTrackBaseC_C:LeftSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.35"
+      },
+      "RightSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__BPHalfTrackBaseC_C:RightSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.38"
+      },
+      "VehicleCollision": {
+        "ObjectName": "BoxComponent Default__BPHalfTrackBaseC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.14"
+      },
+      "PassengerArea": {
+        "ObjectName": "BoxComponent Default__BPHalfTrackBaseC_C:PassengerBaseBox",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.13"
+      },
+      "AFKTimeoutComponent": {
+        "ObjectName": "AFKTimeoutComponent Default__BPHalfTrackBaseC_C:AFKTimeoutComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.3"
+      },
+      "Treads": {
+        "TrackMaterialIndices": 2,
+        "TrackMaterialIndices": 3
+      },
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPHalfTrackBaseC_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.52"
+      },
+      "Mesh": {
+        "ObjectName": "SkeletalMeshComponent Default__BPHalfTrackBaseC_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.46"
+      },
+      "CharacterMovement": {
+        "ObjectName": "RWDVehicleMovementComponent Default__BPHalfTrackBaseC_C:CharMoveComp",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.31"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent Default__BPHalfTrackBaseC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.15"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPHalfTrackBaseC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.14"
+      }
+    }
+  },
+  {
+    "Type": "AFKTimeoutComponent",
+    "Name": "AFKTimeoutComponent",
+    "Outer": "Default__BPHalfTrackBaseC_C"
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "BackUpSFXLoop",
+    "Outer": "Default__BPHalfTrackBaseC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPHalfTrackBaseC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.15"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "DriveLoop",
+    "Outer": "Default__BPHalfTrackBaseC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPHalfTrackBaseC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.15"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "IdleLoop",
+    "Outer": "Default__BPHalfTrackBaseC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPHalfTrackBaseC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.14"
+      }
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "RearSeat3",
+    "Outer": "BPHalfTrackBaseC_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class VehicleSeatComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_BPHalfTrackBaseC",
+    "PropertyFlags": 148
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BPHalfTrackBaseC",
+    "Outer": "BPHalfTrackBaseC_C",
+    "Children": [
+      {
+        "ObjectName": "IntProperty BPHalfTrackBaseC_C:ExecuteUbergraph_BPHalfTrackBaseC.EntryPoint",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.8"
+      },
+      {
+        "ObjectName": "BoolProperty BPHalfTrackBaseC_C:ExecuteUbergraph_BPHalfTrackBaseC.K2Node_Event_IsOn",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.12"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "Function",
+    "Name": "BPOnVehicleOn",
+    "Outer": "BPHalfTrackBaseC_C",
+    "SuperStruct": {
+      "ObjectName": "Function SimVehicle:BPOnVehicleOn",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "BoolProperty BPHalfTrackBaseC_C:BPOnVehicleOn.IsOn",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.11"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "IsOn",
+    "Outer": "BPOnVehicleOn",
+    "PropertyFlags": 148,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_Event_IsOn",
+    "Outer": "ExecuteUbergraph_BPHalfTrackBaseC",
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "PassengerBaseBox",
+    "Outer": "Default__BPHalfTrackBaseC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPHalfTrackBaseC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.14"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "VehicleCollision",
+    "Outer": "Default__BPHalfTrackBaseC_C",
+    "Properties": {
+      "OnComponentBeginOverlap": null
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__BPHalfTrackBaseC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPHalfTrackBaseC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.14"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BPHalfTrackBaseC_C"
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Light_L",
+    "Outer": "BPHalfTrackBaseC_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Light_R",
+    "Outer": "BPHalfTrackBaseC_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "SpotLight_L",
+    "Outer": "BPHalfTrackBaseC_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SpotLightComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "SpotLight_R",
+    "Outer": "BPHalfTrackBaseC_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SpotLightComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MainDirtHighSpeedPS",
+    "Outer": "Default__BPHalfTrackBaseC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPHalfTrackBaseC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.14"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MainDirtLowSpeedPS",
+    "Outer": "Default__BPHalfTrackBaseC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPHalfTrackBaseC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.14"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MajorDamagePS",
+    "Outer": "Default__BPHalfTrackBaseC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPHalfTrackBaseC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.15"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MinorDamagePS",
+    "Outer": "Default__BPHalfTrackBaseC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPHalfTrackBaseC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.15"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearLeftTireDirtHighSpeedPS",
+    "Outer": "Default__BPHalfTrackBaseC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPHalfTrackBaseC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.14"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearLeftTireDirtLowSpeedPS",
+    "Outer": "Default__BPHalfTrackBaseC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPHalfTrackBaseC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.14"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearRightTireDirtHighSpeedPS",
+    "Outer": "Default__BPHalfTrackBaseC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPHalfTrackBaseC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.14"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearRightTireDirtLowSpeedPS",
+    "Outer": "Default__BPHalfTrackBaseC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPHalfTrackBaseC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.14"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "SkiddingDirtPS",
+    "Outer": "Default__BPHalfTrackBaseC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPHalfTrackBaseC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.14"
+      }
+    }
+  },
+  {
+    "Type": "PlayerCameraRigComponent",
+    "Name": "CameraRigVehicle",
+    "Outer": "Default__BPHalfTrackBaseC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPHalfTrackBaseC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.15"
+      }
+    }
+  },
+  {
+    "Type": "RWDVehicleMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__BPHalfTrackBaseC_C",
+    "Properties": {
+      "EngineForce": 25000.0,
+      "MaxWalkSpeed": 2706.6252
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPHalfTrackBaseC_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontAxelCastLocation",
+    "Outer": "Default__BPHalfTrackBaseC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPHalfTrackBaseC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.15"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontRightAxleCastLocation",
+    "Outer": "Default__BPHalfTrackBaseC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPHalfTrackBaseC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.15"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "LeftSideTrackLocation",
+    "Outer": "Default__BPHalfTrackBaseC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPHalfTrackBaseC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.15"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearAxleCastLocation",
+    "Outer": "Default__BPHalfTrackBaseC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPHalfTrackBaseC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.15"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearRightAxleCastLocation",
+    "Outer": "Default__BPHalfTrackBaseC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPHalfTrackBaseC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.15"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RightSideTrackLocation",
+    "Outer": "Default__BPHalfTrackBaseC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPHalfTrackBaseC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.15"
+      }
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPHalfTrackBaseC_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.32"
+      },
+      "VariableGuid": "60E74EB1-45991348-F03791B3-AF7C3E35",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPHalfTrackBaseC_C:Light_R_REMOVED_1BE860B848E64F4CDC41C0A6FD2FE414",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.50"
+      },
+      "AttachToName": "S_Headlight_R",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "C15FC96D-45376D04-EFC3B18E-E23E587F",
+      "InternalVariableName": "Light_R"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPHalfTrackBaseC_C:Light_L_REMOVED_3C2453F14E8917EEDD4F0F966223C91E",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.49"
+      },
+      "AttachToName": "S_Headlight_L",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "EB87DCFF-405F402B-B2C31481-7763CABD",
+      "InternalVariableName": "Light_L"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SpotLightComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SpotLightComponent BPHalfTrackBaseC_C:SpotLight_R_REMOVED_8047D04C4C625D5B76FD5BADA4591BC3",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.48"
+      },
+      "AttachToName": "S_Headlight_R",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "6A3FEE01-4928CEAE-7D5345B6-8319CFBD",
+      "InternalVariableName": "SpotLight_R"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SpotLightComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SpotLightComponent BPHalfTrackBaseC_C:SpotLight_L_REMOVED_D16635E44D77ADB40E455098FCDEB272",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.47"
+      },
+      "AttachToName": "S_Headlight_L",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "1E982FDC-4DCC3C35-E7579FB7-9CB4B802",
+      "InternalVariableName": "SpotLight_L"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class VehicleSeatComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "VehicleSeatComponent BPHalfTrackBaseC_C:RearSeat3_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.53"
+      },
+      "AttachToName": "S_RearSeat",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "7108559C-4EA6E894-B664C78E-7673B01D",
+      "InternalVariableName": "RearSeat3"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPHalfTrackBaseC_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPHalfTrackBaseC_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.40"
+        },
+        {
+          "ObjectName": "SCS_Node BPHalfTrackBaseC_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.41"
+        },
+        {
+          "ObjectName": "SCS_Node BPHalfTrackBaseC_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.43"
+        },
+        {
+          "ObjectName": "SCS_Node BPHalfTrackBaseC_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.42"
+        },
+        {
+          "ObjectName": "SCS_Node BPHalfTrackBaseC_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.44"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPHalfTrackBaseC_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.40"
+        },
+        {
+          "ObjectName": "SCS_Node BPHalfTrackBaseC_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.41"
+        },
+        {
+          "ObjectName": "SCS_Node BPHalfTrackBaseC_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.43"
+        },
+        {
+          "ObjectName": "SCS_Node BPHalfTrackBaseC_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.42"
+        },
+        {
+          "ObjectName": "SCS_Node BPHalfTrackBaseC_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.44"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPHalfTrackBaseC_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.39"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__BPHalfTrackBaseC_C",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_PrototypeHalftrackC_C",
+        "ObjectPath": "War/Content/Animation/HalfTrack/Halftrack_Prototype/ABP_PrototypeHalftrackC.1"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPHalfTrackBaseC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.15"
+      }
+    }
+  },
+  {
+    "Type": "SpotLightComponent",
+    "Name": "SpotLight_L_REMOVED_D16635E44D77ADB40E455098FCDEB272",
+    "Outer": "BPHalfTrackBaseC_C",
+    "Properties": {
+      "InnerConeAngle": 5.0,
+      "OuterConeAngle": 55.0,
+      "bUseInverseSquaredFalloff": false,
+      "AttenuationRadius": 2275.0,
+      "bUseRayTracedDistanceFieldShadows": true,
+      "Intensity": 20.0,
+      "LightColor": {
+        "R": 164,
+        "G": 222,
+        "B": 255,
+        "A": 255,
+        "Hex": "FFA4DEFF"
+      },
+      "CastShadows": false,
+      "bVisible": false
+    }
+  },
+  {
+    "Type": "SpotLightComponent",
+    "Name": "SpotLight_R_REMOVED_8047D04C4C625D5B76FD5BADA4591BC3",
+    "Outer": "BPHalfTrackBaseC_C",
+    "Properties": {
+      "InnerConeAngle": 5.0,
+      "OuterConeAngle": 55.0,
+      "bUseInverseSquaredFalloff": false,
+      "AttenuationRadius": 2275.0,
+      "bUseRayTracedDistanceFieldShadows": true,
+      "Intensity": 20.0,
+      "LightColor": {
+        "R": 164,
+        "G": 222,
+        "B": 255,
+        "A": 255,
+        "Hex": "FFA4DEFF"
+      },
+      "CastShadows": false,
+      "bVisible": false
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Light_L_REMOVED_3C2453F14E8917EEDD4F0F966223C91E",
+    "Outer": "BPHalfTrackBaseC_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh Headlight",
+        "ObjectPath": "War/Content/Meshes/Vehicles/Headlight.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material SimpleEmissive",
+          "ObjectPath": "War/Content/Materials/SimpleEmissive.0"
+        }
+      ],
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": 0.0
+      },
+      "RelativeScale3D": {
+        "X": 1.712395,
+        "Y": 1.0,
+        "Z": 1.712395
+      },
+      "bVisible": false
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Light_R_REMOVED_1BE860B848E64F4CDC41C0A6FD2FE414",
+    "Outer": "BPHalfTrackBaseC_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh Headlight",
+        "ObjectPath": "War/Content/Meshes/Vehicles/Headlight.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material SimpleEmissive",
+          "ObjectPath": "War/Content/Materials/SimpleEmissive.0"
+        }
+      ],
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": 0.0
+      },
+      "RelativeScale3D": {
+        "X": 1.7123947,
+        "Y": 1.0,
+        "Z": 1.712395
+      },
+      "bVisible": false
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "DestroyedMesh",
+    "Outer": "Default__BPHalfTrackBaseC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPHalfTrackBaseC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPHalfTrackBaseC.15"
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPHalfTrackBaseC_C"
+  },
+  {
+    "Type": "VehicleSeatComponent",
+    "Name": "RearSeat3_GEN_VARIABLE",
+    "Outer": "BPHalfTrackBaseC_C",
+    "Properties": {
+      "Index": 3,
+      "Direction": "ESeatDirection::Rear",
+      "TriggerName": "RearSeatTrigger",
+      "ExitName": "RearSeatExit",
+      "bIsExposed": true,
+      "bCanFireWeapon": true,
+      "bIsWoundable": true,
+      "EnterSFX": {
+        "ObjectName": "SoundCue HeavyMGEquip",
+        "ObjectPath": "War/Content/Audio/SFX/Weapons/HeavyMG/HeavyMGEquip.0"
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      },
+      "RelativeScale3D": {
+        "X": 1.0,
+        "Y": 1.0,
+        "Z": 0.99999994
+      }
+    }
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "StoneWall02_11_01",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 35.138824,
+              "Y": -33.962383,
+              "Z": 88.93249
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 100.08002,
+            "Y": 119.34983,
+            "Z": 185.6685,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "StoneWall02_11_01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0xC98"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "StoneWall02_11_01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant StoneWall02_Snow",
+            "ObjectPath": "War/Content/Materials/Environment/StoneWall02_Snow.0"
+          },
+          "MaterialSlotName": "StoneWall02_Snow",
+          "ImportedMaterialSlotName": "StoneWall02_Snow",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1680.9446,
+            "LocalUVDensities": 444.59247,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 444.59247,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 35.138824,
+          "Y": -33.962383,
+          "Z": 88.93249
+        },
+        "BoxExtent": {
+          "X": 50.04001,
+          "Y": 59.674915,
+          "Z": 92.83425
+        },
+        "SphereRadius": 110.05042
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup StoneWall02_11_01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/StoneWall02_11_01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision StoneWall02_11_01:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/StoneWall02_11_01.1"
+    },
+    "LightingGuid": "828AC242-4067B739-46E57182-D47CCFE7",
+    "RenderData": null
+  }
+]

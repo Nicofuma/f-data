@@ -1,0 +1,66 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPLightTankArtilleryWMount_C",
+    "SuperStruct": {
+      "ObjectName": "Class ArtilleryGunnerMountComponent",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPLightTankArtilleryWMount_C",
+    "Name": "Default__BPLightTankArtilleryWMount_C",
+    "Properties": {
+      "ReloadSoundCue": {
+        "ObjectName": "SoundCue MortarReload_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Weapons/Mortar/MortarReload_Cue.0"
+      },
+      "MuzzleFlashPS": {
+        "ObjectName": "ParticleSystem LightTankMF01",
+        "ObjectPath": "War/Content/FX/LightTankMF01.61"
+      },
+      "DamageDelay": 3.0,
+      "FireDelay": 0.0,
+      "bUseClampTrjectoryToDistanceHack": true,
+      "MultiAmmo": {
+        "CompatibleAmmoNames": [
+          "MortarAmmo",
+          "MortarAmmoSH",
+          "MortarAmmoFL"
+        ]
+      },
+      "DisplayName": {
+        "Namespace": "War",
+        "Key": "Turret",
+        "SourceString": "Turret"
+      },
+      "Icon": {
+        "ObjectName": "Texture2D Achievement_LastStand",
+        "ObjectPath": "War/Content/Textures/UI/Achievements/Achievement_LastStand.0"
+      },
+      "EquippedGripType": "EEquippedWeaponGripType::VehicleGunboatCannonGunner",
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage NWP_Gunboat_Cannon_firing",
+          "ObjectPath": "War/Content/Animation/Character/NWP_NoWeapon/NWP_Gunboat_Cannon_firing.0"
+        }
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage NWP_Gunboat_Cannon_reload",
+          "ObjectPath": "War/Content/Animation/Character/NWP_NoWeapon/NWP_Gunboat_Cannon_reload.0"
+        }
+      },
+      "bIsAmmoStackable": false,
+      "LinkedVehicleSubsystem": "EVehicleSubsystem::Turret"
+    }
+  }
+]

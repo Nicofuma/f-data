@@ -1,0 +1,147 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "RelicBusDestroyed",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "RelicBusDestroyed",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x73347"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "RelicBusDestroyed",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RelicBus",
+            "ObjectPath": "War/Content/Materials/Vehicles/RelicBus.0"
+          },
+          "MaterialSlotName": "RelicBus",
+          "ImportedMaterialSlotName": "RelicBus",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1122.5214,
+            "LocalUVDensities": 1.9296832,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Tire01",
+            "ObjectPath": "War/Content/Materials/Vehicles/Tire01.0"
+          },
+          "MaterialSlotName": "Tire01",
+          "ImportedMaterialSlotName": "Tire01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 567.4387,
+            "LocalUVDensities": 1.0501304,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant VehiclePartsUnderCarriage",
+            "ObjectPath": "War/Content/Materials/Environment/Props/VehiclePartsUnderCarriage.0"
+          },
+          "MaterialSlotName": "Material #578",
+          "ImportedMaterialSlotName": "Material #578",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 157.6885,
+            "LocalUVDensities": 2.1391945,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant VehicleParts",
+            "ObjectPath": "War/Content/Materials/Environment/Props/VehicleParts.0"
+          },
+          "MaterialSlotName": "VehicleParts",
+          "ImportedMaterialSlotName": "VehicleParts",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 698.9501,
+            "LocalUVDensities": 1.6377676,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Concrete03",
+            "ObjectPath": "War/Content/Materials/Environment/House/Concrete03.0"
+          },
+          "MaterialSlotName": "Concrete",
+          "ImportedMaterialSlotName": "Concrete",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 171.3463,
+            "LocalUVDensities": 162.87221,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 854.7336,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.7365875,
+          "Y": -1.9819336,
+          "Z": 180.89456
+        },
+        "BoxExtent": {
+          "X": 166.99335,
+          "Y": 513.1489,
+          "Z": 182.40067
+        },
+        "SphereRadius": 533.2802
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup RelicBusDestroyed:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Vehicles/RelicBusDestroyed.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision RelicBusDestroyed:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Vehicles/RelicBusDestroyed.1"
+    },
+    "LightingGuid": "963126DF-4D5524AF-80DD22B4-04BEA3DD",
+    "RenderData": null
+  }
+]

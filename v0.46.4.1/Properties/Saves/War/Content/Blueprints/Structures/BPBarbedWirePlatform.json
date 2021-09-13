@@ -1,0 +1,248 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPBarbedWirePlatform_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPBarbedWirePlatform_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWirePlatform.9"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class MaterialPlatform",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPBarbedWirePlatform_C",
+    "Name": "Default__BPBarbedWirePlatform_C",
+    "Properties": {
+      "MeshComponent": {
+        "ObjectName": "StaticMeshComponent Default__BPBarbedWirePlatform_C:Mesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWirePlatform.10"
+      },
+      "BoxCollision": {
+        "ObjectName": "BoxComponent Default__BPBarbedWirePlatform_C:BoxCollision",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWirePlatform.3"
+      },
+      "InstancedStaticMeshComponent": {
+        "ObjectName": "InstancedStaticMeshComponent Default__BPBarbedWirePlatform_C:InstancedStaticMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWirePlatform.6"
+      },
+      "GenericStockpileComponent": {
+        "ObjectName": "GenericItemStockpileComponent Default__BPBarbedWirePlatform_C:GenericStockpileComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWirePlatform.5"
+      },
+      "MaterialCodeName": "BarbedWireMaterials",
+      "InstanceMeshWidth": 45.0,
+      "InstanceMeshDepth": 85.0,
+      "InstanceMeshOddWidth": 85.0,
+      "InstanceMeshOddDepth": 40.0,
+      "InstanceMeshHeight": 50.0,
+      "InstancesPerRow": 6,
+      "InstancesPerColumn": 4,
+      "InstancesPerOddRow": 3,
+      "InstancesPerOddColumn": 8,
+      "InstancePitchJitter": 0.2,
+      "InstanceRollJitter": 0.5,
+      "InstanceOffsetJitter": 3.0,
+      "LayerScaleDownFactor": 0.9,
+      "InstanceGlobalScale": 1.3,
+      "InstanceMeshOffset": {
+        "X": -110.13259,
+        "Y": -129.24016,
+        "Z": 32.09227
+      },
+      "InstanceMeshOddLayerOffset": {
+        "X": 28.650982,
+        "Y": -11.119074,
+        "Z": 0.0
+      },
+      "BuildGhostClass": null,
+      "Description": {
+        "Namespace": "",
+        "Key": "FBE2F47845A6ED5B12348A8D6011389E",
+        "SourceString": "A pallet of Barbed Wire that's used for the construction of frontline defenses."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D BarbedWirePlatformItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/BarbedWirePlatformItemIcon.0"
+      },
+      "BuildLocationType": "EBuildLocationType::ConstructionYard",
+      "CodeName": "BarbedWirePlatform",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "D53BC9464E52621F2490E6BE060B949C",
+        "SourceString": "Barbed Wire Pallet"
+      },
+      "ArmourType": "EArmourType::Tier1Structure",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPBarbedWirePlatform_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWirePlatform.2"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPBarbedWirePlatform_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWirePlatform.4"
+      },
+      "DestroyedFX": {
+        "ObjectName": "ParticleSystem GrenadeBlast",
+        "ObjectPath": "War/Content/FX/GrenadeBlast.151"
+      },
+      "MaxHealth": 500,
+      "Health": 500,
+      "StructureNetRelevancySize": "EStructureNetRelevancySize::Small",
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPBarbedWirePlatform_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWirePlatform.11"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPBarbedWirePlatform_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWirePlatform.2"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPBarbedWirePlatform_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxCollision",
+    "Outer": "Default__BPBarbedWirePlatform_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 110.0,
+        "Y": 160.0,
+        "Z": 70.0
+      },
+      "AttachParent": {
+        "ObjectName": "StaticMeshComponent Default__BPBarbedWirePlatform_C:Mesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWirePlatform.10"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 100.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPBarbedWirePlatform_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 145.0,
+        "Y": 220.0,
+        "Z": 150.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPBarbedWirePlatform_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWirePlatform.2"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 90.0
+      }
+    }
+  },
+  {
+    "Type": "GenericItemStockpileComponent",
+    "Name": "GenericStockpileComponent",
+    "Outer": "Default__BPBarbedWirePlatform_C",
+    "Properties": {
+      "Configs": [
+        {
+          "Type": "EStockpileEntryType::Items",
+          "QuantityLimit": 32000,
+          "TotalQuantityLimit": 72,
+          "ValidEntriesOverride": [],
+          "PreStockedEntries": []
+        }
+      ]
+    }
+  },
+  {
+    "Type": "InstancedStaticMeshComponent",
+    "Name": "InstancedStaticMesh",
+    "Outer": "Default__BPBarbedWirePlatform_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh BarbedWireMaterial",
+        "ObjectPath": "War/Content/Meshes/Pickups/BarbedWireMaterial.2"
+      },
+      "AttachParent": {
+        "ObjectName": "StaticMeshComponent Default__BPBarbedWirePlatform_C:Mesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWirePlatform.10"
+      },
+      "RelativeLocation": {
+        "X": -110.13259,
+        "Y": -129.24016,
+        "Z": 32.09227
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPBarbedWirePlatform_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPBarbedWirePlatform_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWirePlatform.7"
+      },
+      "VariableGuid": "05A7D1CE-44009822-63759F83-36A75871",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPBarbedWirePlatform_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPBarbedWirePlatform_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWirePlatform.8"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Mesh",
+    "Outer": "Default__BPBarbedWirePlatform_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh MaterialPlatform",
+        "ObjectPath": "War/Content/Meshes/Shippables/MaterialPlatform.2"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPBarbedWirePlatform_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWirePlatform.2"
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPBarbedWirePlatform_C"
+  }
+]

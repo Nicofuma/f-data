@@ -1,0 +1,78 @@
+[
+  {
+    "Type": "SoundCue",
+    "Name": "ZombieAttack",
+    "Properties": {
+      "FirstNode": {
+        "ObjectName": "SoundNodeModulator ZombieAttack:SoundNodeModulator_0",
+        "ObjectPath": "War/Content/Audio/SFX/Zombie/ZombieAttack.1"
+      },
+      "VolumeMultiplier": 0.45,
+      "Duration": 2.0,
+      "MaxDistance": 11400.0,
+      "AttenuationSettings": {
+        "ObjectName": "SoundAttenuation SmallArms",
+        "ObjectPath": "War/Content/Audio/Attenuations/SmallArms.0"
+      }
+    }
+  },
+  {
+    "Type": "SoundNodeModulator",
+    "Name": "SoundNodeModulator_0",
+    "Outer": "ZombieAttack",
+    "Properties": {
+      "ChildNodes": [
+        {
+          "ObjectName": "SoundNodeRandom ZombieAttack:SoundNodeRandom_0",
+          "ObjectPath": "War/Content/Audio/SFX/Zombie/ZombieAttack.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SoundNodeRandom",
+    "Name": "SoundNodeRandom_0",
+    "Outer": "ZombieAttack",
+    "Properties": {
+      "Weights": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "bRandomizeWithoutReplacement": false,
+      "ChildNodes": [
+        {
+          "ObjectName": "SoundNodeWavePlayer ZombieAttack:SoundNodeWavePlayer_2",
+          "ObjectPath": "War/Content/Audio/SFX/Zombie/ZombieAttack.4"
+        },
+        {
+          "ObjectName": "SoundNodeWavePlayer ZombieAttack:SoundNodeWavePlayer_0",
+          "ObjectPath": "War/Content/Audio/SFX/Zombie/ZombieAttack.3"
+        },
+        null
+      ]
+    }
+  },
+  {
+    "Type": "SoundNodeWavePlayer",
+    "Name": "SoundNodeWavePlayer_0",
+    "Outer": "ZombieAttack",
+    "Properties": {
+      "SoundWaveAssetPtr": {
+        "AssetPathName": "/Game/Audio/SFX/Zombie/ZombieSnarl3.ZombieSnarl3",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "SoundNodeWavePlayer",
+    "Name": "SoundNodeWavePlayer_2",
+    "Outer": "ZombieAttack",
+    "Properties": {
+      "SoundWaveAssetPtr": {
+        "AssetPathName": "/Game/Audio/SFX/Zombie/ZombieRoar.ZombieRoar",
+        "SubPathString": ""
+      }
+    }
+  }
+]

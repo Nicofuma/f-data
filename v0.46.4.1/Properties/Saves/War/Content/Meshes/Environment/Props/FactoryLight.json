@@ -1,0 +1,120 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FactoryLight",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_6",
+    "Outer": "FactoryLight",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x86A6"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FactoryLight",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RefineryBuilding",
+            "ObjectPath": "War/Content/Materials/Structures/RefineryBuilding.0"
+          },
+          "MaterialSlotName": "SubstancePart.001",
+          "ImportedMaterialSlotName": "SubstancePart.001",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1878.9677,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MetalPanelRust",
+            "ObjectPath": "War/Content/Materials/Resources/MetalPanelRust.0"
+          },
+          "MaterialSlotName": "Pipes.001",
+          "ImportedMaterialSlotName": "Pipes.001",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 42.98628,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material LanternEmissive",
+            "ObjectPath": "War/Content/Materials/LanternEmissive.0"
+          },
+          "MaterialSlotName": "Light",
+          "ImportedMaterialSlotName": "Light",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 2145.3062,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1661.5529,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -2.4795532E-05,
+          "Y": 3.8093243,
+          "Z": -0.28183365
+        },
+        "BoxExtent": {
+          "X": 23.347044,
+          "Y": 9.985271,
+          "Z": 37.54213
+        },
+        "SphereRadius": 39.899414
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FactoryLight:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FactoryLight.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FactoryLight:NavCollision_6",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FactoryLight.1"
+    },
+    "LightingGuid": "B5655D49-4CF3D997-27B05E8B-151CE32C",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPExplosiveLightCComponent_C",
+    "SuperStruct": {
+      "ObjectName": "Class ExplosiveItemComponent",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPExplosiveLightCComponent_C",
+    "Name": "Default__BPExplosiveLightCComponent_C",
+    "Properties": {
+      "DeployDuration": 1.5,
+      "ExplosiveClass": {
+        "ObjectName": "BlueprintGeneratedClass BPExplosiveLightCDeployed_C",
+        "ObjectPath": "War/Content/Blueprints/Items/BPExplosiveLightCDeployed.0"
+      },
+      "DeploySound": {
+        "ObjectName": "SoundCue DeployExplosive_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Weapons/Satchel/DeployExplosive_Cue.0"
+      },
+      "EquippedGripType": "EEquippedWeaponGripType::LargeDeployableItem",
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage RPG_Equipping",
+          "ObjectPath": "War/Content/Animation/Character/RPG_RocketLauncher/RPG_Equipping.0"
+        }
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage RPG_Unequipping",
+          "ObjectPath": "War/Content/Animation/Character/RPG_RocketLauncher/RPG_Unequipping.0"
+        }
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage NWP_genericTinkering",
+          "ObjectPath": "War/Content/Animation/Character/NWP_NoWeapon/NWP_genericTinkering.0"
+        },
+        "IsLooping": true
+      },
+      "AttachedItemMesh": {
+        "ObjectName": "SkeletalMesh SK_Bangalore",
+        "ObjectPath": "War/Content/Meshes/Weapons/SK_Bangalore.0"
+      },
+      "GroundItemMesh": {
+        "ObjectName": "StaticMesh Bangalore",
+        "ObjectPath": "War/Content/Meshes/Weapons/Bangalore.2"
+      },
+      "GroundItemActivityState": "ECharacterActivityState::Deploying",
+      "GroundItemOffset": {
+        "X": 200.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  }
+]

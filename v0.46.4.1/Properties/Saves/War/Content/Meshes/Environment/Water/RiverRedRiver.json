@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "RiverRedRiver",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "RiverRedRiver",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1AE03"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "RiverRedRiver",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "Engine/Content/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "Material #25",
+          "ImportedMaterialSlotName": "Material #25",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 49609.46,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 49609.46,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 2180.914,
+          "Y": 21859.445,
+          "Z": -6.1922793E-12
+        },
+        "BoxExtent": {
+          "X": 127013.36,
+          "Y": 111075.7,
+          "Z": 3.1465188E-11
+        },
+        "SphereRadius": 168119.28
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup RiverRedRiver:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Water/RiverRedRiver.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision RiverRedRiver:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Water/RiverRedRiver.1"
+    },
+    "LightingGuid": "6FE9B536-4422E1A9-011ED7BC-4143B108",
+    "RenderData": null
+  }
+]

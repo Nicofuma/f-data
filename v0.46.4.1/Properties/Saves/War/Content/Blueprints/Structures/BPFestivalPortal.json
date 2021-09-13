@@ -1,0 +1,212 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "StaticMesh",
+    "Outer": "BPFestivalPortal_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPFestivalPortal_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPFestivalPortal_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalPortal.9"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class FestivalPortal",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPFestivalPortal_C:StaticMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalPortal.0"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPFestivalPortal_C",
+    "Name": "Default__BPFestivalPortal_C",
+    "Properties": {
+      "TeleportLocation": {
+        "ObjectName": "SceneComponent Default__BPFestivalPortal_C:Teleport Location",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalPortal.6"
+      },
+      "ProceduralUseVolumeFactor": 1.0,
+      "CodeName": "FestivalPortal",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "A235AA5A49093ABCA667F3A89466CC61",
+        "SourceString": "Festival Portal"
+      },
+      "ProfileType": "EStructureProfileType::GenericWorldStructure",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPFestivalPortal_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalPortal.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPFestivalPortal_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalPortal.4"
+      },
+      "MaxHealth": 10000,
+      "StructureNetRelevancySize": "EStructureNetRelevancySize::Small",
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPFestivalPortal_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalPortal.11"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPFestivalPortal_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalPortal.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPFestivalPortal_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPFestivalPortal_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 200.0,
+        "Y": 200.0,
+        "Z": 256.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFestivalPortal_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalPortal.3"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPFestivalPortal_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "Teleport Location",
+    "Outer": "Default__BPFestivalPortal_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFestivalPortal_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalPortal.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 400.0
+      }
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPFestivalPortal_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalPortal.5"
+      },
+      "VariableGuid": "FE1B2CD9-47F71C86-DEB6D9BD-3267125A",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPFestivalPortal_C:StaticMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalPortal.10"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "BDCE85DC-42C8DDDC-A821AA96-D6F83B11",
+      "InternalVariableName": "StaticMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPFestivalPortal_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPFestivalPortal_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalPortal.8"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPFestivalPortal_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalPortal.8"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPFestivalPortal_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalPortal.7"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh_GEN_VARIABLE",
+    "Outer": "BPFestivalPortal_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh TunnelNetwork",
+        "ObjectPath": "War/Content/Meshes/Structures/TunnelNetwork.2"
+      },
+      "BodyInstance": {
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPFestivalPortal_C"
+  }
+]

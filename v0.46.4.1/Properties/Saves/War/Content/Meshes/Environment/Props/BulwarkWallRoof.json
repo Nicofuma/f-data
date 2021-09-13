@@ -1,0 +1,216 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_4",
+    "Outer": "BulwarkWallRoof",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -1200.0,
+                "Y": 383.9246,
+                "Z": 789.8923
+              },
+              {
+                "X": -1200.0,
+                "Y": 383.92453,
+                "Z": 1118.051
+              },
+              {
+                "X": -1200.0,
+                "Y": -386.19046,
+                "Z": 789.89215
+              },
+              {
+                "X": -1200.0,
+                "Y": -130.75006,
+                "Z": 1118.0509
+              },
+              {
+                "X": 0.07419586,
+                "Y": 383.9246,
+                "Z": 789.8923
+              },
+              {
+                "X": 0.07419586,
+                "Y": 383.92453,
+                "Z": 1118.051
+              },
+              {
+                "X": 0.07419586,
+                "Y": -386.19046,
+                "Z": 789.89215
+              },
+              {
+                "X": 0.07419586,
+                "Y": -130.75006,
+                "Z": 1118.0509
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -1200.0,
+                "Y": -386.19046,
+                "Z": 789.89215
+              },
+              "Max": {
+                "X": 0.07419586,
+                "Y": 383.9246,
+                "Z": 1118.051
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "BulwarkWallRoof",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 457,
+        "SizeOnDisk": 457,
+        "OffsetInFile": "0x2EAD8"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "BulwarkWallRoof",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BulwarkWallEdge",
+            "ObjectPath": "War/Content/Materials/Environment/Props/BulwarkWallEdge.0"
+          },
+          "MaterialSlotName": "BulwarkSupportsMoss",
+          "ImportedMaterialSlotName": "BulwarkTop",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1177.2429,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BulwarkWall",
+            "ObjectPath": "War/Content/Materials/Environment/Props/BulwarkWall.0"
+          },
+          "MaterialSlotName": "BulwarkLedgeRoofMoss",
+          "ImportedMaterialSlotName": "BulwarkEdge",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1168.8663,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BulwarkWallTop",
+            "ObjectPath": "War/Content/Materials/Environment/Props/BulwarkWallTop.0"
+          },
+          "MaterialSlotName": "BulwarkFloor_Tile",
+          "ImportedMaterialSlotName": "BulwarkWall",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 392.22595,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Flat4",
+            "ObjectPath": "War/Content/Materials/Flat4.0"
+          },
+          "MaterialSlotName": "LOD1",
+          "ImportedMaterialSlotName": "LOD1",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1164.7349,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1162.1619,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -596.71747,
+          "Y": -3.6851501,
+          "Z": 981.90234
+        },
+        "BoxExtent": {
+          "X": 629.85846,
+          "Y": 480.71033,
+          "Z": 224.8031
+        },
+        "SphereRadius": 795.9835
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup BulwarkWallRoof:BodySetup_4",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/BulwarkWallRoof.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision BulwarkWallRoof:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/BulwarkWallRoof.1"
+    },
+    "LightingGuid": "4A589B7F-4EB1DA5B-6DBB1B99-2A3D1585",
+    "RenderData": null
+  }
+]

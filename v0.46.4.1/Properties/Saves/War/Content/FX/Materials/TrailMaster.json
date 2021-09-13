@@ -1,0 +1,431 @@
+[
+  {
+    "Type": "Material",
+    "Name": "TrailMaster",
+    "Properties": {
+      "EmissiveColor": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionStaticSwitchParameter_0",
+        "UseConstant": false,
+        "Constant": {
+          "R": 0,
+          "G": 0,
+          "B": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "BlendMode": "BLEND_Translucent",
+      "bUsedWithParticleSprites": true,
+      "bUsedWithBeamTrails": true,
+      "Expressions": [
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSample TrailMaster:MaterialExpressionTextureSample_0",
+          "ObjectPath": "War/Content/FX/Materials/TrailMaster.7"
+        },
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSample TrailMaster:MaterialExpressionTextureSample_1",
+          "ObjectPath": "War/Content/FX/Materials/TrailMaster.8"
+        },
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSample TrailMaster:MaterialExpressionTextureSample_3",
+          "ObjectPath": "War/Content/FX/Materials/TrailMaster.9"
+        },
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSample TrailMaster:MaterialExpressionTextureSample_4",
+          "ObjectPath": "War/Content/FX/Materials/TrailMaster.10"
+        },
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSample TrailMaster:MaterialExpressionTextureSample_5",
+          "ObjectPath": "War/Content/FX/Materials/TrailMaster.11"
+        },
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSample TrailMaster:MaterialExpressionTextureSample_6",
+          "ObjectPath": "War/Content/FX/Materials/TrailMaster.12"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionMaterialFunctionCall TrailMaster:MaterialExpressionMaterialFunctionCall_0",
+          "ObjectPath": "War/Content/FX/Materials/TrailMaster.2"
+        },
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionMaterialFunctionCall TrailMaster:MaterialExpressionMaterialFunctionCall_1",
+          "ObjectPath": "War/Content/FX/Materials/TrailMaster.3"
+        },
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter TrailMaster:MaterialExpressionScalarParameter_0",
+          "ObjectPath": "War/Content/FX/Materials/TrailMaster.4"
+        },
+        {
+          "ObjectName": "MaterialExpressionScalarParameter TrailMaster:MaterialExpressionScalarParameter_1",
+          "ObjectPath": "War/Content/FX/Materials/TrailMaster.5"
+        },
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSample TrailMaster:MaterialExpressionTextureSample_7",
+          "ObjectPath": "War/Content/FX/Materials/TrailMaster.13"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionDynamicParameter TrailMaster:MaterialExpressionDynamicParameter_0",
+          "ObjectPath": "War/Content/FX/Materials/TrailMaster.1"
+        },
+        {
+          "ObjectName": "MaterialExpressionStaticSwitchParameter TrailMaster:MaterialExpressionStaticSwitchParameter_0",
+          "ObjectPath": "War/Content/FX/Materials/TrailMaster.6"
+        },
+        null
+      ],
+      "MaterialFunctionInfos": [
+        {
+          "StateId": "B7C71B91-4E2BB667-772D6CBE-2AB55665",
+          "Function": {
+            "ObjectName": "MaterialFunction LinearGradient",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient.0"
+          }
+        },
+        {
+          "StateId": "B7C71B91-4E2BB667-772D6CBE-2AB55665",
+          "Function": {
+            "ObjectName": "MaterialFunction LinearGradient",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient.0"
+          }
+        }
+      ],
+      "bCanMaskedBeAssumedOpaque": true,
+      "StateId": "5E07F9E9-42E58A09-5E1810A8-35C63906",
+      "CachedQualityLevelsUsed": [
+        false,
+        true,
+        false
+      ],
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 1,
+          "TextureName": "Blood"
+        },
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 1,
+          "TextureName": "TilingNoises01"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MaterialExpressionDynamicParameter",
+    "Name": "MaterialExpressionDynamicParameter_0",
+    "Outer": "TrailMaster",
+    "Properties": {
+      "ParamNames": [
+        "Decay",
+        "Param2",
+        "Param3",
+        "Param4"
+      ],
+      "Material": {
+        "ObjectName": "Material TrailMaster",
+        "ObjectPath": "War/Content/FX/Materials/TrailMaster.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionMaterialFunctionCall",
+    "Name": "MaterialExpressionMaterialFunctionCall_0",
+    "Outer": "TrailMaster",
+    "Properties": {
+      "MaterialFunction": {
+        "ObjectName": "MaterialFunction LinearGradient",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient.0"
+      },
+      "Material": {
+        "ObjectName": "Material TrailMaster",
+        "ObjectPath": "War/Content/FX/Materials/TrailMaster.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionMaterialFunctionCall",
+    "Name": "MaterialExpressionMaterialFunctionCall_1",
+    "Outer": "TrailMaster",
+    "Properties": {
+      "MaterialFunction": {
+        "ObjectName": "MaterialFunction LinearGradient",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient.0"
+      },
+      "Material": {
+        "ObjectName": "Material TrailMaster",
+        "ObjectPath": "War/Content/FX/Materials/TrailMaster.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_0",
+    "Outer": "TrailMaster",
+    "Properties": {
+      "ParameterName": "DecayAmount",
+      "ExpressionGUID": "21E7894C-4751A2E0-6465B1B8-1FC4D32A",
+      "Material": {
+        "ObjectName": "Material TrailMaster",
+        "ObjectPath": "War/Content/FX/Materials/TrailMaster.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_1",
+    "Outer": "TrailMaster",
+    "Properties": {
+      "DefaultValue": 3.0,
+      "ParameterName": "Decayfalloff",
+      "ExpressionGUID": "67911410-44744839-29DA0BB2-04BF38D6",
+      "Material": {
+        "ObjectName": "Material TrailMaster",
+        "ObjectPath": "War/Content/FX/Materials/TrailMaster.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionStaticSwitchParameter",
+    "Name": "MaterialExpressionStaticSwitchParameter_0",
+    "Outer": "TrailMaster",
+    "Properties": {
+      "A": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionReroute_0"
+      },
+      "B": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionConstant_0"
+      },
+      "ParameterName": "Emissive",
+      "ExpressionGUID": "54214915-4AAF9127-3914EBA8-9BEB930F",
+      "Material": {
+        "ObjectName": "Material TrailMaster",
+        "ObjectPath": "War/Content/FX/Materials/TrailMaster.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_0",
+    "Outer": "TrailMaster",
+    "Properties": {
+      "Coordinates": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionPanner_0"
+      },
+      "Texture": {
+        "ObjectName": "Texture2D TrailGradients",
+        "ObjectPath": "War/Content/FX/Textures/Trail/TrailGradients.0"
+      },
+      "Material": {
+        "ObjectName": "Material TrailMaster",
+        "ObjectPath": "War/Content/FX/Materials/TrailMaster.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_1",
+    "Outer": "TrailMaster",
+    "Properties": {
+      "Coordinates": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionTextureCoordinate_1"
+      },
+      "Texture": {
+        "ObjectName": "Texture2D TrailGradients",
+        "ObjectPath": "War/Content/FX/Textures/Trail/TrailGradients.0"
+      },
+      "Material": {
+        "ObjectName": "Material TrailMaster",
+        "ObjectPath": "War/Content/FX/Materials/TrailMaster.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_3",
+    "Outer": "TrailMaster",
+    "Properties": {
+      "Coordinates": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionPanner_1"
+      },
+      "Texture": {
+        "ObjectName": "Texture2D TrailGradients",
+        "ObjectPath": "War/Content/FX/Textures/Trail/TrailGradients.0"
+      },
+      "Material": {
+        "ObjectName": "Material TrailMaster",
+        "ObjectPath": "War/Content/FX/Materials/TrailMaster.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_4",
+    "Outer": "TrailMaster",
+    "Properties": {
+      "Coordinates": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionTextureCoordinate_5"
+      },
+      "Texture": {
+        "ObjectName": "Texture2D Blood",
+        "ObjectPath": "War/Content/FX/Textures/NoiseMasks/Blood.0"
+      },
+      "Material": {
+        "ObjectName": "Material TrailMaster",
+        "ObjectPath": "War/Content/FX/Materials/TrailMaster.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_5",
+    "Outer": "TrailMaster",
+    "Properties": {
+      "Coordinates": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionPanner_2"
+      },
+      "Texture": {
+        "ObjectName": "Texture2D TilingNoises01",
+        "ObjectPath": "War/Content/FX/Textures/NoiseMasks/TilingNoises01.0"
+      },
+      "SamplerType": "SAMPLERTYPE_LinearColor",
+      "Material": {
+        "ObjectName": "Material TrailMaster",
+        "ObjectPath": "War/Content/FX/Materials/TrailMaster.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_6",
+    "Outer": "TrailMaster",
+    "Properties": {
+      "Coordinates": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionPanner_3"
+      },
+      "Texture": {
+        "ObjectName": "Texture2D TilingNoises01",
+        "ObjectPath": "War/Content/FX/Textures/NoiseMasks/TilingNoises01.0"
+      },
+      "SamplerType": "SAMPLERTYPE_LinearColor",
+      "Material": {
+        "ObjectName": "Material TrailMaster",
+        "ObjectPath": "War/Content/FX/Materials/TrailMaster.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_7",
+    "Outer": "TrailMaster",
+    "Properties": {
+      "Texture": {
+        "ObjectName": "Texture2D TrailPatterns",
+        "ObjectPath": "War/Content/FX/Textures/Trail/TrailPatterns.0"
+      },
+      "Material": {
+        "ObjectName": "Material TrailMaster",
+        "ObjectPath": "War/Content/FX/Materials/TrailMaster.0"
+      }
+    }
+  }
+]

@@ -1,0 +1,126 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "PlatformPeice02",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -7.0309515,
+              "Y": -1.4490414,
+              "Z": 5.5570803
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -2.1411438,
+              "Roll": 0.0
+            },
+            "X": 133.1966,
+            "Y": 509.0009,
+            "Z": 15.058997,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "PlatformPeice02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x272C"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "PlatformPeice02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Platform",
+            "ObjectPath": "War/Content/Materials/Environment/Platform.0"
+          },
+          "MaterialSlotName": "Material #238",
+          "ImportedMaterialSlotName": "Material #238",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 337.1215,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RepeatingRope",
+            "ObjectPath": "War/Content/Materials/Environment/Props/RepeatingRope.0"
+          },
+          "MaterialSlotName": "Material #239",
+          "ImportedMaterialSlotName": "Material #239",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 70.3637,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 189.62483,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 5.5570803
+        },
+        "BoxExtent": {
+          "X": 83.10735,
+          "Y": 263.41547,
+          "Z": 15.480854
+        },
+        "SphereRadius": 273.80524
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup PlatformPeice02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Base/PlatformPeice02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision PlatformPeice02:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Base/PlatformPeice02.1"
+    },
+    "LightingGuid": "ED419373-45970207-D5CCBD9C-A890DDAA",
+    "RenderData": null
+  }
+]

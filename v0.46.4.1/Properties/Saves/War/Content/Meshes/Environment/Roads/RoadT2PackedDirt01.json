@@ -1,0 +1,279 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "RoadT2PackedDirt01",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -327.67163,
+                "Y": 500.0,
+                "Z": 23.847033
+              },
+              {
+                "X": -327.67163,
+                "Y": -500.0,
+                "Z": 23.847033
+              },
+              {
+                "X": 287.8198,
+                "Y": -500.0,
+                "Z": 28.11718
+              },
+              {
+                "X": 287.8198,
+                "Y": 500.0,
+                "Z": 28.11718
+              },
+              {
+                "X": 576.8313,
+                "Y": -500.0,
+                "Z": -109.88199
+              },
+              {
+                "X": -541.11206,
+                "Y": -500.0,
+                "Z": -109.88199
+              },
+              {
+                "X": -541.11206,
+                "Y": 500.0,
+                "Z": -109.881935
+              },
+              {
+                "X": 576.8313,
+                "Y": 500.0,
+                "Z": -109.881935
+              },
+              {
+                "X": 569.11633,
+                "Y": 500.0,
+                "Z": -56.192078
+              },
+              {
+                "X": 569.11633,
+                "Y": -500.0,
+                "Z": -56.19214
+              },
+              {
+                "X": -535.40015,
+                "Y": -500.0,
+                "Z": -56.19214
+              },
+              {
+                "X": -535.40015,
+                "Y": 500.0,
+                "Z": -56.192078
+              },
+              {
+                "X": -442.59164,
+                "Y": 500.0,
+                "Z": 4.9043903
+              },
+              {
+                "X": -442.59164,
+                "Y": -500.0,
+                "Z": 4.9043674
+              },
+              {
+                "X": 459.41953,
+                "Y": -500.0,
+                "Z": 4.904945
+              },
+              {
+                "X": 459.41953,
+                "Y": 500.0,
+                "Z": 4.9049716
+              },
+              {
+                "X": -130.94914,
+                "Y": -500.0,
+                "Z": 33.51423
+              },
+              {
+                "X": -130.94914,
+                "Y": 500.0,
+                "Z": 33.514225
+              },
+              {
+                "X": 33.12834,
+                "Y": -500.0,
+                "Z": 36.853184
+              },
+              {
+                "X": 33.12834,
+                "Y": 500.0,
+                "Z": 36.853184
+              },
+              {
+                "X": 373.97665,
+                "Y": -500.0,
+                "Z": 21.865955
+              },
+              {
+                "X": 373.97665,
+                "Y": 500.0,
+                "Z": 21.865967
+              },
+              {
+                "X": 531.56165,
+                "Y": -500.0,
+                "Z": -18.46103
+              },
+              {
+                "X": 531.56165,
+                "Y": 500.0,
+                "Z": -18.46099
+              },
+              {
+                "X": -501.79538,
+                "Y": -500.0,
+                "Z": -21.267029
+              },
+              {
+                "X": -501.79538,
+                "Y": 500.0,
+                "Z": -21.266983
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -541.11206,
+                "Y": -500.0,
+                "Z": -109.88199
+              },
+              "Max": {
+                "X": 576.8313,
+                "Y": 500.0,
+                "Z": 36.853184
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "PhysMaterial": {
+        "ObjectName": "PhysicalMaterial T2RoadPhys",
+        "ObjectPath": "War/Content/PhysicalMaterials/T2RoadPhys.0"
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "RoadT2PackedDirt01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 1537,
+        "SizeOnDisk": 1537,
+        "OffsetInFile": "0xA0E3"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "RoadT2PackedDirt01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RoadDirt01",
+            "ObjectPath": "War/Content/Materials/Environment/RoadDirt01.0"
+          },
+          "MaterialSlotName": "RoadT3Gravel01",
+          "ImportedMaterialSlotName": "RoadT3Gravel01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1019.98236,
+            "LocalUVDensities": 2108.1597,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant t2road",
+            "ObjectPath": "War/Content/Materials/t2road.0"
+          },
+          "MaterialSlotName": "t2road",
+          "ImportedMaterialSlotName": "t2road",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 2108.1597,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 21.050903,
+          "Y": -0.00021362305,
+          "Z": -60.677467
+        },
+        "BoxExtent": {
+          "X": 567.3538,
+          "Y": 500.00043,
+          "Z": 100.57177
+        },
+        "SphereRadius": 744.0464
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup RoadT2PackedDirt01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Roads/RoadT2PackedDirt01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision RoadT2PackedDirt01:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Roads/RoadT2PackedDirt01.1"
+    },
+    "LightingGuid": "B01F1CB8-48E28957-7317A182-641ABF68",
+    "RenderData": null
+  }
+]

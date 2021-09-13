@@ -1,0 +1,105 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "NorthShrub03",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -1.061676,
+              "Y": -1.6164856,
+              "Z": 55.289948
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 200.0,
+            "Y": 125.0,
+            "Z": 150.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "NorthShrub03",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x13E5B"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "NorthShrub03",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant NorthShrub",
+            "ObjectPath": "War/Content/Materials/Environment/Props/NorthShrub.0"
+          },
+          "MaterialSlotName": "NorthShrub",
+          "ImportedMaterialSlotName": "NorthShrub",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 124.21087,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 124.21087,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -7.900421,
+          "Y": -11.874725,
+          "Z": 144.29881
+        },
+        "BoxExtent": {
+          "X": 153.822,
+          "Y": 124.696396,
+          "Z": 166.80154
+        },
+        "SphereRadius": 224.88815
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup NorthShrub03:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/NorthShrub03.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision NorthShrub03:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/NorthShrub03.1"
+    },
+    "LightingGuid": "A1983D20-4C87DF24-53CABDB2-30276720",
+    "RenderData": null
+  }
+]

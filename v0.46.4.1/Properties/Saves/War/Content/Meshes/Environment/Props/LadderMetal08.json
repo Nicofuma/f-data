@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "LadderMetal08",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_5",
+    "Outer": "LadderMetal08",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x4343"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "LadderMetal08",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant LadderMetal",
+            "ObjectPath": "War/Content/Materials/Environment/Props/LadderMetal.0"
+          },
+          "MaterialSlotName": "Material #25",
+          "ImportedMaterialSlotName": "Material #25",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 135.4304,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 135.4304,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -13.278019,
+          "Z": 178.5882
+        },
+        "BoxExtent": {
+          "X": 42.206707,
+          "Y": 47.091904,
+          "Z": 177.7345
+        },
+        "SphereRadius": 186.1051
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup LadderMetal08:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/LadderMetal08.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision LadderMetal08:NavCollision_5",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/LadderMetal08.1"
+    },
+    "LightingGuid": "4A721D15-4F2476CD-45479E96-8BCFBD4F",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,518 @@
+[
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "BPAluminumTier3Resource_C",
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPAluminumTier3Resource_C",
+    "Properties": {
+      "Timelines": [
+        {
+          "ObjectName": "TimelineTemplate BPAluminumTier3Resource_C:Timeline_0_Template",
+          "ObjectPath": "War/Content/Blueprints/Resources/BPAluminumTier3Resource.27"
+        }
+      ],
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPAluminumTier3Resource_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPAluminumTier3Resource.23"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty BPAluminumTier3Resource_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPAluminumTier3Resource.0"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function BPAluminumTier3Resource_C:ExecuteUbergraph_BPAluminumTier3Resource",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPAluminumTier3Resource.8"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class Resource",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty BPAluminumTier3Resource_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPAluminumTier3Resource.0"
+      },
+      {
+        "ObjectName": "Function BPAluminumTier3Resource_C:Timeline_0__FinishedFunc",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPAluminumTier3Resource.14"
+      },
+      {
+        "ObjectName": "Function BPAluminumTier3Resource_C:Timeline_0__UpdateFunc",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPAluminumTier3Resource.15"
+      },
+      {
+        "ObjectName": "Function BPAluminumTier3Resource_C:BPOnGatherHit",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPAluminumTier3Resource.13"
+      },
+      {
+        "ObjectName": "Function BPAluminumTier3Resource_C:ExecuteUbergraph_BPAluminumTier3Resource",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPAluminumTier3Resource.8"
+      },
+      {
+        "ObjectName": "ObjectProperty BPAluminumTier3Resource_C:Resource",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPAluminumTier3Resource.6"
+      },
+      {
+        "ObjectName": "ObjectProperty BPAluminumTier3Resource_C:Box",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPAluminumTier3Resource.16"
+      },
+      {
+        "ObjectName": "StructProperty BPAluminumTier3Resource_C:Timeline_0_NewTrack_0_48E1375A4CA81D0D75C2F683D3EE951A",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPAluminumTier3Resource.26"
+      },
+      {
+        "ObjectName": "ByteProperty BPAluminumTier3Resource_C:Timeline_0__Direction_48E1375A4CA81D0D75C2F683D3EE951A",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPAluminumTier3Resource.5"
+      },
+      {
+        "ObjectName": "ObjectProperty BPAluminumTier3Resource_C:Timeline_0",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPAluminumTier3Resource.17"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 9,
+    "ClassWithin": null,
+    "ClassConfigName": "/Game/Audio/SFX/Resources/ScrapTransition_Cue_13",
+    "ClassGeneratedBy": null,
+    "Interfaces": [],
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPAluminumTier3Resource_C",
+    "Name": "Default__BPAluminumTier3Resource_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "Timeline_0_NewTrack_0_48E1375A4CA81D0D75C2F683D3EE951A": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "HammerImpactEffect": {
+        "ObjectName": "BlueprintGeneratedClass HammerImpactEffectSpecial_C",
+        "ObjectPath": "War/Content/Blueprints/Items/HammerImpactEffectSpecial.1"
+      },
+      "SledgeImpactEffect": {
+        "ObjectName": "BlueprintGeneratedClass SledgeImpactEffectSpecial_C",
+        "ObjectPath": "War/Content/Blueprints/Items/SledgeImpactEffectSpecial.1"
+      },
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPAluminumTier3Resource_C:ResourceArrow",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPAluminumTier3Resource.3"
+      },
+      "HighYieldEffect": {
+        "ObjectName": "ParticleSystemComponent Default__BPAluminumTier3Resource_C:HighYieldEffect",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPAluminumTier3Resource.18"
+      },
+      "ResourcePickupClass": {
+        "ObjectName": "BlueprintGeneratedClass BPAluminum_C",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPAluminum.0"
+      },
+      "BonusAmountOnFinalGather": 2,
+      "BaseAmount": 4,
+      "RequiredAmountForSplit": 2,
+      "NumNextTierResourcesToSpawn": 0,
+      "bShouldPersist": false,
+      "DestroyedFX": {
+        "ObjectName": "ParticleSystem CopperBasicTransition",
+        "ObjectPath": "War/Content/FX/CopperBasicTransition.52"
+      },
+      "DestroyedSoundCue": {
+        "ObjectName": "SoundCue ScrapTransition_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Resources/ScrapTransition_Cue.0"
+      },
+      "SpawnSoundCue": {
+        "ObjectName": "SoundCue SpecialResourceSpawn_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Resources/SpecialResourceSpawn_Cue.0"
+      },
+      "MinNetUpdateFrequency": 1.0,
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPAluminumTier3Resource_C:ResourceArrow",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPAluminumTier3Resource.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "ResourceArrow",
+    "Outer": "Default__BPAluminumTier3Resource_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "Box_GEN_VARIABLE",
+    "Outer": "BPAluminumTier3Resource_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 128.0,
+        "Y": 128.0,
+        "Z": 202.53062
+      },
+      "AreaClass": {
+        "ObjectName": "Class NavArea_Obstacle",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "ResourceNoPawnCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapDowncast",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Projectile",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "MassInKgOverride": 1270.6456
+      },
+      "RelativeLocation": {
+        "X": -3.333355,
+        "Y": -4.458297,
+        "Z": 80.195786
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -3.1E-05,
+        "Roll": 0.0
+      },
+      "RelativeScale3D": {
+        "X": 0.962836,
+        "Y": 0.922335,
+        "Z": 0.88299
+      }
+    }
+  },
+  {
+    "Type": "ByteProperty",
+    "Name": "Timeline_0__Direction_48E1375A4CA81D0D75C2F683D3EE951A",
+    "Outer": "BPAluminumTier3Resource_C",
+    "Enum": {
+      "ObjectName": "Enum ETimelineDirection",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Resource",
+    "Outer": "BPAluminumTier3Resource_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_BPAluminumTier3Resource",
+    "PropertyFlags": 148
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BPAluminumTier3Resource",
+    "Outer": "BPAluminumTier3Resource_C",
+    "Children": [
+      {
+        "ObjectName": "IntProperty BPAluminumTier3Resource_C:ExecuteUbergraph_BPAluminumTier3Resource.EntryPoint",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPAluminumTier3Resource.7"
+      },
+      {
+        "ObjectName": "StructProperty BPAluminumTier3Resource_C:ExecuteUbergraph_BPAluminumTier3Resource.CallFunc_K2_SetRelativeLocation_SweepHitResult",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPAluminumTier3Resource.25"
+      },
+      {
+        "ObjectName": "ObjectProperty BPAluminumTier3Resource_C:ExecuteUbergraph_BPAluminumTier3Resource.K2Node_Event_Gatherer",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPAluminumTier3Resource.10"
+      },
+      {
+        "ObjectName": "IntProperty BPAluminumTier3Resource_C:ExecuteUbergraph_BPAluminumTier3Resource.K2Node_Event_GatherLevel",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPAluminumTier3Resource.9"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "K2Node_Event_GatherLevel",
+    "Outer": "ExecuteUbergraph_BPAluminumTier3Resource",
+    "PropertyFlags": 2
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_Event_Gatherer",
+    "Outer": "ExecuteUbergraph_BPAluminumTier3Resource",
+    "PropertyClass": {
+      "ObjectName": "Class WarCharacter",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "GatherLevel",
+    "Outer": "BPOnGatherHit",
+    "PropertyFlags": 150
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Gatherer",
+    "Outer": "BPOnGatherHit",
+    "PropertyFlags": 148,
+    "PropertyClass": {
+      "ObjectName": "Class WarCharacter",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BPOnGatherHit",
+    "Outer": "BPAluminumTier3Resource_C",
+    "SuperStruct": {
+      "ObjectName": "Function Resource:BPOnGatherHit",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPAluminumTier3Resource_C:BPOnGatherHit.Gatherer",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPAluminumTier3Resource.12"
+      },
+      {
+        "ObjectName": "IntProperty BPAluminumTier3Resource_C:BPOnGatherHit.GatherLevel",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPAluminumTier3Resource.11"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "Function",
+    "Name": "Timeline_0__FinishedFunc",
+    "Outer": "BPAluminumTier3Resource_C",
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "Function",
+    "Name": "Timeline_0__UpdateFunc",
+    "Outer": "BPAluminumTier3Resource_C",
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Box",
+    "Outer": "BPAluminumTier3Resource_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BoxComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Timeline_0",
+    "Outer": "BPAluminumTier3Resource_C",
+    "PropertyFlags": 524292,
+    "PropertyClass": {
+      "ObjectName": "Class TimelineComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "HighYieldEffect",
+    "Outer": "Default__BPAluminumTier3Resource_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPAluminumTier3Resource_C:ResourceArrow",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPAluminumTier3Resource.3"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPAluminumTier3Resource_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPAluminumTier3Resource_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPAluminumTier3Resource.19"
+      },
+      "VariableGuid": "1D2A033D-4B64CC3F-021BACBD-61267396",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_15",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BoxComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent BPAluminumTier3Resource_C:Box_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPAluminumTier3Resource.4"
+      },
+      "ParentComponentOrVariableName": "ResourceArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "EC6F48AF-417233BB-1CB0ACA5-19E51CE4",
+      "InternalVariableName": "Box"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPAluminumTier3Resource_C:Resource_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPAluminumTier3Resource.24"
+      },
+      "ParentComponentOrVariableName": "ResourceArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "985E3E27-47540F90-AA53C7BE-A184D235",
+      "InternalVariableName": "Resource"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPAluminumTier3Resource_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPAluminumTier3Resource_C:SimpleConstructionScript_0.SCS_Node_15",
+          "ObjectPath": "War/Content/Blueprints/Resources/BPAluminumTier3Resource.21"
+        },
+        {
+          "ObjectName": "SCS_Node BPAluminumTier3Resource_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Resources/BPAluminumTier3Resource.22"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPAluminumTier3Resource_C:SimpleConstructionScript_0.SCS_Node_15",
+          "ObjectPath": "War/Content/Blueprints/Resources/BPAluminumTier3Resource.21"
+        },
+        {
+          "ObjectName": "SCS_Node BPAluminumTier3Resource_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Resources/BPAluminumTier3Resource.22"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPAluminumTier3Resource_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPAluminumTier3Resource.20"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Resource_GEN_VARIABLE",
+    "Outer": "BPAluminumTier3Resource_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh ResourceAluminum03",
+        "ObjectPath": "War/Content/Meshes/Resources/ResourceAluminum03.2"
+      }
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_K2_SetRelativeLocation_SweepHitResult",
+    "Outer": "ExecuteUbergraph_BPAluminumTier3Resource",
+    "PropertyFlags": 549755813888,
+    "Struct": {
+      "ObjectName": "ScriptStruct HitResult",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Timeline_0_NewTrack_0_48E1375A4CA81D0D75C2F683D3EE951A",
+    "Outer": "BPAluminumTier3Resource_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "TimelineTemplate",
+    "Name": "Timeline_0_Template",
+    "Outer": "BPAluminumTier3Resource_C",
+    "Properties": {
+      "TimelineLength": 0.28,
+      "LengthMode": "TL_LastKeyFrame",
+      "VectorTracks": [
+        {
+          "CurveVector": {
+            "ObjectName": "CurveVector ResourceAnimCurve",
+            "ObjectPath": "War/Content/Blueprints/Resources/ResourceAnimCurve.0"
+          },
+          "PropertyName": "Timeline_0_NewTrack_0_48E1375A4CA81D0D75C2F683D3EE951A",
+          "TrackName": "NewTrack_0",
+          "bIsExternalCurve": true
+        }
+      ],
+      "TimelineGuid": "48E1375A-4CA81D0D-75C2F683-D3EE951A",
+      "VariableName": "Timeline_0",
+      "DirectionPropertyName": "Timeline_0__Direction_48E1375A4CA81D0D75C2F683D3EE951A",
+      "UpdateFunctionName": "Timeline_0__UpdateFunc",
+      "FinishedFunctionName": "Timeline_0__FinishedFunc"
+    }
+  }
+]

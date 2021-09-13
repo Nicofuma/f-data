@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_TruckDefensiveW_Armour",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "SM_TruckDefensiveW_Armour",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x13060"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_TruckDefensiveW_Armour",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TruckWarArmoured",
+            "ObjectPath": "War/Content/Materials/Vehicles/TruckWarArmoured.0"
+          },
+          "MaterialSlotName": "TruckWarArmoured",
+          "ImportedMaterialSlotName": "TruckWarArmoured",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 413.98376,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 413.98376,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -18.725037,
+          "Z": 193.80829
+        },
+        "BoxExtent": {
+          "X": 136.30525,
+          "Y": 406.49927,
+          "Z": 122.830956
+        },
+        "SphereRadius": 429.6422
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_TruckDefensiveW_Armour:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Vehicles/PrototypeVehicles/SM_TruckDefensiveW_Armour.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_TruckDefensiveW_Armour:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Vehicles/PrototypeVehicles/SM_TruckDefensiveW_Armour.1"
+    },
+    "LightingGuid": "3B856E0B-4819C8DF-AF6F5D89-1867681F",
+    "RenderData": null
+  }
+]

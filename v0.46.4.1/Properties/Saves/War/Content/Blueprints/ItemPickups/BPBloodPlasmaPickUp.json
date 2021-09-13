@@ -1,0 +1,106 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPBloodPlasmaPickUp_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPBloodPlasmaPickUp_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPBloodPlasmaPickUp.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class BasicItemPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPBloodPlasmaPickUp_C",
+    "Name": "Default__BPBloodPlasmaPickUp_C",
+    "Properties": {
+      "CodeName": "BloodPlasma",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "E52E575F4B007AA26F9B53B54681749C",
+        "SourceString": "Blood Plasma"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "1B9EA5094C9510ADD875C682CD9695E1",
+        "SourceString": "A blood component used to treat wounded soldiers on the battlefield."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D BloodPlasmaItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/BloodPlasmaItemIcon.0"
+      },
+      "ItemCategory": "EItemCategory::Medical",
+      "ItemFlagsMask": 513,
+      "ItemProfileType": "EItemProfileType::Tool",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPBloodPlasmaPickUp_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPBloodPlasmaPickUp.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPBloodPlasmaPickUp_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPBloodPlasmaPickUp.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPBloodPlasmaPickUp_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPBloodPlasmaPickUp_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPBloodPlasmaPickUp_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPBloodPlasmaPickUp.3"
+      },
+      "VariableGuid": "B80BB0E4-4875F16E-9EBB25A7-549A74DD",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPBloodPlasmaPickUp_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPBloodPlasmaPickUp_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPBloodPlasmaPickUp.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPBloodPlasmaPickUp_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPBloodPlasmaPickUp_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPBloodPlasmaPickUp.2"
+      }
+    }
+  }
+]

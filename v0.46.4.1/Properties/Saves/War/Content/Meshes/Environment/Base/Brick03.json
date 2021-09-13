@@ -1,0 +1,89 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Brick03",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Brick03",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xAD4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Brick03",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BricksSingle",
+            "ObjectPath": "War/Content/Materials/Environment/BricksSingle.0"
+          },
+          "MaterialSlotName": "BricksSingle",
+          "ImportedMaterialSlotName": "BricksSingle",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 263.8127,
+            "LocalUVDensities": 118.46433,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 118.46433,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.43453217,
+          "Y": 0.039128304,
+          "Z": 0.27208614
+        },
+        "BoxExtent": {
+          "X": 28.939049,
+          "Y": 15.468833,
+          "Z": 15.451021
+        },
+        "SphereRadius": 33.470474
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Brick03:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Base/Brick03.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Brick03:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Base/Brick03.1"
+    },
+    "LightingGuid": "289BEE57-4FB064B7-3BBB9590-31907CEA",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,94 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Jar",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "BuildScale3D": {
+        "X": 1.2,
+        "Y": 1.2,
+        "Z": 1.2
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "Jar",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x6BCD"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Jar",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Dishes",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Dishes.0"
+          },
+          "MaterialSlotName": "Tablewear_Inst",
+          "ImportedMaterialSlotName": "Tablewear_Inst",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 146.4299,
+            "LocalUVDensities": 60.240894,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 60.240894,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.0012369156,
+          "Y": -0.00065135956,
+          "Z": 11.485999
+        },
+        "BoxExtent": {
+          "X": 10.05501,
+          "Y": 10.05471,
+          "Z": 11.485999
+        },
+        "SphereRadius": 14.348184
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Jar:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Jar.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Jar:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Jar.1"
+    },
+    "LightingGuid": "4735CFA3-43DF919B-359FC099-D043F526",
+    "RenderData": null
+  }
+]

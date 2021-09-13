@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "TrenchT3RoofTrim03",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "TrenchT3RoofTrim03",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1C87"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TrenchT3RoofTrim03",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortTrenchT3ConcreteDirt01",
+            "ObjectPath": "War/Content/Materials/Structures/FortTrenchT3ConcreteDirt01.0"
+          },
+          "MaterialSlotName": "FortTrenchT3ConcreteDirt01",
+          "ImportedMaterialSlotName": "FortTrenchT3ConcreteDirt01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 372.53458,
+            "LocalUVDensities": 269.6782,
+            "LocalUVDensities": 269.6782,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 269.6782,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 38.99846,
+          "Y": -1.5258789E-05,
+          "Z": 28.407318
+        },
+        "BoxExtent": {
+          "X": 18.278843,
+          "Y": 187.37712,
+          "Z": 35.392452
+        },
+        "SphereRadius": 190.8086
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TrenchT3RoofTrim03:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/TrenchT3RoofTrim03.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TrenchT3RoofTrim03:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/TrenchT3RoofTrim03.1"
+    },
+    "LightingGuid": "2D865D6D-40194E29-03250291-DE66AC41",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "TrenchBarbedWireT1",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "TrenchBarbedWireT1",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xBD2"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TrenchBarbedWireT1",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BarbedWireStraight",
+            "ObjectPath": "War/Content/Materials/Environment/BarbedWireStraight.0"
+          },
+          "MaterialSlotName": "BarbedWireStraight",
+          "ImportedMaterialSlotName": "BarbedWireStraight",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 127.94608,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -5.675598,
+          "Y": -0.3997383,
+          "Z": 41.795616
+        },
+        "BoxExtent": {
+          "X": 165.73285,
+          "Y": 38.631165,
+          "Z": 30.200203
+        },
+        "SphereRadius": 172.8346
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TrenchBarbedWireT1:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Splines/TrenchBarbedWireT1.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TrenchBarbedWireT1:NavCollision_4",
+      "ObjectPath": "War/Content/Meshes/Environment/Splines/TrenchBarbedWireT1.1"
+    },
+    "LightingGuid": "19C62638-4ECDA046-A423B09B-D5697548",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Bottle01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "Bottle01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1A45"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Bottle01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant GlassBottles01",
+            "ObjectPath": "War/Content/Materials/Environment/Props/GlassBottles01.0"
+          },
+          "MaterialSlotName": "Material #1097",
+          "ImportedMaterialSlotName": "Material #1097",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 149.14162,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 149.14162,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 30.376059
+        },
+        "BoxExtent": {
+          "X": 9.977795,
+          "Y": 9.4894495,
+          "Z": 30.260572
+        },
+        "SphereRadius": 30.89826
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Bottle01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Bottle01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Bottle01:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Bottle01.1"
+    },
+    "LightingGuid": "C082F77D-46688AE9-0D9185A2-9E58A755",
+    "RenderData": null
+  }
+]

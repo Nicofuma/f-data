@@ -1,0 +1,136 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "HalloweenPyre",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 0.582077,
+              "Y": 16.358154,
+              "Z": 61.84944
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Radius": 163.011,
+            "Length": 397.9519,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_84",
+    "Outer": "HalloweenPyre",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 5521,
+        "SizeOnDisk": 5521,
+        "OffsetInFile": "0x291B1"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "HalloweenPyre",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FireBarrel",
+            "ObjectPath": "War/Content/FX/Materials/FireBarrel.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 215.74136,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TrenchBranches",
+            "ObjectPath": "War/Content/Materials/Environment/TrenchBranches.0"
+          },
+          "MaterialSlotName": "TrenchBranches",
+          "ImportedMaterialSlotName": "Material #558",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 245.49469,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant DryStoneWall3",
+            "ObjectPath": "War/Content/Materials/Environment/Props/DryStoneWall3.0"
+          },
+          "MaterialSlotName": "Trim_low0.001",
+          "ImportedMaterialSlotName": "Trim_low0.001",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 308.9243,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 266.08826,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.55789185,
+          "Y": 3.9108734,
+          "Z": 197.94519
+        },
+        "BoxExtent": {
+          "X": 186.20349,
+          "Y": 187.19116,
+          "Z": 298.8217
+        },
+        "SphereRadius": 317.96735
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup HalloweenPyre:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Event/HalloweenPyre.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision HalloweenPyre:NavCollision_84",
+      "ObjectPath": "War/Content/Meshes/Environment/Event/HalloweenPyre.1"
+    },
+    "LightingGuid": "C2407A01-430B3BC0-D6410480-6853684D",
+    "RenderData": null
+  }
+]

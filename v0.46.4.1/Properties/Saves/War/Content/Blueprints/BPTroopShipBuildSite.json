@@ -1,0 +1,309 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "Box",
+    "Outer": "BPTroopShipBuildSite_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BoxComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPTroopShipBuildSite_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPTroopShipBuildSite_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/BPTroopShipBuildSite.11"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class VehicleBuildSite",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPTroopShipBuildSite_C:Box",
+        "ObjectPath": "War/Content/Blueprints/BPTroopShipBuildSite.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTroopShipBuildSite_C:TroopShip",
+        "ObjectPath": "War/Content/Blueprints/BPTroopShipBuildSite.6"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPTroopShipBuildSite_C",
+    "Name": "Default__BPTroopShipBuildSite_C",
+    "Properties": {
+      "BuildOffset": {
+        "X": 75.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "CodeName": "TroopShipBuildSite",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPTroopShipBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/BPTroopShipBuildSite.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPTroopShipBuildSite_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/BPTroopShipBuildSite.5"
+      },
+      "Health": 0,
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPTroopShipBuildSite_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/BPTroopShipBuildSite.13"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPTroopShipBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/BPTroopShipBuildSite.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPTroopShipBuildSite_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "Box_GEN_VARIABLE",
+    "Outer": "BPTroopShipBuildSite_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 1040.0,
+        "Y": 350.0,
+        "Z": 345.0
+      },
+      "AreaClass": {
+        "ObjectName": "Class NavArea_Obstacle",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "VehicleBuildSite",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "OverlapDowncast",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 140.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPTroopShipBuildSite_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 300.0,
+        "Y": 256.0,
+        "Z": 128.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPTroopShipBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/BPTroopShipBuildSite.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 230.0
+      }
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "TroopShip",
+    "Outer": "BPTroopShipBuildSite_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SkeletalMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPTroopShipBuildSite_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPTroopShipBuildSite_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/BPTroopShipBuildSite.7"
+      },
+      "VariableGuid": "83B4B79D-431106A7-863F4193-3565B561",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SkeletalMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SkeletalMeshComponent BPTroopShipBuildSite_C:TroopShip_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/BPTroopShipBuildSite.12"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "80491679-44CFE3BE-E7AF0684-A820810F",
+      "InternalVariableName": "TroopShip"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BoxComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent BPTroopShipBuildSite_C:Box_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/BPTroopShipBuildSite.4"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "2C766000-4B4A4601-87F9119F-481F47CD",
+      "InternalVariableName": "Box"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPTroopShipBuildSite_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPTroopShipBuildSite_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/BPTroopShipBuildSite.9"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShipBuildSite_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/BPTroopShipBuildSite.10"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPTroopShipBuildSite_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/BPTroopShipBuildSite.9"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShipBuildSite_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/BPTroopShipBuildSite.10"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPTroopShipBuildSite_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/BPTroopShipBuildSite.8"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "TroopShip_GEN_VARIABLE",
+    "Outer": "BPTroopShipBuildSite_C",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_TroopShip_C",
+        "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.1"
+      },
+      "AnimationData": {
+        "bSavedLooping": false,
+        "bSavedPlaying": false
+      },
+      "ClothingSimulationFactory": {
+        "ObjectName": "Class ClothingSimulationFactoryNv",
+        "ObjectPath": "/Script/ClothingSystemRuntimeNv"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_TroopShip",
+        "ObjectPath": "War/Content/Meshes/Vehicles/SK_TroopShip.0"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material BuildSite",
+          "ObjectPath": "War/Content/Materials/Structures/BuildSite.0"
+        },
+        {
+          "ObjectName": "Material BuildSite",
+          "ObjectPath": "War/Content/Materials/Structures/BuildSite.0"
+        },
+        {
+          "ObjectName": "Material BuildSite",
+          "ObjectPath": "War/Content/Materials/Structures/BuildSite.0"
+        },
+        {
+          "ObjectName": "Material BuildSite",
+          "ObjectPath": "War/Content/Materials/Structures/BuildSite.0"
+        },
+        {
+          "ObjectName": "Material BuildSite",
+          "ObjectPath": "War/Content/Materials/Structures/BuildSite.0"
+        },
+        {
+          "ObjectName": "Material BuildSite",
+          "ObjectPath": "War/Content/Materials/Structures/BuildSite.0"
+        },
+        {
+          "ObjectName": "Material BuildSite",
+          "ObjectPath": "War/Content/Materials/Structures/BuildSite.0"
+        }
+      ],
+      "RelativeLocation": {
+        "X": -110.0,
+        "Y": -6.5565114E-06,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPTroopShipBuildSite_C"
+  }
+]

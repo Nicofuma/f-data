@@ -1,0 +1,147 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "OilWellDestroyed",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "OilWellDestroyed",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x4B21C"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "OilWellDestroyed",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant OilWellCritical",
+            "ObjectPath": "War/Content/Materials/Structures/OilWellCritical.0"
+          },
+          "MaterialSlotName": "Material #515",
+          "ImportedMaterialSlotName": "OilWell",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1026.4558,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 3.1587842,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Concrete03Critical",
+            "ObjectPath": "War/Content/Materials/Environment/House/Concrete03Critical.0"
+          },
+          "MaterialSlotName": "ConveyorBelt",
+          "ImportedMaterialSlotName": "ConveyorBelt",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 302.21335,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 1.0402919,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ConveyorBelt",
+            "ObjectPath": "War/Content/Materials/Environment/ConveyorBelt.0"
+          },
+          "MaterialSlotName": "Concrete",
+          "ImportedMaterialSlotName": "Concrete",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 52.06297,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 2.3131998,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Concrete03",
+            "ObjectPath": "War/Content/Materials/Environment/House/Concrete03.0"
+          },
+          "MaterialSlotName": "Material #709",
+          "ImportedMaterialSlotName": "Material #709",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 307.53867,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 1.7030671,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Concrete03Damaged",
+            "ObjectPath": "War/Content/Materials/Environment/House/Concrete03Damaged.0"
+          },
+          "MaterialSlotName": "Concrete_Damaged",
+          "ImportedMaterialSlotName": "Concrete_Damaged",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 840.87616,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -9.376617,
+          "Y": 5.4706116,
+          "Z": 6.689331
+        },
+        "BoxExtent": {
+          "X": 259.5272,
+          "Y": 328.43695,
+          "Z": 470.64142
+        },
+        "SphereRadius": 535.6681
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup OilWellDestroyed:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/OilWellDestroyed.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision OilWellDestroyed:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Structures/OilWellDestroyed.1"
+    },
+    "LightingGuid": "9BF230DD-4EAB2A16-247EFB91-B87018C1",
+    "RenderData": null
+  }
+]

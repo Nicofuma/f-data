@@ -1,0 +1,315 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "Sphere",
+    "Outer": "ComponentsField_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SphereComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ComponentsField_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript ComponentsField_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Resources/ComponentsField.11"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class ResourceField",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty ComponentsField_C:Sphere",
+        "ObjectPath": "War/Content/Blueprints/Resources/ComponentsField.0"
+      },
+      {
+        "ObjectName": "ObjectProperty ComponentsField_C:Decal",
+        "ObjectPath": "War/Content/Blueprints/Resources/ComponentsField.6"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "ComponentsField_C",
+    "Name": "Default__ComponentsField_C",
+    "Properties": {
+      "ResourceFieldMeshComponent": {
+        "ObjectName": "StaticMeshComponent Default__ComponentsField_C:ResourceFieldMesh",
+        "ObjectPath": "War/Content/Blueprints/Resources/ComponentsField.14"
+      },
+      "NoBuildVolume": {
+        "ObjectName": "SphereComponent Default__ComponentsField_C:NoBuildVolume",
+        "ObjectPath": "War/Content/Blueprints/Resources/ComponentsField.13"
+      },
+      "ResourceFieldMesh1": {
+        "ObjectName": "StaticMesh ComponentField01",
+        "ObjectPath": "War/Content/Meshes/Resources/ComponentField01.2"
+      },
+      "ResourceFieldMesh2": {
+        "ObjectName": "StaticMesh ComponentField02",
+        "ObjectPath": "War/Content/Meshes/Resources/ComponentField02.2"
+      },
+      "ResourceFieldMesh3": {
+        "ObjectName": "StaticMesh ComponentField03",
+        "ObjectPath": "War/Content/Meshes/Resources/ComponentField03.2"
+      },
+      "ResourceClass": {
+        "ObjectName": "BlueprintGeneratedClass BPComponentsResource_C",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPComponentsResource.1"
+      },
+      "SpawnPeriod": 16.0,
+      "MinSpawnDistance": 450.0,
+      "ResourcesPerReplenishment": 167,
+      "TimeToReplenish": 21600.0,
+      "CodeName": "ComponentsField",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "F1EDE624437C2840B8704482B3007A5B",
+        "SourceString": "Component Field"
+      },
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__ComponentsField_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Resources/ComponentsField.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__ComponentsField_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Resources/ComponentsField.4"
+      },
+      "MaxHealth": 2147483647,
+      "Health": 2147483647,
+      "MapIconType": "EMapIconType::ComponentField",
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__ComponentsField_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Resources/ComponentsField.15"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__ComponentsField_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Resources/ComponentsField.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__ComponentsField_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__ComponentsField_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 512.0,
+        "Y": 512.0,
+        "Z": 128.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__ComponentsField_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Resources/ComponentsField.3"
+      }
+    }
+  },
+  {
+    "Type": "DecalComponent",
+    "Name": "Decal_GEN_VARIABLE",
+    "Outer": "ComponentsField_C",
+    "Properties": {
+      "DecalMaterial": {
+        "ObjectName": "MaterialInstanceConstant DirtPatch",
+        "ObjectPath": "War/Content/Materials/Decals/DirtPatch.0"
+      },
+      "DecalSize": {
+        "X": 128.0,
+        "Y": 600.0,
+        "Z": 600.0
+      },
+      "RelativeRotation": {
+        "Pitch": 270.0,
+        "Yaw": 720.00995,
+        "Roll": -0.010021612
+      }
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Decal",
+    "Outer": "ComponentsField_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class DecalComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "ComponentsField_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent ComponentsField_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Resources/ComponentsField.7"
+      },
+      "VariableGuid": "1622212F-44C749D8-2C0E9A89-E9A4B620",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class DecalComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "DecalComponent ComponentsField_C:Decal_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Resources/ComponentsField.5"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "39FDE96C-49B197FA-2539D6AE-774D6185",
+      "InternalVariableName": "Decal"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SphereComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SphereComponent ComponentsField_C:Sphere_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Resources/ComponentsField.12"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "FCD38BCB-4F92C3CB-446B40AD-EF6B08AD",
+      "InternalVariableName": "Sphere"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "ComponentsField_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node ComponentsField_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Resources/ComponentsField.9"
+        },
+        {
+          "ObjectName": "SCS_Node ComponentsField_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Resources/ComponentsField.10"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node ComponentsField_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Resources/ComponentsField.9"
+        },
+        {
+          "ObjectName": "SCS_Node ComponentsField_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Resources/ComponentsField.10"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node ComponentsField_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Resources/ComponentsField.8"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "Sphere_GEN_VARIABLE",
+    "Outer": "ComponentsField_C",
+    "Properties": {
+      "SphereRadius": 360.0,
+      "AreaClass": {
+        "ObjectName": "Class NavArea_Obstacle",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "CanCharacterStepUpOn": "ECB_No",
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -14.513443,
+        "Y": -27.637833,
+        "Z": 0.000244
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "NoBuildVolume",
+    "Outer": "Default__ComponentsField_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__ComponentsField_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Resources/ComponentsField.3"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ResourceFieldMesh",
+    "Outer": "Default__ComponentsField_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh ComponentField01",
+        "ObjectPath": "War/Content/Meshes/Resources/ComponentField01.2"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__ComponentsField_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Resources/ComponentsField.3"
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__ComponentsField_C"
+  }
+]

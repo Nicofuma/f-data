@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "PropagandaPosterWarV4",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "PropagandaPosterWarV4",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x110F"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "PropagandaPosterWarV4",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant PropagandaFactionsWar02",
+            "ObjectPath": "War/Content/Materials/Environment/Props/PropagandaFactionsWar02.0"
+          },
+          "MaterialSlotName": "Material #25",
+          "ImportedMaterialSlotName": "Material #25",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 426.57297,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 426.57297,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.63334656,
+          "Y": 7.448698,
+          "Z": 5.646591
+        },
+        "BoxExtent": {
+          "X": 69.297134,
+          "Y": 7.4481697,
+          "Z": 105.13921
+        },
+        "SphereRadius": 125.64583
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup PropagandaPosterWarV4:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/PropagandaPosterWarV4.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision PropagandaPosterWarV4:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/PropagandaPosterWarV4.1"
+    },
+    "LightingGuid": "5C06B739-4DDECBAE-1E8159B4-9333A90E",
+    "RenderData": null
+  }
+]

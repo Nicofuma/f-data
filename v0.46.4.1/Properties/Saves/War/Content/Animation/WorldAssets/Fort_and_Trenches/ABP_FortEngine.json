@@ -1,0 +1,151 @@
+[
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "ABP_FortEngine_C",
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "AnimBlueprintGeneratedClass",
+    "Name": "ABP_FortEngine_C",
+    "Properties": {
+      "TargetSkeleton": {
+        "ObjectName": "Skeleton FortEngine_Skeleton",
+        "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortEngine_Skeleton.0"
+      },
+      "OrderedSavedPoseIndicesMap": {
+        "AnimGraph": {
+          "OrderedSavedPoseNodeIndices": []
+        }
+      },
+      "SyncGroupNames": [
+        "engine_sync"
+      ],
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty ABP_FortEngine_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Animation/WorldAssets/Fort_and_Trenches/ABP_FortEngine.0"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function ABP_FortEngine_C:ExecuteUbergraph_ABP_FortEngine",
+        "ObjectPath": "War/Content/Animation/WorldAssets/Fort_and_Trenches/ABP_FortEngine.6"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class AnimInstance",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty ABP_FortEngine_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Animation/WorldAssets/Fort_and_Trenches/ABP_FortEngine.0"
+      },
+      {
+        "ObjectName": "Function ABP_FortEngine_C:AnimGraph",
+        "ObjectPath": "War/Content/Animation/WorldAssets/Fort_and_Trenches/ABP_FortEngine.4"
+      },
+      {
+        "ObjectName": "Function ABP_FortEngine_C:ExecuteUbergraph_ABP_FortEngine",
+        "ObjectPath": "War/Content/Animation/WorldAssets/Fort_and_Trenches/ABP_FortEngine.6"
+      },
+      {
+        "ObjectName": "StructProperty ABP_FortEngine_C:AnimGraphNode_Root_BC5C506D4116076404CF99AF04CBB138",
+        "ObjectPath": "War/Content/Animation/WorldAssets/Fort_and_Trenches/ABP_FortEngine.7"
+      },
+      {
+        "ObjectName": "StructProperty ABP_FortEngine_C:AnimGraphNode_Slot_4851820E41A0674515840498F56B0BE7",
+        "ObjectPath": "War/Content/Animation/WorldAssets/Fort_and_Trenches/ABP_FortEngine.8"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 458752,
+    "ClassWithin": null,
+    "ClassConfigName": "/Game/Animation/WorldAssets/Fort_and_Trenches/ABP_FortEngine_327679",
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "ABP_FortEngine_C",
+    "Name": "Default__ABP_FortEngine_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "AnimGraphNode_Root_BC5C506D4116076404CF99AF04CBB138": {
+        "Result": {
+          "LinkID": 1
+        },
+        "Name": "AnimGraph",
+        "Group": "None"
+      },
+      "AnimGraphNode_Slot_4851820E41A0674515840498F56B0BE7": {
+        "Source": {
+          "LinkID": -1
+        },
+        "SlotName": "DefaultSlot",
+        "bAlwaysUpdateSourcePose": false
+      }
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraph",
+    "Outer": "AnimGraph",
+    "PropertyFlags": 384,
+    "Struct": {
+      "ObjectName": "ScriptStruct PoseLink",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "AnimGraph",
+    "Outer": "ABP_FortEngine_C",
+    "Children": [
+      {
+        "ObjectName": "StructProperty ABP_FortEngine_C:AnimGraph.AnimGraph",
+        "ObjectPath": "War/Content/Animation/WorldAssets/Fort_and_Trenches/ABP_FortEngine.3"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_ABP_FortEngine",
+    "PropertyFlags": 148
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ABP_FortEngine",
+    "Outer": "ABP_FortEngine_C",
+    "Children": [
+      {
+        "ObjectName": "IntProperty ABP_FortEngine_C:ExecuteUbergraph_ABP_FortEngine.EntryPoint",
+        "ObjectPath": "War/Content/Animation/WorldAssets/Fort_and_Trenches/ABP_FortEngine.5"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_Root_BC5C506D4116076404CF99AF04CBB138",
+    "Outer": "ABP_FortEngine_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_Root",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_Slot_4851820E41A0674515840498F56B0BE7",
+    "Outer": "ABP_FortEngine_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_Slot",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  }
+]

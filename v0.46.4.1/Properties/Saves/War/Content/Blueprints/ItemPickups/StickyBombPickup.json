@@ -1,0 +1,112 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "StickyBombPickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript StickyBombPickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/StickyBombPickup.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class GearPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "StickyBombPickup_C",
+    "Name": "Default__StickyBombPickup_C",
+    "Properties": {
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPStickyBombComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Items/BPStickyBombComponent.0"
+      },
+      "Encumbrance": 90,
+      "CodeName": "StickyBomb",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "BED24A1644AE7AD3A2D1FA9C98620FE6",
+        "SourceString": "Anti-Tank Sticky Bomb"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "D92C671F46AF9100526A8FB7F93F89CD",
+        "SourceString": "A adherable grenade designed to penetrate heavy tank armor. The Sticky Bomb can only be thrown a short distance and is ineffective against structures."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D StickyBombIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/StickyBombIcon.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Tertiary",
+      "ItemCategory": "EItemCategory::HeavyArms",
+      "ItemFlagsMask": 9,
+      "ItemProfileType": "EItemProfileType::Throwable",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__StickyBombPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/StickyBombPickup.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__StickyBombPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/StickyBombPickup.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__StickyBombPickup_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "StickyBombPickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent StickyBombPickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/StickyBombPickup.3"
+      },
+      "VariableGuid": "CE7B69B0-45E8ECC6-1C13DB9D-6B1CB20E",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "StickyBombPickup_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node StickyBombPickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/StickyBombPickup.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__StickyBombPickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__StickyBombPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/StickyBombPickup.2"
+      }
+    }
+  }
+]

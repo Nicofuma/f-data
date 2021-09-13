@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Outer": "AntiTankMinePickup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_5",
+    "Outer": "AntiTankMinePickup",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x5FE3"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "AntiTankMinePickup",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant AntiTankMinePickup",
+            "ObjectPath": "War/Content/Materials/Pickups/AntiTankMinePickup.0"
+          },
+          "MaterialSlotName": "AntiTankMinePickup",
+          "ImportedMaterialSlotName": "AntiTankMinePickup",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 139.71597,
+            "LocalUVDensities": 157.93044,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 157.93044,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.0177879,
+          "Y": 0.0,
+          "Z": 10.229256
+        },
+        "BoxExtent": {
+          "X": 41.92475,
+          "Y": 47.91172,
+          "Z": 11.036533
+        },
+        "SphereRadius": 48.508305
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup AntiTankMinePickup:BodySetup_1",
+      "ObjectPath": "War/Content/Meshes/Pickups/AntiTankMinePickup.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision AntiTankMinePickup:NavCollision_5",
+      "ObjectPath": "War/Content/Meshes/Pickups/AntiTankMinePickup.1"
+    },
+    "LightingGuid": "304CE400-4B75BC6C-4A4D329B-2B381027",
+    "RenderData": null
+  }
+]

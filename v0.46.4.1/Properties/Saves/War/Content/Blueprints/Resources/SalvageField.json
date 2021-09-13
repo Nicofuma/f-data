@@ -1,0 +1,331 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "Sphere",
+    "Outer": "SalvageField_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SphereComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "SalvageField_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript SalvageField_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Resources/SalvageField.11"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class ResourceField",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty SalvageField_C:Sphere",
+        "ObjectPath": "War/Content/Blueprints/Resources/SalvageField.0"
+      },
+      {
+        "ObjectName": "ObjectProperty SalvageField_C:Decal",
+        "ObjectPath": "War/Content/Blueprints/Resources/SalvageField.6"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "SalvageField_C",
+    "Name": "Default__SalvageField_C",
+    "Properties": {
+      "ResourceFieldMeshComponent": {
+        "ObjectName": "StaticMeshComponent Default__SalvageField_C:ResourceFieldMesh",
+        "ObjectPath": "War/Content/Blueprints/Resources/SalvageField.14"
+      },
+      "NoBuildVolume": {
+        "ObjectName": "SphereComponent Default__SalvageField_C:NoBuildVolume",
+        "ObjectPath": "War/Content/Blueprints/Resources/SalvageField.12"
+      },
+      "ResourceFieldMesh1": {
+        "ObjectName": "StaticMesh ScrapField01",
+        "ObjectPath": "War/Content/Meshes/Resources/ScrapField01.2"
+      },
+      "ResourceFieldMesh2": {
+        "ObjectName": "StaticMesh ScrapField02",
+        "ObjectPath": "War/Content/Meshes/Resources/ScrapField02.2"
+      },
+      "ResourceFieldMesh3": {
+        "ObjectName": "StaticMesh ScrapField03",
+        "ObjectPath": "War/Content/Meshes/Resources/ScrapField03.2"
+      },
+      "ResourceClass": {
+        "ObjectName": "BlueprintGeneratedClass BPSalvageResource_C",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSalvageResource.1"
+      },
+      "SpawnPeriod": 6.4185,
+      "MaxConcurrentNodes": 25,
+      "MinSpawnDistance": 450.0,
+      "ResourcesPerReplenishment": 250,
+      "TimeToReplenish": 5400.0,
+      "SecondaryResourceWeights": [
+        {
+          "ResourcePickupType": {
+            "ObjectName": "BlueprintGeneratedClass BPIron_C",
+            "ObjectPath": "War/Content/Blueprints/ItemPickups/BPIron.0"
+          },
+          "Weight": 50
+        },
+        {
+          "ResourcePickupType": {
+            "ObjectName": "BlueprintGeneratedClass BPAluminum_C",
+            "ObjectPath": "War/Content/Blueprints/ItemPickups/BPAluminum.0"
+          },
+          "Weight": 50
+        }
+      ],
+      "ChanceToSpawnSecondaryNormalized": 0.02,
+      "CodeName": "SalvageField",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "B14BAC2747A281DF2D452395CB380159",
+        "SourceString": "Salvage Field"
+      },
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__SalvageField_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Resources/SalvageField.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__SalvageField_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Resources/SalvageField.4"
+      },
+      "MapIconType": "EMapIconType::SalvageField",
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__SalvageField_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Resources/SalvageField.15"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__SalvageField_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Resources/SalvageField.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__SalvageField_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__SalvageField_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 512.0,
+        "Y": 512.0,
+        "Z": 128.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__SalvageField_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Resources/SalvageField.3"
+      }
+    }
+  },
+  {
+    "Type": "DecalComponent",
+    "Name": "Decal_GEN_VARIABLE",
+    "Outer": "SalvageField_C",
+    "Properties": {
+      "DecalMaterial": {
+        "ObjectName": "MaterialInstanceConstant DirtPatch",
+        "ObjectPath": "War/Content/Materials/Decals/DirtPatch.0"
+      },
+      "DecalSize": {
+        "X": 128.0,
+        "Y": 600.0,
+        "Z": 600.0
+      },
+      "RelativeRotation": {
+        "Pitch": 270.0,
+        "Yaw": 720.00995,
+        "Roll": -0.010022
+      }
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Decal",
+    "Outer": "SalvageField_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class DecalComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "SalvageField_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent SalvageField_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Resources/SalvageField.7"
+      },
+      "VariableGuid": "1622212F-44C749D8-2C0E9A89-E9A4B620",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class DecalComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "DecalComponent SalvageField_C:Decal_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Resources/SalvageField.5"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "A8A31E51-4B86C8A7-D2717F97-C5B6B464",
+      "InternalVariableName": "Decal"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SphereComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SphereComponent SalvageField_C:Sphere_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Resources/SalvageField.13"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "8705C0B3-42873B42-AB9A658D-182A231E",
+      "InternalVariableName": "Sphere"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "SalvageField_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node SalvageField_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Resources/SalvageField.9"
+        },
+        {
+          "ObjectName": "SCS_Node SalvageField_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Resources/SalvageField.10"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node SalvageField_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Resources/SalvageField.9"
+        },
+        {
+          "ObjectName": "SCS_Node SalvageField_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Resources/SalvageField.10"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node SalvageField_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Resources/SalvageField.8"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "NoBuildVolume",
+    "Outer": "Default__SalvageField_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__SalvageField_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Resources/SalvageField.3"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "Sphere_GEN_VARIABLE",
+    "Outer": "SalvageField_C",
+    "Properties": {
+      "SphereRadius": 410.0,
+      "AreaClass": {
+        "ObjectName": "Class NavArea_Obstacle",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "CanCharacterStepUpOn": "ECB_No",
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -29.781342,
+        "Y": -46.646133,
+        "Z": -136.76077
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ResourceFieldMesh",
+    "Outer": "Default__SalvageField_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh ScrapField01",
+        "ObjectPath": "War/Content/Meshes/Resources/ScrapField01.2"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__SalvageField_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Resources/SalvageField.3"
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__SalvageField_C"
+  }
+]

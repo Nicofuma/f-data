@@ -1,0 +1,105 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Crate02",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 1.6346893,
+              "Y": -4.612877,
+              "Z": 42.51833
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 176.83978,
+            "Y": 92.391525,
+            "Z": 85.03667,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Crate02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x25D7"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Crate02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Vase",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Vase.0"
+          },
+          "MaterialSlotName": "Barrels",
+          "ImportedMaterialSlotName": "Barrels",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 532.9386,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 532.9386,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.6346893,
+          "Y": -4.612877,
+          "Z": 42.51833
+        },
+        "BoxExtent": {
+          "X": 88.41989,
+          "Y": 46.195763,
+          "Z": 42.518333
+        },
+        "SphereRadius": 106.46064
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Crate02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Crate02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Crate02:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Crate02.1"
+    },
+    "LightingGuid": "880A7954-49B5AB89-AD69C383-3D041B19",
+    "RenderData": null
+  }
+]

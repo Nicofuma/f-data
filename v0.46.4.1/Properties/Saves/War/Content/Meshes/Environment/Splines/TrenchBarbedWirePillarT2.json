@@ -1,0 +1,100 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "TrenchBarbedWirePillarT2",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "TrenchBarbedWirePillarT2",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1785"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TrenchBarbedWirePillarT2",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortT2WoodBeam01",
+            "ObjectPath": "War/Content/Materials/Structures/FortT2WoodBeam01.0"
+          },
+          "MaterialSlotName": "FortT2WoodBeam01",
+          "ImportedMaterialSlotName": "FortT2WoodBeam01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 142.09848,
+            "LocalUVDensities": 0.7077747,
+            "LocalUVDensities": 0.7077747,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BarbedWireStraight",
+            "ObjectPath": "War/Content/Materials/Environment/BarbedWireStraight.0"
+          },
+          "MaterialSlotName": "BarbedWireStraight",
+          "ImportedMaterialSlotName": "BarbedWireStraight",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 182.3126,
+            "LocalUVDensities": 171.29364,
+            "LocalUVDensities": 171.29364,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 124.73637,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.48948097,
+          "Y": -2.4367828,
+          "Z": 28.820656
+        },
+        "BoxExtent": {
+          "X": 13.044327,
+          "Y": 49.446182,
+          "Z": 65.138054
+        },
+        "SphereRadius": 81.15381
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TrenchBarbedWirePillarT2:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Splines/TrenchBarbedWirePillarT2.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TrenchBarbedWirePillarT2:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Splines/TrenchBarbedWirePillarT2.1"
+    },
+    "LightingGuid": "9A9294BE-444AA672-3272A0B8-650D3506",
+    "RenderData": null
+  }
+]

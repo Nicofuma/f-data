@@ -1,0 +1,121 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPSnowUniformC_C",
+    "Super": "BPUniform_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPSnowUniformC_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPSnowUniformC.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass BPUniform_C",
+      "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPUniform.0"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPSnowUniformC_C",
+    "Name": "Default__BPSnowUniformC_C",
+    "Properties": {
+      "UniformType": "EUniformType::SnowC",
+      "SubTypeIcon": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D SubtypeSnowIcon",
+          "ObjectPath": "War/Content/Textures/UI/ItemIcons/SubtypeSnowIcon.0"
+        }
+      },
+      "CodeName": "SnowUniformC",
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "A4D0C27449211D059332339E33C5BFE8",
+        "SourceString": "Colonial Snow Uniform"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "4C5586E5492E8E8C9C702296CEC18339",
+        "SourceString": "Heavy Topcoat"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "2072180C4CF0448E6675F982FC50E511",
+        "SourceString": "Unaccustomed to the cold, Legionaries must always adapt. This heavy topcoat is designed to mitigate the effects of cold while still allowing for optimal mobility and combat effectiveness."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D SnowUniformCIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/Uniforms/SnowUniformCIcon.0"
+      },
+      "FactionVariant": "EFactionId::Colonials",
+      "TechID": "ETechID::UnlockSnowUniform",
+      "ItemMesh": {
+        "ObjectName": "StaticMeshComponent Default__BPSnowUniformC_C:ItemMesh",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPSnowUniformC.6"
+      },
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPSnowUniformC_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPSnowUniformC.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPSnowUniformC_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPSnowUniformC.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPSnowUniformC_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPSnowUniformC_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPSnowUniformC_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPSnowUniformC.3"
+      },
+      "VariableGuid": "57CA561C-434D89CD-F65025A0-F66D62DF",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPSnowUniformC_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPSnowUniformC_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPSnowUniformC.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPSnowUniformC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPSnowUniformC_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPSnowUniformC.2"
+      }
+    }
+  }
+]

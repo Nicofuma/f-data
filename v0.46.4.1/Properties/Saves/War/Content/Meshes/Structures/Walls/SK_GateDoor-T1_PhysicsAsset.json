@@ -1,0 +1,85 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_GateDoor-T1_PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup SK_GateDoor-T1_PhysicsAsset:SkeletalBodySetup_3",
+          "ObjectPath": "War/Content/Meshes/Structures/Walls/SK_GateDoor-T1_PhysicsAsset.1"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup SK_GateDoor-T1_PhysicsAsset:SkeletalBodySetup_4",
+          "ObjectPath": "War/Content/Meshes/Structures/Walls/SK_GateDoor-T1_PhysicsAsset.2"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_3",
+    "Outer": "SK_GateDoor-T1_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 159.274,
+              "Y": 0.0003704258,
+              "Z": 350.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 300.0,
+            "Y": 16.0,
+            "Z": 660.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "LeftDoor",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_4",
+    "Outer": "SK_GateDoor-T1_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 159.27383,
+              "Y": 0.00091894425,
+              "Z": -350.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 300.0,
+            "Y": 16.0,
+            "Z": 660.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "RightDoor",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  }
+]

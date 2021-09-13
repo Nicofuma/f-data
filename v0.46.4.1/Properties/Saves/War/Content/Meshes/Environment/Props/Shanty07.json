@@ -1,0 +1,121 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Shanty07",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 6.327118,
+              "Y": 0.0,
+              "Z": 160.4166
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 236.5988,
+            "Y": 246.52441,
+            "Z": 358.5647,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "Shanty07",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x171CA"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Shanty07",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownWoodBeams04",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownWoodBeams04.0"
+          },
+          "MaterialSlotName": "WoodBarnPlanks",
+          "ImportedMaterialSlotName": "WoodBarnPlanks",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 276.91132,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ShantyClothRags01",
+            "ObjectPath": "War/Content/Materials/Environment/Props/ShantyClothRags01.0"
+          },
+          "MaterialSlotName": "ShantyClothRags",
+          "ImportedMaterialSlotName": "Material #642",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 474.0694,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 409.76144,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 6.327118,
+          "Y": 0.0,
+          "Z": 160.4166
+        },
+        "BoxExtent": {
+          "X": 138.76721,
+          "Y": 139.56036,
+          "Z": 179.28235
+        },
+        "SphereRadius": 247.20064
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Shanty07:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Shanty07.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Shanty07:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Shanty07.1"
+    },
+    "LightingGuid": "F3A7E4B8-4A8D109A-94299CA3-D5E9C1C3",
+    "RenderData": null
+  }
+]

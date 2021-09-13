@@ -1,0 +1,114 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BirdsToCricketsRockySurf_Cue_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BirdsToCricketsRockySurf_Cue_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Audio/AudioBlueprints/BirdsToCricketsRockySurf_Cue.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class EnvironmentSFX",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BirdsToCricketsRockySurf_Cue_C",
+    "Name": "Default__BirdsToCricketsRockySurf_Cue_C",
+    "Properties": {
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BirdsToCricketsRockySurf_Cue_C:Arrow",
+        "ObjectPath": "War/Content/Audio/AudioBlueprints/BirdsToCricketsRockySurf_Cue.2"
+      },
+      "DayTimeSFX": {
+        "ObjectName": "AudioComponent Default__BirdsToCricketsRockySurf_Cue_C:DayTimeSFX",
+        "ObjectPath": "War/Content/Audio/AudioBlueprints/BirdsToCricketsRockySurf_Cue.3"
+      },
+      "NightTimeSFX": {
+        "ObjectName": "AudioComponent Default__BirdsToCricketsRockySurf_Cue_C:NightTimeSFX",
+        "ObjectPath": "War/Content/Audio/AudioBlueprints/BirdsToCricketsRockySurf_Cue.4"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BirdsToCricketsRockySurf_Cue_C:Arrow",
+        "ObjectPath": "War/Content/Audio/AudioBlueprints/BirdsToCricketsRockySurf_Cue.2"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "Arrow",
+    "Outer": "Default__BirdsToCricketsRockySurf_Cue_C"
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "DayTimeSFX",
+    "Outer": "Default__BirdsToCricketsRockySurf_Cue_C",
+    "Properties": {
+      "Sound": {
+        "ObjectName": "SoundCue RockyOceanSurfBirds_cue",
+        "ObjectPath": "War/Content/Audio/Ambient/RockyOceanSurfBirds_cue.0"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BirdsToCricketsRockySurf_Cue_C:Arrow",
+        "ObjectPath": "War/Content/Audio/AudioBlueprints/BirdsToCricketsRockySurf_Cue.2"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "NightTimeSFX",
+    "Outer": "Default__BirdsToCricketsRockySurf_Cue_C",
+    "Properties": {
+      "Sound": {
+        "ObjectName": "SoundCue RockyOceanSurf_cue2",
+        "ObjectPath": "War/Content/Audio/Ambient/RockyOceanSurf_cue2.0"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BirdsToCricketsRockySurf_Cue_C:Arrow",
+        "ObjectPath": "War/Content/Audio/AudioBlueprints/BirdsToCricketsRockySurf_Cue.2"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BirdsToCricketsRockySurf_Cue_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BirdsToCricketsRockySurf_Cue_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Audio/AudioBlueprints/BirdsToCricketsRockySurf_Cue.5"
+      },
+      "VariableGuid": "184F5DC8-44CE4AA3-2219ABA1-7AA07186",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BirdsToCricketsRockySurf_Cue_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BirdsToCricketsRockySurf_Cue_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Audio/AudioBlueprints/BirdsToCricketsRockySurf_Cue.6"
+      }
+    }
+  }
+]

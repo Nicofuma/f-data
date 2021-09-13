@@ -1,0 +1,121 @@
+[
+  {
+    "Type": "Material",
+    "Name": "Temp",
+    "Properties": {
+      "Metallic": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionScalarParameter_2",
+        "UseConstant": false,
+        "Constant": 0.0
+      },
+      "Specular": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionScalarParameter_0",
+        "UseConstant": false,
+        "Constant": 0.5
+      },
+      "TwoSided": true,
+      "bUsedWithSkeletalMesh": true,
+      "Expressions": [
+        {
+          "ObjectName": "MaterialExpressionVectorParameter Temp:MaterialExpressionVectorParameter_0",
+          "ObjectPath": "War/Content/Materials/Temp.4"
+        },
+        {
+          "ObjectName": "MaterialExpressionScalarParameter Temp:MaterialExpressionScalarParameter_2",
+          "ObjectPath": "War/Content/Materials/Temp.3"
+        },
+        {
+          "ObjectName": "MaterialExpressionScalarParameter Temp:MaterialExpressionScalarParameter_0",
+          "ObjectPath": "War/Content/Materials/Temp.1"
+        },
+        {
+          "ObjectName": "MaterialExpressionScalarParameter Temp:MaterialExpressionScalarParameter_1",
+          "ObjectPath": "War/Content/Materials/Temp.2"
+        }
+      ],
+      "bCanMaskedBeAssumedOpaque": true,
+      "StateId": "D5A9086B-467C13AF-4B4B84B3-C07E6B1E",
+      "CachedQualityLevelsUsed": [
+        false,
+        true,
+        false
+      ]
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_0",
+    "Outer": "Temp",
+    "Properties": {
+      "DefaultValue": 0.6,
+      "ParameterName": "Specular",
+      "ExpressionGUID": "0E42D126-4B7CD590-2415FA93-B93F9AD4",
+      "Material": {
+        "ObjectName": "Material Temp",
+        "ObjectPath": "War/Content/Materials/Temp.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_1",
+    "Outer": "Temp",
+    "Properties": {
+      "DefaultValue": 0.6,
+      "ParameterName": "Metallic",
+      "ExpressionGUID": "5E170C57-47DF9B90-CA838499-A91D2B1E",
+      "Material": {
+        "ObjectName": "Material Temp",
+        "ObjectPath": "War/Content/Materials/Temp.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_2",
+    "Outer": "Temp",
+    "Properties": {
+      "DefaultValue": 1.0,
+      "ParameterName": "Roughness",
+      "ExpressionGUID": "055126C7-43209C59-40ACFEA8-034BC7C4",
+      "Material": {
+        "ObjectName": "Material Temp",
+        "ObjectPath": "War/Content/Materials/Temp.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionVectorParameter",
+    "Name": "MaterialExpressionVectorParameter_0",
+    "Outer": "Temp",
+    "Properties": {
+      "DefaultValue": {
+        "R": 0.10946171,
+        "G": 0.13563333,
+        "B": 0.14126329,
+        "A": 1.0,
+        "Hex": "1C2324"
+      },
+      "ParameterName": "Color",
+      "ExpressionGUID": "DB4B1CAE-45BEA960-241851B5-29F50E34",
+      "Material": {
+        "ObjectName": "Material Temp",
+        "ObjectPath": "War/Content/Materials/Temp.0"
+      }
+    }
+  }
+]

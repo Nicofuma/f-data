@@ -1,0 +1,200 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "Audio",
+    "Outer": "BPRocketImpactEffect_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class AudioComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPRocketImpactEffect_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPRocketImpactEffect_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocketImpactEffect.11"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class RocketImpactEffect",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPRocketImpactEffect_C:Audio",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocketImpactEffect.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPRocketImpactEffect_C:ParticleSystem",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocketImpactEffect.5"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPRocketImpactEffect_C",
+    "Name": "Default__BPRocketImpactEffect_C",
+    "Properties": {
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPRocketImpactEffect_C:Arrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocketImpactEffect.3"
+      },
+      "NetCullDistanceSquared": 100000000.0,
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPRocketImpactEffect_C:Arrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocketImpactEffect.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "Arrow",
+    "Outer": "Default__BPRocketImpactEffect_C"
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "Audio_GEN_VARIABLE",
+    "Outer": "BPRocketImpactEffect_C",
+    "Properties": {
+      "Sound": {
+        "ObjectName": "SoundCue RocketImpact_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Structure/Rocket/RocketImpact_Cue.0"
+      },
+      "RelativeLocation": {
+        "X": -95.0,
+        "Y": -430.0,
+        "Z": 2964.0
+      }
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "ParticleSystem",
+    "Outer": "BPRocketImpactEffect_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class ParticleSystemComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ParticleSystem_GEN_VARIABLE",
+    "Outer": "BPRocketImpactEffect_C",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem RocketImpact",
+        "ObjectPath": "War/Content/FX/RocketImpact.9"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 2040.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPRocketImpactEffect_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPRocketImpactEffect_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocketImpactEffect.7"
+      },
+      "VariableGuid": "A501AD89-471FCFE8-142B5BB0-A159BF82",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class ParticleSystemComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ParticleSystemComponent BPRocketImpactEffect_C:ParticleSystem_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocketImpactEffect.6"
+      },
+      "ParentComponentOrVariableName": "Arrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "F6B5F641-43A566F1-A9C4EDB0-DE1F0AD2",
+      "InternalVariableName": "ParticleSystem"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class AudioComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "AudioComponent BPRocketImpactEffect_C:Audio_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocketImpactEffect.4"
+      },
+      "ParentComponentOrVariableName": "Arrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "469E3A2C-4504586F-3149F095-C8E208C8",
+      "InternalVariableName": "Audio"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPRocketImpactEffect_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPRocketImpactEffect_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPRocketImpactEffect.9"
+        },
+        {
+          "ObjectName": "SCS_Node BPRocketImpactEffect_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPRocketImpactEffect.10"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPRocketImpactEffect_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPRocketImpactEffect.9"
+        },
+        {
+          "ObjectName": "SCS_Node BPRocketImpactEffect_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPRocketImpactEffect.10"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPRocketImpactEffect_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocketImpactEffect.8"
+      }
+    }
+  }
+]

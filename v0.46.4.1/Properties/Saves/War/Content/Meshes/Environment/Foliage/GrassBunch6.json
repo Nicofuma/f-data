@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "GrassBunch6",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_3",
+    "Outer": "GrassBunch6",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x15B5"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "GrassBunch6",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant GrassBlades4",
+            "ObjectPath": "War/Content/Materials/Environment/GrassBlades4.0"
+          },
+          "MaterialSlotName": "Material #490",
+          "ImportedMaterialSlotName": "Material #26",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 223.15445,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 223.15445,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 83.1821,
+          "Y": -60.95865,
+          "Z": 68.70984
+        },
+        "BoxExtent": {
+          "X": 507.2071,
+          "Y": 417.753,
+          "Z": 85.95404
+        },
+        "SphereRadius": 594.2249
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup GrassBunch6:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/GrassBunch6.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision GrassBunch6:NavCollision_3",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/GrassBunch6.1"
+    },
+    "LightingGuid": "BE0043F0-4B2EA651-7D6A17BA-426008AD",
+    "RenderData": null
+  }
+]

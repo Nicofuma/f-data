@@ -1,0 +1,109 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPAluminum_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPAluminum_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPAluminum.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class BasicItemPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPAluminum_C",
+    "Name": "Default__BPAluminum_C",
+    "Properties": {
+      "CodeName": "Aluminum",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "C1B5BD404136F28C9ADCC999F0DB5B1F",
+        "SourceString": "Aluminum"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "1F5001F746CFB7F9D8E5D59D4469BF06",
+        "SourceString": "Aluminum can be refined into Aluminum Alloy, which is used in the prototyping process for items."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D ResouceAluminumIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/ResouceAluminumIcon.0"
+      },
+      "ItemCategory": "EItemCategory::Supplies",
+      "ItemFlagsMask": 2049,
+      "ItemProfileType": "EItemProfileType::RawResource",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPAluminum_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPAluminum.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPAluminum_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPAluminum.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPAluminum_C",
+    "Properties": {
+      "bReceivesDecals": false
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPAluminum_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPAluminum_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPAluminum.3"
+      },
+      "VariableGuid": "A0751F8B-46A22E9A-705EF3A3-8C436BDB",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPAluminum_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPAluminum_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPAluminum.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPAluminum_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPAluminum_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPAluminum.2"
+      }
+    }
+  }
+]

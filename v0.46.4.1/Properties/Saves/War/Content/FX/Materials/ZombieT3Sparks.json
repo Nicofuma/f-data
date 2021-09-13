@@ -1,0 +1,54 @@
+[
+  {
+    "Type": "MaterialInstanceConstant",
+    "Name": "ZombieT3Sparks",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Material EmissiveParticles",
+        "ObjectPath": "War/Content/FX/Materials/EmissiveParticles.0"
+      },
+      "bHasStaticPermutationResource": true,
+      "ScalarParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "RefractionDepthBias",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "BasePropertyOverrides": {
+        "TwoSided": true,
+        "BlendMode": "BLEND_Translucent",
+        "ShadingModel": "MSM_Unlit",
+        "OpacityMaskClipValue": 0.3333
+      },
+      "StaticParameters": {
+        "StaticComponentMaskParameters": [
+          {
+            "R": false,
+            "G": true,
+            "B": false,
+            "A": false,
+            "ParameterInfo": {
+              "Name": "Particle Mask Selector",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "8B2274E6-4C40E6E8-6936A1A6-A9AD0F25"
+          }
+        ]
+      },
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "SmallFXShapes"
+        }
+      ]
+    }
+  }
+]

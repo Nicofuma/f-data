@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_7975",
+    "Outer": "FxDebrisLarge",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "FxDebrisLarge",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xD2A"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FxDebrisLarge",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material Dirt",
+            "ObjectPath": "War/Content/FX/Materials/Dirt.0"
+          },
+          "MaterialSlotName": "Dirt",
+          "ImportedMaterialSlotName": "Dirt",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 11.994761,
+            "LocalUVDensities": 36.9623,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 36.9623,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -1.1683841,
+          "Y": -0.31079102,
+          "Z": 3.770728
+        },
+        "BoxExtent": {
+          "X": 5.9647293,
+          "Y": 7.1331134,
+          "Z": 3.770728
+        },
+        "SphereRadius": 8.234147
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FxDebrisLarge:BodySetup_7975",
+      "ObjectPath": "War/Content/FX/Mesh/FxDebrisLarge.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FxDebrisLarge:NavCollision_0",
+      "ObjectPath": "War/Content/FX/Mesh/FxDebrisLarge.1"
+    },
+    "LightingGuid": "442C2CD2-44B8AF94-F1D8DC99-F3B62E54",
+    "RenderData": null
+  }
+]

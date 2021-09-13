@@ -1,0 +1,179 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "TrenchT3RoofEnd",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -3.3051434E-05,
+                "Y": 150.0609,
+                "Z": 57.999756
+              },
+              {
+                "X": -6.2315994E-05,
+                "Y": -150.06091,
+                "Z": 57.99961
+              },
+              {
+                "X": 104.94713,
+                "Y": 151.43173,
+                "Z": 7.235508E-05
+              },
+              {
+                "X": -3.2782555E-05,
+                "Y": 222.69359,
+                "Z": 8.3965104E-05
+              },
+              {
+                "X": -6.258488E-05,
+                "Y": -222.69359,
+                "Z": -8.3965104E-05
+              },
+              {
+                "X": 104.947105,
+                "Y": -151.43184,
+                "Z": -7.235509E-05
+              },
+              {
+                "X": 38.767765,
+                "Y": -222.6936,
+                "Z": -8.396511E-05
+              },
+              {
+                "X": 38.76779,
+                "Y": 222.69356,
+                "Z": 8.3965104E-05
+              },
+              {
+                "X": 38.767765,
+                "Y": -150.06093,
+                "Z": 57.99961
+              },
+              {
+                "X": 38.76779,
+                "Y": 150.06088,
+                "Z": 57.999756
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -6.258488E-05,
+                "Y": -222.6936,
+                "Z": -8.396511E-05
+              },
+              "Max": {
+                "X": 104.94713,
+                "Y": 222.69359,
+                "Z": 57.999756
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "TrenchT3RoofEnd",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 601,
+        "SizeOnDisk": 601,
+        "OffsetInFile": "0x24BF"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TrenchT3RoofEnd",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortTrenchT3ConcreteDirt01",
+            "ObjectPath": "War/Content/Materials/Structures/FortTrenchT3ConcreteDirt01.0"
+          },
+          "MaterialSlotName": "FortTrenchT3ConcreteDirt",
+          "ImportedMaterialSlotName": "FortTrenchT3ConcreteDirt",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 512.1312,
+            "LocalUVDensities": 11.820959,
+            "LocalUVDensities": 11.820959,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 11.820959,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 31.592236,
+          "Y": -7.6293945E-05,
+          "Z": 28.407288
+        },
+        "BoxExtent": {
+          "X": 46.404766,
+          "Y": 187.3771,
+          "Z": 35.392433
+        },
+        "SphereRadius": 194.87169
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TrenchT3RoofEnd:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/TrenchT3RoofEnd.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TrenchT3RoofEnd:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/TrenchT3RoofEnd.1"
+    },
+    "LightingGuid": "20173966-4FF818DE-992183B9-678FDBCF",
+    "RenderData": null
+  }
+]

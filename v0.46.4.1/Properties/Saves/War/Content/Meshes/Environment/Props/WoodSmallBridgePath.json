@@ -1,0 +1,106 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "WoodSmallBridgePath",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -0.0048480034,
+              "Y": -0.2784967,
+              "Z": 21.75902
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -5.0413313,
+              "Roll": 0.0
+            },
+            "X": 662.7592,
+            "Y": 434.83304,
+            "Z": 47.49734,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_716",
+    "Outer": "WoodSmallBridgePath",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x460F"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "WoodSmallBridgePath",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant WoodRepeating03",
+            "ObjectPath": "War/Content/Materials/Environment/WoodRepeating03.0"
+          },
+          "MaterialSlotName": "WoodRepeating03",
+          "ImportedMaterialSlotName": "WoodRepeating03",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 193.55379,
+            "LocalUVDensities": 1066.9719,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1066.9719,
+      "LightMapResolution": 256,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -0.22357178,
+          "Z": 21.758318
+        },
+        "BoxExtent": {
+          "X": 331.3796,
+          "Y": 261.30566,
+          "Z": 23.74867
+        },
+        "SphereRadius": 398.83148
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup WoodSmallBridgePath:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/WoodSmallBridgePath.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision WoodSmallBridgePath:NavCollision_716",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/WoodSmallBridgePath.1"
+    },
+    "LightingGuid": "AE040C8A-4F6C3EC5-72647D9C-BF582C0D",
+    "RenderData": null
+  }
+]

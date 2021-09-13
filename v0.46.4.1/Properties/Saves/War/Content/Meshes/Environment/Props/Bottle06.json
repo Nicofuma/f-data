@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Bottle06",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Bottle06",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2D33"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Bottle06",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant GlassBottles01",
+            "ObjectPath": "War/Content/Materials/Environment/Props/GlassBottles01.0"
+          },
+          "MaterialSlotName": "Material #1097",
+          "ImportedMaterialSlotName": "Material #1097",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 159.0614,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 1.7766196,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -6.4645233,
+          "Y": 4.4201126,
+          "Z": 7.3196955
+        },
+        "BoxExtent": {
+          "X": 35.98491,
+          "Y": 32.820908,
+          "Z": 7.9691772
+        },
+        "SphereRadius": 48.316376
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Bottle06:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Bottle06.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Bottle06:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Bottle06.1"
+    },
+    "LightingGuid": "CCEC8650-4029BE3F-F3D804BC-30BE75D5",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,164 @@
+[
+  {
+    "Type": "MaterialInstanceConstant",
+    "Name": "FortT2RoofGrass01",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Material Props",
+        "ObjectPath": "War/Content/Materials/Environment/Props.0"
+      },
+      "bHasStaticPermutationResource": true,
+      "ScalarParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "Roughness",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 1.0,
+          "ExpressionGUID": "9426E210-473A13A4-275F0385-ECFFB122"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "RefractionDepthBias",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "VectorParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "Mask Channel",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 1.0,
+            "A": 0.0,
+            "Hex": "0000FF"
+          },
+          "ExpressionGUID": "792F0E0F-4AE70E3F-FAF72AB1-6FA169FD"
+        }
+      ],
+      "TextureParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "Mask Only",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "ObjectName": "Texture2D GrassM",
+            "ObjectPath": "War/Content/Textures/Environment/GrassM.0"
+          },
+          "ExpressionGUID": "64C30C7D-4C339861-D81267A9-885C7300"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Albedo",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "ObjectName": "Texture2D GrassDeadA",
+            "ObjectPath": "War/Content/Textures/Environment/GrassDeadA.0"
+          },
+          "ExpressionGUID": "ABE95477-4B8864CB-11A28F88-632F172E"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Normal",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "ObjectName": "Texture2D GrassN",
+            "ObjectPath": "War/Content/Textures/Environment/GrassN.0"
+          },
+          "ExpressionGUID": "F83EFF74-4439F683-11D4E2A4-95002649"
+        }
+      ],
+      "BasePropertyOverrides": {
+        "TwoSided": true,
+        "BlendMode": "BLEND_Masked",
+        "OpacityMaskClipValue": 0.3333
+      },
+      "StaticParameters": {
+        "StaticSwitchParameters": [
+          {
+            "Value": true,
+            "ParameterInfo": {
+              "Name": "Blend OverlapOpacity with Opacity Mask",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "C590A29D-47060C39-CADB52A5-1FCADD24"
+          },
+          {
+            "Value": true,
+            "ParameterInfo": {
+              "Name": "Ignore Opacity in Shadow Depth",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "FCDD218B-45BCED4E-D7F53795-0CB2A66B"
+          },
+          {
+            "Value": true,
+            "ParameterInfo": {
+              "Name": "Use Custom Mask Texture",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "F2B35730-493433A9-7A61248A-C4928B6D"
+          },
+          {
+            "Value": true,
+            "ParameterInfo": {
+              "Name": "Use Normal Map?",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "771E90BE-46CF097B-689B88B6-09881C2B"
+          },
+          {
+            "Value": false,
+            "ParameterInfo": {
+              "Name": "Use Opacity Mask",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "763D25D9-42686815-D7176285-187603D0"
+          },
+          {
+            "Value": true,
+            "ParameterInfo": {
+              "Name": "Use Red Channel for Metalness?",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "D8211B06-4806D01D-A880C29C-47F421E5"
+          }
+        ]
+      },
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "NoiseMask"
+        }
+      ]
+    }
+  }
+]

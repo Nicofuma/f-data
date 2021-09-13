@@ -1,0 +1,89 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "TrenchT1Open01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "TrenchT1Open01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xE01A"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TrenchT1Open01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortT1WoodLogs01",
+            "ObjectPath": "War/Content/Materials/Structures/FortT1WoodLogs01.0"
+          },
+          "MaterialSlotName": "T1WoodLogs01",
+          "ImportedMaterialSlotName": "T1WoodLogs01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 366.5669,
+            "LocalUVDensities": 1.706988,
+            "LocalUVDensities": 1.706988,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1.706988,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 2.4918823,
+          "Y": -3.4844284,
+          "Z": 72.18333
+        },
+        "BoxExtent": {
+          "X": 500.63025,
+          "Y": 42.01287,
+          "Z": 119.62456
+        },
+        "SphereRadius": 513.9256
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TrenchT1Open01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/TrenchT1Open01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TrenchT1Open01:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/TrenchT1Open01.1"
+    },
+    "LightingGuid": "507122E0-47E17FBD-E0B9368C-A11A05B8",
+    "RenderData": null
+  }
+]

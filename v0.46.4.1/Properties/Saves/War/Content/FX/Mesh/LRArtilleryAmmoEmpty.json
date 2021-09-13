@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "LRArtilleryAmmoEmpty",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "LRArtilleryAmmoEmpty",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2B03"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "LRArtilleryAmmoEmpty",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant LRArtilleryAmmo",
+            "ObjectPath": "War/Content/Materials/Pickups/LRArtilleryAmmo.0"
+          },
+          "MaterialSlotName": "LRArtilleryAmmo",
+          "ImportedMaterialSlotName": "LRArtilleryAmmo",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 124.69747,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 124.69747,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -4.7683716E-06,
+          "Y": -20.637016,
+          "Z": 5.054474E-05
+        },
+        "BoxExtent": {
+          "X": 15.614433,
+          "Y": 36.425217,
+          "Z": 15.637316
+        },
+        "SphereRadius": 39.403194
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup LRArtilleryAmmoEmpty:BodySetup_0",
+      "ObjectPath": "War/Content/FX/Mesh/LRArtilleryAmmoEmpty.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision LRArtilleryAmmoEmpty:NavCollision_0",
+      "ObjectPath": "War/Content/FX/Mesh/LRArtilleryAmmoEmpty.1"
+    },
+    "LightingGuid": "3484A37A-42F048C9-D33FE391-441EA017",
+    "RenderData": null
+  }
+]

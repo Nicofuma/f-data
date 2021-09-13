@@ -1,0 +1,105 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Barstool01",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -1.9073486E-06,
+              "Y": 0.0,
+              "Z": 53.48811
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 29.841406,
+            "Y": 29.658419,
+            "Z": 105.50224,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Barstool01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x4214"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Barstool01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Cabinets",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Cabinets.0"
+          },
+          "MaterialSlotName": "Material #1095",
+          "ImportedMaterialSlotName": "Material #1095",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 222.2324,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 222.2324,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -1.9073486E-06,
+          "Y": 0.0,
+          "Z": 53.48811
+        },
+        "BoxExtent": {
+          "X": 27.101398,
+          "Y": 27.10139,
+          "Z": 52.75112
+        },
+        "SphereRadius": 63.38779
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Barstool01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Barstool01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Barstool01:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Barstool01.1"
+    },
+    "LightingGuid": "89661096-48E39BF0-667306BB-02153D94",
+    "RenderData": null
+  }
+]

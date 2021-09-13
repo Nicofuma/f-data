@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "GibsThighLeft",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "GibsThighLeft",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2335"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "GibsThighLeft",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Gibs",
+            "ObjectPath": "War/Content/Materials/Character/Event/Gibs.0"
+          },
+          "MaterialSlotName": "Gibs",
+          "ImportedMaterialSlotName": "Gibs",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 220.56793,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 220.56793,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -9.536743E-07,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 11.0638895,
+          "Y": 13.584992,
+          "Z": 28.443699
+        },
+        "SphereRadius": 29.325169
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup GibsThighLeft:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Character/Gibs/GibsThighLeft.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision GibsThighLeft:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Character/Gibs/GibsThighLeft.1"
+    },
+    "LightingGuid": "477F390A-45F22BB3-AD0E24A3-D1BC2D49",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,195 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "SkeletalMesh",
+    "Outer": "BPLongRangeArtilleryAmmoPickup_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SkeletalMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPLongRangeArtilleryAmmoPickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPLongRangeArtilleryAmmoPickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPLongRangeArtilleryAmmoPickup.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class ExplosiveAmmoPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPLongRangeArtilleryAmmoPickup_C:SkeletalMesh",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPLongRangeArtilleryAmmoPickup.0"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPLongRangeArtilleryAmmoPickup_C",
+    "Name": "Default__BPLongRangeArtilleryAmmoPickup_C",
+    "Properties": {
+      "ExplosionClass": {
+        "ObjectName": "BlueprintGeneratedClass LRAExplosion_C",
+        "ObjectPath": "War/Content/Blueprints/Items/LRAExplosion.1"
+      },
+      "ShotSoundCue": {
+        "ObjectName": "SoundCue StormCannonShot01_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Vehicles/LongRangeArtillery/StormCannonShot01_Cue.0"
+      },
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPLongRangeArtilleryAmmoComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Items/BPLongRangeArtilleryAmmoComponent.0"
+      },
+      "Encumbrance": 400,
+      "CodeName": "LRArtilleryAmmo",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "3A80EDEA40B56D33EDF347B0E592EA5D",
+        "SourceString": "300mm Round"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "308F7AF54863153EBA96F0BFFAF02AAD",
+        "SourceString": "Payload for the Storm Cannon."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D LRArtilleryAmmoItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/LRArtilleryAmmoItemIcon.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Large",
+      "ItemCategory": "EItemCategory::HeavyArms",
+      "ItemFlagsMask": 17,
+      "ItemProfileType": "EItemProfileType::HeavyAmmo",
+      "TechID": "ETechID::UnlockLongRangeArtillery",
+      "bIsLarge": true,
+      "ItemMesh": {
+        "ObjectName": "StaticMeshComponent Default__BPLongRangeArtilleryAmmoPickup_C:ItemMesh",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPLongRangeArtilleryAmmoPickup.9"
+      },
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPLongRangeArtilleryAmmoPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPLongRangeArtilleryAmmoPickup.3"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPLongRangeArtilleryAmmoPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPLongRangeArtilleryAmmoPickup.3"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPLongRangeArtilleryAmmoPickup_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 32.0,
+        "Y": 64.0,
+        "Z": 32.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPLongRangeArtilleryAmmoPickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPLongRangeArtilleryAmmoPickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPLongRangeArtilleryAmmoPickup.4"
+      },
+      "VariableGuid": "4AB0A040-4BAE6732-BE2F2998-1D30A2A5",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SkeletalMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SkeletalMeshComponent BPLongRangeArtilleryAmmoPickup_C:SkeletalMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPLongRangeArtilleryAmmoPickup.8"
+      },
+      "ParentComponentOrVariableName": "ItemBox",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "2D39DE29-414035CF-E4D10CB8-16745AAF",
+      "InternalVariableName": "SkeletalMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPLongRangeArtilleryAmmoPickup_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPLongRangeArtilleryAmmoPickup_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/ItemPickups/BPLongRangeArtilleryAmmoPickup.6"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPLongRangeArtilleryAmmoPickup_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/ItemPickups/BPLongRangeArtilleryAmmoPickup.6"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPLongRangeArtilleryAmmoPickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPLongRangeArtilleryAmmoPickup.5"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SkeletalMesh_GEN_VARIABLE",
+    "Outer": "BPLongRangeArtilleryAmmoPickup_C",
+    "Properties": {
+      "ClothingSimulationFactory": {
+        "ObjectName": "Class ClothingSimulationFactoryNv",
+        "ObjectPath": "/Script/ClothingSystemRuntimeNv"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_LongRangeArtilleryAmmo",
+        "ObjectPath": "War/Content/Meshes/Weapons/SK_LongRangeArtilleryAmmo.0"
+      },
+      "bReceivesDecals": false
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPLongRangeArtilleryAmmoPickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPLongRangeArtilleryAmmoPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPLongRangeArtilleryAmmoPickup.3"
+      }
+    }
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "Type": "MaterialInstanceConstant",
+    "Name": "SoulFactoryPortalSparksC",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Material EmissiveParticles",
+        "ObjectPath": "War/Content/FX/Materials/EmissiveParticles.0"
+      },
+      "bHasStaticPermutationResource": true,
+      "ScalarParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "DepthFade",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 15.0,
+          "ExpressionGUID": "8AB355CD-404CD8D6-0E2F888F-C2E429DA"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "RefractionDepthBias",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "VectorParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "Colour",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "R": 2.8335,
+            "G": 10.0,
+            "B": 0.49854,
+            "A": 1.0,
+            "Hex": "D3F67F"
+          },
+          "ExpressionGUID": "22175F3E-44AB93D5-C2EF3582-8251B267"
+        }
+      ],
+      "BasePropertyOverrides": {
+        "TwoSided": true,
+        "BlendMode": "BLEND_Translucent",
+        "ShadingModel": "MSM_Unlit",
+        "OpacityMaskClipValue": 0.3333
+      },
+      "StaticParameters": {
+        "StaticSwitchParameters": [
+          {
+            "Value": false,
+            "ParameterInfo": {
+              "Name": "UseParticleColour",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "26CBF0C3-4A12A59A-D4244AAA-75F98CA6"
+          }
+        ]
+      },
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "SmallFXShapes"
+        }
+      ]
+    }
+  }
+]

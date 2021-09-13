@@ -1,0 +1,89 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FarmTools_Shovel",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "FarmTools_Shovel",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2295"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FarmTools_Shovel",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FarmTools",
+            "ObjectPath": "War/Content/Materials/Environment/Props/FarmTools.0"
+          },
+          "MaterialSlotName": "Material #25",
+          "ImportedMaterialSlotName": "Material #25",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 149.05571,
+            "LocalUVDensities": 93.75048,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 93.75048,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 4.7683716E-07,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 18.201664,
+          "Y": 4.2609725,
+          "Z": 117.59874
+        },
+        "SphereRadius": 117.647194
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FarmTools_Shovel:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FarmTools_Shovel.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FarmTools_Shovel:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FarmTools_Shovel.1"
+    },
+    "LightingGuid": "35600BBC-4EEC5317-595FC780-25830396",
+    "RenderData": null
+  }
+]

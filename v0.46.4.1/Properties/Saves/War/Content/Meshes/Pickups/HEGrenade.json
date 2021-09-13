@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "HEGrenade",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "HEGrenade",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2B1A"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "HEGrenade",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant HEGrenade",
+            "ObjectPath": "War/Content/Materials/Weapons/HEGrenade.0"
+          },
+          "MaterialSlotName": "Material #26",
+          "ImportedMaterialSlotName": "Material #31",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 50.40649,
+            "LocalUVDensities": 53.553734,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 53.553734,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -4.7683716E-07,
+          "Z": 26.214748
+        },
+        "BoxExtent": {
+          "X": 7.97176,
+          "Y": 7.97176,
+          "Z": 26.641953
+        },
+        "SphereRadius": 27.623945
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup HEGrenade:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Pickups/HEGrenade.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision HEGrenade:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Pickups/HEGrenade.1"
+    },
+    "LightingGuid": "A7E6B803-44879B84-B8C6779E-B1D370D5",
+    "RenderData": null
+  }
+]

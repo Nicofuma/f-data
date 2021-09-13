@@ -1,0 +1,163 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_5",
+    "Outer": "FenceLarge",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 1.1502924,
+              "Y": -2.6882982,
+              "Z": 69.94402
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 24.707354,
+            "Y": 24.898123,
+            "Z": 227.06613,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": -255.89574,
+              "Y": -2.8307543,
+              "Z": 68.06354
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 24.707354,
+            "Y": 24.898123,
+            "Z": 209.28175,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": 251.82593,
+              "Y": 0.93773556,
+              "Z": 65.857185
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 24.707354,
+            "Y": 24.898123,
+            "Z": 227.06613,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": -3.6957245,
+              "Y": 12.78902,
+              "Z": 61.43795
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 526.54156,
+            "Y": 24.898123,
+            "Z": 152.98885,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "ShootThroughStatic",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_299",
+    "Outer": "FenceLarge",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 997,
+        "SizeOnDisk": 997,
+        "OffsetInFile": "0x6C13"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FenceLarge",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FarmFence02",
+            "ObjectPath": "War/Content/Materials/Environment/Props/FarmFence02.0"
+          },
+          "MaterialSlotName": "Material #26",
+          "ImportedMaterialSlotName": "FarmFence",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 488.99985,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 488.99985,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -3.29599,
+          "Y": 7.4747486,
+          "Z": 73.205414
+        },
+        "BoxExtent": {
+          "X": 269.35614,
+          "Y": 18.613075,
+          "Z": 106.72332
+        },
+        "SphereRadius": 285.15918
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FenceLarge:BodySetup_5",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FenceLarge.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FenceLarge:NavCollision_299",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FenceLarge.1"
+    },
+    "LightingGuid": "71CA3D8C-440E724E-B7CFB6A1-9B429FD5",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,180 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_ArmoredCarMobilityW_threads_PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1,
+        2
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup SK_ArmoredCarMobilityW_threads_PhysicsAsset:SkeletalBodySetup_0",
+          "ObjectPath": "War/Content/Meshes/Vehicles/PrototypeVehicles/SK_ArmoredCarMobilityW_threads_PhysicsAsset.3"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup SK_ArmoredCarMobilityW_threads_PhysicsAsset:SkeletalBodySetup_1",
+          "ObjectPath": "War/Content/Meshes/Vehicles/PrototypeVehicles/SK_ArmoredCarMobilityW_threads_PhysicsAsset.4"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup SK_ArmoredCarMobilityW_threads_PhysicsAsset:SkeletalBodySetup_2",
+          "ObjectPath": "War/Content/Meshes/Vehicles/PrototypeVehicles/SK_ArmoredCarMobilityW_threads_PhysicsAsset.5"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate SK_ArmoredCarMobilityW_threads_PhysicsAsset:PhysicsConstraintTemplate_0",
+          "ObjectPath": "War/Content/Meshes/Vehicles/PrototypeVehicles/SK_ArmoredCarMobilityW_threads_PhysicsAsset.1"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate SK_ArmoredCarMobilityW_threads_PhysicsAsset:PhysicsConstraintTemplate_1",
+          "ObjectPath": "War/Content/Meshes/Vehicles/PrototypeVehicles/SK_ArmoredCarMobilityW_threads_PhysicsAsset.2"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Outer": "SK_ArmoredCarMobilityW_threads_PhysicsAsset",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "thread_L",
+        "ConstraintBone1": "thread_L",
+        "ConstraintBone2": "axle_pivot",
+        "Pos2": {
+          "X": 100.0,
+          "Y": -1.2212453E-15,
+          "Z": 17.563416
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_1",
+    "Outer": "SK_ArmoredCarMobilityW_threads_PhysicsAsset",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "thread_R",
+        "ConstraintBone1": "thread_R",
+        "ConstraintBone2": "axle_pivot",
+        "Pos2": {
+          "X": -100.0,
+          "Y": -1.2212453E-15,
+          "Z": 17.563416
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "SK_ArmoredCarMobilityW_threads_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -89.99999,
+              "Roll": 0.0
+            },
+            "Radius": 0.505,
+            "Length": 0.505,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "axle_pivot",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "SK_ArmoredCarMobilityW_threads_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 20.888237,
+              "Y": 7.196129,
+              "Z": -3.1973696
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -0.026367353,
+              "Roll": -89.34106
+            },
+            "Radius": 78.671196,
+            "Length": 281.0178,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "thread_L",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_2",
+    "Outer": "SK_ArmoredCarMobilityW_threads_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -21.005693,
+              "Y": 7.2262316,
+              "Z": -3.2040462
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.056987967,
+              "Roll": -89.38327
+            },
+            "Radius": 78.51888,
+            "Length": 281.01498,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "thread_R",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  }
+]

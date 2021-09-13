@@ -1,0 +1,99 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "TownCLargeGarrisonGS1_RadioRoof",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "TownCLargeGarrisonGS1_RadioRoof",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x511E"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TownCLargeGarrisonGS1_RadioRoof",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant GarrisonStationUpgrade",
+            "ObjectPath": "War/Content/Materials/Environment/Props/GarrisonStationUpgrade.0"
+          },
+          "MaterialSlotName": "GarrisonStationUpgrade",
+          "ImportedMaterialSlotName": "GarrisonStationUpgrade",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 811.9163,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant GarrisonStationTrims",
+            "ObjectPath": "War/Content/Materials/Environment/Props/GarrisonStationTrims.0"
+          },
+          "MaterialSlotName": "GarrisonStationTrims",
+          "ImportedMaterialSlotName": "GarrisonStationTrims",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1058.8652,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 846.3008,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 813.06976,
+          "Y": -30.021646,
+          "Z": 729.7352
+        },
+        "BoxExtent": {
+          "X": 33.354492,
+          "Y": 29.943426,
+          "Z": 345.8293
+        },
+        "SphereRadius": 347.1068
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TownCLargeGarrisonGS1_RadioRoof:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/TownCLargeGarrisonGS1_RadioRoof.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TownCLargeGarrisonGS1_RadioRoof:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/TownCLargeGarrisonGS1_RadioRoof.1"
+    },
+    "LightingGuid": "1E9FDF71-43972016-6D69BEA2-E6733DB1",
+    "RenderData": null
+  }
+]

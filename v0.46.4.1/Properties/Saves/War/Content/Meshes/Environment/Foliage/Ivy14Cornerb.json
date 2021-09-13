@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Ivy14Cornerb",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "Ivy14Cornerb",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xACC"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Ivy14Cornerb",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Ivy",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Ivy.0"
+          },
+          "MaterialSlotName": "Material #4296",
+          "ImportedMaterialSlotName": "Material #4296",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 578.91516,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 578.91516,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 72.93964,
+          "Y": -60.380394,
+          "Z": 257.93503
+        },
+        "BoxExtent": {
+          "X": 136.69536,
+          "Y": 116.12812,
+          "Z": 277.29297
+        },
+        "SphereRadius": 296.69766
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Ivy14Cornerb:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/Ivy14Cornerb.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Ivy14Cornerb:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/Ivy14Cornerb.1"
+    },
+    "LightingGuid": "61EED81C-46A6E21F-528DDFB6-5F698CA6",
+    "RenderData": null
+  }
+]

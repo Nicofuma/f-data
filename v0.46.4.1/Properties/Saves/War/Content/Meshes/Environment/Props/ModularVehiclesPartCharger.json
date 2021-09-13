@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ModularVehiclesPartCharger",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "ModularVehiclesPartCharger",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2235"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ModularVehiclesPartCharger",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant VehicleParts",
+            "ObjectPath": "War/Content/Materials/Environment/Props/VehicleParts.0"
+          },
+          "MaterialSlotName": "VehicleParts1",
+          "ImportedMaterialSlotName": "VehicleParts1",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 788.5416,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 788.5416,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 20.820671,
+          "Y": 23.51809,
+          "Z": 21.393433
+        },
+        "SphereRadius": 36.326626
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ModularVehiclesPartCharger:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ModularVehiclesPartCharger.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ModularVehiclesPartCharger:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ModularVehiclesPartCharger.1"
+    },
+    "LightingGuid": "0AFD3F7E-49D6F0D0-30388197-C7046371",
+    "RenderData": null
+  }
+]

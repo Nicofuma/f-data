@@ -1,0 +1,699 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPBusWarden_C",
+    "Super": "BPBus_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPBusWarden_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.29"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler BPBusWarden_C:InheritableComponentHandler",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.9"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass BPBus_C",
+      "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBus.1"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPBusWarden_C",
+    "Name": "Default__BPBusWarden_C",
+    "Properties": {
+      "IdleLoop": {
+        "ObjectName": "AudioComponent Default__BPBusWarden_C:IdleLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.5"
+      },
+      "RearLeftTireDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPBusWarden_C:RearLeftTireDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.15"
+      },
+      "RearLeftTireDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPBusWarden_C:RearLeftTireDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.14"
+      },
+      "RearRightTireDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPBusWarden_C:RearRightTireDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.17"
+      },
+      "RearRightTireDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPBusWarden_C:RearRightTireDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.16"
+      },
+      "MainDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPBusWarden_C:MainDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.11"
+      },
+      "MainDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPBusWarden_C:MainDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.10"
+      },
+      "SkiddingDirtPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPBusWarden_C:SkiddingDirtPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.18"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "43C039B542F585AE7B50B89F801B9BA9",
+        "SourceString": "Dunne Caravaner 2f"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "EA6B69544ABB97039697EABA9B34A8E0",
+        "SourceString": "The Caravaner is a transport vehicle used to shuttle personnel to the front line."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D BusWarIcon",
+        "ObjectPath": "War/Content/Textures/UI/VehicleIcons/BusWarIcon.0"
+      },
+      "FactionVariant": "EFactionId::Wardens",
+      "CodeName": "BusW",
+      "DestroyedMesh": {
+        "ObjectName": "StaticMeshComponent Default__BPBusWarden_C:DestroyedMesh",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.36"
+      },
+      "MinorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPBusWarden_C:MinorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.13"
+      },
+      "MajorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPBusWarden_C:MajorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.12"
+      },
+      "DriveLoop": {
+        "ObjectName": "AudioComponent Default__BPBusWarden_C:DriveLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.4"
+      },
+      "BackUpSFXLoop": {
+        "ObjectName": "AudioComponent Default__BPBusWarden_C:BackUpSFXLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.3"
+      },
+      "CameraRigComponent": {
+        "ObjectName": "PlayerCameraRigComponent Default__BPBusWarden_C:CameraRigVehicle",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.19"
+      },
+      "FrontAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__BPBusWarden_C:FrontAxelCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.22"
+      },
+      "RearAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__BPBusWarden_C:RearAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.25"
+      },
+      "FrontLeftRollCastLocation": {
+        "ObjectName": "SceneComponent Default__BPBusWarden_C:FrontRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.23"
+      },
+      "FrontRightRollCastLocation": {
+        "ObjectName": "SceneComponent Default__BPBusWarden_C:RearRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.26"
+      },
+      "LeftSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__BPBusWarden_C:LeftSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.24"
+      },
+      "RightSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__BPBusWarden_C:RightSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.27"
+      },
+      "VehicleCollision": {
+        "ObjectName": "BoxComponent Default__BPBusWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.7"
+      },
+      "PassengerArea": {
+        "ObjectName": "BoxComponent Default__BPBusWarden_C:PassengerBaseBox",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.6"
+      },
+      "AFKTimeoutComponent": {
+        "ObjectName": "AFKTimeoutComponent Default__BPBusWarden_C:AFKTimeoutComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.2"
+      },
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPBusWarden_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.37"
+      },
+      "Mesh": {
+        "ObjectName": "SkeletalMeshComponent Default__BPBusWarden_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.30"
+      },
+      "CharacterMovement": {
+        "ObjectName": "RWDVehicleMovementComponent Default__BPBusWarden_C:CharMoveComp",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.20"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent Default__BPBusWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.8"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPBusWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.7"
+      }
+    }
+  },
+  {
+    "Type": "AFKTimeoutComponent",
+    "Name": "AFKTimeoutComponent",
+    "Outer": "Default__BPBusWarden_C"
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "BackUpSFXLoop",
+    "Outer": "Default__BPBusWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPBusWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.8"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "DriveLoop",
+    "Outer": "Default__BPBusWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPBusWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.8"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "IdleLoop",
+    "Outer": "Default__BPBusWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPBusWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.7"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "PassengerBaseBox",
+    "Outer": "Default__BPBusWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPBusWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.7"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "VehicleCollision",
+    "Outer": "Default__BPBusWarden_C",
+    "Properties": {
+      "OnComponentHit": null,
+      "OnComponentBeginOverlap": null
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__BPBusWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPBusWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.7"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BPBusWarden_C",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class SpotLightComponent",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SpotLightComponent BPBusWarden_C:Headlight_R_GEN_VARIABLE",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.31"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass BPBus_C",
+              "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBus.1"
+            },
+            "SCSVariableName": "Headlight_R",
+            "AssociatedGuid": "41B1DCDC-4E7ABAE0-340CB290-ED68AE19"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class StaticMeshComponent",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "StaticMeshComponent BPBusWarden_C:Rear_L_GEN_VARIABLE",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.34"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass BPBus_C",
+              "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBus.1"
+            },
+            "SCSVariableName": "Rear_L",
+            "AssociatedGuid": "8DE0A722-4A049F10-78B00FBF-97193AED"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class StaticMeshComponent",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "StaticMeshComponent BPBusWarden_C:Light_L_GEN_VARIABLE",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.32"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass BPBus_C",
+              "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBus.1"
+            },
+            "SCSVariableName": "Light_L",
+            "AssociatedGuid": "83C84E2C-4DAD1D94-328516AE-C2AA224F"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class StaticMeshComponent",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "StaticMeshComponent BPBusWarden_C:Light_R_GEN_VARIABLE",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.33"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass BPBus_C",
+              "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBus.1"
+            },
+            "SCSVariableName": "Light_R",
+            "AssociatedGuid": "394043F9-4193242E-3C9BDA9D-FB74FD3D"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class StaticMeshComponent",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "StaticMeshComponent BPBusWarden_C:Rear_R_GEN_VARIABLE",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.35"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass BPBus_C",
+              "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBus.1"
+            },
+            "SCSVariableName": "Rear_R",
+            "AssociatedGuid": "45B7DEE5-47B55386-3D50F189-01EE4F5C"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MainDirtHighSpeedPS",
+    "Outer": "Default__BPBusWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPBusWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MainDirtLowSpeedPS",
+    "Outer": "Default__BPBusWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPBusWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MajorDamagePS",
+    "Outer": "Default__BPBusWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPBusWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.8"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MinorDamagePS",
+    "Outer": "Default__BPBusWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPBusWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.8"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearLeftTireDirtHighSpeedPS",
+    "Outer": "Default__BPBusWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPBusWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearLeftTireDirtLowSpeedPS",
+    "Outer": "Default__BPBusWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPBusWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearRightTireDirtHighSpeedPS",
+    "Outer": "Default__BPBusWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPBusWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearRightTireDirtLowSpeedPS",
+    "Outer": "Default__BPBusWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPBusWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "SkiddingDirtPS",
+    "Outer": "Default__BPBusWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPBusWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.7"
+      }
+    }
+  },
+  {
+    "Type": "PlayerCameraRigComponent",
+    "Name": "CameraRigVehicle",
+    "Outer": "Default__BPBusWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPBusWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.8"
+      }
+    }
+  },
+  {
+    "Type": "RWDVehicleMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__BPBusWarden_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPBusWarden_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontAxelCastLocation",
+    "Outer": "Default__BPBusWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPBusWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontRightAxleCastLocation",
+    "Outer": "Default__BPBusWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPBusWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "LeftSideTrackLocation",
+    "Outer": "Default__BPBusWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPBusWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearAxleCastLocation",
+    "Outer": "Default__BPBusWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPBusWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearRightAxleCastLocation",
+    "Outer": "Default__BPBusWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPBusWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RightSideTrackLocation",
+    "Outer": "Default__BPBusWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPBusWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.8"
+      }
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPBusWarden_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.21"
+      },
+      "VariableGuid": "A18569F2-4E7C790F-5C9CD5A9-ED558365",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPBusWarden_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPBusWarden_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.28"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__BPBusWarden_C",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_BusWarden",
+        "ObjectPath": "War/Content/Meshes/Vehicles/SK_BusWarden.0"
+      },
+      "OverrideMaterials": [
+        null,
+        null,
+        {
+          "ObjectName": "MaterialInstanceConstant BusWar",
+          "ObjectPath": "War/Content/Materials/Vehicles/BusWar.0"
+        }
+      ],
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPBusWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.8"
+      }
+    }
+  },
+  {
+    "Type": "SpotLightComponent",
+    "Name": "Headlight_R_GEN_VARIABLE",
+    "Outer": "BPBusWarden_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": -81.13318,
+        "Y": 503.94354,
+        "Z": 135.89296
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Light_L_GEN_VARIABLE",
+    "Outer": "BPBusWarden_C",
+    "Properties": {
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material SimpleEmissive02",
+          "ObjectPath": "War/Content/Materials/SimpleEmissive02.0"
+        }
+      ],
+      "RelativeLocation": {
+        "X": 76.18086,
+        "Y": 79.33958,
+        "Z": 150.569
+      },
+      "RelativeScale3D": {
+        "X": 0.9441472,
+        "Y": 0.45725083,
+        "Z": 0.9441472
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Light_R_GEN_VARIABLE",
+    "Outer": "BPBusWarden_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": -79.40858,
+        "Y": 501.91632,
+        "Z": 141.27045
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Rear_L_GEN_VARIABLE",
+    "Outer": "BPBusWarden_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": -89.09384,
+        "Y": -453.72137,
+        "Z": 150.68561
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 9.536743E-06,
+        "Roll": 0.0
+      },
+      "RelativeScale3D": {
+        "X": 1.0046448,
+        "Y": 2.0740986,
+        "Z": 1.0046448
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Rear_R_GEN_VARIABLE",
+    "Outer": "BPBusWarden_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 88.96738,
+        "Y": -455.57123,
+        "Z": 150.98164
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 4.386902E-05,
+        "Roll": 0.0
+      },
+      "RelativeScale3D": {
+        "X": 0.85388684,
+        "Y": 2.0740986,
+        "Z": 0.85388684
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "DestroyedMesh",
+    "Outer": "Default__BPBusWarden_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh BusWarDestroyed",
+        "ObjectPath": "War/Content/Meshes/Vehicles/BusWarDestroyed.2"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPBusWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBusWarden.8"
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPBusWarden_C"
+  }
+]

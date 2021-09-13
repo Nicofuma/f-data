@@ -1,0 +1,556 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "MultiplexedSkeletalMesh",
+    "Outer": "BPStaticCrane_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class MultiplexedSkeletalMeshComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPStaticCrane_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPStaticCrane_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.16"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class StaticCrane",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPStaticCrane_C:MultiplexedSkeletalMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.0"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPStaticCrane_C",
+    "Name": "Default__BPStaticCrane_C",
+    "Properties": {
+      "MainMesh": {
+        "ObjectName": "SkeletalMeshComponent Default__BPStaticCrane_C:CraneMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.17"
+      },
+      "BaseMesh": {
+        "ObjectName": "StaticMeshComponent Default__BPStaticCrane_C:BaseMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.18"
+      },
+      "RopeMesh": {
+        "ObjectName": "StaticMeshComponent Default__BPStaticCrane_C:RopeMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.19"
+      },
+      "ShippableCollision": {
+        "ObjectName": "BoxComponent Default__BPStaticCrane_C:ShippableCollision",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.8"
+      },
+      "ArmMovementSFXLoop": {
+        "ObjectName": "AudioComponent Default__BPStaticCrane_C:ArmMovementSFXLoop",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.4"
+      },
+      "DeployingSFXLoop": {
+        "ObjectName": "AudioComponent Default__BPStaticCrane_C:DeployingSFXLoop",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.5"
+      },
+      "PulleyMovementSFXLoop": {
+        "ObjectName": "AudioComponent Default__BPStaticCrane_C:PulleyMovementSFXLoop",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.6"
+      },
+      "OccupiableComponent": {
+        "ObjectName": "OccupiableComponent Default__BPStaticCrane_C:CraneOccupiableComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.12"
+      },
+      "OccupiableComponentTrigger": {
+        "ObjectName": "BoxComponent Default__BPStaticCrane_C:CraneOccupiableComponentTrigger",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.7"
+      },
+      "CraneComponent": {
+        "ObjectName": "CraneComponent Default__BPStaticCrane_C:CraneComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.10"
+      },
+      "ProceduralUseVolumeFactor": 1.0,
+      "BuildSiteClass": {
+        "ObjectName": "Class StructureBuildSite",
+        "ObjectPath": "/Script/War"
+      },
+      "BaseStructureClass": {
+        "ObjectName": "BlueprintGeneratedClass BPDestroyedStaticCrane_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedStaticCrane.1"
+      },
+      "bRequiresVehicleToBuild": true,
+      "CodeName": "StaticCrane",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "533D7D4245ED3B754C6389B8AD37C383",
+        "SourceString": "Stationary Crane"
+      },
+      "ArmourType": "EArmourType::Tier2Structure",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPStaticCrane_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPStaticCrane_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.9"
+      },
+      "MountComponent": {
+        "ObjectName": "Class CraneOperatorComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "MaxHealth": 1000,
+      "Health": 1000,
+      "StructureNetRelevancySize": "EStructureNetRelevancySize::Large",
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPStaticCrane_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.20"
+      },
+      "NetUpdateFrequency": 100.0,
+      "MinNetUpdateFrequency": 30.0,
+      "NetPriority": 3.0,
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPStaticCrane_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPStaticCrane_C"
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "ArmMovementSFXLoop",
+    "Outer": "Default__BPStaticCrane_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPStaticCrane_C:CraneMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.17"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "DeployingSFXLoop",
+    "Outer": "Default__BPStaticCrane_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPStaticCrane_C:CraneMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.17"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "PulleyMovementSFXLoop",
+    "Outer": "Default__BPStaticCrane_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPStaticCrane_C:CraneMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.17"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "CraneOccupiableComponentTrigger",
+    "Outer": "Default__BPStaticCrane_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 300.0,
+        "Y": 300.0,
+        "Z": 300.0
+      },
+      "BodyInstance": {
+        "CollisionProfileName": "StructureUseVolume",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapDowncast",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Projectile",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPStaticCrane_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 300.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ShippableCollision",
+    "Outer": "Default__BPStaticCrane_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPStaticCrane_C:CraneMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.17"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPStaticCrane_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 165.0,
+        "Y": 165.0,
+        "Z": 525.0
+      },
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPStaticCrane_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 525.0
+      }
+    }
+  },
+  {
+    "Type": "CraneComponent",
+    "Name": "CraneComponent",
+    "Outer": "Default__BPStaticCrane_C",
+    "Properties": {
+      "Components": {
+        "MainMesh": {
+          "ObjectName": "SkeletalMeshComponent Default__BPStaticCrane_C:CraneMesh",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.17"
+        },
+        "BaseMesh": {
+          "ObjectName": "StaticMeshComponent Default__BPStaticCrane_C:BaseMesh",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.18"
+        },
+        "RopeMesh": {
+          "ObjectName": "StaticMeshComponent Default__BPStaticCrane_C:RopeMesh",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.19"
+        },
+        "ShippableCollision": {
+          "ObjectName": "BoxComponent Default__BPStaticCrane_C:ShippableCollision",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.8"
+        },
+        "ArmMovementSFXLoop": {
+          "ObjectName": "AudioComponent Default__BPStaticCrane_C:ArmMovementSFXLoop",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.4"
+        },
+        "DeployingSFXLoop": {
+          "ObjectName": "AudioComponent Default__BPStaticCrane_C:DeployingSFXLoop",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.5"
+        },
+        "PulleyMovementSFXLoop": {
+          "ObjectName": "AudioComponent Default__BPStaticCrane_C:PulleyMovementSFXLoop",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.6"
+        }
+      },
+      "Config": {
+        "GlobalShippableInfo": {
+          "ObjectName": "BlueprintGeneratedClass BPGlobalShippableInfo_C",
+          "ObjectPath": "War/Content/Blueprints/Data/BPGlobalShippableInfo.0"
+        },
+        "AimMarker": {
+          "ObjectName": "BlueprintGeneratedClass BPCraneMarker_C",
+          "ObjectPath": "War/Content/Blueprints/BPCraneMarker.0"
+        },
+        "GhostMaterial": {
+          "ObjectName": "Material M_ClippedShippable",
+          "ObjectPath": "War/Content/Materials/Structures/M_ClippedShippable.0"
+        },
+        "ArmMovementSFXLoop": {
+          "ObjectName": "SoundCue CraneArmMovementLoop_Cue",
+          "ObjectPath": "War/Content/Audio/SFX/Vehicles/Crane/CraneArmMovementLoop_Cue.0"
+        },
+        "DeployingSFXLoop": {
+          "ObjectName": "SoundCue CraneDeployLoop_Cue",
+          "ObjectPath": "War/Content/Audio/SFX/Vehicles/Crane/CraneDeployLoop_Cue.0"
+        },
+        "PulleyMovementSFXLoop": {
+          "ObjectName": "SoundCue CranePulleyMovementLoop_Cue",
+          "ObjectPath": "War/Content/Audio/SFX/Vehicles/Crane/CranePulleyMovementLoop_Cue.0"
+        },
+        "DeployedSFXTrigger": {
+          "ObjectName": "SoundCue CraneDeployed_cue",
+          "ObjectPath": "War/Content/Audio/SFX/Vehicles/Crane/CraneDeployed_cue.0"
+        },
+        "PickUpSFXTrigger": {
+          "ObjectName": "SoundCue CraneCratePickup_Cue",
+          "ObjectPath": "War/Content/Audio/SFX/Vehicles/Crane/CraneCratePickup_Cue.0"
+        },
+        "DropOffSFXTrigger": {
+          "ObjectName": "SoundCue CraneCrateDrop_Cue",
+          "ObjectPath": "War/Content/Audio/SFX/Vehicles/Crane/CraneCrateDrop_Cue.0"
+        },
+        "DeployedCameraViewRadius": 1750.0,
+        "MinHorizontalDistanceToTarget": 450.0,
+        "MaxHorizontalDistanceToTarget": 2250.0,
+        "MaxHeight": 500.0,
+        "PulleyOffset": -146.0,
+        "bIsAlwaysDeployed": true
+      }
+    }
+  },
+  {
+    "Type": "MultiplexedSkeletalMeshComponent",
+    "Name": "MultiplexedSkeletalMesh_GEN_VARIABLE",
+    "Outer": "BPStaticCrane_C",
+    "Properties": {
+      "TargetTag": "Multiplexed",
+      "MeshStops": [
+        {
+          "Threshold": 0,
+          "SkeletalMesh": {
+            "ObjectName": "SkeletalMesh SK_StaticCrane_critical",
+            "ObjectPath": "War/Content/Meshes/Structures/SK_StaticCrane_critical.0"
+          }
+        },
+        {
+          "Threshold": 33,
+          "SkeletalMesh": {
+            "ObjectName": "SkeletalMesh SK_StaticCrane_damaged",
+            "ObjectPath": "War/Content/Meshes/Structures/SK_StaticCrane_damaged.0"
+          }
+        },
+        {
+          "Threshold": 66,
+          "SkeletalMesh": {
+            "ObjectName": "SkeletalMesh SK_StaticCrane",
+            "ObjectPath": "War/Content/Meshes/Structures/SK_StaticCrane.0"
+          }
+        }
+      ],
+      "InputValue": 100,
+      "SelectedMeshIndex": 2
+    }
+  },
+  {
+    "Type": "OccupiableComponent",
+    "Name": "CraneOccupiableComponent",
+    "Outer": "Default__BPStaticCrane_C",
+    "Properties": {
+      "TriggerComponent": {
+        "ObjectName": "BoxComponent Default__BPStaticCrane_C:CraneOccupiableComponentTrigger",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.7"
+      },
+      "MountCodeName": "CraneOperator",
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPStaticCrane_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 775.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPStaticCrane_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPStaticCrane_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.13"
+      },
+      "VariableGuid": "4BFB3D8C-413B216E-5F11A2B4-F1A974DF",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class MultiplexedSkeletalMeshComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "MultiplexedSkeletalMeshComponent BPStaticCrane_C:MultiplexedSkeletalMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.11"
+      },
+      "VariableGuid": "53FBEE5F-4A0343A7-5DE553A2-178DA389",
+      "InternalVariableName": "MultiplexedSkeletalMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPStaticCrane_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPStaticCrane_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.15"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPStaticCrane_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.15"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPStaticCrane_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.14"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "CraneMesh",
+    "Outer": "Default__BPStaticCrane_C",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_StaticCrane_C",
+        "ObjectPath": "War/Content/Animation/WorldAssets/StaticCrane/ABP_StaticCrane.1"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_StaticCrane",
+        "ObjectPath": "War/Content/Meshes/Structures/SK_StaticCrane.0"
+      },
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldDynamic",
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPStaticCrane_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.3"
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      },
+      "ComponentTags": [
+        "Multiplexed"
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "BaseMesh",
+    "Outer": "Default__BPStaticCrane_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPStaticCrane_C:CraneMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.17"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "RopeMesh",
+    "Outer": "Default__BPStaticCrane_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPStaticCrane_C:CraneMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPStaticCrane.17"
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPStaticCrane_C"
+  }
+]

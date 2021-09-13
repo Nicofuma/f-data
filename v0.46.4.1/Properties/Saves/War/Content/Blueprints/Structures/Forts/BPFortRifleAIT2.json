@@ -1,0 +1,874 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "FortSpotLight",
+    "Outer": "BPFortRifleAIT2_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class TemplateComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPFortRifleAIT2_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPFortRifleAIT2_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.33"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class FortTurret",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPFortRifleAIT2_C:FortSpotLight",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortRifleAIT2_C:FortCommonMods",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.15"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortRifleAIT2_C:Floor",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.12"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortRifleAIT2_C:FortCommonDirt",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.14"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortRifleAIT2_C:FortCommon",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.13"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortRifleAIT2_C:RightAITurret",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.19"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortRifleAIT2_C:BackAITurret",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.11"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortRifleAIT2_C:LeftAITurret",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.18"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortRifleAIT2_C:FrontAITurret",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.17"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortRifleAIT2_C:FortT1GunAI",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.16"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPFortRifleAIT2_C",
+    "Name": "Default__BPFortRifleAIT2_C",
+    "Properties": {
+      "PowerInfo": {
+        "PowerDelta": -600
+      },
+      "OccupiableTriggerVolume": {
+        "ObjectName": "BoxComponent Default__BPFortRifleAIT2_C:OccupiableTriggerVolume",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.5"
+      },
+      "OccupiableComponent": {
+        "ObjectName": "OccupiableComponent Default__BPFortRifleAIT2_C:OccupyComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.20"
+      },
+      "ImpactEffect": {
+        "ObjectName": "BlueprintGeneratedClass RifleImpactEffect_C",
+        "ObjectPath": "War/Content/Blueprints/Items/RifleImpactEffect.1"
+      },
+      "WeaponFireFXClass": {
+        "ObjectName": "BlueprintGeneratedClass TracerFireFX_C",
+        "ObjectPath": "War/Content/Blueprints/TracerFireFX.1"
+      },
+      "ShotSoundCue": {
+        "ObjectName": "SoundCue RifleShot_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Weapons/RifleShot_Cue.0"
+      },
+      "MuzzleFlashPS": {
+        "ObjectName": "ParticleSystem RifleMF",
+        "ObjectPath": "War/Content/FX/RifleMF.58"
+      },
+      "WeaponDamage": 40.0,
+      "MaximumRange": 2900.0,
+      "BestJitterConeHalfAngle": 4.0,
+      "WorstJitterConeHalfAngle": 20.0,
+      "FiringPeriod": 0.5,
+      "TimeToFullFireRateAndAccuracy": 3.5,
+      "EnemyPursueDuration": 5.5,
+      "MuzzleFlashLocationComponent": {
+        "ObjectName": "ArrowComponent Default__BPFortRifleAIT2_C:MuzzleFxLocationComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.3"
+      },
+      "FiringConeAngle": 180.0,
+      "FlagMesh": {
+        "ObjectName": "TeamFlagMeshComponent Default__BPFortRifleAIT2_C:FlagMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.37"
+      },
+      "Tier": "EFortTier::T2",
+      "BuildGhostClass": null,
+      "BuildSiteClass": {
+        "ObjectName": "Class FortBuildSite",
+        "ObjectPath": "/Script/War"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "4D348B46403745AA4D25D0BC6275DF9F",
+        "SourceString": "An entrenched bunker manned by stationed troops armed with Rifles."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D FortT2GunAIIcon",
+        "ObjectPath": "War/Content/Textures/UI/StructureIcons/FortT2GunAIIcon.0"
+      },
+      "CodeName": "RifleAIT2",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "0B1813BE48F2C2348ADD8A8D6CA1CEB3",
+        "SourceString": "Rifle Garrison (Tier 2)"
+      },
+      "ArmourType": "EArmourType::Tier2Structure",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPFortRifleAIT2_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.4"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPFortRifleAIT2_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.6"
+      },
+      "DestroyedFX": {
+        "ObjectName": "ParticleSystem GrenadeBlast",
+        "ObjectPath": "War/Content/FX/GrenadeBlast.151"
+      },
+      "TechComponentIDs": [
+        "ETechComponentID::RifleGarrison"
+      ],
+      "MaxHealth": 1850,
+      "Health": 1850,
+      "UpgradeStructureCodeName": "RifleAIT3",
+      "MapIntelligenceType": "EMapIntelligenceType::Defense",
+      "ClaimStatus": {
+        "bCanBeDemolished": true
+      },
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPFortRifleAIT2_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.36"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPFortRifleAIT2_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.4"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "MuzzleFxLocationComponent",
+    "Outer": "Default__BPFortRifleAIT2_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFortRifleAIT2_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.4"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPFortRifleAIT2_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "OccupiableTriggerVolume",
+    "Outer": "Default__BPFortRifleAIT2_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFortRifleAIT2_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.4"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPFortRifleAIT2_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 400.0,
+        "Y": 400.0,
+        "Z": 160.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFortRifleAIT2_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.4"
+      },
+      "RelativeLocation": {
+        "X": -6.1035156E-05,
+        "Y": 1.4084167,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BPAIGarrisonTurret_C",
+    "Name": "BackAITurret_GEN_VARIABLE",
+    "Outer": "BPFortRifleAIT2_C",
+    "Properties": {
+      "TriggerBoxOffset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "TriggerBoxExtents": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "RelativeLocation": {
+        "X": -335.0,
+        "Y": 0.0,
+        "Z": 70.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -180.00017,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BPAIGarrisonTurret_C",
+    "Name": "FrontAITurret_GEN_VARIABLE",
+    "Outer": "BPFortRifleAIT2_C",
+    "Properties": {
+      "TriggerBoxOffset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "TriggerBoxExtents": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "RelativeLocation": {
+        "X": 335.0,
+        "Y": 0.0,
+        "Z": 70.0
+      }
+    }
+  },
+  {
+    "Type": "BPAIGarrisonTurret_C",
+    "Name": "LeftAITurret_GEN_VARIABLE",
+    "Outer": "BPFortRifleAIT2_C",
+    "Properties": {
+      "TriggerBoxOffset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "TriggerBoxExtents": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": -335.0,
+        "Z": 70.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.00012,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BPAIGarrisonTurret_C",
+    "Name": "RightAITurret_GEN_VARIABLE",
+    "Outer": "BPFortRifleAIT2_C",
+    "Properties": {
+      "TriggerBoxOffset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "TriggerBoxExtents": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 335.0,
+        "Z": 70.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "BackAITurret",
+    "Outer": "BPFortRifleAIT2_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "BlueprintGeneratedClass BPAIGarrisonTurret_C",
+      "ObjectPath": "War/Content/Blueprints/Structures/BPAIGarrisonTurret.0"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Floor",
+    "Outer": "BPFortRifleAIT2_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "FortCommon",
+    "Outer": "BPFortRifleAIT2_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class TemplateComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "FortCommonDirt",
+    "Outer": "BPFortRifleAIT2_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class TemplateComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "FortCommonMods",
+    "Outer": "BPFortRifleAIT2_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class TemplateComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "FortT1GunAI",
+    "Outer": "BPFortRifleAIT2_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "FrontAITurret",
+    "Outer": "BPFortRifleAIT2_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "BlueprintGeneratedClass BPAIGarrisonTurret_C",
+      "ObjectPath": "War/Content/Blueprints/Structures/BPAIGarrisonTurret.0"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "LeftAITurret",
+    "Outer": "BPFortRifleAIT2_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "BlueprintGeneratedClass BPAIGarrisonTurret_C",
+      "ObjectPath": "War/Content/Blueprints/Structures/BPAIGarrisonTurret.0"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "RightAITurret",
+    "Outer": "BPFortRifleAIT2_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "BlueprintGeneratedClass BPAIGarrisonTurret_C",
+      "ObjectPath": "War/Content/Blueprints/Structures/BPAIGarrisonTurret.0"
+    }
+  },
+  {
+    "Type": "OccupiableComponent",
+    "Name": "OccupyComponent",
+    "Outer": "Default__BPFortRifleAIT2_C",
+    "Properties": {
+      "TriggerComponent": {
+        "ObjectName": "BoxComponent Default__BPFortRifleAIT2_C:OccupiableTriggerVolume",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.5"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFortRifleAIT2_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.4"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPFortRifleAIT2_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPFortRifleAIT2_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.21"
+      },
+      "VariableGuid": "1144E758-45F21128-659C63A0-98B6F24C",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_10",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class TemplateComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "TemplateComponent BPFortRifleAIT2_C:FortCommon_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.38"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "F2F714EF-457805D9-C1BE30B8-8AB11EF7",
+      "InternalVariableName": "FortCommon"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class TemplateComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "TemplateComponent BPFortRifleAIT2_C:FortCommonDirt_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.39"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "313B8E97-4C7196FE-85A8688A-72838A69",
+      "InternalVariableName": "FortCommonDirt"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_26",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPFortRifleAIT2_C:FortT1GunAI_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.35"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "DA9D3230-4AD3F92F-E90040A9-0F4768D0",
+      "InternalVariableName": "FortT1GunAI"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_27",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPAIGarrisonTurret_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPAIGarrisonTurret.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BPAIGarrisonTurret_C BPFortRifleAIT2_C:FrontAITurret_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.8"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "F5B2540C-4D1FBCC3-19DB4985-03563DD6",
+      "InternalVariableName": "FrontAITurret"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_28",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPAIGarrisonTurret_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPAIGarrisonTurret.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BPAIGarrisonTurret_C BPFortRifleAIT2_C:LeftAITurret_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.9"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "48FBD254-4DD41D5F-B479C1A1-CCC791B4",
+      "InternalVariableName": "LeftAITurret"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_29",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPAIGarrisonTurret_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPAIGarrisonTurret.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BPAIGarrisonTurret_C BPFortRifleAIT2_C:BackAITurret_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.7"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "522A26B1-49CF2C87-0D318B83-32CC267F",
+      "InternalVariableName": "BackAITurret"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class TemplateComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "TemplateComponent BPFortRifleAIT2_C:FortCommonMods_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.40"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "DDBB6800-4013EB25-DFE558B7-D90A2C11",
+      "InternalVariableName": "FortCommonMods"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_30",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPAIGarrisonTurret_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPAIGarrisonTurret.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BPAIGarrisonTurret_C BPFortRifleAIT2_C:RightAITurret_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.10"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "C475FB8A-4262369B-4507D6A4-B9B33545",
+      "InternalVariableName": "RightAITurret"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPFortRifleAIT2_C:Floor_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.34"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "D7192216-4DFBF67B-964DAC91-C3905B22",
+      "InternalVariableName": "Floor"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class TemplateComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "TemplateComponent BPFortRifleAIT2_C:FortSpotLight_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.41"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "98DCED9D-42085326-2A67128E-9CBCB034",
+      "InternalVariableName": "FortSpotLight"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPFortRifleAIT2_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPFortRifleAIT2_C:SimpleConstructionScript_0.SCS_Node_26",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.25"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortRifleAIT2_C:SimpleConstructionScript_0.SCS_Node_27",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.26"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortRifleAIT2_C:SimpleConstructionScript_0.SCS_Node_28",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.27"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortRifleAIT2_C:SimpleConstructionScript_0.SCS_Node_29",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.28"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortRifleAIT2_C:SimpleConstructionScript_0.SCS_Node_30",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.30"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortRifleAIT2_C:SimpleConstructionScript_0.SCS_Node_10",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.23"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortRifleAIT2_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.24"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortRifleAIT2_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.31"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortRifleAIT2_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.29"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortRifleAIT2_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.32"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPFortRifleAIT2_C:SimpleConstructionScript_0.SCS_Node_26",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.25"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortRifleAIT2_C:SimpleConstructionScript_0.SCS_Node_27",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.26"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortRifleAIT2_C:SimpleConstructionScript_0.SCS_Node_28",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.27"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortRifleAIT2_C:SimpleConstructionScript_0.SCS_Node_29",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.28"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortRifleAIT2_C:SimpleConstructionScript_0.SCS_Node_30",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.30"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortRifleAIT2_C:SimpleConstructionScript_0.SCS_Node_10",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.23"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortRifleAIT2_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.24"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortRifleAIT2_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.31"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortRifleAIT2_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.29"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortRifleAIT2_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.32"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPFortRifleAIT2_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.22"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Floor_GEN_VARIABLE",
+    "Outer": "BPFortRifleAIT2_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh FortT2Floor01",
+        "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortT2Floor01.2"
+      },
+      "bReceivesDecals": false,
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -160.0
+      },
+      "ComponentTags": [
+        "ExcludeFromBuildGhost"
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "FortT1GunAI_GEN_VARIABLE",
+    "Outer": "BPFortRifleAIT2_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh FortT2GunAI",
+        "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/AIBunkers/FortT2GunAI.2"
+      },
+      "bReceivesDecals": false,
+      "BodyInstance": {
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -160.0
+      },
+      "ComponentTags": [
+        "RoofVisibility"
+      ]
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPFortRifleAIT2_C"
+  },
+  {
+    "Type": "TeamFlagMeshComponent",
+    "Name": "FlagMesh",
+    "Outer": "Default__BPFortRifleAIT2_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFortRifleAIT2_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortRifleAIT2.4"
+      },
+      "RelativeLocation": {
+        "X": 240.89117,
+        "Y": 242.32881,
+        "Z": -73.64566
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -180.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "TemplateComponent",
+    "Name": "FortCommon_GEN_VARIABLE",
+    "Outer": "BPFortRifleAIT2_C",
+    "Properties": {
+      "TemplateActor": {
+        "ObjectName": "BlueprintGeneratedClass BPFortCommon_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommon.1"
+      }
+    }
+  },
+  {
+    "Type": "TemplateComponent",
+    "Name": "FortCommonDirt_GEN_VARIABLE",
+    "Outer": "BPFortRifleAIT2_C",
+    "Properties": {
+      "TemplateActor": {
+        "ObjectName": "BlueprintGeneratedClass BPFortCommonDirt_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommonDirt.1"
+      }
+    }
+  },
+  {
+    "Type": "TemplateComponent",
+    "Name": "FortCommonMods_GEN_VARIABLE",
+    "Outer": "BPFortRifleAIT2_C",
+    "Properties": {
+      "TemplateActor": {
+        "ObjectName": "BlueprintGeneratedClass BPFortCommonMods_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommonMods.1"
+      }
+    }
+  },
+  {
+    "Type": "TemplateComponent",
+    "Name": "FortSpotLight_GEN_VARIABLE",
+    "Outer": "BPFortRifleAIT2_C",
+    "Properties": {
+      "TemplateActor": {
+        "ObjectName": "BlueprintGeneratedClass BPFortSpotLight_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/Templates/BPFortSpotLight.1"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 312.0
+      }
+    }
+  }
+]

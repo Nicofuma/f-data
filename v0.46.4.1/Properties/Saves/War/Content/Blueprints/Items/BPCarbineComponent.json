@@ -1,0 +1,124 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPCarbineComponent_C",
+    "SuperStruct": {
+      "ObjectName": "Class GrenadeAdapterComponent",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPCarbineComponent_C",
+    "Name": "Default__BPCarbineComponent_C",
+    "Properties": {
+      "BayonetMesh": {
+        "ObjectName": "SkeletalMesh Bayonet",
+        "ObjectPath": "War/Content/Meshes/Weapons/Bayonet.0"
+      },
+      "AttachAccessorySound": {
+        "ObjectName": "SoundCue AttachAccessory_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Weapons/AttachAccessory_Cue.0"
+      },
+      "BayonetAttackSound": {
+        "ObjectName": "SoundCue BayonetWhoosh_cue",
+        "ObjectPath": "War/Content/Audio/SFX/Melee/BayonetWhoosh_cue.0"
+      },
+      "FireCameraShake": {
+        "ObjectName": "BlueprintGeneratedClass RifleFireCameraShake_C",
+        "ObjectPath": "War/Content/Blueprints/Items/RifleFireCameraShake.0"
+      },
+      "ImpactEffect": {
+        "ObjectName": "BlueprintGeneratedClass RifleImpactEffect_C",
+        "ObjectPath": "War/Content/Blueprints/Items/RifleImpactEffect.1"
+      },
+      "WeaponFireFXClass": {
+        "ObjectName": "BlueprintGeneratedClass TracerFireFX_C",
+        "ObjectPath": "War/Content/Blueprints/TracerFireFX.1"
+      },
+      "ShotSoundCue": {
+        "ObjectName": "SoundCue CarbineShot_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Weapons/Semi/CarbineShot_Cue.0"
+      },
+      "ShotNoAmmoSoundCue": {
+        "ObjectName": "SoundCue CarbineDryFire_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Weapons/Semi/CarbineDryFire_Cue.0"
+      },
+      "ClipEmptiedSoundCue": {
+        "ObjectName": "SoundCue CarbineEndClip_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Weapons/Semi/CarbineEndClip_Cue.0"
+      },
+      "MuzzleFlashPS": {
+        "ObjectName": "ParticleSystem CarbineMF",
+        "ObjectPath": "War/Content/FX/CarbineMF.58"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh Carbine",
+        "ObjectPath": "War/Content/Meshes/Weapons/Carbine.0"
+      },
+      "MitigationType": "ECoverMitigationType::Carbine",
+      "EquippedGripType": "EEquippedWeaponGripType::Rifle",
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage CBN_Equipping",
+          "ObjectPath": "War/Content/Animation/Character/CBN_Carbine/CBN_Equipping.0"
+        },
+        "Duration": 2.0
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage RFL_Unequipping",
+          "ObjectPath": "War/Content/Animation/Character/RFL_Rifle/RFL_Unequipping.0"
+        },
+        "Duration": 1.5
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage CBN_Shooting",
+          "ObjectPath": "War/Content/Animation/Character/CBN_Carbine/CBN_Shooting.0"
+        }
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage CBN_Reloading",
+          "ObjectPath": "War/Content/Animation/Character/CBN_Carbine/CBN_Reloading.0"
+        },
+        "Duration": 2.5
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage RFL_Bayonet_Attack",
+          "ObjectPath": "War/Content/Animation/Character/RFL_Rifle/RFL_Bayonet_Attack.0"
+        }
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage RFL_Bayonet_Equipping",
+          "ObjectPath": "War/Content/Animation/Character/RFL_Rifle/RFL_Bayonet_Equipping.0"
+        }
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage RFL_Bayonet_Equipping",
+          "ObjectPath": "War/Content/Animation/Character/RFL_Rifle/RFL_Bayonet_Equipping.0"
+        },
+        "bIsReversed": true
+      },
+      "ReloadSoundCue": {
+        "ObjectName": "SoundCue CarbineReload_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Weapons/Semi/CarbineReload_Cue.0"
+      },
+      "CompatibleAmmoCodeName": "RifleAmmo",
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  }
+]

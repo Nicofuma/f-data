@@ -1,0 +1,121 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "RifleHeavyWPickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript RifleHeavyWPickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleHeavyWPickup.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class FirearmPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "RifleHeavyWPickup_C",
+    "Name": "Default__RifleHeavyWPickup_C",
+    "Properties": {
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass RifleHeavyWComponent_C",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleHeavyWComponent.0"
+      },
+      "CodeName": "RifleHeavyW",
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "6843208F4FFF9A9F4E113CBD28CF7EB2",
+        "SourceString": "Heavy Rifle"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "564937FE48E025D15B644A8073D09BF2",
+        "SourceString": "The Hangman 757"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "16F6228948DF251696E0A88FB7FF8006",
+        "SourceString": "The weapon of choice for pirates and smugglers, its legend is well-earned. With incredibly high stopping power and unique revolver mechanism, the Hangman often plays judge, jury, and executioner."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D RevolvingRifleWItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/RevolvingRifleWItemIcon.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Primary",
+      "ItemCategory": "EItemCategory::SmallArms",
+      "ItemFlagsMask": 129,
+      "ItemProfileType": "EItemProfileType::HandheldWeapon",
+      "FactionVariant": "EFactionId::Wardens",
+      "TechID": "ETechID::UnlockRifleHeavy",
+      "ItemMesh": {
+        "ObjectName": "StaticMeshComponent Default__RifleHeavyWPickup_C:ItemMesh",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleHeavyWPickup.6"
+      },
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__RifleHeavyWPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleHeavyWPickup.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__RifleHeavyWPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleHeavyWPickup.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__RifleHeavyWPickup_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "RifleHeavyWPickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent RifleHeavyWPickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleHeavyWPickup.3"
+      },
+      "VariableGuid": "7618B329-4EFE72C9-D72654B7-ED3B4F87",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "RifleHeavyWPickup_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node RifleHeavyWPickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleHeavyWPickup.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__RifleHeavyWPickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__RifleHeavyWPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleHeavyWPickup.2"
+      }
+    }
+  }
+]

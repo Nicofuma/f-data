@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "IModLocker03",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "IModLocker03",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xC22"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "IModLocker03",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortIModLockers01",
+            "ObjectPath": "War/Content/Materials/Structures/FortIModLockers01.0"
+          },
+          "MaterialSlotName": "FortIModLockers01",
+          "ImportedMaterialSlotName": "FortIModLockers01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 515.6296,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 515.6296,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 111.56422
+        },
+        "BoxExtent": {
+          "X": 37.11448,
+          "Y": 41.22109,
+          "Z": 113.73832
+        },
+        "SphereRadius": 126.54274
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup IModLocker03:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/IModLocker03.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision IModLocker03:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/IModLocker03.1"
+    },
+    "LightingGuid": "A0CC0119-49D20548-96F746BF-11FA714A",
+    "RenderData": null
+  }
+]

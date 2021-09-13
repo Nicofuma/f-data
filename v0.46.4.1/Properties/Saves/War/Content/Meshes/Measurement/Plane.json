@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_33",
+    "Outer": "Plane",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Plane",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xC5B"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Plane",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WaterMeasurement",
+            "ObjectPath": "War/Content/Materials/WaterMeasurement.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WaterMeasurement",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 120.0,
+            "LocalUVDensities": 121.90476,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 121.90476,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 60.0,
+          "Y": 60.0,
+          "Z": 7.1525574E-06
+        },
+        "SphereRadius": 84.85281
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Plane:BodySetup_33",
+      "ObjectPath": "War/Content/Meshes/Measurement/Plane.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Plane:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Measurement/Plane.1"
+    },
+    "LightingGuid": "4C5E4B98-46CD3B85-33097687-9FCAC29B",
+    "RenderData": null
+  }
+]

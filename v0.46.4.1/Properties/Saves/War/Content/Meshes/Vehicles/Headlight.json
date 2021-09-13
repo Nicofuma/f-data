@@ -1,0 +1,78 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Headlight",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_5",
+    "Outer": "Headlight",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x11CC"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Headlight",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material SimpleEmissive",
+            "ObjectPath": "War/Content/Materials/SimpleEmissive.0"
+          },
+          "MaterialSlotName": "SimpleEmissive",
+          "ImportedMaterialSlotName": "SimpleEmissive",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 16.550108,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 16.550108,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 8.0,
+          "Y": 2.9493213,
+          "Z": 8.0
+        },
+        "SphereRadius": 8.124306
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Headlight:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Vehicles/Headlight.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Headlight:NavCollision_5",
+      "ObjectPath": "War/Content/Meshes/Vehicles/Headlight.1"
+    },
+    "LightingGuid": "85C60B95-4FB624B1-9EEFBCB9-E067807C",
+    "RenderData": null
+  }
+]

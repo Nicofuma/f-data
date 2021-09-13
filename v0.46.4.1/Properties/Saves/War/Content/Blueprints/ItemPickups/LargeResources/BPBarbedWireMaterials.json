@@ -1,0 +1,191 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "ItemMeshSK",
+    "Outer": "BPBarbedWireMaterials_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SkeletalMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPBarbedWireMaterials_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPBarbedWireMaterials_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/LargeResources/BPBarbedWireMaterials.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class GearPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPBarbedWireMaterials_C:ItemMeshSK",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/LargeResources/BPBarbedWireMaterials.0"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPBarbedWireMaterials_C",
+    "Name": "Default__BPBarbedWireMaterials_C",
+    "Properties": {
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPBarbedWireMaterialsComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Items/BPBarbedWireMaterialsComponent.0"
+      },
+      "Encumbrance": 300,
+      "CodeName": "BarbedWireMaterials",
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "0C13938E4A33E2E910B94F88DB37ADCD",
+        "SourceString": "Large Material"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "29B8539D469BDC3C4B6EA38E641C3204",
+        "SourceString": "Barbed Wire"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "B314758742D3AC9F06361CB71709622E",
+        "SourceString": "Used to construct Barbed Wire defenses."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D BarbedWireMaterialItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/BarbedWireMaterialItemIcon.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Large",
+      "ItemCategory": "EItemCategory::Supplies",
+      "ItemProfileType": "EItemProfileType::LargeResource",
+      "bIsLarge": true,
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPBarbedWireMaterials_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/LargeResources/BPBarbedWireMaterials.3"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPBarbedWireMaterials_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/LargeResources/BPBarbedWireMaterials.3"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPBarbedWireMaterials_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPBarbedWireMaterials_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPBarbedWireMaterials_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/LargeResources/BPBarbedWireMaterials.4"
+      },
+      "VariableGuid": "25E2F609-4EFE723F-7D3AF29B-4E876B09",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SkeletalMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SkeletalMeshComponent BPBarbedWireMaterials_C:ItemMeshSK_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/LargeResources/BPBarbedWireMaterials.8"
+      },
+      "ParentComponentOrVariableName": "ItemBox",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "77231694-4D403C5A-880C4D96-90A0B4F6",
+      "InternalVariableName": "ItemMeshSK"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPBarbedWireMaterials_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPBarbedWireMaterials_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/ItemPickups/LargeResources/BPBarbedWireMaterials.6"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPBarbedWireMaterials_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/ItemPickups/LargeResources/BPBarbedWireMaterials.6"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPBarbedWireMaterials_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/LargeResources/BPBarbedWireMaterials.5"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "ItemMeshSK_GEN_VARIABLE",
+    "Outer": "BPBarbedWireMaterials_C",
+    "Properties": {
+      "bEnablePhysicsOnDedicatedServer": false,
+      "ClothingSimulationFactory": {
+        "ObjectName": "Class ClothingSimulationFactoryNv",
+        "ObjectPath": "/Script/ClothingSystemRuntimeNv"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_BarbedWireMaterial",
+        "ObjectPath": "War/Content/Meshes/Pickups/SK_BarbedWireMaterial.0"
+      },
+      "bReceivesDecals": false,
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 10.0,
+        "Z": 25.0
+      },
+      "RelativeScale3D": {
+        "X": 1.5,
+        "Y": 1.5,
+        "Z": 1.5
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPBarbedWireMaterials_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPBarbedWireMaterials_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/LargeResources/BPBarbedWireMaterials.3"
+      }
+    }
+  }
+]

@@ -1,0 +1,231 @@
+[
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "BPFirbush02Replacement_C",
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPFirbush02Replacement_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPFirbush02Replacement_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Environment/FoliageReplacement/BPFirbush02Replacement.15"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty BPFirbush02Replacement_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Blueprints/Environment/FoliageReplacement/BPFirbush02Replacement.0"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function BPFirbush02Replacement_C:ExecuteUbergraph_BPFirbush02Replacement",
+        "ObjectPath": "War/Content/Blueprints/Environment/FoliageReplacement/BPFirbush02Replacement.6"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class ClientFoliageReplacement",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty BPFirbush02Replacement_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Blueprints/Environment/FoliageReplacement/BPFirbush02Replacement.0"
+      },
+      {
+        "ObjectName": "Function BPFirbush02Replacement_C:OnStateChanged",
+        "ObjectPath": "War/Content/Blueprints/Environment/FoliageReplacement/BPFirbush02Replacement.10"
+      },
+      {
+        "ObjectName": "Function BPFirbush02Replacement_C:ExecuteUbergraph_BPFirbush02Replacement",
+        "ObjectPath": "War/Content/Blueprints/Environment/FoliageReplacement/BPFirbush02Replacement.6"
+      },
+      {
+        "ObjectName": "EnumProperty BPFirbush02Replacement_C:NewVar_0",
+        "ObjectPath": "War/Content/Blueprints/Environment/FoliageReplacement/BPFirbush02Replacement.4"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 458752,
+    "ClassWithin": null,
+    "ClassConfigName": "/Game/Blueprints/Environment/FoliageReplacement/BPFirbush02Replacement_720895",
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPFirbush02Replacement_C",
+    "Name": "Default__BPFirbush02Replacement_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "DestroyedMesh": {
+        "ObjectName": "StaticMesh Firbush02Ruined",
+        "ObjectPath": "War/Content/Meshes/Environment/Foliage/Firbush02Ruined.2"
+      },
+      "Mesh": {
+        "ObjectName": "StaticMeshComponent Default__BPFirbush02Replacement_C:Mesh",
+        "ObjectPath": "War/Content/Blueprints/Environment/FoliageReplacement/BPFirbush02Replacement.16"
+      },
+      "RootComponent": {
+        "ObjectName": "StaticMeshComponent Default__BPFirbush02Replacement_C:Mesh",
+        "ObjectPath": "War/Content/Blueprints/Environment/FoliageReplacement/BPFirbush02Replacement.16"
+      }
+    }
+  },
+  {
+    "Type": "ByteProperty",
+    "Name": "UnderlyingType",
+    "Outer": "NewVar_0",
+    "Enum": null
+  },
+  {
+    "Type": "EnumProperty",
+    "Name": "NewVar_0",
+    "Outer": "BPFirbush02Replacement_C",
+    "PropertyFlags": 65541,
+    "Enum": {
+      "ObjectName": "Enum EClientFoliageReplacementState",
+      "ObjectPath": "/Script/War"
+    },
+    "UnderlyingProp": {
+      "ObjectName": "ByteProperty BPFirbush02Replacement_C:NewVar_0.UnderlyingType",
+      "ObjectPath": "War/Content/Blueprints/Environment/FoliageReplacement/BPFirbush02Replacement.3"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_BPFirbush02Replacement",
+    "PropertyFlags": 148
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BPFirbush02Replacement",
+    "Outer": "BPFirbush02Replacement_C",
+    "Children": [
+      {
+        "ObjectName": "IntProperty BPFirbush02Replacement_C:ExecuteUbergraph_BPFirbush02Replacement.EntryPoint",
+        "ObjectPath": "War/Content/Blueprints/Environment/FoliageReplacement/BPFirbush02Replacement.5"
+      },
+      {
+        "ObjectName": "EnumProperty BPFirbush02Replacement_C:ExecuteUbergraph_BPFirbush02Replacement.K2Node_Event_State",
+        "ObjectPath": "War/Content/Blueprints/Environment/FoliageReplacement/BPFirbush02Replacement.12"
+      },
+      {
+        "ObjectName": "BoolProperty BPFirbush02Replacement_C:ExecuteUbergraph_BPFirbush02Replacement.K2Node_SwitchEnum_CmpSuccess",
+        "ObjectPath": "War/Content/Blueprints/Environment/FoliageReplacement/BPFirbush02Replacement.7"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_SwitchEnum_CmpSuccess",
+    "Outer": "ExecuteUbergraph_BPFirbush02Replacement",
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ByteProperty",
+    "Name": "UnderlyingType",
+    "Outer": "K2Node_Event_State",
+    "Enum": null
+  },
+  {
+    "Type": "EnumProperty",
+    "Name": "State",
+    "Outer": "OnStateChanged",
+    "PropertyFlags": 148,
+    "Enum": {
+      "ObjectName": "Enum EClientFoliageReplacementState",
+      "ObjectPath": "/Script/War"
+    },
+    "UnderlyingProp": {
+      "ObjectName": "ByteProperty BPFirbush02Replacement_C:OnStateChanged.State.UnderlyingType",
+      "ObjectPath": "War/Content/Blueprints/Environment/FoliageReplacement/BPFirbush02Replacement.11"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "OnStateChanged",
+    "Outer": "BPFirbush02Replacement_C",
+    "SuperStruct": {
+      "ObjectName": "Function ClientFoliageReplacement:OnStateChanged",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "EnumProperty BPFirbush02Replacement_C:OnStateChanged.State",
+        "ObjectPath": "War/Content/Blueprints/Environment/FoliageReplacement/BPFirbush02Replacement.9"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "ByteProperty",
+    "Name": "UnderlyingType",
+    "Outer": "State",
+    "Enum": null
+  },
+  {
+    "Type": "EnumProperty",
+    "Name": "K2Node_Event_State",
+    "Outer": "ExecuteUbergraph_BPFirbush02Replacement",
+    "Enum": {
+      "ObjectName": "Enum EClientFoliageReplacementState",
+      "ObjectPath": "/Script/War"
+    },
+    "UnderlyingProp": {
+      "ObjectName": "ByteProperty BPFirbush02Replacement_C:ExecuteUbergraph_BPFirbush02Replacement.K2Node_Event_State.UnderlyingType",
+      "ObjectPath": "War/Content/Blueprints/Environment/FoliageReplacement/BPFirbush02Replacement.8"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPFirbush02Replacement_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPFirbush02Replacement_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Environment/FoliageReplacement/BPFirbush02Replacement.13"
+      },
+      "VariableGuid": "5F64A74C-4BADC529-F4218B84-0B23E5EA",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPFirbush02Replacement_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPFirbush02Replacement_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Environment/FoliageReplacement/BPFirbush02Replacement.14"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Mesh",
+    "Outer": "Default__BPFirbush02Replacement_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh Firbush02Ruined",
+        "ObjectPath": "War/Content/Meshes/Environment/Foliage/Firbush02Ruined.2"
+      }
+    }
+  }
+]

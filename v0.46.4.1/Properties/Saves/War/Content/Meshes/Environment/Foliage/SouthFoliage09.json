@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SouthFoliage09",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SouthFoliage09",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1811"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SouthFoliage09",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant SouthFoliage",
+            "ObjectPath": "War/Content/Materials/Environment/SouthFoliage.0"
+          },
+          "MaterialSlotName": "Material #25",
+          "ImportedMaterialSlotName": "Material #25",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 104.5669,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 104.5669,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -6.752941,
+          "Y": -0.93489075,
+          "Z": 9.646
+        },
+        "BoxExtent": {
+          "X": 34.73535,
+          "Y": 44.609398,
+          "Z": 11.823124
+        },
+        "SphereRadius": 46.24619
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SouthFoliage09:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/SouthFoliage09.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SouthFoliage09:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/SouthFoliage09.1"
+    },
+    "LightingGuid": "DC3E4560-4AFFF7D2-6AC6DB93-5E1D32E7",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,105 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ChurchPew03",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 11.701248,
+              "Y": 10.91721,
+              "Z": 28.92947
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 176.72125,
+            "Y": 64.72461,
+            "Z": 58.111977,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "ChurchPew03",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x1A5DB"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ChurchPew03",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Cabinets",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Cabinets.0"
+          },
+          "MaterialSlotName": "Material #1021",
+          "ImportedMaterialSlotName": "Material #1021",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 276.9643,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 276.9643,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -3.0353088,
+          "Y": 4.0534325,
+          "Z": 66.886314
+        },
+        "BoxExtent": {
+          "X": 117.364265,
+          "Y": 54.539528,
+          "Z": 67.632225
+        },
+        "SphereRadius": 143.04941
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ChurchPew03:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ChurchPew03.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ChurchPew03:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ChurchPew03.1"
+    },
+    "LightingGuid": "E15E7BE2-49045862-2C84FDBD-56AAC749",
+    "RenderData": null
+  }
+]

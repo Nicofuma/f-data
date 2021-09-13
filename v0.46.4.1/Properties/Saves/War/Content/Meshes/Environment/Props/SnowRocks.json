@@ -1,0 +1,94 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SnowRocks",
+    "Properties": {
+      "AggGeom": {
+        "SphereElems": [
+          {
+            "Center": {
+              "X": 0.16791993,
+              "Y": -3.7749305,
+              "Z": -1.1797175
+            },
+            "Radius": 35.462967,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SnowRocks",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 5521,
+        "SizeOnDisk": 5521,
+        "OffsetInFile": "0x1B04"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SnowRocks",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ShorelineRocksSnowy2",
+            "ObjectPath": "War/Content/Materials/Environment/ShorelineRocksSnowy2.0"
+          },
+          "MaterialSlotName": "ShorelineRocks",
+          "ImportedMaterialSlotName": "ShorelineRocks",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 315.37317,
+            "LocalUVDensities": 155.56866,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 155.56866,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 33.69275,
+          "Y": 26.5397,
+          "Z": 37.029716
+        },
+        "SphereRadius": 44.748287
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SnowRocks:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/SnowRocks.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SnowRocks:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/SnowRocks.1"
+    },
+    "LightingGuid": "BCF5A2D9-41F56244-AB9E82BA-3B4279A0",
+    "RenderData": null
+  }
+]

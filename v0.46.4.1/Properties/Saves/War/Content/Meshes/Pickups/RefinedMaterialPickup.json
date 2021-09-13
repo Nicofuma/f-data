@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "RefinedMaterialPickup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "RefinedMaterialPickup",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xBB17"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "RefinedMaterialPickup",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RefinedMaterialPickup",
+            "ObjectPath": "War/Content/Materials/Pickups/RefinedMaterialPickup.0"
+          },
+          "MaterialSlotName": "Material #41",
+          "ImportedMaterialSlotName": "Material #41",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 219.28699,
+            "LocalUVDensities": 444.87158,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 444.87158,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 30.088268
+        },
+        "BoxExtent": {
+          "X": 35.14385,
+          "Y": 74.00883,
+          "Z": 31.597725
+        },
+        "SphereRadius": 82.80584
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup RefinedMaterialPickup:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Pickups/RefinedMaterialPickup.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision RefinedMaterialPickup:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Pickups/RefinedMaterialPickup.1"
+    },
+    "LightingGuid": "DA39C3C9-4477165D-0184D0A5-C4415F40",
+    "RenderData": null
+  }
+]

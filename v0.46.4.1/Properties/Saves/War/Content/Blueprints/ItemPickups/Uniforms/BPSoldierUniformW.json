@@ -1,0 +1,114 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPSoldierUniformW_C",
+    "Super": "BPUniform_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPSoldierUniformW_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPSoldierUniformW.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass BPUniform_C",
+      "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPUniform.0"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPSoldierUniformW_C",
+    "Name": "Default__BPSoldierUniformW_C",
+    "Properties": {
+      "UniformType": "EUniformType::SoldierW",
+      "CodeName": "SoldierUniformW",
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "7EEE7851458C936B92BD0BBD71ADCA4A",
+        "SourceString": "Warden Soldier Uniform"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "2C2AF009458599976829638CA88AB4C2",
+        "SourceString": "Infantry Battledress"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "2D1D3B474A938BA775388588E8D90F29",
+        "SourceString": "Most common Warden infantry uniform, designed for general frontline warfare with ballistics weapons such as rifles and machine guns."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D SoldierUniformWIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/Uniforms/SoldierUniformWIcon.0"
+      },
+      "FactionVariant": "EFactionId::Wardens",
+      "ItemMesh": {
+        "ObjectName": "StaticMeshComponent Default__BPSoldierUniformW_C:ItemMesh",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPSoldierUniformW.6"
+      },
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPSoldierUniformW_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPSoldierUniformW.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPSoldierUniformW_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPSoldierUniformW.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPSoldierUniformW_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPSoldierUniformW_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPSoldierUniformW_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPSoldierUniformW.3"
+      },
+      "VariableGuid": "57CA561C-434D89CD-F65025A0-F66D62DF",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPSoldierUniformW_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPSoldierUniformW_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPSoldierUniformW.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPSoldierUniformW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPSoldierUniformW_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPSoldierUniformW.2"
+      }
+    }
+  }
+]

@@ -1,0 +1,107 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPBasicMaterials_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPBasicMaterials_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPBasicMaterials.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class BasicItemPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPBasicMaterials_C",
+    "Name": "Default__BPBasicMaterials_C",
+    "Properties": {
+      "Encumbrance": 6,
+      "CodeName": "Cloth",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "815A95644C7A6577CE9F3FA00B97F224",
+        "SourceString": "Basic Materials"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "2B1D27844AC7C9344FACA5B91DBF65A4",
+        "SourceString": "Resource used for building basic structures and producing items."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D BasicMaterialsIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/BasicMaterialsIcon.0"
+      },
+      "ItemCategory": "EItemCategory::Supplies",
+      "ItemFlagsMask": 259,
+      "ItemProfileType": "EItemProfileType::RefinedResourceFastRetrieve",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPBasicMaterials_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPBasicMaterials.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPBasicMaterials_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPBasicMaterials.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPBasicMaterials_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPBasicMaterials_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPBasicMaterials_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPBasicMaterials.3"
+      },
+      "VariableGuid": "7DFC56CB-4050DE35-BFFBD28A-174B5F02",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPBasicMaterials_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPBasicMaterials_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPBasicMaterials.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPBasicMaterials_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPBasicMaterials_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPBasicMaterials.2"
+      }
+    }
+  }
+]

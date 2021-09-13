@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "MetalBeamMaterial",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "MetalBeamMaterial",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1970"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "MetalBeamMaterial",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TankStop",
+            "ObjectPath": "War/Content/Materials/Environment/TankStop.0"
+          },
+          "MaterialSlotName": "Material #233",
+          "ImportedMaterialSlotName": "Material #233",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 179.88676,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 179.88676,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -1.1250916,
+          "Y": -0.010532379,
+          "Z": 8.50637
+        },
+        "BoxExtent": {
+          "X": 8.772847,
+          "Y": 59.710278,
+          "Z": 7.156968
+        },
+        "SphereRadius": 60.681416
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup MetalBeamMaterial:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Pickups/MetalBeamMaterial.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision MetalBeamMaterial:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Pickups/MetalBeamMaterial.1"
+    },
+    "LightingGuid": "B0A9E606-4B2B7C33-87EA6ABF-52D402D5",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,281 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ShipyardScaffold03",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": 774.9612,
+                "Y": 92.32904,
+                "Z": -807.845
+              },
+              {
+                "X": 908.1317,
+                "Y": 92.32904,
+                "Z": -807.845
+              },
+              {
+                "X": 774.9612,
+                "Y": -91.02173,
+                "Z": -807.845
+              },
+              {
+                "X": 908.1317,
+                "Y": -91.02173,
+                "Z": -807.845
+              },
+              {
+                "X": 774.9612,
+                "Y": 92.32904,
+                "Z": 1067.3639
+              },
+              {
+                "X": 908.1317,
+                "Y": 92.32904,
+                "Z": 1067.3639
+              },
+              {
+                "X": 774.9612,
+                "Y": -91.02173,
+                "Z": 1067.3639
+              },
+              {
+                "X": 908.1317,
+                "Y": -91.02173,
+                "Z": 1067.3639
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": 774.9612,
+                "Y": -91.02173,
+                "Z": -807.845
+              },
+              "Max": {
+                "X": 908.1317,
+                "Y": 92.32904,
+                "Z": 1067.3639
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "VertexData": [
+              {
+                "X": -769.49274,
+                "Y": -89.34925,
+                "Z": -807.845
+              },
+              {
+                "X": -902.66327,
+                "Y": -89.34923,
+                "Z": -807.845
+              },
+              {
+                "X": -769.49274,
+                "Y": 94.00152,
+                "Z": -807.845
+              },
+              {
+                "X": -902.66327,
+                "Y": 94.00154,
+                "Z": -807.845
+              },
+              {
+                "X": -769.49274,
+                "Y": -89.34925,
+                "Z": 1067.3639
+              },
+              {
+                "X": -902.66327,
+                "Y": -89.34923,
+                "Z": 1067.3639
+              },
+              {
+                "X": -769.49274,
+                "Y": 94.00152,
+                "Z": 1067.3639
+              },
+              {
+                "X": -902.66327,
+                "Y": 94.00154,
+                "Z": 1067.3639
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -902.66327,
+                "Y": -89.34925,
+                "Z": -807.845
+              },
+              "Max": {
+                "X": -769.49274,
+                "Y": 94.00154,
+                "Z": 1067.3639
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "ShipyardScaffold03",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 893,
+        "SizeOnDisk": 893,
+        "OffsetInFile": "0x22D59"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ShipyardScaffold03",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MassProductionWhiteBrick01",
+            "ObjectPath": "War/Content/Materials/Structures/MassProductionWhiteBrick01.0"
+          },
+          "MaterialSlotName": "white brick",
+          "ImportedMaterialSlotName": "Material #626",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 699.1565,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownCoalPlantMetal01",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownCoalPlantMetal01.0"
+          },
+          "MaterialSlotName": "coal plant metal",
+          "ImportedMaterialSlotName": "Material #1021",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 717.01825,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material LanternEmissive",
+            "ObjectPath": "War/Content/Materials/LanternEmissive.0"
+          },
+          "MaterialSlotName": "emissive",
+          "ImportedMaterialSlotName": "Material #629",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 582.1327,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 712.608,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 2.734192,
+          "Y": 1.8372726,
+          "Z": 132.76147
+        },
+        "BoxExtent": {
+          "X": 960.069,
+          "Y": 89.111786,
+          "Z": 929.92554
+        },
+        "SphereRadius": 1297.324
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ShipyardScaffold03:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ShipyardScaffold03.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ShipyardScaffold03:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ShipyardScaffold03.1"
+    },
+    "LightingGuid": "4611A361-4697719D-342C8DB5-ED87D7E6",
+    "RenderData": null
+  }
+]

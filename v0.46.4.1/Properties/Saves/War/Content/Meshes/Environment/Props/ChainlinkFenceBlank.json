@@ -1,0 +1,110 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ChainlinkFenceBlank",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 604.5063,
+              "Y": -3.9386215,
+              "Z": 5.980011
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 1248.7439,
+            "Y": 38.970547,
+            "Z": 489.35425,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "ChainlinkFenceBlank",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x488D"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ChainlinkFenceBlank",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ChainlinkCap",
+            "ObjectPath": "War/Content/Materials/Environment/Props/ChainlinkCap.0"
+          },
+          "MaterialSlotName": "ChainlinkCap",
+          "ImportedMaterialSlotName": "ChainlinkCap",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 431.9493,
+            "LocalUVDensities": 1366.1036,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 431.9493,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 600.70264,
+          "Y": -2.0423775,
+          "Z": 5.678192
+        },
+        "BoxExtent": {
+          "X": 598.063,
+          "Y": 17.911758,
+          "Z": 243.30888
+        },
+        "SphereRadius": 644.6449
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ChainlinkFenceBlank:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ChainlinkFenceBlank.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ChainlinkFenceBlank:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ChainlinkFenceBlank.1"
+    },
+    "LightingGuid": "59EAD802-46C755F9-EC50AAB9-2CBD77F8",
+    "RenderData": null
+  }
+]

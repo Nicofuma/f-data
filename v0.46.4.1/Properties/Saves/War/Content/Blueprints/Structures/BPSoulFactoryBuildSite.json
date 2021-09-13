@@ -1,0 +1,223 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "StaticMesh",
+    "Outer": "BPSoulFactoryBuildSite_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPSoulFactoryBuildSite_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPSoulFactoryBuildSite_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSoulFactoryBuildSite.9"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class SpecializedFactoryBuildSite",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPSoulFactoryBuildSite_C:StaticMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSoulFactoryBuildSite.0"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPSoulFactoryBuildSite_C",
+    "Name": "Default__BPSoulFactoryBuildSite_C",
+    "Properties": {
+      "SpecializedFactoryComponent": {
+        "ObjectName": "SpecializedFactoryComponent Default__BPSoulFactoryBuildSite_C:SpecializedFactoryComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSoulFactoryBuildSite.10"
+      },
+      "ObstructionCheckVolume": {
+        "ObjectName": "BoxComponent Default__BPSoulFactoryBuildSite_C:ObstructionCheckVolume",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSoulFactoryBuildSite.4"
+      },
+      "CodeName": "SoulFactoryBuildSite",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPSoulFactoryBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSoulFactoryBuildSite.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPSoulFactoryBuildSite_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSoulFactoryBuildSite.5"
+      },
+      "Health": 0,
+      "MapIconType": "EMapIconType::SoulFactory",
+      "IsVaultable": false,
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPSoulFactoryBuildSite_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSoulFactoryBuildSite.12"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPSoulFactoryBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSoulFactoryBuildSite.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPSoulFactoryBuildSite_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ObstructionCheckVolume",
+    "Outer": "Default__BPSoulFactoryBuildSite_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPSoulFactoryBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSoulFactoryBuildSite.3"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPSoulFactoryBuildSite_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 850.0,
+        "Y": 755.0,
+        "Z": 310.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPSoulFactoryBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSoulFactoryBuildSite.3"
+      },
+      "RelativeLocation": {
+        "X": -115.0,
+        "Y": 61.5,
+        "Z": 155.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPSoulFactoryBuildSite_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPSoulFactoryBuildSite_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSoulFactoryBuildSite.6"
+      },
+      "VariableGuid": "6B73A04B-47DEADF7-51CC6C91-6B5893A4",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPSoulFactoryBuildSite_C:StaticMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSoulFactoryBuildSite.11"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "1B1B3D09-43BCDF5A-68CF65B3-4BE30F88",
+      "InternalVariableName": "StaticMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPSoulFactoryBuildSite_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPSoulFactoryBuildSite_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPSoulFactoryBuildSite.8"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPSoulFactoryBuildSite_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPSoulFactoryBuildSite.8"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPSoulFactoryBuildSite_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSoulFactoryBuildSite.7"
+      }
+    }
+  },
+  {
+    "Type": "SpecializedFactoryComponent",
+    "Name": "SpecializedFactoryComponent",
+    "Outer": "Default__BPSoulFactoryBuildSite_C"
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh_GEN_VARIABLE",
+    "Outer": "BPSoulFactoryBuildSite_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh SoulFactory",
+        "ObjectPath": "War/Content/Meshes/Environment/Event/SoulFactory.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material BuildSite",
+          "ObjectPath": "War/Content/Materials/Structures/BuildSite.0"
+        }
+      ],
+      "bGenerateOverlapEvents": false,
+      "CanCharacterStepUpOn": "ECB_No",
+      "BodyInstance": {
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPSoulFactoryBuildSite_C"
+  }
+]

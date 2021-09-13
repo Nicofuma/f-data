@@ -1,0 +1,105 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "BulwarkKeepInteriorDoor",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -7.2562256,
+              "Y": 22.674839,
+              "Z": 181.406
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 265.19965,
+            "Y": 88.76919,
+            "Z": 362.812,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "BulwarkKeepInteriorDoor",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0xE6F5"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "BulwarkKeepInteriorDoor",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BulwarkKeepInteriorDoor",
+            "ObjectPath": "War/Content/Materials/Environment/BulwarkKeepInteriorDoor.0"
+          },
+          "MaterialSlotName": "SteelWall",
+          "ImportedMaterialSlotName": "Material #630",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 536.5949,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 536.5949,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -7.2562256,
+          "Y": 22.476387,
+          "Z": 181.406
+        },
+        "BoxExtent": {
+          "X": 132.59982,
+          "Y": 44.186142,
+          "Z": 181.406
+        },
+        "SphereRadius": 226.975
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup BulwarkKeepInteriorDoor:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/BulwarkKeepInteriorDoor.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision BulwarkKeepInteriorDoor:NavCollision_4",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/BulwarkKeepInteriorDoor.1"
+    },
+    "LightingGuid": "CE06E806-47200ED6-194EDD81-85FD8BF3",
+    "RenderData": null
+  }
+]

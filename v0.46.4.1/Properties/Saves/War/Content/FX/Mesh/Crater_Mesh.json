@@ -1,0 +1,100 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Crater_Mesh",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "Crater_Mesh",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x17363"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Crater_Mesh",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material MeshParticleBase",
+            "ObjectPath": "War/Content/FX/Materials/MeshParticleBase.0"
+          },
+          "MaterialSlotName": "MeshParticleBase",
+          "ImportedMaterialSlotName": "MeshParticleBase",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 237.99176,
+            "LocalUVDensities": 241.76653,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RockDirt",
+            "ObjectPath": "War/Content/Materials/Environment/RockDirt.0"
+          },
+          "MaterialSlotName": "RockDirt",
+          "ImportedMaterialSlotName": "RockDirt",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 64.02536,
+            "LocalUVDensities": 48.006336,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 119.406395,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 24.486397,
+          "Y": -0.3229599,
+          "Z": 10.93014
+        },
+        "BoxExtent": {
+          "X": 137.54893,
+          "Y": 112.73958,
+          "Z": 16.528664
+        },
+        "SphereRadius": 178.1836
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Crater_Mesh:BodySetup_0",
+      "ObjectPath": "War/Content/FX/Mesh/Crater_Mesh.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Crater_Mesh:NavCollision_1",
+      "ObjectPath": "War/Content/FX/Mesh/Crater_Mesh.1"
+    },
+    "LightingGuid": "466052D5-4CA6BDD4-DC2C79A4-B58CD228",
+    "RenderData": null
+  }
+]

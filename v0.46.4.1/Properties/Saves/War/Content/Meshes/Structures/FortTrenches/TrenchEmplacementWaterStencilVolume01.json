@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "TrenchEmplacementWaterStencilVolume01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "TrenchEmplacementWaterStencilVolume01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xD78"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TrenchEmplacementWaterStencilVolume01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "Engine/Content/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "WaterStencilVolume",
+          "ImportedMaterialSlotName": "high",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 620.97156,
+            "LocalUVDensities": 1481.8971,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1481.8971,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -6.1035156E-05,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 570.11426,
+          "Y": 570.1143,
+          "Z": 244.23141
+        },
+        "SphereRadius": 663.6609
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TrenchEmplacementWaterStencilVolume01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/TrenchEmplacementWaterStencilVolume01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TrenchEmplacementWaterStencilVolume01:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/TrenchEmplacementWaterStencilVolume01.1"
+    },
+    "LightingGuid": "543E2C1E-4C8753D0-CCCC3799-CA71C7B3",
+    "RenderData": null
+  }
+]

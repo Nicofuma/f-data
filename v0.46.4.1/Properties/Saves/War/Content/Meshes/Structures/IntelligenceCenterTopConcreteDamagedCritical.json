@@ -1,0 +1,153 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "IntelligenceCenterTopConcreteDamagedCritical",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 8.1987915
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 955.7332,
+            "Y": 750.8345,
+            "Z": 42.724,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "IntelligenceCenterTopConcreteDamagedCritical",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0xAE57"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "IntelligenceCenterTopConcreteDamagedCritical",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortT3Roof02",
+            "ObjectPath": "War/Content/Materials/Structures/FortT3Roof02.0"
+          },
+          "MaterialSlotName": "ConcreteLight",
+          "ImportedMaterialSlotName": "ConcreteLight",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 333.2443,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 1.0001844,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortT3ConcreteWall01",
+            "ObjectPath": "War/Content/Materials/Structures/FortT3ConcreteWall01.0"
+          },
+          "MaterialSlotName": "Trim",
+          "ImportedMaterialSlotName": "Trim",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 528.5372,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 1.4673103,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortT3Roof01",
+            "ObjectPath": "War/Content/Materials/Structures/FortT3Roof01.0"
+          },
+          "MaterialSlotName": "Concrete",
+          "ImportedMaterialSlotName": "Concrete",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 551.9531,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 1.0002681,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ConcreteDamaged",
+            "ObjectPath": "War/Content/Materials/Environment/House/ConcreteDamaged.0"
+          },
+          "MaterialSlotName": "ConcreteDamaged",
+          "ImportedMaterialSlotName": "ConcreteDamaged",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 309.14877,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 3.1167495,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 386.07336,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 3.909546,
+          "Y": 0.0,
+          "Z": -2.7628899
+        },
+        "BoxExtent": {
+          "X": 573.7424,
+          "Y": 455.8206,
+          "Z": 38.722816
+        },
+        "SphereRadius": 582.4606
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup IntelligenceCenterTopConcreteDamagedCritical:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/IntelligenceCenterTopConcreteDamagedCritical.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision IntelligenceCenterTopConcreteDamagedCritical:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Structures/IntelligenceCenterTopConcreteDamagedCritical.1"
+    },
+    "LightingGuid": "AD85357B-44D55449-33D70486-91580762",
+    "RenderData": null
+  }
+]

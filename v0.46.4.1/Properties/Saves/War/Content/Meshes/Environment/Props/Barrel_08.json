@@ -1,0 +1,154 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Barrel_08",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 10.0,
+              "Y": 10.0,
+              "Z": 74.732605
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 280.7078,
+            "Y": 301.36526,
+            "Z": 123.98419,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "Barrel_08",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x15F15"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Barrel_08",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BarrelsBlue",
+            "ObjectPath": "War/Content/Materials/Environment/Props/BarrelsBlue.0"
+          },
+          "MaterialSlotName": "Material #113",
+          "ImportedMaterialSlotName": "Material #113",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 506.01913,
+            "LocalUVDensities": 235.01479,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BarrelsGreen",
+            "ObjectPath": "War/Content/Materials/Environment/Props/BarrelsGreen.0"
+          },
+          "MaterialSlotName": "Material #126",
+          "ImportedMaterialSlotName": "Material #126",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 506.01874,
+            "LocalUVDensities": 234.98291,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BarrelsGreen",
+            "ObjectPath": "War/Content/Materials/Environment/Props/BarrelsGreen.0"
+          },
+          "MaterialSlotName": "Material #139",
+          "ImportedMaterialSlotName": "Material #139",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 505.99658,
+            "LocalUVDensities": 234.97629,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BarrelsGreen",
+            "ObjectPath": "War/Content/Materials/Environment/Props/BarrelsGreen.0"
+          },
+          "MaterialSlotName": "Material #114",
+          "ImportedMaterialSlotName": "Material #114",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 506.12836,
+            "LocalUVDensities": 235.01492,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 234.99083,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.105667114,
+          "Y": 0.5675049,
+          "Z": 64.732605
+        },
+        "BoxExtent": {
+          "X": 164.65933,
+          "Y": 166.74442,
+          "Z": 61.992096
+        },
+        "SphereRadius": 226.15196
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Barrel_08:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Barrel_08.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Barrel_08:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Barrel_08.1"
+    },
+    "LightingGuid": "7235CBE7-45B15FBC-15B4E1BB-9410CC2B",
+    "RenderData": null
+  }
+]

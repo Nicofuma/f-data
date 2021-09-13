@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ModularVehiclesPartMuffler",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "ModularVehiclesPartMuffler",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x3105"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ModularVehiclesPartMuffler",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant VehicleParts",
+            "ObjectPath": "War/Content/Materials/Environment/Props/VehicleParts.0"
+          },
+          "MaterialSlotName": "VehicleParts1",
+          "ImportedMaterialSlotName": "VehicleParts1",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 788.76276,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 788.76276,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 42.324036,
+          "Y": 259.5297,
+          "Z": 26.448715
+        },
+        "SphereRadius": 259.64523
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ModularVehiclesPartMuffler:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ModularVehiclesPartMuffler.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ModularVehiclesPartMuffler:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ModularVehiclesPartMuffler.1"
+    },
+    "LightingGuid": "EEB19787-483C61DD-DD789CB4-A6587507",
+    "RenderData": null
+  }
+]

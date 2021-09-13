@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SkelHand02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "SkelHand02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x3269"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SkelHand02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Skeleton",
+            "ObjectPath": "War/Content/Materials/Skeleton.0"
+          },
+          "MaterialSlotName": "Skeleton",
+          "ImportedMaterialSlotName": "Skeleton",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 8.658615,
+          "Y": 22.188293,
+          "Z": 8.446136
+        },
+        "SphereRadius": 23.909185
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SkelHand02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/SkelHand02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SkelHand02:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/SkelHand02.1"
+    },
+    "LightingGuid": "93CD4F0D-45A4221B-D8F4ECAF-ED6643A1",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,1977 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "ResilienceDistribution",
+    "Outer": "ParticleModuleCollisionGPU_0",
+    "Properties": {
+      "Constant": 0.75
+    }
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "ResilienceScaleOverLifeDistribution",
+    "Outer": "ParticleModuleCollisionGPU_0",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_0"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_1"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_4"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "DistributionFloatConstant_1",
+    "Outer": "ParticleModuleRotation_0",
+    "Properties": {
+      "Constant": 0.2,
+      "bCanBeBaked": false
+    }
+  },
+  {
+    "Type": "DistributionVectorConstantCurve",
+    "Name": "DistributionVectorConstantCurve_0",
+    "Outer": "ParticleModuleSizeMultiplyLife_0",
+    "Properties": {
+      "ConstantCurve": {
+        "Points": [
+          {
+            "InVal": 0.0,
+            "OutVal": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            },
+            "ArriveTangent": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "LeaveTangent": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "InterpMode": "CIM_CurveAuto"
+          },
+          {
+            "InVal": 1.0,
+            "OutVal": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "ArriveTangent": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "LeaveTangent": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "InterpMode": "CIM_CurveAuto"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_0",
+    "Properties": {
+      "bEnabled": false,
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired ZombieImpact2:ParticleModuleRequired_0",
+        "ObjectPath": "War/Content/FX/ZombieImpact2.24"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime ZombieImpact2:ParticleModuleLifetime_0",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.18"
+        },
+        {
+          "ObjectName": "ParticleModuleSize ZombieImpact2:ParticleModuleSize_0",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.30"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity ZombieImpact2:ParticleModuleVelocity_0",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.40"
+        },
+        {
+          "ObjectName": "ParticleModuleLocationPrimitiveSphere ZombieImpact2:ParticleModuleLocationPrimitiveSphere_1",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.22"
+        },
+        {
+          "ObjectName": "ParticleModuleAccelerationConstant ZombieImpact2:ParticleModuleAccelerationConstant_1",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.11"
+        },
+        {
+          "ObjectName": "ParticleModuleColor ZombieImpact2:ParticleModuleColor_0",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.14"
+        },
+        {
+          "ObjectName": "ParticleModuleCollisionGPU ZombieImpact2:ParticleModuleCollisionGPU_0",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.13"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife ZombieImpact2:ParticleModuleSizeMultiplyLife_0",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.33"
+        }
+      ],
+      "TypeDataModule": {
+        "ObjectName": "ParticleModuleTypeDataGpu ZombieImpact2:ParticleModuleTypeDataGpu_0",
+        "ObjectPath": "War/Content/FX/ZombieImpact2.39"
+      },
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn ZombieImpact2:ParticleModuleSpawn_0",
+        "ObjectPath": "War/Content/FX/ZombieImpact2.36"
+      },
+      "PeakActiveParticles": 6
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_1",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired ZombieImpact2:ParticleModuleRequired_1",
+        "ObjectPath": "War/Content/FX/ZombieImpact2.25"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime ZombieImpact2:ParticleModuleLifetime_1",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.19"
+        },
+        {
+          "ObjectName": "ParticleModuleSize ZombieImpact2:ParticleModuleSize_1",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.31"
+        },
+        {
+          "ObjectName": "ParticleModuleColor ZombieImpact2:ParticleModuleColor_2",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.16"
+        },
+        {
+          "ObjectName": "ParticleModuleRotation ZombieImpact2:ParticleModuleRotation_0",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.27"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife ZombieImpact2:ParticleModuleSizeMultiplyLife_2",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.35"
+        }
+      ],
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn ZombieImpact2:ParticleModuleSpawn_1",
+        "ObjectPath": "War/Content/FX/ZombieImpact2.37"
+      },
+      "PeakActiveParticles": 3
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_2",
+    "Outer": "ParticleSpriteEmitter_4",
+    "Properties": {
+      "bEnabled": false,
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired ZombieImpact2:ParticleModuleRequired_4",
+        "ObjectPath": "War/Content/FX/ZombieImpact2.26"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime ZombieImpact2:ParticleModuleLifetime_4",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.20"
+        },
+        {
+          "ObjectName": "ParticleModuleLocationPrimitiveSphere ZombieImpact2:ParticleModuleLocationPrimitiveSphere_0",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.21"
+        },
+        {
+          "ObjectName": "ParticleModuleSize ZombieImpact2:ParticleModuleSize_4",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.32"
+        },
+        {
+          "ObjectName": "ParticleModuleColor ZombieImpact2:ParticleModuleColor_1",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.15"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity ZombieImpact2:ParticleModuleVelocity_4",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.41"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife ZombieImpact2:ParticleModuleSizeMultiplyLife_1",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.34"
+        },
+        {
+          "ObjectName": "ParticleModuleParameterDynamic ZombieImpact2:ParticleModuleParameterDynamic_2",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.23"
+        },
+        {
+          "ObjectName": "ParticleModuleColorScaleOverLife ZombieImpact2:ParticleModuleColorScaleOverLife_2",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.17"
+        },
+        {
+          "ObjectName": "ParticleModuleRotation ZombieImpact2:ParticleModuleRotation_2",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.28"
+        },
+        {
+          "ObjectName": "ParticleModuleRotationRate ZombieImpact2:ParticleModuleRotationRate_2",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.29"
+        },
+        {
+          "ObjectName": "ParticleModuleAccelerationConstant ZombieImpact2:ParticleModuleAccelerationConstant_0",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.10"
+        },
+        {
+          "ObjectName": "ParticleModuleAccelerationDrag ZombieImpact2:ParticleModuleAccelerationDrag_0",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.12"
+        }
+      ],
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn ZombieImpact2:ParticleModuleSpawn_4",
+        "ObjectPath": "War/Content/FX/ZombieImpact2.38"
+      },
+      "PeakActiveParticles": 5
+    }
+  },
+  {
+    "Type": "ParticleModuleAccelerationConstant",
+    "Name": "ParticleModuleAccelerationConstant_0",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "Acceleration": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -100.0
+      },
+      "bAlwaysInWorldSpace": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleAccelerationConstant",
+    "Name": "ParticleModuleAccelerationConstant_1",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "Acceleration": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -500.0
+      },
+      "bAlwaysInWorldSpace": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleAccelerationDrag",
+    "Name": "ParticleModuleAccelerationDrag_0",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "DragCoefficientRaw": {
+        "MinValue": 6.0,
+        "MaxValue": 6.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            6.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "bAlwaysInWorldSpace": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleCollisionGPU",
+    "Name": "ParticleModuleCollisionGPU_0",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "Resilience": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant ZombieImpact2:ParticleModuleCollisionGPU_0.ResilienceDistribution",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.0"
+        }
+      },
+      "ResilienceScaleOverLife": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant ZombieImpact2:ParticleModuleCollisionGPU_0.ResilienceScaleOverLifeDistribution",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.1"
+        }
+      },
+      "Friction": 0.2,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColor",
+    "Name": "ParticleModuleColor_0",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "StartColor": {
+        "MaxValue": 6.0,
+        "MinValueVec": {
+          "X": 6.0,
+          "Y": 0.165231,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 6.0,
+          "Y": 0.165231,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            6.0,
+            0.165231,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "StartAlpha": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColor",
+    "Name": "ParticleModuleColor_1",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "StartColor": {
+        "MinValue": 0.765,
+        "MaxValue": 0.765,
+        "MinValueVec": {
+          "X": 0.765,
+          "Y": 0.765,
+          "Z": 0.765
+        },
+        "MaxValueVec": {
+          "X": 0.765,
+          "Y": 0.765,
+          "Z": 0.765
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.765,
+            0.765,
+            0.765
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "StartAlpha": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColor",
+    "Name": "ParticleModuleColor_2",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "StartColor": {
+        "MaxValue": 4.0,
+        "MinValueVec": {
+          "X": 4.0,
+          "Y": 0.337325,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 4.0,
+          "Y": 0.337325,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            4.0,
+            0.337325,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "StartAlpha": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColorScaleOverLife",
+    "Name": "ParticleModuleColorScaleOverLife_2",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "ColorScaleOverLife": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "AlphaScaleOverLife": {
+        "MaxValue": 0.9704111,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 127.0,
+          "Values": [
+            0.0,
+            0.16035864,
+            0.5025514,
+            0.8345532,
+            0.96612996,
+            0.9678363,
+            0.969105,
+            0.96994364,
+            0.97035944,
+            0.97036,
+            0.9699525,
+            0.9691446,
+            0.9679435,
+            0.96635664,
+            0.9643915,
+            0.96205544,
+            0.9593559,
+            0.9563002,
+            0.9528957,
+            0.94914997,
+            0.94507027,
+            0.9406641,
+            0.9359387,
+            0.93090177,
+            0.9255604,
+            0.91992223,
+            0.91399455,
+            0.90778464,
+            0.9013001,
+            0.89454824,
+            0.8875364,
+            0.88027227,
+            0.87276286,
+            0.86501586,
+            0.8570385,
+            0.8488383,
+            0.8404227,
+            0.8317988,
+            0.8229743,
+            0.8139566,
+            0.80475295,
+            0.7953708,
+            0.7858176,
+            0.77610075,
+            0.7662276,
+            0.75620556,
+            0.746042,
+            0.7357445,
+            0.7253203,
+            0.7147768,
+            0.7041214,
+            0.6933616,
+            0.6825047,
+            0.67155814,
+            0.6605294,
+            0.6494256,
+            0.6382545,
+            0.62702334,
+            0.6157396,
+            0.6044105,
+            0.5930435,
+            0.5816462,
+            0.5702258,
+            0.55878973,
+            0.54734546,
+            0.53590053,
+            0.5244619,
+            0.5130372,
+            0.5065614,
+            0.5009999,
+            0.49494565,
+            0.48841903,
+            0.48144057,
+            0.47403052,
+            0.46620953,
+            0.45799798,
+            0.44941634,
+            0.44048506,
+            0.4312245,
+            0.42165515,
+            0.41179755,
+            0.40167207,
+            0.39129916,
+            0.38069925,
+            0.36989284,
+            0.35890034,
+            0.3477422,
+            0.33643886,
+            0.3250107,
+            0.31347838,
+            0.3018622,
+            0.29018262,
+            0.2784601,
+            0.26671508,
+            0.25496802,
+            0.24323939,
+            0.23154955,
+            0.21991909,
+            0.2083683,
+            0.19691774,
+            0.18558782,
+            0.17439899,
+            0.16337168,
+            0.15252641,
+            0.14188348,
+            0.13146344,
+            0.12128675,
+            0.11137391,
+            0.1017452,
+            0.092421256,
+            0.08342236,
+            0.07476913,
+            0.0664818,
+            0.058580987,
+            0.051087216,
+            0.044020668,
+            0.037401974,
+            0.031251583,
+            0.025589816,
+            0.020437278,
+            0.015814204,
+            0.011741285,
+            0.008238924,
+            0.005327395,
+            0.0030273076,
+            0.0013591466,
+            0.0003431893,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 128,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_0",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 0.1,
+        "MaxValue": 0.2,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.1,
+            0.2
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_1",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 0.05,
+        "MaxValue": 0.1,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.05,
+            0.1
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_4",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 0.4,
+        "MaxValue": 0.8,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.4,
+            0.8
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLocationPrimitiveSphere",
+    "Name": "ParticleModuleLocationPrimitiveSphere_0",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "StartRadius": {
+        "MinValue": 15.0,
+        "MaxValue": 15.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            15.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "Velocity": true,
+      "VelocityScale": {
+        "MinValue": 8.0,
+        "MaxValue": 8.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            8.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "StartLocation": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLocationPrimitiveSphere",
+    "Name": "ParticleModuleLocationPrimitiveSphere_1",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "StartRadius": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "Velocity": true,
+      "VelocityScale": {
+        "MinValue": 500.0,
+        "MaxValue": 500.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            500.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "StartLocation": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleParameterDynamic",
+    "Name": "ParticleModuleParameterDynamic_2",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "DynamicParams": [
+        {
+          "ParamName": "ROffset",
+          "bUseEmitterTime": false,
+          "bSpawnTimeOnly": true,
+          "ValueMethod": "EDPV_UserSet",
+          "bScaleVelocityByParamValue": false,
+          "ParamValue": {
+            "MinValue": -1.0,
+            "MaxValue": 1.0,
+            "Distribution": null,
+            "Table": {
+              "TimeScale": 0.0,
+              "TimeBias": 0.0,
+              "Values": [
+                -1.0,
+                1.0
+              ],
+              "Op": 2,
+              "EntryCount": 1,
+              "EntryStride": 2,
+              "SubEntryStride": 1,
+              "LockFlag": 0
+            }
+          }
+        },
+        {
+          "ParamName": "GOffset",
+          "bUseEmitterTime": false,
+          "bSpawnTimeOnly": true,
+          "ValueMethod": "EDPV_UserSet",
+          "bScaleVelocityByParamValue": false,
+          "ParamValue": {
+            "MinValue": -1.0,
+            "MaxValue": 1.0,
+            "Distribution": null,
+            "Table": {
+              "TimeScale": 0.0,
+              "TimeBias": 0.0,
+              "Values": [
+                -1.0,
+                1.0
+              ],
+              "Op": 2,
+              "EntryCount": 1,
+              "EntryStride": 2,
+              "SubEntryStride": 1,
+              "LockFlag": 0
+            }
+          }
+        },
+        {
+          "ParamName": "Param3",
+          "bUseEmitterTime": false,
+          "bSpawnTimeOnly": false,
+          "ValueMethod": "EDPV_UserSet",
+          "bScaleVelocityByParamValue": false,
+          "ParamValue": {
+            "MinValue": 1.0,
+            "MaxValue": 1.0,
+            "Distribution": null,
+            "Table": {
+              "TimeScale": 0.0,
+              "TimeBias": 0.0,
+              "Values": [
+                1.0
+              ],
+              "Op": 1,
+              "EntryCount": 1,
+              "EntryStride": 1,
+              "SubEntryStride": 0,
+              "LockFlag": 0
+            }
+          }
+        },
+        {
+          "ParamName": "Param4",
+          "bUseEmitterTime": false,
+          "bSpawnTimeOnly": false,
+          "ValueMethod": "EDPV_UserSet",
+          "bScaleVelocityByParamValue": false,
+          "ParamValue": {
+            "MinValue": 1.0,
+            "MaxValue": 1.0,
+            "Distribution": null,
+            "Table": {
+              "TimeScale": 0.0,
+              "TimeBias": 0.0,
+              "Values": [
+                1.0
+              ],
+              "Op": 1,
+              "EntryCount": 1,
+              "EntryStride": 1,
+              "SubEntryStride": 0,
+              "LockFlag": 0
+            }
+          }
+        }
+      ],
+      "UpdateFlags": 12,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_0",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant Sparks02",
+        "ObjectPath": "War/Content/FX/Materials/Sparks02.0"
+      },
+      "ScreenAlignment": "PSA_Velocity",
+      "bUseLegacyEmitterTime": false,
+      "EmitterDuration": 5.0,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant ZombieImpact2:ParticleModuleRequired_0.RequiredDistributionSpawnRate",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.2"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "EmitterLoops": 1,
+      "bEnabled": false,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_1",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant ClawMark",
+        "ObjectPath": "War/Content/FX/Materials/ClawMark.0"
+      },
+      "EmitterOrigin": {
+        "X": 0.0,
+        "Y": -25.0,
+        "Z": 10.0
+      },
+      "ScreenAlignment": "PSA_Rectangle",
+      "bUseLocalSpace": true,
+      "bUseLegacyEmitterTime": false,
+      "EmitterDuration": 0.2,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant ZombieImpact2:ParticleModuleRequired_1.RequiredDistributionSpawnRate",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.3"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "EmitterLoops": 1,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_4",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant Steam",
+        "ObjectPath": "War/Content/FX/Materials/Steam.0"
+      },
+      "SortMode": "PSORTMODE_DistanceToView",
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant ZombieImpact2:ParticleModuleRequired_4.RequiredDistributionSpawnRate",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.4"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "EmitterLoops": 1,
+      "bEnabled": false,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotation",
+    "Name": "ParticleModuleRotation_0",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "StartRotation": {
+        "MinValue": -0.5,
+        "MaxValue": -0.5,
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant ZombieImpact2:ParticleModuleRotation_0.DistributionFloatConstant_1",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.5"
+        },
+        "Table": {
+          "Values": [
+            -0.5
+          ]
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotation",
+    "Name": "ParticleModuleRotation_2",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "StartRotation": {
+        "MinValue": -1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -1.0,
+            1.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotationRate",
+    "Name": "ParticleModuleRotationRate_2",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "StartRotationRate": {
+        "MinValue": -0.05,
+        "MaxValue": 0.05,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -0.05,
+            0.05
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_0",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 5.0,
+        "MaxValue": 30.0,
+        "MinValueVec": {
+          "X": 18.0,
+          "Y": 10.0,
+          "Z": 5.0
+        },
+        "MaxValueVec": {
+          "X": 25.0,
+          "Y": 30.0,
+          "Z": 25.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            18.0,
+            10.0,
+            5.0,
+            25.0,
+            30.0,
+            25.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_1",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "StartSize": {
+        "MaxValue": 40.0,
+        "MinValueVec": {
+          "X": 25.0,
+          "Y": 40.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 25.0,
+          "Y": 40.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            25.0,
+            40.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_4",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 15.0,
+        "MaxValue": 20.0,
+        "MinValueVec": {
+          "X": 15.0,
+          "Y": 15.0,
+          "Z": 15.0
+        },
+        "MaxValueVec": {
+          "X": 20.0,
+          "Y": 20.0,
+          "Z": 20.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            15.0,
+            15.0,
+            15.0,
+            20.0,
+            20.0,
+            20.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_0",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "LifeMultiplier": {
+        "Distribution": {
+          "ObjectName": "DistributionVectorConstantCurve ZombieImpact2:ParticleModuleSizeMultiplyLife_0.DistributionVectorConstantCurve_0",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.6"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_1",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "LifeMultiplier": {
+        "MinValue": 2.0,
+        "MaxValue": 3.0,
+        "MinValueVec": {
+          "X": 2.0,
+          "Y": 2.0,
+          "Z": 2.0
+        },
+        "MaxValueVec": {
+          "X": 3.0,
+          "Y": 3.0,
+          "Z": 3.0
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 6.9999995,
+          "Values": [
+            2.0,
+            2.0,
+            2.0,
+            2.05541,
+            2.05541,
+            2.05541,
+            2.198267,
+            2.198267,
+            2.198267,
+            2.3935924,
+            2.3935924,
+            2.3935924,
+            2.6064076,
+            2.6064076,
+            2.6064076,
+            2.8017333,
+            2.8017333,
+            2.8017333,
+            2.9445903,
+            2.9445903,
+            2.9445903,
+            3.0,
+            3.0,
+            3.0
+          ],
+          "Op": 1,
+          "EntryCount": 8,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_2",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "LifeMultiplier": {
+        "MaxValue": 3.0,
+        "MinValueVec": {
+          "X": 0.17259933,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 3.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 14.707612,
+          "TimeBias": -0.019880036,
+          "Values": [
+            0.17259933,
+            0.0,
+            0.0,
+            0.19930102,
+            0.032708574,
+            0.030112583,
+            0.27069667,
+            0.12035482,
+            0.11072157,
+            0.37439102,
+            0.24804221,
+            0.22798984,
+            0.49763808,
+            0.40044022,
+            0.36768246,
+            0.62787616,
+            0.56245,
+            0.5157754,
+            0.75247854,
+            0.7188865,
+            0.658168,
+            0.8588115,
+            0.8545621,
+            0.78075457,
+            0.9342734,
+            0.95432425,
+            0.86946374,
+            0.9662523,
+            1.0030093,
+            0.910213,
+            0.96871203,
+            1.1358039,
+            0.92020524,
+            0.9747586,
+            1.4999499,
+            0.93753666,
+            0.9828677,
+            1.9835886,
+            0.958455,
+            0.99108106,
+            2.4715018,
+            0.9786864,
+            0.99743795,
+            2.8483198,
+            0.9939443,
+            1.0,
+            3.0,
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 16,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_0",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "Rate": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstList": [
+        {
+          "Count": 5,
+          "CountLow": -1,
+          "Time": 0.0
+        }
+      ],
+      "BurstScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_1",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "Rate": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "ParticleBurstMethod": "EPBM_Interpolated",
+      "BurstList": [
+        {
+          "Count": 1,
+          "CountLow": -1,
+          "Time": 0.0
+        }
+      ],
+      "BurstScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_4",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "Rate": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstList": [
+        {
+          "Count": 3,
+          "CountLow": -1,
+          "Time": 0.0
+        }
+      ],
+      "BurstScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleTypeDataGpu",
+    "Name": "ParticleModuleTypeDataGpu_0",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "EmitterInfo": {
+        "RequiredModule": {
+          "ObjectName": "ParticleModuleRequired ZombieImpact2:ParticleModuleRequired_0",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.24"
+        },
+        "SpawnModule": {
+          "ObjectName": "ParticleModuleSpawn ZombieImpact2:ParticleModuleSpawn_0",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.36"
+        },
+        "SpawnModules": [
+          {
+            "ObjectName": "ParticleModuleRequired ZombieImpact2:ParticleModuleRequired_0",
+            "ObjectPath": "War/Content/FX/ZombieImpact2.24"
+          },
+          {
+            "ObjectName": "ParticleModuleLifetime ZombieImpact2:ParticleModuleLifetime_0",
+            "ObjectPath": "War/Content/FX/ZombieImpact2.18"
+          },
+          {
+            "ObjectName": "ParticleModuleSize ZombieImpact2:ParticleModuleSize_0",
+            "ObjectPath": "War/Content/FX/ZombieImpact2.30"
+          },
+          {
+            "ObjectName": "ParticleModuleVelocity ZombieImpact2:ParticleModuleVelocity_0",
+            "ObjectPath": "War/Content/FX/ZombieImpact2.40"
+          },
+          {
+            "ObjectName": "ParticleModuleLocationPrimitiveSphere ZombieImpact2:ParticleModuleLocationPrimitiveSphere_1",
+            "ObjectPath": "War/Content/FX/ZombieImpact2.22"
+          }
+        ],
+        "ConstantAcceleration": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -500.0
+        },
+        "InvMaxSize": {
+          "X": 0.033333335,
+          "Y": 0.033333335
+        },
+        "InvRotationRateScale": 5.0,
+        "MaxLifetime": 0.2,
+        "MaxParticleCount": 6,
+        "ScreenAlignment": "PSA_Velocity",
+        "bEnableCollision": true
+      },
+      "ResourceData": {
+        "QuantizedMiscSamples": [
+          {
+            "R": 0,
+            "G": 255,
+            "B": 255,
+            "A": 0,
+            "Hex": "00FFFF"
+          },
+          {
+            "R": 0,
+            "G": 254,
+            "B": 254,
+            "A": 0,
+            "Hex": "00FEFE"
+          },
+          {
+            "R": 0,
+            "G": 251,
+            "B": 251,
+            "A": 0,
+            "Hex": "00FBFB"
+          },
+          {
+            "R": 0,
+            "G": 248,
+            "B": 248,
+            "A": 0,
+            "Hex": "00F8F8"
+          },
+          {
+            "R": 0,
+            "G": 243,
+            "B": 243,
+            "A": 0,
+            "Hex": "00F3F3"
+          },
+          {
+            "R": 0,
+            "G": 237,
+            "B": 237,
+            "A": 0,
+            "Hex": "00EDED"
+          },
+          {
+            "R": 0,
+            "G": 230,
+            "B": 230,
+            "A": 0,
+            "Hex": "00E6E6"
+          },
+          {
+            "R": 0,
+            "G": 221,
+            "B": 221,
+            "A": 0,
+            "Hex": "00DDDD"
+          },
+          {
+            "R": 0,
+            "G": 212,
+            "B": 212,
+            "A": 0,
+            "Hex": "00D4D4"
+          },
+          {
+            "R": 0,
+            "G": 202,
+            "B": 202,
+            "A": 0,
+            "Hex": "00CACA"
+          },
+          {
+            "R": 0,
+            "G": 192,
+            "B": 192,
+            "A": 0,
+            "Hex": "00C0C0"
+          },
+          {
+            "R": 0,
+            "G": 181,
+            "B": 181,
+            "A": 0,
+            "Hex": "00B5B5"
+          },
+          {
+            "R": 0,
+            "G": 169,
+            "B": 169,
+            "A": 0,
+            "Hex": "00A9A9"
+          },
+          {
+            "R": 0,
+            "G": 158,
+            "B": 158,
+            "A": 0,
+            "Hex": "009E9E"
+          },
+          {
+            "R": 0,
+            "G": 145,
+            "B": 145,
+            "A": 0,
+            "Hex": "009191"
+          },
+          {
+            "R": 0,
+            "G": 133,
+            "B": 133,
+            "A": 0,
+            "Hex": "008585"
+          },
+          {
+            "R": 0,
+            "G": 121,
+            "B": 121,
+            "A": 0,
+            "Hex": "007979"
+          },
+          {
+            "R": 0,
+            "G": 109,
+            "B": 109,
+            "A": 0,
+            "Hex": "006D6D"
+          },
+          {
+            "R": 0,
+            "G": 96,
+            "B": 96,
+            "A": 0,
+            "Hex": "006060"
+          },
+          {
+            "R": 0,
+            "G": 85,
+            "B": 85,
+            "A": 0,
+            "Hex": "005555"
+          },
+          {
+            "R": 0,
+            "G": 73,
+            "B": 73,
+            "A": 0,
+            "Hex": "004949"
+          },
+          {
+            "R": 0,
+            "G": 62,
+            "B": 62,
+            "A": 0,
+            "Hex": "003E3E"
+          },
+          {
+            "R": 0,
+            "G": 52,
+            "B": 52,
+            "A": 0,
+            "Hex": "003434"
+          },
+          {
+            "R": 0,
+            "G": 42,
+            "B": 42,
+            "A": 0,
+            "Hex": "002A2A"
+          },
+          {
+            "R": 0,
+            "G": 33,
+            "B": 33,
+            "A": 0,
+            "Hex": "002121"
+          },
+          {
+            "R": 0,
+            "G": 24,
+            "B": 24,
+            "A": 0,
+            "Hex": "001818"
+          },
+          {
+            "R": 0,
+            "G": 17,
+            "B": 17,
+            "A": 0,
+            "Hex": "001111"
+          },
+          {
+            "R": 0,
+            "G": 11,
+            "B": 11,
+            "A": 0,
+            "Hex": "000B0B"
+          },
+          {
+            "R": 0,
+            "G": 6,
+            "B": 6,
+            "A": 0,
+            "Hex": "000606"
+          },
+          {
+            "R": 0,
+            "G": 3,
+            "B": 3,
+            "A": 0,
+            "Hex": "000303"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 0,
+            "Hex": "000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 0,
+            "Hex": "000000"
+          }
+        ],
+        "ColorBias": {
+          "X": 6.0,
+          "Y": 0.165231,
+          "Z": 0.0,
+          "W": 1.0
+        },
+        "MiscScale": {
+          "X": 30.0,
+          "Y": 30.0,
+          "Z": 0.0,
+          "W": 0.0
+        },
+        "SimulationAttrCurveBias": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0,
+          "W": 1.0
+        },
+        "SubImageSize": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0,
+          "W": 1.0
+        },
+        "SizeBySpeed": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0,
+          "W": 1.0
+        },
+        "ConstantAcceleration": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -500.0
+        },
+        "PerParticleVectorFieldBias": 1.0,
+        "ResilienceBias": 0.75,
+        "CollisionRadiusScale": 0.5,
+        "OneMinusFriction": 0.8,
+        "RotationRateScale": 0.2,
+        "ScreenAlignment": "PSA_Velocity"
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocity",
+    "Name": "ParticleModuleVelocity_0",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "StartVelocity": {
+        "MinValue": -10.0,
+        "MaxValue": 100.0,
+        "MinValueVec": {
+          "X": -10.0,
+          "Y": -10.0,
+          "Z": 50.0
+        },
+        "MaxValueVec": {
+          "X": 10.0,
+          "Y": 10.0,
+          "Z": 100.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -10.0,
+            -10.0,
+            50.0,
+            10.0,
+            10.0,
+            100.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "StartVelocityRadial": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocity",
+    "Name": "ParticleModuleVelocity_4",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "StartVelocity": {
+        "MinValue": -20.0,
+        "MaxValue": 20.0,
+        "MinValueVec": {
+          "X": -20.0,
+          "Y": -20.0,
+          "Z": -20.0
+        },
+        "MaxValueVec": {
+          "X": 20.0,
+          "Y": 20.0,
+          "Z": 20.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -20.0,
+            -20.0,
+            -20.0,
+            20.0,
+            20.0,
+            20.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "StartVelocityRadial": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_0",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "bUseLegacySpawningBehavior": true,
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel ZombieImpact2:ParticleSpriteEmitter_0.ParticleLODLevel_0",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.7"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_1",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel ZombieImpact2:ParticleSpriteEmitter_1.ParticleLODLevel_0",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.8"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_4",
+    "Outer": "ZombieImpact2",
+    "Properties": {
+      "bUseLegacySpawningBehavior": true,
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel ZombieImpact2:ParticleSpriteEmitter_4.ParticleLODLevel_2",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.9"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "ZombieImpact2",
+    "Properties": {
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter ZombieImpact2:ParticleSpriteEmitter_4",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.44"
+        },
+        {
+          "ObjectName": "ParticleSpriteEmitter ZombieImpact2:ParticleSpriteEmitter_0",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.42"
+        },
+        {
+          "ObjectName": "ParticleSpriteEmitter ZombieImpact2:ParticleSpriteEmitter_1",
+          "ObjectPath": "War/Content/FX/ZombieImpact2.43"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "FixedRelativeBoundingBox": {
+        "Min": {
+          "X": -15000.0,
+          "Y": -15000.0,
+          "Z": -15000.0
+        },
+        "Max": {
+          "X": 15000.0,
+          "Y": 15000.0,
+          "Z": 15000.0
+        },
+        "IsValid": 1
+      },
+      "bUseFixedRelativeBoundingBox": true,
+      "bShouldResetPeakCounts": true,
+      "CustomOcclusionBounds": {
+        "Min": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Max": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "IsValid": 1
+      }
+    }
+  }
+]

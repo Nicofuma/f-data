@@ -1,0 +1,147 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_3",
+    "Outer": "HospitalBed_04",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -0.24450684,
+              "Y": 3.0517578E-05,
+              "Z": 64.83878
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 316.64066,
+            "Y": 167.6029,
+            "Z": 13.075238,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": -155.55,
+              "Y": 0.0,
+              "Z": 77.655846
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 13.093907,
+            "Y": 167.6029,
+            "Z": 154.87656,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": 154.24379,
+              "Y": 0.0,
+              "Z": 77.655846
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 8.663524,
+            "Y": 167.6029,
+            "Z": 154.87656,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_6",
+    "Outer": "HospitalBed_04",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 753,
+        "SizeOnDisk": 753,
+        "OffsetInFile": "0x50BB"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "HospitalBed_04",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant HospitalBed",
+            "ObjectPath": "War/Content/Materials/Environment/Props/HospitalBed.0"
+          },
+          "MaterialSlotName": "HospitalBed",
+          "ImportedMaterialSlotName": "HospitalBed",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 445.74335,
+            "LocalUVDensities": 366.39404,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 366.39404,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.24450684,
+          "Y": 3.0517578E-05,
+          "Z": 77.655846
+        },
+        "BoxExtent": {
+          "X": 158.32033,
+          "Y": 83.80145,
+          "Z": 77.43828
+        },
+        "SphereRadius": 194.08994
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup HospitalBed_04:BodySetup_3",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/HospitalBed_04.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision HospitalBed_04:NavCollision_6",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/HospitalBed_04.1"
+    },
+    "LightingGuid": "DD231FAA-48B74EF7-421C758E-F37416E7",
+    "RenderData": null
+  }
+]

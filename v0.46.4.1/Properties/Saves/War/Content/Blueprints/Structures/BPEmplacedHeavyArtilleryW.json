@@ -1,0 +1,559 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "Foundation",
+    "Outer": "BPEmplacedHeavyArtilleryW_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SkeletalMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPEmplacedHeavyArtilleryW_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPEmplacedHeavyArtilleryW_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedHeavyArtilleryW.15"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class EmplacedArtillery",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPEmplacedHeavyArtilleryW_C:Foundation",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedHeavyArtilleryW.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPEmplacedHeavyArtilleryW_C:MultiplexedSkeletalMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedHeavyArtilleryW.8"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPEmplacedHeavyArtilleryW_C",
+    "Name": "Default__BPEmplacedHeavyArtilleryW_C",
+    "Properties": {
+      "RotatorMountComponent": {
+        "ObjectName": "BlueprintGeneratedClass BPEmplacedArtilleryWRotator_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedArtilleryWRotator.0"
+      },
+      "RotatorOccupiableComponent": {
+        "ObjectName": "OccupiableComponent Default__BPEmplacedHeavyArtilleryW_C:RotatorOccupiableComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedHeavyArtilleryW.10"
+      },
+      "GunnerTrigger": {
+        "ObjectName": "BoxComponent Default__BPEmplacedHeavyArtilleryW_C:GunnerTrigger",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedHeavyArtilleryW.4"
+      },
+      "RotatorTrigger": {
+        "ObjectName": "BoxComponent Default__BPEmplacedHeavyArtilleryW_C:RotatorTrigger",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedHeavyArtilleryW.5"
+      },
+      "EmplacedTrackingModifier": 2.0,
+      "Mesh": {
+        "ObjectName": "SkeletalMeshComponent Default__BPEmplacedHeavyArtilleryW_C:SkeletalMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedHeavyArtilleryW.17"
+      },
+      "OccupiableComponent": {
+        "ObjectName": "OccupiableComponent Default__BPEmplacedHeavyArtilleryW_C:OccupiableComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedHeavyArtilleryW.9"
+      },
+      "PackagedMesh": {
+        "ObjectName": "StaticMesh EmplacedHowitzerPacked",
+        "ObjectPath": "War/Content/Meshes/Structures/EmplacedHowitzerPacked.2"
+      },
+      "EmplacedIncomingDamageModifier": 0.25,
+      "BuildGhostClass": null,
+      "BuildSiteClass": {
+        "ObjectName": "Class StructureBuildSite",
+        "ObjectPath": "/Script/War"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "A26D7B604F08AA4B21D755B90489E34E",
+        "SourceString": "A heavy cannon designed to shatter the garrisons and fortifications of advancing forces. The Exalt is best utilized when emplaced into a defensive position to take advantage of its impressive range."
+      },
+      "ShippableInfo": {
+        "Type": "EShippableType::Normal"
+      },
+      "Icon": {
+        "ObjectName": "Texture2D HeavyArtilleryW",
+        "ObjectPath": "War/Content/Textures/UI/StructureIcons/HeavyArtilleryW.0"
+      },
+      "BuildLocationType": "EBuildLocationType::ConstructionYard",
+      "FactionVariant": "EFactionId::Wardens",
+      "CodeName": "EmplacedHeavyArtilleryW",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "587AB03C47FD3598827B3484EC09DD8F",
+        "SourceString": "Huber Exalt 150mm"
+      },
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPEmplacedHeavyArtilleryW_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedHeavyArtilleryW.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPEmplacedHeavyArtilleryW_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedHeavyArtilleryW.6"
+      },
+      "DestroyedFX": {
+        "ObjectName": "ParticleSystem GrenadeBlast",
+        "ObjectPath": "War/Content/FX/GrenadeBlast.151"
+      },
+      "TechID": "ETechID::UnlockEmplacedHeavyArtillery",
+      "MountComponent": {
+        "ObjectName": "BlueprintGeneratedClass BPEmplacedHeavyArtilleryWGunner_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedHeavyArtilleryWGunner.0"
+      },
+      "MaxHealth": 1250,
+      "Health": 1250,
+      "DropLocationOffset": {
+        "X": -200.0,
+        "Y": 0.0,
+        "Z": 10.0
+      },
+      "bRotateDropLocation": true,
+      "IsVaultable": false,
+      "MapIntelligenceType": "EMapIntelligenceType::Howitzer",
+      "StructureNetRelevancySize": "EStructureNetRelevancySize::Small",
+      "bIsStockpilable": true,
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPEmplacedHeavyArtilleryW_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedHeavyArtilleryW.18"
+      },
+      "MinNetUpdateFrequency": 15.0,
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPEmplacedHeavyArtilleryW_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedHeavyArtilleryW.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPEmplacedHeavyArtilleryW_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "GunnerTrigger",
+    "Outer": "Default__BPEmplacedHeavyArtilleryW_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 128.0,
+        "Y": 128.0,
+        "Z": 128.0
+      },
+      "BodyInstance": {
+        "CollisionProfileName": "Custom",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "OccupiableComponent Default__BPEmplacedHeavyArtilleryW_C:OccupiableComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedHeavyArtilleryW.9"
+      },
+      "RelativeLocation": {
+        "X": -52.80373,
+        "Y": 60.942566,
+        "Z": -85.81984
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "RotatorTrigger",
+    "Outer": "Default__BPEmplacedHeavyArtilleryW_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 128.0,
+        "Y": 128.0,
+        "Z": 128.0
+      },
+      "BodyInstance": {
+        "CollisionProfileName": "Custom",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "OccupiableComponent Default__BPEmplacedHeavyArtilleryW_C:RotatorOccupiableComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedHeavyArtilleryW.10"
+      },
+      "RelativeLocation": {
+        "X": -63.747375,
+        "Y": -49.999992,
+        "Z": -85.26251
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPEmplacedHeavyArtilleryW_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 240.0,
+        "Y": 240.0,
+        "Z": 150.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPEmplacedHeavyArtilleryW_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedHeavyArtilleryW.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 148.71841
+      }
+    }
+  },
+  {
+    "Type": "MultiplexedSkeletalMeshComponent",
+    "Name": "MultiplexedSkeletalMesh_GEN_VARIABLE",
+    "Outer": "BPEmplacedHeavyArtilleryW_C",
+    "Properties": {
+      "TargetTag": "Multiplexed",
+      "MeshStops": [
+        {
+          "Threshold": 0,
+          "SkeletalMesh": {
+            "ObjectName": "SkeletalMesh SK_HeavyArtilleryW",
+            "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/SK_HeavyArtilleryW.0"
+          }
+        },
+        {
+          "Threshold": 33,
+          "SkeletalMesh": {
+            "ObjectName": "SkeletalMesh SK_HeavyArtilleryW",
+            "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/SK_HeavyArtilleryW.0"
+          }
+        },
+        {
+          "Threshold": 66,
+          "SkeletalMesh": {
+            "ObjectName": "SkeletalMesh SK_HeavyArtilleryW",
+            "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/SK_HeavyArtilleryW.0"
+          }
+        }
+      ],
+      "InputValue": 100,
+      "SelectedMeshIndex": 2
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "MultiplexedSkeletalMesh",
+    "Outer": "BPEmplacedHeavyArtilleryW_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class MultiplexedSkeletalMeshComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "OccupiableComponent",
+    "Name": "OccupiableComponent",
+    "Outer": "Default__BPEmplacedHeavyArtilleryW_C",
+    "Properties": {
+      "SafeSpawnOffset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 260.0
+      },
+      "bProvidesFullCover": true,
+      "bTeleportBack": false,
+      "bCanOccupantSeeThroughEverything": true,
+      "TriggerComponent": {
+        "ObjectName": "BoxComponent Default__BPEmplacedHeavyArtilleryW_C:GunnerTrigger",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedHeavyArtilleryW.4"
+      },
+      "MountCodeName": "EmplacedHeavyArtilleryWGunner",
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPEmplacedHeavyArtilleryW_C:SkeletalMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedHeavyArtilleryW.17"
+      },
+      "RelativeLocation": {
+        "X": -130.77039,
+        "Y": 0.83321327,
+        "Z": 113.065994
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "OccupiableComponent",
+    "Name": "RotatorOccupiableComponent",
+    "Outer": "Default__BPEmplacedHeavyArtilleryW_C",
+    "Properties": {
+      "bProvidesFullCover": true,
+      "bTeleportBack": false,
+      "TriggerComponent": {
+        "ObjectName": "BoxComponent Default__BPEmplacedHeavyArtilleryW_C:RotatorTrigger",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedHeavyArtilleryW.5"
+      },
+      "MountCodeName": "EmplacedArtilleryWRotator",
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPEmplacedHeavyArtilleryW_C:SkeletalMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedHeavyArtilleryW.17"
+      },
+      "RelativeLocation": {
+        "X": 133.97406,
+        "Y": -0.1179837,
+        "Z": 114.77051
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPEmplacedHeavyArtilleryW_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPEmplacedHeavyArtilleryW_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedHeavyArtilleryW.11"
+      },
+      "VariableGuid": "6F9A620C-4B15380B-2CC77895-979D14F2",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class MultiplexedSkeletalMeshComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "MultiplexedSkeletalMeshComponent BPEmplacedHeavyArtilleryW_C:MultiplexedSkeletalMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedHeavyArtilleryW.7"
+      },
+      "VariableGuid": "7E269B41-44D05ECF-650A2F99-93625811",
+      "InternalVariableName": "MultiplexedSkeletalMesh"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SkeletalMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SkeletalMeshComponent BPEmplacedHeavyArtilleryW_C:Foundation_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedHeavyArtilleryW.16"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "B9B2F331-40537441-D9583FB5-FB6F945E",
+      "InternalVariableName": "Foundation"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPEmplacedHeavyArtilleryW_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPEmplacedHeavyArtilleryW_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedHeavyArtilleryW.13"
+        },
+        {
+          "ObjectName": "SCS_Node BPEmplacedHeavyArtilleryW_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedHeavyArtilleryW.14"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPEmplacedHeavyArtilleryW_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedHeavyArtilleryW.13"
+        },
+        {
+          "ObjectName": "SCS_Node BPEmplacedHeavyArtilleryW_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedHeavyArtilleryW.14"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPEmplacedHeavyArtilleryW_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedHeavyArtilleryW.12"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "Foundation_GEN_VARIABLE",
+    "Outer": "BPEmplacedHeavyArtilleryW_C",
+    "Properties": {
+      "ClothingSimulationFactory": {
+        "ObjectName": "Class ClothingSimulationFactoryNv",
+        "ObjectPath": "/Script/ClothingSystemRuntimeNv"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_EmplacedFoundation",
+        "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/SK_EmplacedFoundation.0"
+      },
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldDynamic",
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 15.0
+      },
+      "ComponentTags": [
+        "IncludeInBuildSite"
+      ]
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SkeletalMesh",
+    "Outer": "Default__BPEmplacedHeavyArtilleryW_C",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_HeavyArtilleryW_C",
+        "ObjectPath": "War/Content/Animation/WorldAssets/Fort_and_Trenches/ABP_HeavyArtilleryW.1"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_HeavyArtilleryW",
+        "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/SK_HeavyArtilleryW.0"
+      },
+      "OverrideMaterials": [
+        null
+      ],
+      "bReceivesDecals": false,
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldDynamic",
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPEmplacedHeavyArtilleryW_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedHeavyArtilleryW.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 53.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 270.0,
+        "Roll": 0.0
+      },
+      "ComponentTags": [
+        "Multiplexed",
+        "IncludeInBuildSite",
+        "IncludeInBuildGhost"
+      ]
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPEmplacedHeavyArtilleryW_C"
+  }
+]

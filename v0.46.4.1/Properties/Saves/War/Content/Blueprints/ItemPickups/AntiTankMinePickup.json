@@ -1,0 +1,123 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "AntiTankMinePickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript AntiTankMinePickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/AntiTankMinePickup.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class GearPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "AntiTankMinePickup_C",
+    "Name": "Default__AntiTankMinePickup_C",
+    "Properties": {
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass AntiTankMineItemComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Items/AntiTankMineItemComponent.0"
+      },
+      "Encumbrance": 40,
+      "CodeName": "TankMine",
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "AAB1D92D4FB4AD7EB745298037F956E9",
+        "SourceString": "Explosive Charge"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "48445AD646C3835147677B852FAA6C6F",
+        "SourceString": "Abisme AT-99"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "EFCD50E84D7776D904373183AE5B4496",
+        "SourceString": "A simple mine that is placed under terrain and fitted with a pressure-sensitive plate to detonate under the weight of heavy vehicles. Mines are visible to friendlies and enemies on foot and deactivate after 48 in-game days."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D AntiTankMineItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/AntiTankMineItemIcon.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Tertiary",
+      "ItemCategory": "EItemCategory::Utility",
+      "ItemProfileType": "EItemProfileType::Tool",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__AntiTankMinePickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/AntiTankMinePickup.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__AntiTankMinePickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/AntiTankMinePickup.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__AntiTankMinePickup_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 54.71158,
+        "Y": 55.838535,
+        "Z": 49.068043
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "AntiTankMinePickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent AntiTankMinePickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/AntiTankMinePickup.3"
+      },
+      "VariableGuid": "541BAD53-4B377223-83DFE384-33E208F3",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "AntiTankMinePickup_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node AntiTankMinePickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/AntiTankMinePickup.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__AntiTankMinePickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__AntiTankMinePickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/AntiTankMinePickup.2"
+      }
+    }
+  }
+]

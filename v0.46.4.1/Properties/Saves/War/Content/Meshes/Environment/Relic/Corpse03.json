@@ -1,0 +1,105 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Corpse03",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 28.812717
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 156.84479,
+            "Y": 238.50337,
+            "Z": 66.82559,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Corpse03",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x9E07"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Corpse03",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MassGrave",
+            "ObjectPath": "War/Content/Materials/Relic/MassGrave.0"
+          },
+          "MaterialSlotName": "MassGrave",
+          "ImportedMaterialSlotName": "MassGrave",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 478.62036,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 478.62036,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 28.812717
+        },
+        "BoxExtent": {
+          "X": 78.42239,
+          "Y": 119.251686,
+          "Z": 33.412796
+        },
+        "SphereRadius": 129.90321
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Corpse03:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Relic/Corpse03.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Corpse03:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Relic/Corpse03.1"
+    },
+    "LightingGuid": "81B7746C-41672FB5-F24568A7-CBDA3899",
+    "RenderData": null
+  }
+]

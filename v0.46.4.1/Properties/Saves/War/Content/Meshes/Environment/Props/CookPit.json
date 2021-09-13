@@ -1,0 +1,154 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "CookPit",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -7.86145,
+              "Y": 6.10019,
+              "Z": 109.283455
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 134.317,
+            "Y": 126.248566,
+            "Z": 211.97794,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_323",
+    "Outer": "CookPit",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x42C05"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "CookPit",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RepeatingMetal3",
+            "ObjectPath": "War/Content/Materials/Resources/RepeatingMetal3.0"
+          },
+          "MaterialSlotName": "Metal",
+          "ImportedMaterialSlotName": "Metal",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 67.57251,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ShorelineRocks",
+            "ObjectPath": "War/Content/Materials/Environment/ShorelineRocks.0"
+          },
+          "MaterialSlotName": "Rocks",
+          "ImportedMaterialSlotName": "Rocks",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 146.84837,
+            "LocalUVDensities": 97.42596,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FireBarrel",
+            "ObjectPath": "War/Content/FX/Materials/FireBarrel.0"
+          },
+          "MaterialSlotName": "Fire",
+          "ImportedMaterialSlotName": "Fire",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 87.17481,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant WoodBarnPlanksDamaged",
+            "ObjectPath": "War/Content/Materials/Environment/Props/WoodBarnPlanksDamaged.0"
+          },
+          "MaterialSlotName": "WoodbarnplanksCrate",
+          "ImportedMaterialSlotName": "WoodbarnplanksCrate",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 133.49466,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 97.42596,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -7.86145,
+          "Y": 11.887352,
+          "Z": 52.451515
+        },
+        "BoxExtent": {
+          "X": 101.92702,
+          "Y": 101.09011,
+          "Z": 94.46484
+        },
+        "SphereRadius": 140.91043
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup CookPit:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/CookPit.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision CookPit:NavCollision_323",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/CookPit.1"
+    },
+    "LightingGuid": "FE32AD35-45485E44-86EAE4B9-F2F19119",
+    "RenderData": null
+  }
+]

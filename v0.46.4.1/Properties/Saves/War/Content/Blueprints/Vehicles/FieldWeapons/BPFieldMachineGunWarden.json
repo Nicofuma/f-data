@@ -1,0 +1,518 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPFieldMachineGunWarden_C",
+    "Super": "BPFieldGunBase_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPFieldMachineGunWarden_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.30"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler BPFieldMachineGunWarden_C:InheritableComponentHandler",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.9"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass BPFieldGunBase_C",
+      "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldGunBase.1"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPFieldMachineGunWarden_C",
+    "Name": "Default__BPFieldMachineGunWarden_C",
+    "Properties": {
+      "MuzzleFlashPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPFieldMachineGunWarden_C:MuzzleFlashPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.14"
+      },
+      "IdleLoop": {
+        "ObjectName": "AudioComponent Default__BPFieldMachineGunWarden_C:IdleLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.5"
+      },
+      "RearLeftTireDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPFieldMachineGunWarden_C:RearLeftTireDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.16"
+      },
+      "RearLeftTireDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPFieldMachineGunWarden_C:RearLeftTireDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.15"
+      },
+      "RearRightTireDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPFieldMachineGunWarden_C:RearRightTireDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.18"
+      },
+      "RearRightTireDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPFieldMachineGunWarden_C:RearRightTireDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.17"
+      },
+      "MainDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPFieldMachineGunWarden_C:MainDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.11"
+      },
+      "MainDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPFieldMachineGunWarden_C:MainDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.10"
+      },
+      "SkiddingDirtPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPFieldMachineGunWarden_C:SkiddingDirtPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.19"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "F99A891247BA4A9CCB332681CC4861D6",
+        "SourceString": "Swallowtail 988/127-2 "
+      },
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "B7931BEA463E9485461FCFB7F447C8A7",
+        "SourceString": "Field Machine Gun"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "6F965FDF48014859DF03BC9DD3457200",
+        "SourceString": "A dual barrelled, high calibre anti-infantry machine gun. The Swallowtail is fitted with forward-facing armour plating and is excellent for suppression. "
+      },
+      "Icon": {
+        "ObjectName": "Texture2D FieldMachineGunWar",
+        "ObjectPath": "War/Content/Textures/UI/VehicleIcons/FieldMachineGunWar.0"
+      },
+      "VehicleBuildType": "EVehicleBuildType::VehicleFactory",
+      "FactionVariant": "EFactionId::Wardens",
+      "CodeName": "FieldMGW",
+      "DestroyedMesh": {
+        "ObjectName": "StaticMeshComponent Default__BPFieldMachineGunWarden_C:DestroyedMesh",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.32"
+      },
+      "MinorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPFieldMachineGunWarden_C:MinorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.13"
+      },
+      "MajorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPFieldMachineGunWarden_C:MajorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.12"
+      },
+      "FrozenEnterSound": null,
+      "DriveLoop": {
+        "ObjectName": "AudioComponent Default__BPFieldMachineGunWarden_C:DriveLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.4"
+      },
+      "BackUpSFXLoop": {
+        "ObjectName": "AudioComponent Default__BPFieldMachineGunWarden_C:BackUpSFXLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.3"
+      },
+      "CameraRigComponent": {
+        "ObjectName": "PlayerCameraRigComponent Default__BPFieldMachineGunWarden_C:CameraRigVehicle",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.20"
+      },
+      "FrontAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__BPFieldMachineGunWarden_C:FrontAxelCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.23"
+      },
+      "RearAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__BPFieldMachineGunWarden_C:RearAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.26"
+      },
+      "FrontLeftRollCastLocation": {
+        "ObjectName": "SceneComponent Default__BPFieldMachineGunWarden_C:FrontRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.24"
+      },
+      "FrontRightRollCastLocation": {
+        "ObjectName": "SceneComponent Default__BPFieldMachineGunWarden_C:RearRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.27"
+      },
+      "LeftSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__BPFieldMachineGunWarden_C:LeftSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.25"
+      },
+      "RightSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__BPFieldMachineGunWarden_C:RightSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.28"
+      },
+      "VehicleCollision": {
+        "ObjectName": "BoxComponent Default__BPFieldMachineGunWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.7"
+      },
+      "PassengerArea": {
+        "ObjectName": "BoxComponent Default__BPFieldMachineGunWarden_C:PassengerBaseBox",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.6"
+      },
+      "AFKTimeoutComponent": {
+        "ObjectName": "AFKTimeoutComponent Default__BPFieldMachineGunWarden_C:AFKTimeoutComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.2"
+      },
+      "MuzzleInfo": [
+        {
+          "GunnerIndex": 1,
+          "MuzzleIndex": 0,
+          "SocketName": "S_Muzzle"
+        }
+      ],
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPFieldMachineGunWarden_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.33"
+      },
+      "Mesh": {
+        "ObjectName": "SkeletalMeshComponent Default__BPFieldMachineGunWarden_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.31"
+      },
+      "CharacterMovement": {
+        "ObjectName": "RWDVehicleMovementComponent Default__BPFieldMachineGunWarden_C:CharMoveComp",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.21"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldMachineGunWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.8"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPFieldMachineGunWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.7"
+      }
+    }
+  },
+  {
+    "Type": "AFKTimeoutComponent",
+    "Name": "AFKTimeoutComponent",
+    "Outer": "Default__BPFieldMachineGunWarden_C"
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "BackUpSFXLoop",
+    "Outer": "Default__BPFieldMachineGunWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldMachineGunWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.8"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "DriveLoop",
+    "Outer": "Default__BPFieldMachineGunWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldMachineGunWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.8"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "IdleLoop",
+    "Outer": "Default__BPFieldMachineGunWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFieldMachineGunWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.7"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "PassengerBaseBox",
+    "Outer": "Default__BPFieldMachineGunWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFieldMachineGunWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.7"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "VehicleCollision",
+    "Outer": "Default__BPFieldMachineGunWarden_C",
+    "Properties": {
+      "OnComponentBeginOverlap": null
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__BPFieldMachineGunWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFieldMachineGunWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.7"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BPFieldMachineGunWarden_C"
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MainDirtHighSpeedPS",
+    "Outer": "Default__BPFieldMachineGunWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFieldMachineGunWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MainDirtLowSpeedPS",
+    "Outer": "Default__BPFieldMachineGunWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFieldMachineGunWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MajorDamagePS",
+    "Outer": "Default__BPFieldMachineGunWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldMachineGunWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.8"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MinorDamagePS",
+    "Outer": "Default__BPFieldMachineGunWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldMachineGunWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.8"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MuzzleFlashPS",
+    "Outer": "Default__BPFieldMachineGunWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFieldMachineGunWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearLeftTireDirtHighSpeedPS",
+    "Outer": "Default__BPFieldMachineGunWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFieldMachineGunWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearLeftTireDirtLowSpeedPS",
+    "Outer": "Default__BPFieldMachineGunWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFieldMachineGunWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearRightTireDirtHighSpeedPS",
+    "Outer": "Default__BPFieldMachineGunWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFieldMachineGunWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearRightTireDirtLowSpeedPS",
+    "Outer": "Default__BPFieldMachineGunWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFieldMachineGunWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "SkiddingDirtPS",
+    "Outer": "Default__BPFieldMachineGunWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFieldMachineGunWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.7"
+      }
+    }
+  },
+  {
+    "Type": "PlayerCameraRigComponent",
+    "Name": "CameraRigVehicle",
+    "Outer": "Default__BPFieldMachineGunWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldMachineGunWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.8"
+      }
+    }
+  },
+  {
+    "Type": "RWDVehicleMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__BPFieldMachineGunWarden_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPFieldMachineGunWarden_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontAxelCastLocation",
+    "Outer": "Default__BPFieldMachineGunWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldMachineGunWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontRightAxleCastLocation",
+    "Outer": "Default__BPFieldMachineGunWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldMachineGunWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "LeftSideTrackLocation",
+    "Outer": "Default__BPFieldMachineGunWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldMachineGunWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearAxleCastLocation",
+    "Outer": "Default__BPFieldMachineGunWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldMachineGunWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearRightAxleCastLocation",
+    "Outer": "Default__BPFieldMachineGunWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldMachineGunWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RightSideTrackLocation",
+    "Outer": "Default__BPFieldMachineGunWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldMachineGunWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.8"
+      }
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPFieldMachineGunWarden_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.22"
+      },
+      "VariableGuid": "04618F07-4E0D4EA9-9F458C83-965E6B3E",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPFieldMachineGunWarden_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPFieldMachineGunWarden_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.29"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__BPFieldMachineGunWarden_C",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_FieldMG_C",
+        "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.1"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_FieldMachineGunWar",
+        "ObjectPath": "War/Content/Meshes/Vehicles/SK_FieldMachineGunWar.0"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldMachineGunWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.8"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "DestroyedMesh",
+    "Outer": "Default__BPFieldMachineGunWarden_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh FieldMachineGunWarDestroyed",
+        "ObjectPath": "War/Content/Meshes/Vehicles/FieldMachineGunWarDestroyed.2"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldMachineGunWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMachineGunWarden.8"
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPFieldMachineGunWarden_C"
+  }
+]

@@ -1,0 +1,267 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "ParticleSystem",
+    "Outer": "BPSnowball_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class ParticleSystemComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPSnowball_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPSnowball_C:SimpleConstructionScript_1",
+        "ObjectPath": "War/Content/Blueprints/Items/BPSnowball.12"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class WarProjectile",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPSnowball_C:ParticleSystem",
+        "ObjectPath": "War/Content/Blueprints/Items/BPSnowball.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPSnowball_C:Sphere",
+        "ObjectPath": "War/Content/Blueprints/Items/BPSnowball.4"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPSnowball_C",
+    "Name": "Default__BPSnowball_C",
+    "Properties": {
+      "MovementComp": {
+        "ObjectName": "ProjectileMovementComponent Default__BPSnowball_C:ProjectileComp",
+        "ObjectPath": "War/Content/Blueprints/Items/BPSnowball.7"
+      },
+      "CollisionComp": {
+        "ObjectName": "SphereComponent Default__BPSnowball_C:SphereComp",
+        "ObjectPath": "War/Content/Blueprints/Items/BPSnowball.13"
+      },
+      "ParticleComp": {
+        "ObjectName": "ParticleSystemComponent Default__BPSnowball_C:ParticleComp",
+        "ObjectPath": "War/Content/Blueprints/Items/BPSnowball.6"
+      },
+      "LoopingAudio": {
+        "ObjectName": "AudioComponent Default__BPSnowball_C:LoopingAudio",
+        "ObjectPath": "War/Content/Blueprints/Items/BPSnowball.3"
+      },
+      "ExplosionTemplate": {
+        "ObjectName": "BlueprintGeneratedClass SnowballExplosion_C",
+        "ObjectPath": "War/Content/Blueprints/Items/SnowballExplosion.1"
+      },
+      "ProjectileDeathDelay": 0.05,
+      "bProjectImpactDownward": true,
+      "RootComponent": {
+        "ObjectName": "SphereComponent Default__BPSnowball_C:SphereComp",
+        "ObjectPath": "War/Content/Blueprints/Items/BPSnowball.13"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "LoopingAudio",
+    "Outer": "Default__BPSnowball_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__BPSnowball_C:SphereComp",
+        "ObjectPath": "War/Content/Blueprints/Items/BPSnowball.13"
+      }
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Sphere",
+    "Outer": "BPSnowball_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ParticleSystem_GEN_VARIABLE",
+    "Outer": "BPSnowball_C",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem SnowballTrail",
+        "ObjectPath": "War/Content/FX/SnowballTrail.17"
+      },
+      "RelativeRotation": {
+        "Pitch": -72.64252,
+        "Yaw": -180.0,
+        "Roll": -180.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ParticleComp",
+    "Outer": "Default__BPSnowball_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__BPSnowball_C:SphereComp",
+        "ObjectPath": "War/Content/Blueprints/Items/BPSnowball.13"
+      }
+    }
+  },
+  {
+    "Type": "ProjectileMovementComponent",
+    "Name": "ProjectileComp",
+    "Outer": "Default__BPSnowball_C",
+    "Properties": {
+      "bInitialVelocityInLocalSpace": false,
+      "ProjectileGravityScale": 1.0,
+      "Bounciness": 0.08,
+      "Friction": 0.55,
+      "BounceVelocityStopSimulatingThreshold": 8.0
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPSnowball_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_1",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class ParticleSystemComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ParticleSystemComponent BPSnowball_C:ParticleSystem_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Items/BPSnowball.5"
+      },
+      "VariableGuid": "95CFAFA5-485015B5-27EF469C-494BBFD1",
+      "InternalVariableName": "ParticleSystem"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_1",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPSnowball_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Items/BPSnowball.8"
+      },
+      "VariableGuid": "60C0D2B2-43DECD9A-7802A387-8BC73070",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_1",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPSnowball_C:Sphere_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Items/BPSnowball.14"
+      },
+      "ParentComponentOrVariableName": "SphereComp",
+      "bIsParentComponentNative": true,
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node BPSnowball_C:SimpleConstructionScript_1.SCS_Node_0",
+          "ObjectPath": "War/Content/Blueprints/Items/BPSnowball.9"
+        }
+      ],
+      "VariableGuid": "19B9FC7C-4845E3DF-F831E79A-18405624",
+      "InternalVariableName": "Sphere"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_1",
+    "Outer": "BPSnowball_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPSnowball_C:SimpleConstructionScript_1.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Items/BPSnowball.11"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPSnowball_C:SimpleConstructionScript_1.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Items/BPSnowball.11"
+        },
+        {
+          "ObjectName": "SCS_Node BPSnowball_C:SimpleConstructionScript_1.SCS_Node_0",
+          "ObjectPath": "War/Content/Blueprints/Items/BPSnowball.9"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPSnowball_C:SimpleConstructionScript_1.SCS_Node_1",
+        "ObjectPath": "War/Content/Blueprints/Items/BPSnowball.10"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "SphereComp",
+    "Outer": "Default__BPSnowball_C",
+    "Properties": {
+      "SphereRadius": 10.0,
+      "BodyInstance": {
+        "MassInKgOverride": 2.9279141
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Sphere_GEN_VARIABLE",
+    "Outer": "BPSnowball_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh snowball",
+        "ObjectPath": "War/Content/FX/Mesh/snowball.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant SnowballMesh",
+          "ObjectPath": "War/Content/Materials/Environment/SnowballMesh.0"
+        }
+      ],
+      "bReceivesDecals": false,
+      "BodyInstance": {
+        "MassInKgOverride": 2.9279146
+      },
+      "RelativeRotation": {
+        "Pitch": 72.64259,
+        "Yaw": -179.99995,
+        "Roll": -179.99995
+      }
+    }
+  }
+]

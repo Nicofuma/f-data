@@ -1,0 +1,642 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "PillarRight",
+    "Outer": "BPWallT1_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPWallT1_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPWallT1_C:SimpleConstructionScript_1",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPWallT1.21"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class Wall",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPWallT1_C:PillarRight",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPWallT1.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPWallT1_C:PillarLeft",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPWallT1.10"
+      },
+      {
+        "ObjectName": "ObjectProperty BPWallT1_C:LeftSocket",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPWallT1.8"
+      },
+      {
+        "ObjectName": "ObjectProperty BPWallT1_C:RightSocket",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPWallT1.11"
+      },
+      {
+        "ObjectName": "ObjectProperty BPWallT1_C:MultiplexedStaticMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPWallT1.9"
+      },
+      {
+        "ObjectName": "ObjectProperty BPWallT1_C:Wall",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPWallT1.12"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPWallT1_C",
+    "Name": "Default__BPWallT1_C",
+    "Properties": {
+      "NoBuildPhysicalMaterials": [
+        {
+          "ObjectName": "PhysicalMaterial WetSandPhys",
+          "ObjectPath": "War/Content/PhysicalMaterials/WetSandPhys.0"
+        },
+        {
+          "ObjectName": "PhysicalMaterial TownStone",
+          "ObjectPath": "War/Content/PhysicalMaterials/TownStone.0"
+        },
+        {
+          "ObjectName": "PhysicalMaterial HighwayPhys",
+          "ObjectPath": "War/Content/PhysicalMaterials/HighwayPhys.0"
+        },
+        {
+          "ObjectName": "PhysicalMaterial T1RoadPhys",
+          "ObjectPath": "War/Content/PhysicalMaterials/T1RoadPhys.0"
+        },
+        {
+          "ObjectName": "PhysicalMaterial T2RoadPhys",
+          "ObjectPath": "War/Content/PhysicalMaterials/T2RoadPhys.0"
+        },
+        {
+          "ObjectName": "PhysicalMaterial T3RoadPhys",
+          "ObjectPath": "War/Content/PhysicalMaterials/T3RoadPhys.0"
+        },
+        {
+          "ObjectName": "PhysicalMaterial SandPhys",
+          "ObjectPath": "War/Content/PhysicalMaterials/SandPhys.0"
+        }
+      ],
+      "BuildGhostClass": null,
+      "Description": {
+        "Namespace": "",
+        "Key": "5E3F76A947EADA412FB6B5BC7E02B9D8",
+        "SourceString": "A basic barrier that is used to prevent passage through an area."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D Wall-T1Icon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/Wall-T1Icon.0"
+      },
+      "BuildLocationType": "EBuildLocationType::Anywhere",
+      "CodeName": "WallT1",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "B21322964502FDDB2E1EF39D9DAAA33C",
+        "SourceString": "Wall (Tier 1)"
+      },
+      "ArmourType": "EArmourType::Tier1Structure",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPWallT1_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPWallT1.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPWallT1_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPWallT1.4"
+      },
+      "DestroyedFX": {
+        "ObjectName": "ParticleSystem GrenadeBlast",
+        "ObjectPath": "War/Content/FX/GrenadeBlast.151"
+      },
+      "DestroyedSoundCue": {
+        "ObjectName": "SoundCue StructureExplosionSmall_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/StructureExplosionSmall_Cue.0"
+      },
+      "MaxHealth": 500,
+      "Health": 500,
+      "UpgradeStructureCodeName": "WallT2",
+      "IsVaultable": false,
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPWallT1_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPWallT1.25"
+      },
+      "MinNetUpdateFrequency": 0.5,
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPWallT1_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPWallT1.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPWallT1_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPWallT1_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 700.0,
+        "Y": 150.0,
+        "Z": 200.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPWallT1_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPWallT1.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 200.0
+      },
+      "ComponentTags": [
+        "ExcludeFromBuildSite",
+        "ExcludeFromBuildGhost"
+      ]
+    }
+  },
+  {
+    "Type": "BuildSocketComponent",
+    "Name": "LeftSocket_GEN_VARIABLE",
+    "Outer": "BPWallT1_C",
+    "Properties": {
+      "SocketTags": [
+        {
+          "SocketTypeMask": 512,
+          "SocketTypeCategory": 512,
+          "Tag": "SideLeft",
+          "ShowsTag": "None",
+          "MaxZOffset": 200.0,
+          "ApplicationRule": "EBuildSocketTagRule::AffectsLowerZ",
+          "ConnectorAttachmentTag": "None"
+        }
+      ],
+      "MaxZRotation": 150.0,
+      "MaxHeightAboveLandscape": 200.0,
+      "MaxDepthBelowLandscape": 200.0,
+      "RelativeLocation": {
+        "X": -750.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 180.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BuildSocketComponent",
+    "Name": "RightSocket_GEN_VARIABLE",
+    "Outer": "BPWallT1_C",
+    "Properties": {
+      "SocketTags": [
+        {
+          "SocketTypeMask": 512,
+          "SocketTypeCategory": 512,
+          "Tag": "SideRight",
+          "ShowsTag": "None",
+          "MaxZOffset": 200.0,
+          "ApplicationRule": "EBuildSocketTagRule::AffectsLowerZ",
+          "ConnectorAttachmentTag": "None"
+        }
+      ],
+      "MaxZRotation": 150.0,
+      "MaxHeightAboveLandscape": 200.0,
+      "MaxDepthBelowLandscape": 200.0,
+      "RelativeLocation": {
+        "X": 750.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "MultiplexedStaticMeshComponent",
+    "Name": "MultiplexedStaticMesh_GEN_VARIABLE",
+    "Outer": "BPWallT1_C",
+    "Properties": {
+      "TargetTag": "Wall",
+      "MeshStops": [
+        {
+          "Threshold": 0,
+          "StaticMesh": {
+            "ObjectName": "StaticMesh Wall-T1_Critical",
+            "ObjectPath": "War/Content/Meshes/Structures/Walls/Wall-T1_Critical.2"
+          }
+        },
+        {
+          "Threshold": 33,
+          "StaticMesh": {
+            "ObjectName": "StaticMesh Wall-T1_Damaged",
+            "ObjectPath": "War/Content/Meshes/Structures/Walls/Wall-T1_Damaged.2"
+          }
+        },
+        {
+          "Threshold": 66,
+          "StaticMesh": {
+            "ObjectName": "StaticMesh Wall-T1",
+            "ObjectPath": "War/Content/Meshes/Structures/Walls/Wall-T1.2"
+          }
+        }
+      ],
+      "InputValue": 100,
+      "SelectedMeshIndex": 2
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "LeftSocket",
+    "Outer": "BPWallT1_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BuildSocketComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "MultiplexedStaticMesh",
+    "Outer": "BPWallT1_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class MultiplexedStaticMeshComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "PillarLeft",
+    "Outer": "BPWallT1_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "RightSocket",
+    "Outer": "BPWallT1_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BuildSocketComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Wall",
+    "Outer": "BPWallT1_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPWallT1_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_1",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class MultiplexedStaticMeshComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "MultiplexedStaticMeshComponent BPWallT1_C:MultiplexedStaticMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPWallT1.7"
+      },
+      "VariableGuid": "019385D1-42A5041B-0BA790A7-5090088A",
+      "InternalVariableName": "MultiplexedStaticMesh"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_1",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPWallT1_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPWallT1.13"
+      },
+      "VariableGuid": "9409B624-44F08AA8-D536BD98-E45A0025",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_1",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BuildSocketComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BuildSocketComponent BPWallT1_C:RightSocket_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPWallT1.6"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "2EDE382C-46568933-AE306480-7D2B49E8",
+      "InternalVariableName": "RightSocket"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_1",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPWallT1_C:Wall_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPWallT1.24"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "EFF2939F-4B6EFAEB-0E5AADB3-1DAC116E",
+      "InternalVariableName": "Wall"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_1",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BuildSocketComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BuildSocketComponent BPWallT1_C:LeftSocket_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPWallT1.5"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "2FEFA79E-4A70DCEC-453B1B92-4105E2C1",
+      "InternalVariableName": "LeftSocket"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_1",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPWallT1_C:PillarLeft_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPWallT1.22"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "32FA6E87-4D696B81-A3DC00B6-079DE1E8",
+      "InternalVariableName": "PillarLeft"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_8",
+    "Outer": "SimpleConstructionScript_1",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPWallT1_C:PillarRight_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPWallT1.23"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "7450FC3D-4E41C3FB-A8BEC4AD-28FF4E24",
+      "InternalVariableName": "PillarRight"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_1",
+    "Outer": "BPWallT1_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPWallT1_C:SimpleConstructionScript_1.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPWallT1.17"
+        },
+        {
+          "ObjectName": "SCS_Node BPWallT1_C:SimpleConstructionScript_1.SCS_Node_0",
+          "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPWallT1.14"
+        },
+        {
+          "ObjectName": "SCS_Node BPWallT1_C:SimpleConstructionScript_1.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPWallT1.16"
+        },
+        {
+          "ObjectName": "SCS_Node BPWallT1_C:SimpleConstructionScript_1.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPWallT1.18"
+        },
+        {
+          "ObjectName": "SCS_Node BPWallT1_C:SimpleConstructionScript_1.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPWallT1.19"
+        },
+        {
+          "ObjectName": "SCS_Node BPWallT1_C:SimpleConstructionScript_1.SCS_Node_8",
+          "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPWallT1.20"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPWallT1_C:SimpleConstructionScript_1.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPWallT1.17"
+        },
+        {
+          "ObjectName": "SCS_Node BPWallT1_C:SimpleConstructionScript_1.SCS_Node_0",
+          "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPWallT1.14"
+        },
+        {
+          "ObjectName": "SCS_Node BPWallT1_C:SimpleConstructionScript_1.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPWallT1.16"
+        },
+        {
+          "ObjectName": "SCS_Node BPWallT1_C:SimpleConstructionScript_1.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPWallT1.18"
+        },
+        {
+          "ObjectName": "SCS_Node BPWallT1_C:SimpleConstructionScript_1.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPWallT1.19"
+        },
+        {
+          "ObjectName": "SCS_Node BPWallT1_C:SimpleConstructionScript_1.SCS_Node_8",
+          "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPWallT1.20"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPWallT1_C:SimpleConstructionScript_1.SCS_Node_1",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPWallT1.15"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "PillarLeft_GEN_VARIABLE",
+    "Outer": "BPWallT1_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh Pillar-T1",
+        "ObjectPath": "War/Content/Meshes/Structures/Walls/Pillar-T1.2"
+      },
+      "CanCharacterStepUpOn": "ECB_No",
+      "BodyInstance": {
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -750.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "ComponentTags": [
+        "SideLeft"
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "PillarRight_GEN_VARIABLE",
+    "Outer": "BPWallT1_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh Pillar-T1",
+        "ObjectPath": "War/Content/Meshes/Structures/Walls/Pillar-T1.2"
+      },
+      "CanCharacterStepUpOn": "ECB_No",
+      "BodyInstance": {
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 750.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "ComponentTags": [
+        "SideRight"
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Wall_GEN_VARIABLE",
+    "Outer": "BPWallT1_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh Wall-T1",
+        "ObjectPath": "War/Content/Meshes/Structures/Walls/Wall-T1.2"
+      },
+      "bGenerateOverlapEvents": false,
+      "bReceivesDecals": false,
+      "CanCharacterStepUpOn": "ECB_No",
+      "BodyInstance": {
+        "CollisionProfileName": "ChainWall",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "OverlapDowncast",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        },
+        "MassInKgOverride": 868.9999
+      },
+      "ComponentTags": [
+        "Wall"
+      ]
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPWallT1_C"
+  }
+]

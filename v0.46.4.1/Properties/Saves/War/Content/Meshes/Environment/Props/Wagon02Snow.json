@@ -1,0 +1,111 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Wagon02Snow",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 33.418324,
+              "Y": 0.0,
+              "Z": 83.50366
+            },
+            "Rotation": {
+              "Pitch": -19.530762,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 160.4846,
+            "Y": 162.41565,
+            "Z": 152.74886,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "BuildScale3D": {
+        "X": 1.4,
+        "Y": 1.4,
+        "Z": 1.4
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Wagon02Snow",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x1DC96"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Wagon02Snow",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Wagon02Snow",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Wagon02Snow.0"
+          },
+          "MaterialSlotName": "Wagon_Inst",
+          "ImportedMaterialSlotName": "Wagon_Inst",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 724.47107,
+            "LocalUVDensities": 751.2719,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 751.2719,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 99.25971,
+          "Y": 0.0,
+          "Z": 88.40589
+        },
+        "BoxExtent": {
+          "X": 173.16711,
+          "Y": 95.11324,
+          "Z": 93.15861
+        },
+        "SphereRadius": 198.45503
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Wagon02Snow:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Wagon02Snow.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Wagon02Snow:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Wagon02Snow.1"
+    },
+    "LightingGuid": "315FFB1D-4D1A2801-2DCE8394-8DD8F5B9",
+    "RenderData": null
+  }
+]

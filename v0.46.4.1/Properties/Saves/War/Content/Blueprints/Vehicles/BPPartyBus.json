@@ -1,0 +1,594 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "PartyBusLights",
+    "Outer": "BPPartyBus_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class ParticleSystemComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPPartyBus_C",
+    "Super": "BPBus_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPPartyBus_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.33"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler BPPartyBus_C:InheritableComponentHandler",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.10"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass BPBus_C",
+      "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBus.1"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPPartyBus_C:PartyBusLights",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.0"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPPartyBus_C",
+    "Name": "Default__BPPartyBus_C",
+    "Properties": {
+      "IdleLoop": {
+        "ObjectName": "AudioComponent Default__BPPartyBus_C:IdleLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.6"
+      },
+      "RearLeftTireDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPPartyBus_C:RearLeftTireDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.18"
+      },
+      "RearLeftTireDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPPartyBus_C:RearLeftTireDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.17"
+      },
+      "RearRightTireDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPPartyBus_C:RearRightTireDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.20"
+      },
+      "RearRightTireDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPPartyBus_C:RearRightTireDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.19"
+      },
+      "MainDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPPartyBus_C:MainDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.14"
+      },
+      "MainDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPPartyBus_C:MainDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.13"
+      },
+      "SkiddingDirtPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPPartyBus_C:SkiddingDirtPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.21"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "349D0AD24B04503B4C77EB9B5C9C2171",
+        "SourceString": "Party Bus"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "39A1272F4A15CAD551047399575FF419",
+        "SourceString": "A bus used for special events!"
+      },
+      "VehicleBuildType": "EVehicleBuildType::NotBuildable",
+      "CodeName": "PartyBus",
+      "bIsStockpilable": false,
+      "DestroyedMesh": {
+        "ObjectName": "StaticMeshComponent Default__BPPartyBus_C:DestroyedMesh",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.35"
+      },
+      "MinorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPPartyBus_C:MinorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.16"
+      },
+      "MajorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPPartyBus_C:MajorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.15"
+      },
+      "DriveLoop": {
+        "ObjectName": "AudioComponent Default__BPPartyBus_C:DriveLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.5"
+      },
+      "BackUpSFXLoop": {
+        "ObjectName": "AudioComponent Default__BPPartyBus_C:BackUpSFXLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.4"
+      },
+      "CameraRigComponent": {
+        "ObjectName": "PlayerCameraRigComponent Default__BPPartyBus_C:CameraRigVehicle",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.22"
+      },
+      "FrontAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__BPPartyBus_C:FrontAxelCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.25"
+      },
+      "RearAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__BPPartyBus_C:RearAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.28"
+      },
+      "FrontLeftRollCastLocation": {
+        "ObjectName": "SceneComponent Default__BPPartyBus_C:FrontRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.26"
+      },
+      "FrontRightRollCastLocation": {
+        "ObjectName": "SceneComponent Default__BPPartyBus_C:RearRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.29"
+      },
+      "LeftSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__BPPartyBus_C:LeftSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.27"
+      },
+      "RightSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__BPPartyBus_C:RightSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.30"
+      },
+      "VehicleCollision": {
+        "ObjectName": "BoxComponent Default__BPPartyBus_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.8"
+      },
+      "PassengerArea": {
+        "ObjectName": "BoxComponent Default__BPPartyBus_C:PassengerBaseBox",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.7"
+      },
+      "AFKTimeoutComponent": {
+        "ObjectName": "AFKTimeoutComponent Default__BPPartyBus_C:AFKTimeoutComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.3"
+      },
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPPartyBus_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.36"
+      },
+      "Mesh": {
+        "ObjectName": "SkeletalMeshComponent Default__BPPartyBus_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.34"
+      },
+      "CharacterMovement": {
+        "ObjectName": "RWDVehicleMovementComponent Default__BPPartyBus_C:CharMoveComp",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.23"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent Default__BPPartyBus_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.9"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPPartyBus_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.8"
+      }
+    }
+  },
+  {
+    "Type": "AFKTimeoutComponent",
+    "Name": "AFKTimeoutComponent",
+    "Outer": "Default__BPPartyBus_C"
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "BackUpSFXLoop",
+    "Outer": "Default__BPPartyBus_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPPartyBus_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.9"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "DriveLoop",
+    "Outer": "Default__BPPartyBus_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPPartyBus_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.9"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "IdleLoop",
+    "Outer": "Default__BPPartyBus_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPPartyBus_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.8"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "PassengerBaseBox",
+    "Outer": "Default__BPPartyBus_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPPartyBus_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.8"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "VehicleCollision",
+    "Outer": "Default__BPPartyBus_C",
+    "Properties": {
+      "OnComponentHit": null,
+      "OnComponentBeginOverlap": null
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__BPPartyBus_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPPartyBus_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.8"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BPPartyBus_C",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class ParticleSystemComponent",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "ParticleSystemComponent BPPartyBus_C:Exhaust_GEN_VARIABLE",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.11"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass BPBus_C",
+              "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPBus.1"
+            },
+            "SCSVariableName": "Exhaust",
+            "AssociatedGuid": "98744FB8-4E63B38A-067CF3AA-6059F9C9"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "Exhaust_GEN_VARIABLE",
+    "Outer": "BPPartyBus_C",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem PartyBusExhaust",
+        "ObjectPath": "War/Content/FX/PartyBusExhaust.14"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "PartyBusLights_GEN_VARIABLE",
+    "Outer": "BPPartyBus_C",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem PartyBusLights",
+        "ObjectPath": "War/Content/FX/PartyBusLights.13"
+      },
+      "SecondsBeforeInactive": 0.0,
+      "RelativeLocation": {
+        "X": 6.866455E-05,
+        "Y": -55.6007,
+        "Z": 210.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 89.99999,
+        "Roll": 0.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MainDirtHighSpeedPS",
+    "Outer": "Default__BPPartyBus_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPPartyBus_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.8"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MainDirtLowSpeedPS",
+    "Outer": "Default__BPPartyBus_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPPartyBus_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.8"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MajorDamagePS",
+    "Outer": "Default__BPPartyBus_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPPartyBus_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.9"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MinorDamagePS",
+    "Outer": "Default__BPPartyBus_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPPartyBus_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.9"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearLeftTireDirtHighSpeedPS",
+    "Outer": "Default__BPPartyBus_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPPartyBus_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.8"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearLeftTireDirtLowSpeedPS",
+    "Outer": "Default__BPPartyBus_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPPartyBus_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.8"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearRightTireDirtHighSpeedPS",
+    "Outer": "Default__BPPartyBus_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPPartyBus_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.8"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearRightTireDirtLowSpeedPS",
+    "Outer": "Default__BPPartyBus_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPPartyBus_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.8"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "SkiddingDirtPS",
+    "Outer": "Default__BPPartyBus_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPPartyBus_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.8"
+      }
+    }
+  },
+  {
+    "Type": "PlayerCameraRigComponent",
+    "Name": "CameraRigVehicle",
+    "Outer": "Default__BPPartyBus_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPPartyBus_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.9"
+      }
+    }
+  },
+  {
+    "Type": "RWDVehicleMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__BPPartyBus_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPPartyBus_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontAxelCastLocation",
+    "Outer": "Default__BPPartyBus_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPPartyBus_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.9"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontRightAxleCastLocation",
+    "Outer": "Default__BPPartyBus_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPPartyBus_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.9"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "LeftSideTrackLocation",
+    "Outer": "Default__BPPartyBus_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPPartyBus_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.9"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearAxleCastLocation",
+    "Outer": "Default__BPPartyBus_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPPartyBus_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.9"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearRightAxleCastLocation",
+    "Outer": "Default__BPPartyBus_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPPartyBus_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.9"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RightSideTrackLocation",
+    "Outer": "Default__BPPartyBus_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPPartyBus_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.9"
+      }
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPPartyBus_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.24"
+      },
+      "VariableGuid": "E82BA765-4C8630BA-605617A4-98971AD3",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class ParticleSystemComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ParticleSystemComponent BPPartyBus_C:PartyBusLights_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.12"
+      },
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "1B0CD147-4384836A-9B95B9B8-18A46627",
+      "InternalVariableName": "PartyBusLights"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPPartyBus_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPPartyBus_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.32"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPPartyBus_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.32"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPPartyBus_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.31"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__BPPartyBus_C",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_RelicBus",
+        "ObjectPath": "War/Content/Meshes/Vehicles/SK_RelicBus.0"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant PartyBus",
+          "ObjectPath": "War/Content/Materials/Vehicles/PartyBus.0"
+        }
+      ],
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPPartyBus_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.9"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "DestroyedMesh",
+    "Outer": "Default__BPPartyBus_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPPartyBus_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/BPPartyBus.9"
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPPartyBus_C"
+  }
+]

@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FireEscapeLadder1a",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "FireEscapeLadder1a",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x24DC"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FireEscapeLadder1a",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant GarrisonStationTrims",
+            "ObjectPath": "War/Content/Materials/Environment/Props/GarrisonStationTrims.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 237.7179,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 237.7179,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -26.711937,
+          "Y": -18.677582,
+          "Z": 172.20453
+        },
+        "BoxExtent": {
+          "X": 72.56703,
+          "Y": 144.79047,
+          "Z": 177.93874
+        },
+        "SphereRadius": 235.71956
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FireEscapeLadder1a:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FireEscapeLadder1a.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FireEscapeLadder1a:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FireEscapeLadder1a.1"
+    },
+    "LightingGuid": "3A28D2A7-4EBB8496-B864AAA6-E264C2B5",
+    "RenderData": null
+  }
+]

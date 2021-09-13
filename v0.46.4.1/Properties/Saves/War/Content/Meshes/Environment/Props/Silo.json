@@ -1,0 +1,153 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_10",
+    "Outer": "Silo",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -0.30065918,
+              "Y": 2.347229,
+              "Z": 367.28125
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Radius": 293.62292,
+            "Length": 976.6492,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_18",
+    "Outer": "Silo",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 5521,
+        "SizeOnDisk": 5521,
+        "OffsetInFile": "0x10DB8"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Silo",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Concrete",
+            "ObjectPath": "War/Content/Materials/Environment/House/Concrete.0"
+          },
+          "MaterialSlotName": "Concrete",
+          "ImportedMaterialSlotName": "Concrete",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 435.78638,
+            "LocalUVDensities": 2169.1675,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MetalPanelRust",
+            "ObjectPath": "War/Content/Materials/Resources/MetalPanelRust.0"
+          },
+          "MaterialSlotName": "MetalPanelRust",
+          "ImportedMaterialSlotName": "MetalPanelRust",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 546.4738,
+            "LocalUVDensities": 2190.9578,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MetalPanelRust",
+            "ObjectPath": "War/Content/Materials/Resources/MetalPanelRust.0"
+          },
+          "MaterialSlotName": "MetalPanelRust_1",
+          "ImportedMaterialSlotName": "MetalPanelRust_1",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 187.34315,
+            "LocalUVDensities": 2197.998,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant CorrugatedSheetsRust2",
+            "ObjectPath": "War/Content/Materials/Resources/CorrugatedSheetsRust2.0"
+          },
+          "MaterialSlotName": "CorrugatedSheetsRust2",
+          "ImportedMaterialSlotName": "CorrugatedSheetsRust2",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 172.72209,
+            "LocalUVDensities": 2195.0667,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 2188.4072,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.30065918,
+          "Y": 2.347229,
+          "Z": 494.98682
+        },
+        "BoxExtent": {
+          "X": 293.6229,
+          "Y": 289.1621,
+          "Z": 646.2666
+        },
+        "SphereRadius": 708.20245
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Silo:BodySetup_10",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Silo.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Silo:NavCollision_18",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Silo.1"
+    },
+    "LightingGuid": "C23CC490-476AE370-99670DAA-32340349",
+    "RenderData": null
+  }
+]

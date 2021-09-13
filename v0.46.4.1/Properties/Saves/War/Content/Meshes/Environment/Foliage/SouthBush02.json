@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SouthBush02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "SouthBush02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x47D2"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SouthBush02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant SouthBush",
+            "ObjectPath": "War/Content/Materials/Environment/SouthBush.0"
+          },
+          "MaterialSlotName": "Material #504",
+          "ImportedMaterialSlotName": "Material #504",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 97.97152,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 97.97152,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -11.169128,
+          "Y": 8.887512,
+          "Z": 49.391853
+        },
+        "BoxExtent": {
+          "X": 136.56337,
+          "Y": 122.51485,
+          "Z": 67.18234
+        },
+        "SphereRadius": 156.65633
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SouthBush02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/SouthBush02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SouthBush02:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/SouthBush02.1"
+    },
+    "LightingGuid": "A07AE40B-4C9D23CC-D466E6B8-FB61A5EB",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,168 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SouthInteriorFurniture09",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -141.21628,
+                "Y": 143.36234,
+                "Z": 143.07507
+              },
+              {
+                "X": 141.21628,
+                "Y": 143.36234,
+                "Z": 143.07507
+              },
+              {
+                "X": -141.21628,
+                "Y": -3.4076843,
+                "Z": 143.07507
+              },
+              {
+                "X": 141.21628,
+                "Y": -3.4076843,
+                "Z": 143.07507
+              },
+              {
+                "X": -141.21628,
+                "Y": 143.36234,
+                "Z": 0.0
+              },
+              {
+                "X": 141.21628,
+                "Y": 143.36234,
+                "Z": 0.0
+              },
+              {
+                "X": -141.21628,
+                "Y": -3.4076843,
+                "Z": 0.0
+              },
+              {
+                "X": 141.21628,
+                "Y": -3.4076843,
+                "Z": 0.0
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -141.21628,
+                "Y": -3.4076843,
+                "Z": 0.0
+              },
+              "Max": {
+                "X": 141.21628,
+                "Y": 143.36234,
+                "Z": 143.07507
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SouthInteriorFurniture09",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 457,
+        "SizeOnDisk": 457,
+        "OffsetInFile": "0x1AA1C"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SouthInteriorFurniture09",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant SouthInteriorFurniture",
+            "ObjectPath": "War/Content/Materials/Environment/Town/SouthInteriorFurniture.0"
+          },
+          "MaterialSlotName": "SouthInteriorFurniture",
+          "ImportedMaterialSlotName": "SouthInteriorFurniture",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 418.03473,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 418.03473,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -1.5258789E-05,
+          "Y": 71.543915,
+          "Z": 77.33803
+        },
+        "BoxExtent": {
+          "X": 141.21628,
+          "Y": 72.80682,
+          "Z": 83.83766
+        },
+        "SphereRadius": 178.82674
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SouthInteriorFurniture09:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/SouthInteriorFurniture09.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SouthInteriorFurniture09:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/SouthInteriorFurniture09.1"
+    },
+    "LightingGuid": "5823243E-44E72CEB-45444B90-4154E934",
+    "RenderData": null
+  }
+]

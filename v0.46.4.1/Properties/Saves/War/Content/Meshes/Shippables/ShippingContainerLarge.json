@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ShippingContainerLarge",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "ShippingContainerLarge",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1730"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ShippingContainerLarge",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material Flat",
+            "ObjectPath": "War/Content/Materials/Flat.0"
+          },
+          "MaterialSlotName": "temp",
+          "ImportedMaterialSlotName": "temp",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 495.2446,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 495.2446,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 200.0
+        },
+        "BoxExtent": {
+          "X": 250.00002,
+          "Y": 420.0,
+          "Z": 200.0
+        },
+        "SphereRadius": 528.10986
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ShippingContainerLarge:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Shippables/ShippingContainerLarge.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ShippingContainerLarge:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Shippables/ShippingContainerLarge.1"
+    },
+    "LightingGuid": "FD4F961B-4AA431D9-90FF298E-1858A6B6",
+    "RenderData": null
+  }
+]

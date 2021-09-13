@@ -1,0 +1,658 @@
+[
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "BPLandingCraftWarden_C",
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPLandingCraftWarden_C",
+    "Super": "BPLandingCraftBaseW_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPLandingCraftWarden_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.41"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler BPLandingCraftWarden_C:InheritableComponentHandler",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.16"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty BPLandingCraftWarden_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.0"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function BPLandingCraftWarden_C:ExecuteUbergraph_BPLandingCraftWarden",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.9"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass BPLandingCraftBaseW_C",
+      "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftBaseW.1"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty BPLandingCraftWarden_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.0"
+      },
+      {
+        "ObjectName": "Function BPLandingCraftWarden_C:BPOnVehicleOn",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.10"
+      },
+      {
+        "ObjectName": "Function BPLandingCraftWarden_C:ExecuteUbergraph_BPLandingCraftWarden",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.9"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 655360,
+    "ClassWithin": null,
+    "ClassConfigName": "/Game/Blueprints/Vehicles/LandingCraft/BPLandingCraftBase_720895",
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPLandingCraftWarden_C",
+    "Name": "Default__BPLandingCraftWarden_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "FrontLeftWaterEmitter": {
+        "ObjectName": "ParticleSystemComponent Default__BPLandingCraftWarden_C:FrontLeftWaterEmitter",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.19"
+      },
+      "FrontRightWaterEmitter": {
+        "ObjectName": "ParticleSystemComponent Default__BPLandingCraftWarden_C:FrontRightWaterEmitter",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.20"
+      },
+      "BackRightWaterEmitter": {
+        "ObjectName": "ParticleSystemComponent Default__BPLandingCraftWarden_C:BackRightWaterEmitter",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.18"
+      },
+      "BackLeftWaterEmitter": {
+        "ObjectName": "ParticleSystemComponent Default__BPLandingCraftWarden_C:BackLeftWaterEmitter",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.17"
+      },
+      "WakeWaterEmitter": {
+        "ObjectName": "ParticleSystemComponent Default__BPLandingCraftWarden_C:WakeWaterEmitter",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.30"
+      },
+      "WaterDriveLoop": {
+        "ObjectName": "AudioComponent Default__BPLandingCraftWarden_C:WaterDriveLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.7"
+      },
+      "IdleLoop": {
+        "ObjectName": "AudioComponent Default__BPLandingCraftWarden_C:IdleLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.6"
+      },
+      "RearLeftTireDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPLandingCraftWarden_C:RearLeftTireDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.26"
+      },
+      "RearLeftTireDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPLandingCraftWarden_C:RearLeftTireDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.25"
+      },
+      "RearRightTireDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPLandingCraftWarden_C:RearRightTireDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.28"
+      },
+      "RearRightTireDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPLandingCraftWarden_C:RearRightTireDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.27"
+      },
+      "MainDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPLandingCraftWarden_C:MainDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.22"
+      },
+      "MainDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPLandingCraftWarden_C:MainDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.21"
+      },
+      "SkiddingDirtPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPLandingCraftWarden_C:SkiddingDirtPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.29"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "5DC1AB1444862666D7D75192C4D9D7D6",
+        "SourceString": "Mulloy LPC"
+      },
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "B760701D4E6ECD3001798399C04B2FDD",
+        "SourceString": "Landing APC"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "53D9AEA746C0A483A95E8BB08D15ADBC",
+        "SourceString": "The Mulloy Landing Personnel Carrier is an armoured amphibious vehicle designed for carrying troops across large bodies of water to aid in coordinated beach landings and flanking assaults."
+      },
+      "CodeName": "LandingCraftW",
+      "DestroyedMesh": {
+        "ObjectName": "StaticMeshComponent Default__BPLandingCraftWarden_C:DestroyedMesh",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.43"
+      },
+      "MinorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPLandingCraftWarden_C:MinorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.24"
+      },
+      "MajorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPLandingCraftWarden_C:MajorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.23"
+      },
+      "DriveLoop": {
+        "ObjectName": "AudioComponent Default__BPLandingCraftWarden_C:DriveLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.5"
+      },
+      "BackUpSFXLoop": {
+        "ObjectName": "AudioComponent Default__BPLandingCraftWarden_C:BackUpSFXLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.4"
+      },
+      "CameraRigComponent": {
+        "ObjectName": "PlayerCameraRigComponent Default__BPLandingCraftWarden_C:CameraRigVehicle",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.31"
+      },
+      "FrontAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__BPLandingCraftWarden_C:FrontAxelCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.34"
+      },
+      "RearAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__BPLandingCraftWarden_C:RearAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.37"
+      },
+      "FrontLeftRollCastLocation": {
+        "ObjectName": "SceneComponent Default__BPLandingCraftWarden_C:FrontRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.35"
+      },
+      "FrontRightRollCastLocation": {
+        "ObjectName": "SceneComponent Default__BPLandingCraftWarden_C:RearRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.38"
+      },
+      "LeftSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__BPLandingCraftWarden_C:LeftSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.36"
+      },
+      "RightSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__BPLandingCraftWarden_C:RightSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.39"
+      },
+      "VehicleCollision": {
+        "ObjectName": "BoxComponent Default__BPLandingCraftWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.14"
+      },
+      "PassengerArea": {
+        "ObjectName": "BoxComponent Default__BPLandingCraftWarden_C:PassengerBaseBox",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.13"
+      },
+      "AFKTimeoutComponent": {
+        "ObjectName": "AFKTimeoutComponent Default__BPLandingCraftWarden_C:AFKTimeoutComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.3"
+      },
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPLandingCraftWarden_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.44"
+      },
+      "Mesh": {
+        "ObjectName": "SkeletalMeshComponent Default__BPLandingCraftWarden_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.42"
+      },
+      "CharacterMovement": {
+        "ObjectName": "RWDVehicleMovementComponent Default__BPLandingCraftWarden_C:CharMoveComp",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.32"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent Default__BPLandingCraftWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.15"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPLandingCraftWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.14"
+      }
+    }
+  },
+  {
+    "Type": "AFKTimeoutComponent",
+    "Name": "AFKTimeoutComponent",
+    "Outer": "Default__BPLandingCraftWarden_C"
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "BackUpSFXLoop",
+    "Outer": "Default__BPLandingCraftWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPLandingCraftWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.15"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "DriveLoop",
+    "Outer": "Default__BPLandingCraftWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPLandingCraftWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.15"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "IdleLoop",
+    "Outer": "Default__BPLandingCraftWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPLandingCraftWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.14"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "WaterDriveLoop",
+    "Outer": "Default__BPLandingCraftWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPLandingCraftWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.14"
+      }
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_BPLandingCraftWarden",
+    "PropertyFlags": 148
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BPLandingCraftWarden",
+    "Outer": "BPLandingCraftWarden_C",
+    "Children": [
+      {
+        "ObjectName": "IntProperty BPLandingCraftWarden_C:ExecuteUbergraph_BPLandingCraftWarden.EntryPoint",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.8"
+      },
+      {
+        "ObjectName": "BoolProperty BPLandingCraftWarden_C:ExecuteUbergraph_BPLandingCraftWarden.K2Node_Event_IsOn",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.12"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "Function",
+    "Name": "BPOnVehicleOn",
+    "Outer": "BPLandingCraftWarden_C",
+    "Super": "BPOnVehicleOn",
+    "SuperStruct": {
+      "ObjectName": "Function BPLandingCraftBaseW_C:BPOnVehicleOn",
+      "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftBaseW.11"
+    },
+    "Children": [
+      {
+        "ObjectName": "BoolProperty BPLandingCraftWarden_C:BPOnVehicleOn.IsOn",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.11"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "IsOn",
+    "Outer": "BPOnVehicleOn",
+    "PropertyFlags": 148,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_Event_IsOn",
+    "Outer": "ExecuteUbergraph_BPLandingCraftWarden",
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "PassengerBaseBox",
+    "Outer": "Default__BPLandingCraftWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPLandingCraftWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.14"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "VehicleCollision",
+    "Outer": "Default__BPLandingCraftWarden_C",
+    "Properties": {
+      "OnComponentBeginOverlap": null
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__BPLandingCraftWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPLandingCraftWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.14"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BPLandingCraftWarden_C"
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "BackLeftWaterEmitter",
+    "Outer": "Default__BPLandingCraftWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPLandingCraftWarden_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.42"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "BackRightWaterEmitter",
+    "Outer": "Default__BPLandingCraftWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPLandingCraftWarden_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.42"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "FrontLeftWaterEmitter",
+    "Outer": "Default__BPLandingCraftWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPLandingCraftWarden_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.42"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "FrontRightWaterEmitter",
+    "Outer": "Default__BPLandingCraftWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPLandingCraftWarden_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.42"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MainDirtHighSpeedPS",
+    "Outer": "Default__BPLandingCraftWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPLandingCraftWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.14"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MainDirtLowSpeedPS",
+    "Outer": "Default__BPLandingCraftWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPLandingCraftWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.14"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MajorDamagePS",
+    "Outer": "Default__BPLandingCraftWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPLandingCraftWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.15"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MinorDamagePS",
+    "Outer": "Default__BPLandingCraftWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPLandingCraftWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.15"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearLeftTireDirtHighSpeedPS",
+    "Outer": "Default__BPLandingCraftWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPLandingCraftWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.14"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearLeftTireDirtLowSpeedPS",
+    "Outer": "Default__BPLandingCraftWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPLandingCraftWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.14"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearRightTireDirtHighSpeedPS",
+    "Outer": "Default__BPLandingCraftWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPLandingCraftWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.14"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearRightTireDirtLowSpeedPS",
+    "Outer": "Default__BPLandingCraftWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPLandingCraftWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.14"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "SkiddingDirtPS",
+    "Outer": "Default__BPLandingCraftWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPLandingCraftWarden_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.14"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "WakeWaterEmitter",
+    "Outer": "Default__BPLandingCraftWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPLandingCraftWarden_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.42"
+      }
+    }
+  },
+  {
+    "Type": "PlayerCameraRigComponent",
+    "Name": "CameraRigVehicle",
+    "Outer": "Default__BPLandingCraftWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPLandingCraftWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.15"
+      }
+    }
+  },
+  {
+    "Type": "RWDVehicleMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__BPLandingCraftWarden_C",
+    "Properties": {
+      "BrakeForce": 35000.0,
+      "Mass": 10000.0
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPLandingCraftWarden_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontAxelCastLocation",
+    "Outer": "Default__BPLandingCraftWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPLandingCraftWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.15"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontRightAxleCastLocation",
+    "Outer": "Default__BPLandingCraftWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPLandingCraftWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.15"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "LeftSideTrackLocation",
+    "Outer": "Default__BPLandingCraftWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPLandingCraftWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.15"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearAxleCastLocation",
+    "Outer": "Default__BPLandingCraftWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPLandingCraftWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.15"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearRightAxleCastLocation",
+    "Outer": "Default__BPLandingCraftWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPLandingCraftWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.15"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RightSideTrackLocation",
+    "Outer": "Default__BPLandingCraftWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPLandingCraftWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.15"
+      }
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPLandingCraftWarden_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.33"
+      },
+      "VariableGuid": "ED3E690F-4148A562-370B92B5-033ECA5A",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPLandingCraftWarden_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPLandingCraftWarden_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.40"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__BPLandingCraftWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPLandingCraftWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.15"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "DestroyedMesh",
+    "Outer": "Default__BPLandingCraftWarden_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPLandingCraftWarden_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingCraft/BPLandingCraftWarden.15"
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPLandingCraftWarden_C"
+  }
+]

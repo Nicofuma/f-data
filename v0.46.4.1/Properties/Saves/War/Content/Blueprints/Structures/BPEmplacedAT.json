@@ -1,0 +1,408 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "Foundation",
+    "Outer": "BPEmplacedAT_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SkeletalMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPEmplacedAT_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPEmplacedAT_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedAT.12"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class EmplacedWeapon",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPEmplacedAT_C:Foundation",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedAT.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPEmplacedAT_C:MultiplexedSkeletalMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedAT.6"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPEmplacedAT_C",
+    "Name": "Default__BPEmplacedAT_C",
+    "Properties": {
+      "EmplacedTrackingModifier": 2.0,
+      "Mesh": {
+        "ObjectName": "SkeletalMeshComponent Default__BPEmplacedAT_C:SkeletalMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedAT.14"
+      },
+      "OccupiableComponent": {
+        "ObjectName": "OccupiableComponent Default__BPEmplacedAT_C:OccupiableComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedAT.7"
+      },
+      "PackagedMesh": {
+        "ObjectName": "StaticMesh EmplacedATPacked",
+        "ObjectPath": "War/Content/Meshes/Structures/EmplacedATPacked.2"
+      },
+      "EmplacedIncomingDamageModifier": 0.25,
+      "BuildGhostClass": null,
+      "BuildSiteClass": {
+        "ObjectName": "Class StructureBuildSite",
+        "ObjectPath": "/Script/War"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "B55E66824323432875D280A4FFAB5995",
+        "SourceString": "A defensive emplacement against heavily armoured vehicles."
+      },
+      "ShippableInfo": {
+        "Type": "EShippableType::Normal"
+      },
+      "Icon": {
+        "ObjectName": "Texture2D EmplacedATIcon",
+        "ObjectPath": "War/Content/Textures/UI/StructureIcons/EmplacedATIcon.0"
+      },
+      "BuildLocationType": "EBuildLocationType::ConstructionYard",
+      "CodeName": "EmplacedAT",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "93C94B684431E6C846B91D99A5AAA44D",
+        "SourceString": "68mm Anti-Tank Cannon"
+      },
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPEmplacedAT_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedAT.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPEmplacedAT_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedAT.4"
+      },
+      "DestroyedFX": {
+        "ObjectName": "ParticleSystem GrenadeBlast",
+        "ObjectPath": "War/Content/FX/GrenadeBlast.151"
+      },
+      "TechID": "ETechID::UnlockEmplacedATGun",
+      "MountComponent": {
+        "ObjectName": "BlueprintGeneratedClass BPEmplacedATMount_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedATMount.0"
+      },
+      "MaxHealth": 1500,
+      "Health": 1500,
+      "DropLocationOffset": {
+        "X": -200.0,
+        "Y": 0.0,
+        "Z": 10.0
+      },
+      "bRotateDropLocation": true,
+      "IsVaultable": false,
+      "StructureNetRelevancySize": "EStructureNetRelevancySize::Small",
+      "bIsStockpilable": true,
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPEmplacedAT_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedAT.15"
+      },
+      "MinNetUpdateFrequency": 15.0,
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPEmplacedAT_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedAT.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPEmplacedAT_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPEmplacedAT_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 240.0,
+        "Y": 240.0,
+        "Z": 150.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPEmplacedAT_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedAT.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 148.71841
+      }
+    }
+  },
+  {
+    "Type": "MultiplexedSkeletalMeshComponent",
+    "Name": "MultiplexedSkeletalMesh_GEN_VARIABLE",
+    "Outer": "BPEmplacedAT_C",
+    "Properties": {
+      "TargetTag": "Multiplexed",
+      "MeshStops": [
+        {
+          "Threshold": 0,
+          "SkeletalMesh": {
+            "ObjectName": "SkeletalMesh SK_EmplacedAT",
+            "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/SK_EmplacedAT.0"
+          }
+        },
+        {
+          "Threshold": 33,
+          "SkeletalMesh": {
+            "ObjectName": "SkeletalMesh SK_EmplacedAT",
+            "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/SK_EmplacedAT.0"
+          }
+        },
+        {
+          "Threshold": 66,
+          "SkeletalMesh": {
+            "ObjectName": "SkeletalMesh SK_EmplacedAT",
+            "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/SK_EmplacedAT.0"
+          }
+        }
+      ],
+      "InputValue": 100,
+      "SelectedMeshIndex": 2
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "MultiplexedSkeletalMesh",
+    "Outer": "BPEmplacedAT_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class MultiplexedSkeletalMeshComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "OccupiableComponent",
+    "Name": "OccupiableComponent",
+    "Outer": "Default__BPEmplacedAT_C",
+    "Properties": {
+      "SafeSpawnOffset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 260.0
+      },
+      "MountCodeName": "EmplacedATGunner",
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPEmplacedAT_C:SkeletalMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedAT.14"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPEmplacedAT_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPEmplacedAT_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedAT.8"
+      },
+      "VariableGuid": "6F9A620C-4B15380B-2CC77895-979D14F2",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class MultiplexedSkeletalMeshComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "MultiplexedSkeletalMeshComponent BPEmplacedAT_C:MultiplexedSkeletalMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedAT.5"
+      },
+      "VariableGuid": "7E269B41-44D05ECF-650A2F99-93625811",
+      "InternalVariableName": "MultiplexedSkeletalMesh"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SkeletalMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SkeletalMeshComponent BPEmplacedAT_C:Foundation_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedAT.13"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "B9B2F331-40537441-D9583FB5-FB6F945E",
+      "InternalVariableName": "Foundation"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPEmplacedAT_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPEmplacedAT_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedAT.10"
+        },
+        {
+          "ObjectName": "SCS_Node BPEmplacedAT_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedAT.11"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPEmplacedAT_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedAT.10"
+        },
+        {
+          "ObjectName": "SCS_Node BPEmplacedAT_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedAT.11"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPEmplacedAT_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedAT.9"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "Foundation_GEN_VARIABLE",
+    "Outer": "BPEmplacedAT_C",
+    "Properties": {
+      "ClothingSimulationFactory": {
+        "ObjectName": "Class ClothingSimulationFactoryNv",
+        "ObjectPath": "/Script/ClothingSystemRuntimeNv"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_EmplacedFoundation",
+        "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/SK_EmplacedFoundation.0"
+      },
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldDynamic",
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 15.0
+      },
+      "ComponentTags": [
+        "IncludeInBuildSite"
+      ]
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SkeletalMesh",
+    "Outer": "Default__BPEmplacedAT_C",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_EmplacedAT_C",
+        "ObjectPath": "War/Content/Animation/WorldAssets/Fort_and_Trenches/ABP_EmplacedAT.1"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_EmplacedAT",
+        "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/SK_EmplacedAT.0"
+      },
+      "OverrideMaterials": [
+        null
+      ],
+      "bReceivesDecals": false,
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldDynamic",
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPEmplacedAT_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedAT.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 75.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 270.0,
+        "Roll": 0.0
+      },
+      "ComponentTags": [
+        "Multiplexed",
+        "IncludeInBuildSite",
+        "IncludeInBuildGhost"
+      ]
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPEmplacedAT_C"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "Type": "SoundCue",
+    "Name": "WinResult_Cue",
+    "Properties": {
+      "FirstNode": {
+        "ObjectName": "SoundNodeDelay WinResult_Cue:SoundNodeDelay_0",
+        "ObjectPath": "War/Content/Audio/UI/WinResult_Cue.1"
+      },
+      "VolumeMultiplier": 0.5,
+      "SoundClassObject": {
+        "ObjectName": "SoundClass UI",
+        "ObjectPath": "War/Content/Audio/SoundClasses/UI.0"
+      },
+      "bHasDelayNode": true,
+      "Duration": 6.1810207,
+      "MaxDistance": 2097152.0
+    }
+  },
+  {
+    "Type": "SoundNodeDelay",
+    "Name": "SoundNodeDelay_0",
+    "Outer": "WinResult_Cue",
+    "Properties": {
+      "DelayMin": 1.5,
+      "DelayMax": 1.5,
+      "ChildNodes": [
+        {
+          "ObjectName": "SoundNodeWavePlayer WinResult_Cue:SoundNodeWavePlayer_0",
+          "ObjectPath": "War/Content/Audio/UI/WinResult_Cue.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SoundNodeWavePlayer",
+    "Name": "SoundNodeWavePlayer_0",
+    "Outer": "WinResult_Cue",
+    "Properties": {
+      "SoundWaveAssetPtr": {
+        "AssetPathName": "/Game/Audio/UI/WinResult.WinResult",
+        "SubPathString": ""
+      }
+    }
+  }
+]

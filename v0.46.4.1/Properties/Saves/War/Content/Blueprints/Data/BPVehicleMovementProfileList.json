@@ -1,0 +1,414 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "DefaultSceneRoot",
+    "Outer": "BPVehicleMovementProfileList_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SceneComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPVehicleMovementProfileList_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPVehicleMovementProfileList_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Data/BPVehicleMovementProfileList.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class VehicleMovementProfileList",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPVehicleMovementProfileList_C:DefaultSceneRoot",
+        "ObjectPath": "War/Content/Blueprints/Data/BPVehicleMovementProfileList.0"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPVehicleMovementProfileList_C",
+    "Name": "Default__BPVehicleMovementProfileList_C",
+    "Properties": {
+      "VehicleMovementProfileMap": {
+        "EVehicleMovementProfileType::Truck": {
+          "Mass": 7500.0,
+          "BrakeForce": 26000.0,
+          "HandbrakeForce": 20000.0,
+          "AirResistance": 70.0,
+          "RollingResistance": 260.0,
+          "LowSpeedEngineForceMultiplier": 1.5,
+          "LowGearCutoff": 0.45,
+          "CenterOfGravityHeight": 1.4,
+          "FrontGripCurve": {
+            "ObjectName": "CurveFloat TruckFrontGripCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/GripCurves/TruckFrontGripCurve.0"
+          },
+          "RearGripCurve": {
+            "ObjectName": "CurveFloat TruckRearGripCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/GripCurves/TruckRearGripCurve.0"
+          },
+          "EngineForceMultiplierCurve": {
+            "ObjectName": "CurveFloat TruckEngineCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/EngineCurves/TruckEngineCurve.0"
+          },
+          "bUsesDifferentialSteering": false,
+          "bCanRotateInPlace": false
+        },
+        "EVehicleMovementProfileType::ScoutVehicle": {
+          "Mass": 1300.0,
+          "BrakeForce": 12000.0,
+          "HandbrakeForce": 7000.0,
+          "AirResistance": 24.0,
+          "RollingResistance": 200.0,
+          "LowSpeedEngineForceMultiplier": 1.0,
+          "LowGearCutoff": 0.2,
+          "CenterOfGravityHeight": 0.8,
+          "FrontGripCurve": {
+            "ObjectName": "CurveFloat ScoutVehicleFrontGripCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/GripCurves/ScoutVehicleFrontGripCurve.0"
+          },
+          "RearGripCurve": {
+            "ObjectName": "CurveFloat ScoutVehicleRearGripCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/GripCurves/ScoutVehicleRearGripCurve.0"
+          },
+          "EngineForceMultiplierCurve": null,
+          "bUsesDifferentialSteering": false,
+          "bCanRotateInPlace": false
+        },
+        "EVehicleMovementProfileType::Halftrack": {
+          "Mass": 3000.0,
+          "BrakeForce": 20000.0,
+          "HandbrakeForce": 20000.0,
+          "AirResistance": 70.0,
+          "RollingResistance": 900.0,
+          "LowSpeedEngineForceMultiplier": 3.0,
+          "LowGearCutoff": 0.4,
+          "CenterOfGravityHeight": 1.4,
+          "FrontGripCurve": {
+            "ObjectName": "CurveFloat HalftrackFrontGripCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/GripCurves/HalftrackFrontGripCurve.0"
+          },
+          "RearGripCurve": {
+            "ObjectName": "CurveFloat HalftrackRearGripCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/GripCurves/HalftrackRearGripCurve.0"
+          },
+          "EngineForceMultiplierCurve": {
+            "ObjectName": "CurveFloat FullTrackEngineCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/EngineCurves/FullTrackEngineCurve.0"
+          },
+          "bUsesDifferentialSteering": false,
+          "bCanRotateInPlace": false
+        },
+        "EVehicleMovementProfileType::Motorcycle": {
+          "Mass": 1000.0,
+          "BrakeForce": 7500.0,
+          "HandbrakeForce": 8000.0,
+          "AirResistance": 15.0,
+          "RollingResistance": 200.0,
+          "LowSpeedEngineForceMultiplier": 1.0,
+          "LowGearCutoff": 0.2,
+          "CenterOfGravityHeight": 0.3,
+          "FrontGripCurve": {
+            "ObjectName": "CurveFloat MotorcycleFrontGripCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/GripCurves/MotorcycleFrontGripCurve.0"
+          },
+          "RearGripCurve": {
+            "ObjectName": "CurveFloat MotorcycleRearGripCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/GripCurves/MotorcycleRearGripCurve.0"
+          },
+          "EngineForceMultiplierCurve": null,
+          "bUsesDifferentialSteering": false,
+          "bCanRotateInPlace": false
+        },
+        "EVehicleMovementProfileType::LightTruck": {
+          "Mass": 6000.0,
+          "BrakeForce": 22000.0,
+          "HandbrakeForce": 22000.0,
+          "AirResistance": 70.0,
+          "RollingResistance": 260.0,
+          "LowSpeedEngineForceMultiplier": 1.5,
+          "LowGearCutoff": 0.2,
+          "CenterOfGravityHeight": 1.0,
+          "FrontGripCurve": {
+            "ObjectName": "CurveFloat LightTruckFrontGripCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/GripCurves/LightTruckFrontGripCurve.0"
+          },
+          "RearGripCurve": {
+            "ObjectName": "CurveFloat LightTruckRearGripCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/GripCurves/LightTruckRearGripCurve.0"
+          },
+          "EngineForceMultiplierCurve": {
+            "ObjectName": "CurveFloat TruckEngineCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/EngineCurves/TruckEngineCurve.0"
+          },
+          "bUsesDifferentialSteering": false,
+          "bCanRotateInPlace": false
+        },
+        "EVehicleMovementProfileType::Fulltrack": {
+          "Mass": 10000.0,
+          "BrakeForce": 35000.0,
+          "HandbrakeForce": 20000.0,
+          "AirResistance": 90.0,
+          "RollingResistance": 2400.0,
+          "LowSpeedEngineForceMultiplier": 3.0,
+          "LowGearCutoff": 0.5,
+          "CenterOfGravityHeight": 0.2,
+          "FrontGripCurve": {
+            "ObjectName": "CurveFloat FulltrackFrontGripCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/GripCurves/FulltrackFrontGripCurve.0"
+          },
+          "RearGripCurve": {
+            "ObjectName": "CurveFloat FulltrackRearGripCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/GripCurves/FulltrackRearGripCurve.0"
+          },
+          "EngineForceMultiplierCurve": {
+            "ObjectName": "CurveFloat FullTrackEngineCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/EngineCurves/FullTrackEngineCurve.0"
+          },
+          "bUsesDifferentialSteering": true,
+          "bCanRotateInPlace": false
+        },
+        "EVehicleMovementProfileType::BattleTank": {
+          "Mass": 15000.0,
+          "BrakeForce": 30000.0,
+          "HandbrakeForce": 20000.0,
+          "AirResistance": 240.0,
+          "RollingResistance": 5150.0,
+          "LowSpeedEngineForceMultiplier": 2.0,
+          "LowGearCutoff": 0.6,
+          "CenterOfGravityHeight": 0.2,
+          "FrontGripCurve": {
+            "ObjectName": "CurveFloat FulltrackFrontGripCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/GripCurves/FulltrackFrontGripCurve.0"
+          },
+          "RearGripCurve": {
+            "ObjectName": "CurveFloat FulltrackRearGripCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/GripCurves/FulltrackRearGripCurve.0"
+          },
+          "EngineForceMultiplierCurve": {
+            "ObjectName": "CurveFloat BattleTankEngineCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/EngineCurves/BattleTankEngineCurve.0"
+          },
+          "bUsesDifferentialSteering": true,
+          "bCanRotateInPlace": false
+        },
+        "EVehicleMovementProfileType::ArmoredCar": {
+          "Mass": 3000.0,
+          "BrakeForce": 18500.0,
+          "HandbrakeForce": 12000.0,
+          "AirResistance": 60.0,
+          "RollingResistance": 220.0,
+          "LowSpeedEngineForceMultiplier": 1.5,
+          "LowGearCutoff": 0.3,
+          "CenterOfGravityHeight": 0.8,
+          "FrontGripCurve": {
+            "ObjectName": "CurveFloat ArmoredCarFrontGripCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/GripCurves/ArmoredCarFrontGripCurve.0"
+          },
+          "RearGripCurve": {
+            "ObjectName": "CurveFloat ArmoredCarRearGripCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/GripCurves/ArmoredCarRearGripCurve.0"
+          },
+          "EngineForceMultiplierCurve": null,
+          "bUsesDifferentialSteering": false,
+          "bCanRotateInPlace": false
+        },
+        "EVehicleMovementProfileType::FieldWalked": {
+          "Mass": 750.0,
+          "BrakeForce": 2000.0,
+          "HandbrakeForce": 0.0,
+          "AirResistance": 30.0,
+          "RollingResistance": 1000.0,
+          "LowSpeedEngineForceMultiplier": 3.0,
+          "LowGearCutoff": 0.5,
+          "CenterOfGravityHeight": 0.2,
+          "FrontGripCurve": {
+            "ObjectName": "CurveFloat FieldWalkedFrontGripCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/GripCurves/FieldWalkedFrontGripCurve.0"
+          },
+          "RearGripCurve": {
+            "ObjectName": "CurveFloat FieldWalkedRearGripCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/GripCurves/FieldWalkedRearGripCurve.0"
+          },
+          "EngineForceMultiplierCurve": null,
+          "bUsesDifferentialSteering": false,
+          "bCanRotateInPlace": true
+        },
+        "EVehicleMovementProfileType::FulltrackLight": {
+          "Mass": 3000.0,
+          "BrakeForce": 20000.0,
+          "HandbrakeForce": 20000.0,
+          "AirResistance": 70.0,
+          "RollingResistance": 900.0,
+          "LowSpeedEngineForceMultiplier": 3.0,
+          "LowGearCutoff": 0.5,
+          "CenterOfGravityHeight": 0.4,
+          "FrontGripCurve": {
+            "ObjectName": "CurveFloat FulltrackFrontGripCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/GripCurves/FulltrackFrontGripCurve.0"
+          },
+          "RearGripCurve": {
+            "ObjectName": "CurveFloat FulltrackRearGripCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/GripCurves/FulltrackRearGripCurve.0"
+          },
+          "EngineForceMultiplierCurve": null,
+          "bUsesDifferentialSteering": true,
+          "bCanRotateInPlace": false
+        },
+        "EVehicleMovementProfileType::ConstructionTracked": {
+          "Mass": 10000.0,
+          "BrakeForce": 35000.0,
+          "HandbrakeForce": 20000.0,
+          "AirResistance": 90.0,
+          "RollingResistance": 2400.0,
+          "LowSpeedEngineForceMultiplier": 3.0,
+          "LowGearCutoff": 0.5,
+          "CenterOfGravityHeight": 0.2,
+          "FrontGripCurve": {
+            "ObjectName": "CurveFloat FulltrackFrontGripCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/GripCurves/FulltrackFrontGripCurve.0"
+          },
+          "RearGripCurve": {
+            "ObjectName": "CurveFloat FulltrackRearGripCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/GripCurves/FulltrackRearGripCurve.0"
+          },
+          "EngineForceMultiplierCurve": {
+            "ObjectName": "CurveFloat FullTrackEngineConstructionCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/EngineCurves/FullTrackEngineConstructionCurve.0"
+          },
+          "bUsesDifferentialSteering": true,
+          "bCanRotateInPlace": false
+        },
+        "EVehicleMovementProfileType::Mech": {
+          "Mass": 15000.0,
+          "BrakeForce": 30000.0,
+          "HandbrakeForce": 20000.0,
+          "AirResistance": 240.0,
+          "RollingResistance": 5150.0,
+          "LowSpeedEngineForceMultiplier": 2.0,
+          "LowGearCutoff": 0.6,
+          "CenterOfGravityHeight": 0.2,
+          "FrontGripCurve": {
+            "ObjectName": "CurveFloat FulltrackFrontGripCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/GripCurves/FulltrackFrontGripCurve.0"
+          },
+          "RearGripCurve": {
+            "ObjectName": "CurveFloat FulltrackRearGripCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/GripCurves/FulltrackRearGripCurve.0"
+          },
+          "EngineForceMultiplierCurve": {
+            "ObjectName": "CurveFloat BattleTankEngineCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/EngineCurves/BattleTankEngineCurve.0"
+          },
+          "bUsesDifferentialSteering": true,
+          "bCanRotateInPlace": false
+        },
+        "EVehicleMovementProfileType::FulltrackLightTanks": {
+          "Mass": 10000.0,
+          "BrakeForce": 50000.0,
+          "HandbrakeForce": 40000.0,
+          "AirResistance": 90.0,
+          "RollingResistance": 2400.0,
+          "LowSpeedEngineForceMultiplier": 3.0,
+          "LowGearCutoff": 0.5,
+          "CenterOfGravityHeight": 0.2,
+          "FrontGripCurve": {
+            "ObjectName": "CurveFloat FulltrackFrontGripCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/GripCurves/FulltrackFrontGripCurve.0"
+          },
+          "RearGripCurve": {
+            "ObjectName": "CurveFloat FulltrackRearGripCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/GripCurves/FulltrackRearGripCurve.0"
+          },
+          "EngineForceMultiplierCurve": {
+            "ObjectName": "CurveFloat FullTrackEngineCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/EngineCurves/FullTrackEngineCurve.0"
+          },
+          "bUsesDifferentialSteering": true,
+          "bCanRotateInPlace": false
+        },
+        "EVehicleMovementProfileType::FulltrackMediumTanks": {
+          "Mass": 10000.0,
+          "BrakeForce": 35000.0,
+          "HandbrakeForce": 20000.0,
+          "AirResistance": 90.0,
+          "RollingResistance": 2400.0,
+          "LowSpeedEngineForceMultiplier": 3.0,
+          "LowGearCutoff": 0.5,
+          "CenterOfGravityHeight": 0.2,
+          "FrontGripCurve": {
+            "ObjectName": "CurveFloat FulltrackMediumTankFrontGripCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/GripCurves/FulltrackMediumTankFrontGripCurve.0"
+          },
+          "RearGripCurve": {
+            "ObjectName": "CurveFloat FulltrackMediumTankRearGripCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/GripCurves/FulltrackMediumTankRearGripCurve.0"
+          },
+          "EngineForceMultiplierCurve": {
+            "ObjectName": "CurveFloat FullTrackEngineCurve",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/EngineCurves/FullTrackEngineCurve.0"
+          },
+          "bUsesDifferentialSteering": true,
+          "bCanRotateInPlace": false
+        }
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPVehicleMovementProfileList_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPVehicleMovementProfileList_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Data/BPVehicleMovementProfileList.3"
+      },
+      "VariableGuid": "1AB4062F-40CAE827-1005759C-A27EEB1B",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPVehicleMovementProfileList_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPVehicleMovementProfileList_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "War/Content/Blueprints/Data/BPVehicleMovementProfileList.4"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPVehicleMovementProfileList_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "War/Content/Blueprints/Data/BPVehicleMovementProfileList.4"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPVehicleMovementProfileList_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Data/BPVehicleMovementProfileList.4"
+      }
+    }
+  }
+]

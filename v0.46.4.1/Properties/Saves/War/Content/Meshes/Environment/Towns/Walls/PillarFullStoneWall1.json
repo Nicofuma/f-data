@@ -1,0 +1,189 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Outer": "PillarFullStoneWall1",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -2.9802322E-05,
+                "Y": 38.12319,
+                "Z": 4.90721E-06
+              },
+              {
+                "X": -2.9802322E-05,
+                "Y": -38.123188,
+                "Z": -4.907198E-06
+              },
+              {
+                "X": 76.24634,
+                "Y": 38.12319,
+                "Z": 4.90721E-06
+              },
+              {
+                "X": 76.24634,
+                "Y": -38.123188,
+                "Z": -4.907198E-06
+              },
+              {
+                "X": -8.940697E-06,
+                "Y": 38.12315,
+                "Z": 198.1022
+              },
+              {
+                "X": -8.940697E-06,
+                "Y": -38.12322,
+                "Z": 198.10219
+              },
+              {
+                "X": 76.24633,
+                "Y": -38.12322,
+                "Z": 198.10219
+              },
+              {
+                "X": 76.24633,
+                "Y": 38.12315,
+                "Z": 198.1022
+              },
+              {
+                "X": -2.9802322E-05,
+                "Y": -38.123127,
+                "Z": -200.0
+              },
+              {
+                "X": -2.9802322E-05,
+                "Y": 38.12325,
+                "Z": -199.99998
+              },
+              {
+                "X": 76.24634,
+                "Y": -38.123127,
+                "Z": -200.0
+              },
+              {
+                "X": 76.24634,
+                "Y": 38.12325,
+                "Z": -199.99998
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -2.9802322E-05,
+                "Y": -38.12322,
+                "Z": -200.0
+              },
+              "Max": {
+                "X": 76.24634,
+                "Y": 38.12325,
+                "Z": 198.1022
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_6",
+    "Outer": "PillarFullStoneWall1",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 457,
+        "SizeOnDisk": 457,
+        "OffsetInFile": "0xE49A"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "PillarFullStoneWall1",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant StoneWall1",
+            "ObjectPath": "War/Content/Materials/Environment/Props/StoneWall1.0"
+          },
+          "MaterialSlotName": "WallTop_low0",
+          "ImportedMaterialSlotName": "WallTop_low0",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 905.242,
+            "LocalUVDensities": 635.11346,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 635.11346,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 39.3352,
+          "Y": 1.3173561,
+          "Z": -0.43959045
+        },
+        "BoxExtent": {
+          "X": 47.2995,
+          "Y": 49.910805,
+          "Z": 198.98105
+        },
+        "SphereRadius": 206.05478
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup PillarFullStoneWall1:BodySetup_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Walls/PillarFullStoneWall1.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision PillarFullStoneWall1:NavCollision_6",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Walls/PillarFullStoneWall1.1"
+    },
+    "LightingGuid": "CED7DE25-44E0914F-F0573A9F-C065A458",
+    "RenderData": null
+  }
+]

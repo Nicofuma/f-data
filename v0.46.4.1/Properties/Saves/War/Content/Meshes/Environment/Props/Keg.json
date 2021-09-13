@@ -1,0 +1,145 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Keg",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.1576767,
+              "Y": 0.0,
+              "Z": 52.888847
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 121.9823,
+            "Y": 108.55716,
+            "Z": 109.650856,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": 0.15756989,
+              "Y": 0.0,
+              "Z": 152.40915
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 124.15145,
+            "Y": 89.88964,
+            "Z": 87.133255,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "BuildScale3D": {
+        "X": 1.2,
+        "Y": 1.2,
+        "Z": 1.2
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1567",
+    "Outer": "Keg",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 509,
+        "SizeOnDisk": 509,
+        "OffsetInFile": "0xCD29"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Keg",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Barrels02",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Barrels02.0"
+          },
+          "MaterialSlotName": "Barrel_Inst",
+          "ImportedMaterialSlotName": "Barrel_Inst",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 347.89676,
+            "LocalUVDensities": 665.8224,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant KegStand",
+            "ObjectPath": "War/Content/Materials/Environment/Props/KegStand.0"
+          },
+          "MaterialSlotName": "SharpeningStone_Inst",
+          "ImportedMaterialSlotName": "SharpeningStone_Inst",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 373.37485,
+            "LocalUVDensities": 652.59955,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 660.4849,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.15756989,
+          "Y": 0.0,
+          "Z": 103.92121
+        },
+        "BoxExtent": {
+          "X": 71.64085,
+          "Y": 58.546635,
+          "Z": 104.332535
+        },
+        "SphereRadius": 136.6084
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Keg:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Keg.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Keg:NavCollision_1567",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Keg.1"
+    },
+    "LightingGuid": "5B7E2A55-47F6036D-C6DA4A91-DBFA2DC9",
+    "RenderData": null
+  }
+]

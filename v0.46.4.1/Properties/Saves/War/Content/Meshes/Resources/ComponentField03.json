@@ -1,0 +1,99 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ComponentField03",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "ComponentField03",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x7EDD1"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ComponentField03",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ComponentField",
+            "ObjectPath": "War/Content/Materials/Resources/ComponentField.0"
+          },
+          "MaterialSlotName": "ComponentField",
+          "ImportedMaterialSlotName": "ComponentField",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1052.8539,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ComponentNode",
+            "ObjectPath": "War/Content/Materials/Resources/ComponentNode.0"
+          },
+          "MaterialSlotName": "RelicTread_Right",
+          "ImportedMaterialSlotName": "ComponentNode",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 285.76492,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 734.97015,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -25.028381,
+          "Y": -39.70816,
+          "Z": 117.99058
+        },
+        "BoxExtent": {
+          "X": 412.14917,
+          "Y": 396.41428,
+          "Z": 161.63164
+        },
+        "SphereRadius": 482.37408
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ComponentField03:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Resources/ComponentField03.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ComponentField03:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Resources/ComponentField03.1"
+    },
+    "LightingGuid": "96E48616-47A965BF-8A729985-73E93B37",
+    "RenderData": null
+  }
+]

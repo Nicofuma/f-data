@@ -1,0 +1,100 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_2558",
+    "Outer": "HeavymachinegunPickup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "HeavymachinegunPickup",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xE69E"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "HeavymachinegunPickup",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Machinegun",
+            "ObjectPath": "War/Content/Materials/Structures/Machinegun.0"
+          },
+          "MaterialSlotName": "Machinegun",
+          "ImportedMaterialSlotName": "Machinegun",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 191.38737,
+            "LocalUVDensities": 184.53249,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Machinegun",
+            "ObjectPath": "War/Content/Materials/Structures/Machinegun.0"
+          },
+          "MaterialSlotName": "Machinegun_1",
+          "ImportedMaterialSlotName": "Machinegun_1",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 215.66063,
+            "LocalUVDensities": 184.11853,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 184.17694,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -4.8936653,
+          "Y": 42.21801,
+          "Z": 29.067057
+        },
+        "BoxExtent": {
+          "X": 25.194313,
+          "Y": 127.20645,
+          "Z": 29.017315
+        },
+        "SphereRadius": 131.28706
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup HeavymachinegunPickup:BodySetup_2558",
+      "ObjectPath": "War/Content/Meshes/Weapons/HeavymachinegunPickup.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision HeavymachinegunPickup:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Weapons/HeavymachinegunPickup.1"
+    },
+    "LightingGuid": "7BFB9970-4B30E0E0-A3698C8D-C2C5D1F4",
+    "RenderData": null
+  }
+]

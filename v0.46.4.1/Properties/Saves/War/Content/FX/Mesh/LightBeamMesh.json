@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "LightBeamMesh",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "LightBeamMesh",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xC21"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "LightBeamMesh",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "Engine/Content/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 318.10986,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 318.10986,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 301.2726
+        },
+        "BoxExtent": {
+          "X": 78.6503,
+          "Y": 78.6503,
+          "Z": 301.27264
+        },
+        "SphereRadius": 311.36972
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup LightBeamMesh:BodySetup_0",
+      "ObjectPath": "War/Content/FX/Mesh/LightBeamMesh.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision LightBeamMesh:NavCollision_0",
+      "ObjectPath": "War/Content/FX/Mesh/LightBeamMesh.1"
+    },
+    "LightingGuid": "60D16E74-4773E276-496A6EA1-EC8D2E40",
+    "RenderData": null
+  }
+]

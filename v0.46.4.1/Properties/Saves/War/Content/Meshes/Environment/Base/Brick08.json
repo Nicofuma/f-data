@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Brick08",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "Brick08",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x9EC"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Brick08",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BrickSingle02",
+            "ObjectPath": "War/Content/Materials/Environment/BrickSingle02.0"
+          },
+          "MaterialSlotName": "BrickSingle02",
+          "ImportedMaterialSlotName": "BrickSingle02",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 763.6058,
+            "LocalUVDensities": 377.34598,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 377.34598,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 2.2888184E-05,
+          "Y": 0.0,
+          "Z": 1.9073486E-06
+        },
+        "BoxExtent": {
+          "X": 40.6728,
+          "Y": 149.64255,
+          "Z": 22.889606
+        },
+        "SphereRadius": 150.92455
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Brick08:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Base/Brick08.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Brick08:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Base/Brick08.1"
+    },
+    "LightingGuid": "24E6A2EC-43703285-680B1C9B-08429ABA",
+    "RenderData": null
+  }
+]

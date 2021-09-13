@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "TrenchBarbedWirePillarT3",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "TrenchBarbedWirePillarT3",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1257"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TrenchBarbedWirePillarT3",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortTrenchT3ConcreteDirt01",
+            "ObjectPath": "War/Content/Materials/Structures/FortTrenchT3ConcreteDirt01.0"
+          },
+          "MaterialSlotName": "FortTrenchT3ConcreteDirt01",
+          "ImportedMaterialSlotName": "FortTrenchT3ConcreteDirt01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 543.5821,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 543.5821,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 55.92137
+        },
+        "BoxExtent": {
+          "X": 12.500023,
+          "Y": 57.185036,
+          "Z": 55.92137
+        },
+        "SphereRadius": 80.95418
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TrenchBarbedWirePillarT3:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Splines/TrenchBarbedWirePillarT3.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TrenchBarbedWirePillarT3:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Splines/TrenchBarbedWirePillarT3.1"
+    },
+    "LightingGuid": "92B438F8-4499B2AA-E657DC81-6D09117A",
+    "RenderData": null
+  }
+]

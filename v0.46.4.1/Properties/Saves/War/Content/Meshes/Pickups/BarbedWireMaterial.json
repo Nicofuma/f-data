@@ -1,0 +1,109 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "BarbedWireMaterial",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "BarbedWireMaterial",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x4C99"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "BarbedWireMaterial",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BarbedWire",
+            "ObjectPath": "War/Content/Materials/Environment/BarbedWire.0"
+          },
+          "MaterialSlotName": "BarbedWire",
+          "ImportedMaterialSlotName": "BarbedWire",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 115.54533,
+            "LocalUVDensities": 0.25958574,
+            "LocalUVDensities": 0.25958574,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortT2WoodBeam01",
+            "ObjectPath": "War/Content/Materials/Structures/FortT2WoodBeam01.0"
+          },
+          "MaterialSlotName": "FortT2WoodBeam01",
+          "ImportedMaterialSlotName": "FortT2WoodBeam01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 113.24655,
+            "LocalUVDensities": 2.9487674,
+            "LocalUVDensities": 2.9487674,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 115.40476,
+      "LightMapResolution": 64,
+      "PositiveBoundsExtension": {
+        "X": 500.0,
+        "Y": 500.0,
+        "Z": 500.0
+      },
+      "NegativeBoundsExtension": {
+        "X": 500.0,
+        "Y": 500.0,
+        "Z": 500.0
+      },
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 18.603165
+        },
+        "BoxExtent": {
+          "X": 517.2852,
+          "Y": 531.18195,
+          "Z": 518.60986
+        },
+        "SphereRadius": 904.8173
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup BarbedWireMaterial:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Pickups/BarbedWireMaterial.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision BarbedWireMaterial:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Pickups/BarbedWireMaterial.1"
+    },
+    "LightingGuid": "8A0BF6B9-48A0E9EE-892136AA-3E24DB83",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,121 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPEngineerUniformC_C",
+    "Super": "BPUniform_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPEngineerUniformC_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPEngineerUniformC.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass BPUniform_C",
+      "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPUniform.0"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPEngineerUniformC_C",
+    "Name": "Default__BPEngineerUniformC_C",
+    "Properties": {
+      "UniformType": "EUniformType::EngineerC",
+      "SubTypeIcon": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D SubtypeEngineerIcon",
+          "ObjectPath": "War/Content/Textures/UI/ItemIcons/SubtypeEngineerIcon.0"
+        }
+      },
+      "CodeName": "EngineerUniformC",
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "0E35AB2D4C65E49D9BBAF5951570E2A1",
+        "SourceString": "Colonial Engineer Uniform"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "3FC5B6A94099436E211D5387A0DAE8C0",
+        "SourceString": "Fabri Rucksack"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "5235147E4AAFDF7E946A4BA56B1C057C",
+        "SourceString": "Engineers are the bones of the Mesean Republic. They are outfitted with a heavy bag and belts for easy access to tools and handheld materials."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D EngineerUniformCIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/Uniforms/EngineerUniformCIcon.0"
+      },
+      "FactionVariant": "EFactionId::Colonials",
+      "TechID": "ETechID::UnlockEngineerUniform",
+      "ItemMesh": {
+        "ObjectName": "StaticMeshComponent Default__BPEngineerUniformC_C:ItemMesh",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPEngineerUniformC.6"
+      },
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPEngineerUniformC_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPEngineerUniformC.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPEngineerUniformC_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPEngineerUniformC.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPEngineerUniformC_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPEngineerUniformC_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPEngineerUniformC_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPEngineerUniformC.3"
+      },
+      "VariableGuid": "57CA561C-434D89CD-F65025A0-F66D62DF",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPEngineerUniformC_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPEngineerUniformC_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPEngineerUniformC.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPEngineerUniformC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPEngineerUniformC_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPEngineerUniformC.2"
+      }
+    }
+  }
+]

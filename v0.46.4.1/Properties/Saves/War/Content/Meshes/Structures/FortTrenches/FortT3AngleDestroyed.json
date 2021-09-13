@@ -1,0 +1,195 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FortT3AngleDestroyed",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -255.0,
+                "Y": 255.0,
+                "Z": -68.80069
+              },
+              {
+                "X": -81.49713,
+                "Y": 255.0,
+                "Z": -68.80069
+              },
+              {
+                "X": -255.0,
+                "Y": -255.0,
+                "Z": -68.80069
+              },
+              {
+                "X": 255.0,
+                "Y": -255.0,
+                "Z": -68.80069
+              },
+              {
+                "X": -255.0,
+                "Y": 255.0,
+                "Z": 165.0
+              },
+              {
+                "X": 255.0,
+                "Y": -81.49713,
+                "Z": 165.0
+              },
+              {
+                "X": -255.0,
+                "Y": -255.0,
+                "Z": 165.0
+              },
+              {
+                "X": 255.0,
+                "Y": -255.0,
+                "Z": 165.0
+              },
+              {
+                "X": 255.0,
+                "Y": -81.49713,
+                "Z": -68.80069
+              },
+              {
+                "X": -81.49713,
+                "Y": 255.0,
+                "Z": 165.0
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -255.0,
+                "Y": -255.0,
+                "Z": -68.80069
+              },
+              "Max": {
+                "X": 255.0,
+                "Y": 255.0,
+                "Z": 165.0
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "FortT3AngleDestroyed",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 577,
+        "SizeOnDisk": 577,
+        "OffsetInFile": "0xAF1B"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FortT3AngleDestroyed",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortTrenchT3ConcreteDirt01",
+            "ObjectPath": "War/Content/Materials/Structures/FortTrenchT3ConcreteDirt01.0"
+          },
+          "MaterialSlotName": "FortTrenchT3ConcreteDirt",
+          "ImportedMaterialSlotName": "FortTrenchT3ConcreteDirt",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1404.5769,
+            "LocalUVDensities": 1.6900123,
+            "LocalUVDensities": 1.5295451,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortT3ConcreteFloor01",
+            "ObjectPath": "War/Content/Materials/Structures/FortT3ConcreteFloor01.0"
+          },
+          "MaterialSlotName": "FortT3Floor01",
+          "ImportedMaterialSlotName": "FortT3Floor01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1097.2225,
+            "LocalUVDensities": 1.0388187,
+            "LocalUVDensities": 1.0388187,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1.6351529,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -10.163605,
+          "Y": -17.162231,
+          "Z": 83.092316
+        },
+        "BoxExtent": {
+          "X": 303.75293,
+          "Y": 309.40924,
+          "Z": 122.30987
+        },
+        "SphereRadius": 430.6354
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FortT3AngleDestroyed:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortT3AngleDestroyed.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FortT3AngleDestroyed:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortT3AngleDestroyed.1"
+    },
+    "LightingGuid": "5C6861CB-4A13403E-EF3C8D85-1BE28767",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,89 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Bowl2",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Bowl2",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x36A7"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Bowl2",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Dishes",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Dishes.0"
+          },
+          "MaterialSlotName": "Tablewear_Inst",
+          "ImportedMaterialSlotName": "Tablewear_Inst",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 138.73416,
+            "LocalUVDensities": 43.971874,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 43.971874,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0016069412,
+          "Y": -0.0004720688,
+          "Z": 4.3071966
+        },
+        "BoxExtent": {
+          "X": 10.049604,
+          "Y": 10.051704,
+          "Z": 4.3071966
+        },
+        "SphereRadius": 10.918127
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Bowl2:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Bowl2.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Bowl2:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Bowl2.1"
+    },
+    "LightingGuid": "C881C102-4B102361-E4744D86-ECC678DE",
+    "RenderData": null
+  }
+]

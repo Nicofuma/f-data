@@ -1,0 +1,154 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "MotorcycleDamaged",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 54.86992,
+              "Y": -11.013367,
+              "Z": 76.826065
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 459.95306,
+            "Y": 293.20773,
+            "Z": 210.41798,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "MotorcycleDamaged",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x5796D"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "MotorcycleDamaged",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MotorcycleDamaged",
+            "ObjectPath": "War/Content/Materials/Vehicles/MotorcycleDamaged.0"
+          },
+          "MaterialSlotName": "MotorCycle",
+          "ImportedMaterialSlotName": "MotorCycle",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 395.5241,
+            "LocalUVDensities": 1.4555216,
+            "LocalUVDensities": 2261.761,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant SidecarDamaged",
+            "ObjectPath": "War/Content/Materials/Vehicles/SidecarDamaged.0"
+          },
+          "MaterialSlotName": "Sidecar",
+          "ImportedMaterialSlotName": "Sidecar",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 520.785,
+            "LocalUVDensities": 2.1363227,
+            "LocalUVDensities": 2232.1143,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MotorcycleWheel",
+            "ObjectPath": "War/Content/Materials/Vehicles/MotorcycleWheel.0"
+          },
+          "MaterialSlotName": "MotorCycleWheel",
+          "ImportedMaterialSlotName": "MotorCycleWheel",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 156.62825,
+            "LocalUVDensities": 2.2300625,
+            "LocalUVDensities": 2286.4219,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant SidecarDamaged",
+            "ObjectPath": "War/Content/Materials/Vehicles/SidecarDamaged.0"
+          },
+          "MaterialSlotName": "Emissive",
+          "ImportedMaterialSlotName": "Emissive",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 466.54147,
+            "LocalUVDensities": 2.111829,
+            "LocalUVDensities": 2257.35,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 2263.0796,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 2,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 54.86992,
+          "Y": -11.013367,
+          "Z": 76.826065
+        },
+        "BoxExtent": {
+          "X": 229.97653,
+          "Y": 146.60387,
+          "Z": 105.20899
+        },
+        "SphereRadius": 246.01761
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup MotorcycleDamaged:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Vehicles/MotorcycleDamaged.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision MotorcycleDamaged:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Vehicles/MotorcycleDamaged.1"
+    },
+    "LightingGuid": "3325642F-47C1A360-AE1BA28B-AF1DA2C9",
+    "RenderData": null
+  }
+]

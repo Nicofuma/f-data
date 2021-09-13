@@ -1,0 +1,108 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPATRPGAmmoPickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPATRPGAmmoPickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPATRPGAmmoPickup.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class AmmoPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPATRPGAmmoPickup_C",
+    "Name": "Default__BPATRPGAmmoPickup_C",
+    "Properties": {
+      "Encumbrance": 95,
+      "CodeName": "ATRPGAmmo",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "7EE7770544ABEF42F522FB9C94332E4E",
+        "SourceString": "A.T.R.P.G. Shell"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "6128D3124DA308F4F754EA9A04B8934C",
+        "SourceString": "An anti-tank projectile fired from an R.P.G."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D ATRpgAmmoItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/ATRpgAmmoItemIcon.0"
+      },
+      "ItemCategory": "EItemCategory::HeavyArms",
+      "ItemFlagsMask": 17,
+      "ItemProfileType": "EItemProfileType::HeavyAmmo",
+      "FactionVariant": "EFactionId::Colonials",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPATRPGAmmoPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPATRPGAmmoPickup.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPATRPGAmmoPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPATRPGAmmoPickup.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPATRPGAmmoPickup_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPATRPGAmmoPickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPATRPGAmmoPickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPATRPGAmmoPickup.3"
+      },
+      "VariableGuid": "BAE6D160-4654521D-F027E5B0-08BF61E3",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPATRPGAmmoPickup_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPATRPGAmmoPickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPATRPGAmmoPickup.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPATRPGAmmoPickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPATRPGAmmoPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPATRPGAmmoPickup.2"
+      }
+    }
+  }
+]

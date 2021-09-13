@@ -1,0 +1,819 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "UnderModSlot",
+    "Outer": "BPFortCornerCommonMods_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "BlueprintGeneratedClass BPFortCornerUnderModSlot_C",
+      "ObjectPath": "War/Content/Blueprints/Structures/Forts/Modifications/BPFortCornerUnderModSlot.0"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPFortCornerCommonMods_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPFortCornerCommonMods_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.41"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class Template",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPFortCornerCommonMods_C:UnderModSlot",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortCornerCommonMods_C:AngleDefenseModSlot",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.15"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortCornerCommonMods_C:RightDefenseModSlot",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.26"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortCornerCommonMods_C:FrontDefenseModSlot",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.22"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortCornerCommonMods_C:LeftDefenseModSlot",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.23"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortCornerCommonMods_C:AngleModSlot",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.17"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortCornerCommonMods_C:BackModSlot",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.20"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortCornerCommonMods_C:LeftModSlot",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.25"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortCornerCommonMods_C:AngleInfraModSlot",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.16"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortCornerCommonMods_C:BackInfraModSlot",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.19"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortCornerCommonMods_C:LeftInfraModSlot",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.24"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortCornerCommonMods_C:BackDefenseModSlot",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.18"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortCornerCommonMods_C:DefaultSceneRoot",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.21"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPFortCornerCommonMods_C",
+    "Name": "Default__BPFortCornerCommonMods_C"
+  },
+  {
+    "Type": "BPFortCornerUnderModSlot_C",
+    "Name": "UnderModSlot_GEN_VARIABLE",
+    "Outer": "BPFortCornerCommonMods_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": -3.1E-05,
+        "Z": -204.16547
+      }
+    }
+  },
+  {
+    "Type": "BPFortDefenseModSlot_C",
+    "Name": "AngleDefenseModSlot_GEN_VARIABLE",
+    "Outer": "BPFortCornerCommonMods_C",
+    "Properties": {
+      "bIsLinkedToSocket": true,
+      "LinkedSocketNames": [
+        "AngleFortSocket"
+      ],
+      "bOverrideSplineTarget": true,
+      "SplineTargetComponentNameOverride": "FrontDefenseModSlot",
+      "SubComponentTags": [
+        "RoofVisibility"
+      ],
+      "RelativeLocation": {
+        "X": -100.0,
+        "Y": 230.0,
+        "Z": 150.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 44.999992,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BPFortDefenseModSlot_C",
+    "Name": "BackDefenseModSlot_GEN_VARIABLE",
+    "Outer": "BPFortCornerCommonMods_C",
+    "Properties": {
+      "bIsLinkedToSocket": true,
+      "LinkedSocketNames": [
+        "BackFortSocket"
+      ],
+      "bOverrideSplineTarget": true,
+      "SplineTargetComponentNameOverride": "RightDefenseModSlot",
+      "SubComponentTags": [
+        "RoofVisibility"
+      ],
+      "RelativeLocation": {
+        "X": -220.0,
+        "Y": -220.0,
+        "Z": 150.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 135.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BPFortDefenseModSlot_C",
+    "Name": "FrontDefenseModSlot_GEN_VARIABLE",
+    "Outer": "BPFortCornerCommonMods_C",
+    "Properties": {
+      "bOverrideSplineTarget": true,
+      "SplineTargetComponentNameOverride": "LeftDefenseModSlot",
+      "SubComponentTags": [
+        "RoofVisibility"
+      ],
+      "RelativeLocation": {
+        "X": 230.0,
+        "Y": -100.0,
+        "Z": 150.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -44.999992,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BPFortDefenseModSlot_C",
+    "Name": "LeftDefenseModSlot_GEN_VARIABLE",
+    "Outer": "BPFortCornerCommonMods_C",
+    "Properties": {
+      "bIsLinkedToSocket": true,
+      "LinkedSocketNames": [
+        "LeftFortSocket"
+      ],
+      "bOverrideSplineTarget": true,
+      "SplineTargetComponentNameOverride": "BackDefenseModSlot",
+      "SubComponentTags": [
+        "RoofVisibility"
+      ],
+      "RelativeLocation": {
+        "X": 230.0,
+        "Y": -220.0,
+        "Z": 150.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -135.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BPFortDefenseModSlot_C",
+    "Name": "RightDefenseModSlot_GEN_VARIABLE",
+    "Outer": "BPFortCornerCommonMods_C",
+    "Properties": {
+      "bOverrideSplineTarget": true,
+      "SplineTargetComponentNameOverride": "AngleDefenseModSlot",
+      "SubComponentTags": [
+        "RoofVisibility"
+      ],
+      "RelativeLocation": {
+        "X": -220.0,
+        "Y": 230.0,
+        "Z": 150.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 44.999992,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BPFortInfraModSlot_C",
+    "Name": "AngleInfraModSlot_GEN_VARIABLE",
+    "Outer": "BPFortCornerCommonMods_C",
+    "Properties": {
+      "bIsLinkedToSocket": true,
+      "LinkedSocketNames": [
+        "AngleFortSocket"
+      ],
+      "RelativeLocation": {
+        "X": 90.0,
+        "Y": 90.0,
+        "Z": -160.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -44.999992,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BPFortInfraModSlot_C",
+    "Name": "BackInfraModSlot_GEN_VARIABLE",
+    "Outer": "BPFortCornerCommonMods_C",
+    "Properties": {
+      "bIsLinkedToSocket": true,
+      "LinkedSocketNames": [
+        "BackFortSocket"
+      ],
+      "RelativeLocation": {
+        "X": -250.0,
+        "Y": 0.0,
+        "Z": -160.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 89.99996,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BPFortInfraModSlot_C",
+    "Name": "LeftInfraModSlot_GEN_VARIABLE",
+    "Outer": "BPFortCornerCommonMods_C",
+    "Properties": {
+      "bIsLinkedToSocket": true,
+      "LinkedSocketNames": [
+        "LeftFortSocket"
+      ],
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": -250.0,
+        "Z": -160.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -179.99995,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BPFortWallModSlot_C",
+    "Name": "AngleModSlot_GEN_VARIABLE",
+    "Outer": "BPFortCornerCommonMods_C",
+    "Properties": {
+      "bIsLinkedToSocket": true,
+      "LinkedSocketNames": [
+        "AngleFortSocket"
+      ],
+      "RelativeLocation": {
+        "X": 90.0,
+        "Y": 90.0,
+        "Z": -160.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -44.999992,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BPFortWallModSlot_C",
+    "Name": "BackModSlot_GEN_VARIABLE",
+    "Outer": "BPFortCornerCommonMods_C",
+    "Properties": {
+      "bIsLinkedToSocket": true,
+      "LinkedSocketNames": [
+        "BackFortSocket"
+      ],
+      "RelativeLocation": {
+        "X": -250.0,
+        "Y": 0.0,
+        "Z": -160.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 89.999985,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BPFortWallModSlot_C",
+    "Name": "LeftModSlot_GEN_VARIABLE",
+    "Outer": "BPFortCornerCommonMods_C",
+    "Properties": {
+      "bIsLinkedToSocket": true,
+      "LinkedSocketNames": [
+        "LeftFortSocket"
+      ],
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": -250.0,
+        "Z": -160.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -179.99997,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "AngleDefenseModSlot",
+    "Outer": "BPFortCornerCommonMods_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "BlueprintGeneratedClass BPFortDefenseModSlot_C",
+      "ObjectPath": "War/Content/Blueprints/Structures/Forts/Modifications/BPFortDefenseModSlot.0"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "AngleInfraModSlot",
+    "Outer": "BPFortCornerCommonMods_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "BlueprintGeneratedClass BPFortInfraModSlot_C",
+      "ObjectPath": "War/Content/Blueprints/Structures/Forts/Modifications/BPFortInfraModSlot.0"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "AngleModSlot",
+    "Outer": "BPFortCornerCommonMods_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "BlueprintGeneratedClass BPFortWallModSlot_C",
+      "ObjectPath": "War/Content/Blueprints/Structures/Forts/Modifications/BPFortWallModSlot.0"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "BackDefenseModSlot",
+    "Outer": "BPFortCornerCommonMods_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "BlueprintGeneratedClass BPFortDefenseModSlot_C",
+      "ObjectPath": "War/Content/Blueprints/Structures/Forts/Modifications/BPFortDefenseModSlot.0"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "BackInfraModSlot",
+    "Outer": "BPFortCornerCommonMods_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "BlueprintGeneratedClass BPFortInfraModSlot_C",
+      "ObjectPath": "War/Content/Blueprints/Structures/Forts/Modifications/BPFortInfraModSlot.0"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "BackModSlot",
+    "Outer": "BPFortCornerCommonMods_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "BlueprintGeneratedClass BPFortWallModSlot_C",
+      "ObjectPath": "War/Content/Blueprints/Structures/Forts/Modifications/BPFortWallModSlot.0"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "DefaultSceneRoot",
+    "Outer": "BPFortCornerCommonMods_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SceneComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "FrontDefenseModSlot",
+    "Outer": "BPFortCornerCommonMods_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "BlueprintGeneratedClass BPFortDefenseModSlot_C",
+      "ObjectPath": "War/Content/Blueprints/Structures/Forts/Modifications/BPFortDefenseModSlot.0"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "LeftDefenseModSlot",
+    "Outer": "BPFortCornerCommonMods_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "BlueprintGeneratedClass BPFortDefenseModSlot_C",
+      "ObjectPath": "War/Content/Blueprints/Structures/Forts/Modifications/BPFortDefenseModSlot.0"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "LeftInfraModSlot",
+    "Outer": "BPFortCornerCommonMods_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "BlueprintGeneratedClass BPFortInfraModSlot_C",
+      "ObjectPath": "War/Content/Blueprints/Structures/Forts/Modifications/BPFortInfraModSlot.0"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "LeftModSlot",
+    "Outer": "BPFortCornerCommonMods_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "BlueprintGeneratedClass BPFortWallModSlot_C",
+      "ObjectPath": "War/Content/Blueprints/Structures/Forts/Modifications/BPFortWallModSlot.0"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "RightDefenseModSlot",
+    "Outer": "BPFortCornerCommonMods_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "BlueprintGeneratedClass BPFortDefenseModSlot_C",
+      "ObjectPath": "War/Content/Blueprints/Structures/Forts/Modifications/BPFortDefenseModSlot.0"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPFortCornerCommonMods_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPFortCornerCommonMods_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.27"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node BPFortCornerCommonMods_C:SimpleConstructionScript_0.SCS_Node_8",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.39"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortCornerCommonMods_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.34"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortCornerCommonMods_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.35"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortCornerCommonMods_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.36"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortCornerCommonMods_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.37"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortCornerCommonMods_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.38"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortCornerCommonMods_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.33"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortCornerCommonMods_C:SimpleConstructionScript_0.SCS_Node_9",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.40"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortCornerCommonMods_C:SimpleConstructionScript_0.SCS_Node_10",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.29"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortCornerCommonMods_C:SimpleConstructionScript_0.SCS_Node_11",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.30"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortCornerCommonMods_C:SimpleConstructionScript_0.SCS_Node_12",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.31"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortCornerCommonMods_C:SimpleConstructionScript_0.SCS_Node_13",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.32"
+        }
+      ],
+      "VariableGuid": "1E9893DF-475E4B00-914CB287-65A14C57",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_10",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPFortDefenseModSlot_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/Modifications/BPFortDefenseModSlot.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BPFortDefenseModSlot_C BPFortCornerCommonMods_C:FrontDefenseModSlot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.6"
+      },
+      "VariableGuid": "3D3D8AB6-4030E8D3-77437B8D-3D35D4A9",
+      "InternalVariableName": "FrontDefenseModSlot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_11",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPFortDefenseModSlot_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/Modifications/BPFortDefenseModSlot.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BPFortDefenseModSlot_C BPFortCornerCommonMods_C:RightDefenseModSlot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.8"
+      },
+      "VariableGuid": "28BCCB0A-4A8BAFBD-F83F20B7-9E78A0AD",
+      "InternalVariableName": "RightDefenseModSlot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_12",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPFortDefenseModSlot_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/Modifications/BPFortDefenseModSlot.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BPFortDefenseModSlot_C BPFortCornerCommonMods_C:AngleDefenseModSlot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.4"
+      },
+      "VariableGuid": "BB4DB79F-47A6DE79-6CAF61A1-5D5F22E5",
+      "InternalVariableName": "AngleDefenseModSlot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_13",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPFortCornerUnderModSlot_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/Modifications/BPFortCornerUnderModSlot.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BPFortCornerUnderModSlot_C BPFortCornerCommonMods_C:UnderModSlot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.3"
+      },
+      "VariableGuid": "82D7724E-4A021DB6-C1C6ACB4-F6DA45F3",
+      "InternalVariableName": "UnderModSlot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPFortWallModSlot_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/Modifications/BPFortWallModSlot.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BPFortWallModSlot_C BPFortCornerCommonMods_C:AngleModSlot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.12"
+      },
+      "VariableGuid": "6E032EC6-45023AF2-CD8C369B-BB9EFF6A",
+      "InternalVariableName": "AngleModSlot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPFortInfraModSlot_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/Modifications/BPFortInfraModSlot.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BPFortInfraModSlot_C BPFortCornerCommonMods_C:LeftInfraModSlot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.11"
+      },
+      "VariableGuid": "E2EA7AAE-44D26EE8-F9A6248E-90A92BB6",
+      "InternalVariableName": "LeftInfraModSlot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPFortInfraModSlot_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/Modifications/BPFortInfraModSlot.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BPFortInfraModSlot_C BPFortCornerCommonMods_C:BackInfraModSlot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.10"
+      },
+      "VariableGuid": "5BA368F9-484E1312-41365692-3C8F3D6A",
+      "InternalVariableName": "BackInfraModSlot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPFortInfraModSlot_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/Modifications/BPFortInfraModSlot.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BPFortInfraModSlot_C BPFortCornerCommonMods_C:AngleInfraModSlot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.9"
+      },
+      "VariableGuid": "F3199885-4D4D4F1E-0D2FC2A2-A1EAAA3F",
+      "InternalVariableName": "AngleInfraModSlot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPFortWallModSlot_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/Modifications/BPFortWallModSlot.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BPFortWallModSlot_C BPFortCornerCommonMods_C:LeftModSlot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.14"
+      },
+      "VariableGuid": "8C261583-4450E993-319A358C-BE1C55D0",
+      "InternalVariableName": "LeftModSlot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPFortWallModSlot_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/Modifications/BPFortWallModSlot.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BPFortWallModSlot_C BPFortCornerCommonMods_C:BackModSlot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.13"
+      },
+      "VariableGuid": "4F5DD049-454287D0-CBB0AE9B-B5B7ADB0",
+      "InternalVariableName": "BackModSlot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_8",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPFortDefenseModSlot_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/Modifications/BPFortDefenseModSlot.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BPFortDefenseModSlot_C BPFortCornerCommonMods_C:BackDefenseModSlot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.5"
+      },
+      "VariableGuid": "133A3878-45BDA08E-C9B80282-7BCB38C0",
+      "InternalVariableName": "BackDefenseModSlot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_9",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPFortDefenseModSlot_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/Modifications/BPFortDefenseModSlot.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BPFortDefenseModSlot_C BPFortCornerCommonMods_C:LeftDefenseModSlot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.7"
+      },
+      "VariableGuid": "BF491382-4C616B14-B85915A0-9E150777",
+      "InternalVariableName": "LeftDefenseModSlot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPFortCornerCommonMods_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPFortCornerCommonMods_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.28"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPFortCornerCommonMods_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.28"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortCornerCommonMods_C:SimpleConstructionScript_0.SCS_Node_8",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.39"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortCornerCommonMods_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.34"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortCornerCommonMods_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.35"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortCornerCommonMods_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.36"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortCornerCommonMods_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.37"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortCornerCommonMods_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.38"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortCornerCommonMods_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.33"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortCornerCommonMods_C:SimpleConstructionScript_0.SCS_Node_9",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.40"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortCornerCommonMods_C:SimpleConstructionScript_0.SCS_Node_10",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.29"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortCornerCommonMods_C:SimpleConstructionScript_0.SCS_Node_11",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.30"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortCornerCommonMods_C:SimpleConstructionScript_0.SCS_Node_12",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.31"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortCornerCommonMods_C:SimpleConstructionScript_0.SCS_Node_13",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.32"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPFortCornerCommonMods_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCornerCommonMods.28"
+      }
+    }
+  }
+]

@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ColonialHelmetPile02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_6",
+    "Outer": "ColonialHelmetPile02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x26CBB"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ColonialHelmetPile02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant SoldierHelmetC",
+            "ObjectPath": "War/Content/Materials/Character/Soldier/SoldierHelmetC.0"
+          },
+          "MaterialSlotName": "Helmet_MetalColonial",
+          "ImportedMaterialSlotName": "Helmet_MetalColonial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 68.54678,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 68.54678,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -5.2626953,
+          "Y": 4.3317184,
+          "Z": 23.583105
+        },
+        "BoxExtent": {
+          "X": 94.97357,
+          "Y": 87.170616,
+          "Z": 25.03527
+        },
+        "SphereRadius": 114.11425
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ColonialHelmetPile02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ColonialHelmetPile02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ColonialHelmetPile02:NavCollision_6",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ColonialHelmetPile02.1"
+    },
+    "LightingGuid": "5E5209F2-44D00A01-EDE72EAD-818B75BC",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,224 @@
+[
+  {
+    "Type": "Material",
+    "Name": "PartyBusExhaust",
+    "Properties": {
+      "EmissiveColor": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMaterialFunctionCall_0",
+        "UseConstant": false,
+        "Constant": {
+          "R": 0,
+          "G": 0,
+          "B": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "BlendMode": "BLEND_Additive",
+      "bUsedWithBeamTrails": true,
+      "Expressions": [
+        {
+          "ObjectName": "MaterialExpressionMaterialFunctionCall PartyBusExhaust:MaterialExpressionMaterialFunctionCall_0",
+          "ObjectPath": "War/Content/FX/Materials/PartyBusExhaust.1"
+        },
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSample PartyBusExhaust:MaterialExpressionTextureSample_0",
+          "ObjectPath": "War/Content/FX/Materials/PartyBusExhaust.4"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSample PartyBusExhaust:MaterialExpressionTextureSample_1",
+          "ObjectPath": "War/Content/FX/Materials/PartyBusExhaust.5"
+        },
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureObject PartyBusExhaust:MaterialExpressionTextureObject_0",
+          "ObjectPath": "War/Content/FX/Materials/PartyBusExhaust.3"
+        },
+        {
+          "ObjectName": "MaterialExpressionScalarParameter PartyBusExhaust:MaterialExpressionScalarParameter_0",
+          "ObjectPath": "War/Content/FX/Materials/PartyBusExhaust.2"
+        },
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSample PartyBusExhaust:MaterialExpressionTextureSample_2",
+          "ObjectPath": "War/Content/FX/Materials/PartyBusExhaust.6"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "MaterialFunctionInfos": [
+        {
+          "StateId": "B7C71B91-4E2BB667-772D6CBE-2AB55665",
+          "Function": {
+            "ObjectName": "MaterialFunction LinearGradient",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient.0"
+          }
+        },
+        {
+          "StateId": "1F3C7ECC-4653CAFB-2A6AEE82-B1F2F3A5",
+          "Function": {
+            "ObjectName": "MaterialFunction CheapContrast",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast.1"
+          }
+        },
+        {
+          "StateId": "BDC7AB9C-418E30AC-5815BFB0-1EF022E9",
+          "Function": {
+            "ObjectName": "MaterialFunction WorldAlignedTexture",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/WorldAlignedTexture.6"
+          }
+        }
+      ],
+      "bCanMaskedBeAssumedOpaque": true,
+      "StateId": "0A276687-42B57AE6-850975A2-281CBFA6",
+      "CachedQualityLevelsUsed": [
+        false,
+        true,
+        false
+      ]
+    }
+  },
+  {
+    "Type": "MaterialExpressionMaterialFunctionCall",
+    "Name": "MaterialExpressionMaterialFunctionCall_0",
+    "Outer": "PartyBusExhaust",
+    "Properties": {
+      "MaterialFunction": {
+        "ObjectName": "MaterialFunction WorldAlignedTexture",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/WorldAlignedTexture.6"
+      },
+      "Material": {
+        "ObjectName": "Material PartyBusExhaust",
+        "ObjectPath": "War/Content/FX/Materials/PartyBusExhaust.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_0",
+    "Outer": "PartyBusExhaust",
+    "Properties": {
+      "DefaultValue": 210.0,
+      "ParameterName": "Tiling",
+      "ExpressionGUID": "7336C8D9-44083254-2D126D87-54A377D3",
+      "Material": {
+        "ObjectName": "Material PartyBusExhaust",
+        "ObjectPath": "War/Content/FX/Materials/PartyBusExhaust.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureObject",
+    "Name": "MaterialExpressionTextureObject_0",
+    "Outer": "PartyBusExhaust",
+    "Properties": {
+      "Texture": {
+        "ObjectName": "Texture2D PartyBusRainbow",
+        "ObjectPath": "War/Content/FX/Textures/PartyBusRainbow.0"
+      },
+      "Material": {
+        "ObjectName": "Material PartyBusExhaust",
+        "ObjectPath": "War/Content/FX/Materials/PartyBusExhaust.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_0",
+    "Outer": "PartyBusExhaust",
+    "Properties": {
+      "Coordinates": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionTextureCoordinate_0"
+      },
+      "Texture": {
+        "ObjectName": "Texture2D PartyBusRainbow",
+        "ObjectPath": "War/Content/FX/Textures/PartyBusRainbow.0"
+      },
+      "Material": {
+        "ObjectName": "Material PartyBusExhaust",
+        "ObjectPath": "War/Content/FX/Materials/PartyBusExhaust.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_1",
+    "Outer": "PartyBusExhaust",
+    "Properties": {
+      "Coordinates": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionPanner_0"
+      },
+      "Texture": {
+        "ObjectName": "Texture2D SmokeAlphas01",
+        "ObjectPath": "War/Content/FX/Textures/SmokeAlphas01.0"
+      },
+      "SamplerType": "SAMPLERTYPE_LinearColor",
+      "Material": {
+        "ObjectName": "Material PartyBusExhaust",
+        "ObjectPath": "War/Content/FX/Materials/PartyBusExhaust.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_2",
+    "Outer": "PartyBusExhaust",
+    "Properties": {
+      "Coordinates": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionPanner_1"
+      },
+      "Texture": {
+        "ObjectName": "Texture2D SmokeAlphas01",
+        "ObjectPath": "War/Content/FX/Textures/SmokeAlphas01.0"
+      },
+      "SamplerType": "SAMPLERTYPE_LinearColor",
+      "Material": {
+        "ObjectName": "Material PartyBusExhaust",
+        "ObjectPath": "War/Content/FX/Materials/PartyBusExhaust.0"
+      }
+    }
+  }
+]

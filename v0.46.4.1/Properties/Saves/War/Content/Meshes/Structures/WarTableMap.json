@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "WarTableMap",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "WarTableMap",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xC38"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "WarTableMap",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FieldMap",
+            "ObjectPath": "War/Content/Materials/Structures/FieldMap.0"
+          },
+          "MaterialSlotName": "FieldMap",
+          "ImportedMaterialSlotName": "FieldMap",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 165.26707,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 165.26707,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0013504028,
+          "Y": 0.0018997192,
+          "Z": 1.8851161
+        },
+        "BoxExtent": {
+          "X": 87.79942,
+          "Y": 62.977585,
+          "Z": 1.2623024
+        },
+        "SphereRadius": 107.51934
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup WarTableMap:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/WarTableMap.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision WarTableMap:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Structures/WarTableMap.1"
+    },
+    "LightingGuid": "20880C86-4B1C5588-F6227EBF-61FEE7A1",
+    "RenderData": null
+  }
+]

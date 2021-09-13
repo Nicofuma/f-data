@@ -1,0 +1,105 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Gravestone01",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -0.845459,
+              "Y": 0.15011406,
+              "Z": 96.247406
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 89.162544,
+            "Y": 21.351269,
+            "Z": 185.06946,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "Gravestone01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x1F7C"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Gravestone01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Gravestone01",
+            "ObjectPath": "War/Content/Materials/Gravestone01.0"
+          },
+          "MaterialSlotName": "Gravestone01",
+          "ImportedMaterialSlotName": "Gravestone01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 266.7481,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 266.7481,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.845459,
+          "Y": 0.15011406,
+          "Z": 96.247406
+        },
+        "BoxExtent": {
+          "X": 53.37617,
+          "Y": 26.859211,
+          "Z": 92.53473
+        },
+        "SphereRadius": 108.84074
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Gravestone01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Gravestone01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Gravestone01:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Gravestone01.1"
+    },
+    "LightingGuid": "A9B3F929-4ED92A6F-2A39CC82-F81B0362",
+    "RenderData": null
+  }
+]

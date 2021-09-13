@@ -1,0 +1,99 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FortIModWineCaskC",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "FortIModWineCaskC",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x3D16B"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FortIModWineCaskC",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Infrastructure03",
+            "ObjectPath": "War/Content/Materials/Structures/Infrastructure03.0"
+          },
+          "MaterialSlotName": "IMod03",
+          "ImportedMaterialSlotName": "IMod03",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 536.81134,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Infrastructure05",
+            "ObjectPath": "War/Content/Materials/Structures/Infrastructure05.0"
+          },
+          "MaterialSlotName": "IMod05",
+          "ImportedMaterialSlotName": "IMod05",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 393.3691,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 520.7932,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.0256653,
+          "Y": -16.451057,
+          "Z": 97.05977
+        },
+        "BoxExtent": {
+          "X": 215.75748,
+          "Y": 66.93829,
+          "Z": 98.90062
+        },
+        "SphereRadius": 244.11723
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FortIModWineCaskC:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/FortIModWineCaskC.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FortIModWineCaskC:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/FortIModWineCaskC.1"
+    },
+    "LightingGuid": "74BD2ED3-4CDA3FD6-8228C9A6-14BDE438",
+    "RenderData": null
+  }
+]

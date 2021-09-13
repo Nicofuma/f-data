@@ -1,0 +1,79 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FactoryMedical",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "FactoryMedical",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x3E7A"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FactoryMedical",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant HospitalFlag",
+            "ObjectPath": "War/Content/Materials/Structures/HospitalFlag.0"
+          },
+          "MaterialSlotName": "HospitalFlag",
+          "ImportedMaterialSlotName": "HospitalFlag",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 282.8436,
+            "LocalUVDensities": 287.355,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 287.355,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 100.0,
+          "Y": 3.2775E-05,
+          "Z": 200.0
+        },
+        "SphereRadius": 223.6068
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FactoryMedical:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FactoryMedical.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FactoryMedical:NavCollision_4",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FactoryMedical.1"
+    },
+    "LightingGuid": "A4D16F44-43583BB6-5B9FE9B7-C01BB07B",
+    "RenderData": null
+  }
+]

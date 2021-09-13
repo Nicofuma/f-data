@@ -1,0 +1,156 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_2",
+    "Outer": "Roof04",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 39.533318,
+              "Y": 249.2083,
+              "Z": 3.7943656
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 40.00024
+            },
+            "X": 351.93387,
+            "Y": 693.26276,
+            "Z": 26.075867,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": 61.08943,
+              "Y": -237.85573,
+              "Z": 7.241656
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": -39.999958
+            },
+            "X": 301.8099,
+            "Y": 659.8226,
+            "Z": 26.075867,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "Roof04",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 509,
+        "SizeOnDisk": 509,
+        "OffsetInFile": "0x17543"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Roof04",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant WoodRepeating03",
+            "ObjectPath": "War/Content/Materials/Environment/WoodRepeating03.0"
+          },
+          "MaterialSlotName": "WoodRepeating03",
+          "ImportedMaterialSlotName": "WoodRepeating03",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 89.89254,
+            "LocalUVDensities": 1057.6675,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Shingles",
+            "ObjectPath": "War/Content/Materials/Environment/House/Shingles.0"
+          },
+          "MaterialSlotName": "Shingles",
+          "ImportedMaterialSlotName": "Shingles",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 186.40208,
+            "LocalUVDensities": 1025.956,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant WoodRepeating03",
+            "ObjectPath": "War/Content/Materials/Environment/WoodRepeating03.0"
+          },
+          "MaterialSlotName": "WoodRepeating03_1",
+          "ImportedMaterialSlotName": "WoodRepeating03_1",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 93.7507,
+            "LocalUVDensities": 1060.218,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1035.645,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -6.1035156E-05,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 217.7655,
+          "Y": 521.338,
+          "Z": 227.43777
+        },
+        "SphereRadius": 599.3104
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Roof04:BodySetup_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Houses/Roof04.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Roof04:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Houses/Roof04.1"
+    },
+    "LightingGuid": "CBDB3725-4B38F537-850E9081-6D7EB489",
+    "RenderData": null
+  }
+]

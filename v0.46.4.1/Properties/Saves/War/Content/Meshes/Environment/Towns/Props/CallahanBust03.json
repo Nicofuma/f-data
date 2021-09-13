@@ -1,0 +1,105 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "CallahanBust03",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.7570648,
+              "Y": -9.136021,
+              "Z": 139.47282
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 122.94467,
+            "Y": 103.904434,
+            "Z": 326.1611,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "CallahanBust03",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x10999"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "CallahanBust03",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant CallahanBust",
+            "ObjectPath": "War/Content/Materials/Environment/Props/CallahanBust.0"
+          },
+          "MaterialSlotName": "CallahanBust",
+          "ImportedMaterialSlotName": "CallahanBust",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 435.91034,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 435.91034,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -16.989365,
+          "Y": -24.109398,
+          "Z": 121.00898
+        },
+        "BoxExtent": {
+          "X": 117.807465,
+          "Y": 76.68675,
+          "Z": 144.61671
+        },
+        "SphereRadius": 170.03624
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup CallahanBust03:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Props/CallahanBust03.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision CallahanBust03:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Props/CallahanBust03.1"
+    },
+    "LightingGuid": "2CC85461-4A7C3931-32E46CB4-23450385",
+    "RenderData": null
+  }
+]

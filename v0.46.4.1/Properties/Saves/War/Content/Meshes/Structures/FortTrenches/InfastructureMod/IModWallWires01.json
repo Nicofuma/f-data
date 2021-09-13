@@ -1,0 +1,78 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "IModWallWires01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "IModWallWires01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xC41"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "IModWallWires01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortImodPipes",
+            "ObjectPath": "War/Content/Materials/Structures/FortImodPipes.0"
+          },
+          "MaterialSlotName": "FortImodPipes",
+          "ImportedMaterialSlotName": "FortImodPipes",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 412.48663,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 412.48663,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 250.0,
+          "Y": 2.1650639,
+          "Z": 2.5
+        },
+        "SphereRadius": 250.0125
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup IModWallWires01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/IModWallWires01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision IModWallWires01:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/IModWallWires01.1"
+    },
+    "LightingGuid": "459FCE2F-44600147-73BA4484-002C1B1D",
+    "RenderData": null
+  }
+]

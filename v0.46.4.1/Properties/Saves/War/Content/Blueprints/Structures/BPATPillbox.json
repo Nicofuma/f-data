@@ -1,0 +1,411 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "MultiplexedStaticMesh",
+    "Outer": "BPATPillbox_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class MultiplexedStaticMeshComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPATPillbox_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPATPillbox_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPATPillbox.13"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class FoxholeTurret",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPATPillbox_C:MultiplexedStaticMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPATPillbox.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPATPillbox_C:ATPillbox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPATPillbox.7"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPATPillbox_C",
+    "Name": "Default__BPATPillbox_C",
+    "Properties": {
+      "OccupiableComponent": {
+        "ObjectName": "OccupiableComponent Default__BPATPillbox_C:OccupyComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPATPillbox.8"
+      },
+      "ImpactEffect": {
+        "ObjectName": "BlueprintGeneratedClass RifleImpactEffect_C",
+        "ObjectPath": "War/Content/Blueprints/Items/RifleImpactEffect.1"
+      },
+      "WeaponFireFXClass": {
+        "ObjectName": "BlueprintGeneratedClass TracerFireFX_C",
+        "ObjectPath": "War/Content/Blueprints/TracerFireFX.1"
+      },
+      "ShotSoundCue": {
+        "ObjectName": "SoundCue GarrisonATGunShot_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Weapons/AntiTankGun/GarrisonATGunShot_Cue.0"
+      },
+      "MuzzleFlashPS": {
+        "ObjectName": "ParticleSystem RifleMF",
+        "ObjectPath": "War/Content/FX/RifleMF.58"
+      },
+      "WeaponDamage": 150.0,
+      "WeaponDamageAT": 0.0,
+      "MaximumRange": 2800.0,
+      "BestJitterConeHalfAngle": 1.0,
+      "WorstJitterConeHalfAngle": 4.0,
+      "FiringPeriod": 0.8,
+      "TimeToFullFireRateAndAccuracy": 1.0,
+      "EnemyPursueDuration": 7.0,
+      "ShouldAggroOnDamage": true,
+      "AllowedTargetTypes": 30,
+      "MuzzleFlashLocationComponent": {
+        "ObjectName": "ArrowComponent Default__BPATPillbox_C:MuzzleFxLocationComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPATPillbox.3"
+      },
+      "FiringConeAngle": 180.0,
+      "DamageType": {
+        "ObjectName": "BlueprintGeneratedClass BPAntiTankKineticDamageType_C",
+        "ObjectPath": "War/Content/Blueprints/DamageTypes/BPAntiTankKineticDamageType.0"
+      },
+      "DamageTypeAlternate": null,
+      "MaximumReachability": 5000.0,
+      "FlagMesh": {
+        "ObjectName": "TeamFlagMeshComponent Default__BPATPillbox_C:FlagMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPATPillbox.16"
+      },
+      "bCanBeHidden": true,
+      "ProceduralUseVolumeFactor": 1.0,
+      "NoBuildPhysicalMaterials": [
+        {
+          "ObjectName": "PhysicalMaterial WetSandPhys",
+          "ObjectPath": "War/Content/PhysicalMaterials/WetSandPhys.0"
+        },
+        {
+          "ObjectName": "PhysicalMaterial HighwayPhys",
+          "ObjectPath": "War/Content/PhysicalMaterials/HighwayPhys.0"
+        },
+        {
+          "ObjectName": "PhysicalMaterial T1RoadPhys",
+          "ObjectPath": "War/Content/PhysicalMaterials/T1RoadPhys.0"
+        },
+        {
+          "ObjectName": "PhysicalMaterial T2RoadPhys",
+          "ObjectPath": "War/Content/PhysicalMaterials/T2RoadPhys.0"
+        },
+        {
+          "ObjectName": "PhysicalMaterial T3RoadPhys",
+          "ObjectPath": "War/Content/PhysicalMaterials/T3RoadPhys.0"
+        },
+        {
+          "ObjectName": "PhysicalMaterial SandPhys",
+          "ObjectPath": "War/Content/PhysicalMaterials/SandPhys.0"
+        },
+        {
+          "ObjectName": "PhysicalMaterial TownStone",
+          "ObjectPath": "War/Content/PhysicalMaterials/TownStone.0"
+        }
+      ],
+      "BuildGhostClass": null,
+      "BuildSiteClass": {
+        "ObjectName": "Class StructureBuildSite",
+        "ObjectPath": "/Script/War"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "5C98C2CE4BF49E1FB1FF05877CB5DE6F",
+        "SourceString": "This heavily reinforced pillbox allows the garrisoned infantry with anti-tank rifles to fire on approaching enemy armour from a safe position."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D ATPillboxIcon",
+        "ObjectPath": "War/Content/Textures/UI/StructureIcons/ATPillboxIcon.0"
+      },
+      "BuildLocationType": "EBuildLocationType::Anywhere",
+      "CodeName": "ATPillbox",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "6F622E7C4ECBCCFD937090A9D714B516",
+        "SourceString": "Anti-Tank Pillbox"
+      },
+      "ArmourType": "EArmourType::Tier3Structure",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPATPillbox_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPATPillbox.4"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPATPillbox_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPATPillbox.5"
+      },
+      "DestroyedFX": {
+        "ObjectName": "ParticleSystem GrenadeBlast",
+        "ObjectPath": "War/Content/FX/GrenadeBlast.151"
+      },
+      "DestroyedSoundCue": {
+        "ObjectName": "SoundCue StructureExplosionSmall_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/StructureExplosionSmall_Cue.0"
+      },
+      "MaxHealth": 950,
+      "Health": 950,
+      "MapIntelligenceType": "EMapIntelligenceType::Defense",
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPATPillbox_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPATPillbox.15"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPATPillbox_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPATPillbox.4"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "MuzzleFxLocationComponent",
+    "Outer": "Default__BPATPillbox_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPATPillbox_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPATPillbox.4"
+      },
+      "RelativeLocation": {
+        "X": 245.64566,
+        "Y": 0.0,
+        "Z": 166.35922
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPATPillbox_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPATPillbox_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 330.0,
+        "Y": 300.0,
+        "Z": 64.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPATPillbox_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPATPillbox.4"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 64.0
+      }
+    }
+  },
+  {
+    "Type": "MultiplexedStaticMeshComponent",
+    "Name": "MultiplexedStaticMesh_GEN_VARIABLE",
+    "Outer": "BPATPillbox_C",
+    "Properties": {
+      "TargetTag": "Multiplexed",
+      "MeshStops": [
+        {
+          "Threshold": 0,
+          "StaticMesh": {
+            "ObjectName": "StaticMesh ATPillboxCritical",
+            "ObjectPath": "War/Content/Meshes/Structures/ATPillboxCritical.2"
+          }
+        },
+        {
+          "Threshold": 33,
+          "StaticMesh": {
+            "ObjectName": "StaticMesh ATPillboxDamaged",
+            "ObjectPath": "War/Content/Meshes/Structures/ATPillboxDamaged.2"
+          }
+        },
+        {
+          "Threshold": 66,
+          "StaticMesh": {
+            "ObjectName": "StaticMesh ATPillbox",
+            "ObjectPath": "War/Content/Meshes/Structures/ATPillbox.2"
+          }
+        }
+      ],
+      "InputValue": 100,
+      "SelectedMeshIndex": 2
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "ATPillbox",
+    "Outer": "BPATPillbox_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "OccupiableComponent",
+    "Name": "OccupyComponent",
+    "Outer": "Default__BPATPillbox_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPATPillbox_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPATPillbox.4"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 90.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPATPillbox_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPATPillbox_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPATPillbox.9"
+      },
+      "VariableGuid": "B692036D-41768086-1E33EF9D-E041CA90",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPATPillbox_C:ATPillbox_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPATPillbox.14"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "1738C142-444B26E7-3B5E0DAC-A7C0F366",
+      "InternalVariableName": "ATPillbox"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class MultiplexedStaticMeshComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "MultiplexedStaticMeshComponent BPATPillbox_C:MultiplexedStaticMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPATPillbox.6"
+      },
+      "VariableGuid": "D489BE38-4F3857AF-82BDB4A4-11FD2613",
+      "InternalVariableName": "MultiplexedStaticMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPATPillbox_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPATPillbox_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPATPillbox.11"
+        },
+        {
+          "ObjectName": "SCS_Node BPATPillbox_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPATPillbox.12"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPATPillbox_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPATPillbox.11"
+        },
+        {
+          "ObjectName": "SCS_Node BPATPillbox_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPATPillbox.12"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPATPillbox_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPATPillbox.10"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ATPillbox_GEN_VARIABLE",
+    "Outer": "BPATPillbox_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh ATPillbox",
+        "ObjectPath": "War/Content/Meshes/Structures/ATPillbox.2"
+      },
+      "ComponentTags": [
+        "Multiplexed"
+      ]
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPATPillbox_C"
+  },
+  {
+    "Type": "TeamFlagMeshComponent",
+    "Name": "FlagMesh",
+    "Outer": "Default__BPATPillbox_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPATPillbox_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPATPillbox.4"
+      },
+      "RelativeLocation": {
+        "X": -77.06106,
+        "Y": -119.41761,
+        "Z": 41.81691
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 30.001188,
+        "Roll": 0.0
+      },
+      "RelativeScale3D": {
+        "X": 0.7,
+        "Y": 0.7,
+        "Z": 0.5
+      }
+    }
+  }
+]

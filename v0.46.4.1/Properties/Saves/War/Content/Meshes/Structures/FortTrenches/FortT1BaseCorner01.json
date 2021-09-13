@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FortT1BaseCorner01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "FortT1BaseCorner01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1230"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FortT1BaseCorner01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortT1WoodLogs01",
+            "ObjectPath": "War/Content/Materials/Structures/FortT1WoodLogs01.0"
+          },
+          "MaterialSlotName": "T1WoodLogs01",
+          "ImportedMaterialSlotName": "T1WoodLogs01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 370.01282,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 370.01282,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 17.722664,
+          "Y": 19.321562,
+          "Z": 202.72162
+        },
+        "BoxExtent": {
+          "X": 22.391495,
+          "Y": 22.391502,
+          "Z": 200.44612
+        },
+        "SphereRadius": 201.54018
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FortT1BaseCorner01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortT1BaseCorner01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FortT1BaseCorner01:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortT1BaseCorner01.1"
+    },
+    "LightingGuid": "365180B7-4BF13106-D5AAAA87-DBF35917",
+    "RenderData": null
+  }
+]

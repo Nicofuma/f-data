@@ -1,0 +1,121 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPScoutUniformW_C",
+    "Super": "BPUniform_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPScoutUniformW_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPScoutUniformW.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass BPUniform_C",
+      "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPUniform.0"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPScoutUniformW_C",
+    "Name": "Default__BPScoutUniformW_C",
+    "Properties": {
+      "UniformType": "EUniformType::ScoutW",
+      "SubTypeIcon": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D SubtypeScoutIcon",
+          "ObjectPath": "War/Content/Textures/UI/ItemIcons/SubtypeScoutIcon.0"
+        }
+      },
+      "CodeName": "ScoutUniformW",
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "598C7B2F4402AE8A25650F9DBCC71011",
+        "SourceString": "Warden Scout Uniform"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "00FA23754BC8C31A2DA5EAB4F1437069",
+        "SourceString": "Outrider’s Mantle"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "8BCDBE064A12E29D93C0CB8C0767BF6C",
+        "SourceString": "The Warden army relies on outriders to provide and recieve vital intelligence. Their gear is sturdy and well-suited for extended operations in rugged terrain and inclement weather."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D ScoutUniformWIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/Uniforms/ScoutUniformWIcon.0"
+      },
+      "FactionVariant": "EFactionId::Wardens",
+      "TechID": "ETechID::UnlockScoutUniform",
+      "ItemMesh": {
+        "ObjectName": "StaticMeshComponent Default__BPScoutUniformW_C:ItemMesh",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPScoutUniformW.6"
+      },
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPScoutUniformW_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPScoutUniformW.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPScoutUniformW_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPScoutUniformW.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPScoutUniformW_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPScoutUniformW_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPScoutUniformW_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPScoutUniformW.3"
+      },
+      "VariableGuid": "57CA561C-434D89CD-F65025A0-F66D62DF",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPScoutUniformW_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPScoutUniformW_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPScoutUniformW.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPScoutUniformW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPScoutUniformW_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPScoutUniformW.2"
+      }
+    }
+  }
+]

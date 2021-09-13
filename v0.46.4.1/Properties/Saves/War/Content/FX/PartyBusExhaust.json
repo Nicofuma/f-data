@@ -1,0 +1,446 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_1"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_1",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_1",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired PartyBusExhaust:ParticleModuleRequired_1",
+        "ObjectPath": "War/Content/FX/PartyBusExhaust.7"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime PartyBusExhaust:ParticleModuleLifetime_1",
+          "ObjectPath": "War/Content/FX/PartyBusExhaust.6"
+        },
+        {
+          "ObjectName": "ParticleModuleSize PartyBusExhaust:ParticleModuleSize_1",
+          "ObjectPath": "War/Content/FX/PartyBusExhaust.8"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity PartyBusExhaust:ParticleModuleVelocity_1",
+          "ObjectPath": "War/Content/FX/PartyBusExhaust.12"
+        },
+        {
+          "ObjectName": "ParticleModuleColor PartyBusExhaust:ParticleModuleColor_0",
+          "ObjectPath": "War/Content/FX/PartyBusExhaust.4"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife PartyBusExhaust:ParticleModuleSizeMultiplyLife_1",
+          "ObjectPath": "War/Content/FX/PartyBusExhaust.9"
+        },
+        {
+          "ObjectName": "ParticleModuleAccelerationConstant PartyBusExhaust:ParticleModuleAccelerationConstant_1",
+          "ObjectPath": "War/Content/FX/PartyBusExhaust.3"
+        },
+        {
+          "ObjectName": "ParticleModuleColorScaleOverLife PartyBusExhaust:ParticleModuleColorScaleOverLife_1",
+          "ObjectPath": "War/Content/FX/PartyBusExhaust.5"
+        }
+      ],
+      "TypeDataModule": {
+        "ObjectName": "ParticleModuleTypeDataRibbon PartyBusExhaust:ParticleModuleTypeDataRibbon_0",
+        "ObjectPath": "War/Content/FX/PartyBusExhaust.11"
+      },
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn PartyBusExhaust:ParticleModuleSpawn_1",
+        "ObjectPath": "War/Content/FX/PartyBusExhaust.10"
+      },
+      "PeakActiveParticles": 523
+    }
+  },
+  {
+    "Type": "ParticleModuleAccelerationConstant",
+    "Name": "ParticleModuleAccelerationConstant_1",
+    "Outer": "PartyBusExhaust",
+    "Properties": {
+      "Acceleration": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 150.0
+      },
+      "bAlwaysInWorldSpace": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColor",
+    "Name": "ParticleModuleColor_0",
+    "Outer": "PartyBusExhaust",
+    "Properties": {
+      "StartColor": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "StartAlpha": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColorScaleOverLife",
+    "Name": "ParticleModuleColorScaleOverLife_1",
+    "Outer": "PartyBusExhaust",
+    "Properties": {
+      "ColorScaleOverLife": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "AlphaScaleOverLife": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 14.999999,
+          "Values": [
+            0.0,
+            0.034393493,
+            0.12621836,
+            0.25930038,
+            0.4170166,
+            0.5829773,
+            0.74071366,
+            0.87374324,
+            0.9656281,
+            0.99998343,
+            1.0,
+            1.0,
+            0.89556843,
+            0.5499167,
+            0.17575194,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 16,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_1",
+    "Outer": "PartyBusExhaust",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 0.2,
+        "MaxValue": 0.2,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.2
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_1",
+    "Outer": "PartyBusExhaust",
+    "Properties": {
+      "Material": {
+        "ObjectName": "Material PartyBusExhaust",
+        "ObjectPath": "War/Content/FX/Materials/PartyBusExhaust.0"
+      },
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant PartyBusExhaust:ParticleModuleRequired_1.RequiredDistributionSpawnRate",
+          "ObjectPath": "War/Content/FX/PartyBusExhaust.0"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_1",
+    "Outer": "PartyBusExhaust",
+    "Properties": {
+      "StartSize": {
+        "MaxValue": 35.0,
+        "MinValueVec": {
+          "X": 35.0,
+          "Y": 35.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 35.0,
+          "Y": 35.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            35.0,
+            35.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_1",
+    "Outer": "PartyBusExhaust",
+    "Properties": {
+      "LifeMultiplier": {
+        "MinValue": 0.5,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 0.5,
+          "Y": 0.5,
+          "Z": 0.5
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 3.0,
+          "Values": [
+            1.0,
+            1.0,
+            1.0,
+            0.8703635,
+            0.8703635,
+            0.8703635,
+            0.62963647,
+            0.62963647,
+            0.62963647,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "Op": 1,
+          "EntryCount": 4,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_1",
+    "Outer": "PartyBusExhaust",
+    "Properties": {
+      "Rate": {
+        "MinValue": 20.0,
+        "MaxValue": 20.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            20.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant PartyBusExhaust:ParticleModuleSpawn_1.BurstScaleDistribution",
+          "ObjectPath": "War/Content/FX/PartyBusExhaust.1"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleTypeDataRibbon",
+    "Name": "ParticleModuleTypeDataRibbon_0",
+    "Outer": "PartyBusExhaust",
+    "Properties": {
+      "MaxTrailCount": 5,
+      "bTangentRecalculationEveryFrame": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocity",
+    "Name": "ParticleModuleVelocity_1",
+    "Outer": "PartyBusExhaust",
+    "Properties": {
+      "StartVelocity": {
+        "MaxValue": 100.0,
+        "MinValueVec": {
+          "X": 50.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 100.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            50.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "StartVelocityRadial": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_1",
+    "Outer": "PartyBusExhaust",
+    "Properties": {
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel PartyBusExhaust:ParticleSpriteEmitter_1.ParticleLODLevel_0",
+          "ObjectPath": "War/Content/FX/PartyBusExhaust.2"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "PartyBusExhaust",
+    "Properties": {
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter PartyBusExhaust:ParticleSpriteEmitter_1",
+          "ObjectPath": "War/Content/FX/PartyBusExhaust.13"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "bShouldResetPeakCounts": true,
+      "CustomOcclusionBounds": {
+        "Min": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Max": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "IsValid": 1
+      }
+    }
+  }
+]

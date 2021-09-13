@@ -1,0 +1,114 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPSoldierUniformC_C",
+    "Super": "BPUniform_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPSoldierUniformC_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPSoldierUniformC.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass BPUniform_C",
+      "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPUniform.0"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPSoldierUniformC_C",
+    "Name": "Default__BPSoldierUniformC_C",
+    "Properties": {
+      "UniformType": "EUniformType::SoldierC",
+      "CodeName": "SoldierUniformC",
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "2F717A7D477BA302A2306CAC3E9BB734",
+        "SourceString": "Colonial Soldier Uniform"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "948DCBE8412D886716EAB9BB1055FF50",
+        "SourceString": "Legionary Fatigues"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "FB818F294E37921854DD6C98E559758A",
+        "SourceString": "Standard issue infantry uniform for the Colonial Legion, designed for general frontline warfare with ballistics weapons such as rifles and machine guns."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D SoldierUniformCIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/Uniforms/SoldierUniformCIcon.0"
+      },
+      "FactionVariant": "EFactionId::Colonials",
+      "ItemMesh": {
+        "ObjectName": "StaticMeshComponent Default__BPSoldierUniformC_C:ItemMesh",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPSoldierUniformC.6"
+      },
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPSoldierUniformC_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPSoldierUniformC.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPSoldierUniformC_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPSoldierUniformC.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPSoldierUniformC_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPSoldierUniformC_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPSoldierUniformC_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPSoldierUniformC.3"
+      },
+      "VariableGuid": "57CA561C-434D89CD-F65025A0-F66D62DF",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPSoldierUniformC_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPSoldierUniformC_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPSoldierUniformC.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPSoldierUniformC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPSoldierUniformC_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPSoldierUniformC.2"
+      }
+    }
+  }
+]

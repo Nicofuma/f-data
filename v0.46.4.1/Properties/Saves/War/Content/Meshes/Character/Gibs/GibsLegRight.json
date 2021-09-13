@@ -1,0 +1,78 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "GibsLegRight",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "GibsLegRight",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2004"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "GibsLegRight",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Gibs",
+            "ObjectPath": "War/Content/Materials/Character/Event/Gibs.0"
+          },
+          "MaterialSlotName": "Gibs",
+          "ImportedMaterialSlotName": "Gibs",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 221.16489,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 221.16489,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 10.738592,
+          "Y": 18.459566,
+          "Z": 31.541786
+        },
+        "SphereRadius": 36.58417
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup GibsLegRight:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Character/Gibs/GibsLegRight.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision GibsLegRight:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Character/Gibs/GibsLegRight.1"
+    },
+    "LightingGuid": "1670575E-445B47D4-716A4D84-C01CE4AB",
+    "RenderData": null
+  }
+]

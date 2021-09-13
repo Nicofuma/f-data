@@ -1,0 +1,111 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Wheelbarrow2",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 33.353928,
+              "Y": 0.0,
+              "Z": 58.756752
+            },
+            "Rotation": {
+              "Pitch": -8.585937,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 246.96353,
+            "Y": 106.97706,
+            "Z": 112.16115,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "BuildScale3D": {
+        "X": 1.4,
+        "Y": 1.4,
+        "Z": 1.4
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Wheelbarrow2",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0xE3A3"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Wheelbarrow2",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Wheelbarrow2",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Wheelbarrow2.0"
+          },
+          "MaterialSlotName": "MI_Wheelbarrow_01a",
+          "ImportedMaterialSlotName": "MI_Wheelbarrow_01a",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 348.18213,
+            "LocalUVDensities": 377.3966,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 377.3966,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -20.950302,
+          "Y": 0.0,
+          "Z": 58.101643
+        },
+        "BoxExtent": {
+          "X": 177.82025,
+          "Y": 53.48853,
+          "Z": 57.955334
+        },
+        "SphereRadius": 187.29298
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Wheelbarrow2:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Wheelbarrow2.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Wheelbarrow2:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Wheelbarrow2.1"
+    },
+    "LightingGuid": "9A06C6C1-49E2E01D-05AD918D-D487DA12",
+    "RenderData": null
+  }
+]

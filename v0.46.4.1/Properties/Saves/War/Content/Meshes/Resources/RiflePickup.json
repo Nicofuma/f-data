@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_10398",
+    "Outer": "RiflePickup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "RiflePickup",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xBDF2"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "RiflePickup",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Rifle",
+            "ObjectPath": "War/Content/Materials/Weapons/Rifle.0"
+          },
+          "MaterialSlotName": "Rifle",
+          "ImportedMaterialSlotName": "Rifle",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 68.075966,
+            "LocalUVDensities": 78.678314,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 78.678314,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.68730164,
+          "Y": 31.879402,
+          "Z": 0.02564621
+        },
+        "BoxExtent": {
+          "X": 13.685135,
+          "Y": 72.08776,
+          "Z": 2.5712318
+        },
+        "SphereRadius": 72.84432
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup RiflePickup:BodySetup_10398",
+      "ObjectPath": "War/Content/Meshes/Resources/RiflePickup.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision RiflePickup:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Resources/RiflePickup.1"
+    },
+    "LightingGuid": "47765B9C-4C92345E-FCCE53B6-AB4DDCE0",
+    "RenderData": null
+  }
+]

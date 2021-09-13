@@ -1,0 +1,105 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ColonialHelmetPile03",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -4.634918,
+              "Y": 1.9208984,
+              "Z": 24.564716
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 129.2788,
+            "Y": 87.485825,
+            "Z": 55.6273,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_5",
+    "Outer": "ColonialHelmetPile03",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x4D2C2"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ColonialHelmetPile03",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant SoldierHelmetC",
+            "ObjectPath": "War/Content/Materials/Character/Soldier/SoldierHelmetC.0"
+          },
+          "MaterialSlotName": "Helmet_MetalColonial",
+          "ImportedMaterialSlotName": "Helmet_MetalColonial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 68.54579,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 68.54579,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -7.3276367,
+          "Y": -1.2104187,
+          "Z": 36.216038
+        },
+        "BoxExtent": {
+          "X": 122.94327,
+          "Y": 105.67087,
+          "Z": 37.66916
+        },
+        "SphereRadius": 134.15065
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ColonialHelmetPile03:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ColonialHelmetPile03.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ColonialHelmetPile03:NavCollision_5",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ColonialHelmetPile03.1"
+    },
+    "LightingGuid": "7B04734B-4342A20B-9692F9B6-AF609C7F",
+    "RenderData": null
+  }
+]

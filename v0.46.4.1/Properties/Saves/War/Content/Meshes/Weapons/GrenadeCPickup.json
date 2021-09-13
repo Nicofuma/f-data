@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "GrenadeCPickup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "GrenadeCPickup",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x367E"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "GrenadeCPickup",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ATGrenade",
+            "ObjectPath": "War/Content/Materials/Weapons/ATGrenade.0"
+          },
+          "MaterialSlotName": "ATGrenade",
+          "ImportedMaterialSlotName": "ATGrenade",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 39.49182,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 39.49182,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -6.198883E-06,
+          "Z": 22.034754
+        },
+        "BoxExtent": {
+          "X": 4.68387,
+          "Y": 5.4084673,
+          "Z": 22.034754
+        },
+        "SphereRadius": 22.067137
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup GrenadeCPickup:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Weapons/GrenadeCPickup.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision GrenadeCPickup:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Weapons/GrenadeCPickup.1"
+    },
+    "LightingGuid": "96C25AB0-45E8A29B-E928CF8C-13CD9D62",
+    "RenderData": null
+  }
+]

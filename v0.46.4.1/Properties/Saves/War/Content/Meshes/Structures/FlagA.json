@@ -1,0 +1,99 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_3",
+    "Outer": "FlagA",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "FlagA",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x7D59"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FlagA",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RepeatingMetal3",
+            "ObjectPath": "War/Content/Materials/Resources/RepeatingMetal3.0"
+          },
+          "MaterialSlotName": "Material #7890",
+          "ImportedMaterialSlotName": "Material #7890",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 165.48988,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FlagWindA",
+            "ObjectPath": "War/Content/Materials/Structures/FlagWindA.0"
+          },
+          "MaterialSlotName": "Material #7872_ncl1_1",
+          "ImportedMaterialSlotName": "Material #7872_ncl1_1",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 202.5625,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 193.25362,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 100.53357,
+          "Y": 0.0,
+          "Z": 320.33948
+        },
+        "BoxExtent": {
+          "X": 104.51166,
+          "Y": 3.9125977,
+          "Z": 320.33948
+        },
+        "SphereRadius": 336.95734
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FlagA:BodySetup_3",
+      "ObjectPath": "War/Content/Meshes/Structures/FlagA.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FlagA:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Structures/FlagA.1"
+    },
+    "LightingGuid": "04223B30-41D344B9-E9B1CDAA-EBEEB824",
+    "RenderData": null
+  }
+]

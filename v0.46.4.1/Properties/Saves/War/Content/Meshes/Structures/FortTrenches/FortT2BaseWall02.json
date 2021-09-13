@@ -1,0 +1,106 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FortT2BaseWall02",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -2.5437164,
+              "Y": 14.874254,
+              "Z": 134.39769
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 258.09796,
+            "Y": 24.715662,
+            "Z": 269.28094,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "FortT2BaseWall02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x2736"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FortT2BaseWall02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortT2WoodBeam01",
+            "ObjectPath": "War/Content/Materials/Structures/FortT2WoodBeam01.0"
+          },
+          "MaterialSlotName": "T2WoodBeams01",
+          "ImportedMaterialSlotName": "T2WoodBeams01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 338.75967,
+            "LocalUVDensities": 12.240445,
+            "LocalUVDensities": 12.240445,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 12.240445,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -2.5437164,
+          "Y": 14.874254,
+          "Z": 134.39769
+        },
+        "BoxExtent": {
+          "X": 129.04898,
+          "Y": 23.660194,
+          "Z": 134.64047
+        },
+        "SphereRadius": 182.00749
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FortT2BaseWall02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortT2BaseWall02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FortT2BaseWall02:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortT2BaseWall02.1"
+    },
+    "LightingGuid": "64EE791A-42805EBB-B009A4A2-2518DEAE",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "BarbedWireFencePillar01",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 3.8146973E-06,
+              "Z": 71.23916
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 15.259636,
+            "Y": 15.382072,
+            "Z": 224.9761,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "BarbedWireFencePillar01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x226C"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "BarbedWireFencePillar01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortT1WoodLogs01",
+            "ObjectPath": "War/Content/Materials/Structures/FortT1WoodLogs01.0"
+          },
+          "MaterialSlotName": "FortT1WoodLogs01",
+          "ImportedMaterialSlotName": "FortT1WoodLogs01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 352.85773,
+            "LocalUVDensities": 1.3633621,
+            "LocalUVDensities": 1.3633621,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BarbedWireStraight",
+            "ObjectPath": "War/Content/Materials/Environment/BarbedWireStraight.0"
+          },
+          "MaterialSlotName": "BarbedWireStraight",
+          "ImportedMaterialSlotName": "BarbedWireStraight",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 152.38821,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1.3633621,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.193017,
+          "Y": 0.005542755,
+          "Z": 71.23916
+        },
+        "BoxExtent": {
+          "X": 10.940105,
+          "Y": 11.027884,
+          "Z": 112.48805
+        },
+        "SphereRadius": 112.86917
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup BarbedWireFencePillar01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Splines/BarbedWireFencePillar01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision BarbedWireFencePillar01:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Splines/BarbedWireFencePillar01.1"
+    },
+    "LightingGuid": "8D06A6B2-45DFF03E-C3EB2E92-FED3486F",
+    "RenderData": null
+  }
+]

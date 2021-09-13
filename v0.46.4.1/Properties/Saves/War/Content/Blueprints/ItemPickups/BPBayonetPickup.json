@@ -1,0 +1,113 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPBayonetPickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPBayonetPickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPBayonetPickup.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class AccessoryPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPBayonetPickup_C",
+    "Name": "Default__BPBayonetPickup_C",
+    "Properties": {
+      "Encumbrance": 10,
+      "CodeName": "Bayonet",
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "2D231692474A10B835AD15987C4261A9",
+        "SourceString": "Bayonet"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "0FAEDE5248325A87CF08F287C4C7995D",
+        "SourceString": "Buckhorn CCQ-18"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "DC4D892841B6D810A02AD1A140CDD38D",
+        "SourceString": "Attached to the barrel of a rifle, this short blade can spear enemies in close quarters encounters."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D BayonetIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/BayonetIcon.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Accessory",
+      "ItemCategory": "EItemCategory::Utility",
+      "ItemProfileType": "EItemProfileType::Accessory",
+      "TechID": "ETechID::UnlockBayonet",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPBayonetPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPBayonetPickup.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPBayonetPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPBayonetPickup.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPBayonetPickup_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPBayonetPickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPBayonetPickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPBayonetPickup.3"
+      },
+      "VariableGuid": "DAED0277-416B47B1-9613A6B3-83C46448",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPBayonetPickup_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPBayonetPickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPBayonetPickup.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPBayonetPickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPBayonetPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPBayonetPickup.2"
+      }
+    }
+  }
+]

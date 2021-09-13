@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "bunkerLightBase",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "bunkerLightBase",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1A67"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "bunkerLightBase",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant bunkerLight",
+            "ObjectPath": "War/Content/Materials/Structures/bunkerLight.0"
+          },
+          "MaterialSlotName": "BunkerSpotLight",
+          "ImportedMaterialSlotName": "BunkerSpotLight",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 90.06316,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 90.06316,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 3.8146973E-06,
+          "Z": 9.488804
+        },
+        "BoxExtent": {
+          "X": 19.077053,
+          "Y": 29.66832,
+          "Z": 9.488791
+        },
+        "SphereRadius": 32.4226
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup bunkerLightBase:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/bunkerLightBase.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision bunkerLightBase:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/bunkerLightBase.1"
+    },
+    "LightingGuid": "FBF121CB-4D9075C2-C36DDA9E-9D76A8FB",
+    "RenderData": null
+  }
+]

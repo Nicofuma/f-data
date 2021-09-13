@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "TrenchBuildsite02SideRope02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "TrenchBuildsite02SideRope02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xC98"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TrenchBuildsite02SideRope02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RepeatingRope",
+            "ObjectPath": "War/Content/Materials/Environment/Props/RepeatingRope.0"
+          },
+          "MaterialSlotName": "RepeatingRope_001",
+          "ImportedMaterialSlotName": "RepeatingRope_001",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 126.57881,
+            "LocalUVDensities": 69.12198,
+            "LocalUVDensities": 69.12198,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 69.12198,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 80.68006,
+          "Y": 0.0491817,
+          "Z": 72.91632
+        },
+        "BoxExtent": {
+          "X": 101.613365,
+          "Y": 3.029678,
+          "Z": 3.000412
+        },
+        "SphereRadius": 101.66523
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TrenchBuildsite02SideRope02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/TrenchBuildsite02SideRope02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TrenchBuildsite02SideRope02:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/TrenchBuildsite02SideRope02.1"
+    },
+    "LightingGuid": "6482D849-464C6A18-69323EB8-60255FD8",
+    "RenderData": null
+  }
+]

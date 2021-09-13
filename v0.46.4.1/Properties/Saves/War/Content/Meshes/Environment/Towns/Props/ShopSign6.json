@@ -1,0 +1,99 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ShopSign6",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_3",
+    "Outer": "ShopSign6",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x3324"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ShopSign6",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant StreetLamp",
+            "ObjectPath": "War/Content/Materials/Environment/Props/StreetLamp.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 157.16792,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ShopSign",
+            "ObjectPath": "War/Content/Materials/Environment/Props/ShopSign.0"
+          },
+          "MaterialSlotName": "Tilling Texture",
+          "ImportedMaterialSlotName": "Tilling Texture",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 982.77924,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 488.20184,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 94.23997,
+          "Y": -3.71933E-05,
+          "Z": -22.007835
+        },
+        "BoxExtent": {
+          "X": 102.40193,
+          "Y": 4.5583367,
+          "Z": 92.508705
+        },
+        "SphereRadius": 132.73715
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ShopSign6:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Props/ShopSign6.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ShopSign6:NavCollision_3",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Props/ShopSign6.1"
+    },
+    "LightingGuid": "F2EEBE02-45F196A2-62577B83-18E70BC3",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,89 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "campsite03",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "campsite03",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1B8C6"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "campsite03",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ShorelineRocks",
+            "ObjectPath": "War/Content/Materials/Environment/ShorelineRocks.0"
+          },
+          "MaterialSlotName": "ShorelineRocks",
+          "ImportedMaterialSlotName": "Material #157",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 114.734955,
+            "LocalUVDensities": 58.624214,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 58.624214,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 3.7075272,
+          "Y": -5.1540947,
+          "Z": 7.016058
+        },
+        "BoxExtent": {
+          "X": 49.106956,
+          "Y": 52.235004,
+          "Z": 17.277641
+        },
+        "SphereRadius": 57.05428
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup campsite03:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/campsite03.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision campsite03:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/campsite03.1"
+    },
+    "LightingGuid": "388E3FF0-44977378-1AD2BCAF-97A57710",
+    "RenderData": null
+  }
+]

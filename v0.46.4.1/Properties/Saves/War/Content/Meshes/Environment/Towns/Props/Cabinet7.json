@@ -1,0 +1,99 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Cabinet7",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Cabinet7",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x85D4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Cabinet7",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Cabinets",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Cabinets.0"
+          },
+          "MaterialSlotName": "Wood",
+          "ImportedMaterialSlotName": "Wood",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 411.84427,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownWindowGlass",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownWindowGlass.0"
+          },
+          "MaterialSlotName": "Glass",
+          "ImportedMaterialSlotName": "Glass",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 78.6265,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 396.5027,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -2.2888184E-05,
+          "Z": 129.50221
+        },
+        "BoxExtent": {
+          "X": 112.61607,
+          "Y": 28.788498,
+          "Z": 130.37798
+        },
+        "SphereRadius": 171.52823
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Cabinet7:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Props/Cabinet7.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Cabinet7:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Props/Cabinet7.1"
+    },
+    "LightingGuid": "338DC0FF-41208843-8914F7BE-E001C018",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,163 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ScrapField01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "ScrapField01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x178441"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ScrapField01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant GlassBasic",
+            "ObjectPath": "War/Content/Materials/Environment/GlassBasic.0"
+          },
+          "MaterialSlotName": "GlassBasic",
+          "ImportedMaterialSlotName": "GlassBasic",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 73.59018,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant VehiclePartsShellsv2",
+            "ObjectPath": "War/Content/Materials/Environment/Props/VehiclePartsShellsv2.0"
+          },
+          "MaterialSlotName": "VehiclePartsShellsv1",
+          "ImportedMaterialSlotName": "VehiclePartsShellsv1",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1197.677,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant VehicleParts",
+            "ObjectPath": "War/Content/Materials/Environment/Props/VehicleParts.0"
+          },
+          "MaterialSlotName": "VehicleParts",
+          "ImportedMaterialSlotName": "VehicleParts",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 625.09375,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant VehiclePartsShellsv1",
+            "ObjectPath": "War/Content/Materials/Environment/Props/VehiclePartsShellsv1.0"
+          },
+          "MaterialSlotName": "VehiclePartsShellsMoss",
+          "ImportedMaterialSlotName": "VehiclePartsShellsMoss",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1222.7069,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ScrapNode",
+            "ObjectPath": "War/Content/Materials/Resources/ScrapNode.0"
+          },
+          "MaterialSlotName": "ScrapNode",
+          "ImportedMaterialSlotName": "ScrapNode",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 322.98105,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Tire01",
+            "ObjectPath": "War/Content/Materials/Vehicles/Tire01.0"
+          },
+          "MaterialSlotName": "Tire",
+          "ImportedMaterialSlotName": "Material #2",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 204.5738,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 864.9334,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -61.64267,
+          "Y": -20.080109,
+          "Z": 62.30349
+        },
+        "BoxExtent": {
+          "X": 399.6792,
+          "Y": 429.83997,
+          "Z": 159.50372
+        },
+        "SphereRadius": 453.31012
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ScrapField01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Resources/ScrapField01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ScrapField01:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Resources/ScrapField01.1"
+    },
+    "LightingGuid": "9ECF56BB-43AEC23D-4F10ED85-15B0F3FF",
+    "RenderData": null
+  }
+]

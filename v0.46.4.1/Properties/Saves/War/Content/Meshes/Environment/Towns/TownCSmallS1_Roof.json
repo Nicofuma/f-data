@@ -1,0 +1,185 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Outer": "TownCSmallS1_Roof",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 730.31683,
+              "Y": -9.941994,
+              "Z": 417.92303
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 344.5039,
+            "Y": 186.90253,
+            "Z": 204.53772,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_5",
+    "Outer": "TownCSmallS1_Roof",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0xC827"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TownCSmallS1_Roof",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant SouthPlaster01",
+            "ObjectPath": "War/Content/Materials/Environment/Town/SouthPlaster01.0"
+          },
+          "MaterialSlotName": "Plaster",
+          "ImportedMaterialSlotName": "Plaster",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 291.63467,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant SouthRoofShingles01",
+            "ObjectPath": "War/Content/Materials/Environment/Town/SouthRoofShingles01.0"
+          },
+          "MaterialSlotName": "Shingles",
+          "ImportedMaterialSlotName": "Shingles",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 177.20085,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownWoodBeams01",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownWoodBeams01.0"
+          },
+          "MaterialSlotName": "Material #26",
+          "ImportedMaterialSlotName": "Material #26",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 167.95425,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant SouthTrim",
+            "ObjectPath": "War/Content/Materials/Environment/Town/SouthTrim.0"
+          },
+          "MaterialSlotName": "SouthTrim01",
+          "ImportedMaterialSlotName": "SouthTrim01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 385.9798,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "Engine/Content/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "SouthTrim02",
+          "ImportedMaterialSlotName": "SouthTrim02",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "Engine/Content/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "SouthDoors",
+          "ImportedMaterialSlotName": "SouthDoors",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 257.51038,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 730.31683,
+          "Y": -9.941994,
+          "Z": 417.92303
+        },
+        "BoxExtent": {
+          "X": 172.25195,
+          "Y": 93.45126,
+          "Z": 102.26886
+        },
+        "SphereRadius": 217.01196
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TownCSmallS1_Roof:BodySetup_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/TownCSmallS1_Roof.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TownCSmallS1_Roof:NavCollision_5",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/TownCSmallS1_Roof.1"
+    },
+    "LightingGuid": "248DC09A-4789781A-DC34A5A2-AEF443EA",
+    "RenderData": null
+  }
+]

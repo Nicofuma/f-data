@@ -1,0 +1,1873 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "DistributionStrength",
+    "Outer": "ParticleModuleAttractorPointGravity_0",
+    "Properties": {
+      "Constant": 250.0
+    }
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "DistributionVelocityScale",
+    "Outer": "ParticleModuleLocationPrimitiveSphere_1",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_0"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_0",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "DistributionFloatConstantCurve",
+    "Name": "DistributionFloatConstantCurve_0",
+    "Outer": "ParticleModuleColorScaleOverLife_0",
+    "Properties": {
+      "ConstantCurve": {
+        "Points": [
+          {
+            "InVal": 0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAuto"
+          },
+          {
+            "InVal": 0.12888286,
+            "OutVal": 1.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": 0.5,
+            "OutVal": 1.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": 1.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_Linear"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "DistributionVectorConstantCurve",
+    "Name": "DistributionVectorConstantCurve_0",
+    "Outer": "ParticleModuleColorScaleOverLife_0",
+    "Properties": {
+      "ConstantCurve": {
+        "Points": [
+          {
+            "InVal": 0.0,
+            "OutVal": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            },
+            "ArriveTangent": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "LeaveTangent": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "InterpMode": "CIM_Linear"
+          },
+          {
+            "InVal": 1.0,
+            "OutVal": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            },
+            "ArriveTangent": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "LeaveTangent": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "InterpMode": "CIM_Linear"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "DistributionVectorConstantCurve",
+    "Name": "DistributionVectorConstantCurve_0",
+    "Outer": "ParticleModuleSizeMultiplyLife_0",
+    "Properties": {
+      "ConstantCurve": {
+        "Points": [
+          {
+            "InVal": 0.0,
+            "OutVal": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "ArriveTangent": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "LeaveTangent": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": 0.15,
+            "OutVal": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 0.06661252
+            },
+            "ArriveTangent": {
+              "X": 0.42832404,
+              "Y": 1.2150549,
+              "Z": 0.6017017
+            },
+            "LeaveTangent": {
+              "X": 0.42832404,
+              "Y": 1.2150549,
+              "Z": 0.6017017
+            },
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": 0.89471275,
+            "OutVal": {
+              "X": 0.5,
+              "Y": 2.0193644,
+              "Z": 1.0
+            },
+            "ArriveTangent": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "LeaveTangent": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": 1.0,
+            "OutVal": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "ArriveTangent": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "LeaveTangent": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "InterpMode": "CIM_CurveAuto"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_0",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired PortalSparks:ParticleModuleRequired_0",
+        "ObjectPath": "War/Content/FX/PortalSparks.13"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime PortalSparks:ParticleModuleLifetime_0",
+          "ObjectPath": "War/Content/FX/PortalSparks.11"
+        },
+        {
+          "ObjectName": "ParticleModuleSize PortalSparks:ParticleModuleSize_0",
+          "ObjectPath": "War/Content/FX/PortalSparks.14"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity PortalSparks:ParticleModuleVelocity_0",
+          "ObjectPath": "War/Content/FX/PortalSparks.18"
+        },
+        {
+          "ObjectName": "ParticleModuleLocationPrimitiveSphere PortalSparks:ParticleModuleLocationPrimitiveSphere_1",
+          "ObjectPath": "War/Content/FX/PortalSparks.12"
+        },
+        {
+          "ObjectName": "ParticleModuleColor PortalSparks:ParticleModuleColor_0",
+          "ObjectPath": "War/Content/FX/PortalSparks.9"
+        },
+        {
+          "ObjectName": "ParticleModuleAttractorPointGravity PortalSparks:ParticleModuleAttractorPointGravity_0",
+          "ObjectPath": "War/Content/FX/PortalSparks.8"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife PortalSparks:ParticleModuleSizeMultiplyLife_0",
+          "ObjectPath": "War/Content/FX/PortalSparks.15"
+        },
+        {
+          "ObjectName": "ParticleModuleColorScaleOverLife PortalSparks:ParticleModuleColorScaleOverLife_0",
+          "ObjectPath": "War/Content/FX/PortalSparks.10"
+        }
+      ],
+      "TypeDataModule": {
+        "ObjectName": "ParticleModuleTypeDataGpu PortalSparks:ParticleModuleTypeDataGpu_0",
+        "ObjectPath": "War/Content/FX/PortalSparks.17"
+      },
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn PortalSparks:ParticleModuleSpawn_0",
+        "ObjectPath": "War/Content/FX/PortalSparks.16"
+      },
+      "PeakActiveParticles": 9
+    }
+  },
+  {
+    "Type": "ParticleModuleAttractorPointGravity",
+    "Name": "ParticleModuleAttractorPointGravity_0",
+    "Outer": "PortalSparks",
+    "Properties": {
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -25.0
+      },
+      "Radius": 91.00403,
+      "StrengthRaw": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant PortalSparks:ParticleModuleAttractorPointGravity_0.DistributionStrength",
+          "ObjectPath": "War/Content/FX/PortalSparks.0"
+        }
+      },
+      "b3DDrawMode": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColor",
+    "Name": "ParticleModuleColor_0",
+    "Outer": "PortalSparks",
+    "Properties": {
+      "StartColor": {
+        "MinValue": 0.49854,
+        "MaxValue": 10.0,
+        "MinValueVec": {
+          "X": 2.8335,
+          "Y": 10.0,
+          "Z": 0.49854
+        },
+        "MaxValueVec": {
+          "X": 2.8335,
+          "Y": 10.0,
+          "Z": 0.49854
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            2.8335,
+            10.0,
+            0.49854
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "StartAlpha": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColorScaleOverLife",
+    "Name": "ParticleModuleColorScaleOverLife_0",
+    "Outer": "PortalSparks",
+    "Properties": {
+      "ColorScaleOverLife": {
+        "Distribution": {
+          "ObjectName": "DistributionVectorConstantCurve PortalSparks:ParticleModuleColorScaleOverLife_0.DistributionVectorConstantCurve_0",
+          "ObjectPath": "War/Content/FX/PortalSparks.5"
+        }
+      },
+      "AlphaScaleOverLife": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstantCurve PortalSparks:ParticleModuleColorScaleOverLife_0.DistributionFloatConstantCurve_0",
+          "ObjectPath": "War/Content/FX/PortalSparks.4"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_0",
+    "Outer": "PortalSparks",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 0.5,
+        "MaxValue": 0.7,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.5,
+            0.7
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLocationPrimitiveSphere",
+    "Name": "ParticleModuleLocationPrimitiveSphere_1",
+    "Outer": "PortalSparks",
+    "Properties": {
+      "StartRadius": {
+        "MinValue": 78.06361,
+        "MaxValue": 78.06361,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            78.06361
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "SurfaceOnly": true,
+      "VelocityScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant PortalSparks:ParticleModuleLocationPrimitiveSphere_1.DistributionVelocityScale",
+          "ObjectPath": "War/Content/FX/PortalSparks.1"
+        }
+      },
+      "StartLocation": {
+        "MinValue": -25.0,
+        "MinValueVec": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -25.0
+        },
+        "MaxValueVec": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -25.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            -25.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "b3DDrawMode": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_0",
+    "Outer": "PortalSparks",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant SoulFactoryPortalSparksC",
+        "ObjectPath": "War/Content/FX/Materials/SoulFactoryPortalSparksC.0"
+      },
+      "ScreenAlignment": "PSA_Velocity",
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant PortalSparks:ParticleModuleRequired_0.RequiredDistributionSpawnRate",
+          "ObjectPath": "War/Content/FX/PortalSparks.2"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_0",
+    "Outer": "PortalSparks",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 10.0,
+        "MaxValue": 15.0,
+        "MinValueVec": {
+          "X": 10.0,
+          "Y": 10.0,
+          "Z": 10.0
+        },
+        "MaxValueVec": {
+          "X": 5.0,
+          "Y": 12.0,
+          "Z": 15.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            10.0,
+            10.0,
+            10.0,
+            5.0,
+            12.0,
+            15.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_0",
+    "Outer": "PortalSparks",
+    "Properties": {
+      "LifeMultiplier": {
+        "Distribution": {
+          "ObjectName": "DistributionVectorConstantCurve PortalSparks:ParticleModuleSizeMultiplyLife_0.DistributionVectorConstantCurve_0",
+          "ObjectPath": "War/Content/FX/PortalSparks.6"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_0",
+    "Outer": "PortalSparks",
+    "Properties": {
+      "Rate": {
+        "MinValue": 10.0,
+        "MaxValue": 10.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            10.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant PortalSparks:ParticleModuleSpawn_0.BurstScaleDistribution",
+          "ObjectPath": "War/Content/FX/PortalSparks.3"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleTypeDataGpu",
+    "Name": "ParticleModuleTypeDataGpu_0",
+    "Outer": "PortalSparks",
+    "Properties": {
+      "EmitterInfo": {
+        "RequiredModule": {
+          "ObjectName": "ParticleModuleRequired PortalSparks:ParticleModuleRequired_0",
+          "ObjectPath": "War/Content/FX/PortalSparks.13"
+        },
+        "SpawnModule": {
+          "ObjectName": "ParticleModuleSpawn PortalSparks:ParticleModuleSpawn_0",
+          "ObjectPath": "War/Content/FX/PortalSparks.16"
+        },
+        "SpawnModules": [
+          {
+            "ObjectName": "ParticleModuleRequired PortalSparks:ParticleModuleRequired_0",
+            "ObjectPath": "War/Content/FX/PortalSparks.13"
+          },
+          {
+            "ObjectName": "ParticleModuleLifetime PortalSparks:ParticleModuleLifetime_0",
+            "ObjectPath": "War/Content/FX/PortalSparks.11"
+          },
+          {
+            "ObjectName": "ParticleModuleSize PortalSparks:ParticleModuleSize_0",
+            "ObjectPath": "War/Content/FX/PortalSparks.14"
+          },
+          {
+            "ObjectName": "ParticleModuleVelocity PortalSparks:ParticleModuleVelocity_0",
+            "ObjectPath": "War/Content/FX/PortalSparks.18"
+          },
+          {
+            "ObjectName": "ParticleModuleLocationPrimitiveSphere PortalSparks:ParticleModuleLocationPrimitiveSphere_1",
+            "ObjectPath": "War/Content/FX/PortalSparks.12"
+          }
+        ],
+        "PointAttractorStrength": {
+          "Table": {
+            "Values": [
+              2070433.4
+            ]
+          }
+        },
+        "PointAttractorPosition": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -25.0
+        },
+        "PointAttractorRadiusSq": 8281.733,
+        "InvMaxSize": {
+          "X": 0.06666667,
+          "Y": 0.06666667
+        },
+        "InvRotationRateScale": 1.4285715,
+        "MaxLifetime": 0.7,
+        "MaxParticleCount": 9,
+        "ScreenAlignment": "PSA_Velocity"
+      },
+      "ResourceData": {
+        "QuantizedColorSamples": [
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 0,
+            "Hex": "000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 40,
+            "Hex": "28000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 127,
+            "Hex": "7F000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 215,
+            "Hex": "D7000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 254,
+            "Hex": "FE000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 254,
+            "Hex": "FE000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 248,
+            "Hex": "F8000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 237,
+            "Hex": "ED000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 221,
+            "Hex": "DD000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 202,
+            "Hex": "CA000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 181,
+            "Hex": "B5000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 158,
+            "Hex": "9E000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 133,
+            "Hex": "85000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 109,
+            "Hex": "6D000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 85,
+            "Hex": "55000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 62,
+            "Hex": "3E000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 42,
+            "Hex": "2A000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 24,
+            "Hex": "18000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 11,
+            "Hex": "0B000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 3,
+            "Hex": "03000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 0,
+            "Hex": "000000"
+          }
+        ],
+        "QuantizedMiscSamples": [
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 0,
+            "Hex": "000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 1,
+            "A": 0,
+            "Hex": "000001"
+          },
+          {
+            "R": 0,
+            "G": 3,
+            "B": 7,
+            "A": 0,
+            "Hex": "000307"
+          },
+          {
+            "R": 0,
+            "G": 7,
+            "B": 16,
+            "A": 0,
+            "Hex": "000710"
+          },
+          {
+            "R": 0,
+            "G": 13,
+            "B": 28,
+            "A": 0,
+            "Hex": "000D1C"
+          },
+          {
+            "R": 0,
+            "G": 20,
+            "B": 42,
+            "A": 0,
+            "Hex": "00142A"
+          },
+          {
+            "R": 0,
+            "G": 28,
+            "B": 58,
+            "A": 0,
+            "Hex": "001C3A"
+          },
+          {
+            "R": 0,
+            "G": 36,
+            "B": 75,
+            "A": 0,
+            "Hex": "00244B"
+          },
+          {
+            "R": 0,
+            "G": 45,
+            "B": 94,
+            "A": 0,
+            "Hex": "002D5E"
+          },
+          {
+            "R": 0,
+            "G": 55,
+            "B": 113,
+            "A": 0,
+            "Hex": "003771"
+          },
+          {
+            "R": 0,
+            "G": 64,
+            "B": 133,
+            "A": 0,
+            "Hex": "004085"
+          },
+          {
+            "R": 0,
+            "G": 74,
+            "B": 152,
+            "A": 0,
+            "Hex": "004A98"
+          },
+          {
+            "R": 0,
+            "G": 83,
+            "B": 171,
+            "A": 0,
+            "Hex": "0053AB"
+          },
+          {
+            "R": 0,
+            "G": 92,
+            "B": 189,
+            "A": 0,
+            "Hex": "005CBD"
+          },
+          {
+            "R": 0,
+            "G": 101,
+            "B": 205,
+            "A": 0,
+            "Hex": "0065CD"
+          },
+          {
+            "R": 0,
+            "G": 108,
+            "B": 220,
+            "A": 0,
+            "Hex": "006CDC"
+          },
+          {
+            "R": 0,
+            "G": 115,
+            "B": 232,
+            "A": 0,
+            "Hex": "0073E8"
+          },
+          {
+            "R": 0,
+            "G": 120,
+            "B": 242,
+            "A": 0,
+            "Hex": "0078F2"
+          },
+          {
+            "R": 0,
+            "G": 124,
+            "B": 248,
+            "A": 0,
+            "Hex": "007CF8"
+          },
+          {
+            "R": 0,
+            "G": 126,
+            "B": 251,
+            "A": 0,
+            "Hex": "007EFB"
+          },
+          {
+            "R": 0,
+            "G": 127,
+            "B": 252,
+            "A": 0,
+            "Hex": "007FFC"
+          },
+          {
+            "R": 0,
+            "G": 128,
+            "B": 253,
+            "A": 0,
+            "Hex": "0080FD"
+          },
+          {
+            "R": 0,
+            "G": 129,
+            "B": 253,
+            "A": 0,
+            "Hex": "0081FD"
+          },
+          {
+            "R": 0,
+            "G": 131,
+            "B": 254,
+            "A": 0,
+            "Hex": "0083FE"
+          },
+          {
+            "R": 0,
+            "G": 132,
+            "B": 254,
+            "A": 0,
+            "Hex": "0084FE"
+          },
+          {
+            "R": 0,
+            "G": 134,
+            "B": 254,
+            "A": 0,
+            "Hex": "0086FE"
+          },
+          {
+            "R": 0,
+            "G": 135,
+            "B": 254,
+            "A": 0,
+            "Hex": "0087FE"
+          },
+          {
+            "R": 0,
+            "G": 136,
+            "B": 255,
+            "A": 0,
+            "Hex": "0088FF"
+          },
+          {
+            "R": 0,
+            "G": 138,
+            "B": 254,
+            "A": 0,
+            "Hex": "008AFE"
+          },
+          {
+            "R": 0,
+            "G": 139,
+            "B": 254,
+            "A": 0,
+            "Hex": "008BFE"
+          },
+          {
+            "R": 0,
+            "G": 141,
+            "B": 254,
+            "A": 0,
+            "Hex": "008DFE"
+          },
+          {
+            "R": 0,
+            "G": 142,
+            "B": 254,
+            "A": 0,
+            "Hex": "008EFE"
+          },
+          {
+            "R": 0,
+            "G": 144,
+            "B": 253,
+            "A": 0,
+            "Hex": "0090FD"
+          },
+          {
+            "R": 0,
+            "G": 146,
+            "B": 253,
+            "A": 0,
+            "Hex": "0092FD"
+          },
+          {
+            "R": 0,
+            "G": 147,
+            "B": 252,
+            "A": 0,
+            "Hex": "0093FC"
+          },
+          {
+            "R": 0,
+            "G": 149,
+            "B": 251,
+            "A": 0,
+            "Hex": "0095FB"
+          },
+          {
+            "R": 0,
+            "G": 151,
+            "B": 250,
+            "A": 0,
+            "Hex": "0097FA"
+          },
+          {
+            "R": 0,
+            "G": 152,
+            "B": 249,
+            "A": 0,
+            "Hex": "0098F9"
+          },
+          {
+            "R": 0,
+            "G": 154,
+            "B": 249,
+            "A": 0,
+            "Hex": "009AF9"
+          },
+          {
+            "R": 0,
+            "G": 156,
+            "B": 247,
+            "A": 0,
+            "Hex": "009CF7"
+          },
+          {
+            "R": 0,
+            "G": 157,
+            "B": 246,
+            "A": 0,
+            "Hex": "009DF6"
+          },
+          {
+            "R": 0,
+            "G": 159,
+            "B": 245,
+            "A": 0,
+            "Hex": "009FF5"
+          },
+          {
+            "R": 0,
+            "G": 161,
+            "B": 244,
+            "A": 0,
+            "Hex": "00A1F4"
+          },
+          {
+            "R": 0,
+            "G": 163,
+            "B": 243,
+            "A": 0,
+            "Hex": "00A3F3"
+          },
+          {
+            "R": 0,
+            "G": 164,
+            "B": 241,
+            "A": 0,
+            "Hex": "00A4F1"
+          },
+          {
+            "R": 0,
+            "G": 166,
+            "B": 240,
+            "A": 0,
+            "Hex": "00A6F0"
+          },
+          {
+            "R": 0,
+            "G": 168,
+            "B": 238,
+            "A": 0,
+            "Hex": "00A8EE"
+          },
+          {
+            "R": 0,
+            "G": 170,
+            "B": 237,
+            "A": 0,
+            "Hex": "00AAED"
+          },
+          {
+            "R": 0,
+            "G": 171,
+            "B": 235,
+            "A": 0,
+            "Hex": "00ABEB"
+          },
+          {
+            "R": 0,
+            "G": 173,
+            "B": 233,
+            "A": 0,
+            "Hex": "00ADE9"
+          },
+          {
+            "R": 0,
+            "G": 175,
+            "B": 232,
+            "A": 0,
+            "Hex": "00AFE8"
+          },
+          {
+            "R": 0,
+            "G": 177,
+            "B": 230,
+            "A": 0,
+            "Hex": "00B1E6"
+          },
+          {
+            "R": 0,
+            "G": 179,
+            "B": 228,
+            "A": 0,
+            "Hex": "00B3E4"
+          },
+          {
+            "R": 0,
+            "G": 180,
+            "B": 226,
+            "A": 0,
+            "Hex": "00B4E2"
+          },
+          {
+            "R": 0,
+            "G": 182,
+            "B": 224,
+            "A": 0,
+            "Hex": "00B6E0"
+          },
+          {
+            "R": 0,
+            "G": 184,
+            "B": 222,
+            "A": 0,
+            "Hex": "00B8DE"
+          },
+          {
+            "R": 0,
+            "G": 186,
+            "B": 220,
+            "A": 0,
+            "Hex": "00BADC"
+          },
+          {
+            "R": 0,
+            "G": 188,
+            "B": 218,
+            "A": 0,
+            "Hex": "00BCDA"
+          },
+          {
+            "R": 0,
+            "G": 190,
+            "B": 216,
+            "A": 0,
+            "Hex": "00BED8"
+          },
+          {
+            "R": 0,
+            "G": 191,
+            "B": 214,
+            "A": 0,
+            "Hex": "00BFD6"
+          },
+          {
+            "R": 0,
+            "G": 193,
+            "B": 212,
+            "A": 0,
+            "Hex": "00C1D4"
+          },
+          {
+            "R": 0,
+            "G": 195,
+            "B": 210,
+            "A": 0,
+            "Hex": "00C3D2"
+          },
+          {
+            "R": 0,
+            "G": 197,
+            "B": 208,
+            "A": 0,
+            "Hex": "00C5D0"
+          },
+          {
+            "R": 0,
+            "G": 199,
+            "B": 206,
+            "A": 0,
+            "Hex": "00C7CE"
+          },
+          {
+            "R": 0,
+            "G": 200,
+            "B": 204,
+            "A": 0,
+            "Hex": "00C8CC"
+          },
+          {
+            "R": 0,
+            "G": 202,
+            "B": 201,
+            "A": 0,
+            "Hex": "00CAC9"
+          },
+          {
+            "R": 0,
+            "G": 204,
+            "B": 199,
+            "A": 0,
+            "Hex": "00CCC7"
+          },
+          {
+            "R": 0,
+            "G": 206,
+            "B": 197,
+            "A": 0,
+            "Hex": "00CEC5"
+          },
+          {
+            "R": 0,
+            "G": 207,
+            "B": 195,
+            "A": 0,
+            "Hex": "00CFC3"
+          },
+          {
+            "R": 0,
+            "G": 209,
+            "B": 193,
+            "A": 0,
+            "Hex": "00D1C1"
+          },
+          {
+            "R": 0,
+            "G": 211,
+            "B": 190,
+            "A": 0,
+            "Hex": "00D3BE"
+          },
+          {
+            "R": 0,
+            "G": 212,
+            "B": 188,
+            "A": 0,
+            "Hex": "00D4BC"
+          },
+          {
+            "R": 0,
+            "G": 214,
+            "B": 186,
+            "A": 0,
+            "Hex": "00D6BA"
+          },
+          {
+            "R": 0,
+            "G": 216,
+            "B": 184,
+            "A": 0,
+            "Hex": "00D8B8"
+          },
+          {
+            "R": 0,
+            "G": 217,
+            "B": 181,
+            "A": 0,
+            "Hex": "00D9B5"
+          },
+          {
+            "R": 0,
+            "G": 219,
+            "B": 179,
+            "A": 0,
+            "Hex": "00DBB3"
+          },
+          {
+            "R": 0,
+            "G": 220,
+            "B": 177,
+            "A": 0,
+            "Hex": "00DCB1"
+          },
+          {
+            "R": 0,
+            "G": 222,
+            "B": 175,
+            "A": 0,
+            "Hex": "00DEAF"
+          },
+          {
+            "R": 0,
+            "G": 224,
+            "B": 173,
+            "A": 0,
+            "Hex": "00E0AD"
+          },
+          {
+            "R": 0,
+            "G": 225,
+            "B": 171,
+            "A": 0,
+            "Hex": "00E1AB"
+          },
+          {
+            "R": 0,
+            "G": 227,
+            "B": 168,
+            "A": 0,
+            "Hex": "00E3A8"
+          },
+          {
+            "R": 0,
+            "G": 228,
+            "B": 166,
+            "A": 0,
+            "Hex": "00E4A6"
+          },
+          {
+            "R": 0,
+            "G": 229,
+            "B": 164,
+            "A": 0,
+            "Hex": "00E5A4"
+          },
+          {
+            "R": 0,
+            "G": 231,
+            "B": 162,
+            "A": 0,
+            "Hex": "00E7A2"
+          },
+          {
+            "R": 0,
+            "G": 232,
+            "B": 160,
+            "A": 0,
+            "Hex": "00E8A0"
+          },
+          {
+            "R": 0,
+            "G": 234,
+            "B": 158,
+            "A": 0,
+            "Hex": "00EA9E"
+          },
+          {
+            "R": 0,
+            "G": 235,
+            "B": 156,
+            "A": 0,
+            "Hex": "00EB9C"
+          },
+          {
+            "R": 0,
+            "G": 236,
+            "B": 154,
+            "A": 0,
+            "Hex": "00EC9A"
+          },
+          {
+            "R": 0,
+            "G": 237,
+            "B": 152,
+            "A": 0,
+            "Hex": "00ED98"
+          },
+          {
+            "R": 0,
+            "G": 239,
+            "B": 151,
+            "A": 0,
+            "Hex": "00EF97"
+          },
+          {
+            "R": 0,
+            "G": 240,
+            "B": 149,
+            "A": 0,
+            "Hex": "00F095"
+          },
+          {
+            "R": 0,
+            "G": 241,
+            "B": 147,
+            "A": 0,
+            "Hex": "00F193"
+          },
+          {
+            "R": 0,
+            "G": 242,
+            "B": 145,
+            "A": 0,
+            "Hex": "00F291"
+          },
+          {
+            "R": 0,
+            "G": 243,
+            "B": 144,
+            "A": 0,
+            "Hex": "00F390"
+          },
+          {
+            "R": 0,
+            "G": 244,
+            "B": 142,
+            "A": 0,
+            "Hex": "00F48E"
+          },
+          {
+            "R": 0,
+            "G": 245,
+            "B": 141,
+            "A": 0,
+            "Hex": "00F58D"
+          },
+          {
+            "R": 0,
+            "G": 246,
+            "B": 139,
+            "A": 0,
+            "Hex": "00F68B"
+          },
+          {
+            "R": 0,
+            "G": 247,
+            "B": 138,
+            "A": 0,
+            "Hex": "00F78A"
+          },
+          {
+            "R": 0,
+            "G": 248,
+            "B": 136,
+            "A": 0,
+            "Hex": "00F888"
+          },
+          {
+            "R": 0,
+            "G": 249,
+            "B": 135,
+            "A": 0,
+            "Hex": "00F987"
+          },
+          {
+            "R": 0,
+            "G": 249,
+            "B": 134,
+            "A": 0,
+            "Hex": "00F986"
+          },
+          {
+            "R": 0,
+            "G": 250,
+            "B": 133,
+            "A": 0,
+            "Hex": "00FA85"
+          },
+          {
+            "R": 0,
+            "G": 251,
+            "B": 132,
+            "A": 0,
+            "Hex": "00FB84"
+          },
+          {
+            "R": 0,
+            "G": 251,
+            "B": 131,
+            "A": 0,
+            "Hex": "00FB83"
+          },
+          {
+            "R": 0,
+            "G": 252,
+            "B": 130,
+            "A": 0,
+            "Hex": "00FC82"
+          },
+          {
+            "R": 0,
+            "G": 252,
+            "B": 129,
+            "A": 0,
+            "Hex": "00FC81"
+          },
+          {
+            "R": 0,
+            "G": 253,
+            "B": 128,
+            "A": 0,
+            "Hex": "00FD80"
+          },
+          {
+            "R": 0,
+            "G": 253,
+            "B": 128,
+            "A": 0,
+            "Hex": "00FD80"
+          },
+          {
+            "R": 0,
+            "G": 254,
+            "B": 127,
+            "A": 0,
+            "Hex": "00FE7F"
+          },
+          {
+            "R": 0,
+            "G": 254,
+            "B": 126,
+            "A": 0,
+            "Hex": "00FE7E"
+          },
+          {
+            "R": 0,
+            "G": 254,
+            "B": 126,
+            "A": 0,
+            "Hex": "00FE7E"
+          },
+          {
+            "R": 0,
+            "G": 254,
+            "B": 126,
+            "A": 0,
+            "Hex": "00FE7E"
+          },
+          {
+            "R": 0,
+            "G": 254,
+            "B": 126,
+            "A": 0,
+            "Hex": "00FE7E"
+          },
+          {
+            "R": 0,
+            "G": 255,
+            "B": 125,
+            "A": 0,
+            "Hex": "00FF7D"
+          },
+          {
+            "R": 0,
+            "G": 254,
+            "B": 125,
+            "A": 0,
+            "Hex": "00FE7D"
+          },
+          {
+            "R": 0,
+            "G": 247,
+            "B": 122,
+            "A": 0,
+            "Hex": "00F77A"
+          },
+          {
+            "R": 0,
+            "G": 233,
+            "B": 115,
+            "A": 0,
+            "Hex": "00E973"
+          },
+          {
+            "R": 0,
+            "G": 214,
+            "B": 105,
+            "A": 0,
+            "Hex": "00D669"
+          },
+          {
+            "R": 0,
+            "G": 191,
+            "B": 94,
+            "A": 0,
+            "Hex": "00BF5E"
+          },
+          {
+            "R": 0,
+            "G": 164,
+            "B": 81,
+            "A": 0,
+            "Hex": "00A451"
+          },
+          {
+            "R": 0,
+            "G": 136,
+            "B": 67,
+            "A": 0,
+            "Hex": "008843"
+          },
+          {
+            "R": 0,
+            "G": 107,
+            "B": 53,
+            "A": 0,
+            "Hex": "006B35"
+          },
+          {
+            "R": 0,
+            "G": 80,
+            "B": 39,
+            "A": 0,
+            "Hex": "005027"
+          },
+          {
+            "R": 0,
+            "G": 54,
+            "B": 27,
+            "A": 0,
+            "Hex": "00361B"
+          },
+          {
+            "R": 0,
+            "G": 32,
+            "B": 16,
+            "A": 0,
+            "Hex": "002010"
+          },
+          {
+            "R": 0,
+            "G": 15,
+            "B": 7,
+            "A": 0,
+            "Hex": "000F07"
+          },
+          {
+            "R": 0,
+            "G": 4,
+            "B": 2,
+            "A": 0,
+            "Hex": "000402"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 0,
+            "Hex": "000000"
+          }
+        ],
+        "ColorScale": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0,
+          "W": 1.0
+        },
+        "ColorBias": {
+          "X": 2.8335,
+          "Y": 10.0,
+          "Z": 0.49854,
+          "W": 0.0
+        },
+        "MiscScale": {
+          "X": 15.187347,
+          "Y": 30.289042,
+          "Z": 0.0,
+          "W": 0.0
+        },
+        "SimulationAttrCurveBias": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 0.0,
+          "W": 1.0
+        },
+        "SubImageSize": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0,
+          "W": 1.0
+        },
+        "SizeBySpeed": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0,
+          "W": 1.0
+        },
+        "PerParticleVectorFieldBias": 1.0,
+        "CollisionRadiusScale": 0.5,
+        "CollisionRandomDistribution": 1.0,
+        "OneMinusFriction": 1.0,
+        "RotationRateScale": 0.7,
+        "ScreenAlignment": "PSA_Velocity"
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocity",
+    "Name": "ParticleModuleVelocity_0",
+    "Outer": "PortalSparks",
+    "Properties": {
+      "StartVelocity": {
+        "MinValue": -10.0,
+        "MaxValue": 100.0,
+        "MinValueVec": {
+          "X": -10.0,
+          "Y": -10.0,
+          "Z": 50.0
+        },
+        "MaxValueVec": {
+          "X": 10.0,
+          "Y": 10.0,
+          "Z": 100.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -10.0,
+            -10.0,
+            50.0,
+            10.0,
+            10.0,
+            100.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "StartVelocityRadial": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_0",
+    "Outer": "PortalSparks",
+    "Properties": {
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel PortalSparks:ParticleSpriteEmitter_0.ParticleLODLevel_0",
+          "ObjectPath": "War/Content/FX/PortalSparks.7"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "PortalSparks",
+    "Properties": {
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter PortalSparks:ParticleSpriteEmitter_0",
+          "ObjectPath": "War/Content/FX/PortalSparks.19"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "FixedRelativeBoundingBox": {
+        "Min": {
+          "X": -1000.0,
+          "Y": -1000.0,
+          "Z": -1000.0
+        },
+        "Max": {
+          "X": 1000.0,
+          "Y": 1000.0,
+          "Z": 1000.0
+        },
+        "IsValid": 1
+      },
+      "bUseFixedRelativeBoundingBox": true,
+      "bShouldResetPeakCounts": true,
+      "CustomOcclusionBounds": {
+        "Min": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Max": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "IsValid": 1
+      }
+    }
+  }
+]

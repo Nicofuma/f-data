@@ -1,0 +1,122 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "TankParts_03",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -2.2899628,
+              "Y": -1.7947693,
+              "Z": -0.7910843
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 64.342224,
+            "Y": 711.6194,
+            "Z": 146.4972,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "TankParts_03",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x16541"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TankParts_03",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant HalfTrack",
+            "ObjectPath": "War/Content/Materials/Vehicles/HalfTrack.0"
+          },
+          "MaterialSlotName": "Material #25",
+          "ImportedMaterialSlotName": "Material #25",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 2001.1588,
+            "LocalUVDensities": 2.2223508,
+            "LocalUVDensities": 1401.9049,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TankTread",
+            "ObjectPath": "War/Content/Materials/Vehicles/TankTread.0"
+          },
+          "MaterialSlotName": "Material #47",
+          "ImportedMaterialSlotName": "Material #47",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 125.25861,
+            "LocalUVDensities": 6.5634494,
+            "LocalUVDensities": 972.848,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1307.5017,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 2,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -2.2899628,
+          "Y": -1.7947693,
+          "Z": -0.7910843
+        },
+        "BoxExtent": {
+          "X": 32.171112,
+          "Y": 355.8097,
+          "Z": 73.2486
+        },
+        "SphereRadius": 357.26114
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TankParts_03:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/TankParts_03.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TankParts_03:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/TankParts_03.1"
+    },
+    "LightingGuid": "70648616-44FE77A0-632A6FBD-7F066775",
+    "RenderData": null
+  }
+]

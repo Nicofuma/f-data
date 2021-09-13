@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_TruckBaseW",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "SM_TruckBaseW",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2501C"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_TruckBaseW",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TruckWar",
+            "ObjectPath": "War/Content/Materials/Vehicles/TruckWar.0"
+          },
+          "MaterialSlotName": "TruckWar",
+          "ImportedMaterialSlotName": "TruckWar",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1278.3533,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1278.3533,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 262.71466,
+          "Z": 200.32707
+        },
+        "BoxExtent": {
+          "X": 150.85577,
+          "Y": 149.97238,
+          "Z": 140.9061
+        },
+        "SphereRadius": 227.43935
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_TruckBaseW:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Vehicles/PrototypeVehicles/SM_TruckBaseW.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_TruckBaseW:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Vehicles/PrototypeVehicles/SM_TruckBaseW.1"
+    },
+    "LightingGuid": "10BABEC0-4CA02305-534AED8A-63592586",
+    "RenderData": null
+  }
+]

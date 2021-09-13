@@ -1,0 +1,148 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "TroopShipDestroyed",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "TroopShipDestroyed",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xAF1D2"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TroopShipDestroyed",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TroopShipSideDestroyed",
+            "ObjectPath": "War/Content/Materials/Vehicles/TroopShipSideDestroyed.0"
+          },
+          "MaterialSlotName": "TroopShipSide",
+          "ImportedMaterialSlotName": "TroopShipSide",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1792.6903,
+            "LocalUVDensities": 1.3764437,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TroopShipDeckDestroyed",
+            "ObjectPath": "War/Content/Materials/Environment/TroopShipDeckDestroyed.0"
+          },
+          "MaterialSlotName": "TroopShipDeck",
+          "ImportedMaterialSlotName": "TroopShipDeck",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1858.2301,
+            "LocalUVDensities": 1.8277884,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TroopShipGlass",
+            "ObjectPath": "War/Content/Materials/Environment/TroopShipGlass.0"
+          },
+          "MaterialSlotName": "GlassBasic",
+          "ImportedMaterialSlotName": "GlassBasic",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 386.93167,
+            "LocalUVDensities": 4.8972383,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RepeatingRope",
+            "ObjectPath": "War/Content/Materials/Environment/Props/RepeatingRope.0"
+          },
+          "MaterialSlotName": "RepeatingRopes",
+          "ImportedMaterialSlotName": "RepeatingRopes",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 25.726513,
+            "LocalUVDensities": 1.5314347,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TroopShipDoorDestroyed",
+            "ObjectPath": "War/Content/Materials/Environment/TroopShipDoorDestroyed.0"
+          },
+          "MaterialSlotName": "TroopShipDoor",
+          "ImportedMaterialSlotName": "TroopShipDoor",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1422.328,
+            "LocalUVDensities": 2.3606179,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1.8060849,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -14.699829,
+          "Y": 150.82379,
+          "Z": 279.59888
+        },
+        "BoxExtent": {
+          "X": 382.79706,
+          "Y": 1095.5251,
+          "Z": 512.9835
+        },
+        "SphereRadius": 1133.4849
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TroopShipDestroyed:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Vehicles/TroopShipDestroyed.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TroopShipDestroyed:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Vehicles/TroopShipDestroyed.1"
+    },
+    "LightingGuid": "2DABDB6F-4BEFCE0D-A03A229C-28336914",
+    "RenderData": null
+  }
+]

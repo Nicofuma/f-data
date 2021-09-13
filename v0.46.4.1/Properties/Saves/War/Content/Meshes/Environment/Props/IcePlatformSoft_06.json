@@ -1,0 +1,173 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Outer": "IcePlatformSoft_06",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -30.288162,
+                "Y": -46.11077,
+                "Z": -9.89717
+              },
+              {
+                "X": 5.496942,
+                "Y": -0.7330818,
+                "Z": -29.339172
+              },
+              {
+                "X": -48.81171,
+                "Y": 12.862596,
+                "Z": -5.360976
+              },
+              {
+                "X": 27.05302,
+                "Y": 19.333038,
+                "Z": 29.363293
+              },
+              {
+                "X": 44.636196,
+                "Y": -2.4071045,
+                "Z": -1.974257
+              },
+              {
+                "X": 0.04449749,
+                "Y": 46.07722,
+                "Z": -1.487081
+              },
+              {
+                "X": 48.78382,
+                "Y": 39.06153,
+                "Z": -1.4710755
+              },
+              {
+                "X": 42.22385,
+                "Y": 37.49597,
+                "Z": -21.357195
+              },
+              {
+                "X": 8.981633,
+                "Y": 42.62532,
+                "Z": -21.396505
+              },
+              {
+                "X": -0.025037766,
+                "Y": -30.19928,
+                "Z": -21.92282
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -48.81171,
+                "Y": -46.11077,
+                "Z": -29.339172
+              },
+              "Max": {
+                "X": 48.78382,
+                "Y": 46.07722,
+                "Z": 29.363293
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "IcePlatformSoft_06",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 793,
+        "SizeOnDisk": 793,
+        "OffsetInFile": "0x1A94"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "IcePlatformSoft_06",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant IceWallTile",
+            "ObjectPath": "War/Content/Materials/Environment/Props/IceWallTile.0"
+          },
+          "MaterialSlotName": "IceBurg",
+          "ImportedMaterialSlotName": "IcePlatform",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 580.4413,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 580.4413,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 48.7285,
+          "Y": 46.02857,
+          "Z": 29.30957
+        },
+        "SphereRadius": 62.445515
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup IcePlatformSoft_06:BodySetup_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/IcePlatformSoft_06.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision IcePlatformSoft_06:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/IcePlatformSoft_06.1"
+    },
+    "LightingGuid": "4606EB14-4FDCF941-224EDCAA-8B538CEC",
+    "RenderData": null
+  }
+]

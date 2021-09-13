@@ -1,0 +1,122 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "RifleLongCPickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript RifleLongCPickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleLongCPickup.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class FirearmPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "RifleLongCPickup_C",
+    "Name": "Default__RifleLongCPickup_C",
+    "Properties": {
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass RifleLongCComponent_C",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleLongCComponent.0"
+      },
+      "Encumbrance": 120,
+      "CodeName": "RifleLongC",
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "BCCF1A324A5B02762FEB9CAC8B207ADE",
+        "SourceString": "Long Rifle"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "CC641CFA4622AC8F93AAB6AD11EB5250",
+        "SourceString": "KRR2-790 Omen"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "1800CBE8470861D5A371569EE5FA58E8",
+        "SourceString": "An older but reliable model of Kraunian long rifle. The Omen is a sturdy, simple weapon best used in long-distance skirmishes."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D RifleLongC",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/RifleLongC.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Primary",
+      "ItemCategory": "EItemCategory::SmallArms",
+      "ItemFlagsMask": 129,
+      "ItemProfileType": "EItemProfileType::HandheldWeapon",
+      "FactionVariant": "EFactionId::Colonials",
+      "TechID": "ETechID::UnlockRifleLong",
+      "ItemMesh": {
+        "ObjectName": "StaticMeshComponent Default__RifleLongCPickup_C:ItemMesh",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleLongCPickup.6"
+      },
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__RifleLongCPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleLongCPickup.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__RifleLongCPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleLongCPickup.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__RifleLongCPickup_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "RifleLongCPickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent RifleLongCPickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleLongCPickup.3"
+      },
+      "VariableGuid": "7618B329-4EFE72C9-D72654B7-ED3B4F87",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "RifleLongCPickup_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node RifleLongCPickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleLongCPickup.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__RifleLongCPickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__RifleLongCPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleLongCPickup.2"
+      }
+    }
+  }
+]

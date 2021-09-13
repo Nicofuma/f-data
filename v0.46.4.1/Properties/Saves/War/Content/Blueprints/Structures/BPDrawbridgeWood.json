@@ -1,0 +1,693 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "MultiplexedSkeletalMesh",
+    "Outer": "BPDrawbridgeWood_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class MultiplexedSkeletalMeshComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPDrawbridgeWood_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPDrawbridgeWood_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.21"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class Drawbridge",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPDrawbridgeWood_C:MultiplexedSkeletalMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.0"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPDrawbridgeWood_C",
+    "Name": "Default__BPDrawbridgeWood_C",
+    "Properties": {
+      "SideAMesh": {
+        "ObjectName": "SkeletalMeshComponent Default__BPDrawbridgeWood_C:SideAMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.22"
+      },
+      "SideBMesh": {
+        "ObjectName": "SkeletalMeshComponent Default__BPDrawbridgeWood_C:SideBMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.23"
+      },
+      "SideAUseArea": {
+        "ObjectName": "BoxComponent Default__BPDrawbridgeWood_C:SideAUseArea",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.9"
+      },
+      "SideBUseArea": {
+        "ObjectName": "BoxComponent Default__BPDrawbridgeWood_C:SideBUseArea",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.11"
+      },
+      "SideAProxy": {
+        "ObjectName": "PersistentProxyComponent Default__BPDrawbridgeWood_C:SideAProxy",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.14"
+      },
+      "SideBProxy": {
+        "ObjectName": "PersistentProxyComponent Default__BPDrawbridgeWood_C:SideBProxy",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.15"
+      },
+      "SideBottomUseArea": {
+        "ObjectName": "BoxComponent Default__BPDrawbridgeWood_C:SideBottomUseArea",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.10"
+      },
+      "AboveBlockingArea": {
+        "ObjectName": "BoxComponent Default__BPDrawbridgeWood_C:AboveBlockingArea",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.5"
+      },
+      "AboveBlockingVolume": {
+        "ObjectName": "BoxComponent Default__BPDrawbridgeWood_C:AboveBlockingVolume",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.6"
+      },
+      "BelowBlockingArea": {
+        "ObjectName": "BoxComponent Default__BPDrawbridgeWood_C:BelowBlockingArea",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.7"
+      },
+      "BelowBlockingVolume": {
+        "ObjectName": "BoxComponent Default__BPDrawbridgeWood_C:BelowBlockingVolume",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.8"
+      },
+      "SwitchSound": {
+        "ObjectName": "SoundCue BridgeSwitch_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Environment/BridgeSwitch_Cue.0"
+      },
+      "OpenedSound": {
+        "ObjectName": "SoundCue BridgeClosed_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Environment/BridgeClosed_Cue.0"
+      },
+      "ClosedSound": {
+        "ObjectName": "SoundCue BridgeClosed_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Environment/BridgeClosed_Cue.0"
+      },
+      "MovingLoop": {
+        "ObjectName": "AudioComponent Default__BPDrawbridgeWood_C:MovingLoop",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.4"
+      },
+      "Ladder1Location": {
+        "ObjectName": "SceneComponent Default__BPDrawbridgeWood_C:Ladder1Location",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.17"
+      },
+      "Ladder2Location": {
+        "ObjectName": "SceneComponent Default__BPDrawbridgeWood_C:Ladder2Location",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.18"
+      },
+      "LadderType": {
+        "ObjectName": "BlueprintGeneratedClass BasicLadder3_C",
+        "ObjectPath": "War/Content/Blueprints/Environment/BasicLadder3.1"
+      },
+      "BuildSiteClass": {
+        "ObjectName": "BlueprintGeneratedClass BPDrawbridgeWoodBuildSite_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.1"
+      },
+      "BaseStructureClass": {
+        "ObjectName": "BlueprintGeneratedClass BPDestroyedDrawbridgeWood_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedDrawbridgeWood.1"
+      },
+      "Icon": {
+        "ObjectName": "Texture2D SandbagsStructureIcon",
+        "ObjectPath": "War/Content/Textures/UI/StructureIcons/SandbagsStructureIcon.0"
+      },
+      "DestroyedDamageExtent": {
+        "X": 250.0,
+        "Y": 1500.0,
+        "Z": 1000.0
+      },
+      "CodeName": "DrawbridgeWood",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "3E905B724B097CC7E5D341B8F7EEF3BF",
+        "SourceString": "Wooden Drawbridge"
+      },
+      "ArmourType": "EArmourType::Tier2BStructure",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPDrawbridgeWood_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPDrawbridgeWood_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.12"
+      },
+      "DestroyedFX": {
+        "ObjectName": "ParticleSystem BridgeExplosionWoiod",
+        "ObjectPath": "War/Content/FX/BridgeExplosionWoiod.55"
+      },
+      "DestroyedSoundCue": {
+        "ObjectName": "SoundCue WoodExplosion02_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Explosions/WoodExplosion02_Cue.0"
+      },
+      "MaxHealth": 1200,
+      "Health": 1200,
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPDrawbridgeWood_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.24"
+      },
+      "NetCullDistanceSquared": 50000000.0,
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPDrawbridgeWood_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPDrawbridgeWood_C"
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "MovingLoop",
+    "Outer": "Default__BPDrawbridgeWood_C",
+    "Properties": {
+      "Sound": {
+        "ObjectName": "SoundCue BridgeOpen_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Environment/BridgeOpen_Cue.0"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPDrawbridgeWood_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.3"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "AboveBlockingArea",
+    "Outer": "Default__BPDrawbridgeWood_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 238.0,
+        "Y": 1860.0,
+        "Z": 512.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPDrawbridgeWood_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 630.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "AboveBlockingVolume",
+    "Outer": "Default__BPDrawbridgeWood_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 238.0,
+        "Y": 1860.0,
+        "Z": 512.0
+      },
+      "BodyInstance": {
+        "CollisionProfileName": "Custom",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Projectile",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapDowncast",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPDrawbridgeWood_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 630.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BelowBlockingArea",
+    "Outer": "Default__BPDrawbridgeWood_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 190.0,
+        "Y": 1460.0,
+        "Z": 256.0
+      },
+      "BodyInstance": {
+        "CollisionProfileName": "Custom",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapDowncast",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Projectile",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPDrawbridgeWood_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -230.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BelowBlockingVolume",
+    "Outer": "Default__BPDrawbridgeWood_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 190.0,
+        "Y": 1460.0,
+        "Z": 256.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPDrawbridgeWood_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -230.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "SideAUseArea",
+    "Outer": "Default__BPDrawbridgeWood_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 64.0,
+        "Y": 64.0,
+        "Z": 128.0
+      },
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPDrawbridgeWood_C:SideAMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.22"
+      },
+      "RelativeLocation": {
+        "X": -143.0,
+        "Y": 391.0,
+        "Z": 187.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "SideBottomUseArea",
+    "Outer": "Default__BPDrawbridgeWood_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 1300.0,
+        "Y": 1400.0,
+        "Z": 128.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPDrawbridgeWood_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -512.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "SideBUseArea",
+    "Outer": "Default__BPDrawbridgeWood_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 64.0,
+        "Y": 64.0,
+        "Z": 128.0
+      },
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPDrawbridgeWood_C:SideBMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.23"
+      },
+      "RelativeLocation": {
+        "X": -144.90848,
+        "Y": 388.93423,
+        "Z": 188.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPDrawbridgeWood_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPDrawbridgeWood_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.3"
+      }
+    }
+  },
+  {
+    "Type": "MultiplexedSkeletalMeshComponent",
+    "Name": "MultiplexedSkeletalMesh_GEN_VARIABLE",
+    "Outer": "BPDrawbridgeWood_C",
+    "Properties": {
+      "TargetTag": "Multiplex",
+      "MeshStops": [
+        {
+          "Threshold": 0,
+          "SkeletalMesh": {
+            "ObjectName": "SkeletalMesh DrawBridgeWoodCritical",
+            "ObjectPath": "War/Content/Meshes/Structures/DrawBridgeWoodCritical.0"
+          }
+        },
+        {
+          "Threshold": 33,
+          "SkeletalMesh": {
+            "ObjectName": "SkeletalMesh DrawBridgeWoodDamaged",
+            "ObjectPath": "War/Content/Meshes/Structures/DrawBridgeWoodDamaged.0"
+          }
+        },
+        {
+          "Threshold": 66,
+          "SkeletalMesh": {
+            "ObjectName": "SkeletalMesh DrawBridgeWood",
+            "ObjectPath": "War/Content/Meshes/Structures/DrawBridgeWood.0"
+          }
+        }
+      ],
+      "InputValue": 100,
+      "SelectedMeshIndex": 2
+    }
+  },
+  {
+    "Type": "PersistentProxyComponent",
+    "Name": "SideAProxy",
+    "Outer": "Default__BPDrawbridgeWood_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPDrawbridgeWood_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.3"
+      }
+    }
+  },
+  {
+    "Type": "PersistentProxyComponent",
+    "Name": "SideBProxy",
+    "Outer": "Default__BPDrawbridgeWood_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPDrawbridgeWood_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.3"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPDrawbridgeWood_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "Ladder1Location",
+    "Outer": "Default__BPDrawbridgeWood_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPDrawbridgeWood_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.3"
+      },
+      "RelativeLocation": {
+        "X": -230.92554,
+        "Y": 1465.9937,
+        "Z": -146.42198
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "Ladder2Location",
+    "Outer": "Default__BPDrawbridgeWood_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPDrawbridgeWood_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.3"
+      },
+      "RelativeLocation": {
+        "X": 226.28453,
+        "Y": -1476.5007,
+        "Z": -146.42296
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 180.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPDrawbridgeWood_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.16"
+      },
+      "VariableGuid": "CEFECF40-474AB15D-801391B1-998B23D2",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class MultiplexedSkeletalMeshComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "MultiplexedSkeletalMeshComponent BPDrawbridgeWood_C:MultiplexedSkeletalMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.13"
+      },
+      "VariableGuid": "4B2C2AD6-4292A066-E7FA26B4-23265322",
+      "InternalVariableName": "MultiplexedSkeletalMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPDrawbridgeWood_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPDrawbridgeWood_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.20"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPDrawbridgeWood_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.20"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPDrawbridgeWood_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.19"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SideAMesh",
+    "Outer": "Default__BPDrawbridgeWood_C",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_DrawBridgeWood_C",
+        "ObjectPath": "War/Content/Animation/WorldAssets/DrawBridge/ABP_DrawBridgeWood.1"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh DrawBridgeWood",
+        "ObjectPath": "War/Content/Meshes/Structures/DrawBridgeWood.0"
+      },
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldDynamic",
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPDrawbridgeWood_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 1840.0,
+        "Z": 0.0
+      },
+      "ComponentTags": [
+        "Multiplex"
+      ]
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SideBMesh",
+    "Outer": "Default__BPDrawbridgeWood_C",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_DrawBridgeWood_C",
+        "ObjectPath": "War/Content/Animation/WorldAssets/DrawBridge/ABP_DrawBridgeWood.1"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh DrawBridgeWood",
+        "ObjectPath": "War/Content/Meshes/Structures/DrawBridgeWood.0"
+      },
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldDynamic",
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPDrawbridgeWood_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWood.3"
+      },
+      "RelativeLocation": {
+        "X": 6.7472465E-05,
+        "Y": -1840.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 180.0,
+        "Roll": 0.0
+      },
+      "ComponentTags": [
+        "Multiplex"
+      ]
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPDrawbridgeWood_C"
+  }
+]

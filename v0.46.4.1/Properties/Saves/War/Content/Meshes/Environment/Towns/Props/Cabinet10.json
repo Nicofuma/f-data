@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Cabinet10",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Cabinet10",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x21A59"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Cabinet10",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Cabinets",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Cabinets.0"
+          },
+          "MaterialSlotName": "Wood",
+          "ImportedMaterialSlotName": "Wood",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 225.30547,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 225.30547,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 1.0342941,
+          "Z": 69.94816
+        },
+        "BoxExtent": {
+          "X": 187.00473,
+          "Y": 34.08179,
+          "Z": 69.948166
+        },
+        "SphereRadius": 201.81868
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Cabinet10:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Props/Cabinet10.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Cabinet10:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Props/Cabinet10.1"
+    },
+    "LightingGuid": "FAC24B73-4A39F9BC-A2A60B87-07CE2540",
+    "RenderData": null
+  }
+]

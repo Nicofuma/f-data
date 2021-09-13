@@ -1,0 +1,473 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "Decal1",
+    "Outer": "BPDestroyedForwardBase2_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class DecalComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPDestroyedForwardBase2_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPDestroyedForwardBase2_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedForwardBase2.22"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class DestroyedBase",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPDestroyedForwardBase2_C:Decal1",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedForwardBase2.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPDestroyedForwardBase2_C:Decal3",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedForwardBase2.12"
+      },
+      {
+        "ObjectName": "ObjectProperty BPDestroyedForwardBase2_C:Decal2",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedForwardBase2.11"
+      },
+      {
+        "ObjectName": "ObjectProperty BPDestroyedForwardBase2_C:Decal",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedForwardBase2.10"
+      },
+      {
+        "ObjectName": "ObjectProperty BPDestroyedForwardBase2_C:TownHallMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedForwardBase2.13"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPDestroyedForwardBase2_C",
+    "Name": "Default__BPDestroyedForwardBase2_C",
+    "Properties": {
+      "GenericStockpileComponent": {
+        "ObjectName": "GenericItemStockpileComponent Default__BPDestroyedForwardBase2_C:GenericStockpileComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedForwardBase2.9"
+      },
+      "TechTreeComponent": {
+        "ObjectName": "TechTreeComponent Default__BPDestroyedForwardBase2_C:TechTreeComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedForwardBase2.25"
+      },
+      "RuinedComponent": {
+        "ObjectName": "RuinedComponent Default__BPDestroyedForwardBase2_C:RuinedComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedForwardBase2.14"
+      },
+      "CodeName": "DestroyedForwardBase2",
+      "ArmourType": "EArmourType::Tier2Structure",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPDestroyedForwardBase2_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedForwardBase2.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPDestroyedForwardBase2_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedForwardBase2.4"
+      },
+      "DestroyedFX": {
+        "ObjectName": "ParticleSystem GrenadeBlast",
+        "ObjectPath": "War/Content/FX/GrenadeBlast.151"
+      },
+      "DestroyedSoundCue": {
+        "ObjectName": "SoundCue StructureExplosionSmall_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/StructureExplosionSmall_Cue.0"
+      },
+      "MaxHealth": 20000,
+      "Health": 20000,
+      "MapIconType": "EMapIconType::ForwardBase2",
+      "UpgradeStructureCodeName": "ForwardBase2",
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPDestroyedForwardBase2_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedForwardBase2.24"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPDestroyedForwardBase2_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedForwardBase2.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPDestroyedForwardBase2_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPDestroyedForwardBase2_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 950.0,
+        "Y": 950.0,
+        "Z": 250.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPDestroyedForwardBase2_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedForwardBase2.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": -10.0,
+        "Z": 128.0
+      }
+    }
+  },
+  {
+    "Type": "DecalComponent",
+    "Name": "Decal1_GEN_VARIABLE",
+    "Outer": "BPDestroyedForwardBase2_C",
+    "Properties": {
+      "DecalMaterial": {
+        "ObjectName": "MaterialInstanceConstant DirtPatch",
+        "ObjectPath": "War/Content/Materials/Decals/DirtPatch.0"
+      },
+      "DecalSize": {
+        "X": 128.0,
+        "Y": 600.0,
+        "Z": 600.0
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 712.381
+      }
+    }
+  },
+  {
+    "Type": "DecalComponent",
+    "Name": "Decal2_GEN_VARIABLE",
+    "Outer": "BPDestroyedForwardBase2_C",
+    "Properties": {
+      "DecalMaterial": {
+        "ObjectName": "MaterialInstanceConstant DirtPatch",
+        "ObjectPath": "War/Content/Materials/Decals/DirtPatch.0"
+      },
+      "DecalSize": {
+        "X": 128.0,
+        "Y": 600.0,
+        "Z": 600.0
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": -701.4215,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "DecalComponent",
+    "Name": "Decal3_GEN_VARIABLE",
+    "Outer": "BPDestroyedForwardBase2_C",
+    "Properties": {
+      "DecalMaterial": {
+        "ObjectName": "MaterialInstanceConstant DirtPatch",
+        "ObjectPath": "War/Content/Materials/Decals/DirtPatch.0"
+      },
+      "DecalSize": {
+        "X": 128.0,
+        "Y": 600.0,
+        "Z": 600.0
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": -701.4215,
+        "Z": 712.381
+      }
+    }
+  },
+  {
+    "Type": "DecalComponent",
+    "Name": "Decal_GEN_VARIABLE",
+    "Outer": "BPDestroyedForwardBase2_C",
+    "Properties": {
+      "DecalMaterial": {
+        "ObjectName": "MaterialInstanceConstant DirtPatch",
+        "ObjectPath": "War/Content/Materials/Decals/DirtPatch.0"
+      },
+      "DecalSize": {
+        "X": 128.0,
+        "Y": 600.0,
+        "Z": 600.0
+      },
+      "RelativeLocation": {
+        "X": -356.19067,
+        "Y": 334.27115,
+        "Z": -2.123062E-05
+      },
+      "RelativeRotation": {
+        "Pitch": -90.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "GenericItemStockpileComponent",
+    "Name": "GenericStockpileComponent",
+    "Outer": "Default__BPDestroyedForwardBase2_C"
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Decal",
+    "Outer": "BPDestroyedForwardBase2_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class DecalComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Decal2",
+    "Outer": "BPDestroyedForwardBase2_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class DecalComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Decal3",
+    "Outer": "BPDestroyedForwardBase2_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class DecalComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "TownHallMesh",
+    "Outer": "BPDestroyedForwardBase2_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "RuinedComponent",
+    "Name": "RuinedComponent",
+    "Outer": "Default__BPDestroyedForwardBase2_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPDestroyedForwardBase2_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedForwardBase2.3"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPDestroyedForwardBase2_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPDestroyedForwardBase2_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedForwardBase2.15"
+      },
+      "VariableGuid": "E3C1AF73-43D88F05-F59AB7A7-79208843",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPDestroyedForwardBase2_C:TownHallMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedForwardBase2.23"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "C721EC3E-459AE76A-76A5D993-0E713622",
+      "InternalVariableName": "TownHallMesh"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class DecalComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "DecalComponent BPDestroyedForwardBase2_C:Decal1_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedForwardBase2.5"
+      },
+      "VariableGuid": "494845E5-45288950-C214FFA8-02F46911",
+      "InternalVariableName": "Decal1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class DecalComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "DecalComponent BPDestroyedForwardBase2_C:Decal_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedForwardBase2.8"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node BPDestroyedForwardBase2_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedForwardBase2.20"
+        },
+        {
+          "ObjectName": "SCS_Node BPDestroyedForwardBase2_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedForwardBase2.21"
+        },
+        {
+          "ObjectName": "SCS_Node BPDestroyedForwardBase2_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedForwardBase2.18"
+        }
+      ],
+      "VariableGuid": "394BBCA9-40575BB8-2C7E2D8C-78B10E4F",
+      "InternalVariableName": "Decal"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class DecalComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "DecalComponent BPDestroyedForwardBase2_C:Decal2_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedForwardBase2.6"
+      },
+      "VariableGuid": "73387F9F-48789DB0-31CDA5AD-4C81CF8C",
+      "InternalVariableName": "Decal2"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class DecalComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "DecalComponent BPDestroyedForwardBase2_C:Decal3_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedForwardBase2.7"
+      },
+      "VariableGuid": "FDAEE7A2-4153763D-DC56618B-CE76BA4D",
+      "InternalVariableName": "Decal3"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPDestroyedForwardBase2_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPDestroyedForwardBase2_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedForwardBase2.17"
+        },
+        {
+          "ObjectName": "SCS_Node BPDestroyedForwardBase2_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedForwardBase2.19"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPDestroyedForwardBase2_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedForwardBase2.17"
+        },
+        {
+          "ObjectName": "SCS_Node BPDestroyedForwardBase2_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedForwardBase2.19"
+        },
+        {
+          "ObjectName": "SCS_Node BPDestroyedForwardBase2_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedForwardBase2.20"
+        },
+        {
+          "ObjectName": "SCS_Node BPDestroyedForwardBase2_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedForwardBase2.21"
+        },
+        {
+          "ObjectName": "SCS_Node BPDestroyedForwardBase2_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedForwardBase2.18"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPDestroyedForwardBase2_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedForwardBase2.16"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "TownHallMesh_GEN_VARIABLE",
+    "Outer": "BPDestroyedForwardBase2_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh BarracksMetalDestroyed",
+        "ObjectPath": "War/Content/Meshes/Structures/BarracksMetalDestroyed.2"
+      },
+      "OverrideMaterials": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "bReceivesDecals": false,
+      "bAffectDistanceFieldLighting": false
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPDestroyedForwardBase2_C"
+  },
+  {
+    "Type": "TechTreeComponent",
+    "Name": "TechTreeComponent",
+    "Outer": "Default__BPDestroyedForwardBase2_C"
+  }
+]

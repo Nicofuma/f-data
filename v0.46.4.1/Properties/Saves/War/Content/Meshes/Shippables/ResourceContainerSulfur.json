@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ResourceContainerSulfur",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "ResourceContainerSulfur",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x6BA2"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ResourceContainerSulfur",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Sulfur",
+            "ObjectPath": "War/Content/Materials/Resources/Sulfur.0"
+          },
+          "MaterialSlotName": "Sulfur",
+          "ImportedMaterialSlotName": "Sulfur",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 633.4373,
+            "LocalUVDensities": 526.3379,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 526.3379,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.029411316,
+          "Y": 3.326683,
+          "Z": 41.05439
+        },
+        "BoxExtent": {
+          "X": 98.06744,
+          "Y": 94.89459,
+          "Z": 51.947517
+        },
+        "SphereRadius": 106.43257
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ResourceContainerSulfur:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Shippables/ResourceContainerSulfur.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ResourceContainerSulfur:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Shippables/ResourceContainerSulfur.1"
+    },
+    "LightingGuid": "6835CD66-4A1F2AD9-260D739A-BB59988C",
+    "RenderData": null
+  }
+]

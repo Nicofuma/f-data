@@ -1,0 +1,1413 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "SpawnPoint15",
+    "Outer": "BPTroopShipBase_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SpawnPointComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPTroopShipBase_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPTroopShipBase_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.45"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class TroopShipBase",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPTroopShipBase_C:SpawnPoint15",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTroopShipBase_C:SpawnPoint14",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.19"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTroopShipBase_C:SpawnPoint13",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.18"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTroopShipBase_C:SpawnPoint12",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.17"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTroopShipBase_C:SpawnPoint11",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.16"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTroopShipBase_C:SpawnPoint10",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.15"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTroopShipBase_C:SpawnPoint9",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.20"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTroopShipBase_C:SpawnPoint",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.14"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTroopShipBase_C:ViewTargetCamera",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.24"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTroopShipBase_C:SpotLight_Forward",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.22"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTroopShipBase_C:SpotLight_Aft",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.21"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTroopShipBase_C:SpotLight_Midship",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.23"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTroopShipBase_C:Light_Forward",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.11"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTroopShipBase_C:Light_Aft",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.10"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTroopShipBase_C:Light_Midship",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.12"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTroopShipBase_C:NoBuildZone",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.13"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPTroopShipBase_C",
+    "Name": "Default__BPTroopShipBase_C",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMeshComponent Default__BPTroopShipBase_C:SkeletalMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.46"
+      },
+      "MinorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPTroopShipBase_C:MinorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.26"
+      },
+      "MajorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPTroopShipBase_C:MajorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.25"
+      },
+      "TeamFlagMeshComponent": {
+        "ObjectName": "TeamFlagMeshComponent Default__BPTroopShipBase_C:TeamFlagMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.63"
+      },
+      "MeshComponent": {
+        "ObjectName": "StaticMeshComponent Default__BPTroopShipBase_C:Mesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.61"
+      },
+      "GenericStockpileComponent": {
+        "ObjectName": "GenericItemStockpileComponent Default__BPTroopShipBase_C:GenericStockpileComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.9"
+      },
+      "TechTreeComponent": {
+        "ObjectName": "TechTreeComponent Default__BPTroopShipBase_C:TechTreeComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.64"
+      },
+      "SirenLoop": {
+        "ObjectName": "AudioComponent Default__BPTroopShipBase_C:SirenLoop",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.4"
+      },
+      "SpawnPointType": "ESpawnPointType::LandingShipBase",
+      "BuildGhostClass": null,
+      "Icon": {
+        "ObjectName": "Texture2D MapIconTroopShip",
+        "ObjectPath": "War/Content/Textures/UI/MapIcons/MapIconTroopShip.0"
+      },
+      "bRequiresVehicleToBuild": false,
+      "CodeName": "TroopShipBase",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "63F784B2462E9DB4E4DB1BBD43FA1344",
+        "SourceString": "BMS - White Whale"
+      },
+      "ArmourType": "EArmourType::Tier2Structure",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPTroopShipBase_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPTroopShipBase_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.6"
+      },
+      "DestroyedFX": {
+        "ObjectName": "ParticleSystem GrenadeBlast",
+        "ObjectPath": "War/Content/FX/GrenadeBlast.151"
+      },
+      "GarrisonComponent": {
+        "ObjectName": "GarrisonComponent Default__BPTroopShipBase_C:GarrisonComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.8"
+      },
+      "MaxHealth": 5000,
+      "Health": 5000,
+      "MapIconType": "EMapIconType::TroopShip",
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPTroopShipBase_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.62"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPTroopShipBase_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPTroopShipBase_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": -110.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "SirenLoop",
+    "Outer": "Default__BPTroopShipBase_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPTroopShipBase_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.3"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "NoBuildZone_GEN_VARIABLE",
+    "Outer": "BPTroopShipBase_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 1100.0,
+        "Y": 450.0,
+        "Z": 275.0
+      },
+      "AreaClass": {
+        "ObjectName": "Class NavArea_Obstacle",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "BodyInstance": {
+        "CollisionProfileName": "NoBuildArea",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapDowncast",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Projectile",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPTroopShipBase_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 1400.0,
+        "Y": 600.0,
+        "Z": 250.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPTroopShipBase_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.3"
+      },
+      "RelativeLocation": {
+        "X": 300.0,
+        "Y": 0.0,
+        "Z": 250.0
+      }
+    }
+  },
+  {
+    "Type": "CameraComponent",
+    "Name": "ViewTargetCamera_GEN_VARIABLE",
+    "Outer": "BPTroopShipBase_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 2500.0,
+        "Y": 0.0,
+        "Z": 2000.0
+      },
+      "RelativeRotation": {
+        "Pitch": -59.99922,
+        "Yaw": -180.0,
+        "Roll": 0.000102
+      }
+    }
+  },
+  {
+    "Type": "GarrisonComponent",
+    "Name": "GarrisonComponent",
+    "Outer": "Default__BPTroopShipBase_C"
+  },
+  {
+    "Type": "GenericItemStockpileComponent",
+    "Name": "GenericStockpileComponent",
+    "Outer": "Default__BPTroopShipBase_C",
+    "Properties": {
+      "RetrieveDurationModifier": 0.5
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Light_Aft",
+    "Outer": "BPTroopShipBase_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Light_Forward",
+    "Outer": "BPTroopShipBase_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Light_Midship",
+    "Outer": "BPTroopShipBase_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "NoBuildZone",
+    "Outer": "BPTroopShipBase_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BoxComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "SpawnPoint",
+    "Outer": "BPTroopShipBase_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SpawnPointComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "SpawnPoint10",
+    "Outer": "BPTroopShipBase_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SpawnPointComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "SpawnPoint11",
+    "Outer": "BPTroopShipBase_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SpawnPointComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "SpawnPoint12",
+    "Outer": "BPTroopShipBase_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SpawnPointComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "SpawnPoint13",
+    "Outer": "BPTroopShipBase_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SpawnPointComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "SpawnPoint14",
+    "Outer": "BPTroopShipBase_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SpawnPointComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "SpawnPoint9",
+    "Outer": "BPTroopShipBase_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SpawnPointComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "SpotLight_Aft",
+    "Outer": "BPTroopShipBase_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SpotLightComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "SpotLight_Forward",
+    "Outer": "BPTroopShipBase_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SpotLightComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "SpotLight_Midship",
+    "Outer": "BPTroopShipBase_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SpotLightComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "ViewTargetCamera",
+    "Outer": "BPTroopShipBase_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class CameraComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MajorDamagePS",
+    "Outer": "Default__BPTroopShipBase_C",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem TruckDamaged01",
+        "ObjectPath": "War/Content/FX/TruckDamaged01.50"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPTroopShipBase_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.3"
+      },
+      "RelativeLocation": {
+        "X": 245.0,
+        "Y": 0.0,
+        "Z": 470.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MinorDamagePS",
+    "Outer": "Default__BPTroopShipBase_C",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem TruckDamaged02",
+        "ObjectPath": "War/Content/FX/TruckDamaged02.35"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPTroopShipBase_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.3"
+      },
+      "RelativeLocation": {
+        "X": 243.18771,
+        "Y": -22.539581,
+        "Z": 470.66248
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPTroopShipBase_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPTroopShipBase_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.27"
+      },
+      "VariableGuid": "9D1395B6-45E4FC3E-BCFFFEAA-3CE71F12",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SpawnPointComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SpawnPointComponent BPTroopShipBase_C:SpawnPoint_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.54"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "96FB9E8D-42EE00EC-DB6ACB94-E5F93D58",
+      "InternalVariableName": "SpawnPoint"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_10",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPTroopShipBase_C:Light_Midship_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.60"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "AD66B3E9-45FDA9A1-B1F23DAA-26FE4A75",
+      "InternalVariableName": "Light_Midship"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_11",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SpawnPointComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SpawnPointComponent BPTroopShipBase_C:SpawnPoint15_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.52"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "96A37DF2-4D3F92B8-F68B62A3-5C4A190D",
+      "InternalVariableName": "SpawnPoint15"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_12",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPTroopShipBase_C:Light_Aft_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.58"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "9B9D727F-46F6AEDD-5395E5B1-E54D1C66",
+      "InternalVariableName": "Light_Aft"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_13",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPTroopShipBase_C:Light_Forward_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.59"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "EFC3DBE1-43AAC91A-A62F849A-711BCA95",
+      "InternalVariableName": "Light_Forward"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_14",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SpotLightComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SpotLightComponent BPTroopShipBase_C:SpotLight_Midship_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.57"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "96569EEB-4D2CF279-D45D518E-28FBD817",
+      "InternalVariableName": "SpotLight_Midship"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_15",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SpotLightComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SpotLightComponent BPTroopShipBase_C:SpotLight_Aft_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.55"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "BA477150-4FA108FA-780A868D-00F77C23",
+      "InternalVariableName": "SpotLight_Aft"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_16",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SpotLightComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SpotLightComponent BPTroopShipBase_C:SpotLight_Forward_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.56"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "90F415BA-4EDD3ABD-C12DC590-D71B967F",
+      "InternalVariableName": "SpotLight_Forward"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SpawnPointComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SpawnPointComponent BPTroopShipBase_C:SpawnPoint9_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.53"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "5C91984B-4C5E0AB7-01D5AE86-DE8AACD4",
+      "InternalVariableName": "SpawnPoint9"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BoxComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent BPTroopShipBase_C:NoBuildZone_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.5"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "54D669B0-43F76E85-0D0683B1-8007E8E5",
+      "InternalVariableName": "NoBuildZone"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SpawnPointComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SpawnPointComponent BPTroopShipBase_C:SpawnPoint10_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.47"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "61DB74C1-43D98DB9-AAC376B2-979466D9",
+      "InternalVariableName": "SpawnPoint10"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class CameraComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "CameraComponent BPTroopShipBase_C:ViewTargetCamera_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.7"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "02E86D0A-41FCDAA3-970D738A-208A7327",
+      "InternalVariableName": "ViewTargetCamera"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SpawnPointComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SpawnPointComponent BPTroopShipBase_C:SpawnPoint11_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.48"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "F587041A-4B5A47FC-6346D9B2-45E0D54C",
+      "InternalVariableName": "SpawnPoint11"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SpawnPointComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SpawnPointComponent BPTroopShipBase_C:SpawnPoint12_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.49"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "0D5169BF-45A4E1CF-5A95CEB8-56623DFE",
+      "InternalVariableName": "SpawnPoint12"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_8",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SpawnPointComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SpawnPointComponent BPTroopShipBase_C:SpawnPoint13_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.50"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "8E41F258-490FA977-0F47B3BF-D7AAF339",
+      "InternalVariableName": "SpawnPoint13"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_9",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SpawnPointComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SpawnPointComponent BPTroopShipBase_C:SpawnPoint14_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.51"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "980E1596-4FC5A2CC-49BB2383-DCE3143C",
+      "InternalVariableName": "SpawnPoint14"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPTroopShipBase_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPTroopShipBase_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.38"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShipBase_C:SimpleConstructionScript_0.SCS_Node_10",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.30"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShipBase_C:SimpleConstructionScript_0.SCS_Node_12",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.32"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShipBase_C:SimpleConstructionScript_0.SCS_Node_13",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.33"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShipBase_C:SimpleConstructionScript_0.SCS_Node_14",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.34"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShipBase_C:SimpleConstructionScript_0.SCS_Node_15",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.35"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShipBase_C:SimpleConstructionScript_0.SCS_Node_16",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.36"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShipBase_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.40"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShipBase_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.29"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShipBase_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.37"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShipBase_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.39"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShipBase_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.41"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShipBase_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.42"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShipBase_C:SimpleConstructionScript_0.SCS_Node_8",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.43"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShipBase_C:SimpleConstructionScript_0.SCS_Node_9",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.44"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShipBase_C:SimpleConstructionScript_0.SCS_Node_11",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.31"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPTroopShipBase_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.38"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShipBase_C:SimpleConstructionScript_0.SCS_Node_10",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.30"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShipBase_C:SimpleConstructionScript_0.SCS_Node_12",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.32"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShipBase_C:SimpleConstructionScript_0.SCS_Node_13",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.33"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShipBase_C:SimpleConstructionScript_0.SCS_Node_14",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.34"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShipBase_C:SimpleConstructionScript_0.SCS_Node_15",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.35"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShipBase_C:SimpleConstructionScript_0.SCS_Node_16",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.36"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShipBase_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.40"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShipBase_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.29"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShipBase_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.37"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShipBase_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.39"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShipBase_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.41"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShipBase_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.42"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShipBase_C:SimpleConstructionScript_0.SCS_Node_8",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.43"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShipBase_C:SimpleConstructionScript_0.SCS_Node_9",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.44"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShipBase_C:SimpleConstructionScript_0.SCS_Node_11",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.31"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPTroopShipBase_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.28"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SkeletalMesh",
+    "Outer": "Default__BPTroopShipBase_C",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_TroopShip_C",
+        "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.1"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_TroopShip",
+        "ObjectPath": "War/Content/Meshes/Vehicles/SK_TroopShip.0"
+      },
+      "OverrideMaterials": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldDynamic",
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPTroopShipBase_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.3"
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SpawnPointComponent",
+    "Name": "SpawnPoint10_GEN_VARIABLE",
+    "Outer": "BPTroopShipBase_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 1150.0,
+        "Y": 50.0,
+        "Z": 300.0
+      }
+    }
+  },
+  {
+    "Type": "SpawnPointComponent",
+    "Name": "SpawnPoint11_GEN_VARIABLE",
+    "Outer": "BPTroopShipBase_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 1150.0,
+        "Y": 150.0,
+        "Z": 300.0
+      }
+    }
+  },
+  {
+    "Type": "SpawnPointComponent",
+    "Name": "SpawnPoint12_GEN_VARIABLE",
+    "Outer": "BPTroopShipBase_C",
+    "Properties": {
+      "Priority": "ESpawnPointPriority::Low",
+      "RelativeLocation": {
+        "X": 1330.0,
+        "Y": -150.0,
+        "Z": 300.0
+      }
+    }
+  },
+  {
+    "Type": "SpawnPointComponent",
+    "Name": "SpawnPoint13_GEN_VARIABLE",
+    "Outer": "BPTroopShipBase_C",
+    "Properties": {
+      "Priority": "ESpawnPointPriority::Low",
+      "RelativeLocation": {
+        "X": 1330.0,
+        "Y": -50.0,
+        "Z": 300.0
+      }
+    }
+  },
+  {
+    "Type": "SpawnPointComponent",
+    "Name": "SpawnPoint14_GEN_VARIABLE",
+    "Outer": "BPTroopShipBase_C",
+    "Properties": {
+      "Priority": "ESpawnPointPriority::Low",
+      "RelativeLocation": {
+        "X": 1330.0,
+        "Y": 50.0,
+        "Z": 300.0
+      }
+    }
+  },
+  {
+    "Type": "SpawnPointComponent",
+    "Name": "SpawnPoint15_GEN_VARIABLE",
+    "Outer": "BPTroopShipBase_C",
+    "Properties": {
+      "Priority": "ESpawnPointPriority::Low",
+      "RelativeLocation": {
+        "X": 1330.0,
+        "Y": 150.0,
+        "Z": 300.0
+      }
+    }
+  },
+  {
+    "Type": "SpawnPointComponent",
+    "Name": "SpawnPoint9_GEN_VARIABLE",
+    "Outer": "BPTroopShipBase_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 1150.0,
+        "Y": -50.0,
+        "Z": 300.0
+      }
+    }
+  },
+  {
+    "Type": "SpawnPointComponent",
+    "Name": "SpawnPoint_GEN_VARIABLE",
+    "Outer": "BPTroopShipBase_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 1150.0,
+        "Y": -150.0,
+        "Z": 300.0
+      }
+    }
+  },
+  {
+    "Type": "SpotLightComponent",
+    "Name": "SpotLight_Aft_GEN_VARIABLE",
+    "Outer": "BPTroopShipBase_C",
+    "Properties": {
+      "InnerConeAngle": 5.0,
+      "OuterConeAngle": 55.0,
+      "bUseInverseSquaredFalloff": false,
+      "AttenuationRadius": 2275.0,
+      "bUseRayTracedDistanceFieldShadows": true,
+      "Intensity": 10.0,
+      "LightColor": {
+        "R": 164,
+        "G": 222,
+        "B": 255,
+        "A": 255,
+        "Hex": "FFA4DEFF"
+      },
+      "CastShadows": false,
+      "RelativeLocation": {
+        "X": -584.98724,
+        "Y": 68.09183,
+        "Z": 694.16583
+      },
+      "RelativeRotation": {
+        "Pitch": -24.052128,
+        "Yaw": 179.97015,
+        "Roll": 0.012203
+      }
+    }
+  },
+  {
+    "Type": "SpotLightComponent",
+    "Name": "SpotLight_Forward_GEN_VARIABLE",
+    "Outer": "BPTroopShipBase_C",
+    "Properties": {
+      "InnerConeAngle": 5.0,
+      "OuterConeAngle": 55.0,
+      "bUseInverseSquaredFalloff": false,
+      "AttenuationRadius": 2275.0,
+      "bUseRayTracedDistanceFieldShadows": true,
+      "Intensity": 10.0,
+      "LightColor": {
+        "R": 164,
+        "G": 222,
+        "B": 255,
+        "A": 255,
+        "Hex": "FFA4DEFF"
+      },
+      "CastShadows": false,
+      "RelativeLocation": {
+        "X": 1122.4739,
+        "Y": 21.696135,
+        "Z": 468.78674
+      }
+    }
+  },
+  {
+    "Type": "SpotLightComponent",
+    "Name": "SpotLight_Midship_GEN_VARIABLE",
+    "Outer": "BPTroopShipBase_C",
+    "Properties": {
+      "InnerConeAngle": 5.0,
+      "OuterConeAngle": 55.0,
+      "bUseInverseSquaredFalloff": false,
+      "AttenuationRadius": 2275.0,
+      "bUseRayTracedDistanceFieldShadows": true,
+      "Intensity": 10.0,
+      "LightColor": {
+        "R": 164,
+        "G": 222,
+        "B": 255,
+        "A": 255,
+        "Hex": "FFA4DEFF"
+      },
+      "CastShadows": false,
+      "RelativeLocation": {
+        "X": -281.50195,
+        "Y": 107.93026,
+        "Z": 628.4547
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Light_Aft_GEN_VARIABLE",
+    "Outer": "BPTroopShipBase_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh Headlight",
+        "ObjectPath": "War/Content/Meshes/Vehicles/Headlight.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material SimpleEmissive",
+          "ObjectPath": "War/Content/Materials/SimpleEmissive.0"
+        }
+      ],
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -584.98724,
+        "Y": 68.09183,
+        "Z": 694.16583
+      },
+      "RelativeRotation": {
+        "Pitch": 1.4E-05,
+        "Yaw": 89.99962,
+        "Roll": 24.053207
+      },
+      "RelativeScale3D": {
+        "X": 1.0,
+        "Y": 1.471524,
+        "Z": 1.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Light_Forward_GEN_VARIABLE",
+    "Outer": "BPTroopShipBase_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh Headlight",
+        "ObjectPath": "War/Content/Meshes/Vehicles/Headlight.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material SimpleEmissive",
+          "ObjectPath": "War/Content/Materials/SimpleEmissive.0"
+        }
+      ],
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 1122.4739,
+        "Y": 21.696135,
+        "Z": 468.78674
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": 0.0
+      },
+      "RelativeScale3D": {
+        "X": 1.205973,
+        "Y": 1.471524,
+        "Z": 1.205973
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Light_Midship_GEN_VARIABLE",
+    "Outer": "BPTroopShipBase_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh Headlight",
+        "ObjectPath": "War/Content/Meshes/Vehicles/Headlight.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material SimpleEmissive",
+          "ObjectPath": "War/Content/Materials/SimpleEmissive.0"
+        }
+      ],
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -281.50195,
+        "Y": 107.93026,
+        "Z": 628.4547
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": 0.0
+      },
+      "RelativeScale3D": {
+        "X": 1.0,
+        "Y": 1.471524,
+        "Z": 1.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Mesh",
+    "Outer": "Default__BPTroopShipBase_C",
+    "Properties": {
+      "bReceivesDecals": false,
+      "CanCharacterStepUpOn": "ECB_No",
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPTroopShipBase_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.3"
+      },
+      "ComponentTags": [
+        "Multiplexed"
+      ]
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPTroopShipBase_C"
+  },
+  {
+    "Type": "TeamFlagMeshComponent",
+    "Name": "TeamFlagMesh",
+    "Outer": "Default__BPTroopShipBase_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPTroopShipBase_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPTroopShipBase.3"
+      },
+      "RelativeLocation": {
+        "X": 640.4769,
+        "Y": -242.35219,
+        "Z": 129.16164
+      }
+    }
+  },
+  {
+    "Type": "TechTreeComponent",
+    "Name": "TechTreeComponent",
+    "Outer": "Default__BPTroopShipBase_C",
+    "Properties": {
+      "DataClass": {
+        "ObjectName": "BlueprintGeneratedClass BPMinimalForwardBaseTechTree_C",
+        "ObjectPath": "War/Content/Blueprints/TechTree/BPMinimalForwardBaseTechTree.0"
+      },
+      "bStartsCompleted": true
+    }
+  }
+]

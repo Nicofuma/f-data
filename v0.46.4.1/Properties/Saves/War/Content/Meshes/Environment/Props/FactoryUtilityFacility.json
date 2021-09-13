@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FactoryUtilityFacility",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_5",
+    "Outer": "FactoryUtilityFacility",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xD615"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FactoryUtilityFacility",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FactoryUtilityFacility",
+            "ObjectPath": "War/Content/Materials/Environment/Props/FactoryUtilityFacility.0"
+          },
+          "MaterialSlotName": "Tools",
+          "ImportedMaterialSlotName": "Tools",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 313.4697,
+            "LocalUVDensities": 308.0658,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 308.0658,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 366.8903,
+          "Y": 565.1238,
+          "Z": 112.06483
+        },
+        "BoxExtent": {
+          "X": 80.410736,
+          "Y": 101.517914,
+          "Z": 114.77863
+        },
+        "SphereRadius": 165.77095
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FactoryUtilityFacility:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FactoryUtilityFacility.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FactoryUtilityFacility:NavCollision_5",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FactoryUtilityFacility.1"
+    },
+    "LightingGuid": "E707C91D-4C51D327-8B15FB99-3C646341",
+    "RenderData": null
+  }
+]

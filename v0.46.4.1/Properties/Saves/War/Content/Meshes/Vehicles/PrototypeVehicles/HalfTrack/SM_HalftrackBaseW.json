@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_HalftrackBaseW",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SM_HalftrackBaseW",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x17459"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_HalftrackBaseW",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant HalfTrackWar",
+            "ObjectPath": "War/Content/Materials/Vehicles/HalfTrackWar.0"
+          },
+          "MaterialSlotName": "HalfTrackWar",
+          "ImportedMaterialSlotName": "HalfTrackWar",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1552.073,
+            "LocalUVDensities": 1.3571539,
+            "LocalUVDensities": 1012.0714,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1012.0714,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 2,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 5.1603394,
+          "Y": -40.87915,
+          "Z": 159.913
+        },
+        "BoxExtent": {
+          "X": 151.70627,
+          "Y": 393.4817,
+          "Z": 117.37555
+        },
+        "SphereRadius": 407.94348
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_HalftrackBaseW:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Vehicles/PrototypeVehicles/HalfTrack/SM_HalftrackBaseW.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_HalftrackBaseW:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Vehicles/PrototypeVehicles/HalfTrack/SM_HalftrackBaseW.1"
+    },
+    "LightingGuid": "2708ABC2-4A1D7F4A-43DA2B91-036C87D2",
+    "RenderData": null
+  }
+]

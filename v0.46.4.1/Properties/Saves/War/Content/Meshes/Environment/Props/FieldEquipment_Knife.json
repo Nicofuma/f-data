@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FieldEquipment_Knife",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "FieldEquipment_Knife",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1914"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FieldEquipment_Knife",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FieldEquipment",
+            "ObjectPath": "War/Content/Materials/Environment/Props/FieldEquipment.0"
+          },
+          "MaterialSlotName": "Material #490",
+          "ImportedMaterialSlotName": "Material #490",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 214.36534,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 214.36534,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.07515335,
+          "Y": 0.004224777,
+          "Z": 0.56252587
+        },
+        "BoxExtent": {
+          "X": 28.008163,
+          "Y": 3.7188683,
+          "Z": 0.56252575
+        },
+        "SphereRadius": 28.242308
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FieldEquipment_Knife:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FieldEquipment_Knife.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FieldEquipment_Knife:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FieldEquipment_Knife.1"
+    },
+    "LightingGuid": "22AAFA54-441D51FF-6A7F2CBE-6860D3D8",
+    "RenderData": null
+  }
+]

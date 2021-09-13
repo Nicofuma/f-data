@@ -1,0 +1,185 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Pillar-T2",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -50.0,
+                "Y": 49.99999,
+                "Z": -223.35657
+              },
+              {
+                "X": 50.0,
+                "Y": 49.99999,
+                "Z": -223.35657
+              },
+              {
+                "X": -50.0,
+                "Y": -50.00001,
+                "Z": -223.35657
+              },
+              {
+                "X": 50.0,
+                "Y": -50.00001,
+                "Z": -223.35657
+              },
+              {
+                "X": -50.0,
+                "Y": 49.99999,
+                "Z": 442.64343
+              },
+              {
+                "X": 50.0,
+                "Y": 49.99999,
+                "Z": 442.64343
+              },
+              {
+                "X": -50.0,
+                "Y": -50.00001,
+                "Z": 442.64343
+              },
+              {
+                "X": 50.0,
+                "Y": -50.00001,
+                "Z": 442.64343
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -50.0,
+                "Y": -50.00001,
+                "Z": -223.35657
+              },
+              "Max": {
+                "X": 50.0,
+                "Y": 49.99999,
+                "Z": 442.64343
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "Pillar-T2",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 457,
+        "SizeOnDisk": 457,
+        "OffsetInFile": "0x7D8A"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Pillar-T2",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortT2WoodBeam01",
+            "ObjectPath": "War/Content/Materials/Structures/FortT2WoodBeam01.0"
+          },
+          "MaterialSlotName": "WoodPlanks",
+          "ImportedMaterialSlotName": "WoodPlanks",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 239.78224,
+            "LocalUVDensities": 4.5085263,
+            "LocalUVDensities": 4.5085263,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TrenchDirtMuddy",
+            "ObjectPath": "War/Content/Meshes/Environment/BaseBuildingPrototype/TrenchDirtMuddy.0"
+          },
+          "MaterialSlotName": "Dirt",
+          "ImportedMaterialSlotName": "Dirt",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 244.67903,
+            "LocalUVDensities": 8.888681,
+            "LocalUVDensities": 8.888681,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 5.0542006,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.55415344,
+          "Y": -0.2950554,
+          "Z": 161.02512
+        },
+        "BoxExtent": {
+          "X": 52.850845,
+          "Y": 49.38372,
+          "Z": 258.8673
+        },
+        "SphereRadius": 268.7829
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Pillar-T2:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/Walls/Pillar-T2.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Pillar-T2:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Structures/Walls/Pillar-T2.1"
+    },
+    "LightingGuid": "0D492D80-4EE505E4-4603E9B6-71C63AAC",
+    "RenderData": null
+  }
+]

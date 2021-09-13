@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_ScoutVehicleBaseW",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "SM_ScoutVehicleBaseW",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x16906"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_ScoutVehicleBaseW",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ScoutVehicleWarBase01",
+            "ObjectPath": "War/Content/Materials/Vehicles/ScoutVehicleWarBase01.0"
+          },
+          "MaterialSlotName": "ScoutVehicleWar01",
+          "ImportedMaterialSlotName": "ScoutVehicleWar01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 526.06433,
+            "LocalUVDensities": 1.4621761,
+            "LocalUVDensities": 685.0659,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 685.0659,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 2,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -22.38913,
+          "Z": 123.25564
+        },
+        "BoxExtent": {
+          "X": 111.6905,
+          "Y": 250.41278,
+          "Z": 98.76657
+        },
+        "SphereRadius": 278.82513
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_ScoutVehicleBaseW:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Vehicles/PrototypeVehicles/SM_ScoutVehicleBaseW.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_ScoutVehicleBaseW:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Vehicles/PrototypeVehicles/SM_ScoutVehicleBaseW.1"
+    },
+    "LightingGuid": "C94F53D0-49246B9A-B5598DA4-51FFDF9C",
+    "RenderData": null
+  }
+]

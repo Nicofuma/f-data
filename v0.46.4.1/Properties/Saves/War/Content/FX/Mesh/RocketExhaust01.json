@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "RocketExhaust01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_6",
+    "Outer": "RocketExhaust01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1D15"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "RocketExhaust01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "Engine/Content/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 112.07245,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 112.07245,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -50.27433
+        },
+        "BoxExtent": {
+          "X": 55.15277,
+          "Y": 55.15277,
+          "Z": 52.749054
+        },
+        "SphereRadius": 76.31705
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup RocketExhaust01:BodySetup_0",
+      "ObjectPath": "War/Content/FX/Mesh/RocketExhaust01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision RocketExhaust01:NavCollision_6",
+      "ObjectPath": "War/Content/FX/Mesh/RocketExhaust01.1"
+    },
+    "LightingGuid": "BBD4A770-4A34C6E8-71AC068B-FE614376",
+    "RenderData": null
+  }
+]

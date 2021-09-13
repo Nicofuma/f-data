@@ -1,0 +1,89 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Trumpet",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "Trumpet",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1068A"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Trumpet",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Trumpet",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Trumpet.0"
+          },
+          "MaterialSlotName": "Trumpet",
+          "ImportedMaterialSlotName": "Trumpet",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 78.99945,
+            "LocalUVDensities": 87.842705,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 87.842705,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.021003723,
+          "Y": -1.9073486E-06,
+          "Z": 0.055402756
+        },
+        "BoxExtent": {
+          "X": 36.267227,
+          "Y": 11.532567,
+          "Z": 15.000113
+        },
+        "SphereRadius": 39.12717
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Trumpet:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Trumpet.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Trumpet:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Trumpet.1"
+    },
+    "LightingGuid": "D72CEF65-4DFB771F-2D0137B5-18334E5D",
+    "RenderData": null
+  }
+]

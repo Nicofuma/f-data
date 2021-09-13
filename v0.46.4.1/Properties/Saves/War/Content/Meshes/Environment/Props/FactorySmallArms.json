@@ -1,0 +1,100 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FactorySmallArms",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "FactorySmallArms",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x337DF"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FactorySmallArms",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FactorySmallArms",
+            "ObjectPath": "War/Content/Materials/Environment/Props/FactorySmallArms.0"
+          },
+          "MaterialSlotName": "LightWeapon",
+          "ImportedMaterialSlotName": "LightWeapon",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 342.69028,
+            "LocalUVDensities": 985.8155,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FactoryAmmobeltInBox",
+            "ObjectPath": "War/Content/Materials/Environment/Props/FactoryAmmobeltInBox.0"
+          },
+          "MaterialSlotName": "AmmoBelt",
+          "ImportedMaterialSlotName": "Burlap",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 66.74233,
+            "LocalUVDensities": 969.7824,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 985.6101,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 318.20972,
+          "Y": 547.88153,
+          "Z": 191.38385
+        },
+        "BoxExtent": {
+          "X": 161.75272,
+          "Y": 107.46391,
+          "Z": 115.197014
+        },
+        "SphereRadius": 223.02855
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FactorySmallArms:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FactorySmallArms.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FactorySmallArms:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FactorySmallArms.1"
+    },
+    "LightingGuid": "8D036A7F-47743D15-75D047B7-30F92094",
+    "RenderData": null
+  }
+]

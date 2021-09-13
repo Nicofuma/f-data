@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ShotgunPickup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "ShotgunPickup",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x5DCD"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ShotgunPickup",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Shotgun",
+            "ObjectPath": "War/Content/Materials/Weapons/Shotgun.0"
+          },
+          "MaterialSlotName": "Shotgun",
+          "ImportedMaterialSlotName": "Shotgun",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 85.16991,
+            "LocalUVDensities": 106.58959,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 106.58959,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 6.259285,
+          "Y": -3.9605865,
+          "Z": 3.5485322
+        },
+        "BoxExtent": {
+          "X": 53.17188,
+          "Y": 59.80249,
+          "Z": 4.4505067
+        },
+        "SphereRadius": 77.519646
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ShotgunPickup:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Resources/ShotgunPickup.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ShotgunPickup:NavCollision_4",
+      "ObjectPath": "War/Content/Meshes/Resources/ShotgunPickup.1"
+    },
+    "LightingGuid": "27C327F1-49AAB1D2-44589FAB-F6824BC7",
+    "RenderData": null
+  }
+]

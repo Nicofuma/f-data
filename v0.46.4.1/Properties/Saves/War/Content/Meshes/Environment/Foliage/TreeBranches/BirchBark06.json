@@ -1,0 +1,99 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "BirchBark06",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "BirchBark06",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x22C4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "BirchBark06",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BirchBarkNoDecay",
+            "ObjectPath": "War/Content/Materials/Environment/Props/BirchBarkNoDecay.0"
+          },
+          "MaterialSlotName": "BirchBark",
+          "ImportedMaterialSlotName": "BirchBark",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 204.31752,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 6.266851,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TreeInteriorNoDecay",
+            "ObjectPath": "War/Content/Materials/Environment/Props/TreeInteriorNoDecay.0"
+          },
+          "MaterialSlotName": "TreeInterior",
+          "ImportedMaterialSlotName": "TreeInterior",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 102.32479,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 1.2314627,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -0.052005768,
+          "Z": 0.3244877
+        },
+        "BoxExtent": {
+          "X": 13.529365,
+          "Y": 53.288612,
+          "Z": 19.317698
+        },
+        "SphereRadius": 55.846855
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup BirchBark06:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/TreeBranches/BirchBark06.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision BirchBark06:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/TreeBranches/BirchBark06.1"
+    },
+    "LightingGuid": "5BA01B65-495B23AC-98FF02A7-E082B053",
+    "RenderData": null
+  }
+]

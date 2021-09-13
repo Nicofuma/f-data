@@ -1,0 +1,114 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPSniperRifleAmmo_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPSniperRifleAmmo_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPSniperRifleAmmo.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class AmmoPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPSniperRifleAmmo_C",
+    "Name": "Default__BPSniperRifleAmmo_C",
+    "Properties": {
+      "Encumbrance": 15,
+      "CodeName": "SniperRifleAmmo",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "189D8242429A07A02DE460A1ADA2BE4D",
+        "SourceString": "8.5mm"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "FAEECFE04B77BD6DBD52B592B07381B0",
+        "SourceString": "Standard ammunition for sniper rifles."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D SniperRifleAmmoItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/SniperRifleAmmoItemIcon.0"
+      },
+      "ItemCategory": "EItemCategory::SmallArms",
+      "ItemFlagsMask": 65,
+      "ItemProfileType": "EItemProfileType::LightAmmo",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPSniperRifleAmmo_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPSniperRifleAmmo.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPSniperRifleAmmo_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPSniperRifleAmmo.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPSniperRifleAmmo_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 24.098536,
+        "Y": 64.0,
+        "Z": 42.028168
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPSniperRifleAmmo_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPSniperRifleAmmo_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPSniperRifleAmmo.3"
+      },
+      "VariableGuid": "FBF04340-40D71A47-9ED11191-32B797F3",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPSniperRifleAmmo_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPSniperRifleAmmo_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPSniperRifleAmmo.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPSniperRifleAmmo_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPSniperRifleAmmo_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPSniperRifleAmmo.2"
+      }
+    }
+  }
+]

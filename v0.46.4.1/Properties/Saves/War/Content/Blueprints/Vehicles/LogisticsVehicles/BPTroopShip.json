@@ -1,0 +1,1861 @@
+[
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "BPTroopShip_C",
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPTroopShip_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPTroopShip_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.63"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty BPTroopShip_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.0"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function BPTroopShip_C:ExecuteUbergraph_BPTroopShip",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.9"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class TroopShip",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty BPTroopShip_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.0"
+      },
+      {
+        "ObjectName": "Function BPTroopShip_C:BPOnVehicleOn",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.10"
+      },
+      {
+        "ObjectName": "Function BPTroopShip_C:ExecuteUbergraph_BPTroopShip",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.9"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTroopShip_C:DriverExit0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.7"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTroopShip_C:DriverTrigger",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.21"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTroopShip_C:DriverSeat0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.20"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTroopShip_C:Idle",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.22"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTroopShip_C:WorkVolume",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.31"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTroopShip_C:Light_Midship",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.25"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTroopShip_C:SpotLight_Forward",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.29"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTroopShip_C:SpotLight_Aft",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.28"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTroopShip_C:SpotLight_Midship",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.30"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTroopShip_C:Light_Forward",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.24"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTroopShip_C:Light_Aft",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.23"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTroopShip_C:RampEnd (Editor Only)",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.26"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTroopShip_C:RampStart (Editor Only)",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.27"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTroopShip_C:Camera",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.19"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 655360,
+    "ClassWithin": null,
+    "ClassConfigName": "/Game/Animation/WaterVehicles/TroopShip/ABP_TroopShip_720895",
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPTroopShip_C",
+    "Name": "Default__BPTroopShip_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "RampExitPosition": {
+        "ObjectName": "SceneComponent Default__BPTroopShip_C:RampExitPosition",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.44"
+      },
+      "GenericStockpileComponent": {
+        "ObjectName": "GenericItemStockpileComponent Default__BPTroopShip_C:GenericStockpileComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.18"
+      },
+      "Ramp": {
+        "Start": {
+          "X": 673.0818,
+          "Y": 0.000122,
+          "Z": 69.11679
+        },
+        "End": {
+          "X": 874.6385,
+          "Y": 0.000122,
+          "Z": 793.995
+        }
+      },
+      "DeployedStructureCodeName": "TroopShipBase",
+      "FrontLeftWaterEmitter": {
+        "ObjectName": "ParticleSystemComponent Default__BPTroopShip_C:FrontLeftWaterEmitter",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.34"
+      },
+      "FrontRightWaterEmitter": {
+        "ObjectName": "ParticleSystemComponent Default__BPTroopShip_C:FrontRightWaterEmitter",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.35"
+      },
+      "BackRightWaterEmitter": {
+        "ObjectName": "ParticleSystemComponent Default__BPTroopShip_C:BackRightWaterEmitter",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.33"
+      },
+      "BackLeftWaterEmitter": {
+        "ObjectName": "ParticleSystemComponent Default__BPTroopShip_C:BackLeftWaterEmitter",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.32"
+      },
+      "WakeWaterEmitter": {
+        "ObjectName": "ParticleSystemComponent Default__BPTroopShip_C:WakeWaterEmitter",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.38"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "82B0E156485A730727CBC88B68CD41E0",
+        "SourceString": "BMS - White Whale"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "CCE07EA6442691C77801428A35860221",
+        "SourceString": "A heavily armoured vessel, the Basset Motor Society’s White Whale-class troop transports can deploy on faraway beaches to function as a permanent forward operating base."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D TroopShipVehicleIcon",
+        "ObjectPath": "War/Content/Textures/UI/VehicleIcons/TroopShipVehicleIcon.0"
+      },
+      "TechID": "ETechID::UnlockTroopShip",
+      "BuildSiteClass": {
+        "ObjectName": "BlueprintGeneratedClass BPTroopShipBuildSite_C",
+        "ObjectPath": "War/Content/Blueprints/BPTroopShipBuildSite.1"
+      },
+      "VehicleBuildType": "EVehicleBuildType::Shipyard",
+      "CodeName": "TroopShip",
+      "VehicleProfileType": "EVehicleProfileType::Ship",
+      "ArmourType": "EArmourType::Tier1Tank",
+      "FuelTank": {
+        "FuelCapacity": 200.0
+      },
+      "DestroyedMesh": {
+        "ObjectName": "StaticMeshComponent Default__BPTroopShip_C:DestroyedMesh",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.72"
+      },
+      "MinorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPTroopShip_C:MinorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.37"
+      },
+      "MajorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPTroopShip_C:MajorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.36"
+      },
+      "DestroyedFX": {
+        "ObjectName": "ParticleSystem GrenadeBlast",
+        "ObjectPath": "War/Content/FX/GrenadeBlast.151"
+      },
+      "DestroyedSoundCue": {
+        "ObjectName": "SoundCue VehicleDeath_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Vehicles/Truck/VehicleDeath_Cue.0"
+      },
+      "BreakdownSoundCue": {
+        "ObjectName": "SoundCue TruckStall_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Vehicles/Truck/TruckStall_Cue.0"
+      },
+      "CharatcerHitSound": {
+        "ObjectName": "SoundCue TruckFleshImpact",
+        "ObjectPath": "War/Content/Audio/SFX/Vehicles/Truck/TruckFleshImpact.0"
+      },
+      "DriveLoop": {
+        "ObjectName": "AudioComponent Default__BPTroopShip_C:DriveLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.6"
+      },
+      "BackUpSFXLoop": {
+        "ObjectName": "AudioComponent Default__BPTroopShip_C:BackUpSFXLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.5"
+      },
+      "LockSound": {
+        "ObjectName": "SoundCue Lock_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Vehicles/Lock_Cue.0"
+      },
+      "Horn": {
+        "Sound": {
+          "ObjectName": "SoundCue TroopShipHorn_Cue",
+          "ObjectPath": "War/Content/Audio/SFX/Vehicles/TroopShip/TroopShipHorn_Cue.0"
+        }
+      },
+      "CameraRigComponent": {
+        "ObjectName": "PlayerCameraRigComponent Default__BPTroopShip_C:CameraRigVehicle",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.39"
+      },
+      "FrontAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__BPTroopShip_C:FrontAxelCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.41"
+      },
+      "RearAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__BPTroopShip_C:RearAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.45"
+      },
+      "FrontLeftRollCastLocation": {
+        "ObjectName": "SceneComponent Default__BPTroopShip_C:FrontRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.42"
+      },
+      "FrontRightRollCastLocation": {
+        "ObjectName": "SceneComponent Default__BPTroopShip_C:RearRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.46"
+      },
+      "LeftSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__BPTroopShip_C:LeftSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.43"
+      },
+      "RightSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__BPTroopShip_C:RightSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.47"
+      },
+      "VehicleCollision": {
+        "ObjectName": "BoxComponent Default__BPTroopShip_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.15"
+      },
+      "PassengerArea": {
+        "ObjectName": "BoxComponent Default__BPTroopShip_C:PassengerBaseBox",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.14"
+      },
+      "AFKTimeoutComponent": {
+        "ObjectName": "AFKTimeoutComponent Default__BPTroopShip_C:AFKTimeoutComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.3"
+      },
+      "LinearSpeedToTurnSpeedMapCurve": {
+        "ObjectName": "CurveFloat LandingVehicleTurnSpeedCurve",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LandingVehicleTurnSpeedCurve.0"
+      },
+      "BuildSpawnOffset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -200.0
+      },
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPTroopShip_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.73"
+      },
+      "Mesh": {
+        "ObjectName": "SkeletalMeshComponent Default__BPTroopShip_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.65"
+      },
+      "CharacterMovement": {
+        "ObjectName": "SimpleVehicleMovementComponent Default__BPTroopShip_C:CharMoveComp",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.64"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent Default__BPTroopShip_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.17"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPTroopShip_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.15"
+      }
+    }
+  },
+  {
+    "Type": "AFKTimeoutComponent",
+    "Name": "AFKTimeoutComponent",
+    "Outer": "Default__BPTroopShip_C",
+    "Properties": {
+      "TimeUntilTimeoutHours": 60.0
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "Idle_GEN_VARIABLE",
+    "Outer": "BPTroopShip_C",
+    "Properties": {
+      "Sound": {
+        "ObjectName": "SoundCue TroopShipIdle_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Vehicles/TroopShip/TroopShipIdle_Cue.0"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 200.0
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "BackUpSFXLoop",
+    "Outer": "Default__BPTroopShip_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTroopShip_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.17"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "DriveLoop",
+    "Outer": "Default__BPTroopShip_C",
+    "Properties": {
+      "Sound": {
+        "ObjectName": "SoundCue TroopShipDrive_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Vehicles/TroopShip/TroopShipDrive_Cue.0"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTroopShip_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.17"
+      },
+      "RelativeLocation": {
+        "X": -110.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "DriverExit0",
+    "Outer": "BPTroopShip_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class VehicleExitComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_BPTroopShip",
+    "PropertyFlags": 148
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BPTroopShip",
+    "Outer": "BPTroopShip_C",
+    "Children": [
+      {
+        "ObjectName": "IntProperty BPTroopShip_C:ExecuteUbergraph_BPTroopShip.EntryPoint",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.8"
+      },
+      {
+        "ObjectName": "BoolProperty BPTroopShip_C:ExecuteUbergraph_BPTroopShip.K2Node_Event_IsOn",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.12"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "Function",
+    "Name": "BPOnVehicleOn",
+    "Outer": "BPTroopShip_C",
+    "SuperStruct": {
+      "ObjectName": "Function SimVehicle:BPOnVehicleOn",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "BoolProperty BPTroopShip_C:BPOnVehicleOn.IsOn",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.11"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "IsOn",
+    "Outer": "BPOnVehicleOn",
+    "PropertyFlags": 148,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_Event_IsOn",
+    "Outer": "ExecuteUbergraph_BPTroopShip",
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "WorkVolume_GEN_VARIABLE",
+    "Outer": "BPTroopShip_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 1060.0,
+        "Y": 396.297,
+        "Z": 412.4814
+      },
+      "AreaClass": {
+        "ObjectName": "Class NavArea_Obstacle",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bApplyImpulseOnDamage": false,
+      "CanCharacterStepUpOn": "ECB_No",
+      "BodyInstance": {
+        "bEnableGravity": false,
+        "CollisionProfileName": "BlockOnlyWork",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapDowncast",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Projectile",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 200.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "PassengerBaseBox",
+    "Outer": "Default__BPTroopShip_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPTroopShip_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.15"
+      },
+      "RelativeLocation": {
+        "X": -110.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "VehicleCollision",
+    "Outer": "Default__BPTroopShip_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 1040.0,
+        "Y": 275.0,
+        "Z": 150.0
+      },
+      "OnComponentBeginOverlap": null
+    }
+  },
+  {
+    "Type": "CameraComponent",
+    "Name": "Camera_GEN_VARIABLE",
+    "Outer": "BPTroopShip_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": -150.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__BPTroopShip_C",
+    "Properties": {
+      "CapsuleHalfHeight": 200.0,
+      "BodyInstance": {
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "OverlapDowncast",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Projectile",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPTroopShip_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.15"
+      },
+      "bShouldUpdatePhysicsVolume": false
+    }
+  },
+  {
+    "Type": "GenericItemStockpileComponent",
+    "Name": "GenericStockpileComponent",
+    "Outer": "Default__BPTroopShip_C"
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Camera",
+    "Outer": "BPTroopShip_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class CameraComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "DriverSeat0",
+    "Outer": "BPTroopShip_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class VehicleSeatComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "DriverTrigger",
+    "Outer": "BPTroopShip_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class VehicleTriggerComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Idle",
+    "Outer": "BPTroopShip_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class AudioComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Light_Aft",
+    "Outer": "BPTroopShip_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Light_Forward",
+    "Outer": "BPTroopShip_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Light_Midship",
+    "Outer": "BPTroopShip_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "RampEnd (Editor Only)",
+    "Outer": "BPTroopShip_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SceneComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "RampStart (Editor Only)",
+    "Outer": "BPTroopShip_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SceneComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "SpotLight_Aft",
+    "Outer": "BPTroopShip_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SpotLightComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "SpotLight_Forward",
+    "Outer": "BPTroopShip_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SpotLightComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "SpotLight_Midship",
+    "Outer": "BPTroopShip_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SpotLightComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "WorkVolume",
+    "Outer": "BPTroopShip_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BoxComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "BackLeftWaterEmitter",
+    "Outer": "Default__BPTroopShip_C",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem BoatSplashBack",
+        "ObjectPath": "War/Content/FX/BoatSplashBack.19"
+      },
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPTroopShip_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.65"
+      },
+      "RelativeLocation": {
+        "X": 220.0,
+        "Y": -845.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "BackRightWaterEmitter",
+    "Outer": "Default__BPTroopShip_C",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem BoatSplashBack",
+        "ObjectPath": "War/Content/FX/BoatSplashBack.19"
+      },
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPTroopShip_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.65"
+      },
+      "RelativeLocation": {
+        "X": -220.0,
+        "Y": -845.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "FrontLeftWaterEmitter",
+    "Outer": "Default__BPTroopShip_C",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem BoatFrontSplashLeftLarge",
+        "ObjectPath": "War/Content/FX/BoatFrontSplashLeftLarge.40"
+      },
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPTroopShip_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.65"
+      },
+      "RelativeLocation": {
+        "X": 220.0,
+        "Y": 905.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": 0.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "FrontRightWaterEmitter",
+    "Outer": "Default__BPTroopShip_C",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem BoatFrontSplashRightLarge",
+        "ObjectPath": "War/Content/FX/BoatFrontSplashRightLarge.40"
+      },
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPTroopShip_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.65"
+      },
+      "RelativeLocation": {
+        "X": -220.0,
+        "Y": 905.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": 0.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MajorDamagePS",
+    "Outer": "Default__BPTroopShip_C",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem TruckDamaged01",
+        "ObjectPath": "War/Content/FX/TruckDamaged01.50"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTroopShip_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.17"
+      },
+      "RelativeLocation": {
+        "X": 135.0,
+        "Y": 0.0,
+        "Z": 470.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MinorDamagePS",
+    "Outer": "Default__BPTroopShip_C",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem TruckDamaged02",
+        "ObjectPath": "War/Content/FX/TruckDamaged02.35"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTroopShip_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.17"
+      },
+      "RelativeLocation": {
+        "X": 133.18771,
+        "Y": -22.539581,
+        "Z": 470.66248
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "WakeWaterEmitter",
+    "Outer": "Default__BPTroopShip_C",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem BoatSplashes",
+        "ObjectPath": "War/Content/FX/BoatSplashes.36"
+      },
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPTroopShip_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.65"
+      },
+      "RelativeLocation": {
+        "X": -0.00036621094,
+        "Y": -846.5363,
+        "Z": 0.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "PlayerCameraRigComponent",
+    "Name": "CameraRigVehicle",
+    "Outer": "Default__BPTroopShip_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTroopShip_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.17"
+      },
+      "RelativeLocation": {
+        "X": -110.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": -60.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPTroopShip_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontAxelCastLocation",
+    "Outer": "Default__BPTroopShip_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTroopShip_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.17"
+      },
+      "RelativeLocation": {
+        "X": -110.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontRightAxleCastLocation",
+    "Outer": "Default__BPTroopShip_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTroopShip_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.17"
+      },
+      "RelativeLocation": {
+        "X": -110.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "LeftSideTrackLocation",
+    "Outer": "Default__BPTroopShip_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTroopShip_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.17"
+      },
+      "RelativeLocation": {
+        "X": -110.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RampExitPosition",
+    "Outer": "Default__BPTroopShip_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPTroopShip_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.15"
+      },
+      "RelativeLocation": {
+        "X": 1040.0,
+        "Y": 0.0,
+        "Z": 300.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearAxleCastLocation",
+    "Outer": "Default__BPTroopShip_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTroopShip_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.17"
+      },
+      "RelativeLocation": {
+        "X": -110.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearRightAxleCastLocation",
+    "Outer": "Default__BPTroopShip_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTroopShip_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.17"
+      },
+      "RelativeLocation": {
+        "X": -110.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RightSideTrackLocation",
+    "Outer": "Default__BPTroopShip_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTroopShip_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.17"
+      },
+      "RelativeLocation": {
+        "X": -110.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPTroopShip_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.40"
+      },
+      "VariableGuid": "E709F14C-4C123634-42C2849B-0BF871F3",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class VehicleSeatComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "VehicleSeatComponent BPTroopShip_C:DriverSeat0_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.75"
+      },
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "D2601EF9-4AA6F6F6-B348B5A2-6E205CE5",
+      "InternalVariableName": "DriverSeat0"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_10",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SpotLightComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SpotLightComponent BPTroopShip_C:SpotLight_Forward_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.67"
+      },
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "EAD3DD21-457BFCE0-EE868786-BB0E9889",
+      "InternalVariableName": "SpotLight_Forward"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_11",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BoxComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent BPTroopShip_C:WorkVolume_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.13"
+      },
+      "ParentComponentOrVariableName": "VehicleCollision",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "6A507A5D-4F69BFA2-52D86C85-AC3C14FE",
+      "InternalVariableName": "WorkVolume"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_13",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class AudioComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "AudioComponent BPTroopShip_C:Idle_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.4"
+      },
+      "ParentComponentOrVariableName": "VehicleCollision",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "28A48252-41944734-4E223FA8-8895F7F4",
+      "InternalVariableName": "Idle"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_14",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class VehicleTriggerComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "VehicleTriggerComponent BPTroopShip_C:DriverTrigger_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.76"
+      },
+      "ParentComponentOrVariableName": "VehicleCollision",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "0C27DEC0-40CEDA93-42EBA2A1-B919CEE0",
+      "InternalVariableName": "DriverTrigger"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_15",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class VehicleExitComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "VehicleExitComponent BPTroopShip_C:DriverExit0_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.74"
+      },
+      "ParentComponentOrVariableName": "VehicleCollision",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "E48FF0D0-4B260F07-9FA5DFA6-06AD9408",
+      "InternalVariableName": "DriverExit0"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class CameraComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "CameraComponent BPTroopShip_C:Camera_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.16"
+      },
+      "ParentComponentOrVariableName": "CameraRigVehicle",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "80214740-41D376EC-A99A0C9A-77C49B06",
+      "InternalVariableName": "Camera"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": null,
+      "ParentComponentOrVariableName": "VehicleCollision",
+      "bIsParentComponentNative": true,
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node BPTroopShip_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.57"
+        }
+      ],
+      "VariableGuid": "233057B9-46839B81-68E9049F-404382F6",
+      "InternalVariableName": "RampStart (Editor Only)"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": null,
+      "VariableGuid": "22935838-42ED3138-E6326B9B-3C4A003B",
+      "InternalVariableName": "RampEnd (Editor Only)"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPTroopShip_C:Light_Midship_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.71"
+      },
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "9106F273-4273E429-17F58883-E846684D",
+      "InternalVariableName": "Light_Midship"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPTroopShip_C:Light_Aft_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.69"
+      },
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "0AC9917E-4E46D75D-86D14FBA-90B411D0",
+      "InternalVariableName": "Light_Aft"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPTroopShip_C:Light_Forward_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.70"
+      },
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "CB35BF90-47989E2A-5020F3B6-E3E63104",
+      "InternalVariableName": "Light_Forward"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_8",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SpotLightComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SpotLightComponent BPTroopShip_C:SpotLight_Midship_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.68"
+      },
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "4BE7D04C-4BACEAC6-1AA6349B-A20B7ED7",
+      "InternalVariableName": "SpotLight_Midship"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_9",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SpotLightComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SpotLightComponent BPTroopShip_C:SpotLight_Aft_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.66"
+      },
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "552CB381-48AEDA14-DF93519E-FF9AF11E",
+      "InternalVariableName": "SpotLight_Aft"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPTroopShip_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPTroopShip_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.55"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShip_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.56"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShip_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.59"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShip_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.60"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShip_C:SimpleConstructionScript_0.SCS_Node_8",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.61"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShip_C:SimpleConstructionScript_0.SCS_Node_9",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.62"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShip_C:SimpleConstructionScript_0.SCS_Node_10",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.50"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShip_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.58"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShip_C:SimpleConstructionScript_0.SCS_Node_11",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.51"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShip_C:SimpleConstructionScript_0.SCS_Node_13",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.52"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShip_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.49"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShip_C:SimpleConstructionScript_0.SCS_Node_14",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.53"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShip_C:SimpleConstructionScript_0.SCS_Node_15",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.54"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPTroopShip_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.55"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShip_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.56"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShip_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.57"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShip_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.59"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShip_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.60"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShip_C:SimpleConstructionScript_0.SCS_Node_8",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.61"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShip_C:SimpleConstructionScript_0.SCS_Node_9",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.62"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShip_C:SimpleConstructionScript_0.SCS_Node_10",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.50"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShip_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.58"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShip_C:SimpleConstructionScript_0.SCS_Node_11",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.51"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShip_C:SimpleConstructionScript_0.SCS_Node_13",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.52"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShip_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.49"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShip_C:SimpleConstructionScript_0.SCS_Node_14",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.53"
+        },
+        {
+          "ObjectName": "SCS_Node BPTroopShip_C:SimpleConstructionScript_0.SCS_Node_15",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.54"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPTroopShip_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.48"
+      }
+    }
+  },
+  {
+    "Type": "SimpleVehicleMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__BPTroopShip_C",
+    "Properties": {
+      "bCanSink": false,
+      "bAllowIsWalkable": false,
+      "MaxWalkSpeed": 0.0,
+      "MaxSwimSpeed": 750.0,
+      "MaxAcceleration": 275.0,
+      "BrakingFrictionFactor": 0.2,
+      "BrakingFriction": 2.0,
+      "BrakingDecelerationSwimming": 100.0,
+      "Buoyancy": 1.0,
+      "bUseSeparateBrakingFriction": true,
+      "Mass": 2000.0,
+      "NavAgentProps": {
+        "bCanJump": false
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__BPTroopShip_C",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_TroopShip_C",
+        "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.1"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_TroopShip",
+        "ObjectPath": "War/Content/Meshes/Vehicles/SK_TroopShip.0"
+      },
+      "VisibilityBasedAnimTickOption": "EVisibilityBasedAnimTickOption::AlwaysTickPoseAndRefreshBones",
+      "OverrideMaterials": [
+        null,
+        null,
+        null
+      ],
+      "CanCharacterStepUpOn": "ECB_Yes",
+      "BodyInstance": {
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "PhysMaterialOverride": {
+          "ObjectName": "PhysicalMaterial MetalPhys",
+          "ObjectPath": "War/Content/PhysicalMaterials/MetalPhys.0"
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTroopShip_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.17"
+      },
+      "RelativeLocation": {
+        "X": -110.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SpotLightComponent",
+    "Name": "SpotLight_Aft_GEN_VARIABLE",
+    "Outer": "BPTroopShip_C",
+    "Properties": {
+      "InnerConeAngle": 5.0,
+      "OuterConeAngle": 28.0,
+      "bUseInverseSquaredFalloff": false,
+      "AttenuationRadius": 2200.0,
+      "bUseRayTracedDistanceFieldShadows": true,
+      "Intensity": 5.0,
+      "LightColor": {
+        "R": 164,
+        "G": 222,
+        "B": 255,
+        "A": 255,
+        "Hex": "FFA4DEFF"
+      },
+      "CastShadows": false,
+      "RelativeLocation": {
+        "X": -68.0918,
+        "Y": -584.9872,
+        "Z": 694.16583
+      },
+      "RelativeRotation": {
+        "Pitch": -24.052114,
+        "Yaw": -90.029816,
+        "Roll": 0.012202976
+      },
+      "bVisible": false
+    }
+  },
+  {
+    "Type": "SpotLightComponent",
+    "Name": "SpotLight_Forward_GEN_VARIABLE",
+    "Outer": "BPTroopShip_C",
+    "Properties": {
+      "InnerConeAngle": 5.0,
+      "OuterConeAngle": 28.0,
+      "bUseInverseSquaredFalloff": false,
+      "AttenuationRadius": 2200.0,
+      "bUseRayTracedDistanceFieldShadows": true,
+      "Intensity": 5.0,
+      "LightColor": {
+        "R": 164,
+        "G": 222,
+        "B": 255,
+        "A": 255,
+        "Hex": "FFA4DEFF"
+      },
+      "CastShadows": false,
+      "RelativeLocation": {
+        "X": -21.696167,
+        "Y": 1122.4738,
+        "Z": 468.78674
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 89.99999,
+        "Roll": 0.0
+      },
+      "bVisible": false
+    }
+  },
+  {
+    "Type": "SpotLightComponent",
+    "Name": "SpotLight_Midship_GEN_VARIABLE",
+    "Outer": "BPTroopShip_C",
+    "Properties": {
+      "InnerConeAngle": 5.0,
+      "OuterConeAngle": 28.0,
+      "bUseInverseSquaredFalloff": false,
+      "AttenuationRadius": 2200.0,
+      "bUseRayTracedDistanceFieldShadows": true,
+      "Intensity": 5.0,
+      "LightColor": {
+        "R": 164,
+        "G": 222,
+        "B": 255,
+        "A": 255,
+        "Hex": "FFA4DEFF"
+      },
+      "CastShadows": false,
+      "RelativeLocation": {
+        "X": -107.93024,
+        "Y": -281.5019,
+        "Z": 628.4547
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 89.99999,
+        "Roll": 0.0
+      },
+      "bVisible": false
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Light_Aft_GEN_VARIABLE",
+    "Outer": "BPTroopShip_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh Headlight",
+        "ObjectPath": "War/Content/Meshes/Vehicles/Headlight.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material SimpleEmissive",
+          "ObjectPath": "War/Content/Materials/SimpleEmissive.0"
+        }
+      ],
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -68.0918,
+        "Y": -584.9872,
+        "Z": 694.16583
+      },
+      "RelativeRotation": {
+        "Pitch": 1.3660378E-05,
+        "Yaw": 179.99963,
+        "Roll": 24.053158
+      },
+      "RelativeScale3D": {
+        "X": 1.0,
+        "Y": 1.471524,
+        "Z": 1.0
+      },
+      "bVisible": false
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Light_Forward_GEN_VARIABLE",
+    "Outer": "BPTroopShip_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh Headlight",
+        "ObjectPath": "War/Content/Meshes/Vehicles/Headlight.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material SimpleEmissive",
+          "ObjectPath": "War/Content/Materials/SimpleEmissive.0"
+        }
+      ],
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -21.696167,
+        "Y": 1122.4738,
+        "Z": 468.78674
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 180.0,
+        "Roll": 0.0
+      },
+      "RelativeScale3D": {
+        "X": 1.205973,
+        "Y": 1.471524,
+        "Z": 1.205973
+      },
+      "bVisible": false
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Light_Midship_GEN_VARIABLE",
+    "Outer": "BPTroopShip_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh Headlight",
+        "ObjectPath": "War/Content/Meshes/Vehicles/Headlight.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material SimpleEmissive",
+          "ObjectPath": "War/Content/Materials/SimpleEmissive.0"
+        }
+      ],
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -107.93024,
+        "Y": -281.5019,
+        "Z": 628.4547
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 180.0,
+        "Roll": 0.0
+      },
+      "RelativeScale3D": {
+        "X": 1.0,
+        "Y": 1.471524,
+        "Z": 1.0
+      },
+      "bVisible": false
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "DestroyedMesh",
+    "Outer": "Default__BPTroopShip_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh TroopShipDestroyed",
+        "ObjectPath": "War/Content/Meshes/Vehicles/TroopShipDestroyed.2"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTroopShip_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPTroopShip.17"
+      },
+      "RelativeLocation": {
+        "X": -110.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPTroopShip_C"
+  },
+  {
+    "Type": "VehicleExitComponent",
+    "Name": "DriverExit0_GEN_VARIABLE",
+    "Outer": "BPTroopShip_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 200.0,
+        "Y": -600.0,
+        "Z": 315.0
+      }
+    }
+  },
+  {
+    "Type": "VehicleSeatComponent",
+    "Name": "DriverSeat0_GEN_VARIABLE",
+    "Outer": "BPTroopShip_C",
+    "Properties": {
+      "TriggerName": "DriverTrigger",
+      "ExitName": "DriverExit0",
+      "EnterSFX": {
+        "ObjectName": "SoundCue TroopShipStart_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Vehicles/TroopShip/TroopShipStart_Cue.0"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 450.0,
+        "Z": 225.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VehicleTriggerComponent",
+    "Name": "DriverTrigger_GEN_VARIABLE",
+    "Outer": "BPTroopShip_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 1300.0,
+        "Y": 700.0,
+        "Z": 400.0
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 200.0
+      }
+    }
+  }
+]

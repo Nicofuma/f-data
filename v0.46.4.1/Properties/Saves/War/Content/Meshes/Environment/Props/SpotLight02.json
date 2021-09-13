@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SpotLight02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_3",
+    "Outer": "SpotLight02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x475C"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SpotLight02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant SpotLight",
+            "ObjectPath": "War/Content/Materials/Environment/Props/SpotLight.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "Foxhole_Character.003",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 930.28156,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 930.28156,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -7.6293945E-06,
+          "Z": 195.25958
+        },
+        "BoxExtent": {
+          "X": 166.96596,
+          "Y": 63.209457,
+          "Z": 99.09473
+        },
+        "SphereRadius": 196.0884
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SpotLight02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/SpotLight02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SpotLight02:NavCollision_3",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/SpotLight02.1"
+    },
+    "LightingGuid": "72277A7B-43D67955-9D2E7DA7-BF8745D1",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,1043 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "Roof",
+    "Outer": "BPFortObservationT3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPFortObservationT3_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPFortObservationT3_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.33"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class ConcreteFortObservation",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPFortObservationT3_C:Roof",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortObservationT3_C:CornerBackLeft",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.8"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortObservationT3_C:CornerFrontRight",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.11"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortObservationT3_C:CornerFrontLeft",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.10"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortObservationT3_C:CornerBackRight",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.9"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortObservationT3_C:ObservationBunkerT3",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.18"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortObservationT3_C:FortCommonDirtT3",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.15"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortObservationT3_C:FortCommonDefenseMods",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.14"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortObservationT3_C:FortCommonMods",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.16"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortObservationT3_C:FortCommon",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.13"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortObservationT3_C:LocationMultiplexedMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.17"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortObservationT3_C:Floor",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.12"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPFortObservationT3_C",
+    "Name": "Default__BPFortObservationT3_C",
+    "Properties": {
+      "MapIntelligenceSource": {
+        "ObjectName": "MapIntelligenceSourceComponent Default__BPFortObservationT3_C:MapIntelligenceSourceComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.7"
+      },
+      "TeamFlagMeshComponent": {
+        "ObjectName": "TeamFlagMeshComponent Default__BPFortObservationT3_C:TeamFlagMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.42"
+      },
+      "PowerInfo": {
+        "PowerDelta": -1000
+      },
+      "Tier": "EFortTier::T3",
+      "BuildGhostClass": null,
+      "BuildSiteClass": {
+        "ObjectName": "Class FortBuildSite",
+        "ObjectPath": "/Script/War"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "356236754052936812966680A279691D",
+        "SourceString": "A radio bunker that provides intel to friendly units about the surrounding area. Built from solid concrete, this reliable structure can push its effective range beyond lesser fortified radio structures."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D ObservationBunkerT3ItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/StructureIcons/ObservationBunkerT3ItemIcon.0"
+      },
+      "DestroyedDamageExtent": {
+        "X": 300.0,
+        "Y": 300.0,
+        "Z": 100.0
+      },
+      "CodeName": "ObservationBunkerT3",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "47388EC04BD20F7375417C92BAE28F54",
+        "SourceString": "Observation Bunker (Tier 3)"
+      },
+      "ProfileType": "EStructureProfileType::FortRotatableUpgrade",
+      "ArmourType": "EArmourType::Tier3Structure",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPFortObservationT3_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPFortObservationT3_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.4"
+      },
+      "TechComponentIDs": [
+        "ETechComponentID::Concrete",
+        "ETechComponentID::ObservationBunkers"
+      ],
+      "InfrastructureComponent": {
+        "ObjectName": "InfrastructureComponent Default__BPFortObservationT3_C:InfrastructureComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.5"
+      },
+      "MaxHealth": 1750,
+      "Health": 1750,
+      "MapIntelligenceType": "EMapIntelligenceType::ObservationBunkerT3",
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPFortObservationT3_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.41"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPFortObservationT3_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPFortObservationT3_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPFortObservationT3_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 300.0,
+        "Y": 300.0,
+        "Z": 145.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFortObservationT3_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 22.0
+      }
+    }
+  },
+  {
+    "Type": "InfrastructureComponent",
+    "Name": "InfrastructureComponent",
+    "Outer": "Default__BPFortObservationT3_C",
+    "Properties": {
+      "FilteredTypes": "EFortModificationType::Chalkboard",
+      "FilteredTypes": "EFortModificationType::RadioStation",
+      "FilteredTypes": "EFortModificationType::StrategicMap"
+    }
+  },
+  {
+    "Type": "LocationMultiplexedMeshComponent",
+    "Name": "LocationMultiplexedMesh_GEN_VARIABLE",
+    "Outer": "BPFortObservationT3_C",
+    "Properties": {
+      "TargetTag": "MultiplexedFloor",
+      "MeshStops": [
+        {
+          "StaticMesh": {
+            "ObjectName": "StaticMesh FortT3Floor01",
+            "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortT3Floor01.2"
+          }
+        },
+        {
+          "StaticMesh": {
+            "ObjectName": "StaticMesh FortT3Floor02",
+            "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortT3Floor02.2"
+          }
+        },
+        {
+          "StaticMesh": {
+            "ObjectName": "StaticMesh FortT3Floor03",
+            "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortT3Floor03.2"
+          }
+        },
+        {
+          "StaticMesh": {
+            "ObjectName": "StaticMesh FortT3Floor04",
+            "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortT3Floor04.2"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MapIntelligenceSourceComponent",
+    "Name": "MapIntelligenceSourceComponent",
+    "Outer": "Default__BPFortObservationT3_C",
+    "Properties": {
+      "DetectionRadius": 18000.0
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CornerBackLeft",
+    "Outer": "BPFortObservationT3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CornerBackRight",
+    "Outer": "BPFortObservationT3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CornerFrontLeft",
+    "Outer": "BPFortObservationT3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CornerFrontRight",
+    "Outer": "BPFortObservationT3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Floor",
+    "Outer": "BPFortObservationT3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "FortCommon",
+    "Outer": "BPFortObservationT3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class TemplateComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "FortCommonDefenseMods",
+    "Outer": "BPFortObservationT3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class TemplateComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "FortCommonDirtT3",
+    "Outer": "BPFortObservationT3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class TemplateComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "FortCommonMods",
+    "Outer": "BPFortObservationT3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class TemplateComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "LocationMultiplexedMesh",
+    "Outer": "BPFortObservationT3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class LocationMultiplexedMeshComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "ObservationBunkerT3",
+    "Outer": "BPFortObservationT3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPFortObservationT3_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPFortObservationT3_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.19"
+      },
+      "VariableGuid": "1144E758-45F21128-659C63A0-98B6F24C",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class TemplateComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "TemplateComponent BPFortObservationT3_C:FortCommonMods_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.46"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "C7B0FDA1-4E5DED38-722E3FAB-FF579D5A",
+      "InternalVariableName": "FortCommonMods"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_10",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPFortObservationT3_C:CornerFrontRight_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.37"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "20BB22A0-4018417F-E1B17091-2408B69C",
+      "InternalVariableName": "CornerFrontRight"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_11",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPFortObservationT3_C:Roof_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.40"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "66ABE3DB-4BCF4C0F-1E1EEEA1-3B37ACC9",
+      "InternalVariableName": "Roof"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class TemplateComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "TemplateComponent BPFortObservationT3_C:FortCommon_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.43"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "0319A781-47D53A56-F36A60A2-0EA2473E",
+      "InternalVariableName": "FortCommon"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class TemplateComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "TemplateComponent BPFortObservationT3_C:FortCommonDefenseMods_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.44"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "0C3B6E94-4C35FD66-33353C8A-4872F5E1",
+      "InternalVariableName": "FortCommonDefenseMods"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_30",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class LocationMultiplexedMeshComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "LocationMultiplexedMeshComponent BPFortObservationT3_C:LocationMultiplexedMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.6"
+      },
+      "VariableGuid": "67075AB2-48B4268B-906BDEA0-41FC0261",
+      "InternalVariableName": "LocationMultiplexedMesh"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class TemplateComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "TemplateComponent BPFortObservationT3_C:FortCommonDirtT3_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.45"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "A185E07F-4BDC2875-F0B1A096-3CDC3834",
+      "InternalVariableName": "FortCommonDirtT3"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_40",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPFortObservationT3_C:Floor_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.38"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "7CE8D49D-45908314-055555B1-647CFA24",
+      "InternalVariableName": "Floor"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPFortObservationT3_C:CornerBackLeft_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.34"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "F150F556-4CE5D046-645C7B99-EEFAD5E3",
+      "InternalVariableName": "CornerBackLeft"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPFortObservationT3_C:ObservationBunkerT3_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.39"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "11DFB192-49F6E11B-3DD667A1-0C9E23A7",
+      "InternalVariableName": "ObservationBunkerT3"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_8",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPFortObservationT3_C:CornerBackRight_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.35"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "B2567069-47EDD058-06529286-5F4E7911",
+      "InternalVariableName": "CornerBackRight"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_9",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPFortObservationT3_C:CornerFrontLeft_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.36"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "E2693F50-49FD9008-6FEBDD9F-E6430686",
+      "InternalVariableName": "CornerFrontLeft"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPFortObservationT3_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPFortObservationT3_C:SimpleConstructionScript_0.SCS_Node_40",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.28"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortObservationT3_C:SimpleConstructionScript_0.SCS_Node_30",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.26"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortObservationT3_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.24"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortObservationT3_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.21"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortObservationT3_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.25"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortObservationT3_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.27"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortObservationT3_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.30"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortObservationT3_C:SimpleConstructionScript_0.SCS_Node_8",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.31"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortObservationT3_C:SimpleConstructionScript_0.SCS_Node_9",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.32"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortObservationT3_C:SimpleConstructionScript_0.SCS_Node_10",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.22"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortObservationT3_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.29"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortObservationT3_C:SimpleConstructionScript_0.SCS_Node_11",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.23"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPFortObservationT3_C:SimpleConstructionScript_0.SCS_Node_40",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.28"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortObservationT3_C:SimpleConstructionScript_0.SCS_Node_30",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.26"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortObservationT3_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.24"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortObservationT3_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.21"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortObservationT3_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.25"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortObservationT3_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.27"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortObservationT3_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.30"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortObservationT3_C:SimpleConstructionScript_0.SCS_Node_8",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.31"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortObservationT3_C:SimpleConstructionScript_0.SCS_Node_9",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.32"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortObservationT3_C:SimpleConstructionScript_0.SCS_Node_10",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.22"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortObservationT3_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.29"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortObservationT3_C:SimpleConstructionScript_0.SCS_Node_11",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.23"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPFortObservationT3_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.20"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "CornerBackLeft_GEN_VARIABLE",
+    "Outer": "BPFortObservationT3_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh FortT3Corner01",
+        "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortT3Corner01.2"
+      },
+      "bReceivesDecals": false,
+      "BodyInstance": {
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -250.0,
+        "Y": -250.0,
+        "Z": -160.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -179.9999,
+        "Roll": 0.0
+      },
+      "ComponentTags": [
+        "SideLeft",
+        "SideBack",
+        "ShowWeatherFX"
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "CornerBackRight_GEN_VARIABLE",
+    "Outer": "BPFortObservationT3_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh FortT3Corner01",
+        "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortT3Corner01.2"
+      },
+      "bReceivesDecals": false,
+      "BodyInstance": {
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -250.0,
+        "Y": 250.0,
+        "Z": -160.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.00005,
+        "Roll": 0.0
+      },
+      "ComponentTags": [
+        "SideBack",
+        "SideRight",
+        "ShowWeatherFX"
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "CornerFrontLeft_GEN_VARIABLE",
+    "Outer": "BPFortObservationT3_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh FortT3Corner01",
+        "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortT3Corner01.2"
+      },
+      "bReceivesDecals": false,
+      "BodyInstance": {
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 250.0,
+        "Y": -250.0,
+        "Z": -160.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -89.99975,
+        "Roll": 0.0
+      },
+      "ComponentTags": [
+        "SideFront",
+        "SideLeft",
+        "ShowWeatherFX"
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "CornerFrontRight_GEN_VARIABLE",
+    "Outer": "BPFortObservationT3_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh FortT3Corner01",
+        "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortT3Corner01.2"
+      },
+      "bReceivesDecals": false,
+      "BodyInstance": {
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 250.0,
+        "Y": 250.0,
+        "Z": -160.0
+      },
+      "ComponentTags": [
+        "SideFront",
+        "SideRight",
+        "ShowWeatherFX"
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Floor_GEN_VARIABLE",
+    "Outer": "BPFortObservationT3_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh FortT3Floor01",
+        "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortT3Floor01.2"
+      },
+      "bReceivesDecals": false,
+      "BodyInstance": {
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -160.0
+      },
+      "ComponentTags": [
+        "MultiplexedFloor"
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ObservationBunkerT3_GEN_VARIABLE",
+    "Outer": "BPFortObservationT3_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh ObservationBunkerT3",
+        "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/AIBunkers/ObservationBunkerT3.2"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -160.0
+      },
+      "ComponentTags": [
+        "RoofVisibility"
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Roof_GEN_VARIABLE",
+    "Outer": "BPFortObservationT3_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh FortT3Roof01",
+        "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortT3Roof01.2"
+      },
+      "bReceivesDecals": false,
+      "bCastHiddenShadow": true,
+      "BodyInstance": {
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -160.0
+      },
+      "ComponentTags": [
+        "RoofVisibility"
+      ]
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPFortObservationT3_C"
+  },
+  {
+    "Type": "TeamFlagMeshComponent",
+    "Name": "TeamFlagMesh",
+    "Outer": "Default__BPFortObservationT3_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFortObservationT3_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortObservationT3.3"
+      },
+      "ComponentTags": [
+        "RoofVisibility"
+      ]
+    }
+  },
+  {
+    "Type": "TemplateComponent",
+    "Name": "FortCommon_GEN_VARIABLE",
+    "Outer": "BPFortObservationT3_C",
+    "Properties": {
+      "TemplateActor": {
+        "ObjectName": "BlueprintGeneratedClass BPFortCommon_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommon.1"
+      }
+    }
+  },
+  {
+    "Type": "TemplateComponent",
+    "Name": "FortCommonDefenseMods_GEN_VARIABLE",
+    "Outer": "BPFortObservationT3_C",
+    "Properties": {
+      "TemplateActor": {
+        "ObjectName": "BlueprintGeneratedClass BPFortCommonDefenseMods_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommonDefenseMods.1"
+      }
+    }
+  },
+  {
+    "Type": "TemplateComponent",
+    "Name": "FortCommonDirtT3_GEN_VARIABLE",
+    "Outer": "BPFortObservationT3_C",
+    "Properties": {
+      "TemplateActor": {
+        "ObjectName": "BlueprintGeneratedClass BPFortCommonDirtT3_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommonDirtT3.1"
+      }
+    }
+  },
+  {
+    "Type": "TemplateComponent",
+    "Name": "FortCommonMods_GEN_VARIABLE",
+    "Outer": "BPFortObservationT3_C",
+    "Properties": {
+      "TemplateActor": {
+        "ObjectName": "BlueprintGeneratedClass BPFortCommonMods_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommonMods.1"
+      }
+    }
+  }
+]

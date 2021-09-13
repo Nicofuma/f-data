@@ -1,0 +1,127 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "SubMachineGunPickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript SubMachineGunPickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/SubMachineGunPickup.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class FirearmPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "SubMachineGunPickup_C",
+    "Name": "Default__SubMachineGunPickup_C",
+    "Properties": {
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass SubMachineGunItem_C",
+        "ObjectPath": "War/Content/Blueprints/Items/SubMachineGunItem.0"
+      },
+      "Encumbrance": 80,
+      "CodeName": "SMGW",
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "71E36EA94F690E169CF0E8A016F50CA4",
+        "SourceString": "Submachine Gun"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "D3F193824BD8E896BF010E954E7B277B",
+        "SourceString": "Fiddler Submachine Gun Model 868"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "BE650A6240B335C6D7E3EDAD01A1AB80",
+        "SourceString": "The Fiddler Submachine gun is a widely used urban combat weapon. Its high rate of fire and compact frame make it ideal for close-quarters engagements."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D SubMachineGunIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/SubMachineGunIcon.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Primary",
+      "ItemCategory": "EItemCategory::SmallArms",
+      "ItemFlagsMask": 129,
+      "ItemProfileType": "EItemProfileType::HandheldWeapon",
+      "FactionVariant": "EFactionId::Wardens",
+      "TechID": "ETechID::UnlockSMG",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__SubMachineGunPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/SubMachineGunPickup.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__SubMachineGunPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/SubMachineGunPickup.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__SubMachineGunPickup_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 29.126493,
+        "Y": 61.71395,
+        "Z": 32.0
+      },
+      "bReceivesDecals": false
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "SubMachineGunPickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent SubMachineGunPickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/SubMachineGunPickup.3"
+      },
+      "VariableGuid": "FBF04340-40D71A47-9ED11191-32B797F3",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "SubMachineGunPickup_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node SubMachineGunPickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/SubMachineGunPickup.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__SubMachineGunPickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__SubMachineGunPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/SubMachineGunPickup.2"
+      }
+    }
+  }
+]

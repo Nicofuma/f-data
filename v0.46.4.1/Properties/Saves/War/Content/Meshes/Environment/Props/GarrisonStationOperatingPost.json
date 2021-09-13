@@ -1,0 +1,121 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "GarrisonStationOperatingPost",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "GarrisonStationOperatingPost",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2115F"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "GarrisonStationOperatingPost",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Food01",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Food01.0"
+          },
+          "MaterialSlotName": "Cans",
+          "ImportedMaterialSlotName": "SafeHouse",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 102.925125,
+            "LocalUVDensities": 97.42459,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant CoverBench1",
+            "ObjectPath": "War/Content/Materials/Environment/CoverBench1.0"
+          },
+          "MaterialSlotName": "Wood",
+          "ImportedMaterialSlotName": "Cans",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 509.99942,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FactorySuppliesFacility",
+            "ObjectPath": "War/Content/Materials/Environment/Props/FactorySuppliesFacility.0"
+          },
+          "MaterialSlotName": "Food",
+          "ImportedMaterialSlotName": "Wood",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 478.42825,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 97.42459,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 217.58812,
+          "Y": 532.17804,
+          "Z": 121.671936
+        },
+        "BoxExtent": {
+          "X": 166.61111,
+          "Y": 101.15733,
+          "Z": 120.90936
+        },
+        "SphereRadius": 207.54068
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup GarrisonStationOperatingPost:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/GarrisonStationOperatingPost.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision GarrisonStationOperatingPost:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/GarrisonStationOperatingPost.1"
+    },
+    "LightingGuid": "9E76A2AB-4E188B2B-3856AA8F-FCF11FB5",
+    "RenderData": null
+  }
+]

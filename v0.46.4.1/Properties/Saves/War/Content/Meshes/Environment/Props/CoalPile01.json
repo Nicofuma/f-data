@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "CoalPile01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "CoalPile01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xCA3A"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "CoalPile01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownCoalPile01",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownCoalPile01.0"
+          },
+          "MaterialSlotName": "Coal01",
+          "ImportedMaterialSlotName": "Coal01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 312.31473,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 312.31473,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -2.8707428,
+          "Y": -10.7339325,
+          "Z": 10.012974
+        },
+        "BoxExtent": {
+          "X": 179.67885,
+          "Y": 143.44514,
+          "Z": 13.922533
+        },
+        "SphereRadius": 184.9043
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup CoalPile01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/CoalPile01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision CoalPile01:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/CoalPile01.1"
+    },
+    "LightingGuid": "04B495FB-45C6E550-EF8F5DA0-FA778FF4",
+    "RenderData": null
+  }
+]

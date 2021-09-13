@@ -1,0 +1,209 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Outer": "FortT3InteriorFiringPortCorner",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": 37.84805,
+                "Y": 35.485096,
+                "Z": 5.781256E-06
+              },
+              {
+                "X": 0.0,
+                "Y": -0.0,
+                "Z": 0.0
+              },
+              {
+                "X": 5.9604645E-06,
+                "Y": 35.4851,
+                "Z": 5.7812567E-06
+              },
+              {
+                "X": 0.0,
+                "Y": -0.0,
+                "Z": 0.0
+              },
+              {
+                "X": 5.9604645E-06,
+                "Y": 35.4851,
+                "Z": 5.7812567E-06
+              },
+              {
+                "X": 37.848045,
+                "Y": -5.9604645E-06,
+                "Z": -9.710829E-13
+              },
+              {
+                "X": 37.84805,
+                "Y": 35.485096,
+                "Z": 5.781256E-06
+              },
+              {
+                "X": 37.848045,
+                "Y": -5.9604645E-06,
+                "Z": -9.710829E-13
+              },
+              {
+                "X": 0.0,
+                "Y": -4.062414E-05,
+                "Z": 249.34921
+              },
+              {
+                "X": 5.9604645E-06,
+                "Y": 35.48506,
+                "Z": 249.34921
+              },
+              {
+                "X": 0.0,
+                "Y": -4.062414E-05,
+                "Z": 249.34921
+              },
+              {
+                "X": 37.84805,
+                "Y": 35.485054,
+                "Z": 249.34921
+              },
+              {
+                "X": 5.9604645E-06,
+                "Y": 35.48506,
+                "Z": 249.34921
+              },
+              {
+                "X": 37.848045,
+                "Y": -4.6584606E-05,
+                "Z": 249.34921
+              },
+              {
+                "X": 37.84805,
+                "Y": 35.485054,
+                "Z": 249.34921
+              },
+              {
+                "X": 37.848045,
+                "Y": -4.6584606E-05,
+                "Z": 249.34921
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": 0.0,
+                "Y": -4.6584606E-05,
+                "Z": -9.710829E-13
+              },
+              "Max": {
+                "X": 37.84805,
+                "Y": 35.4851,
+                "Z": 249.34921
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "FortT3InteriorFiringPortCorner",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 457,
+        "SizeOnDisk": 457,
+        "OffsetInFile": "0x26B9"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FortT3InteriorFiringPortCorner",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortTrenchT3ConcreteDirt01",
+            "ObjectPath": "War/Content/Materials/Structures/FortTrenchT3ConcreteDirt01.0"
+          },
+          "MaterialSlotName": "FortTrenchT3ConcreteDirt",
+          "ImportedMaterialSlotName": "FortTrenchT3ConcreteDirt",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 374.8886,
+            "LocalUVDensities": 0.9692855,
+            "LocalUVDensities": 0.9692855,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 0.9692855,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 19.509388,
+          "Y": 17.325085,
+          "Z": 125.14547
+        },
+        "BoxExtent": {
+          "X": 18.339104,
+          "Y": 18.160013,
+          "Z": 125.14547
+        },
+        "SphereRadius": 127.63047
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FortT3InteriorFiringPortCorner:BodySetup_1",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortT3InteriorFiringPortCorner.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FortT3InteriorFiringPortCorner:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortT3InteriorFiringPortCorner.1"
+    },
+    "LightingGuid": "68B72534-452E1CBE-F1793DAC-603AD2D6",
+    "RenderData": null
+  }
+]

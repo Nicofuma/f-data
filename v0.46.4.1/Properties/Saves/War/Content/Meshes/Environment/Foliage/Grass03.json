@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Grass03",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "Grass03",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x14F6"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Grass03",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Grass",
+            "ObjectPath": "War/Content/Materials/Environment/Grass.0"
+          },
+          "MaterialSlotName": "Material #506",
+          "ImportedMaterialSlotName": "Material #506",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 185.07704,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 185.07704,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -21.419296,
+          "Y": 19.33078,
+          "Z": 94.90311
+        },
+        "BoxExtent": {
+          "X": 142.55876,
+          "Y": 151.26053,
+          "Z": 96.90259
+        },
+        "SphereRadius": 171.48239
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Grass03:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/Grass03.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Grass03:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/Grass03.1"
+    },
+    "LightingGuid": "4EA753B9-44CDC1E7-B6F87C8E-9FB1509D",
+    "RenderData": null
+  }
+]

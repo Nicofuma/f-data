@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "RelicRoll01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "RelicRoll01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x64C6"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "RelicRoll01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RelicBags01",
+            "ObjectPath": "War/Content/Materials/Environment/Props/RelicBags01.0"
+          },
+          "MaterialSlotName": "RelicBags",
+          "ImportedMaterialSlotName": "RelicBags",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 255.91217,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 255.91217,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -3.8146973E-06,
+          "Z": -1.5258789E-05
+        },
+        "BoxExtent": {
+          "X": 79.374596,
+          "Y": 18.857983,
+          "Z": 21.512558
+        },
+        "SphereRadius": 80.98291
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup RelicRoll01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/RelicRoll01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision RelicRoll01:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/RelicRoll01.1"
+    },
+    "LightingGuid": "4CC24DA8-4CBCB7EC-0CA8AEBB-5C2440F2",
+    "RenderData": null
+  }
+]

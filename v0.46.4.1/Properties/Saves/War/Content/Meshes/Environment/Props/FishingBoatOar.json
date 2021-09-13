@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FishingBoatOar",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "FishingBoatOar",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x244A"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FishingBoatOar",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FishingBoat",
+            "ObjectPath": "War/Content/Materials/Environment/Props/FishingBoat.0"
+          },
+          "MaterialSlotName": "Material #28",
+          "ImportedMaterialSlotName": "Material #28",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 652.7765,
+            "LocalUVDensities": 112.54391,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 112.54391,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 160.0025,
+          "Y": 11.68248,
+          "Z": 5.10585
+        },
+        "SphereRadius": 160.0025
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FishingBoatOar:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FishingBoatOar.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FishingBoatOar:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FishingBoatOar.1"
+    },
+    "LightingGuid": "24C49D2F-4B71EBA6-720EB0AA-E214D1AE",
+    "RenderData": null
+  }
+]

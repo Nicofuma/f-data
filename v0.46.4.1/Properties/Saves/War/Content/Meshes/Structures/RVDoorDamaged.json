@@ -1,0 +1,106 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_20",
+    "Outer": "RVDoorDamaged",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -51.01184,
+              "Y": -6.1035156E-05,
+              "Z": 257.03525
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 138.0769,
+            "Y": 1038.0222,
+            "Z": 516.2186,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "CollisionTraceFlag": "CTF_UseComplexAsSimple",
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "RVDoorDamaged",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 76105,
+        "SizeOnDisk": 76105,
+        "OffsetInFile": "0xAF67"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "RVDoorDamaged",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RVUniqueParts",
+            "ObjectPath": "War/Content/Materials/Structures/RVUniqueParts.0"
+          },
+          "MaterialSlotName": "Door",
+          "ImportedMaterialSlotName": "Door",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1374.4441,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1374.4441,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -51.01184,
+          "Y": -6.1035156E-05,
+          "Z": 257.03525
+        },
+        "BoxExtent": {
+          "X": 69.03845,
+          "Y": 519.0111,
+          "Z": 258.1093
+        },
+        "SphereRadius": 580.6766
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup RVDoorDamaged:BodySetup_20",
+      "ObjectPath": "War/Content/Meshes/Structures/RVDoorDamaged.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision RVDoorDamaged:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Structures/RVDoorDamaged.1"
+    },
+    "LightingGuid": "35D2B130-4D043C9F-286664BB-5845D131",
+    "RenderData": null
+  }
+]

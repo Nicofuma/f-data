@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FactorySuppliesFacility",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_6",
+    "Outer": "FactorySuppliesFacility",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1B11A"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FactorySuppliesFacility",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FactorySuppliesFacility",
+            "ObjectPath": "War/Content/Materials/Environment/Props/FactorySuppliesFacility.0"
+          },
+          "MaterialSlotName": "Food",
+          "ImportedMaterialSlotName": "Food",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 771.54474,
+            "LocalUVDensities": 1005.20197,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1005.20197,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 592.8826,
+          "Y": 239.65822,
+          "Z": 80.9049
+        },
+        "BoxExtent": {
+          "X": 237.99713,
+          "Y": 159.39847,
+          "Z": 100.47359
+        },
+        "SphereRadius": 267.34323
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FactorySuppliesFacility:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FactorySuppliesFacility.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FactorySuppliesFacility:NavCollision_6",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FactorySuppliesFacility.1"
+    },
+    "LightingGuid": "FA766493-4FED35FD-F3D2F680-9533941D",
+    "RenderData": null
+  }
+]

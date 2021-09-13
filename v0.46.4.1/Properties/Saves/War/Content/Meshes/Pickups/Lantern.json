@@ -1,0 +1,122 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_2246",
+    "Outer": "Lantern",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -5.722046E-06,
+              "Y": -5.5408077,
+              "Z": 49.421406
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 53.299004,
+            "Y": 56.612827,
+            "Z": 98.18274,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "Lantern",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0xAD84"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Lantern",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Lantern",
+            "ObjectPath": "War/Content/Materials/Structures/Lantern.0"
+          },
+          "MaterialSlotName": "Lantern",
+          "ImportedMaterialSlotName": "Lantern",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 156.97343,
+            "LocalUVDensities": 162.93027,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material LanternEmissive",
+            "ObjectPath": "War/Content/Materials/LanternEmissive.0"
+          },
+          "MaterialSlotName": "SimpleEmissive",
+          "ImportedMaterialSlotName": "LanternEmissive",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 58.085056,
+            "LocalUVDensities": 160.12405,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 162.68985,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -5.722046E-06,
+          "Y": -5.5408077,
+          "Z": 49.421406
+        },
+        "BoxExtent": {
+          "X": 26.649502,
+          "Y": 28.306414,
+          "Z": 49.09137
+        },
+        "SphereRadius": 56.66759
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Lantern:BodySetup_2246",
+      "ObjectPath": "War/Content/Meshes/Pickups/Lantern.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Lantern:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Pickups/Lantern.1"
+    },
+    "LightingGuid": "598BF23A-49A3E7F8-9446CBBA-EC28757D",
+    "RenderData": null
+  }
+]

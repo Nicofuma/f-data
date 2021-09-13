@@ -1,0 +1,989 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "FortCommonT3Mods",
+    "Outer": "BPFortMachineGunAIT3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class TemplateComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPFortMachineGunAIT3_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPFortMachineGunAIT3_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.36"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler BPFortMachineGunAIT3_C:InheritableComponentHandler",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.11"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class ConcreteFortTurretMG",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPFortMachineGunAIT3_C:FortCommonT3Mods",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortMachineGunAIT3_C:FortSpotLight",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.18"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortMachineGunAIT3_C:FortCommonAIT3",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.15"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortMachineGunAIT3_C:Floor",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.13"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortMachineGunAIT3_C:FortCommonDirtT3",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.16"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortMachineGunAIT3_C:FortCommonMods",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.17"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortMachineGunAIT3_C:FortCommon",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.14"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortMachineGunAIT3_C:RightAITurret",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.21"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortMachineGunAIT3_C:BackAITurret",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.12"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortMachineGunAIT3_C:LeftAITurret",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.20"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortMachineGunAIT3_C:FrontAITurret",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.19"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPFortMachineGunAIT3_C",
+    "Name": "Default__BPFortMachineGunAIT3_C",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMeshComponent Default__BPFortMachineGunAIT3_C:Mesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.37"
+      },
+      "PowerInfo": {
+        "PowerDelta": -600
+      },
+      "OccupiableTriggerVolume": {
+        "ObjectName": "BoxComponent Default__BPFortMachineGunAIT3_C:OccupiableTriggerVolume",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.5"
+      },
+      "OccupiableComponent": {
+        "ObjectName": "OccupiableComponent Default__BPFortMachineGunAIT3_C:OccupyComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.22"
+      },
+      "ImpactEffect": {
+        "ObjectName": "BlueprintGeneratedClass RifleImpactEffect_C",
+        "ObjectPath": "War/Content/Blueprints/Items/RifleImpactEffect.1"
+      },
+      "WeaponFireFXClass": {
+        "ObjectName": "BlueprintGeneratedClass TracerFireMG_C",
+        "ObjectPath": "War/Content/Blueprints/TracerFireMG.1"
+      },
+      "ShotSoundCue": {
+        "ObjectName": "SoundCue MGShot_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Weapons/HeavyMG/MGShot_Cue.0"
+      },
+      "MuzzleFlashPS": {
+        "ObjectName": "ParticleSystem MachinegunMF",
+        "ObjectPath": "War/Content/FX/MachinegunMF.41"
+      },
+      "WeaponDamage": 55.0,
+      "MaximumRange": 3350.0,
+      "BestJitterConeHalfAngle": 3.0,
+      "WorstJitterConeHalfAngle": 30.0,
+      "FiringPeriod": 0.15,
+      "TimeToFullFireRateAndAccuracy": 2.5,
+      "EnemyPursueDuration": 6.5,
+      "MuzzleFlashLocationComponent": {
+        "ObjectName": "ArrowComponent Default__BPFortMachineGunAIT3_C:MuzzleFxLocationComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.3"
+      },
+      "FiringConeAngle": 45.0,
+      "bLimitOccupantFiringArc": true,
+      "MaxOccupantFiringArcDeviation": 45.0,
+      "bShowExtraTracers": true,
+      "FlagMesh": {
+        "ObjectName": "TeamFlagMeshComponent Default__BPFortMachineGunAIT3_C:FlagMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.40"
+      },
+      "Tier": "EFortTier::T3AI",
+      "BuildGhostClass": null,
+      "BuildSiteClass": {
+        "ObjectName": "Class FortBuildSite",
+        "ObjectPath": "/Script/War"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "D14CF6444158B2B9F78D028395B28512",
+        "SourceString": "An entrenched machine gun manned by stationed troops."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D FortT3MGunAIIcon",
+        "ObjectPath": "War/Content/Textures/UI/StructureIcons/FortT3MGunAIIcon.0"
+      },
+      "CodeName": "MGAIT3",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "7FD42C0444CB967000FC569C5D7A83BA",
+        "SourceString": "Machine Gun Garrison (Tier 3)"
+      },
+      "ArmourType": "EArmourType::Tier3Structure",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPFortMachineGunAIT3_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.4"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPFortMachineGunAIT3_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.6"
+      },
+      "DestroyedFX": {
+        "ObjectName": "ParticleSystem GrenadeBlast",
+        "ObjectPath": "War/Content/FX/GrenadeBlast.151"
+      },
+      "TechComponentIDs": [
+        "ETechComponentID::MGGarrison",
+        "ETechComponentID::Concrete"
+      ],
+      "MaxHealth": 3000,
+      "Health": 3000,
+      "MapIntelligenceType": "EMapIntelligenceType::Defense",
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPFortMachineGunAIT3_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.39"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPFortMachineGunAIT3_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.4"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "MuzzleFxLocationComponent",
+    "Outer": "Default__BPFortMachineGunAIT3_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFortMachineGunAIT3_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.4"
+      },
+      "RelativeLocation": {
+        "X": 261.0,
+        "Y": 0.0,
+        "Z": 201.0
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPFortMachineGunAIT3_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "OccupiableTriggerVolume",
+    "Outer": "Default__BPFortMachineGunAIT3_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFortMachineGunAIT3_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.4"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPFortMachineGunAIT3_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 400.0,
+        "Y": 400.0,
+        "Z": 160.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFortMachineGunAIT3_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.4"
+      },
+      "RelativeLocation": {
+        "X": -6.1035156E-05,
+        "Y": 1.4084167,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BPAIGarrisonTurret_C",
+    "Name": "BackAITurret_GEN_VARIABLE",
+    "Outer": "BPFortMachineGunAIT3_C",
+    "Properties": {
+      "TriggerBoxOffset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "TriggerBoxExtents": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "RelativeLocation": {
+        "X": -335.0,
+        "Y": 0.0,
+        "Z": 70.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -180.00017,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BPAIGarrisonTurret_C",
+    "Name": "FrontAITurret_GEN_VARIABLE",
+    "Outer": "BPFortMachineGunAIT3_C",
+    "Properties": {
+      "TriggerBoxOffset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "TriggerBoxExtents": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "RelativeLocation": {
+        "X": 335.0,
+        "Y": 0.0,
+        "Z": 70.0
+      }
+    }
+  },
+  {
+    "Type": "BPAIGarrisonTurret_C",
+    "Name": "LeftAITurret_GEN_VARIABLE",
+    "Outer": "BPFortMachineGunAIT3_C",
+    "Properties": {
+      "TriggerBoxOffset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "TriggerBoxExtents": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": -335.0,
+        "Z": 70.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.00012,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BPAIGarrisonTurret_C",
+    "Name": "RightAITurret_GEN_VARIABLE",
+    "Outer": "BPFortMachineGunAIT3_C",
+    "Properties": {
+      "TriggerBoxOffset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "TriggerBoxExtents": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 335.0,
+        "Z": 70.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BPFortMachineGunAIT3_C"
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "BackAITurret",
+    "Outer": "BPFortMachineGunAIT3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "BlueprintGeneratedClass BPAIGarrisonTurret_C",
+      "ObjectPath": "War/Content/Blueprints/Structures/BPAIGarrisonTurret.0"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Floor",
+    "Outer": "BPFortMachineGunAIT3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "FortCommon",
+    "Outer": "BPFortMachineGunAIT3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class TemplateComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "FortCommonAIT3",
+    "Outer": "BPFortMachineGunAIT3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class TemplateComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "FortCommonDirtT3",
+    "Outer": "BPFortMachineGunAIT3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class TemplateComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "FortCommonMods",
+    "Outer": "BPFortMachineGunAIT3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class TemplateComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "FortSpotLight",
+    "Outer": "BPFortMachineGunAIT3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class TemplateComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "FrontAITurret",
+    "Outer": "BPFortMachineGunAIT3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "BlueprintGeneratedClass BPAIGarrisonTurret_C",
+      "ObjectPath": "War/Content/Blueprints/Structures/BPAIGarrisonTurret.0"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "LeftAITurret",
+    "Outer": "BPFortMachineGunAIT3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "BlueprintGeneratedClass BPAIGarrisonTurret_C",
+      "ObjectPath": "War/Content/Blueprints/Structures/BPAIGarrisonTurret.0"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "RightAITurret",
+    "Outer": "BPFortMachineGunAIT3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "BlueprintGeneratedClass BPAIGarrisonTurret_C",
+      "ObjectPath": "War/Content/Blueprints/Structures/BPAIGarrisonTurret.0"
+    }
+  },
+  {
+    "Type": "OccupiableComponent",
+    "Name": "OccupyComponent",
+    "Outer": "Default__BPFortMachineGunAIT3_C",
+    "Properties": {
+      "TriggerComponent": {
+        "ObjectName": "BoxComponent Default__BPFortMachineGunAIT3_C:OccupiableTriggerVolume",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.5"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFortMachineGunAIT3_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.4"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPFortMachineGunAIT3_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPFortMachineGunAIT3_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.23"
+      },
+      "VariableGuid": "1144E758-45F21128-659C63A0-98B6F24C",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class TemplateComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "TemplateComponent BPFortMachineGunAIT3_C:FortCommon_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.41"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "0D17DDA1-4FAAA10B-CD1B1A94-4C56F327",
+      "InternalVariableName": "FortCommon"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_11",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class TemplateComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "TemplateComponent BPFortMachineGunAIT3_C:FortCommonAIT3_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.42"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "FA2B1AFE-457A42CD-24AE1291-60E9075B",
+      "InternalVariableName": "FortCommonAIT3"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class TemplateComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "TemplateComponent BPFortMachineGunAIT3_C:FortCommonMods_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.44"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "D56C5AAD-428CF1DE-8B6EDBAA-73DCA227",
+      "InternalVariableName": "FortCommonMods"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_23",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPAIGarrisonTurret_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPAIGarrisonTurret.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BPAIGarrisonTurret_C BPFortMachineGunAIT3_C:FrontAITurret_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.8"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "83AF4423-4BCAC415-DDB124B4-E3DED4F6",
+      "InternalVariableName": "FrontAITurret"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_24",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPAIGarrisonTurret_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPAIGarrisonTurret.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BPAIGarrisonTurret_C BPFortMachineGunAIT3_C:LeftAITurret_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.9"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "56EBDEEA-4772E408-67071EAB-9B96FDDD",
+      "InternalVariableName": "LeftAITurret"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_25",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPAIGarrisonTurret_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPAIGarrisonTurret.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BPAIGarrisonTurret_C BPFortMachineGunAIT3_C:BackAITurret_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.7"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "87FD2412-450626DB-1E6A10AF-1141774A",
+      "InternalVariableName": "BackAITurret"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_26",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPAIGarrisonTurret_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPAIGarrisonTurret.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BPAIGarrisonTurret_C BPFortMachineGunAIT3_C:RightAITurret_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.10"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "090D76C9-4E646954-45A863BF-9DA020B1",
+      "InternalVariableName": "RightAITurret"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class TemplateComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "TemplateComponent BPFortMachineGunAIT3_C:FortCommonT3Mods_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.45"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "90D371A3-427550B3-2D41A0A2-91DB4586",
+      "InternalVariableName": "FortCommonT3Mods"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class TemplateComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "TemplateComponent BPFortMachineGunAIT3_C:FortSpotLight_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.46"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "5C4F66AC-46F0CAA2-BB5E9FBC-AC014413",
+      "InternalVariableName": "FortSpotLight"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_8",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class TemplateComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "TemplateComponent BPFortMachineGunAIT3_C:FortCommonDirtT3_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.43"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "D2DFB73D-4DF2F000-43F54185-4452E5CF",
+      "InternalVariableName": "FortCommonDirtT3"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_9",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPFortMachineGunAIT3_C:Floor_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.38"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "71073D65-46866B47-0DE3CD9E-24F8CC60",
+      "InternalVariableName": "Floor"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPFortMachineGunAIT3_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPFortMachineGunAIT3_C:SimpleConstructionScript_0.SCS_Node_23",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.28"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortMachineGunAIT3_C:SimpleConstructionScript_0.SCS_Node_24",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.29"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortMachineGunAIT3_C:SimpleConstructionScript_0.SCS_Node_25",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.30"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortMachineGunAIT3_C:SimpleConstructionScript_0.SCS_Node_26",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.31"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortMachineGunAIT3_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.25"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortMachineGunAIT3_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.27"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortMachineGunAIT3_C:SimpleConstructionScript_0.SCS_Node_8",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.34"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortMachineGunAIT3_C:SimpleConstructionScript_0.SCS_Node_9",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.35"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortMachineGunAIT3_C:SimpleConstructionScript_0.SCS_Node_11",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.26"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortMachineGunAIT3_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.33"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortMachineGunAIT3_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.32"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPFortMachineGunAIT3_C:SimpleConstructionScript_0.SCS_Node_23",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.28"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortMachineGunAIT3_C:SimpleConstructionScript_0.SCS_Node_24",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.29"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortMachineGunAIT3_C:SimpleConstructionScript_0.SCS_Node_25",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.30"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortMachineGunAIT3_C:SimpleConstructionScript_0.SCS_Node_26",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.31"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortMachineGunAIT3_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.25"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortMachineGunAIT3_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.27"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortMachineGunAIT3_C:SimpleConstructionScript_0.SCS_Node_8",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.34"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortMachineGunAIT3_C:SimpleConstructionScript_0.SCS_Node_9",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.35"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortMachineGunAIT3_C:SimpleConstructionScript_0.SCS_Node_11",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.26"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortMachineGunAIT3_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.33"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortMachineGunAIT3_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.32"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPFortMachineGunAIT3_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.24"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "Mesh",
+    "Outer": "Default__BPFortMachineGunAIT3_C",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_FortT3MGunAI_C",
+        "ObjectPath": "War/Content/Animation/WorldAssets/Fort_and_Trenches/AIBunkers/ABP_FortT3MGunAI.1"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_FortT3MGunAI",
+        "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/AIBunkers/SK_FortT3MGunAI.0"
+      },
+      "bReceivesDecals": false,
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldDynamic",
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFortMachineGunAIT3_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.4"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -160.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      },
+      "ComponentTags": [
+        "RoofVisibility"
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Floor_GEN_VARIABLE",
+    "Outer": "BPFortMachineGunAIT3_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh FortT3Floor01",
+        "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortT3Floor01.2"
+      },
+      "bReceivesDecals": false,
+      "BodyInstance": {
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -160.0
+      },
+      "ComponentTags": [
+        "MultiplexedFloor"
+      ]
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPFortMachineGunAIT3_C"
+  },
+  {
+    "Type": "TeamFlagMeshComponent",
+    "Name": "FlagMesh",
+    "Outer": "Default__BPFortMachineGunAIT3_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFortMachineGunAIT3_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortMachineGunAIT3.4"
+      },
+      "RelativeLocation": {
+        "X": -245.89117,
+        "Y": 247.32881,
+        "Z": -73.64566
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -180.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "TemplateComponent",
+    "Name": "FortCommon_GEN_VARIABLE",
+    "Outer": "BPFortMachineGunAIT3_C",
+    "Properties": {
+      "TemplateActor": {
+        "ObjectName": "BlueprintGeneratedClass BPFortCommon_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommon.1"
+      }
+    }
+  },
+  {
+    "Type": "TemplateComponent",
+    "Name": "FortCommonAIT3_GEN_VARIABLE",
+    "Outer": "BPFortMachineGunAIT3_C",
+    "Properties": {
+      "TemplateActor": {
+        "ObjectName": "BlueprintGeneratedClass BPFortCommonAIT3_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommonAIT3.1"
+      }
+    }
+  },
+  {
+    "Type": "TemplateComponent",
+    "Name": "FortCommonDirtT3_GEN_VARIABLE",
+    "Outer": "BPFortMachineGunAIT3_C",
+    "Properties": {
+      "TemplateActor": {
+        "ObjectName": "BlueprintGeneratedClass BPFortCommonDirtT3_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommonDirtT3.1"
+      }
+    }
+  },
+  {
+    "Type": "TemplateComponent",
+    "Name": "FortCommonMods_GEN_VARIABLE",
+    "Outer": "BPFortMachineGunAIT3_C",
+    "Properties": {
+      "TemplateActor": {
+        "ObjectName": "BlueprintGeneratedClass BPFortCommonMods_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommonMods.1"
+      }
+    }
+  },
+  {
+    "Type": "TemplateComponent",
+    "Name": "FortCommonT3Mods_GEN_VARIABLE",
+    "Outer": "BPFortMachineGunAIT3_C",
+    "Properties": {
+      "TemplateActor": {
+        "ObjectName": "BlueprintGeneratedClass BPFortCommonT3Mods_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommonT3Mods.1"
+      }
+    }
+  },
+  {
+    "Type": "TemplateComponent",
+    "Name": "FortSpotLight_GEN_VARIABLE",
+    "Outer": "BPFortMachineGunAIT3_C",
+    "Properties": {
+      "TemplateActor": {
+        "ObjectName": "BlueprintGeneratedClass BPFortSpotLight_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/Templates/BPFortSpotLight.1"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 315.0
+      }
+    }
+  }
+]

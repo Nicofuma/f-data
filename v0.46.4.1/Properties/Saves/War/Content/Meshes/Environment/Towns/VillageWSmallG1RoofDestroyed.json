@@ -1,0 +1,100 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "VillageWSmallG1RoofDestroyed",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "VillageWSmallG1RoofDestroyed",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x399F"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VillageWSmallG1RoofDestroyed",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownWoodBeams01",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownWoodBeams01.0"
+          },
+          "MaterialSlotName": "WoodBeams",
+          "ImportedMaterialSlotName": "WoodBeams",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 218.79506,
+            "LocalUVDensities": 1.8991597,
+            "LocalUVDensities": 1.9036291,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownRainGutter01",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownRainGutter01.0"
+          },
+          "MaterialSlotName": "RoofTrim",
+          "ImportedMaterialSlotName": "RoofTrim",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 434.3927,
+            "LocalUVDensities": 0.7718276,
+            "LocalUVDensities": 0.7718276,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1.259219,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 404.228,
+          "Y": 503.40625,
+          "Z": 507.7741
+        },
+        "BoxExtent": {
+          "X": 397.92654,
+          "Y": 173.44012,
+          "Z": 195.54826
+        },
+        "SphereRadius": 466.4498
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup VillageWSmallG1RoofDestroyed:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/VillageWSmallG1RoofDestroyed.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision VillageWSmallG1RoofDestroyed:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/VillageWSmallG1RoofDestroyed.1"
+    },
+    "LightingGuid": "B00EFC9B-4C9E1BBA-DED84CB5-D4F7E229",
+    "RenderData": null
+  }
+]

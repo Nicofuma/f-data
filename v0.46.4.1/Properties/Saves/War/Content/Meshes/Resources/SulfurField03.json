@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SulfurField03",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "SulfurField03",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x25645"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SulfurField03",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant SulfurField",
+            "ObjectPath": "War/Content/Materials/Resources/SulfurField.0"
+          },
+          "MaterialSlotName": "SulfurField",
+          "ImportedMaterialSlotName": "SulfurField",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1063.2948,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 1.7086107,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1063.2948,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 47.76306,
+          "Y": -20.340302,
+          "Z": 46.510086
+        },
+        "BoxExtent": {
+          "X": 442.83347,
+          "Y": 351.96777,
+          "Z": 149.73795
+        },
+        "SphereRadius": 457.2838
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SulfurField03:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Resources/SulfurField03.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SulfurField03:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Resources/SulfurField03.1"
+    },
+    "LightingGuid": "39A1EFCD-42D0AB0D-0560CE8A-FAF2B049",
+    "RenderData": null
+  }
+]

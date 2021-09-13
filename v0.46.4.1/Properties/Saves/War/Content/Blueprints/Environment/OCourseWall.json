@@ -1,0 +1,218 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "OCourseWall_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript OCourseWall_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Environment/OCourseWall.9"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class Ladder",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "OCourseWall_C",
+    "Name": "Default__OCourseWall_C",
+    "Properties": {
+      "BoxCollision": {
+        "ObjectName": "BoxComponent Default__OCourseWall_C:BoxCollision",
+        "ObjectPath": "War/Content/Blueprints/Environment/OCourseWall.2"
+      },
+      "Mesh": {
+        "ObjectName": "StaticMeshComponent Default__OCourseWall_C:Mesh",
+        "ObjectPath": "War/Content/Blueprints/Environment/OCourseWall.10"
+      },
+      "ClimbVolume": {
+        "ObjectName": "BoxComponent Default__OCourseWall_C:ClimbVolume",
+        "ObjectPath": "War/Content/Blueprints/Environment/OCourseWall.3"
+      },
+      "ClimbVolumeTop": {
+        "ObjectName": "BoxComponent Default__OCourseWall_C:ClimbVolumeTop",
+        "ObjectPath": "War/Content/Blueprints/Environment/OCourseWall.4"
+      },
+      "EnterPositionBottom": {
+        "ObjectName": "SceneComponent Default__OCourseWall_C:EnterPositionBottom",
+        "ObjectPath": "War/Content/Blueprints/Environment/OCourseWall.5"
+      },
+      "EnterPositionTop": {
+        "ObjectName": "SceneComponent Default__OCourseWall_C:EnterPositionTop",
+        "ObjectPath": "War/Content/Blueprints/Environment/OCourseWall.6"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__OCourseWall_C:BoxCollision",
+        "ObjectPath": "War/Content/Blueprints/Environment/OCourseWall.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxCollision",
+    "Outer": "Default__OCourseWall_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 4.431171,
+        "Y": 37.0,
+        "Z": 140.0
+      },
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "BlockAllDynamic",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ClimbVolume",
+    "Outer": "Default__OCourseWall_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 32.0,
+        "Y": 44.86595,
+        "Z": 35.0
+      },
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__OCourseWall_C:BoxCollision",
+        "ObjectPath": "War/Content/Blueprints/Environment/OCourseWall.2"
+      },
+      "RelativeLocation": {
+        "X": -43.698383,
+        "Y": 3.0517578E-05,
+        "Z": -120.50824
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ClimbVolumeTop",
+    "Outer": "Default__OCourseWall_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__OCourseWall_C:BoxCollision",
+        "ObjectPath": "War/Content/Blueprints/Environment/OCourseWall.2"
+      },
+      "RelativeLocation": {
+        "X": 13.84996,
+        "Y": 0.0,
+        "Z": 161.78322
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "EnterPositionBottom",
+    "Outer": "Default__OCourseWall_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__OCourseWall_C:BoxCollision",
+        "ObjectPath": "War/Content/Blueprints/Environment/OCourseWall.2"
+      },
+      "RelativeLocation": {
+        "X": -55.0,
+        "Y": 0.0,
+        "Z": -96.31803
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "EnterPositionTop",
+    "Outer": "Default__OCourseWall_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__OCourseWall_C:BoxCollision",
+        "ObjectPath": "War/Content/Blueprints/Environment/OCourseWall.2"
+      },
+      "RelativeLocation": {
+        "X": 55.0,
+        "Y": -8.0898855E-07,
+        "Z": 137.35289
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 180.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "OCourseWall_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent OCourseWall_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Environment/OCourseWall.7"
+      },
+      "VariableGuid": "B2102D72-4C08FF25-154AC592-B5E0FCE2",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "OCourseWall_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node OCourseWall_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Environment/OCourseWall.8"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Mesh",
+    "Outer": "Default__OCourseWall_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh OCourseHurdle04",
+        "ObjectPath": "War/Content/Meshes/Environment/Props/OCourseHurdle04.2"
+      },
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__OCourseWall_C:BoxCollision",
+        "ObjectPath": "War/Content/Blueprints/Environment/OCourseWall.2"
+      },
+      "RelativeLocation": {
+        "X": 17.999975,
+        "Y": -0.9984236,
+        "Z": -130.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.00052,
+        "Roll": 0.0
+      }
+    }
+  }
+]

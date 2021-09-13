@@ -1,0 +1,89 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Shutter01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "Shutter01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2EBD"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Shutter01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Shutters",
+            "ObjectPath": "War/Content/Materials/Environment/House/Shutters.0"
+          },
+          "MaterialSlotName": "Shutters",
+          "ImportedMaterialSlotName": "Shutters",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 646.74774,
+            "LocalUVDensities": 345.06253,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 345.06253,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.5258789E-05,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 44.501633,
+          "Y": 5.0776763,
+          "Z": 139.21904
+        },
+        "SphereRadius": 146.24678
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Shutter01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Houses/Shutter01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Shutter01:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Houses/Shutter01.1"
+    },
+    "LightingGuid": "AD4CE636-4356FC8D-84DEFF91-7B199D93",
+    "RenderData": null
+  }
+]

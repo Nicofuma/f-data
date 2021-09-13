@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ResourceContainerSheavePickup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "ResourceContainerSheavePickup",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xE292"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ResourceContainerSheavePickup",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ShippingContainerSheave",
+            "ObjectPath": "War/Content/Materials/Structures/ShippingContainerSheave.0"
+          },
+          "MaterialSlotName": "ShippableSheave",
+          "ImportedMaterialSlotName": "ShippingContainerSheave",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 303.41913,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 303.41913,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.059082,
+          "Y": -0.8600006,
+          "Z": -162.90067
+        },
+        "BoxExtent": {
+          "X": 145.63004,
+          "Y": 129.16222,
+          "Z": 175.46841
+        },
+        "SphereRadius": 257.6915
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ResourceContainerSheavePickup:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Shippables/ResourceContainerSheavePickup.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ResourceContainerSheavePickup:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Shippables/ResourceContainerSheavePickup.1"
+    },
+    "LightingGuid": "FA860321-457CD11A-344C0CA3-8117891C",
+    "RenderData": null
+  }
+]

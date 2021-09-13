@@ -1,0 +1,189 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_2",
+    "Outer": "BridgeStoneStepRamp",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -365.1415,
+                "Y": 27.30304,
+                "Z": -885.92395
+              },
+              {
+                "X": 364.60355,
+                "Y": 27.30304,
+                "Z": -885.92395
+              },
+              {
+                "X": 364.60355,
+                "Y": 27.30304,
+                "Z": 56.033142
+              },
+              {
+                "X": -365.1415,
+                "Y": 27.30304,
+                "Z": 56.033142
+              },
+              {
+                "X": 364.36026,
+                "Y": 1661.7969,
+                "Z": -885.92395
+              },
+              {
+                "X": 364.36026,
+                "Y": 1661.7969,
+                "Z": -340.97418
+              },
+              {
+                "X": -364.67996,
+                "Y": 1661.7969,
+                "Z": -885.92395
+              },
+              {
+                "X": -364.67996,
+                "Y": 1661.7969,
+                "Z": -340.97418
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -365.1415,
+                "Y": 27.30304,
+                "Z": -885.92395
+              },
+              "Max": {
+                "X": 364.60355,
+                "Y": 1661.7969,
+                "Z": 56.033142
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "PhysMaterial": {
+        "ObjectName": "PhysicalMaterial StonePhys",
+        "ObjectPath": "War/Content/PhysicalMaterials/StonePhys.0"
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_3",
+    "Outer": "BridgeStoneStepRamp",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 457,
+        "SizeOnDisk": 457,
+        "OffsetInFile": "0x1A4E"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "BridgeStoneStepRamp",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant DamBridgeBrick01",
+            "ObjectPath": "War/Content/Materials/Environment/Props/DamBridgeBrick01.0"
+          },
+          "MaterialSlotName": "Bricks",
+          "ImportedMaterialSlotName": "Bricks",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 300.10367,
+            "LocalUVDensities": 5.101255,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant DamBridgeRoad01",
+            "ObjectPath": "War/Content/Materials/Environment/Props/DamBridgeRoad01.0"
+          },
+          "MaterialSlotName": "Material #614",
+          "ImportedMaterialSlotName": "Material #614",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 749.82635,
+            "LocalUVDensities": 1.2069054,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 4.083174,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.26898193,
+          "Y": 844.55,
+          "Z": -417.15405
+        },
+        "BoxExtent": {
+          "X": 364.87253,
+          "Y": 817.24695,
+          "Z": 468.7699
+        },
+        "SphereRadius": 1010.3315
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup BridgeStoneStepRamp:BodySetup_2",
+      "ObjectPath": "War/Content/Meshes/Structures/BridgeStoneStepRamp.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision BridgeStoneStepRamp:NavCollision_3",
+      "ObjectPath": "War/Content/Meshes/Structures/BridgeStoneStepRamp.1"
+    },
+    "LightingGuid": "67CD63E5-4B57FD30-EC8517AF-A412914E",
+    "RenderData": null
+  }
+]

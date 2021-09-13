@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "BarbedWirePillar",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "BarbedWirePillar",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xD0B"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "BarbedWirePillar",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortT2WoodBeam01",
+            "ObjectPath": "War/Content/Materials/Structures/FortT2WoodBeam01.0"
+          },
+          "MaterialSlotName": "FortT2WoodBeam01",
+          "ImportedMaterialSlotName": "FortT2WoodBeam01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 233.61009,
+            "LocalUVDensities": 6.9362283,
+            "LocalUVDensities": 6.9362283,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 6.9362283,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 57.86765
+        },
+        "BoxExtent": {
+          "X": 24.77302,
+          "Y": 76.91812,
+          "Z": 72.67995
+        },
+        "SphereRadius": 100.84545
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup BarbedWirePillar:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Splines/BarbedWirePillar.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision BarbedWirePillar:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Splines/BarbedWirePillar.1"
+    },
+    "LightingGuid": "12F12545-4732759E-5680F58D-14EF2689",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,89 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Basket",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_32",
+    "Outer": "Basket",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x4FC3"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Basket",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Basket",
+            "ObjectPath": "War/Content/Materials/Environment/Basket.0"
+          },
+          "MaterialSlotName": "WickerBasket_Inst",
+          "ImportedMaterialSlotName": "WickerBasket_Inst",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 246.19258,
+            "LocalUVDensities": 249.96548,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 249.96548,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -3.8146973E-06,
+          "Z": 22.390203
+        },
+        "BoxExtent": {
+          "X": 41.25038,
+          "Y": 41.25039,
+          "Z": 21.291101
+        },
+        "SphereRadius": 45.79997
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Basket:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Basket.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Basket:NavCollision_32",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Basket.1"
+    },
+    "LightingGuid": "B601502B-4515D540-0859BEB3-C3DEE766",
+    "RenderData": null
+  }
+]

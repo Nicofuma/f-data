@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ModularVehiclesPartEnginePart",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "ModularVehiclesPartEnginePart",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x8CE6"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ModularVehiclesPartEnginePart",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant VehicleParts",
+            "ObjectPath": "War/Content/Materials/Environment/Props/VehicleParts.0"
+          },
+          "MaterialSlotName": "VehicleParts1",
+          "ImportedMaterialSlotName": "VehicleParts1",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 791.96027,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 791.96027,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -7.93808,
+          "Y": -4.7932186,
+          "Z": 51.035374
+        },
+        "BoxExtent": {
+          "X": 31.609634,
+          "Y": 30.894247,
+          "Z": 71.59764
+        },
+        "SphereRadius": 77.74637
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ModularVehiclesPartEnginePart:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ModularVehiclesPartEnginePart.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ModularVehiclesPartEnginePart:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ModularVehiclesPartEnginePart.1"
+    },
+    "LightingGuid": "C130C8D3-4A2164DF-B50CCAAF-896A7F3D",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,60 @@
+[
+  {
+    "Type": "SoundCue",
+    "Name": "BridgeExplodeWood_Cue",
+    "Properties": {
+      "FirstNode": {
+        "ObjectName": "SoundNodeModulator BridgeExplodeWood_Cue:SoundNodeModulator_0",
+        "ObjectPath": "War/Content/Audio/SFX/BridgeExplodeWood_Cue.1"
+      },
+      "VolumeMultiplier": 1.0,
+      "AttenuationOverrides": {
+        "DistanceAlgorithm": "EAttenuationDistanceModel::NaturalSound",
+        "AttenuationShapeExtents": {
+          "X": 1000.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "FalloffDistance": 12000.0
+      },
+      "SoundClassObject": {
+        "ObjectName": "SoundClass Explosions",
+        "ObjectPath": "War/Content/Audio/SoundClasses/SFX.1"
+      },
+      "bOverrideConcurrency": true,
+      "ConcurrencyOverrides": {
+        "ResolutionRule": "EMaxConcurrentResolutionRule::PreventNew"
+      },
+      "Duration": 1.278458,
+      "MaxDistance": 18000.0,
+      "AttenuationSettings": {
+        "ObjectName": "SoundAttenuation LargeExplosives",
+        "ObjectPath": "War/Content/Audio/Attenuations/LargeExplosives.0"
+      }
+    }
+  },
+  {
+    "Type": "SoundNodeModulator",
+    "Name": "SoundNodeModulator_0",
+    "Outer": "BridgeExplodeWood_Cue",
+    "Properties": {
+      "ChildNodes": [
+        {
+          "ObjectName": "SoundNodeWavePlayer BridgeExplodeWood_Cue:SoundNodeWavePlayer_2",
+          "ObjectPath": "War/Content/Audio/SFX/BridgeExplodeWood_Cue.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SoundNodeWavePlayer",
+    "Name": "SoundNodeWavePlayer_2",
+    "Outer": "BridgeExplodeWood_Cue",
+    "Properties": {
+      "SoundWaveAssetPtr": {
+        "AssetPathName": "/Game/Audio/SFX/BridgeExplodeWood.BridgeExplodeWood",
+        "SubPathString": ""
+      }
+    }
+  }
+]

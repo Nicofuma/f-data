@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ResourceIron02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "ResourceIron02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x11164"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ResourceIron02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ResourceIron",
+            "ObjectPath": "War/Content/Materials/Resources/ResourceIron.0"
+          },
+          "MaterialSlotName": "ResourceIron",
+          "ImportedMaterialSlotName": "ResourceIron",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 561.135,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 561.135,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -7.9373856,
+          "Y": -0.48384857,
+          "Z": 43.563232
+        },
+        "BoxExtent": {
+          "X": 106.26848,
+          "Y": 113.96959,
+          "Z": 74.448
+        },
+        "SphereRadius": 132.6028
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ResourceIron02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Resources/ResourceIron02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ResourceIron02:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Resources/ResourceIron02.1"
+    },
+    "LightingGuid": "8523A83A-42FCE6E8-8BCA5BA6-5FC84ECA",
+    "RenderData": null
+  }
+]

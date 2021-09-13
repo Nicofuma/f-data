@@ -1,0 +1,98 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_2",
+    "Outer": "Crater02",
+    "Properties": {
+      "AggGeom": {
+        "SphereElems": [
+          {
+            "Center": {
+              "X": -6.0921574,
+              "Y": -0.7233894,
+              "Z": -900.67993
+            },
+            "Radius": 1147.5132,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "Crater02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 5521,
+        "SizeOnDisk": 5521,
+        "OffsetInFile": "0x6202"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Crater02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Crater",
+            "ObjectPath": "War/Content/Materials/Environment/Crater.0"
+          },
+          "MaterialSlotName": "Material #6141",
+          "ImportedMaterialSlotName": "Material #25",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1621.687,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1621.687,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -12.991699,
+          "Y": 12.91626,
+          "Z": -706.4848
+        },
+        "BoxExtent": {
+          "X": 1110.0105,
+          "Y": 1109.9656,
+          "Z": 891.007
+        },
+        "SphereRadius": 1162.0421
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Crater02:BodySetup_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Crater02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Crater02:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Crater02.1"
+    },
+    "LightingGuid": "2D5271C8-4DC20156-67C67398-3872A06D",
+    "RenderData": null
+  }
+]

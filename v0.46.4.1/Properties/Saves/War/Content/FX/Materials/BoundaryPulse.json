@@ -1,0 +1,487 @@
+[
+  {
+    "Type": "Material",
+    "Name": "BoundaryPulse",
+    "Properties": {
+      "Normal": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionReroute_1",
+        "UseConstant": false,
+        "Constant": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        }
+      },
+      "EmissiveColor": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionLinearInterpolate_0",
+        "UseConstant": false,
+        "Constant": {
+          "R": 0,
+          "G": 0,
+          "B": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "BlendMode": "BLEND_Translucent",
+      "TwoSided": true,
+      "Expressions": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionVectorParameter BoundaryPulse:MaterialExpressionVectorParameter_2",
+          "ObjectPath": "War/Content/FX/Materials/BoundaryPulse.15"
+        },
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSample BoundaryPulse:MaterialExpressionTextureSample_1",
+          "ObjectPath": "War/Content/FX/Materials/BoundaryPulse.12"
+        },
+        {
+          "ObjectName": "MaterialExpressionVectorParameter BoundaryPulse:MaterialExpressionVectorParameter_3",
+          "ObjectPath": "War/Content/FX/Materials/BoundaryPulse.16"
+        },
+        {
+          "ObjectName": "MaterialExpressionMaterialFunctionCall BoundaryPulse:MaterialExpressionMaterialFunctionCall_0",
+          "ObjectPath": "War/Content/FX/Materials/BoundaryPulse.3"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSampleParameter2D BoundaryPulse:MaterialExpressionTextureSampleParameter2D_2",
+          "ObjectPath": "War/Content/FX/Materials/BoundaryPulse.14"
+        },
+        {
+          "ObjectName": "MaterialExpressionScalarParameter BoundaryPulse:MaterialExpressionScalarParameter_21",
+          "ObjectPath": "War/Content/FX/Materials/BoundaryPulse.10"
+        },
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter BoundaryPulse:MaterialExpressionScalarParameter_20",
+          "ObjectPath": "War/Content/FX/Materials/BoundaryPulse.9"
+        },
+        {
+          "ObjectName": "MaterialExpressionScalarParameter BoundaryPulse:MaterialExpressionScalarParameter_19",
+          "ObjectPath": "War/Content/FX/Materials/BoundaryPulse.7"
+        },
+        {
+          "ObjectName": "MaterialExpressionScalarParameter BoundaryPulse:MaterialExpressionScalarParameter_18",
+          "ObjectPath": "War/Content/FX/Materials/BoundaryPulse.6"
+        },
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSample BoundaryPulse:MaterialExpressionTextureSample_3",
+          "ObjectPath": "War/Content/FX/Materials/BoundaryPulse.13"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter BoundaryPulse:MaterialExpressionScalarParameter_0",
+          "ObjectPath": "War/Content/FX/Materials/BoundaryPulse.4"
+        },
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter BoundaryPulse:MaterialExpressionScalarParameter_1",
+          "ObjectPath": "War/Content/FX/Materials/BoundaryPulse.5"
+        },
+        {
+          "ObjectName": "MaterialExpressionScalarParameter BoundaryPulse:MaterialExpressionScalarParameter_2",
+          "ObjectPath": "War/Content/FX/Materials/BoundaryPulse.8"
+        },
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter BoundaryPulse:MaterialExpressionScalarParameter_3",
+          "ObjectPath": "War/Content/FX/Materials/BoundaryPulse.11"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionCollectionParameter BoundaryPulse:MaterialExpressionCollectionParameter_6",
+          "ObjectPath": "War/Content/FX/Materials/BoundaryPulse.1"
+        },
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionCollectionParameter BoundaryPulse:MaterialExpressionCollectionParameter_7",
+          "ObjectPath": "War/Content/FX/Materials/BoundaryPulse.2"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "MaterialFunctionInfos": [
+        {
+          "StateId": "DB3E993F-4E2E98B3-05AD13B9-2D8C5DA5",
+          "Function": {
+            "ObjectName": "MaterialFunction CameraDepthFade",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/Opacity/CameraDepthFade.0"
+          }
+        }
+      ],
+      "MaterialParameterCollectionInfos": [
+        {
+          "StateId": "A6884D82-4FB25C41-E5940186-C51492F9",
+          "ParameterCollection": {
+            "ObjectName": "MaterialParameterCollection TreeAndGrass",
+            "ObjectPath": "War/Content/Materials/Collections/TreeAndGrass.0"
+          }
+        },
+        {
+          "StateId": "CA3E34C6-4161C095-23B37889-9D6CB02B",
+          "ParameterCollection": {
+            "ObjectName": "MaterialParameterCollection SphereOffset",
+            "ObjectPath": "War/Content/Materials/Collections/SphereOffset.0"
+          }
+        }
+      ],
+      "bCanMaskedBeAssumedOpaque": true,
+      "StateId": "7B986DE9-4E988275-4548C499-4BBDCA2E",
+      "CachedQualityLevelsUsed": [
+        false,
+        true,
+        false
+      ]
+    }
+  },
+  {
+    "Type": "MaterialExpressionCollectionParameter",
+    "Name": "MaterialExpressionCollectionParameter_6",
+    "Outer": "BoundaryPulse",
+    "Properties": {
+      "Collection": {
+        "ObjectName": "MaterialParameterCollection TreeAndGrass",
+        "ObjectPath": "War/Content/Materials/Collections/TreeAndGrass.0"
+      },
+      "ParameterName": "Player Location",
+      "ParameterId": "A5B1B3F9-4DFA7374-7D19D4AA-A2D07624",
+      "Material": {
+        "ObjectName": "Material BoundaryPulse",
+        "ObjectPath": "War/Content/FX/Materials/BoundaryPulse.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionCollectionParameter",
+    "Name": "MaterialExpressionCollectionParameter_7",
+    "Outer": "BoundaryPulse",
+    "Properties": {
+      "Collection": {
+        "ObjectName": "MaterialParameterCollection SphereOffset",
+        "ObjectPath": "War/Content/Materials/Collections/SphereOffset.0"
+      },
+      "ParameterName": "Sphere Offset",
+      "ParameterId": "DAB7CE7A-4D95D302-1C742983-EF6AC2A0",
+      "Material": {
+        "ObjectName": "Material BoundaryPulse",
+        "ObjectPath": "War/Content/FX/Materials/BoundaryPulse.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionMaterialFunctionCall",
+    "Name": "MaterialExpressionMaterialFunctionCall_0",
+    "Outer": "BoundaryPulse",
+    "Properties": {
+      "MaterialFunction": {
+        "ObjectName": "MaterialFunction CameraDepthFade",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/Opacity/CameraDepthFade.0"
+      },
+      "Material": {
+        "ObjectName": "Material BoundaryPulse",
+        "ObjectPath": "War/Content/FX/Materials/BoundaryPulse.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_0",
+    "Outer": "BoundaryPulse",
+    "Properties": {
+      "DefaultValue": 2.0,
+      "ParameterName": "Shape Mult",
+      "ExpressionGUID": "161864FC-46390F80-C349ABAB-821D488D",
+      "Material": {
+        "ObjectName": "Material BoundaryPulse",
+        "ObjectPath": "War/Content/FX/Materials/BoundaryPulse.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_1",
+    "Outer": "BoundaryPulse",
+    "Properties": {
+      "DefaultValue": 2.0,
+      "ParameterName": "Ground Intensity",
+      "ExpressionGUID": "6A9E06B4-47B12C11-510CAAB6-6AC67DBA",
+      "Material": {
+        "ObjectName": "Material BoundaryPulse",
+        "ObjectPath": "War/Content/FX/Materials/BoundaryPulse.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_18",
+    "Outer": "BoundaryPulse",
+    "Properties": {
+      "DefaultValue": 15.0,
+      "ParameterName": "Tiling1",
+      "ExpressionGUID": "D60D771C-4E583D32-2B10F9A4-BE8E137C",
+      "Material": {
+        "ObjectName": "Material BoundaryPulse",
+        "ObjectPath": "War/Content/FX/Materials/BoundaryPulse.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_19",
+    "Outer": "BoundaryPulse",
+    "Properties": {
+      "DefaultValue": 20.0,
+      "ParameterName": "Tiling2",
+      "ExpressionGUID": "897B93E4-4F5C08A5-8B0FF297-C02E07E8",
+      "Material": {
+        "ObjectName": "Material BoundaryPulse",
+        "ObjectPath": "War/Content/FX/Materials/BoundaryPulse.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_2",
+    "Outer": "BoundaryPulse",
+    "Properties": {
+      "DefaultValue": 4.0,
+      "ParameterName": "Ground Power",
+      "ExpressionGUID": "07C77BA3-4C05C36F-07FBBFAC-A55CDFBC",
+      "Material": {
+        "ObjectName": "Material BoundaryPulse",
+        "ObjectPath": "War/Content/FX/Materials/BoundaryPulse.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_20",
+    "Outer": "BoundaryPulse",
+    "Properties": {
+      "DefaultValue": 0.5,
+      "ParameterName": "Normal Bias",
+      "ExpressionGUID": "0F51698F-4D260BFB-20D21A93-1C19CE1A",
+      "Material": {
+        "ObjectName": "Material BoundaryPulse",
+        "ObjectPath": "War/Content/FX/Materials/BoundaryPulse.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_21",
+    "Outer": "BoundaryPulse",
+    "Properties": {
+      "ParameterName": "Overall Normal Power",
+      "ExpressionGUID": "C2FAAFCB-451B3CAF-46D62A99-D1BB6180",
+      "Material": {
+        "ObjectName": "Material BoundaryPulse",
+        "ObjectPath": "War/Content/FX/Materials/BoundaryPulse.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_3",
+    "Outer": "BoundaryPulse",
+    "Properties": {
+      "DefaultValue": 1.0,
+      "ParameterName": "Shape power",
+      "ExpressionGUID": "DAAFA07B-40E0707C-0A3D3083-CC4457E7",
+      "Material": {
+        "ObjectName": "Material BoundaryPulse",
+        "ObjectPath": "War/Content/FX/Materials/BoundaryPulse.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_1",
+    "Outer": "BoundaryPulse",
+    "Properties": {
+      "Texture": {
+        "ObjectName": "Texture2D TilingNoises01",
+        "ObjectPath": "War/Content/FX/Textures/NoiseMasks/TilingNoises01.0"
+      },
+      "SamplerType": "SAMPLERTYPE_LinearColor",
+      "Material": {
+        "ObjectName": "Material BoundaryPulse",
+        "ObjectPath": "War/Content/FX/Materials/BoundaryPulse.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_3",
+    "Outer": "BoundaryPulse",
+    "Properties": {
+      "Coordinates": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionPanner_7"
+      },
+      "Texture": {
+        "ObjectName": "Texture2D TilingBloodnormals",
+        "ObjectPath": "War/Content/FX/Textures/TilingBloodnormals.0"
+      },
+      "SamplerType": "SAMPLERTYPE_Normal",
+      "Material": {
+        "ObjectName": "Material BoundaryPulse",
+        "ObjectPath": "War/Content/FX/Materials/BoundaryPulse.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSampleParameter2D",
+    "Name": "MaterialExpressionTextureSampleParameter2D_2",
+    "Outer": "BoundaryPulse",
+    "Properties": {
+      "ParameterName": "Normal1Param",
+      "ExpressionGUID": "AEBCE985-46E8A081-A1A71192-861E038E",
+      "Coordinates": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionPanner_6"
+      },
+      "Texture": {
+        "ObjectName": "Texture2D TilingBloodnormals",
+        "ObjectPath": "War/Content/FX/Textures/TilingBloodnormals.0"
+      },
+      "SamplerType": "SAMPLERTYPE_Normal",
+      "Material": {
+        "ObjectName": "Material BoundaryPulse",
+        "ObjectPath": "War/Content/FX/Materials/BoundaryPulse.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionVectorParameter",
+    "Name": "MaterialExpressionVectorParameter_2",
+    "Outer": "BoundaryPulse",
+    "Properties": {
+      "DefaultValue": {
+        "R": 0.15972,
+        "G": 0.2305789,
+        "B": 0.265625,
+        "A": 0.0,
+        "Hex": "293B44"
+      },
+      "ParameterName": "BoundaryColor2",
+      "ExpressionGUID": "910AB2F1-4435D2C4-822F40AF-8D317577",
+      "Material": {
+        "ObjectName": "Material BoundaryPulse",
+        "ObjectPath": "War/Content/FX/Materials/BoundaryPulse.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionVectorParameter",
+    "Name": "MaterialExpressionVectorParameter_3",
+    "Outer": "BoundaryPulse",
+    "Properties": {
+      "DefaultValue": {
+        "R": 0.47395834,
+        "G": 0.29128692,
+        "B": 0.45304248,
+        "A": 0.0,
+        "Hex": "794A74"
+      },
+      "ParameterName": "BoundaryColor",
+      "ExpressionGUID": "365874E5-46E5E7A1-1D687A96-C701BE53",
+      "Material": {
+        "ObjectName": "Material BoundaryPulse",
+        "ObjectPath": "War/Content/FX/Materials/BoundaryPulse.0"
+      }
+    }
+  }
+]

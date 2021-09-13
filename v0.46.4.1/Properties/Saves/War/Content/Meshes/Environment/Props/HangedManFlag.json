@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "HangedManFlag",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "HangedManFlag",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x3F6A"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "HangedManFlag",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant HangedManFlag",
+            "ObjectPath": "War/Content/Materials/Environment/Props/HangedManFlag.0"
+          },
+          "MaterialSlotName": "HospitalFlag",
+          "ImportedMaterialSlotName": "HospitalFlag",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 282.8436,
+            "LocalUVDensities": 287.355,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 287.355,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 100.0,
+          "Y": 3.2775E-05,
+          "Z": 200.0
+        },
+        "SphereRadius": 223.6068
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup HangedManFlag:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/HangedManFlag.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision HangedManFlag:NavCollision_4",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/HangedManFlag.1"
+    },
+    "LightingGuid": "62CB2FDE-44B498CB-B17289A2-76BCE8DB",
+    "RenderData": null
+  }
+]

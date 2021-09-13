@@ -1,0 +1,218 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_TroopShip_PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1,
+        2
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup SK_TroopShip_PhysicsAsset:SkeletalBodySetup_1",
+          "ObjectPath": "War/Content/Meshes/Vehicles/SK_TroopShip_PhysicsAsset.4"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup SK_TroopShip_PhysicsAsset:SkeletalBodySetup_0",
+          "ObjectPath": "War/Content/Meshes/Vehicles/SK_TroopShip_PhysicsAsset.3"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup SK_TroopShip_PhysicsAsset:SkeletalBodySetup_2",
+          "ObjectPath": "War/Content/Meshes/Vehicles/SK_TroopShip_PhysicsAsset.5"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate SK_TroopShip_PhysicsAsset:PhysicsConstraintTemplate_0",
+          "ObjectPath": "War/Content/Meshes/Vehicles/SK_TroopShip_PhysicsAsset.1"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate SK_TroopShip_PhysicsAsset:PhysicsConstraintTemplate_2",
+          "ObjectPath": "War/Content/Meshes/Vehicles/SK_TroopShip_PhysicsAsset.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Outer": "SK_TroopShip_PhysicsAsset",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "ramp_pivot",
+        "ConstraintBone1": "ramp_pivot",
+        "ConstraintBone2": "root",
+        "Pos2": {
+          "X": -2.7000624E-13,
+          "Y": 784.3208,
+          "Z": 67.758484
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_2",
+    "Outer": "SK_TroopShip_PhysicsAsset",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "ramp_extension",
+        "ConstraintBone1": "ramp_extension",
+        "ConstraintBone2": "ramp_pivot",
+        "Pos2": {
+          "X": 0.0,
+          "Y": 360.6975,
+          "Z": 0.0
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "SK_TroopShip_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -1.3957977,
+              "Y": 180.471,
+              "Z": -9.918213E-05
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 90.44313,
+              "Roll": -89.987724
+            },
+            "X": 398.969,
+            "Y": 31.52943,
+            "Z": 387.20294,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "ramp_pivot",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "SK_TroopShip_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 10.0,
+              "Z": 175.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 500.0,
+            "Y": 1700.0,
+            "Z": 500.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": -305.0,
+              "Z": 515.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 385.0,
+            "Y": 620.0,
+            "Z": 180.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": -295.0,
+              "Y": -225.0,
+              "Z": 175.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 100.0,
+            "Y": 750.1382,
+            "Z": 300.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": 295.0,
+              "Y": -225.0,
+              "Z": 175.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 100.0,
+            "Y": 750.1382,
+            "Z": 300.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "root",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_2",
+    "Outer": "SK_TroopShip_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -1.8230767E-06,
+              "Y": 191.07689,
+              "Z": 5.5487366
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 5.466626E-07,
+              "Roll": -89.854805
+            },
+            "X": 350.1326,
+            "Y": 10.706528,
+            "Z": 388.72186,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "ramp_extension",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  }
+]

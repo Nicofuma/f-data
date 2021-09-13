@@ -1,0 +1,149 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPFestivalFlag_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPFestivalFlag_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPFestivalFlag.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class FestivalFlagPickUp",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPFestivalFlag_C",
+    "Name": "Default__BPFestivalFlag_C",
+    "Properties": {
+      "FlagMesh": {
+        "ObjectName": "SkeletalMeshComponent Default__BPFestivalFlag_C:Flag Mesh",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPFestivalFlag.6"
+      },
+      "ColonialMaterial": {
+        "ObjectName": "MaterialInstanceConstant FlagHangingColonials",
+        "ObjectPath": "War/Content/Materials/Structures/FlagHangingColonials.0"
+      },
+      "WardenMaterial": {
+        "ObjectName": "MaterialInstanceConstant FlagHangingWardens",
+        "ObjectPath": "War/Content/Materials/Structures/FlagHangingWardens.0"
+      },
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPFestivalFlagComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Items/BPFestivalFlagComponent.0"
+      },
+      "Encumbrance": 50,
+      "bHideContent": true,
+      "CodeName": "FestivalFlag",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "7B53E17B4AC363149EED9AAD01C827CC",
+        "SourceString": "Festival Flag"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "01C81DF4472A4769052533A78C72A53A",
+        "SourceString": "A particularly festive flag."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D SurrenderFlag_checked",
+        "ObjectPath": "War/Content/Textures/UI/Menus/SurrenderFlag_checked.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Large",
+      "ItemProfileType": "EItemProfileType::UniqueItem",
+      "bIsLarge": true,
+      "ItemMesh": {
+        "ObjectName": "StaticMeshComponent Default__BPFestivalFlag_C:ItemMesh",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPFestivalFlag.7"
+      },
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPFestivalFlag_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPFestivalFlag.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPFestivalFlag_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPFestivalFlag.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPFestivalFlag_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 28.0,
+        "Y": 28.0,
+        "Z": 300.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPFestivalFlag_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPFestivalFlag_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPFestivalFlag.3"
+      },
+      "VariableGuid": "B80BB0E4-4875F16E-9EBB25A7-549A74DD",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPFestivalFlag_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPFestivalFlag_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPFestivalFlag.4"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "Flag Mesh",
+    "Outer": "Default__BPFestivalFlag_C",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_FestivalFlag",
+        "ObjectPath": "War/Content/Meshes/Pickups/SK_FestivalFlag.0"
+      },
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFestivalFlag_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPFestivalFlag.2"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPFestivalFlag_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFestivalFlag_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPFestivalFlag.2"
+      }
+    }
+  }
+]

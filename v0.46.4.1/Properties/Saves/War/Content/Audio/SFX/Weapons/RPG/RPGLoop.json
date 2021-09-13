@@ -1,0 +1,30 @@
+[
+  {
+    "Type": "SoundCue",
+    "Name": "RPGLoop",
+    "Properties": {
+      "FirstNode": {
+        "ObjectName": "SoundNodeWavePlayer RPGLoop:SoundNodeWavePlayer_0",
+        "ObjectPath": "War/Content/Audio/SFX/Weapons/RPG/RPGLoop.1"
+      },
+      "Duration": 10000.0,
+      "MaxDistance": 10500.0,
+      "AttenuationSettings": {
+        "ObjectName": "SoundAttenuation RocketFoley",
+        "ObjectPath": "War/Content/Audio/Attenuations/RocketFoley.0"
+      }
+    }
+  },
+  {
+    "Type": "SoundNodeWavePlayer",
+    "Name": "SoundNodeWavePlayer_0",
+    "Outer": "RPGLoop",
+    "Properties": {
+      "SoundWaveAssetPtr": {
+        "AssetPathName": "/Game/Audio/SFX/Weapons/RPG/RPGRocketLoop.RPGRocketLoop",
+        "SubPathString": ""
+      },
+      "bLooping": true
+    }
+  }
+]

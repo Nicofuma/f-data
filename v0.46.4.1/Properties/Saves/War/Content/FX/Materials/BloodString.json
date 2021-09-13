@@ -1,0 +1,225 @@
+[
+  {
+    "Type": "Material",
+    "Name": "BloodString",
+    "Properties": {
+      "Metallic": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionConstant_5",
+        "UseConstant": false,
+        "Constant": 0.0
+      },
+      "Normal": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 1,
+        "MaskR": 1,
+        "MaskG": 1,
+        "MaskB": 1,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionTextureSampleParameterSubUV_3",
+        "UseConstant": false,
+        "Constant": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        }
+      },
+      "BlendMode": "BLEND_Masked",
+      "TranslucencyLightingMode": "TLM_Surface",
+      "bUsedWithParticleSprites": true,
+      "Expressions": [
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSampleParameterSubUV BloodString:MaterialExpressionTextureSampleParameterSubUV_3",
+          "ObjectPath": "War/Content/FX/Materials/BloodString.6"
+        },
+        {
+          "ObjectName": "MaterialExpressionTextureSampleParameterSubUV BloodString:MaterialExpressionTextureSampleParameterSubUV_2",
+          "ObjectPath": "War/Content/FX/Materials/BloodString.5"
+        },
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSample BloodString:MaterialExpressionTextureSample_4",
+          "ObjectPath": "War/Content/FX/Materials/BloodString.3"
+        },
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSample BloodString:MaterialExpressionTextureSample_5",
+          "ObjectPath": "War/Content/FX/Materials/BloodString.4"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionDynamicParameter BloodString:MaterialExpressionDynamicParameter_2",
+          "ObjectPath": "War/Content/FX/Materials/BloodString.1"
+        },
+        {
+          "ObjectName": "MaterialExpressionMaterialFunctionCall BloodString:MaterialExpressionMaterialFunctionCall_2",
+          "ObjectPath": "War/Content/FX/Materials/BloodString.2"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "MaterialFunctionInfos": [
+        {
+          "StateId": "E6715291-45CBD5A7-9C2DB096-ABFA19DF",
+          "Function": {
+            "ObjectName": "MaterialFunction AppendMany",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/AppendMany.0"
+          }
+        }
+      ],
+      "StateId": "5F4B378A-4884F8EC-1CCE3DA3-B185BDBE",
+      "CachedQualityLevelsUsed": [
+        false,
+        true,
+        false
+      ]
+    }
+  },
+  {
+    "Type": "MaterialExpressionDynamicParameter",
+    "Name": "MaterialExpressionDynamicParameter_2",
+    "Outer": "BloodString",
+    "Properties": {
+      "ParamNames": [
+        "ROffset",
+        "GOffset",
+        "Param3",
+        "Param4"
+      ],
+      "Material": {
+        "ObjectName": "Material BloodString",
+        "ObjectPath": "War/Content/FX/Materials/BloodString.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionMaterialFunctionCall",
+    "Name": "MaterialExpressionMaterialFunctionCall_2",
+    "Outer": "BloodString",
+    "Properties": {
+      "MaterialFunction": {
+        "ObjectName": "MaterialFunction AppendMany",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/AppendMany.0"
+      },
+      "Material": {
+        "ObjectName": "Material BloodString",
+        "ObjectPath": "War/Content/FX/Materials/BloodString.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_4",
+    "Outer": "BloodString",
+    "Properties": {
+      "Coordinates": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionAdd_2"
+      },
+      "Texture": {
+        "ObjectName": "Texture2D T_NoiseGeneral01",
+        "ObjectPath": "War/Content/Captain/Effects/Textures/Particles/NoiseMasks/T_NoiseGeneral01.0"
+      },
+      "SamplerType": "SAMPLERTYPE_LinearColor",
+      "Material": {
+        "ObjectName": "Material BloodString",
+        "ObjectPath": "War/Content/FX/Materials/BloodString.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_5",
+    "Outer": "BloodString",
+    "Properties": {
+      "Coordinates": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionPanner_3"
+      },
+      "Texture": {
+        "ObjectName": "Texture2D T_NoiseGeneral01",
+        "ObjectPath": "War/Content/Captain/Effects/Textures/Particles/NoiseMasks/T_NoiseGeneral01.0"
+      },
+      "SamplerType": "SAMPLERTYPE_LinearColor",
+      "Material": {
+        "ObjectName": "Material BloodString",
+        "ObjectPath": "War/Content/FX/Materials/BloodString.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSampleParameterSubUV",
+    "Name": "MaterialExpressionTextureSampleParameterSubUV_2",
+    "Outer": "BloodString",
+    "Properties": {
+      "ParameterName": "Mask",
+      "ExpressionGUID": "DCC3C69A-44EDFC4F-994B1094-1F4F80AB",
+      "Texture": {
+        "ObjectName": "Texture2D BloodMask",
+        "ObjectPath": "War/Content/FX/Textures/BloodMask.0"
+      },
+      "Material": {
+        "ObjectName": "Material BloodString",
+        "ObjectPath": "War/Content/FX/Materials/BloodString.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSampleParameterSubUV",
+    "Name": "MaterialExpressionTextureSampleParameterSubUV_3",
+    "Outer": "BloodString",
+    "Properties": {
+      "ParameterName": "Normals",
+      "ExpressionGUID": "87B6FB88-4504EC0C-2FD51FAB-5A937D50",
+      "Texture": {
+        "ObjectName": "Texture2D Bloodnormals",
+        "ObjectPath": "War/Content/FX/Textures/Bloodnormals.0"
+      },
+      "SamplerType": "SAMPLERTYPE_Normal",
+      "Material": {
+        "ObjectName": "Material BloodString",
+        "ObjectPath": "War/Content/FX/Materials/BloodString.0"
+      }
+    }
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Warhead_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript Warhead_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Warhead.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class BasicItemPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "Warhead_C",
+    "Name": "Default__Warhead_C",
+    "Properties": {
+      "Encumbrance": 1000,
+      "CodeName": "Warhead",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "632EDE4E439B69FCE68A5C8B0FD40313",
+        "SourceString": "Warhead"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "C636961F47671EA1AA239BB0FA2D66BF",
+        "SourceString": "The payload for Ballistic Rockets. A high yield bomb that delivers over 3 tons of TNT and is capable of leveling an entire village or town block."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D RocketWarheadIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/RocketWarheadIcon.0"
+      },
+      "ItemCategory": "EItemCategory::HeavyArms",
+      "ItemProfileType": "EItemProfileType::UniqueItem",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__Warhead_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Warhead.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__Warhead_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Warhead.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__Warhead_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Warhead_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent Warhead_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Warhead.3"
+      },
+      "VariableGuid": "45A57A6F-468C52B1-5687A28D-A161DA72",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Warhead_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node Warhead_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Warhead.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__Warhead_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__Warhead_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Warhead.2"
+      }
+    }
+  }
+]

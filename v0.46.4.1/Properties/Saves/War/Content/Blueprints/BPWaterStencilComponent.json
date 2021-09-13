@@ -1,0 +1,67 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPWaterStencilComponent_C",
+    "SuperStruct": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPWaterStencilComponent_C",
+    "Name": "Default__BPWaterStencilComponent_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh Cube",
+        "ObjectPath": "Engine/Content/BasicShapes/Cube.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material StencilOnly",
+          "ObjectPath": "War/Content/Materials/Character/StencilOnly.0"
+        }
+      ],
+      "bVisibleInReflectionCaptures": false,
+      "bVisibleInRayTracing": false,
+      "bRenderInMainPass": false,
+      "bRenderInDepthPass": false,
+      "bReceivesDecals": false,
+      "bUseAsOccluder": false,
+      "CastShadow": false,
+      "bRenderCustomDepth": true,
+      "CustomDepthStencilWriteMask": "ERendererStencilMask::ERSM_128",
+      "CustomDepthStencilValue": 128,
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseToChannels": {
+            "Visibility": "ECR_Ignore",
+            "Camera": "ECR_Ignore",
+            "GameTraceChannel4": "ECR_Ignore",
+            "GameTraceChannel9": "ECR_Ignore"
+          },
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  }
+]

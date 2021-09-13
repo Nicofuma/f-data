@@ -1,0 +1,507 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPTruckMobilityC_C",
+    "Super": "BPTruckBaseC_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPTruckMobilityC_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.30"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler BPTruckMobilityC_C:InheritableComponentHandler",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.10"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass BPTruckBaseC_C",
+      "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckBaseC.1"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPTruckMobilityC_C",
+    "Name": "Default__BPTruckMobilityC_C",
+    "Properties": {
+      "WorkVolume": {
+        "ObjectName": "BoxComponent Default__BPTruckMobilityC_C:WorkVolume",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.8"
+      },
+      "IdleLoop": {
+        "ObjectName": "AudioComponent Default__BPTruckMobilityC_C:IdleLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.5"
+      },
+      "RearLeftTireDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPTruckMobilityC_C:RearLeftTireDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.16"
+      },
+      "RearLeftTireDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPTruckMobilityC_C:RearLeftTireDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.15"
+      },
+      "RearRightTireDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPTruckMobilityC_C:RearRightTireDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.18"
+      },
+      "RearRightTireDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPTruckMobilityC_C:RearRightTireDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.17"
+      },
+      "MainDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPTruckMobilityC_C:MainDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.12"
+      },
+      "MainDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPTruckMobilityC_C:MainDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.11"
+      },
+      "SkiddingDirtPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPTruckMobilityC_C:SkiddingDirtPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.19"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "D18861484043BC79D80EC3B443AD02A3",
+        "SourceString": "R-5b “Sisyphus” Hauler"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "3CE22F2F4F3A747CBCDCA884C44E4B2A",
+        "SourceString": "This variation of the standard R-5 Hauler is fitted with an improved suspension and axle system resulting in better overall handling. However, these improvements may not hold up under severe weather conditions."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D TruckMobilityCVehicleIcon",
+        "ObjectPath": "War/Content/Textures/UI/VehicleIcons/TruckMobilityCVehicleIcon.0"
+      },
+      "TechID": "ETechID::UnlockTruckMobility",
+      "CodeName": "TruckMobilityC",
+      "DestroyedMesh": {
+        "ObjectName": "StaticMeshComponent Default__BPTruckMobilityC_C:DestroyedMesh",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.32"
+      },
+      "MinorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPTruckMobilityC_C:MinorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.14"
+      },
+      "MajorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPTruckMobilityC_C:MajorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.13"
+      },
+      "BoostSoundCue": {
+        "ObjectName": "SoundCue TruckBoost_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Vehicles/Truck/TruckBoost_Cue.0"
+      },
+      "DriveLoop": {
+        "ObjectName": "AudioComponent Default__BPTruckMobilityC_C:DriveLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.4"
+      },
+      "BackUpSFXLoop": {
+        "ObjectName": "AudioComponent Default__BPTruckMobilityC_C:BackUpSFXLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.3"
+      },
+      "CameraRigComponent": {
+        "ObjectName": "PlayerCameraRigComponent Default__BPTruckMobilityC_C:CameraRigVehicle",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.20"
+      },
+      "FrontAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__BPTruckMobilityC_C:FrontAxelCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.23"
+      },
+      "RearAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__BPTruckMobilityC_C:RearAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.26"
+      },
+      "FrontLeftRollCastLocation": {
+        "ObjectName": "SceneComponent Default__BPTruckMobilityC_C:FrontRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.24"
+      },
+      "FrontRightRollCastLocation": {
+        "ObjectName": "SceneComponent Default__BPTruckMobilityC_C:RearRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.27"
+      },
+      "LeftSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__BPTruckMobilityC_C:LeftSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.25"
+      },
+      "RightSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__BPTruckMobilityC_C:RightSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.28"
+      },
+      "VehicleCollision": {
+        "ObjectName": "BoxComponent Default__BPTruckMobilityC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.7"
+      },
+      "PassengerArea": {
+        "ObjectName": "BoxComponent Default__BPTruckMobilityC_C:PassengerBaseBox",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.6"
+      },
+      "AFKTimeoutComponent": {
+        "ObjectName": "AFKTimeoutComponent Default__BPTruckMobilityC_C:AFKTimeoutComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.2"
+      },
+      "BoostSpeedModifier": 1.3,
+      "BoostGasUsageModifier": 5.0,
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPTruckMobilityC_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.33"
+      },
+      "Mesh": {
+        "ObjectName": "SkeletalMeshComponent Default__BPTruckMobilityC_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.31"
+      },
+      "CharacterMovement": {
+        "ObjectName": "RWDVehicleMovementComponent Default__BPTruckMobilityC_C:CharMoveComp",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.21"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent Default__BPTruckMobilityC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.9"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPTruckMobilityC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.7"
+      }
+    }
+  },
+  {
+    "Type": "AFKTimeoutComponent",
+    "Name": "AFKTimeoutComponent",
+    "Outer": "Default__BPTruckMobilityC_C"
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "BackUpSFXLoop",
+    "Outer": "Default__BPTruckMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTruckMobilityC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.9"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "DriveLoop",
+    "Outer": "Default__BPTruckMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTruckMobilityC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.9"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "IdleLoop",
+    "Outer": "Default__BPTruckMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPTruckMobilityC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.7"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "PassengerBaseBox",
+    "Outer": "Default__BPTruckMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPTruckMobilityC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.7"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "VehicleCollision",
+    "Outer": "Default__BPTruckMobilityC_C",
+    "Properties": {
+      "OnComponentHit": null,
+      "OnComponentBeginOverlap": null
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "WorkVolume",
+    "Outer": "Default__BPTruckMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPTruckMobilityC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.7"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__BPTruckMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPTruckMobilityC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.7"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BPTruckMobilityC_C"
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MainDirtHighSpeedPS",
+    "Outer": "Default__BPTruckMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPTruckMobilityC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MainDirtLowSpeedPS",
+    "Outer": "Default__BPTruckMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPTruckMobilityC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MajorDamagePS",
+    "Outer": "Default__BPTruckMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTruckMobilityC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.9"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MinorDamagePS",
+    "Outer": "Default__BPTruckMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTruckMobilityC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.9"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearLeftTireDirtHighSpeedPS",
+    "Outer": "Default__BPTruckMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPTruckMobilityC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearLeftTireDirtLowSpeedPS",
+    "Outer": "Default__BPTruckMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPTruckMobilityC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearRightTireDirtHighSpeedPS",
+    "Outer": "Default__BPTruckMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPTruckMobilityC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearRightTireDirtLowSpeedPS",
+    "Outer": "Default__BPTruckMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPTruckMobilityC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "SkiddingDirtPS",
+    "Outer": "Default__BPTruckMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPTruckMobilityC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.7"
+      }
+    }
+  },
+  {
+    "Type": "PlayerCameraRigComponent",
+    "Name": "CameraRigVehicle",
+    "Outer": "Default__BPTruckMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTruckMobilityC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.9"
+      }
+    }
+  },
+  {
+    "Type": "RWDVehicleMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__BPTruckMobilityC_C",
+    "Properties": {
+      "EngineForce": 17980.0,
+      "MaxWalkSpeed": 2855.3726
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPTruckMobilityC_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontAxelCastLocation",
+    "Outer": "Default__BPTruckMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTruckMobilityC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.9"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontRightAxleCastLocation",
+    "Outer": "Default__BPTruckMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTruckMobilityC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.9"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "LeftSideTrackLocation",
+    "Outer": "Default__BPTruckMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTruckMobilityC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.9"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearAxleCastLocation",
+    "Outer": "Default__BPTruckMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTruckMobilityC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.9"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearRightAxleCastLocation",
+    "Outer": "Default__BPTruckMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTruckMobilityC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.9"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RightSideTrackLocation",
+    "Outer": "Default__BPTruckMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTruckMobilityC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.9"
+      }
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPTruckMobilityC_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.22"
+      },
+      "VariableGuid": "40033BB7-452C609C-E7F799A4-143F7AF7",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPTruckMobilityC_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPTruckMobilityC_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.29"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__BPTruckMobilityC_C",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_TruckMobilityC_Suspension",
+        "ObjectPath": "War/Content/Meshes/Vehicles/PrototypeVehicles/SK_TruckMobilityC_Suspension.0"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTruckMobilityC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.9"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "DestroyedMesh",
+    "Outer": "Default__BPTruckMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTruckMobilityC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckMobilityC.9"
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPTruckMobilityC_C"
+  }
+]

@@ -1,0 +1,1069 @@
+[
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "ABP_TroopShip_C",
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "AnimBlueprintGeneratedClass",
+    "Name": "ABP_TroopShip_C",
+    "Properties": {
+      "BakedStateMachines": [
+        {
+          "MachineName": "DoorAndRampStates",
+          "InitialState": 0,
+          "States": [
+            {
+              "StateName": "Idle",
+              "Transitions": [
+                {
+                  "CanTakeDelegateIndex": 15,
+                  "CustomResultNodeIndex": -1,
+                  "TransitionIndex": 3,
+                  "bDesiredTransitionReturnValue": true,
+                  "bAutomaticRemainingTimeRule": false,
+                  "PoseEvaluatorLinks": []
+                },
+                {
+                  "CanTakeDelegateIndex": 16,
+                  "CustomResultNodeIndex": -1,
+                  "TransitionIndex": 0,
+                  "bDesiredTransitionReturnValue": true,
+                  "bAutomaticRemainingTimeRule": false,
+                  "PoseEvaluatorLinks": []
+                }
+              ],
+              "StateRootNodeIndex": 1,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "FullyBlendedNotify": -1,
+              "bIsAConduit": false,
+              "EntryRuleNodeIndex": -1,
+              "PlayerNodeIndices": [
+                2
+              ],
+              "LayerNodeIndices": [],
+              "bAlwaysResetOnEntry": false
+            },
+            {
+              "StateName": "openDoors",
+              "Transitions": [
+                {
+                  "CanTakeDelegateIndex": 17,
+                  "CustomResultNodeIndex": -1,
+                  "TransitionIndex": 2,
+                  "bDesiredTransitionReturnValue": true,
+                  "bAutomaticRemainingTimeRule": false,
+                  "PoseEvaluatorLinks": []
+                },
+                {
+                  "CanTakeDelegateIndex": 18,
+                  "CustomResultNodeIndex": -1,
+                  "TransitionIndex": 1,
+                  "bDesiredTransitionReturnValue": true,
+                  "bAutomaticRemainingTimeRule": false,
+                  "PoseEvaluatorLinks": []
+                }
+              ],
+              "StateRootNodeIndex": 3,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "FullyBlendedNotify": -1,
+              "bIsAConduit": false,
+              "EntryRuleNodeIndex": -1,
+              "PlayerNodeIndices": [
+                4,
+                6
+              ],
+              "LayerNodeIndices": [],
+              "bAlwaysResetOnEntry": false
+            },
+            {
+              "StateName": "dropRamp",
+              "Transitions": [],
+              "StateRootNodeIndex": 7,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "FullyBlendedNotify": -1,
+              "bIsAConduit": false,
+              "EntryRuleNodeIndex": -1,
+              "PlayerNodeIndices": [
+                8,
+                10
+              ],
+              "LayerNodeIndices": [],
+              "bAlwaysResetOnEntry": false
+            },
+            {
+              "StateName": "goToFinalPoseInstantly",
+              "Transitions": [],
+              "StateRootNodeIndex": 11,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "FullyBlendedNotify": -1,
+              "bIsAConduit": false,
+              "EntryRuleNodeIndex": -1,
+              "PlayerNodeIndices": [
+                12,
+                14
+              ],
+              "LayerNodeIndices": [],
+              "bAlwaysResetOnEntry": false
+            }
+          ],
+          "Transitions": [
+            {
+              "PreviousState": 0,
+              "NextState": 1,
+              "CrossfadeDuration": 10.0,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "InterruptNotify": -1,
+              "BlendMode": "EAlphaBlendOption::HermiteCubic",
+              "CustomCurve": null,
+              "BlendProfile": null,
+              "LogicType": "ETransitionLogicType::TLT_StandardBlend",
+              "StateName": "None"
+            },
+            {
+              "PreviousState": 1,
+              "NextState": 0,
+              "CrossfadeDuration": 2.0,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "InterruptNotify": -1,
+              "BlendMode": "EAlphaBlendOption::HermiteCubic",
+              "CustomCurve": null,
+              "BlendProfile": null,
+              "LogicType": "ETransitionLogicType::TLT_StandardBlend",
+              "StateName": "None"
+            },
+            {
+              "PreviousState": 1,
+              "NextState": 2,
+              "CrossfadeDuration": 1.5,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "InterruptNotify": -1,
+              "BlendMode": "EAlphaBlendOption::Custom",
+              "CustomCurve": {
+                "ObjectName": "CurveFloat TroopShip_rampDeployment",
+                "ObjectPath": "War/Content/Curves/Animation/TroopShip_rampDeployment.0"
+              },
+              "BlendProfile": null,
+              "LogicType": "ETransitionLogicType::TLT_StandardBlend",
+              "StateName": "None"
+            },
+            {
+              "PreviousState": 0,
+              "NextState": 3,
+              "CrossfadeDuration": 0.0,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "InterruptNotify": -1,
+              "BlendMode": "EAlphaBlendOption::HermiteCubic",
+              "CustomCurve": null,
+              "BlendProfile": null,
+              "LogicType": "ETransitionLogicType::TLT_StandardBlend",
+              "StateName": "None"
+            }
+          ]
+        }
+      ],
+      "TargetSkeleton": {
+        "ObjectName": "Skeleton SK_TroopShip_Skeleton",
+        "ObjectPath": "War/Content/Meshes/Vehicles/SK_TroopShip_Skeleton.0"
+      },
+      "OrderedSavedPoseIndicesMap": {
+        "AnimGraph": {
+          "OrderedSavedPoseNodeIndices": []
+        }
+      },
+      "EvaluateGraphExposedInputs": [
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "SourcePropertyName": "RampAngle",
+              "SourceSubPropertyName": "None",
+              "SourceArrayIndex": 0,
+              "bInstanceIsTarget": false,
+              "PostCopyOperation": "EPostCopyOperation::None",
+              "DestProperty": {
+                "ObjectName": "FloatProperty AnimNode_BlendSpacePlayer:X",
+                "ObjectPath": "/Script/AnimGraphRuntime"
+              },
+              "DestArrayIndex": 0,
+              "Size": 4,
+              "CachedSourceProperty": {
+                "ObjectName": "FloatProperty TroopShipAnimInstance:RampAngle",
+                "ObjectPath": "/Script/War"
+              },
+              "CachedSourceStructSubProperty": null
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "ObjectName": "StructProperty ABP_TroopShip_C:AnimGraphNode_BlendSpacePlayer_31D4E20A47DE3AC9694F8B925BD4BBEC",
+            "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.8"
+          }
+        },
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "SourcePropertyName": "RampAngle",
+              "SourceSubPropertyName": "None",
+              "SourceArrayIndex": 0,
+              "bInstanceIsTarget": false,
+              "PostCopyOperation": "EPostCopyOperation::None",
+              "DestProperty": {
+                "ObjectName": "FloatProperty AnimNode_BlendSpacePlayer:X",
+                "ObjectPath": "/Script/AnimGraphRuntime"
+              },
+              "DestArrayIndex": 0,
+              "Size": 4,
+              "CachedSourceProperty": {
+                "ObjectName": "FloatProperty TroopShipAnimInstance:RampAngle",
+                "ObjectPath": "/Script/War"
+              },
+              "CachedSourceStructSubProperty": null
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "ObjectName": "StructProperty ABP_TroopShip_C:AnimGraphNode_BlendSpacePlayer_F6541FD64AB878374673CA8290F0CE73",
+            "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.12"
+          }
+        },
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "SourcePropertyName": "bIsDeployed",
+              "SourceSubPropertyName": "None",
+              "SourceArrayIndex": 0,
+              "bInstanceIsTarget": false,
+              "PostCopyOperation": "EPostCopyOperation::None",
+              "DestProperty": {
+                "ObjectName": "BoolProperty AnimNode_TransitionResult:bCanEnterTransition",
+                "ObjectPath": "/Script/Engine"
+              },
+              "DestArrayIndex": 0,
+              "Size": 1,
+              "CachedSourceProperty": {
+                "ObjectName": "BoolProperty TroopShipAnimInstance:bIsDeployed",
+                "ObjectPath": "/Script/War"
+              },
+              "CachedSourceStructSubProperty": null
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "ObjectName": "StructProperty ABP_TroopShip_C:AnimGraphNode_TransitionResult_D79E2E314093F27306C9698833972B89",
+            "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.26"
+          }
+        },
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "SourcePropertyName": "bIsDeploying",
+              "SourceSubPropertyName": "None",
+              "SourceArrayIndex": 0,
+              "bInstanceIsTarget": false,
+              "PostCopyOperation": "EPostCopyOperation::None",
+              "DestProperty": {
+                "ObjectName": "BoolProperty AnimNode_TransitionResult:bCanEnterTransition",
+                "ObjectPath": "/Script/Engine"
+              },
+              "DestArrayIndex": 0,
+              "Size": 1,
+              "CachedSourceProperty": {
+                "ObjectName": "BoolProperty TroopShipAnimInstance:bIsDeploying",
+                "ObjectPath": "/Script/War"
+              },
+              "CachedSourceStructSubProperty": null
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "ObjectName": "StructProperty ABP_TroopShip_C:AnimGraphNode_TransitionResult_63FE170346EAC5CF1F992794860841FF",
+            "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.25"
+          }
+        },
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "SourcePropertyName": "bIsDeployed",
+              "SourceSubPropertyName": "None",
+              "SourceArrayIndex": 0,
+              "bInstanceIsTarget": false,
+              "PostCopyOperation": "EPostCopyOperation::None",
+              "DestProperty": {
+                "ObjectName": "BoolProperty AnimNode_TransitionResult:bCanEnterTransition",
+                "ObjectPath": "/Script/Engine"
+              },
+              "DestArrayIndex": 0,
+              "Size": 1,
+              "CachedSourceProperty": {
+                "ObjectName": "BoolProperty TroopShipAnimInstance:bIsDeployed",
+                "ObjectPath": "/Script/War"
+              },
+              "CachedSourceStructSubProperty": null
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "ObjectName": "StructProperty ABP_TroopShip_C:AnimGraphNode_TransitionResult_35DCC3424C527139902731B2859AF8AB",
+            "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.24"
+          }
+        },
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "SourcePropertyName": "bIsDeploying",
+              "SourceSubPropertyName": "None",
+              "SourceArrayIndex": 0,
+              "bInstanceIsTarget": false,
+              "PostCopyOperation": "EPostCopyOperation::LogicalNegateBool",
+              "DestProperty": {
+                "ObjectName": "BoolProperty AnimNode_TransitionResult:bCanEnterTransition",
+                "ObjectPath": "/Script/Engine"
+              },
+              "DestArrayIndex": 0,
+              "Size": 1,
+              "CachedSourceProperty": {
+                "ObjectName": "BoolProperty TroopShipAnimInstance:bIsDeploying",
+                "ObjectPath": "/Script/War"
+              },
+              "CachedSourceStructSubProperty": null
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "ObjectName": "StructProperty ABP_TroopShip_C:AnimGraphNode_TransitionResult_118A73AB4332D27AE6857B8DA7DC2024",
+            "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.23"
+          }
+        }
+      ],
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty ABP_TroopShip_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.0"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function ABP_TroopShip_C:ExecuteUbergraph_ABP_TroopShip",
+        "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.6"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class TroopShipAnimInstance",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty ABP_TroopShip_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.0"
+      },
+      {
+        "ObjectName": "Function ABP_TroopShip_C:AnimGraph",
+        "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.4"
+      },
+      {
+        "ObjectName": "Function ABP_TroopShip_C:ExecuteUbergraph_ABP_TroopShip",
+        "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.6"
+      },
+      {
+        "ObjectName": "StructProperty ABP_TroopShip_C:AnimGraphNode_Root_380F6B9141FF3700B9F427BB6F703F75",
+        "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.16"
+      },
+      {
+        "ObjectName": "StructProperty ABP_TroopShip_C:AnimGraphNode_TransitionResult_118A73AB4332D27AE6857B8DA7DC2024",
+        "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.23"
+      },
+      {
+        "ObjectName": "StructProperty ABP_TroopShip_C:AnimGraphNode_TransitionResult_35DCC3424C527139902731B2859AF8AB",
+        "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.24"
+      },
+      {
+        "ObjectName": "StructProperty ABP_TroopShip_C:AnimGraphNode_TransitionResult_63FE170346EAC5CF1F992794860841FF",
+        "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.25"
+      },
+      {
+        "ObjectName": "StructProperty ABP_TroopShip_C:AnimGraphNode_TransitionResult_D79E2E314093F27306C9698833972B89",
+        "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.26"
+      },
+      {
+        "ObjectName": "StructProperty ABP_TroopShip_C:AnimGraphNode_BlendSpacePlayer_3F8272304D24F712226827B8A5A60A9D",
+        "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.9"
+      },
+      {
+        "ObjectName": "StructProperty ABP_TroopShip_C:AnimGraphNode_LayeredBoneBlend_EBDE1D714FE8C62F42CE53AF23F18CEB",
+        "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.15"
+      },
+      {
+        "ObjectName": "StructProperty ABP_TroopShip_C:AnimGraphNode_BlendSpacePlayer_F6541FD64AB878374673CA8290F0CE73",
+        "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.12"
+      },
+      {
+        "ObjectName": "StructProperty ABP_TroopShip_C:AnimGraphNode_StateResult_1577F83E42B865D9AAB5CB8A669F4218",
+        "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.19"
+      },
+      {
+        "ObjectName": "StructProperty ABP_TroopShip_C:AnimGraphNode_BlendSpacePlayer_D3D9B9C9405E2B9AF9F09385AC091274",
+        "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.10"
+      },
+      {
+        "ObjectName": "StructProperty ABP_TroopShip_C:AnimGraphNode_LayeredBoneBlend_8EA0927F47E1FBE9FB6B59980F23AD83",
+        "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.13"
+      },
+      {
+        "ObjectName": "StructProperty ABP_TroopShip_C:AnimGraphNode_BlendSpacePlayer_31D4E20A47DE3AC9694F8B925BD4BBEC",
+        "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.8"
+      },
+      {
+        "ObjectName": "StructProperty ABP_TroopShip_C:AnimGraphNode_StateResult_F924478545DF510205E2EE96EDE0AC89",
+        "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.22"
+      },
+      {
+        "ObjectName": "StructProperty ABP_TroopShip_C:AnimGraphNode_BlendSpacePlayer_2701CF394E988EAB406A8DB98292CC3F",
+        "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.7"
+      },
+      {
+        "ObjectName": "StructProperty ABP_TroopShip_C:AnimGraphNode_LayeredBoneBlend_E6142F47425658B5E56A9EB84A55A8D1",
+        "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.14"
+      },
+      {
+        "ObjectName": "StructProperty ABP_TroopShip_C:AnimGraphNode_BlendSpacePlayer_E389BFE1426FC0CAA206CD988EC5BD2A",
+        "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.11"
+      },
+      {
+        "ObjectName": "StructProperty ABP_TroopShip_C:AnimGraphNode_StateResult_A394253D425F5D0B01DCDFB2578F422D",
+        "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.21"
+      },
+      {
+        "ObjectName": "StructProperty ABP_TroopShip_C:AnimGraphNode_SequencePlayer_5897018E4A7BA602D118DF93B7EA50E7",
+        "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.17"
+      },
+      {
+        "ObjectName": "StructProperty ABP_TroopShip_C:AnimGraphNode_StateResult_4616024F49E289F7BCD1EEACFB590254",
+        "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.20"
+      },
+      {
+        "ObjectName": "StructProperty ABP_TroopShip_C:AnimGraphNode_StateMachine_78A41B6A4BEEC90D4F3027B68944F576",
+        "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.18"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 458752,
+    "ClassWithin": null,
+    "ClassConfigName": "/Game/Animation/WaterVehicles/TroopShip/ABP_TroopShip_327679",
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "ABP_TroopShip_C",
+    "Name": "Default__ABP_TroopShip_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "AnimGraphNode_Root_380F6B9141FF3700B9F427BB6F703F75": {
+        "Result": {
+          "LinkID": 19
+        },
+        "Name": "AnimGraph",
+        "Group": "None"
+      },
+      "AnimGraphNode_TransitionResult_118A73AB4332D27AE6857B8DA7DC2024": {
+        "bCanEnterTransition": false
+      },
+      "AnimGraphNode_TransitionResult_35DCC3424C527139902731B2859AF8AB": {
+        "bCanEnterTransition": false
+      },
+      "AnimGraphNode_TransitionResult_63FE170346EAC5CF1F992794860841FF": {
+        "bCanEnterTransition": false
+      },
+      "AnimGraphNode_TransitionResult_D79E2E314093F27306C9698833972B89": {
+        "bCanEnterTransition": false
+      },
+      "AnimGraphNode_BlendSpacePlayer_3F8272304D24F712226827B8A5A60A9D": {
+        "X": 1.0,
+        "Y": 0.0,
+        "Z": 0.0,
+        "PlayRate": 1.0,
+        "bLoop": true,
+        "bResetPlayTimeWhenBlendSpaceChanges": true,
+        "StartPosition": 0.0,
+        "BlendSpace": {
+          "ObjectName": "BlendSpace1D BS_TroopShip_rampExtension",
+          "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/BS_TroopShip_rampExtension.0"
+        },
+        "PreviousBlendSpace": null,
+        "GroupIndex": -1,
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "AnimGraphNode_LayeredBoneBlend_EBDE1D714FE8C62F42CE53AF23F18CEB": {
+        "BasePose": {
+          "LinkID": 7
+        },
+        "BlendPoses": [
+          {
+            "LinkID": 5
+          }
+        ],
+        "LayerSetup": [
+          {
+            "BranchFilters": [
+              {
+                "BoneName": "ramp_extension",
+                "BlendDepth": 0
+              }
+            ]
+          }
+        ],
+        "BlendWeights": [
+          1.0
+        ],
+        "bMeshSpaceRotationBlend": false,
+        "bMeshSpaceScaleBlend": false,
+        "CurveBlendOption": "ECurveBlendOption::MaxWeight",
+        "bBlendRootMotionBasedOnRootBone": true,
+        "LODThreshold": -1,
+        "PerBoneBlendWeights": [
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 0.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 0.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 0.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 1.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 0.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 0.0
+          }
+        ],
+        "SkeletonGuid": "DB1C9FE4-4B804ED7-32C3B5BD-3BB61B79",
+        "VirtualBoneGuid": "00000000-00000000-00000000-00000000"
+      },
+      "AnimGraphNode_BlendSpacePlayer_F6541FD64AB878374673CA8290F0CE73": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0,
+        "PlayRate": 1.0,
+        "bLoop": true,
+        "bResetPlayTimeWhenBlendSpaceChanges": true,
+        "StartPosition": 0.0,
+        "BlendSpace": {
+          "ObjectName": "BlendSpace1D BS_TroopShip_rampAngle",
+          "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/BS_TroopShip_rampAngle.0"
+        },
+        "PreviousBlendSpace": null,
+        "GroupIndex": -1,
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "AnimGraphNode_StateResult_1577F83E42B865D9AAB5CB8A669F4218": {
+        "Result": {
+          "LinkID": 6
+        },
+        "Name": "None",
+        "Group": "None"
+      },
+      "AnimGraphNode_BlendSpacePlayer_D3D9B9C9405E2B9AF9F09385AC091274": {
+        "X": 1.0,
+        "Y": 0.0,
+        "Z": 0.0,
+        "PlayRate": 1.0,
+        "bLoop": true,
+        "bResetPlayTimeWhenBlendSpaceChanges": true,
+        "StartPosition": 0.0,
+        "BlendSpace": {
+          "ObjectName": "BlendSpace1D BS_TroopShip_rampExtension",
+          "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/BS_TroopShip_rampExtension.0"
+        },
+        "PreviousBlendSpace": null,
+        "GroupIndex": -1,
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "AnimGraphNode_LayeredBoneBlend_8EA0927F47E1FBE9FB6B59980F23AD83": {
+        "BasePose": {
+          "LinkID": 11
+        },
+        "BlendPoses": [
+          {
+            "LinkID": 9
+          }
+        ],
+        "LayerSetup": [
+          {
+            "BranchFilters": [
+              {
+                "BoneName": "ramp_extension",
+                "BlendDepth": 0
+              }
+            ]
+          }
+        ],
+        "BlendWeights": [
+          1.0
+        ],
+        "bMeshSpaceRotationBlend": false,
+        "bMeshSpaceScaleBlend": false,
+        "CurveBlendOption": "ECurveBlendOption::MaxWeight",
+        "bBlendRootMotionBasedOnRootBone": true,
+        "LODThreshold": -1,
+        "PerBoneBlendWeights": [
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 0.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 0.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 0.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 1.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 0.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 0.0
+          }
+        ],
+        "SkeletonGuid": "DB1C9FE4-4B804ED7-32C3B5BD-3BB61B79",
+        "VirtualBoneGuid": "00000000-00000000-00000000-00000000"
+      },
+      "AnimGraphNode_BlendSpacePlayer_31D4E20A47DE3AC9694F8B925BD4BBEC": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0,
+        "PlayRate": 1.0,
+        "bLoop": true,
+        "bResetPlayTimeWhenBlendSpaceChanges": true,
+        "StartPosition": 0.0,
+        "BlendSpace": {
+          "ObjectName": "BlendSpace1D BS_TroopShip_rampAngle",
+          "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/BS_TroopShip_rampAngle.0"
+        },
+        "PreviousBlendSpace": null,
+        "GroupIndex": -1,
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "AnimGraphNode_StateResult_F924478545DF510205E2EE96EDE0AC89": {
+        "Result": {
+          "LinkID": 10
+        },
+        "Name": "None",
+        "Group": "None"
+      },
+      "AnimGraphNode_BlendSpacePlayer_2701CF394E988EAB406A8DB98292CC3F": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0,
+        "PlayRate": 1.0,
+        "bLoop": true,
+        "bResetPlayTimeWhenBlendSpaceChanges": true,
+        "StartPosition": 0.0,
+        "BlendSpace": {
+          "ObjectName": "BlendSpace1D BS_TroopShip_rampExtension",
+          "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/BS_TroopShip_rampExtension.0"
+        },
+        "PreviousBlendSpace": null,
+        "GroupIndex": -1,
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "AnimGraphNode_LayeredBoneBlend_E6142F47425658B5E56A9EB84A55A8D1": {
+        "BasePose": {
+          "LinkID": 15
+        },
+        "BlendPoses": [
+          {
+            "LinkID": 13
+          }
+        ],
+        "LayerSetup": [
+          {
+            "BranchFilters": [
+              {
+                "BoneName": "ramp_extension",
+                "BlendDepth": 0
+              }
+            ]
+          }
+        ],
+        "BlendWeights": [
+          1.0
+        ],
+        "bMeshSpaceRotationBlend": false,
+        "bMeshSpaceScaleBlend": false,
+        "CurveBlendOption": "ECurveBlendOption::MaxWeight",
+        "bBlendRootMotionBasedOnRootBone": true,
+        "LODThreshold": -1,
+        "PerBoneBlendWeights": [
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 0.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 0.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 0.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 1.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 0.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 0.0
+          }
+        ],
+        "SkeletonGuid": "DB1C9FE4-4B804ED7-32C3B5BD-3BB61B79",
+        "VirtualBoneGuid": "00000000-00000000-00000000-00000000"
+      },
+      "AnimGraphNode_BlendSpacePlayer_E389BFE1426FC0CAA206CD988EC5BD2A": {
+        "X": 55.0,
+        "Y": 0.0,
+        "Z": 0.0,
+        "PlayRate": 1.0,
+        "bLoop": true,
+        "bResetPlayTimeWhenBlendSpaceChanges": true,
+        "StartPosition": 0.0,
+        "BlendSpace": {
+          "ObjectName": "BlendSpace1D BS_TroopShip_rampAngle",
+          "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/BS_TroopShip_rampAngle.0"
+        },
+        "PreviousBlendSpace": null,
+        "GroupIndex": -1,
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "AnimGraphNode_StateResult_A394253D425F5D0B01DCDFB2578F422D": {
+        "Result": {
+          "LinkID": 14
+        },
+        "Name": "None",
+        "Group": "None"
+      },
+      "AnimGraphNode_SequencePlayer_5897018E4A7BA602D118DF93B7EA50E7": {
+        "Sequence": {
+          "ObjectName": "AnimSequence Anim_TroopShip_POSE_idleClose",
+          "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/Anim_TroopShip_POSE_idleClose.0"
+        },
+        "PlayRateBasis": 1.0,
+        "PlayRate": 1.0,
+        "PlayRateScaleBiasClamp": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        },
+        "StartPosition": 0.0,
+        "bLoopAnimation": false,
+        "GroupIndex": -1,
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "AnimGraphNode_StateResult_4616024F49E289F7BCD1EEACFB590254": {
+        "Result": {
+          "LinkID": 17
+        },
+        "Name": "None",
+        "Group": "None"
+      },
+      "AnimGraphNode_StateMachine_78A41B6A4BEEC90D4F3027B68944F576": {
+        "StateMachineIndexInClass": 0,
+        "MaxTransitionsPerFrame": 3,
+        "bSkipFirstUpdateTransition": true,
+        "bReinitializeOnBecomingRelevant": true
+      }
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraph",
+    "Outer": "AnimGraph",
+    "PropertyFlags": 384,
+    "Struct": {
+      "ObjectName": "ScriptStruct PoseLink",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "AnimGraph",
+    "Outer": "ABP_TroopShip_C",
+    "Children": [
+      {
+        "ObjectName": "StructProperty ABP_TroopShip_C:AnimGraph.AnimGraph",
+        "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.3"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_ABP_TroopShip",
+    "PropertyFlags": 148
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ABP_TroopShip",
+    "Outer": "ABP_TroopShip_C",
+    "Children": [
+      {
+        "ObjectName": "IntProperty ABP_TroopShip_C:ExecuteUbergraph_ABP_TroopShip.EntryPoint",
+        "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/ABP_TroopShip.5"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_BlendSpacePlayer_2701CF394E988EAB406A8DB98292CC3F",
+    "Outer": "ABP_TroopShip_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_BlendSpacePlayer",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_BlendSpacePlayer_31D4E20A47DE3AC9694F8B925BD4BBEC",
+    "Outer": "ABP_TroopShip_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_BlendSpacePlayer",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_BlendSpacePlayer_3F8272304D24F712226827B8A5A60A9D",
+    "Outer": "ABP_TroopShip_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_BlendSpacePlayer",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_BlendSpacePlayer_D3D9B9C9405E2B9AF9F09385AC091274",
+    "Outer": "ABP_TroopShip_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_BlendSpacePlayer",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_BlendSpacePlayer_E389BFE1426FC0CAA206CD988EC5BD2A",
+    "Outer": "ABP_TroopShip_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_BlendSpacePlayer",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_BlendSpacePlayer_F6541FD64AB878374673CA8290F0CE73",
+    "Outer": "ABP_TroopShip_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_BlendSpacePlayer",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_LayeredBoneBlend_8EA0927F47E1FBE9FB6B59980F23AD83",
+    "Outer": "ABP_TroopShip_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_LayeredBoneBlend",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_LayeredBoneBlend_E6142F47425658B5E56A9EB84A55A8D1",
+    "Outer": "ABP_TroopShip_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_LayeredBoneBlend",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_LayeredBoneBlend_EBDE1D714FE8C62F42CE53AF23F18CEB",
+    "Outer": "ABP_TroopShip_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_LayeredBoneBlend",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_Root_380F6B9141FF3700B9F427BB6F703F75",
+    "Outer": "ABP_TroopShip_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_Root",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_SequencePlayer_5897018E4A7BA602D118DF93B7EA50E7",
+    "Outer": "ABP_TroopShip_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_SequencePlayer",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_StateMachine_78A41B6A4BEEC90D4F3027B68944F576",
+    "Outer": "ABP_TroopShip_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_StateMachine",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_StateResult_1577F83E42B865D9AAB5CB8A669F4218",
+    "Outer": "ABP_TroopShip_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_StateResult",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_StateResult_4616024F49E289F7BCD1EEACFB590254",
+    "Outer": "ABP_TroopShip_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_StateResult",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_StateResult_A394253D425F5D0B01DCDFB2578F422D",
+    "Outer": "ABP_TroopShip_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_StateResult",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_StateResult_F924478545DF510205E2EE96EDE0AC89",
+    "Outer": "ABP_TroopShip_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_StateResult",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_TransitionResult_118A73AB4332D27AE6857B8DA7DC2024",
+    "Outer": "ABP_TroopShip_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_TransitionResult",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_TransitionResult_35DCC3424C527139902731B2859AF8AB",
+    "Outer": "ABP_TroopShip_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_TransitionResult",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_TransitionResult_63FE170346EAC5CF1F992794860841FF",
+    "Outer": "ABP_TroopShip_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_TransitionResult",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_TransitionResult_D79E2E314093F27306C9698833972B89",
+    "Outer": "ABP_TroopShip_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_TransitionResult",
+      "ObjectPath": "/Script/Engine"
+    }
+  }
+]

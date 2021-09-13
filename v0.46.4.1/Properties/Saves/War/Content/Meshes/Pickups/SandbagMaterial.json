@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SandbagMaterial",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "SandbagMaterial",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1208"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SandbagMaterial",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Sandbag",
+            "ObjectPath": "War/Content/Materials/Structures/Sandbag.0"
+          },
+          "MaterialSlotName": "Material #26",
+          "ImportedMaterialSlotName": "Material #26",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 237.08258,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 237.08258,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -1.9073486E-06,
+          "Y": -11.986755,
+          "Z": 11.082805
+        },
+        "BoxExtent": {
+          "X": 25.00976,
+          "Y": 35.082863,
+          "Z": 15.441437
+        },
+        "SphereRadius": 43.149036
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SandbagMaterial:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Pickups/SandbagMaterial.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SandbagMaterial:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Pickups/SandbagMaterial.1"
+    },
+    "LightingGuid": "93FB21CD-401053E3-367D0BB2-32B7F2C7",
+    "RenderData": null
+  }
+]

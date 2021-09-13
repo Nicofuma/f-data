@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "IModBroom01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "IModBroom01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1546"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "IModBroom01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortIModKitchen",
+            "ObjectPath": "War/Content/Materials/Structures/FortIModKitchen.0"
+          },
+          "MaterialSlotName": "Kitchen",
+          "ImportedMaterialSlotName": "Kitchen",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 942.02747,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 942.02747,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 98.37183
+        },
+        "BoxExtent": {
+          "X": 36.896774,
+          "Y": 9.118423,
+          "Z": 100.49485
+        },
+        "SphereRadius": 107.05489
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup IModBroom01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/IModBroom01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision IModBroom01:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/IModBroom01.1"
+    },
+    "LightingGuid": "4006F6C4-4ADD9B28-B0753E9C-6A20068F",
+    "RenderData": null
+  }
+]

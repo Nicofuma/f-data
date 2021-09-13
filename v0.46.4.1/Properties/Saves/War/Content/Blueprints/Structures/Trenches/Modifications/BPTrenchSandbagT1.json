@@ -1,0 +1,293 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "SplineConnector",
+    "Outer": "BPTrenchSandbagT1_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SplineConnectorComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPTrenchSandbagT1_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPTrenchSandbagT1_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Trenches/Modifications/BPTrenchSandbagT1.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class ModificationTemplate",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPTrenchSandbagT1_C:SplineConnector",
+        "ObjectPath": "War/Content/Blueprints/Structures/Trenches/Modifications/BPTrenchSandbagT1.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTrenchSandbagT1_C:DefaultSceneRoot",
+        "ObjectPath": "War/Content/Blueprints/Structures/Trenches/Modifications/BPTrenchSandbagT1.3"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPTrenchSandbagT1_C",
+    "Name": "Default__BPTrenchSandbagT1_C"
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "DefaultSceneRoot",
+    "Outer": "BPTrenchSandbagT1_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SceneComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPTrenchSandbagT1_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPTrenchSandbagT1_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Trenches/Modifications/BPTrenchSandbagT1.4"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node BPTrenchSandbagT1_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/Trenches/Modifications/BPTrenchSandbagT1.6"
+        }
+      ],
+      "VariableGuid": "D1678F2B-4F2B50B5-9EFFE99A-D728D79F",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SplineConnectorComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SplineConnectorComponent BPTrenchSandbagT1_C:SplineConnector_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Trenches/Modifications/BPTrenchSandbagT1.9"
+      },
+      "VariableGuid": "34022416-47BE43BD-13BDDB84-37DE9357",
+      "InternalVariableName": "SplineConnector"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPTrenchSandbagT1_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPTrenchSandbagT1_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "War/Content/Blueprints/Structures/Trenches/Modifications/BPTrenchSandbagT1.5"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPTrenchSandbagT1_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "War/Content/Blueprints/Structures/Trenches/Modifications/BPTrenchSandbagT1.5"
+        },
+        {
+          "ObjectName": "SCS_Node BPTrenchSandbagT1_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/Trenches/Modifications/BPTrenchSandbagT1.6"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPTrenchSandbagT1_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Trenches/Modifications/BPTrenchSandbagT1.5"
+      }
+    }
+  },
+  {
+    "Type": "SplineComponent",
+    "Name": "Spline",
+    "Outer": "SplineConnector_GEN_VARIABLE",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SplineConnectorComponent BPTrenchSandbagT1_C:SplineConnector_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Trenches/Modifications/BPTrenchSandbagT1.9"
+      }
+    }
+  },
+  {
+    "Type": "SplineConnectorComponent",
+    "Name": "SplineConnector_GEN_VARIABLE",
+    "Outer": "BPTrenchSandbagT1_C",
+    "Properties": {
+      "TargetComponentTag": "ModSplineTarget",
+      "MaxTargetDistance": 330.0,
+      "MaxTargetAngle": 5.0,
+      "DefaultTarget": {
+        "Translation": {
+          "X": 330.0,
+          "Y": 0.0,
+          "Z": 0.0
+        }
+      },
+      "MeshConfigs": [
+        {
+          "Mesh": null,
+          "Meshes": [
+            {
+              "ObjectName": "StaticMesh TrenchSandbagSpline01",
+              "ObjectPath": "War/Content/Meshes/Environment/Splines/TrenchSandbagSpline01.2"
+            },
+            {
+              "ObjectName": "StaticMesh TrenchSandbagSpline02",
+              "ObjectPath": "War/Content/Meshes/Environment/Splines/TrenchSandbagSpline02.2"
+            },
+            {
+              "ObjectName": "StaticMesh TrenchSandbagSpline03",
+              "ObjectPath": "War/Content/Meshes/Environment/Splines/TrenchSandbagSpline03.2"
+            },
+            {
+              "ObjectName": "StaticMesh TrenchSandbagSpline04",
+              "ObjectPath": "War/Content/Meshes/Environment/Splines/TrenchSandbagSpline04.2"
+            }
+          ],
+          "bReceivesDecals": false,
+          "BuildGhostMaterialOverride": null,
+          "BuildSiteMaterialOverride": null,
+          "Mode": "ESplineConnectorMeshMode::Interval",
+          "BoxWidth": 0.0,
+          "BoxHeight": 0.0,
+          "CollisionProfileName": "NoCollision",
+          "StartIndex": 0,
+          "EndIndex": 4,
+          "SpawnPoints": [],
+          "SplineMeshAxis": "ESplineMeshAxis::Z",
+          "MinSplineLength": 5.0,
+          "bCollisionOnly": false,
+          "Interval": 90.0,
+          "bEvenlySpace": false,
+          "bFillRemainder": false,
+          "StartOffset": 40.0,
+          "EndOffset": 0.0,
+          "RelativeTransform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "SizeSquared": 1.0,
+              "Size": 1.0,
+              "IsNormalized": true
+            },
+            "Translation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "RandomRotationVariance": {
+            "Pitch": 5.0,
+            "Yaw": 10.0,
+            "Roll": 0.0
+          },
+          "RandomPositionVariance": {
+            "X": 0.0,
+            "Y": 5.0,
+            "Z": 5.0
+          },
+          "ComponentTags": []
+        },
+        {
+          "Mesh": null,
+          "Meshes": [],
+          "bReceivesDecals": false,
+          "BuildGhostMaterialOverride": null,
+          "BuildSiteMaterialOverride": null,
+          "Mode": "ESplineConnectorMeshMode::Boxes",
+          "BoxWidth": 50.0,
+          "BoxHeight": 170.0,
+          "CollisionProfileName": "BlockAllDynamic",
+          "StartIndex": 2,
+          "EndIndex": 2,
+          "SpawnPoints": [],
+          "SplineMeshAxis": "ESplineMeshAxis::Z",
+          "MinSplineLength": 5.0,
+          "bCollisionOnly": false,
+          "Interval": 100.0,
+          "bEvenlySpace": false,
+          "bFillRemainder": false,
+          "StartOffset": 0.0,
+          "EndOffset": 0.0,
+          "RelativeTransform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "SizeSquared": 1.0,
+              "Size": 1.0,
+              "IsNormalized": true
+            },
+            "Translation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "RandomRotationVariance": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "RandomPositionVariance": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "ComponentTags": []
+        }
+      ],
+      "MinBuffer": 1.0,
+      "MaxBuffer": 1.0,
+      "MinRadius": 1.0,
+      "MaxRadius": 1.0,
+      "Spline": {
+        "ObjectName": "SplineComponent BPTrenchSandbagT1_C:SplineConnector_GEN_VARIABLE.Spline",
+        "ObjectPath": "War/Content/Blueprints/Structures/Trenches/Modifications/BPTrenchSandbagT1.8"
+      }
+    }
+  }
+]

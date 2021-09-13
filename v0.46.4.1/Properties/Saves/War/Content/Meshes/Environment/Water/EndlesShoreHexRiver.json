@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "EndlesShoreHexRiver",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "EndlesShoreHexRiver",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x267EA"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "EndlesShoreHexRiver",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "Engine/Content/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 72071.125,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 72071.125,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 457.60156,
+          "Y": 8657.523,
+          "Z": -3.0815073E-12
+        },
+        "BoxExtent": {
+          "X": 114491.64,
+          "Y": 113562.18,
+          "Z": 3.216955E-11
+        },
+        "SphereRadius": 127494.266
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup EndlesShoreHexRiver:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Water/EndlesShoreHexRiver.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision EndlesShoreHexRiver:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Water/EndlesShoreHexRiver.1"
+    },
+    "LightingGuid": "6BE2DA46-46AB79A3-20053E91-515319D5",
+    "RenderData": null
+  }
+]

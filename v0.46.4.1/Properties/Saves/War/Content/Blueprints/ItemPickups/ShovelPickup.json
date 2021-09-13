@@ -1,0 +1,106 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ShovelPickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript ShovelPickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/ShovelPickup.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class GearPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "ShovelPickup_C",
+    "Name": "Default__ShovelPickup_C",
+    "Properties": {
+      "Encumbrance": 100,
+      "CodeName": "Shovel",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "780E89F5490CB116DC0F35B564DE4330",
+        "SourceString": "Shovel"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "3DF1F08A481946746E483F8ADE28374C",
+        "SourceString": "A tool for digging Trenches and other entrenched structures."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D ShovelIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/ShovelIcon.0"
+      },
+      "ItemCategory": "EItemCategory::Utility",
+      "ItemProfileType": "EItemProfileType::Tool",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__ShovelPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/ShovelPickup.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__ShovelPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/ShovelPickup.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__ShovelPickup_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "ShovelPickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent ShovelPickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/ShovelPickup.3"
+      },
+      "VariableGuid": "F13C3093-45B1355C-0BCB71B1-38890D71",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "ShovelPickup_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node ShovelPickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/ShovelPickup.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__ShovelPickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__ShovelPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/ShovelPickup.2"
+      }
+    }
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SoulFactoryGlow",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "SoulFactoryGlow",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x11B3"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SoulFactoryGlow",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "Engine/Content/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "Material #494",
+          "ImportedMaterialSlotName": "Material #494",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 305.77316,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 305.77316,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.1980286,
+          "Y": -9.436801E-06,
+          "Z": -0.22229004
+        },
+        "BoxExtent": {
+          "X": 141.54858,
+          "Y": 1.1029961E-05,
+          "Z": 232.24258
+        },
+        "SphereRadius": 232.47386
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SoulFactoryGlow:BodySetup_0",
+      "ObjectPath": "War/Content/FX/Mesh/DeadHarvest/SoulFactoryGlow.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SoulFactoryGlow:NavCollision_4",
+      "ObjectPath": "War/Content/FX/Mesh/DeadHarvest/SoulFactoryGlow.1"
+    },
+    "LightingGuid": "3036DC0A-47FD2517-74E77B82-A55C682D",
+    "RenderData": null
+  }
+]

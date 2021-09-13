@@ -1,0 +1,98 @@
+[
+  {
+    "Type": "Material",
+    "Name": "GreyBox",
+    "Properties": {
+      "Metallic": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionConstant_2",
+        "UseConstant": false,
+        "Constant": 0.0
+      },
+      "Specular": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionConstant_1",
+        "UseConstant": false,
+        "Constant": 0.5
+      },
+      "TwoSided": true,
+      "bUsedWithSkeletalMesh": true,
+      "bUsedWithStaticLighting": true,
+      "bUsedWithInstancedStaticMeshes": true,
+      "Expressions": [
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionVectorParameter GreyBox:MaterialExpressionVectorParameter_2",
+          "ObjectPath": "War/Content/Materials/GreyBox.1"
+        },
+        null,
+        {
+          "ObjectName": "MaterialExpressionVectorParameter GreyBox:MaterialExpressionVectorParameter_3",
+          "ObjectPath": "War/Content/Materials/GreyBox.2"
+        }
+      ],
+      "bCanMaskedBeAssumedOpaque": true,
+      "StateId": "5DDB017E-44F50FD3-A66E2E87-968C2AEE",
+      "CachedQualityLevelsUsed": [
+        false,
+        true,
+        false
+      ]
+    }
+  },
+  {
+    "Type": "MaterialExpressionVectorParameter",
+    "Name": "MaterialExpressionVectorParameter_2",
+    "Outer": "GreyBox",
+    "Properties": {
+      "DefaultValue": {
+        "R": 0.6060759,
+        "G": 0.5896185,
+        "B": 0.675,
+        "A": 0.0,
+        "Hex": "9B96AC"
+      },
+      "ParameterName": "C1",
+      "ExpressionGUID": "511BE14C-4A15EDBF-CA38D88C-E9E167D3",
+      "Material": {
+        "ObjectName": "Material GreyBox",
+        "ObjectPath": "War/Content/Materials/GreyBox.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionVectorParameter",
+    "Name": "MaterialExpressionVectorParameter_3",
+    "Outer": "GreyBox",
+    "Properties": {
+      "DefaultValue": {
+        "R": 0.145,
+        "G": 0.145,
+        "B": 0.145,
+        "A": 0.0,
+        "Hex": "252525"
+      },
+      "ParameterName": "C2",
+      "ExpressionGUID": "195617C6-4288FE99-3556D9A9-94BC4F3C",
+      "Material": {
+        "ObjectName": "Material GreyBox",
+        "ObjectPath": "War/Content/Materials/GreyBox.0"
+      }
+    }
+  }
+]

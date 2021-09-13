@@ -1,0 +1,186 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "ItemMeshSK",
+    "Outer": "BPMetalBeamMaterials_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SkeletalMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPMetalBeamMaterials_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPMetalBeamMaterials_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/LargeResources/BPMetalBeamMaterials.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class GearPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPMetalBeamMaterials_C:ItemMeshSK",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/LargeResources/BPMetalBeamMaterials.0"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPMetalBeamMaterials_C",
+    "Name": "Default__BPMetalBeamMaterials_C",
+    "Properties": {
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPMetalBeamMaterialsComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Items/BPMetalBeamMaterialsComponent.0"
+      },
+      "Encumbrance": 300,
+      "CodeName": "MetalBeamMaterials",
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "CAB7644C4746FD2FF095CD81304DD668",
+        "SourceString": "Large Material"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "D0D3E2B34EA8AC09407983AC0D78DCE8",
+        "SourceString": "Metal Beam"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "32A2442B46D1ED5A3E8D5F976498DDF1",
+        "SourceString": "Used to construct Metal Beam defenses."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D MetalBeamMaterialItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/MetalBeamMaterialItemIcon.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Large",
+      "ItemCategory": "EItemCategory::Supplies",
+      "ItemProfileType": "EItemProfileType::LargeResource",
+      "bIsLarge": true,
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPMetalBeamMaterials_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/LargeResources/BPMetalBeamMaterials.3"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPMetalBeamMaterials_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/LargeResources/BPMetalBeamMaterials.3"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPMetalBeamMaterials_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPMetalBeamMaterials_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPMetalBeamMaterials_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/LargeResources/BPMetalBeamMaterials.4"
+      },
+      "VariableGuid": "25E2F609-4EFE723F-7D3AF29B-4E876B09",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SkeletalMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SkeletalMeshComponent BPMetalBeamMaterials_C:ItemMeshSK_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/LargeResources/BPMetalBeamMaterials.8"
+      },
+      "ParentComponentOrVariableName": "ItemBox",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "77231694-4D403C5A-880C4D96-90A0B4F6",
+      "InternalVariableName": "ItemMeshSK"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPMetalBeamMaterials_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPMetalBeamMaterials_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/ItemPickups/LargeResources/BPMetalBeamMaterials.6"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPMetalBeamMaterials_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/ItemPickups/LargeResources/BPMetalBeamMaterials.6"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPMetalBeamMaterials_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/LargeResources/BPMetalBeamMaterials.5"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "ItemMeshSK_GEN_VARIABLE",
+    "Outer": "BPMetalBeamMaterials_C",
+    "Properties": {
+      "bEnablePhysicsOnDedicatedServer": false,
+      "ClothingSimulationFactory": {
+        "ObjectName": "Class ClothingSimulationFactoryNv",
+        "ObjectPath": "/Script/ClothingSystemRuntimeNv"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_MetalBeamMaterial",
+        "ObjectPath": "War/Content/Meshes/Pickups/SK_MetalBeamMaterial.0"
+      },
+      "bReceivesDecals": false,
+      "RelativeScale3D": {
+        "X": 1.5,
+        "Y": 1.5,
+        "Z": 1.5
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPMetalBeamMaterials_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPMetalBeamMaterials_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/LargeResources/BPMetalBeamMaterials.3"
+      }
+    }
+  }
+]

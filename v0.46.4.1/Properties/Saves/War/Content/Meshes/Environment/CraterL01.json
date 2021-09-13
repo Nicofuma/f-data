@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "CraterL01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "CraterL01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x13347"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "CraterL01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant CraterL",
+            "ObjectPath": "War/Content/Materials/Environment/CraterL.0"
+          },
+          "MaterialSlotName": "Circle_0010",
+          "ImportedMaterialSlotName": "Circle_0010",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1086.3115,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1086.3115,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 6.9888916,
+          "Y": -6.977417,
+          "Z": 20.39698
+        },
+        "BoxExtent": {
+          "X": 525.005,
+          "Y": 524.4238,
+          "Z": 63.83477
+        },
+        "SphereRadius": 536.1551
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup CraterL01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/CraterL01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision CraterL01:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/CraterL01.1"
+    },
+    "LightingGuid": "86415352-4DF91616-D6E775A9-DBAFB96A",
+    "RenderData": null
+  }
+]

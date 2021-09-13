@@ -1,0 +1,110 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ShippingContainerNormalExposed",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -0.48617554,
+              "Y": -0.027435303,
+              "Z": 11.464767
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 301.8807,
+            "Y": 597.54144,
+            "Z": 23.728363,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "ShippingContainerNormalExposed",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x40E2"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ShippingContainerNormalExposed",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ShippingContainerSheave",
+            "ObjectPath": "War/Content/Materials/Structures/ShippingContainerSheave.0"
+          },
+          "MaterialSlotName": "temp",
+          "ImportedMaterialSlotName": "ShippableSheave",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 633.01,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 633.01,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.48617554,
+          "Y": -0.027435303,
+          "Z": 11.464767
+        },
+        "BoxExtent": {
+          "X": 150.94035,
+          "Y": 298.77072,
+          "Z": 11.8641815
+        },
+        "SphereRadius": 334.9443
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ShippingContainerNormalExposed:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Shippables/ShippingContainerNormalExposed.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ShippingContainerNormalExposed:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Shippables/ShippingContainerNormalExposed.1"
+    },
+    "LightingGuid": "2D25CDFA-46B9B49B-6098319C-ADD9F0B0",
+    "RenderData": null
+  }
+]

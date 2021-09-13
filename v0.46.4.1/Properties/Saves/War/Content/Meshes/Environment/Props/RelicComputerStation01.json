@@ -1,0 +1,105 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "RelicComputerStation01",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -8.924683,
+              "Y": 27.511559,
+              "Z": 95.12598
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 227.93399,
+            "Y": 150.23009,
+            "Z": 177.88353,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "RelicComputerStation01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0xA155"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "RelicComputerStation01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RelicComputerStation01",
+            "ObjectPath": "War/Content/Materials/Environment/Props/RelicComputerStation01.0"
+          },
+          "MaterialSlotName": "RelicComputerStation01",
+          "ImportedMaterialSlotName": "Material #32",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 511.7496,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 511.7496,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -8.924683,
+          "Y": 27.511559,
+          "Z": 99.64551
+        },
+        "BoxExtent": {
+          "X": 130.79585,
+          "Y": 92.48844,
+          "Z": 99.645706
+        },
+        "SphereRadius": 169.29791
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup RelicComputerStation01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/RelicComputerStation01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision RelicComputerStation01:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/RelicComputerStation01.1"
+    },
+    "LightingGuid": "FCBD025F-42A87C00-AE5764AB-E7425E29",
+    "RenderData": null
+  }
+]

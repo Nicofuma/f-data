@@ -1,0 +1,129 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Shelf02",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -84.86707,
+              "Y": 27.24085,
+              "Z": 45.278473
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 185.6927,
+            "Y": 61.11201,
+            "Z": 91.90773,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": -84.86707,
+              "Y": 6.8207455,
+              "Z": 174.57004
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 185.6927,
+            "Y": 19.144081,
+            "Z": 166.16928,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "BuildScale3D": {
+        "X": 1.2,
+        "Y": 1.2,
+        "Z": 1.2
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Shelf02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 509,
+        "SizeOnDisk": 509,
+        "OffsetInFile": "0x2115F"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Shelf02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Shelf02",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Shelf02.0"
+          },
+          "MaterialSlotName": "MI_Shelf_06a",
+          "ImportedMaterialSlotName": "MI_Shelf_06a",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 399.59,
+            "LocalUVDensities": 682.62805,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 682.62805,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -84.86707,
+          "Y": 27.24085,
+          "Z": 129.84436
+        },
+        "BoxExtent": {
+          "X": 92.84635,
+          "Y": 35.403004,
+          "Z": 129.89465
+        },
+        "SphereRadius": 161.40904
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Shelf02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Shelf02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Shelf02:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Shelf02.1"
+    },
+    "LightingGuid": "A6D7F93E-44EE7B61-599917AF-E620A0EC",
+    "RenderData": null
+  }
+]

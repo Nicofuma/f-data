@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "WoodOldWindowFramev3",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "WoodOldWindowFramev3",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xEB02"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "WoodOldWindowFramev3",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant WoodBarnPlanks",
+            "ObjectPath": "War/Content/Materials/Environment/Props/WoodBarnPlanks.0"
+          },
+          "MaterialSlotName": "WoodBarnPlanks",
+          "ImportedMaterialSlotName": "WoodBarnPlanks",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 375.16693,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 375.16693,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.00012207031,
+          "Y": 3.0517578E-05,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 118.88464,
+          "Y": 30.658478,
+          "Z": 149.99121
+        },
+        "SphereRadius": 190.82309
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup WoodOldWindowFramev3:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/WoodOldWindowFramev3.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision WoodOldWindowFramev3:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/WoodOldWindowFramev3.1"
+    },
+    "LightingGuid": "827E5E36-404D5CE6-40F5A3A4-5DA1CFD0",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_64",
+    "Outer": "RifleMuzzleFlash",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_23",
+    "Outer": "RifleMuzzleFlash",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xD3B"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "RifleMuzzleFlash",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "Engine/Content/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 83.4859,
+            "LocalUVDensities": 164.1422,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 164.1422,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 45.332478,
+          "Y": 1.1413918,
+          "Z": 0.009082794
+        },
+        "BoxExtent": {
+          "X": 45.360798,
+          "Y": 28.372755,
+          "Z": 43.376396
+        },
+        "SphereRadius": 47.52327
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup RifleMuzzleFlash:BodySetup_64",
+      "ObjectPath": "War/Content/FX/Mesh/RifleMuzzleFlash.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision RifleMuzzleFlash:NavCollision_23",
+      "ObjectPath": "War/Content/FX/Mesh/RifleMuzzleFlash.1"
+    },
+    "LightingGuid": "D8DF0184-46AE7606-351C01A0-B733D70C",
+    "RenderData": null
+  }
+]

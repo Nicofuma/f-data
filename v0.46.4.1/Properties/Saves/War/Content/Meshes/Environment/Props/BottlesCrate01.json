@@ -1,0 +1,104 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "BottlesCrate01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "BottlesCrate01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xE934"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "BottlesCrate01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownWoodBeams04",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownWoodBeams04.0"
+          },
+          "MaterialSlotName": "WoodBeams",
+          "ImportedMaterialSlotName": "WoodBeams",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 123.189384,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant GlassBottles01",
+            "ObjectPath": "War/Content/Materials/Environment/Props/GlassBottles01.0"
+          },
+          "MaterialSlotName": "Material #1097",
+          "ImportedMaterialSlotName": "Material #1097",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 146.5387,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 136.08783,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.06480408,
+          "Y": -0.9692192,
+          "Z": 33.698982
+        },
+        "BoxExtent": {
+          "X": 60.592575,
+          "Y": 42.816494,
+          "Z": 34.45866
+        },
+        "SphereRadius": 78.09022
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup BottlesCrate01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/BottlesCrate01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision BottlesCrate01:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/BottlesCrate01.1"
+    },
+    "LightingGuid": "555C14D5-4D67F6E6-B8DDFE84-11A5C0C4",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_3",
+    "Outer": "HospitalBed_02",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -0.24450684,
+              "Y": 1.8391113,
+              "Z": 50.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 300.0,
+            "Y": 160.0,
+            "Z": 110.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_6",
+    "Outer": "HospitalBed_02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0xBBE2"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "HospitalBed_02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant HospitalBed",
+            "ObjectPath": "War/Content/Materials/Environment/Props/HospitalBed.0"
+          },
+          "MaterialSlotName": "HospitalBed",
+          "ImportedMaterialSlotName": "HospitalBed",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 447.49445,
+            "LocalUVDensities": 569.97,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 569.97,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.24450684,
+          "Y": 1.8391113,
+          "Z": 77.655846
+        },
+        "BoxExtent": {
+          "X": 158.32033,
+          "Y": 94.40352,
+          "Z": 77.43828
+        },
+        "SphereRadius": 194.87115
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup HospitalBed_02:BodySetup_3",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/HospitalBed_02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision HospitalBed_02:NavCollision_6",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/HospitalBed_02.1"
+    },
+    "LightingGuid": "0AFD7D37-4DDE6093-61F840A7-30ECFFE2",
+    "RenderData": null
+  }
+]

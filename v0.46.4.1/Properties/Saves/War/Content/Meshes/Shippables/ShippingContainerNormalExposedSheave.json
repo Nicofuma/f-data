@@ -1,0 +1,99 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ShippingContainerNormalExposedSheave",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "ShippingContainerNormalExposedSheave",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1E297"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ShippingContainerNormalExposedSheave",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ShippingContainerSheave",
+            "ObjectPath": "War/Content/Materials/Structures/ShippingContainerSheave.0"
+          },
+          "MaterialSlotName": "rope",
+          "ImportedMaterialSlotName": "rope",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "Engine/Content/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "ShippableSheave",
+          "ImportedMaterialSlotName": "ShippableSheave",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 289.29953,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 289.29953,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.21276855,
+          "Y": -1.3937683,
+          "Z": -249.49649
+        },
+        "BoxExtent": {
+          "X": 150.92241,
+          "Y": 300.9908,
+          "Z": 262.0642
+        },
+        "SphereRadius": 419.50427
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ShippingContainerNormalExposedSheave:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Shippables/ShippingContainerNormalExposedSheave.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ShippingContainerNormalExposedSheave:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Shippables/ShippingContainerNormalExposedSheave.1"
+    },
+    "LightingGuid": "4B9AD3D3-4785499A-9C91D3B4-7E9A9867",
+    "RenderData": null
+  }
+]

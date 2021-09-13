@@ -1,0 +1,100 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "TraumaKitPickup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "TraumaKitPickup",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xEA44"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TraumaKitPickup",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TraumaKitPickup",
+            "ObjectPath": "War/Content/Materials/Pickups/TraumaKitPickup.0"
+          },
+          "MaterialSlotName": "TraumaKit",
+          "ImportedMaterialSlotName": "TraumaKit",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 143.16956,
+            "LocalUVDensities": 2.2990484,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BandagesPickup",
+            "ObjectPath": "War/Content/Materials/Pickups/BandagesPickup.0"
+          },
+          "MaterialSlotName": "BandagesPickup",
+          "ImportedMaterialSlotName": "BandagesPickup",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 106.50602,
+            "LocalUVDensities": 152.62434,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 80.29062,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -1.3784256,
+          "Y": -3.8146973E-06,
+          "Z": 31.202618
+        },
+        "BoxExtent": {
+          "X": 27.058395,
+          "Y": 43.93035,
+          "Z": 32.82235
+        },
+        "SphereRadius": 55.676804
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TraumaKitPickup:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Pickups/TraumaKitPickup.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TraumaKitPickup:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Pickups/TraumaKitPickup.1"
+    },
+    "LightingGuid": "EF657A2E-47928130-8A0A47B8-7531C1DB",
+    "RenderData": null
+  }
+]

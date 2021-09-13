@@ -1,0 +1,111 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "WoodChunk01",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -2.3248796,
+              "Y": 0.78526306,
+              "Z": 4.7683716E-07
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 20.295404,
+            "Y": 125.982445,
+            "Z": 11.6592865,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "WoodChunk01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x13CB"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "WoodChunk01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant WoodChunk",
+            "ObjectPath": "War/Content/FX/Materials/WoodChunk.0"
+          },
+          "MaterialSlotName": "WoodChunk",
+          "ImportedMaterialSlotName": "WoodChunk",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 304.75558,
+            "LocalUVDensities": 235.74419,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 235.74419,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -2.3248796,
+          "Y": 0.78526306,
+          "Z": 4.7683716E-07
+        },
+        "BoxExtent": {
+          "X": 10.147702,
+          "Y": 62.991222,
+          "Z": 5.8296432
+        },
+        "SphereRadius": 63.758694
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup WoodChunk01:BodySetup_0",
+      "ObjectPath": "War/Content/FX/Mesh/WoodChunk01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision WoodChunk01:NavCollision_0",
+      "ObjectPath": "War/Content/FX/Mesh/WoodChunk01.1"
+    },
+    "LightingGuid": "B4737F89-453888DB-2B0F48B1-4D252058",
+    "RenderData": null
+  }
+]

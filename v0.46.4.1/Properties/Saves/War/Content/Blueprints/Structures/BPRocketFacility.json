@@ -1,0 +1,338 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "MultiplexedStaticMesh",
+    "Outer": "BPRocketFacility_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class MultiplexedStaticMeshComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPRocketFacility_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPRocketFacility_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocketFacility.12"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class RocketFacility",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPRocketFacility_C:MultiplexedStaticMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocketFacility.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPRocketFacility_C:StaticMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocketFacility.7"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPRocketFacility_C",
+    "Name": "Default__BPRocketFacility_C",
+    "Properties": {
+      "BuildLocation": {
+        "ObjectName": "BoxComponent Default__BPRocketFacility_C:Build Location",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocketFacility.4"
+      },
+      "FuelTank": {
+        "FuelCapacity": 720.0,
+        "FuelItemCodeName": "Petrol"
+      },
+      "bAllowUseByEnemy": true,
+      "BuildSiteClass": {
+        "ObjectName": "BlueprintGeneratedClass BPRocketFacilityBuildSite_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocketFacilityBuildSite.1"
+      },
+      "BaseStructureClass": {
+        "ObjectName": "BlueprintGeneratedClass BPDestroyedRocketFacility_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedRocketFacility.1"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "E5778D5743555C4A96317CAF1EA2750E",
+        "SourceString": "An abandoned launch site from the Great Wars for firing long range ballistic rockets."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D MapIconRocketFacility",
+        "ObjectPath": "War/Content/Textures/UI/MapIcons/MapIconRocketFacility.0"
+      },
+      "bRequiresVehicleToBuild": true,
+      "CodeName": "RocketSite",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "2064181E4BDCF840FE1113B2E856EE1E",
+        "SourceString": "Rocket Launch Site"
+      },
+      "ProfileType": "EStructureProfileType::GenericWorldStructure",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPRocketFacility_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocketFacility.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPRocketFacility_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocketFacility.5"
+      },
+      "MaxHealth": 2000,
+      "Health": 2000,
+      "MapIconType": "EMapIconType::RocketSite",
+      "DropLocationOffset": {
+        "X": 0.0,
+        "Y": 600.0,
+        "Z": 10.0
+      },
+      "bRotateDropLocation": true,
+      "ScreenToUse": "ESimScreen::RocketSite",
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPRocketFacility_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocketFacility.14"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPRocketFacility_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocketFacility.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPRocketFacility_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "Build Location",
+    "Outer": "Default__BPRocketFacility_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 325.0,
+        "Y": 325.0,
+        "Z": 475.0
+      },
+      "bGenerateOverlapEvents": false,
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPRocketFacility_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocketFacility.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 630.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPRocketFacility_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 250.0,
+        "Y": 250.0,
+        "Z": 128.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPRocketFacility_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocketFacility.3"
+      },
+      "RelativeLocation": {
+        "X": 1000.0,
+        "Y": -1045.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -47.5,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "MultiplexedStaticMeshComponent",
+    "Name": "MultiplexedStaticMesh_GEN_VARIABLE",
+    "Outer": "BPRocketFacility_C",
+    "Properties": {
+      "TargetTag": "Multiplexed",
+      "MeshStops": [
+        {
+          "Threshold": 0,
+          "StaticMesh": {
+            "ObjectName": "StaticMesh RocketFacilityCritical",
+            "ObjectPath": "War/Content/Meshes/Structures/RocketFacilityCritical.2"
+          }
+        },
+        {
+          "Threshold": 33,
+          "StaticMesh": {
+            "ObjectName": "StaticMesh RocketFacilityDamaged",
+            "ObjectPath": "War/Content/Meshes/Structures/RocketFacilityDamaged.2"
+          }
+        },
+        {
+          "Threshold": 66,
+          "StaticMesh": {
+            "ObjectName": "StaticMesh RocketFacility",
+            "ObjectPath": "War/Content/Meshes/Structures/RocketFacility.2"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "StaticMesh",
+    "Outer": "BPRocketFacility_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPRocketFacility_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPRocketFacility_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocketFacility.8"
+      },
+      "VariableGuid": "E26CAF5E-401AF9A2-06BD76B9-3077AC21",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPRocketFacility_C:StaticMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocketFacility.13"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "9EC58C63-4F6F01BE-5C3B3F99-4597DA67",
+      "InternalVariableName": "StaticMesh"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class MultiplexedStaticMeshComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "MultiplexedStaticMeshComponent BPRocketFacility_C:MultiplexedStaticMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocketFacility.6"
+      },
+      "VariableGuid": "E8BD3664-4E5749D3-E4370A91-1AD4980F",
+      "InternalVariableName": "MultiplexedStaticMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPRocketFacility_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPRocketFacility_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPRocketFacility.10"
+        },
+        {
+          "ObjectName": "SCS_Node BPRocketFacility_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPRocketFacility.11"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPRocketFacility_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPRocketFacility.10"
+        },
+        {
+          "ObjectName": "SCS_Node BPRocketFacility_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPRocketFacility.11"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPRocketFacility_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocketFacility.9"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh_GEN_VARIABLE",
+    "Outer": "BPRocketFacility_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh RocketFacility",
+        "ObjectPath": "War/Content/Meshes/Structures/RocketFacility.2"
+      },
+      "OverrideMaterials": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "BodyInstance": {
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "ComponentTags": [
+        "Multiplexed"
+      ]
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPRocketFacility_C"
+  }
+]

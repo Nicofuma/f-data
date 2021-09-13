@@ -1,0 +1,111 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Shelf01",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 41.26798,
+              "Y": 78.29015,
+              "Z": 126.76352
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 92.97614,
+            "Y": 159.02142,
+            "Z": 253.52704,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "BuildScale3D": {
+        "X": 1.2,
+        "Y": 1.2,
+        "Z": 1.2
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Shelf01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x1576A"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Shelf01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Shelf01",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Shelf01.0"
+          },
+          "MaterialSlotName": "MI_Shelf_02a",
+          "ImportedMaterialSlotName": "MI_Shelf_02a",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 347.15793,
+            "LocalUVDensities": 1465.2183,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1465.2183,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 41.26797,
+          "Y": 78.29015,
+          "Z": 126.76352
+        },
+        "BoxExtent": {
+          "X": 46.488068,
+          "Y": 79.51072,
+          "Z": 126.76352
+        },
+        "SphereRadius": 156.45917
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Shelf01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Shelf01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Shelf01:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Shelf01.1"
+    },
+    "LightingGuid": "49BE95C3-4CDCECDD-8F989184-3D7213CC",
+    "RenderData": null
+  }
+]

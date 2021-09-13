@@ -1,0 +1,248 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Outer": "FuelTank",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -186.4045,
+                "Y": 125.75438,
+                "Z": 0.19046688
+              },
+              {
+                "X": 183.66698,
+                "Y": 125.75438,
+                "Z": 0.19046688
+              },
+              {
+                "X": -186.4045,
+                "Y": -125.75438,
+                "Z": 0.19046688
+              },
+              {
+                "X": 183.66698,
+                "Y": -125.75438,
+                "Z": 0.19046688
+              },
+              {
+                "X": -186.4045,
+                "Y": 125.75438,
+                "Z": 162.24348
+              },
+              {
+                "X": 183.66698,
+                "Y": 125.75438,
+                "Z": 162.24348
+              },
+              {
+                "X": -186.4045,
+                "Y": -125.75438,
+                "Z": 162.24348
+              },
+              {
+                "X": 183.66698,
+                "Y": -125.75438,
+                "Z": 162.24348
+              },
+              {
+                "X": -186.4045,
+                "Y": 50.122406,
+                "Z": 237.87546
+              },
+              {
+                "X": 183.66698,
+                "Y": 50.122406,
+                "Z": 237.87546
+              },
+              {
+                "X": -186.4045,
+                "Y": -50.122406,
+                "Z": 237.87546
+              },
+              {
+                "X": 183.66698,
+                "Y": -50.122406,
+                "Z": 237.87546
+              },
+              {
+                "X": -239.62619,
+                "Y": -97.20745,
+                "Z": 29.322624
+              },
+              {
+                "X": -239.62619,
+                "Y": 97.20745,
+                "Z": 29.322624
+              },
+              {
+                "X": -239.62619,
+                "Y": 97.20745,
+                "Z": 152.76836
+              },
+              {
+                "X": -239.62619,
+                "Y": 38.517612,
+                "Z": 211.4582
+              },
+              {
+                "X": -239.62619,
+                "Y": -38.517612,
+                "Z": 211.4582
+              },
+              {
+                "X": -239.62619,
+                "Y": -97.20745,
+                "Z": 152.76836
+              },
+              {
+                "X": 245.39856,
+                "Y": 90.312874,
+                "Z": 35.631977
+              },
+              {
+                "X": 245.39856,
+                "Y": -90.312874,
+                "Z": 35.631977
+              },
+              {
+                "X": 245.39856,
+                "Y": -90.312874,
+                "Z": 147.56313
+              },
+              {
+                "X": 245.39856,
+                "Y": -35.44205,
+                "Z": 202.43394
+              },
+              {
+                "X": 245.39856,
+                "Y": 35.44205,
+                "Z": 202.43394
+              },
+              {
+                "X": 245.39856,
+                "Y": 90.312874,
+                "Z": 147.56313
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -239.62619,
+                "Y": -125.75438,
+                "Z": 0.19046688
+              },
+              "Max": {
+                "X": 245.39856,
+                "Y": 125.75438,
+                "Z": 237.87546
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "FuelTank",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 1561,
+        "SizeOnDisk": 1561,
+        "OffsetInFile": "0x45AE7"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FuelTank",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FuelTankStructure",
+            "ObjectPath": "War/Content/Materials/Structures/FuelTankStructure.0"
+          },
+          "MaterialSlotName": "FuelTankStructure",
+          "ImportedMaterialSlotName": "FuelTankStructure",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 821.60065,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 821.60065,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 4.231537,
+          "Z": 137.64505
+        },
+        "BoxExtent": {
+          "X": 252.00208,
+          "Y": 151.0557,
+          "Z": 137.51816
+        },
+        "SphereRadius": 267.54544
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FuelTank:BodySetup_1",
+      "ObjectPath": "War/Content/Meshes/Structures/FuelTank.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FuelTank:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Structures/FuelTank.1"
+    },
+    "LightingGuid": "09856553-4E1D9089-99C61084-E51129AD",
+    "RenderData": null
+  }
+]

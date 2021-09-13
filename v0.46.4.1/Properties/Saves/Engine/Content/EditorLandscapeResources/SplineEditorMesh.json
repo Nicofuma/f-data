@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_4",
+    "Outer": "SplineEditorMesh",
+    "Properties": {
+      "PhysicsType": "PhysType_Kinematic",
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SplineEditorMesh",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xA4F"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SplineEditorMesh",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material SplineEditorMeshMat",
+            "ObjectPath": "Engine/Content/EditorLandscapeResources/SplineEditorMeshMat.0"
+          },
+          "MaterialSlotName": "SplineEditorMeshMat",
+          "ImportedMaterialSlotName": "SplineEditorMeshMat",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 99.98473,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 99.98473,
+      "LightMapResolution": 32,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 50.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 50.0,
+          "Y": 50.0,
+          "Z": 0.0
+        },
+        "SphereRadius": 70.71068
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SplineEditorMesh:BodySetup_4",
+      "ObjectPath": "Engine/Content/EditorLandscapeResources/SplineEditorMesh.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SplineEditorMesh:NavCollision_0",
+      "ObjectPath": "Engine/Content/EditorLandscapeResources/SplineEditorMesh.1"
+    },
+    "LightingGuid": "3FF556D5-42AA9923-E68FF388-235E4502",
+    "RenderData": null
+  }
+]

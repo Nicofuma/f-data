@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "CamouflageColMotorcycle",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "CamouflageColMotorcycle",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x8A3F"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "CamouflageColMotorcycle",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Camoflauge",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Camoflauge.0"
+          },
+          "MaterialSlotName": "Motorcycle",
+          "ImportedMaterialSlotName": "Motorcycle",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 211.91199,
+            "LocalUVDensities": 1.5203973,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1.5203973,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.40011597,
+          "Y": -48.78128,
+          "Z": 93.78393
+        },
+        "BoxExtent": {
+          "X": 142.41931,
+          "Y": 141.69693,
+          "Z": 83.66099
+        },
+        "SphereRadius": 191.04164
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup CamouflageColMotorcycle:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/HomeRegionProps/CamouflageColMotorcycle.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision CamouflageColMotorcycle:NavCollision_4",
+      "ObjectPath": "War/Content/Meshes/Environment/HomeRegionProps/CamouflageColMotorcycle.1"
+    },
+    "LightingGuid": "F58335A9-4B068DA9-369BF4AB-6005EB0B",
+    "RenderData": null
+  }
+]

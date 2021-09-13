@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SteelBeam02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SteelBeam02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1387"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SteelBeam02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownCoalPlantMetal01",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownCoalPlantMetal01.0"
+          },
+          "MaterialSlotName": "Material #1021",
+          "ImportedMaterialSlotName": "Material #1021",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1188.4539,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1188.4539,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 28.926872,
+          "Y": 25.992256,
+          "Z": 244.14279
+        },
+        "SphereRadius": 247.22067
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SteelBeam02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/SteelBeam02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SteelBeam02:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/SteelBeam02.1"
+    },
+    "LightingGuid": "22CA769A-4233A750-F508E689-2622874D",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "StaticMesh",
+    "Outer": "BPDestroyedShipyard_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPDestroyedShipyard_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPDestroyedShipyard_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedShipyard.10"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class DestroyedVehicleFactory",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPDestroyedShipyard_C:StaticMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedShipyard.0"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPDestroyedShipyard_C",
+    "Name": "Default__BPDestroyedShipyard_C",
+    "Properties": {
+      "CraneSpawnLocationComponent": {
+        "ObjectName": "CraneSpawnLocationComponent Default__BPDestroyedShipyard_C:CraneSpawnLocationComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedShipyard.5"
+      },
+      "RuinedComponent": {
+        "ObjectName": "RuinedComponent Default__BPDestroyedShipyard_C:RuinedComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedShipyard.6"
+      },
+      "CodeName": "DestroyedShipyard",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPDestroyedShipyard_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedShipyard.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPDestroyedShipyard_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedShipyard.4"
+      },
+      "MaxHealth": 100000000,
+      "MapIconType": "EMapIconType::Shipyard",
+      "UpgradeStructureCodeName": "Shipyard",
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPDestroyedShipyard_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedShipyard.12"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPDestroyedShipyard_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedShipyard.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPDestroyedShipyard_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPDestroyedShipyard_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 1150.0,
+        "Y": 1150.0,
+        "Z": 256.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPDestroyedShipyard_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedShipyard.3"
+      },
+      "RelativeLocation": {
+        "X": -810.0,
+        "Y": 40.0,
+        "Z": 240.0
+      }
+    }
+  },
+  {
+    "Type": "CraneSpawnLocationComponent",
+    "Name": "CraneSpawnLocationComponent",
+    "Outer": "Default__BPDestroyedShipyard_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPDestroyedShipyard_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedShipyard.3"
+      }
+    }
+  },
+  {
+    "Type": "RuinedComponent",
+    "Name": "RuinedComponent",
+    "Outer": "Default__BPDestroyedShipyard_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPDestroyedShipyard_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedShipyard.3"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPDestroyedShipyard_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPDestroyedShipyard_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedShipyard.7"
+      },
+      "VariableGuid": "A7695526-4DF34F5A-241FD684-AB0C62D1",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPDestroyedShipyard_C:StaticMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedShipyard.11"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "FC602C94-464769BD-7D07EA92-678EE754",
+      "InternalVariableName": "StaticMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPDestroyedShipyard_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPDestroyedShipyard_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedShipyard.9"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPDestroyedShipyard_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedShipyard.9"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPDestroyedShipyard_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedShipyard.8"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh_GEN_VARIABLE",
+    "Outer": "BPDestroyedShipyard_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh ShipyardDestroyed",
+        "ObjectPath": "War/Content/Meshes/Structures/ShipyardDestroyed.2"
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPDestroyedShipyard_C"
+  }
+]

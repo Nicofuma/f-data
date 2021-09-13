@@ -1,0 +1,112 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPSledgeHammer_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPSledgeHammer_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPSledgeHammer.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class GearPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPSledgeHammer_C",
+    "Name": "Default__BPSledgeHammer_C",
+    "Properties": {
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPSledgeHammerComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Items/BPSledgeHammerComponent.0"
+      },
+      "Encumbrance": 100,
+      "CodeName": "SledgeHammer",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "609EB2724456E40D428B4AACFA7C6169",
+        "SourceString": "Sledge Hammer"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "F68DAC46476C2F31A5C570B85E8E5D75",
+        "SourceString": "A tool used to salvage components from remains of old vehicles and equipment."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D SledgeHammerItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/SledgeHammerItemIcon.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Primary",
+      "ItemCategory": "EItemCategory::Utility",
+      "ItemProfileType": "EItemProfileType::Tool",
+      "TechID": "ETechID::UnlockSledgeHammer",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPSledgeHammer_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPSledgeHammer.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPSledgeHammer_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPSledgeHammer.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPSledgeHammer_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPSledgeHammer_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPSledgeHammer_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPSledgeHammer.3"
+      },
+      "VariableGuid": "F13C3093-45B1355C-0BCB71B1-38890D71",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPSledgeHammer_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPSledgeHammer_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPSledgeHammer.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPSledgeHammer_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPSledgeHammer_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPSledgeHammer.2"
+      }
+    }
+  }
+]

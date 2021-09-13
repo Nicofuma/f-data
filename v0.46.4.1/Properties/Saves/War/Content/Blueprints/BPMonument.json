@@ -1,0 +1,265 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "Decal",
+    "Outer": "BPMonument_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class DecalComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPMonument_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPMonument_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/BPMonument.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class Monument",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPMonument_C:Decal",
+        "ObjectPath": "War/Content/Blueprints/BPMonument.0"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPMonument_C",
+    "Name": "Default__BPMonument_C",
+    "Properties": {
+      "MonumentMesh": {
+        "ObjectName": "StaticMeshComponent Default__BPMonument_C:MonumentMesh",
+        "ObjectPath": "War/Content/Blueprints/BPMonument.8"
+      },
+      "MonumentTypeMeshes": [
+        {
+          "ObjectName": "StaticMesh WarMonumentBase",
+          "ObjectPath": "War/Content/Meshes/Structures/WarMonumentBase.2"
+        },
+        {
+          "ObjectName": "StaticMesh WarMonument1",
+          "ObjectPath": "War/Content/Meshes/Structures/WarMonument1.2"
+        },
+        {
+          "ObjectName": "StaticMesh WarMonument2",
+          "ObjectPath": "War/Content/Meshes/Structures/WarMonument2.2"
+        },
+        {
+          "ObjectName": "StaticMesh WarMonument3",
+          "ObjectPath": "War/Content/Meshes/Structures/WarMonument3.2"
+        },
+        {
+          "ObjectName": "StaticMesh WarMonument4",
+          "ObjectPath": "War/Content/Meshes/Structures/WarMonument4.2"
+        }
+      ],
+      "UseMonumentComponent": {
+        "ObjectName": "UseMonumentComponent Default__BPMonument_C:UseMonument",
+        "ObjectPath": "War/Content/Blueprints/BPMonument.9"
+      }
+    }
+  },
+  {
+    "Type": "DecalComponent",
+    "Name": "Decal_GEN_VARIABLE",
+    "Outer": "BPMonument_C",
+    "Properties": {
+      "DecalMaterial": {
+        "ObjectName": "MaterialInstanceConstant DirtPatch",
+        "ObjectPath": "War/Content/Materials/Decals/DirtPatch.0"
+      },
+      "DecalSize": {
+        "X": 64.0,
+        "Y": 200.0,
+        "Z": 200.0
+      },
+      "RelativeRotation": {
+        "Pitch": -90.0,
+        "Yaw": 0.0,
+        "Roll": 1.4E-05
+      },
+      "RelativeScale3D": {
+        "X": 1.0,
+        "Y": 1.297409,
+        "Z": 1.297409
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPMonument_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPMonument_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/BPMonument.4"
+      },
+      "VariableGuid": "E6456D3B-442B1C9F-8A8C5BA2-5D3C64B6",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class DecalComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "DecalComponent BPMonument_C:Decal_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/BPMonument.3"
+      },
+      "ParentComponentOrVariableName": "MonumentMesh",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "C9F2C84B-4FCC9D7E-01473899-8AA0D4F5",
+      "InternalVariableName": "Decal"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPMonument_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPMonument_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/BPMonument.6"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPMonument_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/BPMonument.6"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPMonument_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/BPMonument.5"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "MonumentMesh",
+    "Outer": "Default__BPMonument_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh WarMonument1",
+        "ObjectPath": "War/Content/Meshes/Structures/WarMonument1.2"
+      }
+    }
+  },
+  {
+    "Type": "UseMonumentComponent",
+    "Name": "UseMonument",
+    "Outer": "Default__BPMonument_C",
+    "Properties": {
+      "HintText": {
+        "Namespace": "",
+        "Key": "22136F9849FE26E3CB5B679431A1B0FB",
+        "SourceString": "view Monument"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "EAEB308E4F14046B1EB4B58AE7C44D63",
+        "SourceString": "Monument"
+      },
+      "Icon": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D MonumentIcon",
+          "ObjectPath": "War/Content/Textures/UI/ItemIcons/MonumentIcon.0"
+        }
+      },
+      "BoxExtent": {
+        "X": 400.0,
+        "Y": 400.0,
+        "Z": 256.0
+      },
+      "BodyInstance": {
+        "CollisionProfileName": "StructureUseVolume",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapDowncast",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Projectile",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "StaticMeshComponent Default__BPMonument_C:MonumentMesh",
+        "ObjectPath": "War/Content/Blueprints/BPMonument.8"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 256.0
+      }
+    }
+  }
+]

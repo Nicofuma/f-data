@@ -1,0 +1,106 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "GateFactionMarkerWar",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": -3.8146973E-06,
+              "Z": 103.77215
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 75.0,
+            "Y": 75.000015,
+            "Z": 384.88828,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "GateFactionMarkerWar",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x203B"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "GateFactionMarkerWar",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant GateFactionMarker",
+            "ObjectPath": "War/Content/Materials/Structures/GateFactionMarker.0"
+          },
+          "MaterialSlotName": "GateFactionMarker",
+          "ImportedMaterialSlotName": "GateFactionMarker",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 463.50018,
+            "LocalUVDensities": 1.5713435,
+            "LocalUVDensities": 1.5713435,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1.5713435,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -3.8146973E-06,
+          "Z": 103.77215
+        },
+        "BoxExtent": {
+          "X": 37.5,
+          "Y": 37.500008,
+          "Z": 192.44414
+        },
+        "SphereRadius": 199.43231
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup GateFactionMarkerWar:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/Walls/GateFactionMarkerWar.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision GateFactionMarkerWar:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Structures/Walls/GateFactionMarkerWar.1"
+    },
+    "LightingGuid": "4B8EE5F2-4CC27957-93B9A998-8B946426",
+    "RenderData": null
+  }
+]

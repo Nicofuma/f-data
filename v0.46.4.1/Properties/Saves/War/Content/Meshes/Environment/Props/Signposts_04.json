@@ -1,0 +1,106 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Signposts_04",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 70.80114
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 171.0965,
+            "Y": 18.730824,
+            "Z": 147.88176,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Signposts_04",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x22AA"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Signposts_04",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Signposts",
+            "ObjectPath": "War/Content/Materials/Environment/Signposts.0"
+          },
+          "MaterialSlotName": "Material #25",
+          "ImportedMaterialSlotName": "Material #25",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 517.5,
+            "LocalUVDensities": 306.78696,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 306.78696,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 88.77746
+        },
+        "BoxExtent": {
+          "X": 85.54825,
+          "Y": 9.365412,
+          "Z": 88.777466
+        },
+        "SphereRadius": 123.64325
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Signposts_04:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Signposts_04.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Signposts_04:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Signposts_04.1"
+    },
+    "LightingGuid": "9B1F7B27-4FC39B90-F3265BA9-E92755E3",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,99 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Outer": "PlatformPeice01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_12",
+    "Outer": "PlatformPeice01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x25E1"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "PlatformPeice01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Platform",
+            "ObjectPath": "War/Content/Materials/Environment/Platform.0"
+          },
+          "MaterialSlotName": "Material #238",
+          "ImportedMaterialSlotName": "Material #238",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 341.43283,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RepeatingRope",
+            "ObjectPath": "War/Content/Materials/Environment/Props/RepeatingRope.0"
+          },
+          "MaterialSlotName": "Material #239",
+          "ImportedMaterialSlotName": "Material #239",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 68.66534,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 153.31427,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.90865326,
+          "Y": 0.0,
+          "Z": 9.479965
+        },
+        "BoxExtent": {
+          "X": 34.334846,
+          "Y": 258.72354,
+          "Z": 16.992332
+        },
+        "SphereRadius": 260.28296
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup PlatformPeice01:BodySetup_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Base/PlatformPeice01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision PlatformPeice01:NavCollision_12",
+      "ObjectPath": "War/Content/Meshes/Environment/Base/PlatformPeice01.1"
+    },
+    "LightingGuid": "BB4EB359-4D522EE8-77C3ED88-9E7A385E",
+    "RenderData": null
+  }
+]

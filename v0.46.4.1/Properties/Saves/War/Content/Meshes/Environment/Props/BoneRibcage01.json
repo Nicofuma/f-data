@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "BoneRibcage01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_5",
+    "Outer": "BoneRibcage01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1D8C"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "BoneRibcage01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Skeleton",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Skeleton.0"
+          },
+          "MaterialSlotName": "Skeleton",
+          "ImportedMaterialSlotName": "Skeleton",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 168.21394,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 168.21394,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.20093918,
+          "Y": 0.0,
+          "Z": 13.208034
+        },
+        "BoxExtent": {
+          "X": 19.407621,
+          "Y": 24.39235,
+          "Z": 15.02684
+        },
+        "SphereRadius": 29.914654
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup BoneRibcage01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/BoneRibcage01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision BoneRibcage01:NavCollision_5",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/BoneRibcage01.1"
+    },
+    "LightingGuid": "6414CA7A-4EC5575D-AFE18090-AD0E11E5",
+    "RenderData": null
+  }
+]

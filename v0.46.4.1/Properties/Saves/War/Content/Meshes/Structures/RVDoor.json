@@ -1,0 +1,105 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "RVDoor",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -58.61682,
+              "Y": -6.1035156E-05,
+              "Z": 257.5723
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 117.23364,
+            "Y": 1038.0222,
+            "Z": 515.1446,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "RVDoor",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x3C22"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "RVDoor",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RVUniqueParts",
+            "ObjectPath": "War/Content/Materials/Structures/RVUniqueParts.0"
+          },
+          "MaterialSlotName": "Door",
+          "ImportedMaterialSlotName": "Door",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1374.5387,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1374.5387,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -58.61682,
+          "Y": -6.1035156E-05,
+          "Z": 257.5723
+        },
+        "BoxExtent": {
+          "X": 58.61682,
+          "Y": 519.0111,
+          "Z": 257.5723
+        },
+        "SphereRadius": 581.511
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup RVDoor:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/RVDoor.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision RVDoor:NavCollision_4",
+      "ObjectPath": "War/Content/Meshes/Structures/RVDoor.1"
+    },
+    "LightingGuid": "F0EC7225-447B1B37-E750F88F-B359CECD",
+    "RenderData": null
+  }
+]

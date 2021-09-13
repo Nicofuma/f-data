@@ -1,0 +1,106 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "TreeTrunk03",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -7.287796,
+              "Y": 4.413666,
+              "Z": 94.421364
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 84.776405,
+            "Y": 76.76803,
+            "Z": 237.04231,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "TreeTrunk03",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0xFC37"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TreeTrunk03",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TreeTrunk01",
+            "ObjectPath": "War/Content/Materials/Environment/TreeTrunk01.0"
+          },
+          "MaterialSlotName": "TreeTrunk01",
+          "ImportedMaterialSlotName": "TreeTrunk01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 457.1966,
+            "LocalUVDensities": 483.35855,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 483.35855,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -8.471588,
+          "Y": 11.718765,
+          "Z": 94.421364
+        },
+        "BoxExtent": {
+          "X": 126.19083,
+          "Y": 137.73692,
+          "Z": 118.52116
+        },
+        "SphereRadius": 191.53343
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TreeTrunk03:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/TreeTrunk03.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TreeTrunk03:NavCollision_4",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/TreeTrunk03.1"
+    },
+    "LightingGuid": "5D9D2170-49FF510B-6959AC84-D0ED2FC5",
+    "RenderData": null
+  }
+]

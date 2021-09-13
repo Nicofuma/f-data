@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "IModDeskPapers01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "IModDeskPapers01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1C2C"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "IModDeskPapers01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortImodStationary",
+            "ObjectPath": "War/Content/Materials/Structures/FortImodStationary.0"
+          },
+          "MaterialSlotName": "FortImodStationary",
+          "ImportedMaterialSlotName": "FortImodStationary",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 665.7108,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 665.7108,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 14.94821
+        },
+        "BoxExtent": {
+          "X": 25.322266,
+          "Y": 31.23207,
+          "Z": 14.948214
+        },
+        "SphereRadius": 42.464447
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup IModDeskPapers01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/IModDeskPapers01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision IModDeskPapers01:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/IModDeskPapers01.1"
+    },
+    "LightingGuid": "C37345A6-4DE9B68D-D0397DB3-3770C3B9",
+    "RenderData": null
+  }
+]

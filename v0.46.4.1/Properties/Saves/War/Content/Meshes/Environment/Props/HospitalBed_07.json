@@ -1,0 +1,89 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_3",
+    "Outer": "HospitalBed_07",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_6",
+    "Outer": "HospitalBed_07",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x6874"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "HospitalBed_07",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant HospitalBed",
+            "ObjectPath": "War/Content/Materials/Environment/Props/HospitalBed.0"
+          },
+          "MaterialSlotName": "HospitalBed",
+          "ImportedMaterialSlotName": "HospitalBed",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 490.49075,
+            "LocalUVDensities": 307.11575,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 307.11575,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.2203598,
+          "Y": 0.31306458,
+          "Z": -0.76229095
+        },
+        "BoxExtent": {
+          "X": 125.941025,
+          "Y": 110.02426,
+          "Z": 23.470423
+        },
+        "SphereRadius": 145.94801
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup HospitalBed_07:BodySetup_3",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/HospitalBed_07.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision HospitalBed_07:NavCollision_6",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/HospitalBed_07.1"
+    },
+    "LightingGuid": "8BD33611-4A479FF1-A0945B90-39635929",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,879 @@
+[
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "BPZombieTransformExplosion_C",
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPZombieTransformExplosion_C",
+    "Properties": {
+      "Timelines": [
+        {
+          "ObjectName": "TimelineTemplate BPZombieTransformExplosion_C:Scale 2_Template",
+          "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.32"
+        }
+      ],
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPZombieTransformExplosion_C:SimpleConstructionScript_1",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.31"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty BPZombieTransformExplosion_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.0"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function BPZombieTransformExplosion_C:ExecuteUbergraph_BPZombieTransformExplosion",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.17"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class WarExplosionEffect",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty BPZombieTransformExplosion_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.0"
+      },
+      {
+        "ObjectName": "Function BPZombieTransformExplosion_C:Scale 2__FinishedFunc",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.19"
+      },
+      {
+        "ObjectName": "Function BPZombieTransformExplosion_C:Scale 2__UpdateFunc",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.20"
+      },
+      {
+        "ObjectName": "Function BPZombieTransformExplosion_C:ReceiveBeginPlay",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.18"
+      },
+      {
+        "ObjectName": "Function BPZombieTransformExplosion_C:ExecuteUbergraph_BPZombieTransformExplosion",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.17"
+      },
+      {
+        "ObjectName": "ObjectProperty BPZombieTransformExplosion_C:ZombieTransform",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.21"
+      },
+      {
+        "ObjectName": "ObjectProperty BPZombieTransformExplosion_C:Decal2",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.13"
+      },
+      {
+        "ObjectName": "ObjectProperty BPZombieTransformExplosion_C:Decal",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.15"
+      },
+      {
+        "ObjectName": "ObjectProperty BPZombieTransformExplosion_C:RadialForce",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.10"
+      },
+      {
+        "ObjectName": "StructProperty BPZombieTransformExplosion_C:Scale_2_DecalScale2_947ABF3E437467B8B8CBC4A1C6AAF98F",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.12"
+      },
+      {
+        "ObjectName": "StructProperty BPZombieTransformExplosion_C:Scale_2_Scale_947ABF3E437467B8B8CBC4A1C6AAF98F",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.14"
+      },
+      {
+        "ObjectName": "FloatProperty BPZombieTransformExplosion_C:Scale_2_GLow_947ABF3E437467B8B8CBC4A1C6AAF98F",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.9"
+      },
+      {
+        "ObjectName": "ByteProperty BPZombieTransformExplosion_C:Scale_2__Direction_947ABF3E437467B8B8CBC4A1C6AAF98F",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.3"
+      },
+      {
+        "ObjectName": "ObjectProperty BPZombieTransformExplosion_C:Scale 2",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.11"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 18,
+    "ClassWithin": null,
+    "ClassConfigName": "/Game/Audio/SFX/Zombie/ZombieTransform_Cue_18",
+    "ClassGeneratedBy": null,
+    "Interfaces": [],
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPZombieTransformExplosion_C",
+    "Name": "Default__BPZombieTransformExplosion_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "Scale_2_DecalScale2_947ABF3E437467B8B8CBC4A1C6AAF98F": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Scale_2_Scale_947ABF3E437467B8B8CBC4A1C6AAF98F": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "ParticleSystemOverrides": [
+        {
+          "PhysicalSurface": "SurfaceType_Default",
+          "ExplosionFX": null,
+          "Decal": {
+            "DecalMaterial": null,
+            "DecalSize": {
+              "X": 300.0,
+              "Y": 300.0,
+              "Z": 300.0
+            },
+            "LifeSpan": 20.0,
+            "FadeScreenSize": 0.01
+          }
+        },
+        {
+          "PhysicalSurface": "SurfaceType3",
+          "ExplosionFX": null,
+          "Decal": {
+            "DecalMaterial": null,
+            "DecalSize": {
+              "X": 300.0,
+              "Y": 300.0,
+              "Z": 300.0
+            },
+            "LifeSpan": 20.0,
+            "FadeScreenSize": 0.01
+          }
+        },
+        {
+          "PhysicalSurface": "SurfaceType_Default",
+          "ExplosionFX": null,
+          "Decal": {
+            "DecalMaterial": null,
+            "DecalSize": {
+              "X": 32.0,
+              "Y": 32.0,
+              "Z": 32.0
+            },
+            "LifeSpan": 10.0,
+            "FadeScreenSize": 0.01
+          }
+        },
+        {
+          "PhysicalSurface": "SurfaceType_Default",
+          "ExplosionFX": null,
+          "Decal": {
+            "DecalMaterial": null,
+            "DecalSize": {
+              "X": 32.0,
+              "Y": 32.0,
+              "Z": 32.0
+            },
+            "LifeSpan": 10.0,
+            "FadeScreenSize": 0.01
+          }
+        }
+      ],
+      "RadialHitImpact": {
+        "ObjectName": "BlueprintGeneratedClass RifleImpactEffect_C",
+        "ObjectPath": "War/Content/Blueprints/Items/RifleImpactEffect.1"
+      },
+      "ExplosionLightFadeOut": 0.15,
+      "ExplosionSound": {
+        "ObjectName": "SoundCue ZombieTransform_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Zombie/ZombieTransform_Cue.0"
+      },
+      "CameraShake": {
+        "ObjectName": "BlueprintGeneratedClass GrenadeCameraShake_C",
+        "ObjectPath": "War/Content/Blueprints/Items/GrenadeCameraShake.0"
+      },
+      "CameraShakeOuterRadius": 1800.0,
+      "bDoNotOrientToImpactNormal": true,
+      "ExplosionLight": {
+        "ObjectName": "PointLightComponent Default__BPZombieTransformExplosion_C:ExplosionLight",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.23"
+      },
+      "bReplicates": true,
+      "InitialLifeSpan": 30.0,
+      "RootComponent": {
+        "ObjectName": "PointLightComponent Default__BPZombieTransformExplosion_C:ExplosionLight",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.23"
+      }
+    }
+  },
+  {
+    "Type": "ByteProperty",
+    "Name": "Scale_2__Direction_947ABF3E437467B8B8CBC4A1C6AAF98F",
+    "Outer": "BPZombieTransformExplosion_C",
+    "Enum": {
+      "ObjectName": "Enum ETimelineDirection",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "CurveFloat",
+    "Name": "CurveFloat_0",
+    "Outer": "BPZombieTransformExplosion_C",
+    "Properties": {
+      "FloatCurve": {
+        "Keys": [
+          {
+            "InterpMode": 2,
+            "TangentMode": 2,
+            "TangentWeightMode": 0,
+            "Time": 0.0,
+            "Value": 1.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": 2,
+            "TangentMode": 1,
+            "TangentWeightMode": 0,
+            "Time": 1.2,
+            "Value": 0.0,
+            "ArriveTangent": -0.8472008,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": -0.84720117,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "CurveVector",
+    "Name": "CurveVector_0",
+    "Outer": "BPZombieTransformExplosion_C",
+    "Properties": {
+      "FloatCurves": {
+        "Keys": [
+          {
+            "InterpMode": 0,
+            "TangentMode": 0,
+            "TangentWeightMode": 0,
+            "Time": 0.0,
+            "Value": 1.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      },
+      "FloatCurves": {
+        "Keys": [
+          {
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "TangentWeightMode": 0,
+            "Time": 0.0,
+            "Value": 0.1,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": 2,
+            "TangentMode": 1,
+            "TangentWeightMode": 0,
+            "Time": 0.26360652,
+            "Value": 0.67504704,
+            "ArriveTangent": 0.37668794,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.37668794,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": 2,
+            "TangentMode": 2,
+            "TangentWeightMode": 0,
+            "Time": 0.31460333,
+            "Value": 0.57,
+            "ArriveTangent": -0.13429,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": -0.03506957,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": 2,
+            "TangentMode": 2,
+            "TangentWeightMode": 0,
+            "Time": 2.6525426,
+            "Value": 0.597662,
+            "ArriveTangent": -0.028506532,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": -0.71399593,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": 2,
+            "TangentMode": 2,
+            "TangentWeightMode": 0,
+            "Time": 2.8644347,
+            "Value": 0.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      },
+      "FloatCurves": {
+        "Keys": [
+          {
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "TangentWeightMode": 0,
+            "Time": 0.0,
+            "Value": 0.1,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": 2,
+            "TangentMode": 1,
+            "TangentWeightMode": 0,
+            "Time": 0.26360652,
+            "Value": 0.67504704,
+            "ArriveTangent": 0.32310134,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.32310125,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": 2,
+            "TangentMode": 2,
+            "TangentWeightMode": 0,
+            "Time": 0.31460333,
+            "Value": 0.57,
+            "ArriveTangent": -0.13429,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": -0.014660184,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": 2,
+            "TangentMode": 2,
+            "TangentWeightMode": 0,
+            "Time": 2.6525426,
+            "Value": 0.597662,
+            "ArriveTangent": -0.023871757,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": -0.71399593,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": 2,
+            "TangentMode": 2,
+            "TangentWeightMode": 0,
+            "Time": 2.8644347,
+            "Value": 0.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "CurveVector",
+    "Name": "CurveVector_1",
+    "Outer": "BPZombieTransformExplosion_C",
+    "Properties": {
+      "FloatCurves": {
+        "Keys": [
+          {
+            "InterpMode": 1,
+            "TangentMode": 0,
+            "TangentWeightMode": 0,
+            "Time": 0.0,
+            "Value": 1.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      },
+      "FloatCurves": {
+        "Keys": [
+          {
+            "InterpMode": 1,
+            "TangentMode": 0,
+            "TangentWeightMode": 0,
+            "Time": 0.0,
+            "Value": 0.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": 1,
+            "TangentMode": 0,
+            "TangentWeightMode": 0,
+            "Time": 2.85,
+            "Value": 0.6,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      },
+      "FloatCurves": {
+        "Keys": [
+          {
+            "InterpMode": 1,
+            "TangentMode": 0,
+            "TangentWeightMode": 0,
+            "Time": 0.0,
+            "Value": 0.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": 1,
+            "TangentMode": 0,
+            "TangentWeightMode": 0,
+            "Time": 2.85,
+            "Value": 0.6,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "DecalComponent",
+    "Name": "Decal2_GEN_VARIABLE",
+    "Outer": "BPZombieTransformExplosion_C",
+    "Properties": {
+      "DecalMaterial": {
+        "ObjectName": "Material BloodDecal01",
+        "ObjectPath": "War/Content/FX/Materials/BloodDecal01.0"
+      },
+      "FadeStartDelay": 3.0,
+      "FadeDuration": 6.0,
+      "DecalSize": {
+        "X": 128.0,
+        "Y": 512.0,
+        "Z": 512.0
+      },
+      "RelativeLocation": {
+        "X": -24.256264,
+        "Y": 0.0,
+        "Z": -0.0012207031
+      },
+      "RelativeRotation": {
+        "Pitch": -90.00001,
+        "Yaw": 720.02625,
+        "Roll": 179.97469
+      },
+      "RelativeScale3D": {
+        "X": 1.0,
+        "Y": 0.383885,
+        "Z": 0.38388517
+      }
+    }
+  },
+  {
+    "Type": "DecalComponent",
+    "Name": "Decal_GEN_VARIABLE",
+    "Outer": "BPZombieTransformExplosion_C",
+    "Properties": {
+      "DecalMaterial": {
+        "ObjectName": "MaterialInstanceConstant CursedGroundTransform",
+        "ObjectPath": "War/Content/Materials/Event/CursedGroundTransform.0"
+      },
+      "SortOrder": 1,
+      "FadeStartDelay": 5.0,
+      "FadeDuration": 10.0,
+      "DecalSize": {
+        "X": 128.0,
+        "Y": 512.0,
+        "Z": 512.0
+      },
+      "RelativeLocation": {
+        "X": 25.743736,
+        "Y": 0.0,
+        "Z": -0.0011291504
+      },
+      "RelativeRotation": {
+        "Pitch": -90.00001,
+        "Yaw": 720.02625,
+        "Roll": 179.97469
+      },
+      "RelativeScale3D": {
+        "X": 1.0,
+        "Y": 0.578991,
+        "Z": 0.5789913
+      }
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "Scale_2_GLow_947ABF3E437467B8B8CBC4A1C6AAF98F",
+    "Outer": "BPZombieTransformExplosion_C"
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "RadialForce",
+    "Outer": "BPZombieTransformExplosion_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class RadialForceComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Scale 2",
+    "Outer": "BPZombieTransformExplosion_C",
+    "PropertyFlags": 524292,
+    "PropertyClass": {
+      "ObjectName": "Class TimelineComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Scale_2_DecalScale2_947ABF3E437467B8B8CBC4A1C6AAF98F",
+    "Outer": "BPZombieTransformExplosion_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Decal2",
+    "Outer": "BPZombieTransformExplosion_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class DecalComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Scale_2_Scale_947ABF3E437467B8B8CBC4A1C6AAF98F",
+    "Outer": "BPZombieTransformExplosion_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Decal",
+    "Outer": "BPZombieTransformExplosion_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class DecalComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_BPZombieTransformExplosion",
+    "PropertyFlags": 148
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BPZombieTransformExplosion",
+    "Outer": "BPZombieTransformExplosion_C",
+    "Children": [
+      {
+        "ObjectName": "IntProperty BPZombieTransformExplosion_C:ExecuteUbergraph_BPZombieTransformExplosion.EntryPoint",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.16"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BPZombieTransformExplosion_C",
+    "SuperStruct": {
+      "ObjectName": "Function Actor:ReceiveBeginPlay",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "Function",
+    "Name": "Scale 2__FinishedFunc",
+    "Outer": "BPZombieTransformExplosion_C",
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "Function",
+    "Name": "Scale 2__UpdateFunc",
+    "Outer": "BPZombieTransformExplosion_C",
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "ZombieTransform",
+    "Outer": "BPZombieTransformExplosion_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class ParticleSystemComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ZombieTransform_GEN_VARIABLE",
+    "Outer": "BPZombieTransformExplosion_C",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem ZombieTransform",
+        "ObjectPath": "War/Content/FX/ZombieTransform.244"
+      },
+      "RelativeLocation": {
+        "X": 27.73037,
+        "Y": 3.0517578E-05,
+        "Z": 75.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "PointLightComponent",
+    "Name": "ExplosionLight",
+    "Outer": "Default__BPZombieTransformExplosion_C",
+    "Properties": {
+      "AttenuationRadius": 3000.0,
+      "Intensity": 0.0,
+      "LightColor": {
+        "R": 0,
+        "G": 0,
+        "B": 240,
+        "A": 255,
+        "Hex": "FF0000F0"
+      }
+    }
+  },
+  {
+    "Type": "RadialForceComponent",
+    "Name": "RadialForce_GEN_VARIABLE",
+    "Outer": "BPZombieTransformExplosion_C",
+    "Properties": {
+      "Radius": 500.0,
+      "ImpulseStrength": 100000.0,
+      "DestructibleDamage": 100.0,
+      "ObjectTypesToAffect": [
+        88
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPZombieTransformExplosion_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_1",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class ParticleSystemComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ParticleSystemComponent BPZombieTransformExplosion_C:ZombieTransform_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.22"
+      },
+      "ParentComponentOrVariableName": "ExplosionLight",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "F329A68B-49DF1851-61F9B8BC-A345DAC1",
+      "InternalVariableName": "ZombieTransform"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_1",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class DecalComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "DecalComponent BPZombieTransformExplosion_C:Decal_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.8"
+      },
+      "ParentComponentOrVariableName": "ExplosionLight",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "43FFB110-49F221E4-24D709BE-59C83BB9",
+      "InternalVariableName": "Decal"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_1",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class DecalComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "DecalComponent BPZombieTransformExplosion_C:Decal2_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.7"
+      },
+      "ParentComponentOrVariableName": "ExplosionLight",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "9007CC73-4AFCFF5D-3F8752BF-147A1880",
+      "InternalVariableName": "Decal2"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_1",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class RadialForceComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "RadialForceComponent BPZombieTransformExplosion_C:RadialForce_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.24"
+      },
+      "ParentComponentOrVariableName": "ExplosionLight",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "ED95043C-4BF9474F-1DC08DA0-C2DD8674",
+      "InternalVariableName": "RadialForce"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_1",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPZombieTransformExplosion_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.25"
+      },
+      "VariableGuid": "7087B329-46E22DDE-4D14E59F-86318DAD",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_1",
+    "Outer": "BPZombieTransformExplosion_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPZombieTransformExplosion_C:SimpleConstructionScript_1.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.29"
+        },
+        {
+          "ObjectName": "SCS_Node BPZombieTransformExplosion_C:SimpleConstructionScript_1.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.27"
+        },
+        {
+          "ObjectName": "SCS_Node BPZombieTransformExplosion_C:SimpleConstructionScript_1.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.28"
+        },
+        {
+          "ObjectName": "SCS_Node BPZombieTransformExplosion_C:SimpleConstructionScript_1.SCS_Node_0",
+          "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.26"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPZombieTransformExplosion_C:SimpleConstructionScript_1.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.29"
+        },
+        {
+          "ObjectName": "SCS_Node BPZombieTransformExplosion_C:SimpleConstructionScript_1.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.27"
+        },
+        {
+          "ObjectName": "SCS_Node BPZombieTransformExplosion_C:SimpleConstructionScript_1.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.28"
+        },
+        {
+          "ObjectName": "SCS_Node BPZombieTransformExplosion_C:SimpleConstructionScript_1.SCS_Node_0",
+          "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.26"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPZombieTransformExplosion_C:SimpleConstructionScript_1.SCS_Node_4",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.30"
+      }
+    }
+  },
+  {
+    "Type": "TimelineTemplate",
+    "Name": "Scale 2_Template",
+    "Outer": "BPZombieTransformExplosion_C",
+    "Properties": {
+      "TimelineLength": 4.0,
+      "FloatTracks": [
+        {
+          "CurveFloat": {
+            "ObjectName": "CurveFloat BPZombieTransformExplosion_C:CurveFloat_0",
+            "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.4"
+          },
+          "PropertyName": "Scale_2_GLow_947ABF3E437467B8B8CBC4A1C6AAF98F",
+          "TrackName": "GLow",
+          "bIsExternalCurve": false
+        }
+      ],
+      "VectorTracks": [
+        {
+          "CurveVector": {
+            "ObjectName": "CurveVector BPZombieTransformExplosion_C:CurveVector_0",
+            "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.5"
+          },
+          "PropertyName": "Scale_2_Scale_947ABF3E437467B8B8CBC4A1C6AAF98F",
+          "TrackName": "Scale",
+          "bIsExternalCurve": false
+        },
+        {
+          "CurveVector": {
+            "ObjectName": "CurveVector BPZombieTransformExplosion_C:CurveVector_1",
+            "ObjectPath": "War/Content/Blueprints/Items/BPZombieTransformExplosion.6"
+          },
+          "PropertyName": "Scale_2_DecalScale2_947ABF3E437467B8B8CBC4A1C6AAF98F",
+          "TrackName": "DecalScale2",
+          "bIsExternalCurve": false
+        }
+      ],
+      "TimelineGuid": "947ABF3E-437467B8-B8CBC4A1-C6AAF98F",
+      "VariableName": "Scale 2",
+      "DirectionPropertyName": "Scale_2__Direction_947ABF3E437467B8B8CBC4A1C6AAF98F",
+      "UpdateFunctionName": "Scale 2__UpdateFunc",
+      "FinishedFunctionName": "Scale 2__FinishedFunc"
+    }
+  }
+]

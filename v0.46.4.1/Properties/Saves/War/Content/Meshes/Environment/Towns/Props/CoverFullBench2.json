@@ -1,0 +1,139 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "CoverFullBench2",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 0.0078048706,
+              "Z": 34.04126
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 252.33769,
+            "Y": 84.15964,
+            "Z": 117.76275,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": 1.6685333,
+              "Y": -24.99245,
+              "Z": 116.68337
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 89.9991
+            },
+            "X": 246.65192,
+            "Y": 56.841644,
+            "Z": 34.332333,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "CoverFullBench2",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 509,
+        "SizeOnDisk": 509,
+        "OffsetInFile": "0x4FB2"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "CoverFullBench2",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant StreetLamp",
+            "ObjectPath": "War/Content/Materials/Environment/Props/StreetLamp.0"
+          },
+          "MaterialSlotName": "Material #517",
+          "ImportedMaterialSlotName": "Material #517",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 209.66042,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant CoverBench2",
+            "ObjectPath": "War/Content/Materials/Environment/CoverBench2.0"
+          },
+          "MaterialSlotName": "stone",
+          "ImportedMaterialSlotName": "stone",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 251.16621,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 229.81325,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.2271576,
+          "Y": -2.0382462,
+          "Z": 67.26795
+        },
+        "BoxExtent": {
+          "X": 125.304504,
+          "Y": 40.53838,
+          "Z": 66.717476
+        },
+        "SphereRadius": 140.3459
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup CoverFullBench2:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Props/CoverFullBench2.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision CoverFullBench2:NavCollision_4",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Props/CoverFullBench2.1"
+    },
+    "LightingGuid": "92DB17B3-46C6D861-0C3BC4BB-11D484C1",
+    "RenderData": null
+  }
+]

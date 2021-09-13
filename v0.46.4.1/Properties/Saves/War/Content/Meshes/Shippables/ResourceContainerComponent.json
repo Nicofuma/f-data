@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ResourceContainerComponent",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "ResourceContainerComponent",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x148F7"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ResourceContainerComponent",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ComponentNode",
+            "ObjectPath": "War/Content/Materials/Resources/ComponentNode.0"
+          },
+          "MaterialSlotName": "ComponentNode",
+          "ImportedMaterialSlotName": "ComponentNode",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 288.7318,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 288.7318,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -2.9265518,
+          "Y": -0.09445953,
+          "Z": 42.90724
+        },
+        "BoxExtent": {
+          "X": 97.48601,
+          "Y": 88.97298,
+          "Z": 52.805588
+        },
+        "SphereRadius": 109.95641
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ResourceContainerComponent:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Shippables/ResourceContainerComponent.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ResourceContainerComponent:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Shippables/ResourceContainerComponent.1"
+    },
+    "LightingGuid": "AC55676A-471E9DF9-816426A2-EF344C10",
+    "RenderData": null
+  }
+]

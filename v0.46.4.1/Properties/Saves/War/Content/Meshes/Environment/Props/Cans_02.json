@@ -1,0 +1,89 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Cans_02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "Cans_02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x5ACA"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Cans_02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Food01",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Food01.0"
+          },
+          "MaterialSlotName": "Material #490",
+          "ImportedMaterialSlotName": "Material #490",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 102.840416,
+            "LocalUVDensities": 107.51069,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 107.51069,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 17.239305
+        },
+        "BoxExtent": {
+          "X": 16.587875,
+          "Y": 19.028736,
+          "Z": 17.240868
+        },
+        "SphereRadius": 26.896997
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Cans_02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Cans_02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Cans_02:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Cans_02.1"
+    },
+    "LightingGuid": "1F17A031-4BDB9EE3-C8A72083-E144996D",
+    "RenderData": null
+  }
+]

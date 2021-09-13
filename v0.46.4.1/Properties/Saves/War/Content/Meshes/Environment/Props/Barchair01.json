@@ -1,0 +1,105 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Barchair01",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.2854271,
+              "Y": -0.42479897,
+              "Z": 36.21472
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 39.075863,
+            "Y": 45.571564,
+            "Z": 66.76038,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Barchair01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x6AFE"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Barchair01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Cabinets",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Cabinets.0"
+          },
+          "MaterialSlotName": "Material #1095",
+          "ImportedMaterialSlotName": "Material #1095",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 186.71695,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 186.71695,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.2854271,
+          "Y": -4.2316475,
+          "Z": 71.04005
+        },
+        "BoxExtent": {
+          "X": 38.885155,
+          "Y": 36.052746,
+          "Z": 70.30306
+        },
+        "SphereRadius": 82.81506
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Barchair01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Barchair01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Barchair01:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Barchair01.1"
+    },
+    "LightingGuid": "5694F26B-4356FCF2-ED5A479E-DEE7EC14",
+    "RenderData": null
+  }
+]
