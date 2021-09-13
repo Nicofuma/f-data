@@ -1,0 +1,105 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "HospitalBedCurtain01",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -4.6901245,
+              "Y": 0.098838806,
+              "Z": 130.06183
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 350.1937,
+            "Y": 14.8622055,
+            "Z": 259.72705,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "HospitalBedCurtain01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0xA2AC"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "HospitalBedCurtain01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant HospitalBedCurtain",
+            "ObjectPath": "War/Content/Materials/Environment/Props/HospitalBedCurtain.0"
+          },
+          "MaterialSlotName": "HospitalBedCurtain",
+          "ImportedMaterialSlotName": "Material #1460",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 466.727,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 466.727,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -4.6901245,
+          "Y": 0.098838806,
+          "Z": 130.06183
+        },
+        "BoxExtent": {
+          "X": 175.09685,
+          "Y": 56.22205,
+          "Z": 129.86353
+        },
+        "SphereRadius": 221.83159
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup HospitalBedCurtain01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/HospitalBedCurtain01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision HospitalBedCurtain01:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/HospitalBedCurtain01.1"
+    },
+    "LightingGuid": "FACE4C12-42736280-89013DB8-93AF0413",
+    "RenderData": null
+  }
+]

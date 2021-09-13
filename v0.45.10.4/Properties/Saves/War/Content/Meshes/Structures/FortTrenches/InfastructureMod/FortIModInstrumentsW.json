@@ -1,0 +1,131 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FortIModInstrumentsW",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "FortIModInstrumentsW",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x281B6"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FortIModInstrumentsW",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Infrastructure01",
+            "ObjectPath": "War/Content/Materials/Structures/Infrastructure01.0"
+          },
+          "MaterialSlotName": "IMod01",
+          "ImportedMaterialSlotName": "IMod01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 498.1627,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Cardboard01",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Cardboard01.0"
+          },
+          "MaterialSlotName": "Cardboard.001",
+          "ImportedMaterialSlotName": "Cardboard.001",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 190.23442,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortImodStationary",
+            "ObjectPath": "War/Content/Materials/Structures/FortImodStationary.0"
+          },
+          "MaterialSlotName": "FortImodStationary.001",
+          "ImportedMaterialSlotName": "FortImodStationary.001",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 315.18707,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortIModDesk01",
+            "ObjectPath": "War/Content/Materials/Structures/FortIModDesk01.0"
+          },
+          "MaterialSlotName": "FortIModDesk.001",
+          "ImportedMaterialSlotName": "FortIModDesk.001",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 435.64584,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 428.32397,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -43.534958,
+          "Y": -14.100822,
+          "Z": 99.28183
+        },
+        "BoxExtent": {
+          "X": 175.23972,
+          "Y": 54.776123,
+          "Z": 99.28184
+        },
+        "SphereRadius": 208.08064
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FortIModInstrumentsW:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/FortIModInstrumentsW.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FortIModInstrumentsW:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/FortIModInstrumentsW.1"
+    },
+    "LightingGuid": "65CD1889-4C8B0EE9-D7797C9F-552DC562",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "TrenchEnginePipeShort01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "TrenchEnginePipeShort01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x173D"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TrenchEnginePipeShort01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material M_Pipes",
+            "ObjectPath": "War/Content/Materials/Structures/M_Pipes.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 63.455376,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 63.455376,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -3.2424927E-05
+        },
+        "BoxExtent": {
+          "X": 150.0,
+          "Y": 28.566685,
+          "Z": 30.036829
+        },
+        "SphereRadius": 152.97781
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TrenchEnginePipeShort01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/TrenchEnginePipeShort01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TrenchEnginePipeShort01:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/TrenchEnginePipeShort01.1"
+    },
+    "LightingGuid": "0258E587-48CFC7EB-6E4A149D-85A91FAB",
+    "RenderData": null
+  }
+]

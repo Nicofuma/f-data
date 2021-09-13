@@ -1,0 +1,181 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "SkeletalMesh",
+    "Outer": "RelicRiflePickup_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SkeletalMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "RelicRiflePickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript RelicRiflePickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RelicRiflePickup.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class FirearmPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty RelicRiflePickup_C:SkeletalMesh",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RelicRiflePickup.0"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "RelicRiflePickup_C",
+    "Name": "Default__RelicRiflePickup_C",
+    "Properties": {
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass RelicRifleComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Items/RelicRifleComponent.0"
+      },
+      "CodeName": "RelicRifle",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "A5FD8AAD421604346833FE826929A6E5",
+        "SourceString": "Volta Repeater"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "84788B7541702C507F04E1B7BA4A4A48",
+        "SourceString": "An old war Mesean rifle in good condition. Has high stopping power, but not as accurate as a modern rifle."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D RelicRifleIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/RelicRifleIcon.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Primary",
+      "ItemCategory": "EItemCategory::SmallArms",
+      "ItemProfileType": "EItemProfileType::UniqueItem",
+      "ItemMesh": {
+        "ObjectName": "StaticMeshComponent Default__RelicRiflePickup_C:ItemMesh",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RelicRiflePickup.9"
+      },
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__RelicRiflePickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RelicRiflePickup.3"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__RelicRiflePickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RelicRiflePickup.3"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__RelicRiflePickup_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "RelicRiflePickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent RelicRiflePickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RelicRiflePickup.4"
+      },
+      "VariableGuid": "FBF04340-40D71A47-9ED11191-32B797F3",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SkeletalMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SkeletalMeshComponent RelicRiflePickup_C:SkeletalMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RelicRiflePickup.8"
+      },
+      "ParentComponentOrVariableName": "ItemBox",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "75B0F2E2-48D481F3-0954D185-761E5366",
+      "InternalVariableName": "SkeletalMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "RelicRiflePickup_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node RelicRiflePickup_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/ItemPickups/RelicRiflePickup.6"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node RelicRiflePickup_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/ItemPickups/RelicRiflePickup.6"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node RelicRiflePickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RelicRiflePickup.5"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SkeletalMesh_GEN_VARIABLE",
+    "Outer": "RelicRiflePickup_C",
+    "Properties": {
+      "ClothingSimulationFactory": {
+        "ObjectName": "Class ClothingSimulationFactoryNv",
+        "ObjectPath": "/Script/ClothingSystemRuntimeNv"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh RelicRifle",
+        "ObjectPath": "War/Content/Meshes/Weapons/RelicRifle.0"
+      },
+      "bReceivesDecals": false
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__RelicRiflePickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__RelicRiflePickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RelicRiflePickup.3"
+      },
+      "RelativeScale3D": {
+        "X": 1.5920788,
+        "Y": 1.5920788,
+        "Z": 1.5920788
+      }
+    }
+  }
+]

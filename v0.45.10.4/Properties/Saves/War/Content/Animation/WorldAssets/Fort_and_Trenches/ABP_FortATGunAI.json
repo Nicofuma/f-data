@@ -1,0 +1,200 @@
+[
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "ABP_FortATGunAI_C",
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "AnimBlueprintGeneratedClass",
+    "Name": "ABP_FortATGunAI_C",
+    "Properties": {
+      "TargetSkeleton": {
+        "ObjectName": "Skeleton SK_FortT3ATGunAI_Skeleton",
+        "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/SK_FortT3ATGunAI_Skeleton.0"
+      },
+      "OrderedSavedPoseIndicesMap": {
+        "AnimGraph": {
+          "OrderedSavedPoseNodeIndices": []
+        }
+      },
+      "EvaluateGraphExposedInputs": [
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "SourcePropertyName": "TrackingAngle",
+              "SourceSubPropertyName": "None",
+              "SourceArrayIndex": 0,
+              "bInstanceIsTarget": false,
+              "PostCopyOperation": "EPostCopyOperation::None",
+              "DestProperty": {
+                "ObjectName": "FloatProperty AnimNode_BlendSpacePlayer:X",
+                "ObjectPath": "/Script/AnimGraphRuntime"
+              },
+              "DestArrayIndex": 0,
+              "Size": 4,
+              "CachedSourceProperty": {
+                "ObjectName": "FloatProperty GunTurretAnimInstance:TrackingAngle",
+                "ObjectPath": "/Script/War"
+              },
+              "CachedSourceStructSubProperty": null
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "ObjectName": "StructProperty ABP_FortATGunAI_C:AnimGraphNode_BlendSpacePlayer_69FDDA2F4E603B0E2C28B8ADDEE56C85",
+            "ObjectPath": "War/Content/Animation/WorldAssets/Fort_and_Trenches/ABP_FortATGunAI.8"
+          }
+        }
+      ],
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty ABP_FortATGunAI_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Animation/WorldAssets/Fort_and_Trenches/ABP_FortATGunAI.0"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function ABP_FortATGunAI_C:ExecuteUbergraph_ABP_FortATGunAI",
+        "ObjectPath": "War/Content/Animation/WorldAssets/Fort_and_Trenches/ABP_FortATGunAI.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class GunTurretAnimInstance",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty ABP_FortATGunAI_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Animation/WorldAssets/Fort_and_Trenches/ABP_FortATGunAI.0"
+      },
+      {
+        "ObjectName": "Function ABP_FortATGunAI_C:AnimGraph",
+        "ObjectPath": "War/Content/Animation/WorldAssets/Fort_and_Trenches/ABP_FortATGunAI.5"
+      },
+      {
+        "ObjectName": "Function ABP_FortATGunAI_C:ExecuteUbergraph_ABP_FortATGunAI",
+        "ObjectPath": "War/Content/Animation/WorldAssets/Fort_and_Trenches/ABP_FortATGunAI.7"
+      },
+      {
+        "ObjectName": "StructProperty ABP_FortATGunAI_C:AnimGraphNode_Root_6BDBAB3B49852742E96F0CA7513BCAC2",
+        "ObjectPath": "War/Content/Animation/WorldAssets/Fort_and_Trenches/ABP_FortATGunAI.9"
+      },
+      {
+        "ObjectName": "StructProperty ABP_FortATGunAI_C:AnimGraphNode_BlendSpacePlayer_69FDDA2F4E603B0E2C28B8ADDEE56C85",
+        "ObjectPath": "War/Content/Animation/WorldAssets/Fort_and_Trenches/ABP_FortATGunAI.8"
+      },
+      {
+        "ObjectName": "FloatProperty ABP_FortATGunAI_C:turretYaw",
+        "ObjectPath": "War/Content/Animation/WorldAssets/Fort_and_Trenches/ABP_FortATGunAI.3"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 524288,
+    "ClassWithin": null,
+    "ClassConfigName": "/Game/Animation/WorldAssets/Fort_and_Trenches/ABP_FortATGunAI_393215",
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "ABP_FortATGunAI_C",
+    "Name": "Default__ABP_FortATGunAI_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "AnimGraphNode_Root_6BDBAB3B49852742E96F0CA7513BCAC2": {
+        "Result": {
+          "LinkID": 1
+        },
+        "Name": "AnimGraph",
+        "Group": "None"
+      },
+      "AnimGraphNode_BlendSpacePlayer_69FDDA2F4E603B0E2C28B8ADDEE56C85": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0,
+        "PlayRate": 1.0,
+        "bLoop": true,
+        "bResetPlayTimeWhenBlendSpaceChanges": true,
+        "StartPosition": 0.0,
+        "BlendSpace": {
+          "ObjectName": "BlendSpace1D BS_FortATGunAI_horizontalMovement",
+          "ObjectPath": "War/Content/Animation/WorldAssets/Fort_and_Trenches/BS_FortATGunAI_horizontalMovement.0"
+        },
+        "PreviousBlendSpace": null,
+        "GroupIndex": -1,
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      }
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "turretYaw",
+    "Outer": "ABP_FortATGunAI_C",
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraph",
+    "Outer": "AnimGraph",
+    "PropertyFlags": 384,
+    "Struct": {
+      "ObjectName": "ScriptStruct PoseLink",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "AnimGraph",
+    "Outer": "ABP_FortATGunAI_C",
+    "Children": [
+      {
+        "ObjectName": "StructProperty ABP_FortATGunAI_C:AnimGraph.AnimGraph",
+        "ObjectPath": "War/Content/Animation/WorldAssets/Fort_and_Trenches/ABP_FortATGunAI.4"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_ABP_FortATGunAI",
+    "PropertyFlags": 148
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ABP_FortATGunAI",
+    "Outer": "ABP_FortATGunAI_C",
+    "Children": [
+      {
+        "ObjectName": "IntProperty ABP_FortATGunAI_C:ExecuteUbergraph_ABP_FortATGunAI.EntryPoint",
+        "ObjectPath": "War/Content/Animation/WorldAssets/Fort_and_Trenches/ABP_FortATGunAI.6"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_BlendSpacePlayer_69FDDA2F4E603B0E2C28B8ADDEE56C85",
+    "Outer": "ABP_FortATGunAI_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_BlendSpacePlayer",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_Root_6BDBAB3B49852742E96F0CA7513BCAC2",
+    "Outer": "ABP_FortATGunAI_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_Root",
+      "ObjectPath": "/Script/Engine"
+    }
+  }
+]

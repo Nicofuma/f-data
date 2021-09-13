@@ -1,0 +1,168 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Watertower01",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 0.5150757,
+              "Y": 0.51498413,
+              "Z": 514.31885
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Radius": 291.22443,
+            "Length": 523.63165,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "Watertower01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 5521,
+        "SizeOnDisk": 5521,
+        "OffsetInFile": "0x1D99D"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Watertower01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownCoalPlantMetal01",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownCoalPlantMetal01.0"
+          },
+          "MaterialSlotName": "Material #27",
+          "ImportedMaterialSlotName": "ConstructionYardWood",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 476.95334,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownRoofShingles05",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownRoofShingles05.0"
+          },
+          "MaterialSlotName": "Material #40",
+          "ImportedMaterialSlotName": "Material #26",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 270.04108,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownCoalPlantMetal01",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownCoalPlantMetal01.0"
+          },
+          "MaterialSlotName": "Material #1021",
+          "ImportedMaterialSlotName": "TownCoalPlantMetal01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownWoodBeams04",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownWoodBeams04.0"
+          },
+          "MaterialSlotName": "ConstructionYardWood",
+          "ImportedMaterialSlotName": "RoofStructures02",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ConstructionYardWood",
+            "ObjectPath": "War/Content/Materials/Structures/ConstructionYardWood.0"
+          },
+          "MaterialSlotName": "ConstructionYardWood",
+          "ImportedMaterialSlotName": "ConstructionYardWood_1",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 479.04166,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 449.28006,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.5150757,
+          "Y": 0.51498413,
+          "Z": 534.4888
+        },
+        "BoxExtent": {
+          "X": 288.20367,
+          "Y": 288.6924,
+          "Z": 537.70685
+        },
+        "SphereRadius": 595.55316
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Watertower01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Watertower01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Watertower01:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Watertower01.1"
+    },
+    "LightingGuid": "75503451-48B0ABF4-161008B7-609A1C61",
+    "RenderData": null
+  }
+]

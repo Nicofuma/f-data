@@ -1,0 +1,420 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "MultiplexedSkeletalMesh",
+    "Outer": "BPGunTurret_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class MultiplexedSkeletalMeshComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPGunTurret_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPGunTurret_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPGunTurret.12"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class GunTurret",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPGunTurret_C:MultiplexedSkeletalMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPGunTurret.0"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPGunTurret_C",
+    "Name": "Default__BPGunTurret_C",
+    "Properties": {
+      "TrackingSpeed": 0.65,
+      "BaseDamage": 400.0,
+      "DamageDelay": 0.25,
+      "MuzzlePivot": {
+        "ObjectName": "SceneComponent Default__BPGunTurret_C:MuzzlePivot",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPGunTurret.9"
+      },
+      "MuzzleLocation": {
+        "ObjectName": "SceneComponent Default__BPGunTurret_C:MuzzleLocation",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPGunTurret.8"
+      },
+      "SkelMesh": {
+        "ObjectName": "SkeletalMeshComponent Default__BPGunTurret_C:SkelMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPGunTurret.13"
+      },
+      "ExplosionTemplate": {
+        "ObjectName": "BlueprintGeneratedClass GunTurretExplosion_C",
+        "ObjectPath": "War/Content/Blueprints/Items/GunTurretExplosion.1"
+      },
+      "ShotSoundCue": {
+        "ObjectName": "SoundCue GunTurretShot_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Weapons/GunTurret/GunTurretShot_Cue.0"
+      },
+      "MuzzleFlashPS": {
+        "ObjectName": "ParticleSystem FieldGunMF",
+        "ObjectPath": "War/Content/FX/FieldGunMF.82"
+      },
+      "MaximumRange": 2500.0,
+      "BestJitterConeHalfAngle": 2.0,
+      "WorstJitterConeHalfAngle": 5.0,
+      "FiringPeriod": 3.5,
+      "TimeToFullFireRateAndAccuracy": 2.0,
+      "EnemyPursueDuration": 15.0,
+      "ShouldAggroOnDamage": true,
+      "AllowedTargetTypes": 254,
+      "MuzzleFlashLocationComponent": {
+        "ObjectName": "ArrowComponent Default__BPGunTurret_C:MuzzleFxLocationComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPGunTurret.3"
+      },
+      "FiringConeAngle": 180.0,
+      "DamageType": {
+        "ObjectName": "BlueprintGeneratedClass BPArmourPiercingDamageType_C",
+        "ObjectPath": "War/Content/Blueprints/DamageTypes/BPArmourPiercingDamageType.0"
+      },
+      "FlagMesh": {
+        "ObjectName": "TeamFlagMeshComponent Default__BPGunTurret_C:FlagMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPGunTurret.15"
+      },
+      "bCanBeHidden": true,
+      "ProceduralUseVolumeFactor": 0.816327,
+      "NoBuildPhysicalMaterials": [
+        {
+          "ObjectName": "PhysicalMaterial WetSandPhys",
+          "ObjectPath": "War/Content/PhysicalMaterials/WetSandPhys.0"
+        },
+        {
+          "ObjectName": "PhysicalMaterial TownStone",
+          "ObjectPath": "War/Content/PhysicalMaterials/TownStone.0"
+        },
+        {
+          "ObjectName": "PhysicalMaterial HighwayPhys",
+          "ObjectPath": "War/Content/PhysicalMaterials/HighwayPhys.0"
+        },
+        {
+          "ObjectName": "PhysicalMaterial T1RoadPhys",
+          "ObjectPath": "War/Content/PhysicalMaterials/T1RoadPhys.0"
+        },
+        {
+          "ObjectName": "PhysicalMaterial T2RoadPhys",
+          "ObjectPath": "War/Content/PhysicalMaterials/T2RoadPhys.0"
+        },
+        {
+          "ObjectName": "PhysicalMaterial T3RoadPhys",
+          "ObjectPath": "War/Content/PhysicalMaterials/T3RoadPhys.0"
+        },
+        {
+          "ObjectName": "PhysicalMaterial SandPhys",
+          "ObjectPath": "War/Content/PhysicalMaterials/SandPhys.0"
+        }
+      ],
+      "BuildGhostClass": null,
+      "BuildSiteClass": {
+        "ObjectName": "Class StructureBuildSite",
+        "ObjectPath": "/Script/War"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "E05597FE4D322F2EE13E75B2DFB3005E",
+        "SourceString": "An anti-armour turret used to fortify against heavy vehicles."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D GunTurretStructureIcon",
+        "ObjectPath": "War/Content/Textures/UI/StructureIcons/GunTurretStructureIcon.0"
+      },
+      "BuildLocationType": "EBuildLocationType::Anywhere",
+      "CodeName": "GunTurret",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "BB449E804BB7FAC360E8B597E9E64648",
+        "SourceString": "Gun Turret"
+      },
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPGunTurret_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPGunTurret.4"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPGunTurret_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPGunTurret.5"
+      },
+      "DestroyedFX": {
+        "ObjectName": "ParticleSystem GrenadeBlast",
+        "ObjectPath": "War/Content/FX/GrenadeBlast.151"
+      },
+      "TechID": "ETechID::UnlockGunTurret",
+      "MaxHealth": 525,
+      "Health": 525,
+      "MapIntelligenceType": "EMapIntelligenceType::Defense",
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPGunTurret_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPGunTurret.14"
+      },
+      "NetUpdateFrequency": 8.0,
+      "MinNetUpdateFrequency": 8.0,
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPGunTurret_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPGunTurret.4"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "MuzzleFxLocationComponent",
+    "Outer": "Default__BPGunTurret_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPGunTurret_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPGunTurret.4"
+      },
+      "RelativeLocation": {
+        "X": 290.0,
+        "Y": 0.0,
+        "Z": 140.0
+      },
+      "bVisible": false
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPGunTurret_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPGunTurret_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 196.0,
+        "Y": 196.0,
+        "Z": 170.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPGunTurret_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPGunTurret.4"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 120.0
+      }
+    }
+  },
+  {
+    "Type": "MultiplexedSkeletalMeshComponent",
+    "Name": "MultiplexedSkeletalMesh_GEN_VARIABLE",
+    "Outer": "BPGunTurret_C",
+    "Properties": {
+      "MeshStops": [
+        {
+          "Threshold": 0,
+          "SkeletalMesh": {
+            "ObjectName": "SkeletalMesh GunTurretCritical",
+            "ObjectPath": "War/Content/Meshes/Structures/GunTurretCritical.0"
+          }
+        },
+        {
+          "Threshold": 33,
+          "SkeletalMesh": {
+            "ObjectName": "SkeletalMesh GunTurretDamaged",
+            "ObjectPath": "War/Content/Meshes/Structures/GunTurretDamaged.0"
+          }
+        },
+        {
+          "Threshold": 66,
+          "SkeletalMesh": {
+            "ObjectName": "SkeletalMesh GunTurret",
+            "ObjectPath": "War/Content/Meshes/Structures/GunTurret.0"
+          }
+        }
+      ],
+      "InputValue": 100,
+      "SelectedMeshIndex": 2
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPGunTurret_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "MuzzleLocation",
+    "Outer": "Default__BPGunTurret_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__BPGunTurret_C:MuzzlePivot",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPGunTurret.9"
+      },
+      "RelativeLocation": {
+        "X": 294.0,
+        "Y": 0.0,
+        "Z": 143.75
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "MuzzlePivot",
+    "Outer": "Default__BPGunTurret_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPGunTurret_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPGunTurret.4"
+      }
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPGunTurret_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPGunTurret.7"
+      },
+      "VariableGuid": "728B05F3-4E0B1CD7-FC7363A7-874E1296",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class MultiplexedSkeletalMeshComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "MultiplexedSkeletalMeshComponent BPGunTurret_C:MultiplexedSkeletalMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPGunTurret.6"
+      },
+      "VariableGuid": "E1C07C89-4666674A-DBB4338F-AE27FB1A",
+      "InternalVariableName": "MultiplexedSkeletalMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPGunTurret_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPGunTurret_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPGunTurret.11"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPGunTurret_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPGunTurret.11"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPGunTurret_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPGunTurret.10"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SkelMesh",
+    "Outer": "Default__BPGunTurret_C",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_GunTurret_C",
+        "ObjectPath": "War/Content/Animation/GunTurret/ABP_gunTurret.1"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh GunTurret",
+        "ObjectPath": "War/Content/Meshes/Structures/GunTurret.0"
+      },
+      "bGenerateOverlapEvents": true,
+      "bReceivesDecals": false,
+      "CanCharacterStepUpOn": "ECB_Yes",
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldDynamic",
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPGunTurret_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPGunTurret.4"
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 270.0,
+        "Roll": 0.0
+      },
+      "ComponentTags": [
+        "IncludeInBuildSite",
+        "IncludeInBuildGhost"
+      ]
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPGunTurret_C"
+  },
+  {
+    "Type": "TeamFlagMeshComponent",
+    "Name": "FlagMesh",
+    "Outer": "Default__BPGunTurret_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPGunTurret_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPGunTurret.4"
+      },
+      "RelativeLocation": {
+        "X": -148.2635,
+        "Y": -150.15207,
+        "Z": -50.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -179.9996,
+        "Roll": 0.0
+      },
+      "RelativeScale3D": {
+        "X": 0.7,
+        "Y": 0.7,
+        "Z": 0.5
+      }
+    }
+  }
+]

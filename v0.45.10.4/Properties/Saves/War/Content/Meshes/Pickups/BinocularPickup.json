@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "BinocularPickup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_6",
+    "Outer": "BinocularPickup",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x65F8"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "BinocularPickup",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BinocularPickup",
+            "ObjectPath": "War/Content/Materials/Pickups/BinocularPickup.0"
+          },
+          "MaterialSlotName": "BinocularPickup",
+          "ImportedMaterialSlotName": "BinocularPickup",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 56.027798,
+            "LocalUVDensities": 87.69835,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 87.69835,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 8.590452
+        },
+        "BoxExtent": {
+          "X": 22.07079,
+          "Y": 20.073143,
+          "Z": 8.764191
+        },
+        "SphereRadius": 29.272518
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup BinocularPickup:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Pickups/BinocularPickup.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision BinocularPickup:NavCollision_6",
+      "ObjectPath": "War/Content/Meshes/Pickups/BinocularPickup.1"
+    },
+    "LightingGuid": "DF3D814C-4ED30A62-A4A1FEA9-2CD12D8D",
+    "RenderData": null
+  }
+]

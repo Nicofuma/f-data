@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "BloodWave",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "BloodWave",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x377D"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "BloodWave",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material BloodWave",
+            "ObjectPath": "War/Content/FX/Materials/BloodWave.0"
+          },
+          "MaterialSlotName": "Material #25",
+          "ImportedMaterialSlotName": "Material #25",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 511.68866,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 511.68866,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.5258789E-05,
+          "Y": 0.0,
+          "Z": -8.117371
+        },
+        "BoxExtent": {
+          "X": 182.32759,
+          "Y": 182.32759,
+          "Z": 13.026062
+        },
+        "SphereRadius": 182.36472
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup BloodWave:BodySetup_0",
+      "ObjectPath": "War/Content/FX/Mesh/DeadHarvest/BloodWave.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision BloodWave:NavCollision_1",
+      "ObjectPath": "War/Content/FX/Mesh/DeadHarvest/BloodWave.1"
+    },
+    "LightingGuid": "01352B53-447AB22D-8F277FBE-D65D151F",
+    "RenderData": null
+  }
+]

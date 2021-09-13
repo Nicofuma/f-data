@@ -1,0 +1,74 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "RB_BodySetup_0",
+    "Outer": "Sphere",
+    "Properties": {
+      "AggGeom": {
+        "SphereElems": [
+          {
+            "Center": {
+              "X": 3.949275E-06,
+              "Y": -5.57953E-06,
+              "Z": -1.254577E-05
+            },
+            "Radius": 160.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "bSimulatePhysics": true,
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Sphere",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": null,
+          "MaterialSlotName": "MaterialSlot",
+          "ImportedMaterialSlotName": "MaterialSlot",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 604.0186,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 604.0186,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 160.0,
+          "Y": 160.0,
+          "Z": 160.0
+        },
+        "SphereRadius": 160.00002
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Sphere:RB_BodySetup_0",
+      "ObjectPath": "Engine/Content/EngineMeshes/Sphere.0"
+    },
+    "NavCollision": null,
+    "LightingGuid": "3211F117-4B7B5E3B-D44DA486-542FB3DB",
+    "RenderData": null
+  }
+]

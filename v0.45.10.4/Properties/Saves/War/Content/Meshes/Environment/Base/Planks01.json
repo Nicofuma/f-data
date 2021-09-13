@@ -1,0 +1,122 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_64",
+    "Outer": "Planks01",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -2.8989258,
+              "Y": 7.218933,
+              "Z": 31.134811
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 522.1847,
+            "Y": 459.47882,
+            "Z": 100.23326,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_13",
+    "Outer": "Planks01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x225FE"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Planks01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant WoodRepeating03",
+            "ObjectPath": "War/Content/Materials/Environment/WoodRepeating03.0"
+          },
+          "MaterialSlotName": "WoodRepeating03",
+          "ImportedMaterialSlotName": "WoodRepeating03",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 154.29057,
+            "LocalUVDensities": 1244.9137,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RepeatingRope",
+            "ObjectPath": "War/Content/Materials/Environment/Props/RepeatingRope.0"
+          },
+          "MaterialSlotName": "RepeatingRope",
+          "ImportedMaterialSlotName": "RepeatingRope",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 47.846245,
+            "LocalUVDensities": 1417.4062,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1284.8901,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -2.8989258,
+          "Y": 7.218933,
+          "Z": 48.282906
+        },
+        "BoxExtent": {
+          "X": 261.09235,
+          "Y": 229.73941,
+          "Z": 50.11663
+        },
+        "SphereRadius": 333.62387
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Planks01:BodySetup_64",
+      "ObjectPath": "War/Content/Meshes/Environment/Base/Planks01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Planks01:NavCollision_13",
+      "ObjectPath": "War/Content/Meshes/Environment/Base/Planks01.1"
+    },
+    "LightingGuid": "93E28BC8-405CFC5A-93BCB282-6369FD04",
+    "RenderData": null
+  }
+]

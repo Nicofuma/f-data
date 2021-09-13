@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "BrickPile03",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "BrickPile03",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x6C63"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "BrickPile03",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant PlasterBrickSingle02",
+            "ObjectPath": "War/Content/Materials/Environment/House/PlasterBrickSingle02.0"
+          },
+          "MaterialSlotName": "SingleBrick",
+          "ImportedMaterialSlotName": "SingleBrick",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 205.48538,
+            "LocalUVDensities": 1101.3845,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1101.3845,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 11.907486,
+          "Y": -14.724136,
+          "Z": 34.91105
+        },
+        "BoxExtent": {
+          "X": 146.33353,
+          "Y": 150.00671,
+          "Z": 39.995094
+        },
+        "SphereRadius": 192.50165
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup BrickPile03:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Houses/BrickPile03.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision BrickPile03:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Houses/BrickPile03.1"
+    },
+    "LightingGuid": "A8D356A4-4765C915-E43EC8B6-D4EE8DB2",
+    "RenderData": null
+  }
+]

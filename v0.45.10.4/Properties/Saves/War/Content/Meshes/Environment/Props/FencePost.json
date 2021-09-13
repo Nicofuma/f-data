@@ -1,0 +1,105 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FencePost",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -0.39759827,
+              "Y": 0.0045251846,
+              "Z": 80.00622
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 23.17743,
+            "Y": 22.285704,
+            "Z": 227.04825,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "FencePost",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x1A08"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FencePost",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FarmFence02",
+            "ObjectPath": "War/Content/Materials/Environment/Props/FarmFence02.0"
+          },
+          "MaterialSlotName": "Material #26",
+          "ImportedMaterialSlotName": "FarmFence",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 488.6199,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 488.6199,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.39759827,
+          "Y": 0.0045251846,
+          "Z": 80.00622
+        },
+        "BoxExtent": {
+          "X": 11.588715,
+          "Y": 11.142852,
+          "Z": 113.524124
+        },
+        "SphereRadius": 113.76535
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FencePost:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FencePost.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FencePost:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FencePost.1"
+    },
+    "LightingGuid": "C4C14197-4304AE51-3E41588C-3B12D90F",
+    "RenderData": null
+  }
+]

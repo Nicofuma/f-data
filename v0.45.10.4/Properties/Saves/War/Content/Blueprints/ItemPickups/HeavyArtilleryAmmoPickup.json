@@ -1,0 +1,184 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "ItemMeshSK",
+    "Outer": "HeavyArtilleryAmmoPickup_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SkeletalMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "HeavyArtilleryAmmoPickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript HeavyArtilleryAmmoPickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/HeavyArtilleryAmmoPickup.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class ExplosiveAmmoPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty HeavyArtilleryAmmoPickup_C:ItemMeshSK",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/HeavyArtilleryAmmoPickup.0"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "HeavyArtilleryAmmoPickup_C",
+    "Name": "Default__HeavyArtilleryAmmoPickup_C",
+    "Properties": {
+      "ExplosionClass": {
+        "ObjectName": "BlueprintGeneratedClass HeavyArtilleryExplosion_C",
+        "ObjectPath": "War/Content/Blueprints/Items/HeavyArtilleryExplosion.1"
+      },
+      "ShotSoundCue": {
+        "ObjectName": "SoundCue HeavyArtilleryShotW_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Weapons/StaticArtillery/HeavyArtilleryShotW_Cue.0"
+      },
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPHeavyArtilleryAmmoComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Items/BPHeavyArtilleryAmmoComponent.0"
+      },
+      "Encumbrance": 300,
+      "CodeName": "HeavyArtilleryAmmo",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "E55BC99040F65F0336E63689EC9C6FFF",
+        "SourceString": "150mm"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "E2C3F42445D79BDF8B91C0ABA726A87B",
+        "SourceString": "Payload for heavy artillery weapons."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D HeavyArtilleryAmmoItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/HeavyArtilleryAmmoItemIcon.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Large",
+      "ItemCategory": "EItemCategory::HeavyArms",
+      "ItemProfileType": "EItemProfileType::HeavyAmmo",
+      "bIsLarge": true,
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__HeavyArtilleryAmmoPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/HeavyArtilleryAmmoPickup.3"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__HeavyArtilleryAmmoPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/HeavyArtilleryAmmoPickup.3"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__HeavyArtilleryAmmoPickup_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "HeavyArtilleryAmmoPickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent HeavyArtilleryAmmoPickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/HeavyArtilleryAmmoPickup.4"
+      },
+      "VariableGuid": "25E2F609-4EFE723F-7D3AF29B-4E876B09",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SkeletalMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SkeletalMeshComponent HeavyArtilleryAmmoPickup_C:ItemMeshSK_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/HeavyArtilleryAmmoPickup.8"
+      },
+      "ParentComponentOrVariableName": "ItemBox",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "77231694-4D403C5A-880C4D96-90A0B4F6",
+      "InternalVariableName": "ItemMeshSK"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "HeavyArtilleryAmmoPickup_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node HeavyArtilleryAmmoPickup_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/ItemPickups/HeavyArtilleryAmmoPickup.6"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node HeavyArtilleryAmmoPickup_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/ItemPickups/HeavyArtilleryAmmoPickup.6"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node HeavyArtilleryAmmoPickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/HeavyArtilleryAmmoPickup.5"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "ItemMeshSK_GEN_VARIABLE",
+    "Outer": "HeavyArtilleryAmmoPickup_C",
+    "Properties": {
+      "bEnablePhysicsOnDedicatedServer": false,
+      "ClothingSimulationFactory": {
+        "ObjectName": "Class ClothingSimulationFactoryNv",
+        "ObjectPath": "/Script/ClothingSystemRuntimeNv"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_HeavyArtilleryAmmo",
+        "ObjectPath": "War/Content/Meshes/Weapons/SK_HeavyArtilleryAmmo.0"
+      },
+      "bReceivesDecals": false
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__HeavyArtilleryAmmoPickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__HeavyArtilleryAmmoPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/HeavyArtilleryAmmoPickup.3"
+      }
+    }
+  }
+]

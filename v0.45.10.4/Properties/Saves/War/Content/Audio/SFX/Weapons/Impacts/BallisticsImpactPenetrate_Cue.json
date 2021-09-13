@@ -1,0 +1,55 @@
+[
+  {
+    "Type": "SoundCue",
+    "Name": "BallisticsImpactPenetrate_Cue",
+    "Properties": {
+      "FirstNode": {
+        "ObjectName": "SoundNodeModulator BallisticsImpactPenetrate_Cue:SoundNodeModulator_2",
+        "ObjectPath": "War/Content/Audio/SFX/Weapons/Impacts/BallisticsImpactPenetrate_Cue.1"
+      },
+      "VolumeMultiplier": 3.0,
+      "AttenuationOverrides": {
+        "DistanceAlgorithm": "EAttenuationDistanceModel::Logarithmic",
+        "FalloffDistance": 2500.0
+      },
+      "SoundClassObject": {
+        "ObjectName": "SoundClass Impact",
+        "ObjectPath": "War/Content/Audio/SoundClasses/SFX.3"
+      },
+      "Duration": 0.31,
+      "MaxDistance": 8000.0,
+      "AttenuationSettings": {
+        "ObjectName": "SoundAttenuation BallisticsImpact",
+        "ObjectPath": "War/Content/Audio/Attenuations/BallisticsImpact.0"
+      }
+    }
+  },
+  {
+    "Type": "SoundNodeModulator",
+    "Name": "SoundNodeModulator_2",
+    "Outer": "BallisticsImpactPenetrate_Cue",
+    "Properties": {
+      "PitchMin": 0.8,
+      "PitchMax": 1.2,
+      "VolumeMin": 0.9,
+      "VolumeMax": 1.1,
+      "ChildNodes": [
+        {
+          "ObjectName": "SoundNodeWavePlayer BallisticsImpactPenetrate_Cue:SoundNodeWavePlayer_0",
+          "ObjectPath": "War/Content/Audio/SFX/Weapons/Impacts/BallisticsImpactPenetrate_Cue.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SoundNodeWavePlayer",
+    "Name": "SoundNodeWavePlayer_0",
+    "Outer": "BallisticsImpactPenetrate_Cue",
+    "Properties": {
+      "SoundWaveAssetPtr": {
+        "AssetPathName": "/Game/Audio/SFX/Weapons/Impacts/BallisticsImpactPenetrate.BallisticsImpactPenetrate",
+        "SubPathString": ""
+      }
+    }
+  }
+]

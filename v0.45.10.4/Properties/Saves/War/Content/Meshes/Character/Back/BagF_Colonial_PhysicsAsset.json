@@ -1,0 +1,124 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "BagF_Colonial_PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup BagF_Colonial_PhysicsAsset:SkeletalBodySetup_0",
+          "ObjectPath": "War/Content/Meshes/Character/Back/BagF_Colonial_PhysicsAsset.2"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup BagF_Colonial_PhysicsAsset:SkeletalBodySetup_1",
+          "ObjectPath": "War/Content/Meshes/Character/Back/BagF_Colonial_PhysicsAsset.3"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate BagF_Colonial_PhysicsAsset:PhysicsConstraintTemplate_0",
+          "ObjectPath": "War/Content/Meshes/Character/Back/BagF_Colonial_PhysicsAsset.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Outer": "BagF_Colonial_PhysicsAsset",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "spine_03",
+        "ConstraintBone1": "spine_03",
+        "ConstraintBone2": "spine_02",
+        "Pos2": {
+          "X": 16.759161,
+          "Y": -0.52559674,
+          "Z": -1.39074255E-14
+        },
+        "PriAxis2": {
+          "X": 0.99882364,
+          "Y": -0.04849095,
+          "Z": 1.1354899E-18
+        },
+        "SecAxis2": {
+          "X": 0.04849095,
+          "Y": 0.99882364,
+          "Z": 1.2901526E-17
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "BagF_Colonial_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 8.847015,
+              "Y": -31.81023,
+              "Z": 0.047896653
+            },
+            "Rotation": {
+              "Pitch": -0.43530843,
+              "Yaw": -90.00001,
+              "Roll": -0.568098
+            },
+            "Radius": 14.603766,
+            "Length": 32.368683,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "spine_02",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "BagF_Colonial_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 8.190903,
+              "Y": -30.08217,
+              "Z": 2.8872194
+            },
+            "Rotation": {
+              "Pitch": -6.830189E-06,
+              "Yaw": 137.40913,
+              "Roll": -177.13124
+            },
+            "Radius": 22.751749,
+            "Length": 23.071898,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "spine_03",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  }
+]

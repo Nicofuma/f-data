@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "PoleMetalBarn",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "PoleMetalBarn",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x43B2"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "PoleMetalBarn",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MetalBarnAssets",
+            "ObjectPath": "War/Content/Materials/Environment/Props/MetalBarnAssets.0"
+          },
+          "MaterialSlotName": "MetalBarnAssets",
+          "ImportedMaterialSlotName": "MetalBarnAssets",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 534.1391,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 534.1391,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 149.89484
+        },
+        "BoxExtent": {
+          "X": 21.354706,
+          "Y": 21.354715,
+          "Z": 149.78143
+        },
+        "SphereRadius": 151.05403
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup PoleMetalBarn:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/PoleMetalBarn.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision PoleMetalBarn:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/PoleMetalBarn.1"
+    },
+    "LightingGuid": "7DCAC105-487D75E3-618468A2-21708FC6",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,89 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_10755",
+    "Outer": "ToolsBallpeenhammer",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "ToolsBallpeenhammer",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x573B"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ToolsBallpeenhammer",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Tools01",
+            "ObjectPath": "War/Content/Materials/Structures/Tools01.0"
+          },
+          "MaterialSlotName": "Tools01",
+          "ImportedMaterialSlotName": "Tools01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 125.51021,
+            "LocalUVDensities": 37.073185,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 37.073185,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.045318604,
+          "Y": 1.7634449,
+          "Z": 0.010215282
+        },
+        "BoxExtent": {
+          "X": 23.97905,
+          "Y": 8.897081,
+          "Z": 2.9100251
+        },
+        "SphereRadius": 24.050316
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ToolsBallpeenhammer:BodySetup_10755",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ToolsBallpeenhammer.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ToolsBallpeenhammer:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ToolsBallpeenhammer.1"
+    },
+    "LightingGuid": "5FC29F65-477A3C3B-A36EAA88-1EFBA1C9",
+    "RenderData": null
+  }
+]

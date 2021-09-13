@@ -1,0 +1,111 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_13317",
+    "Outer": "Trench09",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 124.57637,
+              "Y": 1.5258789E-05,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 254.46445,
+            "Y": 156.78357,
+            "Z": 8.851644,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Trench09",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x17BE"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Trench09",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant WoodRepeating03",
+            "ObjectPath": "War/Content/Materials/Environment/WoodRepeating03.0"
+          },
+          "MaterialSlotName": "WoodRepeating03",
+          "ImportedMaterialSlotName": "WoodRepeating03",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 496.73553,
+            "LocalUVDensities": 390.06616,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 390.06616,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 124.57637,
+          "Y": 1.5258789E-05,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 127.23222,
+          "Y": 78.391785,
+          "Z": 7.898779
+        },
+        "SphereRadius": 148.54976
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Trench09:BodySetup_13317",
+      "ObjectPath": "War/Content/Meshes/Environment/Trenches/Trench09.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Trench09:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Trenches/Trench09.1"
+    },
+    "LightingGuid": "723DC487-4BA38E2B-65C0B69C-8AFA3C50",
+    "RenderData": null
+  }
+]

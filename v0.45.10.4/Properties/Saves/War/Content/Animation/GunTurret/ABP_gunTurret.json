@@ -1,0 +1,584 @@
+[
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "ABP_GunTurret_C",
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "AnimBlueprintGeneratedClass",
+    "Name": "ABP_GunTurret_C",
+    "Properties": {
+      "BakedStateMachines": [
+        {
+          "MachineName": "IdleToShot",
+          "InitialState": 0,
+          "States": [
+            {
+              "StateName": "Idle",
+              "Transitions": [
+                {
+                  "CanTakeDelegateIndex": 5,
+                  "CustomResultNodeIndex": -1,
+                  "TransitionIndex": 0,
+                  "bDesiredTransitionReturnValue": true,
+                  "bAutomaticRemainingTimeRule": false,
+                  "PoseEvaluatorLinks": []
+                }
+              ],
+              "StateRootNodeIndex": 1,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "FullyBlendedNotify": -1,
+              "bIsAConduit": false,
+              "EntryRuleNodeIndex": -1,
+              "PlayerNodeIndices": [
+                2
+              ],
+              "LayerNodeIndices": [],
+              "bAlwaysResetOnEntry": false
+            },
+            {
+              "StateName": "Shot",
+              "Transitions": [
+                {
+                  "CanTakeDelegateIndex": 6,
+                  "CustomResultNodeIndex": -1,
+                  "TransitionIndex": 1,
+                  "bDesiredTransitionReturnValue": true,
+                  "bAutomaticRemainingTimeRule": false,
+                  "PoseEvaluatorLinks": []
+                }
+              ],
+              "StateRootNodeIndex": 3,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "FullyBlendedNotify": -1,
+              "bIsAConduit": false,
+              "EntryRuleNodeIndex": -1,
+              "PlayerNodeIndices": [
+                4
+              ],
+              "LayerNodeIndices": [],
+              "bAlwaysResetOnEntry": false
+            }
+          ],
+          "Transitions": [
+            {
+              "PreviousState": 0,
+              "NextState": 1,
+              "CrossfadeDuration": 0.2,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "InterruptNotify": -1,
+              "BlendMode": "EAlphaBlendOption::HermiteCubic",
+              "CustomCurve": null,
+              "BlendProfile": null,
+              "LogicType": "ETransitionLogicType::TLT_StandardBlend",
+              "StateName": "None"
+            },
+            {
+              "PreviousState": 1,
+              "NextState": 0,
+              "CrossfadeDuration": 0.2,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "InterruptNotify": -1,
+              "BlendMode": "EAlphaBlendOption::HermiteCubic",
+              "CustomCurve": null,
+              "BlendProfile": null,
+              "LogicType": "ETransitionLogicType::TLT_StandardBlend",
+              "StateName": "None"
+            }
+          ]
+        }
+      ],
+      "TargetSkeleton": {
+        "ObjectName": "Skeleton GunTurret_Skeleton",
+        "ObjectPath": "War/Content/Meshes/Structures/GunTurret_Skeleton.0"
+      },
+      "OrderedSavedPoseIndicesMap": {
+        "AnimGraph": {
+          "OrderedSavedPoseNodeIndices": []
+        }
+      },
+      "EvaluateGraphExposedInputs": [
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "SourcePropertyName": "isShooting",
+              "SourceSubPropertyName": "None",
+              "SourceArrayIndex": 0,
+              "bInstanceIsTarget": false,
+              "PostCopyOperation": "EPostCopyOperation::None",
+              "DestProperty": {
+                "ObjectName": "BoolProperty AnimNode_TransitionResult:bCanEnterTransition",
+                "ObjectPath": "/Script/Engine"
+              },
+              "DestArrayIndex": 0,
+              "Size": 1,
+              "CachedSourceProperty": {
+                "ObjectName": "BoolProperty ABP_GunTurret_C:isShooting",
+                "ObjectPath": "War/Content/Animation/GunTurret/ABP_gunTurret.7"
+              },
+              "CachedSourceStructSubProperty": null
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "ObjectName": "StructProperty ABP_GunTurret_C:AnimGraphNode_TransitionResult_409B68024A4A0E4E56863BAEB3E1A55E",
+            "ObjectPath": "War/Content/Animation/GunTurret/ABP_gunTurret.18"
+          }
+        },
+        {
+          "BoundFunction": "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_GunTurret_AnimGraphNode_TransitionResult_759FE0A64A945CA66B4E208CC7E2F7B0",
+          "CopyRecords": [],
+          "Function": {
+            "ObjectName": "Function ABP_GunTurret_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_GunTurret_AnimGraphNode_TransitionResult_759FE0A64A945CA66B4E208CC7E2F7B0",
+            "ObjectPath": "War/Content/Animation/GunTurret/ABP_gunTurret.11"
+          },
+          "ValueHandlerNodeProperty": {
+            "ObjectName": "StructProperty ABP_GunTurret_C:AnimGraphNode_TransitionResult_759FE0A64A945CA66B4E208CC7E2F7B0",
+            "ObjectPath": "War/Content/Animation/GunTurret/ABP_gunTurret.19"
+          }
+        },
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "SourcePropertyName": "TrackingAngle",
+              "SourceSubPropertyName": "None",
+              "SourceArrayIndex": 0,
+              "bInstanceIsTarget": false,
+              "PostCopyOperation": "EPostCopyOperation::None",
+              "DestProperty": {
+                "ObjectName": "FloatProperty AnimNode_BlendSpacePlayer:X",
+                "ObjectPath": "/Script/AnimGraphRuntime"
+              },
+              "DestArrayIndex": 0,
+              "Size": 4,
+              "CachedSourceProperty": {
+                "ObjectName": "FloatProperty GunTurretAnimInstance:TrackingAngle",
+                "ObjectPath": "/Script/War"
+              },
+              "CachedSourceStructSubProperty": null
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "ObjectName": "StructProperty ABP_GunTurret_C:AnimGraphNode_RotationOffsetBlendSpace_FC8DDF5345CD83E352B44B9801D37CE1",
+            "ObjectPath": "War/Content/Animation/GunTurret/ABP_gunTurret.12"
+          }
+        }
+      ],
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty ABP_GunTurret_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Animation/GunTurret/ABP_gunTurret.0"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function ABP_GunTurret_C:ExecuteUbergraph_ABP_GunTurret",
+        "ObjectPath": "War/Content/Animation/GunTurret/ABP_gunTurret.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class GunTurretAnimInstance",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty ABP_GunTurret_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Animation/GunTurret/ABP_gunTurret.0"
+      },
+      {
+        "ObjectName": "Function ABP_GunTurret_C:AnimGraph",
+        "ObjectPath": "War/Content/Animation/GunTurret/ABP_gunTurret.10"
+      },
+      {
+        "ObjectName": "Function ABP_GunTurret_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_GunTurret_AnimGraphNode_TransitionResult_759FE0A64A945CA66B4E208CC7E2F7B0",
+        "ObjectPath": "War/Content/Animation/GunTurret/ABP_gunTurret.11"
+      },
+      {
+        "ObjectName": "Function ABP_GunTurret_C:ExecuteUbergraph_ABP_GunTurret",
+        "ObjectPath": "War/Content/Animation/GunTurret/ABP_gunTurret.5"
+      },
+      {
+        "ObjectName": "StructProperty ABP_GunTurret_C:AnimGraphNode_Root_9678BFF54D90602892798F9AC785B1FD",
+        "ObjectPath": "War/Content/Animation/GunTurret/ABP_gunTurret.3"
+      },
+      {
+        "ObjectName": "StructProperty ABP_GunTurret_C:AnimGraphNode_RotationOffsetBlendSpace_FC8DDF5345CD83E352B44B9801D37CE1",
+        "ObjectPath": "War/Content/Animation/GunTurret/ABP_gunTurret.12"
+      },
+      {
+        "ObjectName": "StructProperty ABP_GunTurret_C:AnimGraphNode_TransitionResult_759FE0A64A945CA66B4E208CC7E2F7B0",
+        "ObjectPath": "War/Content/Animation/GunTurret/ABP_gunTurret.19"
+      },
+      {
+        "ObjectName": "StructProperty ABP_GunTurret_C:AnimGraphNode_TransitionResult_409B68024A4A0E4E56863BAEB3E1A55E",
+        "ObjectPath": "War/Content/Animation/GunTurret/ABP_gunTurret.18"
+      },
+      {
+        "ObjectName": "StructProperty ABP_GunTurret_C:AnimGraphNode_SequencePlayer_4A3D5053496A3297FB1A2A8B167438BD",
+        "ObjectPath": "War/Content/Animation/GunTurret/ABP_gunTurret.13"
+      },
+      {
+        "ObjectName": "StructProperty ABP_GunTurret_C:AnimGraphNode_StateResult_3326B1784815B82CEA4BF7B84A260820",
+        "ObjectPath": "War/Content/Animation/GunTurret/ABP_gunTurret.16"
+      },
+      {
+        "ObjectName": "StructProperty ABP_GunTurret_C:AnimGraphNode_SequencePlayer_727393124CD1DDD6F9F124B54969DF8C",
+        "ObjectPath": "War/Content/Animation/GunTurret/ABP_gunTurret.14"
+      },
+      {
+        "ObjectName": "StructProperty ABP_GunTurret_C:AnimGraphNode_StateResult_7A1702BF4EEE1703867E768C4CE1D15F",
+        "ObjectPath": "War/Content/Animation/GunTurret/ABP_gunTurret.17"
+      },
+      {
+        "ObjectName": "StructProperty ABP_GunTurret_C:AnimGraphNode_StateMachine_2BFFE46A41A9865D6C6ACD9F5A17E778",
+        "ObjectPath": "War/Content/Animation/GunTurret/ABP_gunTurret.15"
+      },
+      {
+        "ObjectName": "BoolProperty ABP_GunTurret_C:isShooting",
+        "ObjectPath": "War/Content/Animation/GunTurret/ABP_gunTurret.7"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 1536,
+    "ClassWithin": null,
+    "ClassConfigName": "/Game/Animation/GunTurret/ABP_gunTurret_3071",
+    "ClassGeneratedBy": null,
+    "Interfaces": [],
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "ABP_GunTurret_C",
+    "Name": "Default__ABP_GunTurret_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "AnimGraphNode_Root_9678BFF54D90602892798F9AC785B1FD": {
+        "Result": {
+          "LinkID": 1
+        },
+        "Name": "AnimGraph",
+        "Group": "None"
+      },
+      "AnimGraphNode_RotationOffsetBlendSpace_FC8DDF5345CD83E352B44B9801D37CE1": {
+        "BasePose": {
+          "LinkID": 8
+        },
+        "LODThreshold": -1,
+        "Alpha": 1.0,
+        "AlphaScaleBias": {
+          "Scale": 1.0,
+          "Bias": 0.0
+        },
+        "AlphaBoolBlend": {
+          "BlendInTime": 0.0,
+          "BlendOutTime": 0.0,
+          "BlendOption": "EAlphaBlendOption::Linear",
+          "bInitialized": false,
+          "CustomCurve": null,
+          "AlphaBlend": {
+            "CustomCurve": null,
+            "BlendTime": 0.2,
+            "BlendOption": "EAlphaBlendOption::Linear"
+          }
+        },
+        "AlphaCurveName": "None",
+        "AlphaScaleBiasClamp": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        },
+        "AlphaInputType": "EAnimAlphaInputType::Float",
+        "bAlphaBoolEnabled": false,
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0,
+        "PlayRate": 1.0,
+        "bLoop": true,
+        "bResetPlayTimeWhenBlendSpaceChanges": true,
+        "StartPosition": 0.0,
+        "BlendSpace": {
+          "ObjectName": "AimOffsetBlendSpace1D AO_GunTurret_HorizontalPivot",
+          "ObjectPath": "War/Content/Animation/GunTurret/AO_GunTurret_HorizontalPivot.0"
+        },
+        "PreviousBlendSpace": null,
+        "GroupIndex": -1,
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "AnimGraphNode_TransitionResult_759FE0A64A945CA66B4E208CC7E2F7B0": {
+        "bCanEnterTransition": false
+      },
+      "AnimGraphNode_TransitionResult_409B68024A4A0E4E56863BAEB3E1A55E": {
+        "bCanEnterTransition": false
+      },
+      "AnimGraphNode_SequencePlayer_4A3D5053496A3297FB1A2A8B167438BD": {
+        "Sequence": {
+          "ObjectName": "AnimSequence Anim_GunTurret_shot",
+          "ObjectPath": "War/Content/Animation/GunTurret/Anim_GunTurret_shot.0"
+        },
+        "PlayRateBasis": 1.0,
+        "PlayRate": 1.0,
+        "PlayRateScaleBiasClamp": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        },
+        "StartPosition": 0.0,
+        "bLoopAnimation": true,
+        "GroupIndex": -1,
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "AnimGraphNode_StateResult_3326B1784815B82CEA4BF7B84A260820": {
+        "Result": {
+          "LinkID": 4
+        },
+        "Name": "None",
+        "Group": "None"
+      },
+      "AnimGraphNode_SequencePlayer_727393124CD1DDD6F9F124B54969DF8C": {
+        "Sequence": {
+          "ObjectName": "AnimSequence POSE_GunTurret_idle",
+          "ObjectPath": "War/Content/Animation/GunTurret/POSE_GunTurret_idle.0"
+        },
+        "PlayRateBasis": 1.0,
+        "PlayRate": 0.1,
+        "PlayRateScaleBiasClamp": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        },
+        "StartPosition": 0.0,
+        "bLoopAnimation": true,
+        "GroupIndex": -1,
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "AnimGraphNode_StateResult_7A1702BF4EEE1703867E768C4CE1D15F": {
+        "Result": {
+          "LinkID": 6
+        },
+        "Name": "None",
+        "Group": "None"
+      },
+      "AnimGraphNode_StateMachine_2BFFE46A41A9865D6C6ACD9F5A17E778": {
+        "StateMachineIndexInClass": 0,
+        "MaxTransitionsPerFrame": 3,
+        "bSkipFirstUpdateTransition": true,
+        "bReinitializeOnBecomingRelevant": true
+      }
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_Root_9678BFF54D90602892798F9AC785B1FD",
+    "Outer": "ABP_GunTurret_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_Root",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_ABP_GunTurret",
+    "PropertyFlags": 148
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ABP_GunTurret",
+    "Outer": "ABP_GunTurret_C",
+    "Children": [
+      {
+        "ObjectName": "IntProperty ABP_GunTurret_C:ExecuteUbergraph_ABP_GunTurret.EntryPoint",
+        "ObjectPath": "War/Content/Animation/GunTurret/ABP_gunTurret.4"
+      },
+      {
+        "ObjectName": "FloatProperty ABP_GunTurret_C:ExecuteUbergraph_ABP_GunTurret.CallFunc_GetInstanceAssetPlayerTimeFromEndFraction_ReturnValue",
+        "ObjectPath": "War/Content/Animation/GunTurret/ABP_gunTurret.8"
+      },
+      {
+        "ObjectName": "BoolProperty ABP_GunTurret_C:ExecuteUbergraph_ABP_GunTurret.CallFunc_LessEqual_FloatFloat_ReturnValue",
+        "ObjectPath": "War/Content/Animation/GunTurret/ABP_gunTurret.6"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_LessEqual_FloatFloat_ReturnValue",
+    "Outer": "ExecuteUbergraph_ABP_GunTurret",
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "isShooting",
+    "Outer": "ABP_GunTurret_C",
+    "PropertyFlags": 65541,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_GetInstanceAssetPlayerTimeFromEndFraction_ReturnValue",
+    "Outer": "ExecuteUbergraph_ABP_GunTurret"
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraph",
+    "Outer": "AnimGraph",
+    "PropertyFlags": 384,
+    "Struct": {
+      "ObjectName": "ScriptStruct PoseLink",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "AnimGraph",
+    "Outer": "ABP_GunTurret_C",
+    "Children": [
+      {
+        "ObjectName": "StructProperty ABP_GunTurret_C:AnimGraph.AnimGraph",
+        "ObjectPath": "War/Content/Animation/GunTurret/ABP_gunTurret.9"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "Function",
+    "Name": "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_GunTurret_AnimGraphNode_TransitionResult_759FE0A64A945CA66B4E208CC7E2F7B0",
+    "Outer": "ABP_GunTurret_C",
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_RotationOffsetBlendSpace_FC8DDF5345CD83E352B44B9801D37CE1",
+    "Outer": "ABP_GunTurret_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_RotationOffsetBlendSpace",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_SequencePlayer_4A3D5053496A3297FB1A2A8B167438BD",
+    "Outer": "ABP_GunTurret_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_SequencePlayer",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_SequencePlayer_727393124CD1DDD6F9F124B54969DF8C",
+    "Outer": "ABP_GunTurret_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_SequencePlayer",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_StateMachine_2BFFE46A41A9865D6C6ACD9F5A17E778",
+    "Outer": "ABP_GunTurret_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_StateMachine",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_StateResult_3326B1784815B82CEA4BF7B84A260820",
+    "Outer": "ABP_GunTurret_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_StateResult",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_StateResult_7A1702BF4EEE1703867E768C4CE1D15F",
+    "Outer": "ABP_GunTurret_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_StateResult",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_TransitionResult_409B68024A4A0E4E56863BAEB3E1A55E",
+    "Outer": "ABP_GunTurret_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_TransitionResult",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_TransitionResult_759FE0A64A945CA66B4E208CC7E2F7B0",
+    "Outer": "ABP_GunTurret_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_TransitionResult",
+      "ObjectPath": "/Script/Engine"
+    }
+  }
+]

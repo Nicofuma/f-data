@@ -1,0 +1,153 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Birch03Damaged",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 80.01752,
+              "Y": -195.48256,
+              "Z": 161.12927
+            },
+            "Rotation": {
+              "Pitch": -0.0002458868,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Radius": 45.55835,
+            "Length": 341.32578,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": -94.05337,
+              "Y": 138.79063,
+              "Z": 153.50806
+            },
+            "Rotation": {
+              "Pitch": -0.0002458868,
+              "Yaw": 8.586337E-08,
+              "Roll": 2.8181736
+            },
+            "Radius": 45.55835,
+            "Length": 341.32578,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "Birch03Damaged",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 11021,
+        "SizeOnDisk": 11021,
+        "OffsetInFile": "0x24325"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Birch03Damaged",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BirchPatch",
+            "ObjectPath": "War/Content/Materials/Environment/Props/BirchPatch.0"
+          },
+          "MaterialSlotName": "Decal",
+          "ImportedMaterialSlotName": "Decal",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 521.11597,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 1.0081193,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BirchBarkDamaged",
+            "ObjectPath": "War/Content/Materials/Environment/Props/BirchBarkDamaged.0"
+          },
+          "MaterialSlotName": "BirchBark",
+          "ImportedMaterialSlotName": "BirchBark",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 364.97992,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 2.5193691,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TreeInterior",
+            "ObjectPath": "War/Content/Materials/Environment/Props/TreeInterior.0"
+          },
+          "MaterialSlotName": "TreeInterior",
+          "ImportedMaterialSlotName": "TreeInterior",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 78.14451,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 1.1327248,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 305.46185,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 42.731995,
+          "Y": -90.78516,
+          "Z": 451.32843
+        },
+        "BoxExtent": {
+          "X": 423.11032,
+          "Y": 484.55206,
+          "Z": 476.00726
+        },
+        "SphereRadius": 763.86755
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Birch03Damaged:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/Birch03Damaged.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Birch03Damaged:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/Birch03Damaged.1"
+    },
+    "LightingGuid": "5CD85D46-474195C4-0F188AA1-CAEA647A",
+    "RenderData": null
+  }
+]

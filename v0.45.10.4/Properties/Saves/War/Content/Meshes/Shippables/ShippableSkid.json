@@ -1,0 +1,105 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ShippableSkid",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.037391663,
+              "Y": -1.1923523,
+              "Z": 15.177625
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 225.2628,
+            "Y": 225.0,
+            "Z": 30.355259,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "ShippableSkid",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x190B"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ShippableSkid",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ProductionParts",
+            "ObjectPath": "War/Content/Materials/Structures/ProductionParts.0"
+          },
+          "MaterialSlotName": "ProductionParts",
+          "ImportedMaterialSlotName": "ProductionParts",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 934.29407,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 934.29407,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.037391663,
+          "Y": -1.1923523,
+          "Z": 15.177625
+        },
+        "BoxExtent": {
+          "X": 112.6314,
+          "Y": 112.5,
+          "Z": 15.177629
+        },
+        "SphereRadius": 159.91386
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ShippableSkid:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Shippables/ShippableSkid.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ShippableSkid:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Shippables/ShippableSkid.1"
+    },
+    "LightingGuid": "9FAAA4A6-4EA5743B-324F1D9B-B824443C",
+    "RenderData": null
+  }
+]

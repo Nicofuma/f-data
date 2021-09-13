@@ -1,0 +1,230 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "Audio",
+    "Outer": "BPRainStormMajor_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class AudioComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPRainStormMajor_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPRainStormMajor_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Weather/Effects/BPRainStormMajor.13"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class WeatherEffectsActor",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPRainStormMajor_C:Audio",
+        "ObjectPath": "War/Content/Blueprints/Weather/Effects/BPRainStormMajor.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPRainStormMajor_C:EditorOnlySphere",
+        "ObjectPath": "War/Content/Blueprints/Weather/Effects/BPRainStormMajor.5"
+      },
+      {
+        "ObjectName": "ObjectProperty BPRainStormMajor_C:ParticleSystem",
+        "ObjectPath": "War/Content/Blueprints/Weather/Effects/BPRainStormMajor.6"
+      },
+      {
+        "ObjectName": "ObjectProperty BPRainStormMajor_C:DefaultSceneRoot",
+        "ObjectPath": "War/Content/Blueprints/Weather/Effects/BPRainStormMajor.4"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPRainStormMajor_C",
+    "Name": "Default__BPRainStormMajor_C"
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "Audio_GEN_VARIABLE",
+    "Outer": "BPRainStormMajor_C",
+    "Properties": {
+      "Sound": {
+        "ObjectName": "SoundCue RainStormMajor_Cue",
+        "ObjectPath": "War/Content/Audio/Ambient/RainStormMajor_Cue.0"
+      }
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "DefaultSceneRoot",
+    "Outer": "BPRainStormMajor_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SceneComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "EditorOnlySphere",
+    "Outer": "BPRainStormMajor_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SphereComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "ParticleSystem",
+    "Outer": "BPRainStormMajor_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class ParticleSystemComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ParticleSystem_GEN_VARIABLE",
+    "Outer": "BPRainStormMajor_C",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem RainstormMajor",
+        "ObjectPath": "War/Content/FX/RainstormMajor.40"
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPRainStormMajor_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPRainStormMajor_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Weather/Effects/BPRainStormMajor.8"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node BPRainStormMajor_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Weather/Effects/BPRainStormMajor.10"
+        },
+        {
+          "ObjectName": "SCS_Node BPRainStormMajor_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Weather/Effects/BPRainStormMajor.11"
+        },
+        {
+          "ObjectName": "SCS_Node BPRainStormMajor_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Weather/Effects/BPRainStormMajor.12"
+        }
+      ],
+      "VariableGuid": "6C1C0220-41EE4FDB-F4CF70AC-BF320184",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class ParticleSystemComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ParticleSystemComponent BPRainStormMajor_C:ParticleSystem_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Weather/Effects/BPRainStormMajor.7"
+      },
+      "VariableGuid": "528D6AD8-492E8FCB-17C9449E-000E1612",
+      "InternalVariableName": "ParticleSystem"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SphereComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": null,
+      "VariableGuid": "1016EA5F-468E999E-24DB1E8F-876BED26",
+      "InternalVariableName": "EditorOnlySphere"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class AudioComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "AudioComponent BPRainStormMajor_C:Audio_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Weather/Effects/BPRainStormMajor.3"
+      },
+      "VariableGuid": "29A56993-421C8C5B-C928E787-B9EF30E4",
+      "InternalVariableName": "Audio"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPRainStormMajor_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPRainStormMajor_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "War/Content/Blueprints/Weather/Effects/BPRainStormMajor.9"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPRainStormMajor_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "War/Content/Blueprints/Weather/Effects/BPRainStormMajor.9"
+        },
+        {
+          "ObjectName": "SCS_Node BPRainStormMajor_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Weather/Effects/BPRainStormMajor.10"
+        },
+        {
+          "ObjectName": "SCS_Node BPRainStormMajor_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Weather/Effects/BPRainStormMajor.11"
+        },
+        {
+          "ObjectName": "SCS_Node BPRainStormMajor_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Weather/Effects/BPRainStormMajor.12"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPRainStormMajor_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Weather/Effects/BPRainStormMajor.9"
+      }
+    }
+  }
+]

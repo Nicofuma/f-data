@@ -1,0 +1,105 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "CastleLedgeBrick01",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.9945755,
+              "Y": -2.3570938,
+              "Z": 36.884937
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 164.2142,
+            "Y": 85.4735,
+            "Z": 77.36673,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "CastleLedgeBrick01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x151F"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "CastleLedgeBrick01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant CastleBrick02Snow",
+            "ObjectPath": "War/Content/Materials/Environment/CastleBrick02Snow.0"
+          },
+          "MaterialSlotName": "CastleBrick02",
+          "ImportedMaterialSlotName": "CastleBrick02",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 275.0602,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 275.0602,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.9945755,
+          "Y": -2.3570938,
+          "Z": 36.884937
+        },
+        "BoxExtent": {
+          "X": 91.59639,
+          "Y": 60.278713,
+          "Z": 50.4512
+        },
+        "SphereRadius": 105.26033
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup CastleLedgeBrick01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/CastleLedgeBrick01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision CastleLedgeBrick01:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/CastleLedgeBrick01.1"
+    },
+    "LightingGuid": "1E8057D9-4162B6DD-D16BBDAD-2CF001F4",
+    "RenderData": null
+  }
+]

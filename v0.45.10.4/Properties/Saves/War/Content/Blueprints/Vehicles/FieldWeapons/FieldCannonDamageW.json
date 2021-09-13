@@ -1,0 +1,674 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "FieldCannonDamageW_C",
+    "Super": "BPFieldGunBase_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript FieldCannonDamageW_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.30"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler FieldCannonDamageW_C:InheritableComponentHandler",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.9"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass BPFieldGunBase_C",
+      "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldGunBase.1"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "FieldCannonDamageW_C",
+    "Name": "Default__FieldCannonDamageW_C",
+    "Properties": {
+      "MuzzleFlashPS": {
+        "ObjectName": "ParticleSystemComponent Default__FieldCannonDamageW_C:MuzzleFlashPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.14"
+      },
+      "IdleLoop": {
+        "ObjectName": "AudioComponent Default__FieldCannonDamageW_C:IdleLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.5"
+      },
+      "RearLeftTireDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__FieldCannonDamageW_C:RearLeftTireDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.16"
+      },
+      "RearLeftTireDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__FieldCannonDamageW_C:RearLeftTireDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.15"
+      },
+      "RearRightTireDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__FieldCannonDamageW_C:RearRightTireDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.18"
+      },
+      "RearRightTireDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__FieldCannonDamageW_C:RearRightTireDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.17"
+      },
+      "MainDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__FieldCannonDamageW_C:MainDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.11"
+      },
+      "MainDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__FieldCannonDamageW_C:MainDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.10"
+      },
+      "SkiddingDirtPS": {
+        "ObjectName": "ParticleSystemComponent Default__FieldCannonDamageW_C:SkiddingDirtPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.19"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "76E393364C1A253F9AB971A50C859448",
+        "SourceString": "Balfour Rampart 40mm"
+      },
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "49BE053C44A4516F0832F38CE13CE45B",
+        "SourceString": "Heavy Field Cannon"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "785054384B1A4959A3B8D7AFFF4AAB7E",
+        "SourceString": "The Rampart is a high-velocity, anti-armour field cannon capable of dealing devastating damage to all but the heaviest armoured vehicles while providing its crew with comprehensive ballistic shielding."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D FieldCannonOffensiveWIcon",
+        "ObjectPath": "War/Content/Textures/UI/VehicleIcons/FieldCannonOffensiveWIcon.0"
+      },
+      "TechID": "ETechID::UnlockFieldCannonDamage",
+      "VehicleBuildType": "EVehicleBuildType::VehicleFactory",
+      "FactionVariant": "EFactionId::Wardens",
+      "CodeName": "FieldCannonDamageW",
+      "DestroyedMesh": {
+        "ObjectName": "StaticMeshComponent Default__FieldCannonDamageW_C:DestroyedMesh",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.32"
+      },
+      "MinorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__FieldCannonDamageW_C:MinorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.13"
+      },
+      "MajorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__FieldCannonDamageW_C:MajorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.12"
+      },
+      "FrozenEnterSound": null,
+      "DriveLoop": {
+        "ObjectName": "AudioComponent Default__FieldCannonDamageW_C:DriveLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.4"
+      },
+      "BackUpSFXLoop": {
+        "ObjectName": "AudioComponent Default__FieldCannonDamageW_C:BackUpSFXLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.3"
+      },
+      "CameraRigComponent": {
+        "ObjectName": "PlayerCameraRigComponent Default__FieldCannonDamageW_C:CameraRigVehicle",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.20"
+      },
+      "FrontAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__FieldCannonDamageW_C:FrontAxelCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.22"
+      },
+      "RearAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__FieldCannonDamageW_C:RearAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.25"
+      },
+      "FrontLeftRollCastLocation": {
+        "ObjectName": "SceneComponent Default__FieldCannonDamageW_C:FrontRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.23"
+      },
+      "FrontRightRollCastLocation": {
+        "ObjectName": "SceneComponent Default__FieldCannonDamageW_C:RearRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.26"
+      },
+      "LeftSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__FieldCannonDamageW_C:LeftSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.24"
+      },
+      "RightSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__FieldCannonDamageW_C:RightSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.27"
+      },
+      "VehicleCollision": {
+        "ObjectName": "BoxComponent Default__FieldCannonDamageW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.7"
+      },
+      "PassengerArea": {
+        "ObjectName": "BoxComponent Default__FieldCannonDamageW_C:PassengerBaseBox",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.6"
+      },
+      "AFKTimeoutComponent": {
+        "ObjectName": "AFKTimeoutComponent Default__FieldCannonDamageW_C:AFKTimeoutComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.2"
+      },
+      "MuzzleInfo": [
+        {
+          "GunnerIndex": 1,
+          "MuzzleIndex": 0,
+          "SocketName": "S_Muzzle_CannonDamageW"
+        }
+      ],
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__FieldCannonDamageW_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.33"
+      },
+      "Mesh": {
+        "ObjectName": "SkeletalMeshComponent Default__FieldCannonDamageW_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.31"
+      },
+      "CharacterMovement": {
+        "ObjectName": "RWDVehicleMovementComponent Default__FieldCannonDamageW_C:CharMoveComp",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.21"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent Default__FieldCannonDamageW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.8"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__FieldCannonDamageW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.7"
+      }
+    }
+  },
+  {
+    "Type": "AFKTimeoutComponent",
+    "Name": "AFKTimeoutComponent",
+    "Outer": "Default__FieldCannonDamageW_C"
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "BackUpSFXLoop",
+    "Outer": "Default__FieldCannonDamageW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__FieldCannonDamageW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.8"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "DriveLoop",
+    "Outer": "Default__FieldCannonDamageW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__FieldCannonDamageW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.8"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "IdleLoop",
+    "Outer": "Default__FieldCannonDamageW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__FieldCannonDamageW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.7"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "PassengerBaseBox",
+    "Outer": "Default__FieldCannonDamageW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__FieldCannonDamageW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.7"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "VehicleCollision",
+    "Outer": "Default__FieldCannonDamageW_C",
+    "Properties": {
+      "OnComponentBeginOverlap": null
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__FieldCannonDamageW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__FieldCannonDamageW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.7"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "FieldCannonDamageW_C",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class VehicleSeatComponent",
+            "ObjectPath": "/Script/War"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "VehicleSeatComponent FieldCannonDamageW_C:PassengerSeat1_GEN_VARIABLE",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.37"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass BPFieldGunBase_C",
+              "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldGunBase.1"
+            },
+            "SCSVariableName": "PassengerSeat1",
+            "AssociatedGuid": "B4D722B0-405B2E17-A22536B3-0B4D923D"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class VehicleSeatComponent",
+            "ObjectPath": "/Script/War"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "VehicleSeatComponent FieldCannonDamageW_C:DriverSeat0_GEN_VARIABLE",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.36"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass BPFieldGunBase_C",
+              "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldGunBase.1"
+            },
+            "SCSVariableName": "DriverSeat0",
+            "AssociatedGuid": "78AFAB88-43DA531C-20DE21AE-5F973D44"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class VehicleExitComponent",
+            "ObjectPath": "/Script/War"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "VehicleExitComponent FieldCannonDamageW_C:PassengerExit_GEN_VARIABLE",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.35"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass BPFieldGunBase_C",
+              "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldGunBase.1"
+            },
+            "SCSVariableName": "PassengerExit",
+            "AssociatedGuid": "1D74DBC2-45BCFE0F-BB0403B7-D7D88764"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class VehicleExitComponent",
+            "ObjectPath": "/Script/War"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "VehicleExitComponent FieldCannonDamageW_C:DriverExit0_GEN_VARIABLE",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.34"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass BPFieldGunBase_C",
+              "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldGunBase.1"
+            },
+            "SCSVariableName": "DriverExit0",
+            "AssociatedGuid": "78CA3744-4B0D6957-38433882-74F18E9B"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MainDirtHighSpeedPS",
+    "Outer": "Default__FieldCannonDamageW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__FieldCannonDamageW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MainDirtLowSpeedPS",
+    "Outer": "Default__FieldCannonDamageW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__FieldCannonDamageW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MajorDamagePS",
+    "Outer": "Default__FieldCannonDamageW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__FieldCannonDamageW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.8"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MinorDamagePS",
+    "Outer": "Default__FieldCannonDamageW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__FieldCannonDamageW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.8"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MuzzleFlashPS",
+    "Outer": "Default__FieldCannonDamageW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__FieldCannonDamageW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearLeftTireDirtHighSpeedPS",
+    "Outer": "Default__FieldCannonDamageW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__FieldCannonDamageW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearLeftTireDirtLowSpeedPS",
+    "Outer": "Default__FieldCannonDamageW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__FieldCannonDamageW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearRightTireDirtHighSpeedPS",
+    "Outer": "Default__FieldCannonDamageW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__FieldCannonDamageW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearRightTireDirtLowSpeedPS",
+    "Outer": "Default__FieldCannonDamageW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__FieldCannonDamageW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "SkiddingDirtPS",
+    "Outer": "Default__FieldCannonDamageW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__FieldCannonDamageW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.7"
+      }
+    }
+  },
+  {
+    "Type": "PlayerCameraRigComponent",
+    "Name": "CameraRigVehicle",
+    "Outer": "Default__FieldCannonDamageW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__FieldCannonDamageW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.8"
+      }
+    }
+  },
+  {
+    "Type": "RWDVehicleMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__FieldCannonDamageW_C",
+    "Properties": {
+      "EngineForce": 3000.0,
+      "MaxWalkSpeed": 553.9681
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontAxelCastLocation",
+    "Outer": "Default__FieldCannonDamageW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__FieldCannonDamageW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontRightAxleCastLocation",
+    "Outer": "Default__FieldCannonDamageW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__FieldCannonDamageW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "LeftSideTrackLocation",
+    "Outer": "Default__FieldCannonDamageW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__FieldCannonDamageW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearAxleCastLocation",
+    "Outer": "Default__FieldCannonDamageW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__FieldCannonDamageW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearRightAxleCastLocation",
+    "Outer": "Default__FieldCannonDamageW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__FieldCannonDamageW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RightSideTrackLocation",
+    "Outer": "Default__FieldCannonDamageW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__FieldCannonDamageW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "FieldCannonDamageW_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent FieldCannonDamageW_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.28"
+      },
+      "VariableGuid": "ACC4C139-494B1454-22D78E88-E5E88FF7",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "FieldCannonDamageW_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node FieldCannonDamageW_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.29"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__FieldCannonDamageW_C",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_FieldATGun_C",
+        "ObjectPath": "War/Content/Animation/Field_vehicles/FieldATgun/ABP_FieldATGun.1"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_FieldCannonOffensiveW",
+        "ObjectPath": "War/Content/Meshes/Vehicles/SK_FieldCannonOffensiveW.0"
+      },
+      "OverrideMaterials": [
+        null,
+        null
+      ],
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__FieldCannonDamageW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.8"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "DestroyedMesh",
+    "Outer": "Default__FieldCannonDamageW_C",
+    "Properties": {
+      "StaticMesh": null,
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__FieldCannonDamageW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/FieldCannonDamageW.8"
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__FieldCannonDamageW_C"
+  },
+  {
+    "Type": "VehicleExitComponent",
+    "Name": "DriverExit0_GEN_VARIABLE",
+    "Outer": "FieldCannonDamageW_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": -132.97757,
+        "Y": -100.0,
+        "Z": -80.0
+      }
+    }
+  },
+  {
+    "Type": "VehicleExitComponent",
+    "Name": "PassengerExit_GEN_VARIABLE",
+    "Outer": "FieldCannonDamageW_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": -140.35522,
+        "Y": 100.0,
+        "Z": -80.0
+      }
+    }
+  },
+  {
+    "Type": "VehicleSeatComponent",
+    "Name": "DriverSeat0_GEN_VARIABLE",
+    "Outer": "FieldCannonDamageW_C",
+    "Properties": {
+      "MountCodeName": "FieldATGunDriver",
+      "MountComponent": {
+        "ObjectName": "BlueprintGeneratedClass BPFieldATGunDriver_C",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunDriver.0"
+      },
+      "RelativeLocation": {
+        "X": 68.62026,
+        "Y": -74.14735,
+        "Z": 87.74502
+      }
+    }
+  },
+  {
+    "Type": "VehicleSeatComponent",
+    "Name": "PassengerSeat1_GEN_VARIABLE",
+    "Outer": "FieldCannonDamageW_C",
+    "Properties": {
+      "MountCodeName": "FieldCannonDamageWGunner",
+      "MountComponent": {
+        "ObjectName": "BlueprintGeneratedClass BPFieldCannonWGunner_C",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPFieldCannonWGunner.0"
+      },
+      "RelativeLocation": {
+        "X": -58.150097,
+        "Y": -73.70274,
+        "Z": 89.99979
+      }
+    }
+  }
+]

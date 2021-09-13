@@ -1,0 +1,136 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "OliveTree03",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -2.0307312,
+              "Y": -21.973663,
+              "Z": 233.98514
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Radius": 109.85083,
+            "Length": 401.09164,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "OliveTree03",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 5521,
+        "SizeOnDisk": 5521,
+        "OffsetInFile": "0x439AC"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "OliveTree03",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant OliveBark",
+            "ObjectPath": "War/Content/Materials/Environment/Props/OliveBark.0"
+          },
+          "MaterialSlotName": "Material #25",
+          "ImportedMaterialSlotName": "Material #25",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 113.52181,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant OliveBranch",
+            "ObjectPath": "War/Content/Materials/Environment/Props/OliveBranch.0"
+          },
+          "MaterialSlotName": "Material #26",
+          "ImportedMaterialSlotName": "Material #26",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 192.61703,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant PinePatch",
+            "ObjectPath": "War/Content/Materials/Environment/Props/PinePatch.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 507.91315,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 182.60168,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 6.545471,
+          "Y": -6.1035156E-05,
+          "Z": 266.8731
+        },
+        "BoxExtent": {
+          "X": 428.73016,
+          "Y": 357.2081,
+          "Z": 444.87677
+        },
+        "SphereRadius": 555.6877
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup OliveTree03:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/OliveTree03.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision OliveTree03:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/OliveTree03.1"
+    },
+    "LightingGuid": "AACBB110-4467AAF0-85FD61AA-A9762676",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "RB_BodySetup_6",
+    "Outer": "MatineeCam_SM",
+    "Properties": {
+      "PhysicsType": "PhysType_Kinematic",
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "MatineeCam_SM",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1FC1D"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "MatineeCam_SM",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material MatineeCam_mat",
+            "ObjectPath": "Engine/Content/EditorMaterials/MatineeCam_mat.0"
+          },
+          "MaterialSlotName": "MatineeCam_mat",
+          "ImportedMaterialSlotName": "MatineeCam_mat",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 219.7488,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 219.7488,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -47.337513,
+          "Y": -1.9073486E-06,
+          "Z": 1.8024101
+        },
+        "BoxExtent": {
+          "X": 47.80985,
+          "Y": 24.012367,
+          "Z": 26.758099
+        },
+        "SphereRadius": 57.155445
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup MatineeCam_SM:RB_BodySetup_6",
+      "ObjectPath": "Engine/Content/EditorMeshes/MatineeCam_SM.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision MatineeCam_SM:NavCollision_0",
+      "ObjectPath": "Engine/Content/EditorMeshes/MatineeCam_SM.1"
+    },
+    "LightingGuid": "6A2BC7D4-488B4E6E-6C7D20A7-8263F4F6",
+    "RenderData": null
+  }
+]

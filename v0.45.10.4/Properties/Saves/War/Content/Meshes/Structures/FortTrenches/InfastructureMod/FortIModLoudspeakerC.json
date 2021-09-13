@@ -1,0 +1,131 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FortIModLoudspeakerC",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "FortIModLoudspeakerC",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x3AC77"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FortIModLoudspeakerC",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortImodPipes",
+            "ObjectPath": "War/Content/Materials/Structures/FortImodPipes.0"
+          },
+          "MaterialSlotName": "FortImodPipes.001",
+          "ImportedMaterialSlotName": "FortImodPipes.001",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 306.40128,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material LanternEmissive",
+            "ObjectPath": "War/Content/Materials/LanternEmissive.0"
+          },
+          "MaterialSlotName": "Lanturn.001",
+          "ImportedMaterialSlotName": "Lanturn.001",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 19.57057,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Infrastructure01",
+            "ObjectPath": "War/Content/Materials/Structures/Infrastructure01.0"
+          },
+          "MaterialSlotName": "IMod01",
+          "ImportedMaterialSlotName": "IMod01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 592.9135,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortImodTechnology",
+            "ObjectPath": "War/Content/Materials/Structures/FortImodTechnology.0"
+          },
+          "MaterialSlotName": "FortImodTechnology.001",
+          "ImportedMaterialSlotName": "FortImodTechnology.001",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 271.79504,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 375.64047,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.31503296,
+          "Y": 8.146471,
+          "Z": 126.22603
+        },
+        "BoxExtent": {
+          "X": 233.22061,
+          "Y": 30.74245,
+          "Z": 126.6061
+        },
+        "SphereRadius": 266.37653
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FortIModLoudspeakerC:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/FortIModLoudspeakerC.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FortIModLoudspeakerC:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/FortIModLoudspeakerC.1"
+    },
+    "LightingGuid": "303DA4A5-41561CD6-FFEB40BD-4EE939D3",
+    "RenderData": null
+  }
+]

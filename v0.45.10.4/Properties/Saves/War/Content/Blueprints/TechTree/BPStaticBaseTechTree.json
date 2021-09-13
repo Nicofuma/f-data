@@ -1,0 +1,68 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPStaticBaseTechTree_C",
+    "SuperStruct": {
+      "ObjectName": "Class TechTreeComponentData",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPStaticBaseTechTree_C",
+    "Name": "Default__BPStaticBaseTechTree_C",
+    "Properties": {
+      "Items": [
+        {
+          "TechID": "ETechComponentID::ProvisionalGarrison",
+          "NextTechID": "ETechComponentID::SmallGarrison",
+          "InfrastructureType": "EInfrastructureType::Base",
+          "Requirement": 50,
+          "ModRequirement": 0
+        },
+        {
+          "TechID": "ETechComponentID::SmallGarrison",
+          "NextTechID": "ETechComponentID::LargeGarrison",
+          "InfrastructureType": "EInfrastructureType::Base",
+          "Requirement": 1200,
+          "ModRequirement": 0
+        },
+        {
+          "TechID": "ETechComponentID::LargeGarrison",
+          "NextTechID": "ETechComponentID::None",
+          "InfrastructureType": "EInfrastructureType::Base",
+          "Requirement": 4800,
+          "ModRequirement": 0
+        },
+        {
+          "TechID": "ETechComponentID::Industry",
+          "NextTechID": "ETechComponentID::OccupiedTown",
+          "InfrastructureType": "EInfrastructureType::Town",
+          "Requirement": 100,
+          "ModRequirement": 0
+        },
+        {
+          "TechID": "ETechComponentID::OccupiedTown",
+          "NextTechID": "ETechComponentID::Fortifications",
+          "InfrastructureType": "EInfrastructureType::Town",
+          "Requirement": 3600,
+          "ModRequirement": 0
+        },
+        {
+          "TechID": "ETechComponentID::Fortifications",
+          "NextTechID": "ETechComponentID::None",
+          "InfrastructureType": "EInfrastructureType::Town",
+          "Requirement": 2400,
+          "ModRequirement": 0
+        }
+      ]
+    }
+  }
+]

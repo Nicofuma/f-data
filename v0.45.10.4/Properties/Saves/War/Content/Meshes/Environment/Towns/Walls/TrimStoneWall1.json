@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "TrimStoneWall1",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "TrimStoneWall1",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x4273"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TrimStoneWall1",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant StoneWall1",
+            "ObjectPath": "War/Content/Materials/Environment/Props/StoneWall1.0"
+          },
+          "MaterialSlotName": "WallTop_low0",
+          "ImportedMaterialSlotName": "WallTop_low0",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 839.5586,
+            "LocalUVDensities": 344.29523,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 344.29523,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 200.08075,
+          "Y": 2.2582035,
+          "Z": 0.24100971
+        },
+        "BoxExtent": {
+          "X": 198.52988,
+          "Y": 31.242846,
+          "Z": 15.540476
+        },
+        "SphereRadius": 199.1306
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TrimStoneWall1:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Walls/TrimStoneWall1.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TrimStoneWall1:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Walls/TrimStoneWall1.1"
+    },
+    "LightingGuid": "F1C1F565-4EBA840F-AC63C3AB-33DA9E05",
+    "RenderData": null
+  }
+]

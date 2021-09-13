@@ -1,0 +1,105 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Sacks02",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -2.866787,
+              "Y": 3.7551308,
+              "Z": 26.174252
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Radius": 36.54811,
+            "Length": 46.668976,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Sacks02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 5521,
+        "SizeOnDisk": 5521,
+        "OffsetInFile": "0x3CB4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Sacks02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Sacks",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Sacks.0"
+          },
+          "MaterialSlotName": "Sacks",
+          "ImportedMaterialSlotName": "Sacks",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 355.2704,
+            "LocalUVDensities": 394.83286,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 394.83286,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -2.866787,
+          "Y": 3.7551308,
+          "Z": 39.18877
+        },
+        "BoxExtent": {
+          "X": 41.917725,
+          "Y": 38.55284,
+          "Z": 42.316204
+        },
+        "SphereRadius": 57.386715
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Sacks02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Sacks02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Sacks02:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Sacks02.1"
+    },
+    "LightingGuid": "44E3C40B-4198B61A-AABEE583-2B99298F",
+    "RenderData": null
+  }
+]

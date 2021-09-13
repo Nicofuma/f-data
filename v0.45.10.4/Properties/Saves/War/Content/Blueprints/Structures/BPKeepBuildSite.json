@@ -1,0 +1,410 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "Box",
+    "Outer": "BPKeepBuildSite_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BoxComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPKeepBuildSite_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPKeepBuildSite_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPKeepBuildSite.15"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class KeepBuildSite",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPKeepBuildSite_C:Box",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPKeepBuildSite.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPKeepBuildSite_C:RoofMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPKeepBuildSite.9"
+      },
+      {
+        "ObjectName": "ObjectProperty BPKeepBuildSite_C:KeepMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPKeepBuildSite.8"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPKeepBuildSite_C",
+    "Name": "Default__BPKeepBuildSite_C",
+    "Properties": {
+      "GenericStockpileComponent": {
+        "ObjectName": "GenericItemStockpileComponent Default__BPKeepBuildSite_C:GenericStockpileComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPKeepBuildSite.7"
+      },
+      "ObstructionCheckVolume": {
+        "ObjectName": "BoxComponent Default__BPKeepBuildSite_C:ObstructionCheckVolume",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPKeepBuildSite.5"
+      },
+      "CodeName": "KeepBuildSite",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPKeepBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPKeepBuildSite.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPKeepBuildSite_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPKeepBuildSite.6"
+      },
+      "MaxHealth": 2000,
+      "MapIconType": "EMapIconType::SpecialBase",
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPKeepBuildSite_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPKeepBuildSite.18"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPKeepBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPKeepBuildSite.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPKeepBuildSite_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "Box_GEN_VARIABLE",
+    "Outer": "BPKeepBuildSite_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 390.47604,
+        "Y": 1135.0455,
+        "Z": 540.0
+      },
+      "AreaClass": {
+        "ObjectName": "Class NavArea_Obstacle",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "BlockAllDynamic",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 493.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ObstructionCheckVolume",
+    "Outer": "Default__BPKeepBuildSite_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPKeepBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPKeepBuildSite.3"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPKeepBuildSite_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 1400.0,
+        "Y": 1400.0,
+        "Z": 400.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPKeepBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPKeepBuildSite.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 400.0
+      }
+    }
+  },
+  {
+    "Type": "GenericItemStockpileComponent",
+    "Name": "GenericStockpileComponent",
+    "Outer": "Default__BPKeepBuildSite_C"
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "KeepMesh",
+    "Outer": "BPKeepBuildSite_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "RoofMesh",
+    "Outer": "BPKeepBuildSite_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPKeepBuildSite_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPKeepBuildSite_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPKeepBuildSite.10"
+      },
+      "VariableGuid": "648ADD0B-44A316A8-296FFAB4-6D7AC019",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BoxComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent BPKeepBuildSite_C:Box_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPKeepBuildSite.4"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "CB0365B0-4ADB9CE1-341443A8-831B5AE3",
+      "InternalVariableName": "Box"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPKeepBuildSite_C:KeepMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPKeepBuildSite.16"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "86C507D5-47AD1F33-3AFDD6A5-F58B22DF",
+      "InternalVariableName": "KeepMesh"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPKeepBuildSite_C:RoofMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPKeepBuildSite.17"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "28B5922D-4459DCFB-16BA5EBE-10F6D062",
+      "InternalVariableName": "RoofMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPKeepBuildSite_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPKeepBuildSite_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPKeepBuildSite.13"
+        },
+        {
+          "ObjectName": "SCS_Node BPKeepBuildSite_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPKeepBuildSite.14"
+        },
+        {
+          "ObjectName": "SCS_Node BPKeepBuildSite_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPKeepBuildSite.12"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPKeepBuildSite_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPKeepBuildSite.13"
+        },
+        {
+          "ObjectName": "SCS_Node BPKeepBuildSite_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPKeepBuildSite.14"
+        },
+        {
+          "ObjectName": "SCS_Node BPKeepBuildSite_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPKeepBuildSite.12"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPKeepBuildSite_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPKeepBuildSite.11"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "KeepMesh_GEN_VARIABLE",
+    "Outer": "BPKeepBuildSite_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh BulwarkKeep",
+        "ObjectPath": "War/Content/Meshes/Environment/Props/BulwarkKeep.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material BuildSite",
+          "ObjectPath": "War/Content/Materials/Structures/BuildSite.0"
+        },
+        {
+          "ObjectName": "Material BuildSite",
+          "ObjectPath": "War/Content/Materials/Structures/BuildSite.0"
+        },
+        {
+          "ObjectName": "Material BuildSite",
+          "ObjectPath": "War/Content/Materials/Structures/BuildSite.0"
+        },
+        {
+          "ObjectName": "Material BuildSite",
+          "ObjectPath": "War/Content/Materials/Structures/BuildSite.0"
+        }
+      ],
+      "CanCharacterStepUpOn": "ECB_No",
+      "BodyInstance": {
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        },
+        "MassInKgOverride": 8801.928
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "RoofMesh_GEN_VARIABLE",
+    "Outer": "BPKeepBuildSite_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh BulwarkKeepRoof",
+        "ObjectPath": "War/Content/Meshes/Environment/Props/BulwarkKeepRoof.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material BuildSite",
+          "ObjectPath": "War/Content/Materials/Structures/BuildSite.0"
+        },
+        {
+          "ObjectName": "Material BuildSite",
+          "ObjectPath": "War/Content/Materials/Structures/BuildSite.0"
+        },
+        {
+          "ObjectName": "Material BuildSite",
+          "ObjectPath": "War/Content/Materials/Structures/BuildSite.0"
+        },
+        {
+          "ObjectName": "Material BuildSite",
+          "ObjectPath": "War/Content/Materials/Structures/BuildSite.0"
+        }
+      ],
+      "CanCharacterStepUpOn": "ECB_No",
+      "BodyInstance": {
+        "CollisionProfileName": "StructureDamageableSeeThroughMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapDowncast",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPKeepBuildSite_C"
+  }
+]

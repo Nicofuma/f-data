@@ -1,0 +1,310 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "CursedTrail",
+    "Outer": "BPZombieGrenade_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class ParticleSystemComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPZombieGrenade_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPZombieGrenade_C:SimpleConstructionScript_1",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieGrenade.12"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class WarProjectile",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPZombieGrenade_C:CursedTrail",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieGrenade.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPZombieGrenade_C:GrenadeMesh",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieGrenade.4"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPZombieGrenade_C",
+    "Name": "Default__BPZombieGrenade_C",
+    "Properties": {
+      "MovementComp": {
+        "ObjectName": "ProjectileMovementComponent Default__BPZombieGrenade_C:ProjectileComp",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieGrenade.7"
+      },
+      "CollisionComp": {
+        "ObjectName": "SphereComponent Default__BPZombieGrenade_C:SphereComp",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieGrenade.13"
+      },
+      "ParticleComp": {
+        "ObjectName": "ParticleSystemComponent Default__BPZombieGrenade_C:ParticleComp",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieGrenade.6"
+      },
+      "LoopingAudio": {
+        "ObjectName": "AudioComponent Default__BPZombieGrenade_C:LoopingAudio",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieGrenade.3"
+      },
+      "ExplosionTemplate": {
+        "ObjectName": "BlueprintGeneratedClass BPZombieGrenadeExplosion_C",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieGrenadeExplosion.1"
+      },
+      "ExplosiveCodeName": "ZombieGrenade",
+      "bProjectImpactDownward": true,
+      "RootComponent": {
+        "ObjectName": "SphereComponent Default__BPZombieGrenade_C:SphereComp",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieGrenade.13"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "LoopingAudio",
+    "Outer": "Default__BPZombieGrenade_C",
+    "Properties": {
+      "AttenuationSettings": {
+        "ObjectName": "SoundAttenuation RocketFoley",
+        "ObjectPath": "War/Content/Audio/Attenuations/RocketFoley.0"
+      },
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__BPZombieGrenade_C:SphereComp",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieGrenade.13"
+      }
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "GrenadeMesh",
+    "Outer": "BPZombieGrenade_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "CursedTrail_GEN_VARIABLE",
+    "Outer": "BPZombieGrenade_C",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem CursedProjectileTrail",
+        "ObjectPath": "War/Content/FX/CursedProjectileTrail.13"
+      },
+      "bAllowRecycling": true,
+      "RelativeLocation": {
+        "X": 18.652588,
+        "Y": 0.0,
+        "Z": 2.104433
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ParticleComp",
+    "Outer": "Default__BPZombieGrenade_C",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem BloodTrail01",
+        "ObjectPath": "War/Content/FX/BloodTrail01.27"
+      },
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__BPZombieGrenade_C:SphereComp",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieGrenade.13"
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "ProjectileMovementComponent",
+    "Name": "ProjectileComp",
+    "Outer": "Default__BPZombieGrenade_C",
+    "Properties": {
+      "bInitialVelocityInLocalSpace": false,
+      "ProjectileGravityScale": 1.0,
+      "Bounciness": 0.08,
+      "Friction": 0.55,
+      "BounceVelocityStopSimulatingThreshold": 8.0,
+      "PlaneConstraintNormal": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 1.0
+      },
+      "PlaneConstraintAxisSetting": "EPlaneConstraintAxisSetting::Z"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPZombieGrenade_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_1",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class ParticleSystemComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ParticleSystemComponent BPZombieGrenade_C:CursedTrail_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieGrenade.5"
+      },
+      "ParentComponentOrVariableName": "SphereComp",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "5ECB414B-4CDEBC55-262D20B7-F48CEE05",
+      "InternalVariableName": "CursedTrail"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_1",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPZombieGrenade_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieGrenade.8"
+      },
+      "VariableGuid": "60C0D2B2-43DECD9A-7802A387-8BC73070",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_1",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPZombieGrenade_C:GrenadeMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieGrenade.14"
+      },
+      "ParentComponentOrVariableName": "SphereComp",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "19B9FC7C-4845E3DF-F831E79A-18405624",
+      "InternalVariableName": "GrenadeMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_1",
+    "Outer": "BPZombieGrenade_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPZombieGrenade_C:SimpleConstructionScript_1.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Items/BPZombieGrenade.11"
+        },
+        {
+          "ObjectName": "SCS_Node BPZombieGrenade_C:SimpleConstructionScript_1.SCS_Node_0",
+          "ObjectPath": "War/Content/Blueprints/Items/BPZombieGrenade.9"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPZombieGrenade_C:SimpleConstructionScript_1.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Items/BPZombieGrenade.11"
+        },
+        {
+          "ObjectName": "SCS_Node BPZombieGrenade_C:SimpleConstructionScript_1.SCS_Node_0",
+          "ObjectPath": "War/Content/Blueprints/Items/BPZombieGrenade.9"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPZombieGrenade_C:SimpleConstructionScript_1.SCS_Node_1",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieGrenade.10"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "SphereComp",
+    "Outer": "Default__BPZombieGrenade_C",
+    "Properties": {
+      "SphereRadius": 10.0,
+      "BodyInstance": {
+        "MassInKgOverride": 2.9279141
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "GrenadeMesh_GEN_VARIABLE",
+    "Outer": "BPZombieGrenade_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh BloodBall",
+        "ObjectPath": "War/Content/FX/Mesh/DeadHarvest/BloodBall.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material BloodBall",
+          "ObjectPath": "War/Content/FX/Materials/BloodBall.0"
+        }
+      ],
+      "bReceivesDecals": false,
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "MassInKgOverride": 2.9279146
+      },
+      "RelativeLocation": {
+        "X": -60.306797,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 90.0
+      },
+      "RelativeScale3D": {
+        "X": 1.1,
+        "Y": 1.1,
+        "Z": 2.0
+      }
+    }
+  }
+]

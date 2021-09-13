@@ -1,0 +1,139 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ConcreteWall",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.29248047,
+              "Y": 1.2858124,
+              "Z": 136.72012
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 1200.2241,
+            "Y": 158.2617,
+            "Z": 963.4703,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex",
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "ConcreteWall",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0xE8F"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ConcreteWall",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ConcreteWall",
+            "ObjectPath": "War/Content/Materials/Environment/Props/ConcreteWall.0"
+          },
+          "MaterialSlotName": "Material #132",
+          "ImportedMaterialSlotName": "Material #132",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1016.1204,
+            "LocalUVDensities": 2932.6128,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BarbedWireStraight",
+            "ObjectPath": "War/Content/Materials/Environment/BarbedWireStraight.0"
+          },
+          "MaterialSlotName": "Material #117",
+          "ImportedMaterialSlotName": "Material #117",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 114.077805,
+            "LocalUVDensities": 2913.5237,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RepeatingMetalRust",
+            "ObjectPath": "War/Content/Materials/Resources/RepeatingMetalRust.0"
+          },
+          "MaterialSlotName": "Material #161",
+          "ImportedMaterialSlotName": "Material #161",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 72.7317,
+            "LocalUVDensities": 2929.0164,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 2931.7861,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.29248047,
+          "Y": 1.2858124,
+          "Z": 136.72012
+        },
+        "BoxExtent": {
+          "X": 600.11206,
+          "Y": 79.13085,
+          "Z": 481.73514
+        },
+        "SphereRadius": 770.1895
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ConcreteWall:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ConcreteWall.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ConcreteWall:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ConcreteWall.1"
+    },
+    "LightingGuid": "BB5296D9-465066E8-C1B27282-78433AD6",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,115 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "GarrisonStationRadioStation",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "GarrisonStationRadioStation",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x15F8B"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "GarrisonStationRadioStation",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant GarrisonStationUpgrade",
+            "ObjectPath": "War/Content/Materials/Environment/Props/GarrisonStationUpgrade.0"
+          },
+          "MaterialSlotName": "UniqueParts",
+          "ImportedMaterialSlotName": "SafeHouse",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 808.4859,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant DocumentsMaps",
+            "ObjectPath": "War/Content/Materials/Environment/Props/DocumentsMaps.0"
+          },
+          "MaterialSlotName": "Paper",
+          "ImportedMaterialSlotName": "UniqueParts",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 146.24828,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant GarrisonStationTrims",
+            "ObjectPath": "War/Content/Materials/Environment/Props/GarrisonStationTrims.0"
+          },
+          "MaterialSlotName": "TillingMetal",
+          "ImportedMaterialSlotName": "Paper",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1067.2615,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 883.71533,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1089.9537,
+          "Y": 108.77528,
+          "Z": 245.863
+        },
+        "BoxExtent": {
+          "X": 430.4802,
+          "Y": 158.20265,
+          "Z": 133.14714
+        },
+        "SphereRadius": 458.58026
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup GarrisonStationRadioStation:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/GarrisonStationRadioStation.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision GarrisonStationRadioStation:NavCollision_4",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/GarrisonStationRadioStation.1"
+    },
+    "LightingGuid": "D86F6866-499F67FF-59A908BC-D45D2E9B",
+    "RenderData": null
+  }
+]

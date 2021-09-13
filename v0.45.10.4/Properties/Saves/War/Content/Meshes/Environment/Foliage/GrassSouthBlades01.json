@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "GrassSouthBlades01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "GrassSouthBlades01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xE6E"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "GrassSouthBlades01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant GrassSouthBlades01",
+            "ObjectPath": "War/Content/Materials/Environment/GrassSouthBlades01.0"
+          },
+          "MaterialSlotName": "Material #26",
+          "ImportedMaterialSlotName": "Material #26",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 87.921936,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 87.921936,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 7.6293945E-06,
+          "Z": 31.20696
+        },
+        "BoxExtent": {
+          "X": 112.15322,
+          "Y": 96.11946,
+          "Z": 31.479372
+        },
+        "SphereRadius": 124.95741
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup GrassSouthBlades01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/GrassSouthBlades01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision GrassSouthBlades01:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/GrassSouthBlades01.1"
+    },
+    "LightingGuid": "FC617FB9-4CEEF299-EE6DE699-B153F3CD",
+    "RenderData": null
+  }
+]

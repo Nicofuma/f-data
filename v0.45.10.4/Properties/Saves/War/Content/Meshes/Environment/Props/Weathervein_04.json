@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Weathervein_04",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_49",
+    "Outer": "Weathervein_04",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x127D"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Weathervein_04",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Weathervein",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Weathervein.0"
+          },
+          "MaterialSlotName": "Material #26",
+          "ImportedMaterialSlotName": "Material #26",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 158.75267,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 158.75267,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.6637917,
+          "Y": 15.831814,
+          "Z": 75.1972
+        },
+        "BoxExtent": {
+          "X": 50.57474,
+          "Y": 56.70637,
+          "Z": 75.57756
+        },
+        "SphereRadius": 78.181274
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Weathervein_04:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Weathervein_04.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Weathervein_04:NavCollision_49",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Weathervein_04.1"
+    },
+    "LightingGuid": "7A4F4CFC-4F6498E5-F4DE0989-8E5C321A",
+    "RenderData": null
+  }
+]

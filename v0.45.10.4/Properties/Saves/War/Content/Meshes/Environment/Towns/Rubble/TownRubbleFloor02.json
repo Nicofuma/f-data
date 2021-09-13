@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "TownRubbleFloor02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "TownRubbleFloor02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x351C"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TownRubbleFloor02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownWoodFloor01",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownWoodFloor01.0"
+          },
+          "MaterialSlotName": "Floor",
+          "ImportedMaterialSlotName": "Floor",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 285.17377,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 285.17377,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 248.97339,
+          "Y": -3.348465,
+          "Z": -40.02716
+        },
+        "BoxExtent": {
+          "X": 244.83127,
+          "Y": 167.54695,
+          "Z": 74.17322
+        },
+        "SphereRadius": 290.02917
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TownRubbleFloor02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Rubble/TownRubbleFloor02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TownRubbleFloor02:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Rubble/TownRubbleFloor02.1"
+    },
+    "LightingGuid": "02B4BA64-4971D74D-082ADFA2-2F6861E6",
+    "RenderData": null
+  }
+]

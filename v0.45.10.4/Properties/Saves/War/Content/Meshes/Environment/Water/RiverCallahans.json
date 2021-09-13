@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "RiverCallahans",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "RiverCallahans",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x7C15"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "RiverCallahans",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "Engine/Content/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "Material #26",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 43697.535,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 43697.535,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -41078.5,
+          "Y": -14124.723,
+          "Z": 576.10614
+        },
+        "BoxExtent": {
+          "X": 66840.52,
+          "Y": 35454.105,
+          "Z": 0.0
+        },
+        "SphereRadius": 72964.98
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup RiverCallahans:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Water/RiverCallahans.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision RiverCallahans:NavCollision_4",
+      "ObjectPath": "War/Content/Meshes/Environment/Water/RiverCallahans.1"
+    },
+    "LightingGuid": "B4BA8619-4D415C6B-60BFADAE-91D75546",
+    "RenderData": null
+  }
+]

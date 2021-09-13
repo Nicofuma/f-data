@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "PumpkinPlant01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_9",
+    "Outer": "PumpkinPlant01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x24F1"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "PumpkinPlant01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant GourdPlant",
+            "ObjectPath": "War/Content/Materials/Environment/GourdPlant.0"
+          },
+          "MaterialSlotName": "Material #26",
+          "ImportedMaterialSlotName": "Material #26",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 107.18337,
+            "LocalUVDensities": 347.7387,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 347.7387,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -6.8059387,
+          "Y": 1.6690292,
+          "Z": 67.58721
+        },
+        "BoxExtent": {
+          "X": 122.23941,
+          "Y": 121.3246,
+          "Z": 88.46463
+        },
+        "SphereRadius": 144.10785
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup PumpkinPlant01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/PumpkinPlant01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision PumpkinPlant01:NavCollision_9",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/PumpkinPlant01.1"
+    },
+    "LightingGuid": "DB1D83FD-42A3FA11-46EB4C82-9143623E",
+    "RenderData": null
+  }
+]

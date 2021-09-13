@@ -1,0 +1,394 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "BarbedWire",
+    "Outer": "BPBarbedWire_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BarbedWireComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPBarbedWire_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPBarbedWire_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWire.14"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class BarbedWire",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPBarbedWire_C:BarbedWire",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWire.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPBarbedWire_C:RepairBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWire.7"
+      },
+      {
+        "ObjectName": "ObjectProperty BPBarbedWire_C:StaticMesh1",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWire.8"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPBarbedWire_C",
+    "Name": "Default__BPBarbedWire_C",
+    "Properties": {
+      "BuildGhostClass": {
+        "ObjectName": "BlueprintGeneratedClass BPBarbedWireGhost_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWireGhost.1"
+      },
+      "BuildSiteClass": {
+        "ObjectName": "BlueprintGeneratedClass BPBarbedWireBuildSite_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWireBuildSite.1"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "DBBE7F954D690509270873AF99A916CB",
+        "SourceString": "Used to slow down enemy infantry movement. Can be dismantled with a Wrench."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D BarbedWireStructureIcon",
+        "ObjectPath": "War/Content/Textures/UI/StructureIcons/BarbedWireStructureIcon.0"
+      },
+      "BuildLocationType": "EBuildLocationType::Anywhere",
+      "CodeName": "BarbedWire",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "899CC4794F225D867A05BCB9B6E2D7D0",
+        "SourceString": "Barbed Wire"
+      },
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPBarbedWire_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWire.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPBarbedWire_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWire.6"
+      },
+      "MaxHealth": 400,
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPBarbedWire_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWire.16"
+      },
+      "bCanBeDamaged": false,
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPBarbedWire_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWire.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPBarbedWire_C"
+  },
+  {
+    "Type": "BarbedWireComponent",
+    "Name": "BarbedWire_GEN_VARIABLE",
+    "Outer": "BPBarbedWire_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 370.0,
+        "Y": 100.0,
+        "Z": 48.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "RepairBox_GEN_VARIABLE",
+    "Outer": "BPBarbedWire_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 350.0,
+        "Y": 146.80905,
+        "Z": 128.0
+      },
+      "AreaClass": {
+        "ObjectName": "Class NavArea_Obstacle",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "CanCharacterStepUpOn": "ECB_No",
+      "BodyInstance": {
+        "CollisionProfileName": "BlockOnlyWork",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapDowncast",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Projectile",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 72.24454
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPBarbedWire_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 458.76843,
+        "Y": 286.66843,
+        "Z": 100.88762
+      },
+      "bGenerateOverlapEvents": false,
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPBarbedWire_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWire.3"
+      },
+      "RelativeLocation": {
+        "X": -6.1035156E-05,
+        "Y": 1.4084167,
+        "Z": 53.999847
+      },
+      "RelativeScale3D": {
+        "X": 1.0,
+        "Y": 0.7,
+        "Z": 1.0
+      }
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "RepairBox",
+    "Outer": "BPBarbedWire_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BoxComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "StaticMesh1",
+    "Outer": "BPBarbedWire_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPBarbedWire_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPBarbedWire_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWire.9"
+      },
+      "VariableGuid": "1144E758-45F21128-659C63A0-98B6F24C",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BarbedWireComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BarbedWireComponent BPBarbedWire_C:BarbedWire_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWire.4"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "11D3E97E-48B2D1A5-C884C987-F87C28B1",
+      "InternalVariableName": "BarbedWire"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BoxComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent BPBarbedWire_C:RepairBox_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWire.5"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "85B3570F-4D030376-1B201982-F6DDBAA2",
+      "InternalVariableName": "RepairBox"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPBarbedWire_C:StaticMesh1_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWire.15"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "59EB8A26-4BB4EBC5-250855BF-C2D592D6",
+      "InternalVariableName": "StaticMesh1"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPBarbedWire_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPBarbedWire_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWire.13"
+        },
+        {
+          "ObjectName": "SCS_Node BPBarbedWire_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWire.12"
+        },
+        {
+          "ObjectName": "SCS_Node BPBarbedWire_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWire.11"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPBarbedWire_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWire.13"
+        },
+        {
+          "ObjectName": "SCS_Node BPBarbedWire_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWire.12"
+        },
+        {
+          "ObjectName": "SCS_Node BPBarbedWire_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWire.11"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPBarbedWire_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPBarbedWire.10"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh1_GEN_VARIABLE",
+    "Outer": "BPBarbedWire_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh BarbedWire",
+        "ObjectPath": "War/Content/Meshes/Environment/Props/BarbedWire.2"
+      },
+      "bGenerateOverlapEvents": false,
+      "bReceivesDecals": false,
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -380.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "ComponentTags": [
+        "Multiplexed1"
+      ]
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPBarbedWire_C"
+  }
+]

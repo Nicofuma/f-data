@@ -1,0 +1,106 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_2",
+    "Outer": "CrudeOIl",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -0.90795517,
+              "Y": -0.5675087,
+              "Z": 61.995434
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 49.239464,
+            "Y": 59.638824,
+            "Z": 123.781044,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "CrudeOIl",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x4369"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "CrudeOIl",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant CrudeOil",
+            "ObjectPath": "War/Content/Materials/Environment/Props/CrudeOil.0"
+          },
+          "MaterialSlotName": "Barrels",
+          "ImportedMaterialSlotName": "Material #113",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 521.13934,
+            "LocalUVDensities": 238.11223,
+            "LocalUVDensities": 234.06302,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 234.06302,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 2,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.90795517,
+          "Y": -0.5675087,
+          "Z": 61.995434
+        },
+        "BoxExtent": {
+          "X": 40.610443,
+          "Y": 40.584152,
+          "Z": 61.890522
+        },
+        "SphereRadius": 73.30699
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup CrudeOIl:BodySetup_2",
+      "ObjectPath": "War/Content/Meshes/Pickups/CrudeOIl.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision CrudeOIl:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Pickups/CrudeOIl.1"
+    },
+    "LightingGuid": "5A04EA90-48F4BDDD-118154A7-10430E8D",
+    "RenderData": null
+  }
+]

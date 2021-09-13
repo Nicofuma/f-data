@@ -1,0 +1,266 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_5241",
+    "Outer": "Stairs04",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": 447.8256,
+                "Y": -103.6697,
+                "Z": 6.3479385E-15
+              },
+              {
+                "X": -449.90268,
+                "Y": -103.6697,
+                "Z": 6.3479385E-15
+              },
+              {
+                "X": -449.90268,
+                "Y": -103.6697,
+                "Z": 148.11005
+              },
+              {
+                "X": 447.8256,
+                "Y": -103.6697,
+                "Z": 148.11005
+              },
+              {
+                "X": 447.8256,
+                "Y": -33.83026,
+                "Z": 2.071506E-15
+              },
+              {
+                "X": -449.90268,
+                "Y": -33.83026,
+                "Z": 2.071506E-15
+              },
+              {
+                "X": -449.90268,
+                "Y": -33.83026,
+                "Z": 148.11005
+              },
+              {
+                "X": 447.8256,
+                "Y": -33.83026,
+                "Z": 148.11005
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -449.90268,
+                "Y": -103.6697,
+                "Z": 2.071506E-15
+              },
+              "Max": {
+                "X": 447.8256,
+                "Y": -33.83026,
+                "Z": 148.11005
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "VertexData": [
+              {
+                "X": -449.90268,
+                "Y": 97.28303,
+                "Z": -5.9568676E-15
+              },
+              {
+                "X": 447.8256,
+                "Y": 97.28303,
+                "Z": -5.9568676E-15
+              },
+              {
+                "X": -449.90268,
+                "Y": -31.60839,
+                "Z": 1.9354557E-15
+              },
+              {
+                "X": 447.8256,
+                "Y": -31.60839,
+                "Z": 1.9354557E-15
+              },
+              {
+                "X": -449.90268,
+                "Y": 97.28303,
+                "Z": 55.388977
+              },
+              {
+                "X": 447.8256,
+                "Y": 97.28303,
+                "Z": 55.388977
+              },
+              {
+                "X": -449.90268,
+                "Y": -31.60839,
+                "Z": 148.11005
+              },
+              {
+                "X": 447.8256,
+                "Y": -31.60839,
+                "Z": 148.11005
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -449.90268,
+                "Y": -31.60839,
+                "Z": -5.9568676E-15
+              },
+              "Max": {
+                "X": 447.8256,
+                "Y": 97.28303,
+                "Z": 148.11005
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Stairs04",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 893,
+        "SizeOnDisk": 893,
+        "OffsetInFile": "0xC5D8"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Stairs04",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BrickSingle02",
+            "ObjectPath": "War/Content/Materials/Environment/BrickSingle02.0"
+          },
+          "MaterialSlotName": "BrickSingle02",
+          "ImportedMaterialSlotName": "BrickSingle02",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 811.4228,
+            "LocalUVDensities": 1201.2728,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BricksWorn",
+            "ObjectPath": "War/Content/Materials/Environment/BricksWorn.0"
+          },
+          "MaterialSlotName": "BricksWorn",
+          "ImportedMaterialSlotName": "BricksWorn",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 626.3817,
+            "LocalUVDensities": 1197.4935,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1201.1091,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -0.24809265,
+          "Z": 75.40099
+        },
+        "BoxExtent": {
+          "X": 447.2438,
+          "Y": 105.37598,
+          "Z": 72.6073
+        },
+        "SphereRadius": 462.10812
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Stairs04:BodySetup_5241",
+      "ObjectPath": "War/Content/Meshes/Environment/Base/Stairs04.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Stairs04:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Base/Stairs04.1"
+    },
+    "LightingGuid": "0AB23C84-472D0265-57EBFC84-FAB43238",
+    "RenderData": null
+  }
+]

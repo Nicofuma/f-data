@@ -1,0 +1,111 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "FirstAidKitPickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript FirstAidKitPickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/FirstAidKitPickup.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class GearPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "FirstAidKitPickup_C",
+    "Name": "Default__FirstAidKitPickup_C",
+    "Properties": {
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass FirstAidKitComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Items/FirstAidKitComponent.0"
+      },
+      "Encumbrance": 50,
+      "CodeName": "FirstAidKit",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "F9B540CD4BC1D59245B7E691EEFE85B3",
+        "SourceString": "First Aid Kit"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "5DD8ADCB4CB3A226F190A1AA1DB58A1F",
+        "SourceString": "Used by medics to heal other soldiers."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D FirstAidKitItem",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/FirstAidKitItem.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Tertiary",
+      "ItemCategory": "EItemCategory::Medical",
+      "ItemProfileType": "EItemProfileType::Tool",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__FirstAidKitPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/FirstAidKitPickup.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__FirstAidKitPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/FirstAidKitPickup.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__FirstAidKitPickup_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "FirstAidKitPickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent FirstAidKitPickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/FirstAidKitPickup.3"
+      },
+      "VariableGuid": "D053F36C-4A0A5018-14EE5AA1-146C232E",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "FirstAidKitPickup_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node FirstAidKitPickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/FirstAidKitPickup.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__FirstAidKitPickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__FirstAidKitPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/FirstAidKitPickup.2"
+      }
+    }
+  }
+]

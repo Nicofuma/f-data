@@ -1,0 +1,111 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Brick1b",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 1.2835121,
+              "Y": -0.7241497,
+              "Z": 15.523133
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 97.78733,
+            "Y": 53.508884,
+            "Z": 28.393944,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_6",
+    "Outer": "Brick1b",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x1BAC"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Brick1b",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant StoneWall1",
+            "ObjectPath": "War/Content/Materials/Environment/Props/StoneWall1.0"
+          },
+          "MaterialSlotName": "PillarDamaged1_low0",
+          "ImportedMaterialSlotName": "WallTop_low0",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 842.5453,
+            "LocalUVDensities": 162.72157,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 162.72157,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.2835121,
+          "Y": -0.7241497,
+          "Z": 15.523133
+        },
+        "BoxExtent": {
+          "X": 48.893665,
+          "Y": 26.754442,
+          "Z": 14.196972
+        },
+        "SphereRadius": 55.13274
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Brick1b:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Walls/Brick1b.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Brick1b:NavCollision_6",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Walls/Brick1b.1"
+    },
+    "LightingGuid": "B388B65F-435708BE-CE8FD6A3-F075BF8A",
+    "RenderData": null
+  }
+]

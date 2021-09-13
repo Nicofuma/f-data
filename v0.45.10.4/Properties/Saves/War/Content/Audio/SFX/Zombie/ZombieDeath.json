@@ -1,0 +1,43 @@
+[
+  {
+    "Type": "SoundCue",
+    "Name": "ZombieDeath",
+    "Properties": {
+      "FirstNode": {
+        "ObjectName": "SoundNodeModulator ZombieDeath:SoundNodeModulator_0",
+        "ObjectPath": "War/Content/Audio/SFX/Zombie/ZombieDeath.1"
+      },
+      "VolumeMultiplier": 1.0,
+      "Duration": 1.510567,
+      "MaxDistance": 11400.0,
+      "AttenuationSettings": {
+        "ObjectName": "SoundAttenuation SmallArms",
+        "ObjectPath": "War/Content/Audio/Attenuations/SmallArms.0"
+      }
+    }
+  },
+  {
+    "Type": "SoundNodeModulator",
+    "Name": "SoundNodeModulator_0",
+    "Outer": "ZombieDeath",
+    "Properties": {
+      "ChildNodes": [
+        {
+          "ObjectName": "SoundNodeWavePlayer ZombieDeath:SoundNodeWavePlayer_0",
+          "ObjectPath": "War/Content/Audio/SFX/Zombie/ZombieDeath.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SoundNodeWavePlayer",
+    "Name": "SoundNodeWavePlayer_0",
+    "Outer": "ZombieDeath",
+    "Properties": {
+      "SoundWaveAssetPtr": {
+        "AssetPathName": "/Game/Audio/SFX/Zombie/ZombieGurgle.ZombieGurgle",
+        "SubPathString": ""
+      }
+    }
+  }
+]

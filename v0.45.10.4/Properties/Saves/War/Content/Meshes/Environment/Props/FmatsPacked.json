@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FmatsPacked",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "FmatsPacked",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x9DD4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FmatsPacked",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RefinedFuel",
+            "ObjectPath": "War/Content/Materials/Resources/RefinedFuel.0"
+          },
+          "MaterialSlotName": "RefinedFuel",
+          "ImportedMaterialSlotName": "RefinedFuel",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 165.89786,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 165.89786,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -21.635483,
+          "Y": -114.25412,
+          "Z": 131.07486
+        },
+        "BoxExtent": {
+          "X": 66.99773,
+          "Y": 108.43306,
+          "Z": 50.932716
+        },
+        "SphereRadius": 121.01614
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FmatsPacked:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FmatsPacked.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FmatsPacked:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FmatsPacked.1"
+    },
+    "LightingGuid": "666592C0-4E6EA55F-36EB4F8E-4B0C787E",
+    "RenderData": null
+  }
+]

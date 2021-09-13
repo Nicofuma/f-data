@@ -1,0 +1,99 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "IModDishwasher01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "IModDishwasher01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x760F"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "IModDishwasher01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortIModKitchen",
+            "ObjectPath": "War/Content/Materials/Structures/FortIModKitchen.0"
+          },
+          "MaterialSlotName": "Kitchen",
+          "ImportedMaterialSlotName": "Kitchen",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 803.47565,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BasicWater_DirtyPond",
+            "ObjectPath": "War/Content/Materials/BasicWater_DirtyPond.0"
+          },
+          "MaterialSlotName": "Dirt Water",
+          "ImportedMaterialSlotName": "Dirt Water",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 799.2832,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 803.2667,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.5405807,
+          "Y": -12.974419,
+          "Z": 83.74463
+        },
+        "BoxExtent": {
+          "X": 38.571957,
+          "Y": 51.91787,
+          "Z": 80.9801
+        },
+        "SphereRadius": 95.608734
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup IModDishwasher01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/IModDishwasher01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision IModDishwasher01:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/IModDishwasher01.1"
+    },
+    "LightingGuid": "71464810-48D6B246-4AB0E6B4-4F8D155A",
+    "RenderData": null
+  }
+]

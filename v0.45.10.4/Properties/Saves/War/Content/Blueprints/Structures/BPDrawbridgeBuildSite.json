@@ -1,0 +1,868 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "VehicleBlocking",
+    "Outer": "BPDrawbridgeBuildSite_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BoxComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPDrawbridgeBuildSite_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPDrawbridgeBuildSite_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.32"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class DrawbridgeBuildSite",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPDrawbridgeBuildSite_C:VehicleBlocking",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPDrawbridgeBuildSite_C:VehicleBlocking2",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.18"
+      },
+      {
+        "ObjectName": "ObjectProperty BPDrawbridgeBuildSite_C:PawnCheckVolume",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.15"
+      },
+      {
+        "ObjectName": "ObjectProperty BPDrawbridgeBuildSite_C:ReferenceB",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.17"
+      },
+      {
+        "ObjectName": "ObjectProperty BPDrawbridgeBuildSite_C:CollisionB",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.14"
+      },
+      {
+        "ObjectName": "ObjectProperty BPDrawbridgeBuildSite_C:BridgeScaffoldB",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.12"
+      },
+      {
+        "ObjectName": "ObjectProperty BPDrawbridgeBuildSite_C:ReferenceA",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.16"
+      },
+      {
+        "ObjectName": "ObjectProperty BPDrawbridgeBuildSite_C:BridgeScaffoldA",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.11"
+      },
+      {
+        "ObjectName": "ObjectProperty BPDrawbridgeBuildSite_C:CollisionA",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.13"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPDrawbridgeBuildSite_C",
+    "Name": "Default__BPDrawbridgeBuildSite_C",
+    "Properties": {
+      "SideAProxy": {
+        "ObjectName": "PersistentProxyComponent Default__BPDrawbridgeBuildSite_C:SideAProxy",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.19"
+      },
+      "SideBProxy": {
+        "ObjectName": "PersistentProxyComponent Default__BPDrawbridgeBuildSite_C:SideBProxy",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.20"
+      },
+      "ObstructionCheckVolume": {
+        "ObjectName": "BoxComponent Default__BPDrawbridgeBuildSite_C:ObstructionCheckVolume",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.9"
+      },
+      "CodeName": "DrawbridgeBuildSite",
+      "ArmourType": "EArmourType::HeavyBuildSite",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPDrawbridgeBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPDrawbridgeBuildSite_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.10"
+      },
+      "Health": 0,
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPDrawbridgeBuildSite_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.37"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPDrawbridgeBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPDrawbridgeBuildSite_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "CollisionA_GEN_VARIABLE",
+    "Outer": "BPDrawbridgeBuildSite_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 430.0,
+        "Y": 45.0,
+        "Z": 200.0
+      },
+      "AreaClass": {
+        "ObjectName": "Class NavArea_Obstacle",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "CanCharacterStepUpOn": "ECB_No",
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "BlockAllDynamic",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 1038.0,
+        "Z": -30.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "CollisionB_GEN_VARIABLE",
+    "Outer": "BPDrawbridgeBuildSite_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 430.0,
+        "Y": 45.0,
+        "Z": 200.0
+      },
+      "AreaClass": {
+        "ObjectName": "Class NavArea_Obstacle",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "CanCharacterStepUpOn": "ECB_No",
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "BlockAllDynamic",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": -1038.0,
+        "Z": -30.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "PawnCheckVolume_GEN_VARIABLE",
+    "Outer": "BPDrawbridgeBuildSite_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 500.0,
+        "Y": 975.0,
+        "Z": 500.0
+      },
+      "AreaClass": {
+        "ObjectName": "Class NavArea_Obstacle",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bGenerateOverlapEvents": false,
+      "CanCharacterStepUpOn": "ECB_No",
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -250.0
+      },
+      "ComponentTags": [
+        "PawnCheckVolume"
+      ]
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "VehicleBlocking2_GEN_VARIABLE",
+    "Outer": "BPDrawbridgeBuildSite_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 40.0,
+        "Y": 1000.0,
+        "Z": 512.0
+      },
+      "AreaClass": {
+        "ObjectName": "Class NavArea_Obstacle",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "BlockOnlyVehicle",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapDowncast",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Projectile",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -400.0,
+        "Y": 0.0,
+        "Z": -700.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "VehicleBlocking_GEN_VARIABLE",
+    "Outer": "BPDrawbridgeBuildSite_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 40.0,
+        "Y": 1000.0,
+        "Z": 512.0
+      },
+      "AreaClass": {
+        "ObjectName": "Class NavArea_Obstacle",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "BlockOnlyVehicle",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapDowncast",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Projectile",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 400.0,
+        "Y": 0.0,
+        "Z": -700.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ObstructionCheckVolume",
+    "Outer": "Default__BPDrawbridgeBuildSite_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 500.0,
+        "Y": 962.5,
+        "Z": 512.5
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPDrawbridgeBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -500.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPDrawbridgeBuildSite_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPDrawbridgeBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.3"
+      }
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "BridgeScaffoldA",
+    "Outer": "BPDrawbridgeBuildSite_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "BridgeScaffoldB",
+    "Outer": "BPDrawbridgeBuildSite_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CollisionA",
+    "Outer": "BPDrawbridgeBuildSite_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BoxComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CollisionB",
+    "Outer": "BPDrawbridgeBuildSite_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BoxComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "PawnCheckVolume",
+    "Outer": "BPDrawbridgeBuildSite_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BoxComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "ReferenceA",
+    "Outer": "BPDrawbridgeBuildSite_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "ReferenceB",
+    "Outer": "BPDrawbridgeBuildSite_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "VehicleBlocking2",
+    "Outer": "BPDrawbridgeBuildSite_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BoxComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "PersistentProxyComponent",
+    "Name": "SideAProxy",
+    "Outer": "Default__BPDrawbridgeBuildSite_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPDrawbridgeBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.3"
+      }
+    }
+  },
+  {
+    "Type": "PersistentProxyComponent",
+    "Name": "SideBProxy",
+    "Outer": "Default__BPDrawbridgeBuildSite_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPDrawbridgeBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.3"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPDrawbridgeBuildSite_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPDrawbridgeBuildSite_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.21"
+      },
+      "VariableGuid": "9F0F82E2-48A06A94-CF3C729E-CBE544C8",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPDrawbridgeBuildSite_C:BridgeScaffoldB_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.34"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "37B9C1B2-48D0BCB3-71D628AF-B58C8DA4",
+      "InternalVariableName": "BridgeScaffoldB"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BoxComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent BPDrawbridgeBuildSite_C:VehicleBlocking2_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.7"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "D587EBA1-4C62574D-204C239D-294DC8A4",
+      "InternalVariableName": "VehicleBlocking2"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPDrawbridgeBuildSite_C:BridgeScaffoldA_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.33"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "9D7C6A55-43B57BCD-96A23D8D-E08B9D2D",
+      "InternalVariableName": "BridgeScaffoldA"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPDrawbridgeBuildSite_C:ReferenceA_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.35"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "27BAD245-43C56D3F-5015FD98-EEB8C828",
+      "InternalVariableName": "ReferenceA"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BoxComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent BPDrawbridgeBuildSite_C:CollisionA_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.4"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "EB001AD3-413D22A5-2FB73D92-9E8C3FF5",
+      "InternalVariableName": "CollisionA"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPDrawbridgeBuildSite_C:ReferenceB_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.36"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "2E546FD2-4A4B6D38-C33D33A9-39F60250",
+      "InternalVariableName": "ReferenceB"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BoxComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent BPDrawbridgeBuildSite_C:PawnCheckVolume_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.6"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "18C8E60C-4F009B5A-EC07759B-50366250",
+      "InternalVariableName": "PawnCheckVolume"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_8",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BoxComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent BPDrawbridgeBuildSite_C:CollisionB_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.5"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "6A4AB81D-4FDF53C7-4B9028B9-6541D620",
+      "InternalVariableName": "CollisionB"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_9",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BoxComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent BPDrawbridgeBuildSite_C:VehicleBlocking_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.8"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "F9CD33D4-43ECB88D-809BFB8E-B365BB5E",
+      "InternalVariableName": "VehicleBlocking"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPDrawbridgeBuildSite_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPDrawbridgeBuildSite_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.27"
+        },
+        {
+          "ObjectName": "SCS_Node BPDrawbridgeBuildSite_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.25"
+        },
+        {
+          "ObjectName": "SCS_Node BPDrawbridgeBuildSite_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.26"
+        },
+        {
+          "ObjectName": "SCS_Node BPDrawbridgeBuildSite_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.23"
+        },
+        {
+          "ObjectName": "SCS_Node BPDrawbridgeBuildSite_C:SimpleConstructionScript_0.SCS_Node_8",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.30"
+        },
+        {
+          "ObjectName": "SCS_Node BPDrawbridgeBuildSite_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.28"
+        },
+        {
+          "ObjectName": "SCS_Node BPDrawbridgeBuildSite_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.29"
+        },
+        {
+          "ObjectName": "SCS_Node BPDrawbridgeBuildSite_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.24"
+        },
+        {
+          "ObjectName": "SCS_Node BPDrawbridgeBuildSite_C:SimpleConstructionScript_0.SCS_Node_9",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.31"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPDrawbridgeBuildSite_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.27"
+        },
+        {
+          "ObjectName": "SCS_Node BPDrawbridgeBuildSite_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.25"
+        },
+        {
+          "ObjectName": "SCS_Node BPDrawbridgeBuildSite_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.26"
+        },
+        {
+          "ObjectName": "SCS_Node BPDrawbridgeBuildSite_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.23"
+        },
+        {
+          "ObjectName": "SCS_Node BPDrawbridgeBuildSite_C:SimpleConstructionScript_0.SCS_Node_8",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.30"
+        },
+        {
+          "ObjectName": "SCS_Node BPDrawbridgeBuildSite_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.28"
+        },
+        {
+          "ObjectName": "SCS_Node BPDrawbridgeBuildSite_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.29"
+        },
+        {
+          "ObjectName": "SCS_Node BPDrawbridgeBuildSite_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.24"
+        },
+        {
+          "ObjectName": "SCS_Node BPDrawbridgeBuildSite_C:SimpleConstructionScript_0.SCS_Node_9",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.31"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPDrawbridgeBuildSite_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeBuildSite.22"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "BridgeScaffoldA_GEN_VARIABLE",
+    "Outer": "BPDrawbridgeBuildSite_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh DrawBridgeGhost",
+        "ObjectPath": "War/Content/Meshes/Structures/DrawBridgeGhost.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material BuildSite",
+          "ObjectPath": "War/Content/Materials/Structures/BuildSite.0"
+        }
+      ],
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 1090.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "BridgeScaffoldB_GEN_VARIABLE",
+    "Outer": "BPDrawbridgeBuildSite_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh DrawBridgeGhost",
+        "ObjectPath": "War/Content/Meshes/Structures/DrawBridgeGhost.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material BuildSite",
+          "ObjectPath": "War/Content/Materials/Structures/BuildSite.0"
+        }
+      ],
+      "RelativeLocation": {
+        "X": -2.384183E-07,
+        "Y": -1090.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 180.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ReferenceA_GEN_VARIABLE",
+    "Outer": "BPDrawbridgeBuildSite_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh DrawBridgeDestroyed",
+        "ObjectPath": "War/Content/Meshes/Structures/DrawbridgeDestroyed.2"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 1090.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ReferenceB_GEN_VARIABLE",
+    "Outer": "BPDrawbridgeBuildSite_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh DrawBridgeDestroyed",
+        "ObjectPath": "War/Content/Meshes/Structures/DrawbridgeDestroyed.2"
+      },
+      "RelativeLocation": {
+        "X": 0.000268,
+        "Y": -1090.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -180.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPDrawbridgeBuildSite_C"
+  }
+]

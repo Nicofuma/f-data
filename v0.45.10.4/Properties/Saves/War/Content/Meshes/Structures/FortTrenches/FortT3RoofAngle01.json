@@ -1,0 +1,178 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FortT3RoofAngle01",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": 252.74466,
+                "Y": -75.233826,
+                "Z": 300.0
+              },
+              {
+                "X": 250.00003,
+                "Y": -250.0001,
+                "Z": 286.2213
+              },
+              {
+                "X": 250.00002,
+                "Y": -250.0001,
+                "Z": 300.0
+              },
+              {
+                "X": -250.00003,
+                "Y": -250.0001,
+                "Z": 286.2213
+              },
+              {
+                "X": -250.00002,
+                "Y": 250.0,
+                "Z": 286.2213
+              },
+              {
+                "X": -250.00002,
+                "Y": 250.0,
+                "Z": 300.0
+              },
+              {
+                "X": -75.23386,
+                "Y": 252.74461,
+                "Z": 300.0
+              },
+              {
+                "X": -250.00005,
+                "Y": -250.0001,
+                "Z": 300.0
+              },
+              {
+                "X": 252.74466,
+                "Y": -75.233826,
+                "Z": 286.2213
+              },
+              {
+                "X": -75.23387,
+                "Y": 252.74461,
+                "Z": 286.2213
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -250.00005,
+                "Y": -250.0001,
+                "Z": 286.2213
+              },
+              "Max": {
+                "X": 252.74466,
+                "Y": 252.74461,
+                "Z": 300.0
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "FortT3RoofAngle01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 577,
+        "SizeOnDisk": 577,
+        "OffsetInFile": "0x1D8E"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FortT3RoofAngle01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortT3Roof01",
+            "ObjectPath": "War/Content/Materials/Structures/FortT3Roof01.0"
+          },
+          "MaterialSlotName": "FortT3Roof01",
+          "ImportedMaterialSlotName": "FortT3Roof01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 585.78,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 585.78,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -3.0517578E-05,
+          "Z": 281.3636
+        },
+        "BoxExtent": {
+          "X": 270.0,
+          "Y": 270.0001,
+          "Z": 18.636429
+        },
+        "SphereRadius": 382.29224
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FortT3RoofAngle01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortT3RoofAngle01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FortT3RoofAngle01:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortT3RoofAngle01.1"
+    },
+    "LightingGuid": "67B3960F-4C760036-823D54A0-C90E8EA3",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPHeavyExplosiveMaterial_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPHeavyExplosiveMaterial_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPHeavyExplosiveMaterial.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class BasicItemPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPHeavyExplosiveMaterial_C",
+    "Name": "Default__BPHeavyExplosiveMaterial_C",
+    "Properties": {
+      "Encumbrance": 50,
+      "CodeName": "HeavyExplosive",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "B8A742124498578593719AA636408BF5",
+        "SourceString": "Heavy Explosive Materials"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "316DD0B54133228DDBD7708E48ABD7DA",
+        "SourceString": "Resource used for producing heavy explosive weapons."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D HeavyExplosiveMaterialIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/HeavyExplosiveMaterialIcon.0"
+      },
+      "ItemCategory": "EItemCategory::Supplies",
+      "ItemProfileType": "EItemProfileType::RefinedResource",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPHeavyExplosiveMaterial_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPHeavyExplosiveMaterial.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPHeavyExplosiveMaterial_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPHeavyExplosiveMaterial.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPHeavyExplosiveMaterial_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPHeavyExplosiveMaterial_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPHeavyExplosiveMaterial_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPHeavyExplosiveMaterial.3"
+      },
+      "VariableGuid": "7DFC56CB-4050DE35-BFFBD28A-174B5F02",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPHeavyExplosiveMaterial_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPHeavyExplosiveMaterial_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPHeavyExplosiveMaterial.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPHeavyExplosiveMaterial_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPHeavyExplosiveMaterial_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPHeavyExplosiveMaterial.2"
+      }
+    }
+  }
+]

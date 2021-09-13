@@ -1,0 +1,293 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "MultiplexedStaticMesh",
+    "Outer": "RVWallT1_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class MultiplexedStaticMeshComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "RVWallT1_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript RVWallT1_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/RVWallT1.11"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class LimitedVulnerabilityStructure",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty RVWallT1_C:MultiplexedStaticMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/RVWallT1.0"
+      },
+      {
+        "ObjectName": "ObjectProperty RVWallT1_C:RVWallT2",
+        "ObjectPath": "War/Content/Blueprints/Structures/RVWallT1.6"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "RVWallT1_C",
+    "Name": "Default__RVWallT1_C",
+    "Properties": {
+      "VulnerableDamageType": {
+        "ObjectName": "Class UnexplodedOrdnanceDamageType",
+        "ObjectPath": "/Script/War"
+      },
+      "BaseStructureClass": {
+        "ObjectName": "BlueprintGeneratedClass BPDestroyedRVWallT1_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedRVWallT1.1"
+      },
+      "CodeName": "RVWallT1",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "9CAFE2AF43C1A5C87BE3179A1DA11665",
+        "SourceString": "Wall (Tier 1)"
+      },
+      "ProfileType": "EStructureProfileType::GenericWorldStructure",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__RVWallT1_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/RVWallT1.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__RVWallT1_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/RVWallT1.4"
+      },
+      "DestroyedFX": {
+        "ObjectName": "ParticleSystem GrenadeBlast",
+        "ObjectPath": "War/Content/FX/GrenadeBlast.151"
+      },
+      "DestroyedSoundCue": {
+        "ObjectName": "SoundCue StructureExplosionSmall_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/StructureExplosionSmall_Cue.0"
+      },
+      "MaxHealth": 27500,
+      "Health": 27500,
+      "StructureNetRelevancySize": "EStructureNetRelevancySize::Large",
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__RVWallT1_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/RVWallT1.13"
+      },
+      "NetDormancy": "DORM_DormantAll",
+      "NetCullDistanceSquared": 49000000.0,
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__RVWallT1_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/RVWallT1.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__RVWallT1_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__RVWallT1_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__RVWallT1_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/RVWallT1.3"
+      },
+      "RelativeLocation": {
+        "X": -1633.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "MultiplexedStaticMeshComponent",
+    "Name": "MultiplexedStaticMesh_GEN_VARIABLE",
+    "Outer": "RVWallT1_C",
+    "Properties": {
+      "TargetTag": "Wall",
+      "MeshStops": [
+        {
+          "Threshold": 0,
+          "StaticMesh": {
+            "ObjectName": "StaticMesh RVDoorCritical",
+            "ObjectPath": "War/Content/Meshes/Structures/RVDoorCritical.2"
+          }
+        },
+        {
+          "Threshold": 25,
+          "StaticMesh": {
+            "ObjectName": "StaticMesh RVDoorDamaged",
+            "ObjectPath": "War/Content/Meshes/Structures/RVDoorDamaged.2"
+          }
+        },
+        {
+          "Threshold": 66,
+          "StaticMesh": {
+            "ObjectName": "StaticMesh RVDoor",
+            "ObjectPath": "War/Content/Meshes/Structures/RVDoor.2"
+          }
+        }
+      ],
+      "InputValue": 100,
+      "SelectedMeshIndex": 2
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "RVWallT2",
+    "Outer": "RVWallT1_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "RVWallT1_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent RVWallT1_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/RVWallT1.7"
+      },
+      "VariableGuid": "14141C72-4CAFEE5D-A9D10C96-31C1C860",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class MultiplexedStaticMeshComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "MultiplexedStaticMeshComponent RVWallT1_C:MultiplexedStaticMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/RVWallT1.5"
+      },
+      "VariableGuid": "43ACDBD4-4D57AFE7-E2D69BA6-334452D0",
+      "InternalVariableName": "MultiplexedStaticMesh"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent RVWallT1_C:RVWallT2_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/RVWallT1.12"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "280FD47C-4B79E4CF-704ACC96-695FCDF1",
+      "InternalVariableName": "RVWallT2"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "RVWallT1_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node RVWallT1_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/RVWallT1.10"
+        },
+        {
+          "ObjectName": "SCS_Node RVWallT1_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/RVWallT1.9"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node RVWallT1_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/RVWallT1.10"
+        },
+        {
+          "ObjectName": "SCS_Node RVWallT1_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/RVWallT1.9"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node RVWallT1_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/RVWallT1.8"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "RVWallT2_GEN_VARIABLE",
+    "Outer": "RVWallT1_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh RVDoor",
+        "ObjectPath": "War/Content/Meshes/Structures/RVDoor.2"
+      },
+      "bReceivesDecals": false,
+      "CanCharacterStepUpOn": "ECB_Owner",
+      "BodyInstance": {
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        },
+        "MassInKgOverride": 367.56195
+      },
+      "ComponentTags": [
+        "Wall"
+      ]
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__RVWallT1_C"
+  }
+]

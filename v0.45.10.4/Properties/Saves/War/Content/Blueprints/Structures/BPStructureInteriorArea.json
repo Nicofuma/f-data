@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPStructureInteriorArea_C",
+    "SuperStruct": {
+      "ObjectName": "Class VisibilityToggleAreaComponent",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPStructureInteriorArea_C",
+    "Name": "Default__BPStructureInteriorArea_C",
+    "Properties": {
+      "BodyInstance": {
+        "CollisionProfileName": "Custom",
+        "CollisionResponses": {
+          "ResponseToChannels": {
+            "WorldStatic": "ECR_Ignore",
+            "WorldDynamic": "ECR_Ignore",
+            "Visibility": "ECR_Ignore",
+            "Camera": "ECR_Ignore",
+            "PhysicsBody": "ECR_Ignore",
+            "Vehicle": "ECR_Ignore",
+            "Destructible": "ECR_Ignore",
+            "GameTraceChannel2": "ECR_Ignore",
+            "GameTraceChannel3": "ECR_Ignore"
+          },
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapDowncast",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Projectile",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "OnComponentBeginOverlap": null,
+      "OnComponentEndOverlap": null
+    }
+  }
+]

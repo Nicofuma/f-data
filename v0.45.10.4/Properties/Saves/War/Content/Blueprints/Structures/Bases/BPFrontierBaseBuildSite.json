@@ -1,0 +1,494 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "Box",
+    "Outer": "BPFrontierBaseBuildSite_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BoxComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPFrontierBaseBuildSite_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPFrontierBaseBuildSite_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.20"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class FrontierBaseBuildSite",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPFrontierBaseBuildSite_C:Box",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFrontierBaseBuildSite_C:StaticMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.15"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPFrontierBaseBuildSite_C",
+    "Name": "Default__BPFrontierBaseBuildSite_C",
+    "Properties": {
+      "GenericStockpileComponent": {
+        "ObjectName": "GenericItemStockpileComponent Default__BPFrontierBaseBuildSite_C:GenericStockpileComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.14"
+      },
+      "TechTreeComponent": {
+        "ObjectName": "TechTreeComponent Default__BPFrontierBaseBuildSite_C:TechTreeComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.23"
+      },
+      "SpawnPoint1": {
+        "ObjectName": "ChildActorComponent Default__BPFrontierBaseBuildSite_C:SpawnPoint1",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.10"
+      },
+      "SpawnPoint2": {
+        "ObjectName": "ChildActorComponent Default__BPFrontierBaseBuildSite_C:SpawnPoint2",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.11"
+      },
+      "SpawnPoint3": {
+        "ObjectName": "ChildActorComponent Default__BPFrontierBaseBuildSite_C:SpawnPoint3",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.12"
+      },
+      "SpawnPoints": [
+        {
+          "ObjectName": "ChildActorComponent Default__BPFrontierBaseBuildSite_C:SpawnPoint1",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.10"
+        },
+        {
+          "ObjectName": "ChildActorComponent Default__BPFrontierBaseBuildSite_C:SpawnPoint2",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.11"
+        },
+        {
+          "ObjectName": "ChildActorComponent Default__BPFrontierBaseBuildSite_C:SpawnPoint3",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.12"
+        }
+      ],
+      "bIsFirstTier": true,
+      "ObstructionCheckVolume": {
+        "ObjectName": "BoxComponent Default__BPFrontierBaseBuildSite_C:ObstructionCheckVolume",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.5"
+      },
+      "CodeName": "FrontierBaseBuildSite",
+      "ArmourType": "EArmourType::NoArmour",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBaseBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPFrontierBaseBuildSite_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.6"
+      },
+      "GarrisonComponent": {
+        "ObjectName": "GarrisonComponent Default__BPFrontierBaseBuildSite_C:GarrisonComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.13"
+      },
+      "MaxHealth": 2000,
+      "Health": 2000,
+      "MapIconType": "EMapIconType::FrontierBase",
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPFrontierBaseBuildSite_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.22"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBaseBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPFrontierBaseBuildSite_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "Box_GEN_VARIABLE",
+    "Outer": "BPFrontierBaseBuildSite_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 315.91992,
+        "Y": 379.50116,
+        "Z": 150.0
+      },
+      "AreaClass": {
+        "ObjectName": "Class NavArea_Obstacle",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "StructureDamageableSeeThroughMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapDowncast",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 170.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ObstructionCheckVolume",
+    "Outer": "Default__BPFrontierBaseBuildSite_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBaseBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.3"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPFrontierBaseBuildSite_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 600.0,
+        "Y": 600.0,
+        "Z": 150.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBaseBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 150.0
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "SpawnPoint1_WarPlayerStart_CAT"
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "SpawnPoint2_WarPlayerStart_CAT"
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "SpawnPoint3_WarPlayerStart_CAT"
+  },
+  {
+    "Type": "ChildActorComponent",
+    "Name": "SpawnPoint1",
+    "Outer": "Default__BPFrontierBaseBuildSite_C",
+    "Properties": {
+      "ChildActorTemplate": {
+        "ObjectName": "WarPlayerStart Default__BPFrontierBaseBuildSite_C:SpawnPoint1.SpawnPoint1_WarPlayerStart_CAT",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.24"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBaseBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.3"
+      },
+      "RelativeLocation": {
+        "X": -295.0,
+        "Y": 665.0,
+        "Z": 255.0
+      }
+    }
+  },
+  {
+    "Type": "ChildActorComponent",
+    "Name": "SpawnPoint2",
+    "Outer": "Default__BPFrontierBaseBuildSite_C",
+    "Properties": {
+      "ChildActorTemplate": {
+        "ObjectName": "WarPlayerStart Default__BPFrontierBaseBuildSite_C:SpawnPoint2.SpawnPoint2_WarPlayerStart_CAT",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.25"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBaseBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 665.0,
+        "Z": 255.0
+      }
+    }
+  },
+  {
+    "Type": "ChildActorComponent",
+    "Name": "SpawnPoint3",
+    "Outer": "Default__BPFrontierBaseBuildSite_C",
+    "Properties": {
+      "ChildActorTemplate": {
+        "ObjectName": "WarPlayerStart Default__BPFrontierBaseBuildSite_C:SpawnPoint3.SpawnPoint3_WarPlayerStart_CAT",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.26"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBaseBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.3"
+      },
+      "RelativeLocation": {
+        "X": 300.0,
+        "Y": 665.0,
+        "Z": 255.0
+      }
+    }
+  },
+  {
+    "Type": "GarrisonComponent",
+    "Name": "GarrisonComponent",
+    "Outer": "Default__BPFrontierBaseBuildSite_C"
+  },
+  {
+    "Type": "GenericItemStockpileComponent",
+    "Name": "GenericStockpileComponent",
+    "Outer": "Default__BPFrontierBaseBuildSite_C"
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "StaticMesh",
+    "Outer": "BPFrontierBaseBuildSite_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPFrontierBaseBuildSite_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPFrontierBaseBuildSite_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.16"
+      },
+      "VariableGuid": "648ADD0B-44A316A8-296FFAB4-6D7AC019",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BoxComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent BPFrontierBaseBuildSite_C:Box_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.4"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "99BEDE2E-49147C6F-6013AF9E-628017D2",
+      "InternalVariableName": "Box"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPFrontierBaseBuildSite_C:StaticMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.21"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "86C507D5-47AD1F33-3AFDD6A5-F58B22DF",
+      "InternalVariableName": "StaticMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPFrontierBaseBuildSite_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPFrontierBaseBuildSite_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.19"
+        },
+        {
+          "ObjectName": "SCS_Node BPFrontierBaseBuildSite_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.18"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPFrontierBaseBuildSite_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.19"
+        },
+        {
+          "ObjectName": "SCS_Node BPFrontierBaseBuildSite_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.18"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPFrontierBaseBuildSite_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.17"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh_GEN_VARIABLE",
+    "Outer": "BPFrontierBaseBuildSite_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh Barracks",
+        "ObjectPath": "War/Content/Meshes/Structures/Barracks.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material BuildSite",
+          "ObjectPath": "War/Content/Materials/Structures/BuildSite.0"
+        },
+        {
+          "ObjectName": "Material BuildSite",
+          "ObjectPath": "War/Content/Materials/Structures/BuildSite.0"
+        },
+        {
+          "ObjectName": "Material BuildSite",
+          "ObjectPath": "War/Content/Materials/Structures/BuildSite.0"
+        },
+        {
+          "ObjectName": "Material BuildSite",
+          "ObjectPath": "War/Content/Materials/Structures/BuildSite.0"
+        }
+      ],
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "MassInKgOverride": 8801.928
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPFrontierBaseBuildSite_C"
+  },
+  {
+    "Type": "TechTreeComponent",
+    "Name": "TechTreeComponent",
+    "Outer": "Default__BPFrontierBaseBuildSite_C"
+  },
+  {
+    "Type": "WarPlayerStart",
+    "Name": "SpawnPoint1_WarPlayerStart_CAT",
+    "Outer": "SpawnPoint1",
+    "Properties": {
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent Default__BPFrontierBaseBuildSite_C:SpawnPoint1.SpawnPoint1_WarPlayerStart_CAT.CollisionCapsule",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.7"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent Default__BPFrontierBaseBuildSite_C:SpawnPoint1.SpawnPoint1_WarPlayerStart_CAT.CollisionCapsule",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.7"
+      }
+    }
+  },
+  {
+    "Type": "WarPlayerStart",
+    "Name": "SpawnPoint2_WarPlayerStart_CAT",
+    "Outer": "SpawnPoint2",
+    "Properties": {
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent Default__BPFrontierBaseBuildSite_C:SpawnPoint2.SpawnPoint2_WarPlayerStart_CAT.CollisionCapsule",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.8"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent Default__BPFrontierBaseBuildSite_C:SpawnPoint2.SpawnPoint2_WarPlayerStart_CAT.CollisionCapsule",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.8"
+      }
+    }
+  },
+  {
+    "Type": "WarPlayerStart",
+    "Name": "SpawnPoint3_WarPlayerStart_CAT",
+    "Outer": "SpawnPoint3",
+    "Properties": {
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent Default__BPFrontierBaseBuildSite_C:SpawnPoint3.SpawnPoint3_WarPlayerStart_CAT.CollisionCapsule",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.9"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent Default__BPFrontierBaseBuildSite_C:SpawnPoint3.SpawnPoint3_WarPlayerStart_CAT.CollisionCapsule",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.9"
+      }
+    }
+  }
+]

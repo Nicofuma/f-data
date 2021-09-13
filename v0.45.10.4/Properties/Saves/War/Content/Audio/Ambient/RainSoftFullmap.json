@@ -1,0 +1,39 @@
+[
+  {
+    "Type": "SoundCue",
+    "Name": "RainSoftFullmap",
+    "Properties": {
+      "FirstNode": {
+        "ObjectName": "SoundNodeWavePlayer RainSoftFullmap:SoundNodeWavePlayer_1",
+        "ObjectPath": "War/Content/Audio/Ambient/RainSoftFullmap.1"
+      },
+      "VolumeMultiplier": 1.0,
+      "AttenuationOverrides": {
+        "DistanceAlgorithm": "EAttenuationDistanceModel::NaturalSound",
+        "AttenuationShapeExtents": {
+          "X": 2063.1995,
+          "Y": 0.0,
+          "Z": 0.0
+        }
+      },
+      "SoundClassObject": {
+        "ObjectName": "SoundClass AmbientForeground",
+        "ObjectPath": "War/Content/Audio/SoundClasses/AmbientForeground.0"
+      },
+      "Duration": 10000.0,
+      "MaxDistance": 2097152.0
+    }
+  },
+  {
+    "Type": "SoundNodeWavePlayer",
+    "Name": "SoundNodeWavePlayer_1",
+    "Outer": "RainSoftFullmap",
+    "Properties": {
+      "SoundWaveAssetPtr": {
+        "AssetPathName": "/Game/Audio/Ambient/RainSoft.RainSoft",
+        "SubPathString": ""
+      },
+      "bLooping": true
+    }
+  }
+]

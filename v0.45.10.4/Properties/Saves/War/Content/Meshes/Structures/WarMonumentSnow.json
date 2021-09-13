@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "WarMonumentSnow",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "WarMonumentSnow",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2503"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "WarMonumentSnow",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material Snow",
+            "ObjectPath": "War/Content/Materials/Environment/Snow.0"
+          },
+          "MaterialSlotName": "Snow",
+          "ImportedMaterialSlotName": "Snow",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 545.7146,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 545.7146,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 2.2643738,
+          "Y": 2.170395,
+          "Z": 66.017914
+        },
+        "BoxExtent": {
+          "X": 259.9884,
+          "Y": 254.16258,
+          "Z": 29.180878
+        },
+        "SphereRadius": 350.44165
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup WarMonumentSnow:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/WarMonumentSnow.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision WarMonumentSnow:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Structures/WarMonumentSnow.1"
+    },
+    "LightingGuid": "7751D06D-424CF9BD-8B36A089-36CC3EDF",
+    "RenderData": null
+  }
+]

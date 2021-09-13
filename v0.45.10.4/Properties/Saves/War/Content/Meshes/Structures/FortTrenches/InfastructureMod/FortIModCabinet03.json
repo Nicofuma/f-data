@@ -1,0 +1,99 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FortIModCabinet03",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "FortIModCabinet03",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xADCA"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FortIModCabinet03",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortIModDesk01",
+            "ObjectPath": "War/Content/Materials/Structures/FortIModDesk01.0"
+          },
+          "MaterialSlotName": "FortIModDesk",
+          "ImportedMaterialSlotName": "FortIModDesk",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 379.01758,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortImodStationary",
+            "ObjectPath": "War/Content/Materials/Structures/FortImodStationary.0"
+          },
+          "MaterialSlotName": "FortImodStationary",
+          "ImportedMaterialSlotName": "FortImodStationary",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 422.2213,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 414.07242,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -9.844963,
+          "Y": -8.213577,
+          "Z": 64.13072
+        },
+        "BoxExtent": {
+          "X": 79.83808,
+          "Y": 45.036705,
+          "Z": 64.13072
+        },
+        "SphereRadius": 106.79204
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FortIModCabinet03:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/FortIModCabinet03.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FortIModCabinet03:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/FortIModCabinet03.1"
+    },
+    "LightingGuid": "49874341-4C84312E-6FB8258D-0F8CEA46",
+    "RenderData": null
+  }
+]

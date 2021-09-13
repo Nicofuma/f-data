@@ -1,0 +1,500 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "PressUniform_Legs_PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup PressUniform_Legs_PhysicsAsset:SkeletalBodySetup_0",
+          "ObjectPath": "War/Content/Meshes/Character/Legs/PressUniform_Legs_PhysicsAsset.7"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup PressUniform_Legs_PhysicsAsset:SkeletalBodySetup_1",
+          "ObjectPath": "War/Content/Meshes/Character/Legs/PressUniform_Legs_PhysicsAsset.8"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup PressUniform_Legs_PhysicsAsset:SkeletalBodySetup_2",
+          "ObjectPath": "War/Content/Meshes/Character/Legs/PressUniform_Legs_PhysicsAsset.9"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup PressUniform_Legs_PhysicsAsset:SkeletalBodySetup_3",
+          "ObjectPath": "War/Content/Meshes/Character/Legs/PressUniform_Legs_PhysicsAsset.10"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup PressUniform_Legs_PhysicsAsset:SkeletalBodySetup_4",
+          "ObjectPath": "War/Content/Meshes/Character/Legs/PressUniform_Legs_PhysicsAsset.11"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup PressUniform_Legs_PhysicsAsset:SkeletalBodySetup_5",
+          "ObjectPath": "War/Content/Meshes/Character/Legs/PressUniform_Legs_PhysicsAsset.12"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup PressUniform_Legs_PhysicsAsset:SkeletalBodySetup_6",
+          "ObjectPath": "War/Content/Meshes/Character/Legs/PressUniform_Legs_PhysicsAsset.13"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate PressUniform_Legs_PhysicsAsset:PhysicsConstraintTemplate_0",
+          "ObjectPath": "War/Content/Meshes/Character/Legs/PressUniform_Legs_PhysicsAsset.1"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate PressUniform_Legs_PhysicsAsset:PhysicsConstraintTemplate_1",
+          "ObjectPath": "War/Content/Meshes/Character/Legs/PressUniform_Legs_PhysicsAsset.2"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate PressUniform_Legs_PhysicsAsset:PhysicsConstraintTemplate_2",
+          "ObjectPath": "War/Content/Meshes/Character/Legs/PressUniform_Legs_PhysicsAsset.3"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate PressUniform_Legs_PhysicsAsset:PhysicsConstraintTemplate_3",
+          "ObjectPath": "War/Content/Meshes/Character/Legs/PressUniform_Legs_PhysicsAsset.4"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate PressUniform_Legs_PhysicsAsset:PhysicsConstraintTemplate_4",
+          "ObjectPath": "War/Content/Meshes/Character/Legs/PressUniform_Legs_PhysicsAsset.5"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate PressUniform_Legs_PhysicsAsset:PhysicsConstraintTemplate_5",
+          "ObjectPath": "War/Content/Meshes/Character/Legs/PressUniform_Legs_PhysicsAsset.6"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Outer": "PressUniform_Legs_PhysicsAsset",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "thigh_l",
+        "ConstraintBone1": "thigh_l",
+        "ConstraintBone2": "pelvis",
+        "Pos2": {
+          "X": -1.319185,
+          "Y": 0.79599327,
+          "Z": -15.526423
+        },
+        "PriAxis2": {
+          "X": 1.0,
+          "Y": -6.821191E-09,
+          "Z": -2.499738E-10
+        },
+        "SecAxis2": {
+          "X": 6.7990054E-09,
+          "Y": 0.9986506,
+          "Z": -0.05193208
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_1",
+    "Outer": "PressUniform_Legs_PhysicsAsset",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "calf_l",
+        "ConstraintBone1": "calf_l",
+        "ConstraintBone2": "thigh_l",
+        "Pos2": {
+          "X": -46.684788,
+          "Y": 1.0637565,
+          "Z": 1.3433772
+        },
+        "PriAxis2": {
+          "X": 0.9896257,
+          "Y": 0.14307313,
+          "Z": -0.013081136
+        },
+        "SecAxis2": {
+          "X": -0.14307313,
+          "Y": 0.98971164,
+          "Z": 0.0009408582
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_2",
+    "Outer": "PressUniform_Legs_PhysicsAsset",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "foot_l",
+        "ConstraintBone1": "foot_l",
+        "ConstraintBone2": "calf_l",
+        "Pos2": {
+          "X": -57.314198,
+          "Y": 3.0590785,
+          "Z": -2.154136
+        },
+        "PriAxis2": {
+          "X": 0.9896257,
+          "Y": -0.14307314,
+          "Z": 0.01308116
+        },
+        "SecAxis2": {
+          "X": 0.14345324,
+          "Y": 0.9890274,
+          "Z": -0.035299297
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_3",
+    "Outer": "PressUniform_Legs_PhysicsAsset",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "thigh_r",
+        "ConstraintBone1": "thigh_r",
+        "ConstraintBone2": "pelvis",
+        "Pos2": {
+          "X": -1.318938,
+          "Y": 0.795994,
+          "Z": 15.526445
+        },
+        "PriAxis2": {
+          "X": -0.9999999,
+          "Y": 4.344039E-09,
+          "Z": -4.2419812E-10
+        },
+        "SecAxis2": {
+          "X": -4.3161474E-09,
+          "Y": -0.99865055,
+          "Z": -0.05193213
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_4",
+    "Outer": "PressUniform_Legs_PhysicsAsset",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "calf_r",
+        "ConstraintBone1": "calf_r",
+        "ConstraintBone2": "thigh_r",
+        "Pos2": {
+          "X": 46.685078,
+          "Y": -1.0637528,
+          "Z": -1.3434241
+        },
+        "PriAxis2": {
+          "X": 0.9896257,
+          "Y": 0.14307313,
+          "Z": -0.013081168
+        },
+        "SecAxis2": {
+          "X": -0.14307313,
+          "Y": 0.98971164,
+          "Z": 0.0009409327
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_5",
+    "Outer": "PressUniform_Legs_PhysicsAsset",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "foot_r",
+        "ConstraintBone1": "foot_r",
+        "ConstraintBone2": "calf_r",
+        "Pos2": {
+          "X": 57.314373,
+          "Y": -3.0590963,
+          "Z": 2.15418
+        },
+        "PriAxis2": {
+          "X": 0.98962563,
+          "Y": -0.14307316,
+          "Z": 0.013081204
+        },
+        "SecAxis2": {
+          "X": 0.14345326,
+          "Y": 0.9890274,
+          "Z": -0.035299193
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "PressUniform_Legs_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -8.990101,
+              "Y": 1.7526913,
+              "Z": -0.0029935795
+            },
+            "Rotation": {
+              "Pitch": 0.029711321,
+              "Yaw": -90.00001,
+              "Roll": -0.013394865
+            },
+            "Radius": 17.402508,
+            "Length": 21.733042,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "pelvis",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "PressUniform_Legs_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -23.935156,
+              "Y": 2.223774,
+              "Z": 0.7251015
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -101.83713,
+              "Roll": -85.10899
+            },
+            "Radius": 17.008808,
+            "Length": 24.269934,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "thigh_l",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_2",
+    "Outer": "PressUniform_Legs_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -24.83255,
+              "Y": 0.54099274,
+              "Z": -3.1704407
+            },
+            "Rotation": {
+              "Pitch": -6.830189E-06,
+              "Yaw": 90.27256,
+              "Roll": -83.91027
+            },
+            "Radius": 11.66588,
+            "Length": 26.09562,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "calf_l",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_3",
+    "Outer": "PressUniform_Legs_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -3.6131809,
+              "Y": 8.609288,
+              "Z": 0.034330368
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 179.743,
+              "Roll": -86.41167
+            },
+            "Radius": 7.433003,
+            "Length": 18.122118,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "foot_l",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_4",
+    "Outer": "PressUniform_Legs_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 23.522083,
+              "Y": -1.0228481,
+              "Z": 0.8189144
+            },
+            "Rotation": {
+              "Pitch": -6.830189E-06,
+              "Yaw": -91.053505,
+              "Roll": -76.96883
+            },
+            "Radius": 16.457645,
+            "Length": 23.940918,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "thigh_r",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_5",
+    "Outer": "PressUniform_Legs_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 24.832537,
+              "Y": -0.5409918,
+              "Z": 3.1704578
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 90.27257,
+              "Roll": -83.91028
+            },
+            "Radius": 11.66588,
+            "Length": 26.095623,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "calf_r",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_6",
+    "Outer": "PressUniform_Legs_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 3.6129832,
+              "Y": -8.609299,
+              "Z": -0.034356117
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 179.743,
+              "Roll": -86.41167
+            },
+            "Radius": 7.433005,
+            "Length": 18.12212,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "foot_r",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  }
+]

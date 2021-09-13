@@ -1,0 +1,110 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "BulwarkDressing_brick_3",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": -3.0517578E-05
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 245.05383,
+            "Y": 119.33209,
+            "Z": 77.70587,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_3",
+    "Outer": "BulwarkDressing_brick_3",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x1C2A"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "BulwarkDressing_brick_3",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BulwarkSupports",
+            "ObjectPath": "War/Content/Materials/Environment/BulwarkSupports.0"
+          },
+          "MaterialSlotName": "StoneSupport",
+          "ImportedMaterialSlotName": "StoneSupport",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 2513.5164,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 2513.5164,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -3.0517578E-05
+        },
+        "BoxExtent": {
+          "X": 122.52692,
+          "Y": 59.666046,
+          "Z": 38.852936
+        },
+        "SphereRadius": 137.49579
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup BulwarkDressing_brick_3:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/BulwarkDressing_brick_3.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision BulwarkDressing_brick_3:NavCollision_3",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/BulwarkDressing_brick_3.1"
+    },
+    "LightingGuid": "67B62D0E-46535F04-81099FA5-8F89B086",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,89 @@
+[
+  {
+    "Type": "AnimMontage",
+    "Name": "Zombie_MeleeAttack",
+    "Properties": {
+      "BlendIn": {
+        "BlendTime": 0.1
+      },
+      "CompositeSections": [
+        {
+          "SectionName": "Default",
+          "NextSectionName": "None",
+          "MetaData": [],
+          "LinkedMontage": {
+            "ObjectName": "AnimMontage Zombie_MeleeAttack",
+            "ObjectPath": "War/Content/Animation/Character/Events/Zombie_MeleeAttack.0"
+          },
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 1.00003,
+          "LinkValue": 0.0,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence Anim_Zombie_Attack",
+            "ObjectPath": "War/Content/Animation/Character/Events/Anim_Zombie_Attack.3"
+          }
+        },
+        {
+          "SectionName": "Crouched",
+          "NextSectionName": "None",
+          "MetaData": [],
+          "LinkedMontage": {
+            "ObjectName": "AnimMontage Zombie_MeleeAttack",
+            "ObjectPath": "War/Content/Animation/Character/Events/Zombie_MeleeAttack.0"
+          },
+          "SlotIndex": 0,
+          "SegmentIndex": 1,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 1.00003,
+          "SegmentLength": 1.0,
+          "LinkValue": 1.00003,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence Anim_Zombie_Attack",
+            "ObjectPath": "War/Content/Animation/Character/Events/Anim_Zombie_Attack.3"
+          }
+        }
+      ],
+      "SlotAnimTracks": [
+        {
+          "SlotName": "UpperBody",
+          "AnimTrack": {
+            "AnimSegments": [
+              {
+                "AnimReference": {
+                  "ObjectName": "AnimSequence Anim_Zombie_Attack",
+                  "ObjectPath": "War/Content/Animation/Character/Events/Anim_Zombie_Attack.3"
+                },
+                "StartPos": 0.0,
+                "AnimStartTime": 0.3333,
+                "AnimEndTime": 1.33333,
+                "AnimPlayRate": 1.0,
+                "LoopingCount": 1
+              },
+              {
+                "AnimReference": {
+                  "ObjectName": "AnimSequence Anim_Zombie_Attack",
+                  "ObjectPath": "War/Content/Animation/Character/Events/Anim_Zombie_Attack.3"
+                },
+                "StartPos": 1.00003,
+                "AnimStartTime": 0.333333,
+                "AnimEndTime": 1.333333,
+                "AnimPlayRate": 1.0,
+                "LoopingCount": 1
+              }
+            ]
+          }
+        }
+      ],
+      "SequenceLength": 2.00003,
+      "Skeleton": {
+        "ObjectName": "Skeleton Character_Male_Skeleton",
+        "ObjectPath": "War/Content/Meshes/Character/Character_Male_Skeleton.7"
+      }
+    }
+  }
+]

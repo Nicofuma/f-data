@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Cardboard01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Cardboard01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x12EC"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Cardboard01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Cardboard01",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Cardboard01.0"
+          },
+          "MaterialSlotName": "Cardboard",
+          "ImportedMaterialSlotName": "Cardboard",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 359.03217,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 359.03217,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.6446991,
+          "Y": 7.6293945E-06,
+          "Z": 24.645807
+        },
+        "BoxExtent": {
+          "X": 33.677933,
+          "Y": 53.67842,
+          "Z": 24.535328
+        },
+        "SphereRadius": 66.52703
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Cardboard01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Cardboard01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Cardboard01:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Cardboard01.1"
+    },
+    "LightingGuid": "BAC270E6-416D9DE2-53B9D0B4-1AA640BF",
+    "RenderData": null
+  }
+]

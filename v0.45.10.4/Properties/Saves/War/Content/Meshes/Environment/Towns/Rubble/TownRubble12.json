@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "TownRubble12",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "TownRubble12",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x19D2"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TownRubble12",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownWoodBeams02",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownWoodBeams02.0"
+          },
+          "MaterialSlotName": "TownWoodBeams02",
+          "ImportedMaterialSlotName": "TownWoodBeams02",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 317.54422,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 6.1035156E-05,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 171.90118,
+          "Y": 151.5722,
+          "Z": 8.113563
+        },
+        "SphereRadius": 228.84637
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TownRubble12:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Rubble/TownRubble12.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TownRubble12:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Rubble/TownRubble12.1"
+    },
+    "LightingGuid": "346C9A76-4D4CAB39-B59613B3-7C156D62",
+    "RenderData": null
+  }
+]

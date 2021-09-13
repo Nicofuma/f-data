@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Paper02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "Paper02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xC5C"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Paper02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Paper",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Paper.0"
+          },
+          "MaterialSlotName": "Material #490",
+          "ImportedMaterialSlotName": "Material #490",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 175.05696,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 175.05696,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -1.2130127
+        },
+        "BoxExtent": {
+          "X": 24.937702,
+          "Y": 22.975742,
+          "Z": 0.0
+        },
+        "SphereRadius": 33.908314
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Paper02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Paper02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Paper02:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Paper02.1"
+    },
+    "LightingGuid": "14388B3F-4B7D9036-1491CAB1-38AE53B9",
+    "RenderData": null
+  }
+]

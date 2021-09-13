@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ResourceRare01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_3",
+    "Outer": "ResourceRare01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x35A64"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ResourceRare01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ResourceRare01",
+            "ObjectPath": "War/Content/Materials/Resources/ResourceRare01.0"
+          },
+          "MaterialSlotName": "WorldResources",
+          "ImportedMaterialSlotName": "WorldResources",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 566.1226,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 566.1226,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -3.1409607,
+          "Y": 12.677902,
+          "Z": 60.936497
+        },
+        "BoxExtent": {
+          "X": 138.17264,
+          "Y": 185.9895,
+          "Z": 97.62599
+        },
+        "SphereRadius": 201.8238
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ResourceRare01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Resources/ResourceRare01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ResourceRare01:NavCollision_3",
+      "ObjectPath": "War/Content/Meshes/Resources/ResourceRare01.1"
+    },
+    "LightingGuid": "0CA0D630-449FD072-49350A96-A6E73506",
+    "RenderData": null
+  }
+]

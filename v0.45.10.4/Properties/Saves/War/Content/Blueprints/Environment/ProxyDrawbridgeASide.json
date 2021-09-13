@@ -1,0 +1,82 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ProxyDrawbridgeASide_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript ProxyDrawbridgeASide_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Environment/ProxyDrawbridgeASide.4"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class ProxyDrawbridgeSide",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "ProxyDrawbridgeASide_C",
+    "Name": "Default__ProxyDrawbridgeASide_C",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMeshComponent Default__ProxyDrawbridgeASide_C:Mesh",
+        "ObjectPath": "War/Content/Blueprints/Environment/ProxyDrawbridgeASide.5"
+      },
+      "RootComponent": {
+        "ObjectName": "StaticMeshComponent Default__ProxyDrawbridgeASide_C:Mesh",
+        "ObjectPath": "War/Content/Blueprints/Environment/ProxyDrawbridgeASide.5"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "ProxyDrawbridgeASide_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent ProxyDrawbridgeASide_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Environment/ProxyDrawbridgeASide.2"
+      },
+      "VariableGuid": "018B2F36-4B9D2600-611A3298-6673DA55",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "ProxyDrawbridgeASide_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node ProxyDrawbridgeASide_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Environment/ProxyDrawbridgeASide.3"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Mesh",
+    "Outer": "Default__ProxyDrawbridgeASide_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh SM_DrawbridgeA",
+        "ObjectPath": "War/Content/Meshes/Structures/SM_DrawbridgeA.2"
+      }
+    }
+  }
+]

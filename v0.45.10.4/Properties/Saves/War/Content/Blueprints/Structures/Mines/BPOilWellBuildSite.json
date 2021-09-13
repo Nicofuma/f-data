@@ -1,0 +1,683 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "Box4",
+    "Outer": "BPOilWellBuildSite_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BoxComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPOilWellBuildSite_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPOilWellBuildSite_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.25"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class ResourceMineBuildSite",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPOilWellBuildSite_C:Box4",
+        "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPOilWellBuildSite_C:Box3",
+        "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.15"
+      },
+      {
+        "ObjectName": "ObjectProperty BPOilWellBuildSite_C:Box2",
+        "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.14"
+      },
+      {
+        "ObjectName": "ObjectProperty BPOilWellBuildSite_C:Box1",
+        "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.13"
+      },
+      {
+        "ObjectName": "ObjectProperty BPOilWellBuildSite_C:Box",
+        "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.12"
+      },
+      {
+        "ObjectName": "ObjectProperty BPOilWellBuildSite_C:SK_SulfurMine",
+        "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.16"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPOilWellBuildSite_C",
+    "Name": "Default__BPOilWellBuildSite_C",
+    "Properties": {
+      "GenericStockpileComponent": {
+        "ObjectName": "GenericItemStockpileComponent Default__BPOilWellBuildSite_C:GenericStockpileComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.11"
+      },
+      "ObstructionCheckVolume": {
+        "ObjectName": "BoxComponent Default__BPOilWellBuildSite_C:ObstructionCheckVolume",
+        "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.9"
+      },
+      "CodeName": "OilWellBuildSite",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPOilWellBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPOilWellBuildSite_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.10"
+      },
+      "MapIconType": "EMapIconType::OilWell",
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPOilWellBuildSite_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.27"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPOilWellBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPOilWellBuildSite_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "Box1_GEN_VARIABLE",
+    "Outer": "BPOilWellBuildSite_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 105.66388,
+        "Y": 146.47838,
+        "Z": 93.00935
+      },
+      "AreaClass": {
+        "ObjectName": "Class NavArea_Obstacle",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bGenerateOverlapEvents": false,
+      "CanCharacterStepUpOn": "ECB_No",
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "StructureDamageableSeeThroughMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapDowncast",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -0.929428,
+        "Y": -65.76388,
+        "Z": 250.41571
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "Box2_GEN_VARIABLE",
+    "Outer": "BPOilWellBuildSite_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 19.070505,
+        "Y": 240.42944,
+        "Z": 31.328917
+      },
+      "AreaClass": {
+        "ObjectName": "Class NavArea_Obstacle",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bGenerateOverlapEvents": false,
+      "CanCharacterStepUpOn": "ECB_No",
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "StructureDamageableSeeThroughMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapDowncast",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -1.608536,
+        "Y": -16.09576,
+        "Z": 450.26636
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": -34.183685
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "Box3_GEN_VARIABLE",
+    "Outer": "BPOilWellBuildSite_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 27.274786,
+        "Y": 44.69617,
+        "Z": 135.08427
+      },
+      "AreaClass": {
+        "ObjectName": "Class NavArea_Obstacle",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bGenerateOverlapEvents": false,
+      "CanCharacterStepUpOn": "ECB_No",
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "StructureDamageableSeeThroughMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapDowncast",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -1.608047,
+        "Y": 172.46997,
+        "Z": 531.4657
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": -29.733448
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "Box4_GEN_VARIABLE",
+    "Outer": "BPOilWellBuildSite_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 185.72147,
+        "Y": 296.10306,
+        "Z": 40.0
+      },
+      "AreaClass": {
+        "ObjectName": "Class NavArea_Obstacle",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bGenerateOverlapEvents": false,
+      "CanCharacterStepUpOn": "ECB_No",
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "StructureDamageableSeeThroughMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapDowncast",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -1.1694412,
+        "Y": 0.17057037,
+        "Z": -16.130615
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "Box_GEN_VARIABLE",
+    "Outer": "BPOilWellBuildSite_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 163.14587,
+        "Y": 231.67447,
+        "Z": 120.5924
+      },
+      "AreaClass": {
+        "ObjectName": "Class NavArea_Obstacle",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bGenerateOverlapEvents": false,
+      "CanCharacterStepUpOn": "ECB_No",
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "StructureDamageableSeeThroughMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapDowncast",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.707115,
+        "Y": -62.140755,
+        "Z": 113.75134
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ObstructionCheckVolume",
+    "Outer": "Default__BPOilWellBuildSite_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPOilWellBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.3"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPOilWellBuildSite_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 350.0,
+        "Y": 470.0,
+        "Z": 128.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPOilWellBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 128.0
+      }
+    }
+  },
+  {
+    "Type": "GenericItemStockpileComponent",
+    "Name": "GenericStockpileComponent",
+    "Outer": "Default__BPOilWellBuildSite_C"
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Box",
+    "Outer": "BPOilWellBuildSite_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BoxComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Box1",
+    "Outer": "BPOilWellBuildSite_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BoxComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Box2",
+    "Outer": "BPOilWellBuildSite_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BoxComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Box3",
+    "Outer": "BPOilWellBuildSite_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BoxComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "SK_SulfurMine",
+    "Outer": "BPOilWellBuildSite_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SkeletalMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPOilWellBuildSite_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPOilWellBuildSite_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.17"
+      },
+      "VariableGuid": "68C852CA-4CC697D9-422891A3-3077FE32",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BoxComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent BPOilWellBuildSite_C:Box_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.8"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "76587635-4DDA093C-D6D131B9-C1A7F7D2",
+      "InternalVariableName": "Box"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SkeletalMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SkeletalMeshComponent BPOilWellBuildSite_C:SK_SulfurMine_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.26"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "0FF4F5AA-4E4E4895-6F7D52B5-468D2BD0",
+      "InternalVariableName": "SK_SulfurMine"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BoxComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent BPOilWellBuildSite_C:Box1_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.4"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "4BB40657-4A39BDA7-7DFF3980-F76BBABB",
+      "InternalVariableName": "Box1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BoxComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent BPOilWellBuildSite_C:Box2_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.5"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "C6ED72F0-4510901E-1B551B95-EF076CA3",
+      "InternalVariableName": "Box2"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BoxComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent BPOilWellBuildSite_C:Box3_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.6"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "DAFD01EB-4F3433EF-17C417A6-771439C7",
+      "InternalVariableName": "Box3"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_9",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BoxComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent BPOilWellBuildSite_C:Box4_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.7"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "28D2138B-4EF3ED37-FB08228F-589B7B84",
+      "InternalVariableName": "Box4"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPOilWellBuildSite_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPOilWellBuildSite_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.20"
+        },
+        {
+          "ObjectName": "SCS_Node BPOilWellBuildSite_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.19"
+        },
+        {
+          "ObjectName": "SCS_Node BPOilWellBuildSite_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.21"
+        },
+        {
+          "ObjectName": "SCS_Node BPOilWellBuildSite_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.22"
+        },
+        {
+          "ObjectName": "SCS_Node BPOilWellBuildSite_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.23"
+        },
+        {
+          "ObjectName": "SCS_Node BPOilWellBuildSite_C:SimpleConstructionScript_0.SCS_Node_9",
+          "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.24"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPOilWellBuildSite_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.20"
+        },
+        {
+          "ObjectName": "SCS_Node BPOilWellBuildSite_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.19"
+        },
+        {
+          "ObjectName": "SCS_Node BPOilWellBuildSite_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.21"
+        },
+        {
+          "ObjectName": "SCS_Node BPOilWellBuildSite_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.22"
+        },
+        {
+          "ObjectName": "SCS_Node BPOilWellBuildSite_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.23"
+        },
+        {
+          "ObjectName": "SCS_Node BPOilWellBuildSite_C:SimpleConstructionScript_0.SCS_Node_9",
+          "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.24"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPOilWellBuildSite_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Mines/BPOilWellBuildSite.18"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SK_SulfurMine_GEN_VARIABLE",
+    "Outer": "BPOilWellBuildSite_C",
+    "Properties": {
+      "ClothingSimulationFactory": {
+        "ObjectName": "Class ClothingSimulationFactoryNv",
+        "ObjectPath": "/Script/ClothingSystemRuntimeNv"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_OilWell",
+        "ObjectPath": "War/Content/Meshes/Structures/SK_OilWell.0"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material BuildSite",
+          "ObjectPath": "War/Content/Materials/Structures/BuildSite.0"
+        },
+        {
+          "ObjectName": "Material BuildSite",
+          "ObjectPath": "War/Content/Materials/Structures/BuildSite.0"
+        },
+        {
+          "ObjectName": "Material BuildSite",
+          "ObjectPath": "War/Content/Materials/Structures/BuildSite.0"
+        }
+      ],
+      "CanCharacterStepUpOn": "ECB_No"
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPOilWellBuildSite_C"
+  }
+]

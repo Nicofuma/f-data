@@ -1,0 +1,138 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "OCourseCrouch",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 13.8515625,
+              "Y": 930.2123,
+              "Z": 12.257103
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 638.8057,
+            "Y": 1929.4208,
+            "Z": 56.309776,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "OCourseCrouch",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x4CE80"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "OCourseCrouch",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant WoodRepeating03",
+            "ObjectPath": "War/Content/Materials/Environment/WoodRepeating03.0"
+          },
+          "MaterialSlotName": "WoodRepeating03",
+          "ImportedMaterialSlotName": "WoodRepeating03",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 203.02419,
+            "LocalUVDensities": 2601.0925,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant WoodRepeatingEnd03",
+            "ObjectPath": "War/Content/Materials/Environment/WoodRepeatingEnd03.0"
+          },
+          "MaterialSlotName": "Material #263",
+          "ImportedMaterialSlotName": "Material #263",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 23.41943,
+            "LocalUVDensities": 2601.3296,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant WoodRepeating03",
+            "ObjectPath": "War/Content/Materials/Environment/WoodRepeating03.0"
+          },
+          "MaterialSlotName": "Material #26",
+          "ImportedMaterialSlotName": "Material #26",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 119.36595,
+            "LocalUVDensities": 2490.066,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 2582.5356,
+      "LightMapResolution": 256,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 13.8515625,
+          "Y": 899.72266,
+          "Z": -78.58263
+        },
+        "BoxExtent": {
+          "X": 372.3828,
+          "Y": 1017.5762,
+          "Z": 129.8079
+        },
+        "SphereRadius": 1062.5725
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup OCourseCrouch:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/OCourseCrouch.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision OCourseCrouch:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/OCourseCrouch.1"
+    },
+    "LightingGuid": "A1DB6895-45500B5A-2E249BB3-1481A00B",
+    "RenderData": null
+  }
+]

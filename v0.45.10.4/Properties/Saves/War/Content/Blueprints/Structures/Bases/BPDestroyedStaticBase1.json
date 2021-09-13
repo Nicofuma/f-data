@@ -1,0 +1,770 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "Decal4",
+    "Outer": "BPDestroyedStaticBase1_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class DecalComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPDestroyedStaticBase1_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPDestroyedStaticBase1_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.31"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class DestroyedTownHall",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPDestroyedStaticBase1_C:Decal4",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPDestroyedStaticBase1_C:Decal3",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.17"
+      },
+      {
+        "ObjectName": "ObjectProperty BPDestroyedStaticBase1_C:Decal2",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.16"
+      },
+      {
+        "ObjectName": "ObjectProperty BPDestroyedStaticBase1_C:Decal1",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.15"
+      },
+      {
+        "ObjectName": "ObjectProperty BPDestroyedStaticBase1_C:NoBuildVolume",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.18"
+      },
+      {
+        "ObjectName": "ObjectProperty BPDestroyedStaticBase1_C:Box",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.13"
+      },
+      {
+        "ObjectName": "ObjectProperty BPDestroyedStaticBase1_C:Decal",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.14"
+      },
+      {
+        "ObjectName": "ObjectProperty BPDestroyedStaticBase1_C:TownHallMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.19"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPDestroyedStaticBase1_C",
+    "Name": "Default__BPDestroyedStaticBase1_C",
+    "Properties": {
+      "GenericStockpileComponent": {
+        "ObjectName": "GenericItemStockpileComponent Default__BPDestroyedStaticBase1_C:GenericStockpileComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.12"
+      },
+      "TechTreeComponent": {
+        "ObjectName": "TechTreeComponent Default__BPDestroyedStaticBase1_C:TechTreeComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.34"
+      },
+      "RuinedComponent": {
+        "ObjectName": "RuinedComponent Default__BPDestroyedStaticBase1_C:RuinedComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.20"
+      },
+      "CodeName": "DestroyedStaticBase1",
+      "ProfileType": "EStructureProfileType::DestroyedStructure",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPDestroyedStaticBase1_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPDestroyedStaticBase1_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.6"
+      },
+      "DestroyedFX": {
+        "ObjectName": "ParticleSystem BridgeExplosionWoiod",
+        "ObjectPath": "War/Content/FX/BridgeExplosionWoiod.55"
+      },
+      "DestroyedSoundCue": {
+        "ObjectName": "SoundCue StructureExplosionSmall_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/StructureExplosionSmall_Cue.0"
+      },
+      "MaxHealth": 100000000,
+      "Health": 100000000,
+      "MapIconType": "EMapIconType::StaticBase1",
+      "UpgradeStructureCodeName": "StaticBase1",
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPDestroyedStaticBase1_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.33"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPDestroyedStaticBase1_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPDestroyedStaticBase1_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "Box_GEN_VARIABLE",
+    "Outer": "BPDestroyedStaticBase1_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 256.0,
+        "Y": 128.0,
+        "Z": 400.0
+      },
+      "AreaClass": {
+        "ObjectName": "Class NavArea_Obstacle",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bGenerateOverlapEvents": false,
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "Custom",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.00030517578,
+        "Y": 300.09576,
+        "Z": 305.6126
+      },
+      "RelativeScale3D": {
+        "X": 1.0,
+        "Y": 1.0,
+        "Z": 0.9416524
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "NoBuildVolume_GEN_VARIABLE",
+    "Outer": "BPDestroyedStaticBase1_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 1000.0,
+        "Y": 675.0,
+        "Z": 750.0
+      },
+      "AreaClass": {
+        "ObjectName": "Class NavArea_Obstacle",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "BodyInstance": {
+        "CollisionProfileName": "NoBuildArea",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapDowncast",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Projectile",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 615.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPDestroyedStaticBase1_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 1200.0,
+        "Y": 950.0,
+        "Z": 128.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPDestroyedStaticBase1_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 128.0
+      }
+    }
+  },
+  {
+    "Type": "DecalComponent",
+    "Name": "Decal1_GEN_VARIABLE",
+    "Outer": "BPDestroyedStaticBase1_C",
+    "Properties": {
+      "DecalMaterial": {
+        "ObjectName": "MaterialInstanceConstant DirtPatch",
+        "ObjectPath": "War/Content/Materials/Decals/DirtPatch.0"
+      },
+      "SortOrder": 1,
+      "DecalSize": {
+        "X": 128.0,
+        "Y": 600.0,
+        "Z": 600.0
+      },
+      "RelativeLocation": {
+        "X": -332.90146,
+        "Y": 322.23846,
+        "Z": 2.222709E-05
+      },
+      "RelativeRotation": {
+        "Pitch": -90.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "DecalComponent",
+    "Name": "Decal2_GEN_VARIABLE",
+    "Outer": "BPDestroyedStaticBase1_C",
+    "Properties": {
+      "DecalMaterial": {
+        "ObjectName": "MaterialInstanceConstant DirtPatch",
+        "ObjectPath": "War/Content/Materials/Decals/DirtPatch.0"
+      },
+      "SortOrder": 1,
+      "DecalSize": {
+        "X": 128.0,
+        "Y": 600.0,
+        "Z": 600.0
+      },
+      "RelativeLocation": {
+        "X": -6.1E-05,
+        "Y": 0.0,
+        "Z": 658.86676
+      },
+      "RelativeRotation": {
+        "Pitch": 7E-06,
+        "Yaw": -2E-06,
+        "Roll": -90.00012
+      }
+    }
+  },
+  {
+    "Type": "DecalComponent",
+    "Name": "Decal3_GEN_VARIABLE",
+    "Outer": "BPDestroyedStaticBase1_C",
+    "Properties": {
+      "DecalMaterial": {
+        "ObjectName": "MaterialInstanceConstant DirtPatch",
+        "ObjectPath": "War/Content/Materials/Decals/DirtPatch.0"
+      },
+      "SortOrder": 1,
+      "DecalSize": {
+        "X": 128.0,
+        "Y": 600.0,
+        "Z": 600.0
+      },
+      "RelativeLocation": {
+        "X": -0.000183,
+        "Y": -714.35016,
+        "Z": 658.8653
+      },
+      "RelativeRotation": {
+        "Pitch": 7E-06,
+        "Yaw": -2E-06,
+        "Roll": -90.00012
+      }
+    }
+  },
+  {
+    "Type": "DecalComponent",
+    "Name": "Decal4_GEN_VARIABLE",
+    "Outer": "BPDestroyedStaticBase1_C",
+    "Properties": {
+      "DecalMaterial": {
+        "ObjectName": "MaterialInstanceConstant DirtPatch",
+        "ObjectPath": "War/Content/Materials/Decals/DirtPatch.0"
+      },
+      "SortOrder": 1,
+      "DecalSize": {
+        "X": 128.0,
+        "Y": 600.0,
+        "Z": 600.0
+      },
+      "RelativeLocation": {
+        "X": -0.00017,
+        "Y": -714.35016,
+        "Z": -0.001434
+      }
+    }
+  },
+  {
+    "Type": "DecalComponent",
+    "Name": "Decal_GEN_VARIABLE",
+    "Outer": "BPDestroyedStaticBase1_C",
+    "Properties": {
+      "DecalMaterial": {
+        "ObjectName": "MaterialInstanceConstant DirtPatch",
+        "ObjectPath": "War/Content/Materials/Decals/DirtPatch.0"
+      },
+      "SortOrder": 1,
+      "RelativeLocation": {
+        "X": 0.0026807645,
+        "Y": 543.0,
+        "Z": -87.522156
+      },
+      "RelativeRotation": {
+        "Pitch": -90.0,
+        "Yaw": 0.0,
+        "Roll": -89.99994
+      },
+      "RelativeScale3D": {
+        "X": 0.8151806,
+        "Y": 2.435061,
+        "Z": 1.251711
+      }
+    }
+  },
+  {
+    "Type": "GenericItemStockpileComponent",
+    "Name": "GenericStockpileComponent",
+    "Outer": "Default__BPDestroyedStaticBase1_C"
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Box",
+    "Outer": "BPDestroyedStaticBase1_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BoxComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Decal",
+    "Outer": "BPDestroyedStaticBase1_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class DecalComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Decal1",
+    "Outer": "BPDestroyedStaticBase1_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class DecalComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Decal2",
+    "Outer": "BPDestroyedStaticBase1_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class DecalComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Decal3",
+    "Outer": "BPDestroyedStaticBase1_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class DecalComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "NoBuildVolume",
+    "Outer": "BPDestroyedStaticBase1_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BoxComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "TownHallMesh",
+    "Outer": "BPDestroyedStaticBase1_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "RuinedComponent",
+    "Name": "RuinedComponent",
+    "Outer": "Default__BPDestroyedStaticBase1_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPDestroyedStaticBase1_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.3"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPDestroyedStaticBase1_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPDestroyedStaticBase1_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.21"
+      },
+      "VariableGuid": "E3C1AF73-43D88F05-F59AB7A7-79208843",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPDestroyedStaticBase1_C:TownHallMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.32"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node BPDestroyedStaticBase1_C:SimpleConstructionScript_0.SCS_Node_8",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.30"
+        }
+      ],
+      "VariableGuid": "C721EC3E-459AE76A-76A5D993-0E713622",
+      "InternalVariableName": "TownHallMesh"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BoxComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent BPDestroyedStaticBase1_C:NoBuildVolume_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.5"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "A4F75601-4BC53B6C-3C049493-F18264DB",
+      "InternalVariableName": "NoBuildVolume"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class DecalComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "DecalComponent BPDestroyedStaticBase1_C:Decal1_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.7"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node BPDestroyedStaticBase1_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.26"
+        },
+        {
+          "ObjectName": "SCS_Node BPDestroyedStaticBase1_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.27"
+        },
+        {
+          "ObjectName": "SCS_Node BPDestroyedStaticBase1_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.29"
+        }
+      ],
+      "VariableGuid": "62F39297-41704862-70B9289E-ADFC88A6",
+      "InternalVariableName": "Decal1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class DecalComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "DecalComponent BPDestroyedStaticBase1_C:Decal2_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.8"
+      },
+      "VariableGuid": "5E88E821-4CEAB4F8-98933FAC-FD0BC7C9",
+      "InternalVariableName": "Decal2"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class DecalComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "DecalComponent BPDestroyedStaticBase1_C:Decal3_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.9"
+      },
+      "VariableGuid": "43E6201C-4A258BDD-B4F203BF-8EE78703",
+      "InternalVariableName": "Decal3"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BoxComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent BPDestroyedStaticBase1_C:Box_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.4"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "25666AFC-4AEF4089-BC2E4A90-99A1D872",
+      "InternalVariableName": "Box"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class DecalComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "DecalComponent BPDestroyedStaticBase1_C:Decal4_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.10"
+      },
+      "VariableGuid": "068BEE15-4620BC6A-55AB399D-453C6B65",
+      "InternalVariableName": "Decal4"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_8",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class DecalComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "DecalComponent BPDestroyedStaticBase1_C:Decal_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.11"
+      },
+      "VariableGuid": "34FA256F-4AE6461C-9EE02C9A-CE4492FD",
+      "InternalVariableName": "Decal"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPDestroyedStaticBase1_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPDestroyedStaticBase1_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.23"
+        },
+        {
+          "ObjectName": "SCS_Node BPDestroyedStaticBase1_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.28"
+        },
+        {
+          "ObjectName": "SCS_Node BPDestroyedStaticBase1_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.24"
+        },
+        {
+          "ObjectName": "SCS_Node BPDestroyedStaticBase1_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.25"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPDestroyedStaticBase1_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.23"
+        },
+        {
+          "ObjectName": "SCS_Node BPDestroyedStaticBase1_C:SimpleConstructionScript_0.SCS_Node_8",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.30"
+        },
+        {
+          "ObjectName": "SCS_Node BPDestroyedStaticBase1_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.28"
+        },
+        {
+          "ObjectName": "SCS_Node BPDestroyedStaticBase1_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.24"
+        },
+        {
+          "ObjectName": "SCS_Node BPDestroyedStaticBase1_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.25"
+        },
+        {
+          "ObjectName": "SCS_Node BPDestroyedStaticBase1_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.26"
+        },
+        {
+          "ObjectName": "SCS_Node BPDestroyedStaticBase1_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.27"
+        },
+        {
+          "ObjectName": "SCS_Node BPDestroyedStaticBase1_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.29"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPDestroyedStaticBase1_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPDestroyedStaticBase1.22"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "TownHallMesh_GEN_VARIABLE",
+    "Outer": "BPDestroyedStaticBase1_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh TownGarrisonCritical",
+        "ObjectPath": "War/Content/Meshes/Structures/TownGarrisonCritical.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant TownGarrisonDestroyed",
+          "ObjectPath": "War/Content/Materials/Structures/TownGarrisonDestroyed.0"
+        },
+        {
+          "ObjectName": "MaterialInstanceConstant TownGarrisonDestroyed",
+          "ObjectPath": "War/Content/Materials/Structures/TownGarrisonDestroyed.0"
+        }
+      ],
+      "bReceivesDecals": false,
+      "bAffectDistanceFieldLighting": false,
+      "BodyInstance": {
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPDestroyedStaticBase1_C"
+  },
+  {
+    "Type": "TechTreeComponent",
+    "Name": "TechTreeComponent",
+    "Outer": "Default__BPDestroyedStaticBase1_C"
+  }
+]

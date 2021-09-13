@@ -1,0 +1,752 @@
+[
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "BPLightTankW_C",
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPLightTankW_C",
+    "Super": "BPLightTankBaseW_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPLightTankW_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.42"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler BPLightTankW_C:InheritableComponentHandler",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.16"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty BPLightTankW_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.0"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function BPLightTankW_C:ExecuteUbergraph_BPLightTankW",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.9"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass BPLightTankBaseW_C",
+      "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankBaseW.1"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty BPLightTankW_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.0"
+      },
+      {
+        "ObjectName": "Function BPLightTankW_C:BPOnVehicleOn",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.10"
+      },
+      {
+        "ObjectName": "Function BPLightTankW_C:ExecuteUbergraph_BPLightTankW",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.9"
+      },
+      {
+        "ObjectName": "ObjectProperty BPLightTankW_C:GunnerSeat1",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.7"
+      },
+      {
+        "ObjectName": "ObjectProperty BPLightTankW_C:MainBody",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.17"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 655360,
+    "ClassWithin": null,
+    "ClassConfigName": "/Game/Audio/SFX/Vehicles/LightTanks/Colonial/LightTankColonialGunnerEntrance_Cue_720895",
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPLightTankW_C",
+    "Name": "Default__BPLightTankW_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "DisabledTurretFX": {
+        "ObjectName": "ParticleSystemComponent Default__BPLightTankW_C:DisabledTurretFX",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.20"
+      },
+      "DisabledTurret2FX": {
+        "ObjectName": "ParticleSystemComponent Default__BPLightTankW_C:DisabledTurret2FX",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.19"
+      },
+      "DisabledFuelTankFX": {
+        "ObjectName": "ParticleSystemComponent Default__BPLightTankW_C:DisabledFuelTankFX",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.18"
+      },
+      "IdleLoop": {
+        "ObjectName": "AudioComponent Default__BPLightTankW_C:IdleLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.6"
+      },
+      "RearLeftTireDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPLightTankW_C:RearLeftTireDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.26"
+      },
+      "RearLeftTireDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPLightTankW_C:RearLeftTireDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.25"
+      },
+      "RearRightTireDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPLightTankW_C:RearRightTireDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.28"
+      },
+      "RearRightTireDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPLightTankW_C:RearRightTireDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.27"
+      },
+      "MainDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPLightTankW_C:MainDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.22"
+      },
+      "MainDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPLightTankW_C:MainDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.21"
+      },
+      "SkiddingDirtPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPLightTankW_C:SkiddingDirtPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.29"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "96D28D5548C72FAC24CFB08940848C6B",
+        "SourceString": "Devitt Mk. III"
+      },
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "2E06E5194C85864DBE6D4088CD60F9B4",
+        "SourceString": "Light Tank"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "97678A9F4AE94DBACE6C1B8F000042E9",
+        "SourceString": "A highly maneuverable lightweight tank. Designed for urban environments, the Devitt is fitted with a 40mm cannon."
+      },
+      "CodeName": "LightTankW",
+      "DestroyedMesh": {
+        "ObjectName": "StaticMeshComponent Default__BPLightTankW_C:DestroyedMesh",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.45"
+      },
+      "MinorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPLightTankW_C:MinorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.24"
+      },
+      "MajorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPLightTankW_C:MajorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.23"
+      },
+      "DriveLoop": {
+        "ObjectName": "AudioComponent Default__BPLightTankW_C:DriveLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.5"
+      },
+      "BackUpSFXLoop": {
+        "ObjectName": "AudioComponent Default__BPLightTankW_C:BackUpSFXLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.4"
+      },
+      "CameraRigComponent": {
+        "ObjectName": "PlayerCameraRigComponent Default__BPLightTankW_C:CameraRigVehicle",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.30"
+      },
+      "FrontAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__BPLightTankW_C:FrontAxelCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.33"
+      },
+      "RearAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__BPLightTankW_C:RearAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.36"
+      },
+      "FrontLeftRollCastLocation": {
+        "ObjectName": "SceneComponent Default__BPLightTankW_C:FrontRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.34"
+      },
+      "FrontRightRollCastLocation": {
+        "ObjectName": "SceneComponent Default__BPLightTankW_C:RearRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.37"
+      },
+      "LeftSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__BPLightTankW_C:LeftSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.35"
+      },
+      "RightSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__BPLightTankW_C:RightSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.38"
+      },
+      "VehicleCollision": {
+        "ObjectName": "BoxComponent Default__BPLightTankW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.14"
+      },
+      "PassengerArea": {
+        "ObjectName": "BoxComponent Default__BPLightTankW_C:PassengerBaseBox",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.13"
+      },
+      "AFKTimeoutComponent": {
+        "ObjectName": "AFKTimeoutComponent Default__BPLightTankW_C:AFKTimeoutComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.3"
+      },
+      "Treads": {
+        "TrackMaterialIndices": 2
+      },
+      "MuzzleInfo": [
+        {
+          "GunnerIndex": 1,
+          "MuzzleIndex": 0,
+          "SocketName": "S_Muzzle"
+        }
+      ],
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPLightTankW_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.46"
+      },
+      "Mesh": {
+        "ObjectName": "SkeletalMeshComponent Default__BPLightTankW_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.44"
+      },
+      "CharacterMovement": {
+        "ObjectName": "RWDVehicleMovementComponent Default__BPLightTankW_C:CharMoveComp",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.31"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent Default__BPLightTankW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.15"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPLightTankW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.14"
+      }
+    }
+  },
+  {
+    "Type": "AFKTimeoutComponent",
+    "Name": "AFKTimeoutComponent",
+    "Outer": "Default__BPLightTankW_C"
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "BackUpSFXLoop",
+    "Outer": "Default__BPLightTankW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPLightTankW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.15"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "DriveLoop",
+    "Outer": "Default__BPLightTankW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPLightTankW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.15"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "IdleLoop",
+    "Outer": "Default__BPLightTankW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPLightTankW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.14"
+      }
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "GunnerSeat1",
+    "Outer": "BPLightTankW_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class VehicleSeatComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_BPLightTankW",
+    "PropertyFlags": 148
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BPLightTankW",
+    "Outer": "BPLightTankW_C",
+    "Children": [
+      {
+        "ObjectName": "IntProperty BPLightTankW_C:ExecuteUbergraph_BPLightTankW.EntryPoint",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.8"
+      },
+      {
+        "ObjectName": "BoolProperty BPLightTankW_C:ExecuteUbergraph_BPLightTankW.K2Node_Event_IsOn",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.12"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "Function",
+    "Name": "BPOnVehicleOn",
+    "Outer": "BPLightTankW_C",
+    "Super": "BPOnVehicleOn",
+    "SuperStruct": {
+      "ObjectName": "Function BPLightTankBaseW_C:BPOnVehicleOn",
+      "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankBaseW.10"
+    },
+    "Children": [
+      {
+        "ObjectName": "BoolProperty BPLightTankW_C:BPOnVehicleOn.IsOn",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.11"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "IsOn",
+    "Outer": "BPOnVehicleOn",
+    "PropertyFlags": 148,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_Event_IsOn",
+    "Outer": "ExecuteUbergraph_BPLightTankW",
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "PassengerBaseBox",
+    "Outer": "Default__BPLightTankW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPLightTankW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.14"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "VehicleCollision",
+    "Outer": "Default__BPLightTankW_C",
+    "Properties": {
+      "OnComponentBeginOverlap": null
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__BPLightTankW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPLightTankW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.14"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BPLightTankW_C"
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "MainBody",
+    "Outer": "BPLightTankW_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SkeletalMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "DisabledFuelTankFX",
+    "Outer": "Default__BPLightTankW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPLightTankW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.14"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "DisabledTurret2FX",
+    "Outer": "Default__BPLightTankW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPLightTankW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.14"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "DisabledTurretFX",
+    "Outer": "Default__BPLightTankW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPLightTankW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.14"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MainDirtHighSpeedPS",
+    "Outer": "Default__BPLightTankW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPLightTankW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.14"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MainDirtLowSpeedPS",
+    "Outer": "Default__BPLightTankW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPLightTankW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.14"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MajorDamagePS",
+    "Outer": "Default__BPLightTankW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPLightTankW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.15"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MinorDamagePS",
+    "Outer": "Default__BPLightTankW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPLightTankW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.15"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearLeftTireDirtHighSpeedPS",
+    "Outer": "Default__BPLightTankW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPLightTankW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.14"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearLeftTireDirtLowSpeedPS",
+    "Outer": "Default__BPLightTankW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPLightTankW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.14"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearRightTireDirtHighSpeedPS",
+    "Outer": "Default__BPLightTankW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPLightTankW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.14"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearRightTireDirtLowSpeedPS",
+    "Outer": "Default__BPLightTankW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPLightTankW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.14"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "SkiddingDirtPS",
+    "Outer": "Default__BPLightTankW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPLightTankW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.14"
+      }
+    }
+  },
+  {
+    "Type": "PlayerCameraRigComponent",
+    "Name": "CameraRigVehicle",
+    "Outer": "Default__BPLightTankW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPLightTankW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.15"
+      }
+    }
+  },
+  {
+    "Type": "RWDVehicleMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__BPLightTankW_C",
+    "Properties": {
+      "EngineForce": 26000.0,
+      "BrakeForce": 50000.0,
+      "HandbrakeForce": 40000.0,
+      "MaxWalkSpeed": 1653.8271
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPLightTankW_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontAxelCastLocation",
+    "Outer": "Default__BPLightTankW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPLightTankW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.15"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontRightAxleCastLocation",
+    "Outer": "Default__BPLightTankW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPLightTankW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.15"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "LeftSideTrackLocation",
+    "Outer": "Default__BPLightTankW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPLightTankW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.15"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearAxleCastLocation",
+    "Outer": "Default__BPLightTankW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPLightTankW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.15"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearRightAxleCastLocation",
+    "Outer": "Default__BPLightTankW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPLightTankW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.15"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RightSideTrackLocation",
+    "Outer": "Default__BPLightTankW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPLightTankW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.15"
+      }
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPLightTankW_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.32"
+      },
+      "VariableGuid": "AC527E45-4CB4B0CF-6FB217B6-35F82C26",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class VehicleSeatComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "VehicleSeatComponent BPLightTankW_C:GunnerSeat1_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.47"
+      },
+      "AttachToName": "body_pivot",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "10996D40-4DF1F63E-6DCF1793-584A48BB",
+      "InternalVariableName": "GunnerSeat1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_17",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SkeletalMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SkeletalMeshComponent BPLightTankW_C:MainBody_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.43"
+      },
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "9F69BDA1-4FFB0DA7-5217FD86-8F8837BC",
+      "InternalVariableName": "MainBody"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPLightTankW_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPLightTankW_C:SimpleConstructionScript_0.SCS_Node_17",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.41"
+        },
+        {
+          "ObjectName": "SCS_Node BPLightTankW_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.40"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPLightTankW_C:SimpleConstructionScript_0.SCS_Node_17",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.41"
+        },
+        {
+          "ObjectName": "SCS_Node BPLightTankW_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.40"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPLightTankW_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.39"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "MainBody_GEN_VARIABLE",
+    "Outer": "BPLightTankW_C",
+    "Properties": {
+      "ClothingSimulationFactory": {
+        "ObjectName": "Class ClothingSimulationFactoryNv",
+        "ObjectPath": "/Script/ClothingSystemRuntimeNv"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_LightTankBaseW_chassis",
+        "ObjectPath": "War/Content/Meshes/Vehicles/PrototypeVehicles/Tank/SK_LightTankBaseW_chassis.0"
+      },
+      "bReceivesDecals": false
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__BPLightTankW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPLightTankW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.15"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "DestroyedMesh",
+    "Outer": "Default__BPLightTankW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPLightTankW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankW.15"
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPLightTankW_C"
+  },
+  {
+    "Type": "VehicleSeatComponent",
+    "Name": "GunnerSeat1_GEN_VARIABLE",
+    "Outer": "BPLightTankW_C",
+    "Properties": {
+      "Index": 1,
+      "TriggerName": "GunnerTrigger",
+      "ExitName": "GunnerExit",
+      "MountCodeName": "LightTankGunnerW",
+      "MountComponent": {
+        "ObjectName": "BlueprintGeneratedClass BPLightTankGunnerMountComponentW_C",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LightTank/BPLightTankGunnerMountComponentW.0"
+      },
+      "EnterSFX": {
+        "ObjectName": "SoundCue LightTankColonialGunnerEntrance_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Vehicles/LightTanks/Colonial/LightTankColonialGunnerEntrance_Cue.0"
+      },
+      "RelativeLocation": {
+        "X": -0.20265327,
+        "Y": 34.610126,
+        "Z": 150.0
+      }
+    }
+  }
+]

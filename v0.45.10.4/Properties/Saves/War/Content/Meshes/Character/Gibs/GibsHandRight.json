@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "GibsHandRight",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "GibsHandRight",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x220F"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "GibsHandRight",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Gibs",
+            "ObjectPath": "War/Content/Materials/Character/Gibs.0"
+          },
+          "MaterialSlotName": "Gibs",
+          "ImportedMaterialSlotName": "Gibs",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 221.40776,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 221.40776,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.9073486E-06,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 15.861879,
+          "Y": 19.16649,
+          "Z": 23.944412
+        },
+        "SphereRadius": 31.77189
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup GibsHandRight:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Character/Gibs/GibsHandRight.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision GibsHandRight:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Character/Gibs/GibsHandRight.1"
+    },
+    "LightingGuid": "AEB8F32E-4E0892EA-E39440B5-D77A4ED8",
+    "RenderData": null
+  }
+]

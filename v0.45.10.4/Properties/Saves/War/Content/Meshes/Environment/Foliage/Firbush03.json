@@ -1,0 +1,137 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Firbush03",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 1.0818176,
+              "Y": -2.4779358,
+              "Z": 192.73854
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 467.28342,
+            "Y": 111.595695,
+            "Z": 248.53616,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "Firbush03",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0xA343"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Firbush03",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant PineBush",
+            "ObjectPath": "War/Content/Materials/Environment/Props/PineBush.0"
+          },
+          "MaterialSlotName": "Material #525",
+          "ImportedMaterialSlotName": "Material #525",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 185.23433,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant PineBranchDead",
+            "ObjectPath": "War/Content/Materials/Environment/Props/PineBranchDead.0"
+          },
+          "MaterialSlotName": "Material #925",
+          "ImportedMaterialSlotName": "Material #925",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 162.41739,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant PinePatch",
+            "ObjectPath": "War/Content/Materials/Environment/Props/PinePatch.0"
+          },
+          "MaterialSlotName": "Decal",
+          "ImportedMaterialSlotName": "Decal",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 311.94928,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 184.50572,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.0818176,
+          "Y": -2.4779358,
+          "Z": 192.73854
+        },
+        "BoxExtent": {
+          "X": 325.7878,
+          "Y": 157.94794,
+          "Z": 201.86713
+        },
+        "SphereRadius": 408.35367
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Firbush03:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/Firbush03.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Firbush03:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/Firbush03.1"
+    },
+    "LightingGuid": "727B614F-4263AC22-8A52889C-8BE3D3FE",
+    "RenderData": null
+  }
+]

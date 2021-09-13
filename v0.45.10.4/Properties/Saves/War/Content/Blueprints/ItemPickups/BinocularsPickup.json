@@ -1,0 +1,171 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "BinocularPickup",
+    "Outer": "BinocularsPickup_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BinocularsPickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BinocularsPickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BinocularsPickup.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class GearPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BinocularsPickup_C:BinocularPickup",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BinocularsPickup.0"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BinocularsPickup_C",
+    "Name": "Default__BinocularsPickup_C",
+    "Properties": {
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPBinocularsComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Items/BPBinocularsComponent.0"
+      },
+      "Encumbrance": 10,
+      "CodeName": "Binoculars",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "3D0C540D469746133D2B58BDF7720455",
+        "SourceString": "Binoculars"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "3061273B45958F0419EEBC903979244B",
+        "SourceString": "An optical instrument used for viewing distant objects."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D BinocularsItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/BinocularsItemIcon.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Secondary",
+      "ItemCategory": "EItemCategory::Utility",
+      "ItemProfileType": "EItemProfileType::Tool",
+      "TechID": "ETechID::UnlockBinoculars",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BinocularsPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BinocularsPickup.3"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BinocularsPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BinocularsPickup.3"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BinocularsPickup_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BinocularsPickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BinocularsPickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BinocularsPickup.4"
+      },
+      "VariableGuid": "FBF04340-40D71A47-9ED11191-32B797F3",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BinocularsPickup_C:BinocularPickup_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BinocularsPickup.8"
+      },
+      "ParentComponentOrVariableName": "ItemBox",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "07A6B5A5-43448E9E-5A0665AC-D6EEABD9",
+      "InternalVariableName": "BinocularPickup"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BinocularsPickup_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BinocularsPickup_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/ItemPickups/BinocularsPickup.6"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BinocularsPickup_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/ItemPickups/BinocularsPickup.6"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BinocularsPickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BinocularsPickup.5"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "BinocularPickup_GEN_VARIABLE",
+    "Outer": "BinocularsPickup_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh BinocularPickup",
+        "ObjectPath": "War/Content/Meshes/Pickups/BinocularPickup.2"
+      },
+      "bReceivesDecals": false
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BinocularsPickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BinocularsPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BinocularsPickup.3"
+      }
+    }
+  }
+]

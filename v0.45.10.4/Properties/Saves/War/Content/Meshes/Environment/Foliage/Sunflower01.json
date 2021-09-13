@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Outer": "Sunflower01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "Sunflower01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x3031"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Sunflower01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Sunflower01",
+            "ObjectPath": "War/Content/Materials/Environment/Sunflower01.0"
+          },
+          "MaterialSlotName": "Material #25",
+          "ImportedMaterialSlotName": "Material #25",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 123.0576,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 123.0576,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 3.6638947,
+          "Y": -5.418442,
+          "Z": 111.539505
+        },
+        "BoxExtent": {
+          "X": 86.123245,
+          "Y": 65.85684,
+          "Z": 126.72009
+        },
+        "SphereRadius": 132.30635
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Sunflower01:BodySetup_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/Sunflower01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Sunflower01:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/Sunflower01.1"
+    },
+    "LightingGuid": "458D40C8-4EAEEDBF-4CD3CEBC-2F2A7EB2",
+    "RenderData": null
+  }
+]

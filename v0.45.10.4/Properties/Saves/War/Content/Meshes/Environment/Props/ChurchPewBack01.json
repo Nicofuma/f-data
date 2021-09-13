@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ChurchPewBack01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "ChurchPewBack01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x14E8"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ChurchPewBack01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Cabinets",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Cabinets.0"
+          },
+          "MaterialSlotName": "Material #1021",
+          "ImportedMaterialSlotName": "Material #1021",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 462.01917,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 462.01917,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 91.130844,
+          "Y": 16.486237,
+          "Z": 40.19162
+        },
+        "SphereRadius": 100.720695
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ChurchPewBack01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ChurchPewBack01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ChurchPewBack01:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ChurchPewBack01.1"
+    },
+    "LightingGuid": "86E9E0B5-47BBE69F-94C30C88-A2AB4365",
+    "RenderData": null
+  }
+]

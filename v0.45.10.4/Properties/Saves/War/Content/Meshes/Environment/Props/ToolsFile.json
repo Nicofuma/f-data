@@ -1,0 +1,89 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_10749",
+    "Outer": "ToolsFile",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "ToolsFile",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x225B"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ToolsFile",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Tools01",
+            "ObjectPath": "War/Content/Materials/Structures/Tools01.0"
+          },
+          "MaterialSlotName": "Tools01",
+          "ImportedMaterialSlotName": "Tools01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 145.03687,
+            "LocalUVDensities": 64.73039,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 64.73039,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.5672455,
+          "Y": -0.6415825,
+          "Z": 3.33786E-06
+        },
+        "BoxExtent": {
+          "X": 34.18701,
+          "Y": 4.4141216,
+          "Z": 0.9089141
+        },
+        "SphereRadius": 34.189342
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ToolsFile:BodySetup_10749",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ToolsFile.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ToolsFile:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ToolsFile.1"
+    },
+    "LightingGuid": "4E0B9F06-4C369D3D-FDAFAE84-BD6B895E",
+    "RenderData": null
+  }
+]

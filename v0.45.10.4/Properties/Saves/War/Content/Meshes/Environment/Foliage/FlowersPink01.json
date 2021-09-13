@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FlowersPink01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "FlowersPink01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x3AF2"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FlowersPink01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Flowers",
+            "ObjectPath": "War/Content/Materials/Environment/Flowers.0"
+          },
+          "MaterialSlotName": "Material #854",
+          "ImportedMaterialSlotName": "Material #854",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 136.27237,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 136.27237,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 3.8146973E-06,
+          "Z": 59.01665
+        },
+        "BoxExtent": {
+          "X": 51.684353,
+          "Y": 58.90257,
+          "Z": 54.442944
+        },
+        "SphereRadius": 73.84213
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FlowersPink01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/FlowersPink01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FlowersPink01:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/FlowersPink01.1"
+    },
+    "LightingGuid": "D339872B-4D1449B2-D2F2538C-82C818EB",
+    "RenderData": null
+  }
+]

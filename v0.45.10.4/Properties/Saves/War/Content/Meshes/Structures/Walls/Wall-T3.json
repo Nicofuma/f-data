@@ -1,0 +1,184 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_3",
+    "Outer": "Wall-T3",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -750.0,
+                "Y": 37.499992,
+                "Z": -99.80934
+              },
+              {
+                "X": 750.0,
+                "Y": 37.499992,
+                "Z": -99.80934
+              },
+              {
+                "X": -750.0,
+                "Y": -37.500008,
+                "Z": -99.80934
+              },
+              {
+                "X": 750.0,
+                "Y": -37.500008,
+                "Z": -99.80934
+              },
+              {
+                "X": -750.0,
+                "Y": 37.499996,
+                "Z": 408.39066
+              },
+              {
+                "X": 750.0,
+                "Y": 37.499996,
+                "Z": 408.39066
+              },
+              {
+                "X": -750.0,
+                "Y": -37.500004,
+                "Z": 408.39066
+              },
+              {
+                "X": 750.0,
+                "Y": -37.500004,
+                "Z": 408.39066
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -750.0,
+                "Y": -37.500008,
+                "Z": -99.80934
+              },
+              "Max": {
+                "X": 750.0,
+                "Y": 37.499996,
+                "Z": 408.39066
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 6.6889954
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0484986
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_6",
+    "Outer": "Wall-T3",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 457,
+        "SizeOnDisk": 457,
+        "OffsetInFile": "0x8318"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Wall-T3",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortT3ConcreteWall02",
+            "ObjectPath": "War/Content/Materials/Structures/FortT3ConcreteWall02.0"
+          },
+          "MaterialSlotName": "Concrete",
+          "ImportedMaterialSlotName": "Concrete",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 453.7922,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BarbedWire",
+            "ObjectPath": "War/Content/Materials/Environment/BarbedWire.0"
+          },
+          "MaterialSlotName": "Metal",
+          "ImportedMaterialSlotName": "Metal",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 246.18417,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 370.0398,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.00018310547,
+          "Y": 3.108204,
+          "Z": 159.3035
+        },
+        "BoxExtent": {
+          "X": 756.6114,
+          "Y": 60.079582,
+          "Z": 259.4848
+        },
+        "SphereRadius": 799.91693
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Wall-T3:BodySetup_3",
+      "ObjectPath": "War/Content/Meshes/Structures/Walls/Wall-T3.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Wall-T3:NavCollision_6",
+      "ObjectPath": "War/Content/Meshes/Structures/Walls/Wall-T3.1"
+    },
+    "LightingGuid": "7713D2A8-47515263-CA1B318A-FDC60B0C",
+    "RenderData": null
+  }
+]

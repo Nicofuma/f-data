@@ -1,0 +1,106 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPRpgAmmoPickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPRpgAmmoPickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPRpgAmmoPickup.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class AmmoPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPRpgAmmoPickup_C",
+    "Name": "Default__BPRpgAmmoPickup_C",
+    "Properties": {
+      "Encumbrance": 45,
+      "CodeName": "RpgAmmo",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "86DA071C4C5E5E383990BE86B5A5C8C7",
+        "SourceString": "R.P.G. Shell"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "87312142472EB68405C143887E747795",
+        "SourceString": "An explosive projectile fired from an R.P.G."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D RpgAmmoItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/RpgAmmoItemIcon.0"
+      },
+      "ItemCategory": "EItemCategory::HeavyArms",
+      "ItemProfileType": "EItemProfileType::HeavyAmmo",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPRpgAmmoPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPRpgAmmoPickup.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPRpgAmmoPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPRpgAmmoPickup.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPRpgAmmoPickup_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPRpgAmmoPickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPRpgAmmoPickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPRpgAmmoPickup.3"
+      },
+      "VariableGuid": "BAE6D160-4654521D-F027E5B0-08BF61E3",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPRpgAmmoPickup_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPRpgAmmoPickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPRpgAmmoPickup.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPRpgAmmoPickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPRpgAmmoPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPRpgAmmoPickup.2"
+      }
+    }
+  }
+]

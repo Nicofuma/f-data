@@ -1,0 +1,132 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "LanternHanging2Ceiling",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_5",
+    "Outer": "LanternHanging2Ceiling",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xC586"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "LanternHanging2Ceiling",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MetalPanelRust",
+            "ObjectPath": "War/Content/Materials/Resources/MetalPanelRust.0"
+          },
+          "MaterialSlotName": "Material #45",
+          "ImportedMaterialSlotName": "Material #45",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 32.19232,
+            "LocalUVDensities": 3.0794184,
+            "LocalUVDensities": 1.2195858,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RepeatingMetal2",
+            "ObjectPath": "War/Content/Materials/Resources/RepeatingMetal2.0"
+          },
+          "MaterialSlotName": "Material #46",
+          "ImportedMaterialSlotName": "Material #46",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 19.597778,
+            "LocalUVDensities": 3.3344536,
+            "LocalUVDensities": 1.38377,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ShipyardScaffold",
+            "ObjectPath": "War/Content/Materials/Environment/ShipyardScaffold.0"
+          },
+          "MaterialSlotName": "ShipyardScaffold",
+          "ImportedMaterialSlotName": "ShipyardScaffold",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 557.6922,
+            "LocalUVDensities": 0.8273818,
+            "LocalUVDensities": 44703.523,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material LanternEmissive",
+            "ObjectPath": "War/Content/Materials/LanternEmissive.0"
+          },
+          "MaterialSlotName": "SimpleEmissive_ncl1_2",
+          "ImportedMaterialSlotName": "SimpleEmissive_ncl1_2",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 601.44855,
+            "LocalUVDensities": 407.65982,
+            "LocalUVDensities": 26407.48,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 4.820504,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 3.2424927E-05,
+          "Y": -20.512268,
+          "Z": -35.117622
+        },
+        "BoxExtent": {
+          "X": 26.046055,
+          "Y": 24.354763,
+          "Z": 61.28611
+        },
+        "SphereRadius": 66.8409
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup LanternHanging2Ceiling:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/LanternHanging2Ceiling.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision LanternHanging2Ceiling:NavCollision_5",
+      "ObjectPath": "War/Content/Meshes/Structures/LanternHanging2Ceiling.1"
+    },
+    "LightingGuid": "756F8A45-4D049E25-F456B687-EFB64424",
+    "RenderData": null
+  }
+]

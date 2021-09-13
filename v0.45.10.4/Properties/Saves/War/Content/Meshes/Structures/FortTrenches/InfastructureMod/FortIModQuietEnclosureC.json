@@ -1,0 +1,131 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FortIModQuietEnclosureC",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "FortIModQuietEnclosureC",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1E762"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FortIModQuietEnclosureC",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Infrastructure04",
+            "ObjectPath": "War/Content/Materials/Structures/Infrastructure04.0"
+          },
+          "MaterialSlotName": "IMod04",
+          "ImportedMaterialSlotName": "IMod04",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 601.76984,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortImodStationary",
+            "ObjectPath": "War/Content/Materials/Structures/FortImodStationary.0"
+          },
+          "MaterialSlotName": "FortImodStationary.001",
+          "ImportedMaterialSlotName": "FortImodStationary.001",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 335.52786,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Infrastructure05",
+            "ObjectPath": "War/Content/Materials/Structures/Infrastructure05.0"
+          },
+          "MaterialSlotName": "IMod05",
+          "ImportedMaterialSlotName": "IMod05",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 241.48262,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant IModTrainingMat",
+            "ObjectPath": "War/Content/Materials/Structures/IModTrainingMat.0"
+          },
+          "MaterialSlotName": "TrainingMat",
+          "ImportedMaterialSlotName": "TrainingMat",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 299.78195,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 473.0285,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 7.6293945E-05,
+          "Y": -137.85007,
+          "Z": 41.01427
+        },
+        "BoxExtent": {
+          "X": 170.6069,
+          "Y": 177.68317,
+          "Z": 41.014244
+        },
+        "SphereRadius": 244.62102
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FortIModQuietEnclosureC:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/FortIModQuietEnclosureC.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FortIModQuietEnclosureC:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/FortIModQuietEnclosureC.1"
+    },
+    "LightingGuid": "ECF4CF49-4E60C937-74B0D8A5-530C3382",
+    "RenderData": null
+  }
+]

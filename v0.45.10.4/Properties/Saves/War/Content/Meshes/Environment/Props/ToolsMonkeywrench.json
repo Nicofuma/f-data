@@ -1,0 +1,89 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_10752",
+    "Outer": "ToolsMonkeywrench",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "ToolsMonkeywrench",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2CED"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ToolsMonkeywrench",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Tools01",
+            "ObjectPath": "War/Content/Materials/Structures/Tools01.0"
+          },
+          "MaterialSlotName": "Tools01",
+          "ImportedMaterialSlotName": "Tools01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 124.75514,
+            "LocalUVDensities": 55.08191,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 55.08191,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.28486633,
+          "Y": -0.24147797,
+          "Z": 2.3841858E-06
+        },
+        "BoxExtent": {
+          "X": 29.902822,
+          "Y": 7.674385,
+          "Z": 2.3469024
+        },
+        "SphereRadius": 30.26883
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ToolsMonkeywrench:BodySetup_10752",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ToolsMonkeywrench.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ToolsMonkeywrench:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ToolsMonkeywrench.1"
+    },
+    "LightingGuid": "FC8D992C-464D1647-1633C99E-3297A389",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_2",
+    "Outer": "PlatformPillar_01",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -3.0517578E-05,
+              "Y": 0.0,
+              "Z": -4.4954834
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 55.637146,
+            "Y": 53.151672,
+            "Z": 451.72748,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_3",
+    "Outer": "PlatformPillar_01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x1CFF"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "PlatformPillar_01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant WoodRepeating03",
+            "ObjectPath": "War/Content/Materials/Environment/WoodRepeating03.0"
+          },
+          "MaterialSlotName": "Wood",
+          "ImportedMaterialSlotName": "Wood",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 99.14239,
+            "LocalUVDensities": 344.60196,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant WoodRepeatingEnd03",
+            "ObjectPath": "War/Content/Materials/Environment/WoodRepeatingEnd03.0"
+          },
+          "MaterialSlotName": "Material #123",
+          "ImportedMaterialSlotName": "Material #123",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 100.55569,
+            "LocalUVDensities": 349.58597,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 345.3078,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -3.0517578E-05,
+          "Y": 0.0,
+          "Z": -4.4954834
+        },
+        "BoxExtent": {
+          "X": 27.818573,
+          "Y": 26.575836,
+          "Z": 225.86374
+        },
+        "SphereRadius": 228.35962
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup PlatformPillar_01:BodySetup_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Base/PlatformPillar_01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision PlatformPillar_01:NavCollision_3",
+      "ObjectPath": "War/Content/Meshes/Environment/Base/PlatformPillar_01.1"
+    },
+    "LightingGuid": "AD076332-4B32282B-F0601DB4-BA8B7593",
+    "RenderData": null
+  }
+]

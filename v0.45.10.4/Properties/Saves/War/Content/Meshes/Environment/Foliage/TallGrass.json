@@ -1,0 +1,120 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Outer": "TallGrass",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 26.308922,
+              "Y": -46.370476,
+              "Z": 63.383205
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": -9.1552734E-05
+            },
+            "Radius": 212.46526,
+            "Length": 0.032049976,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "TallGrass",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 5521,
+        "SizeOnDisk": 5521,
+        "OffsetInFile": "0x1720"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TallGrass",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant GrassTall",
+            "ObjectPath": "War/Content/Materials/Environment/GrassTall.0"
+          },
+          "MaterialSlotName": "Material #25",
+          "ImportedMaterialSlotName": "Material #5056",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 238.9869,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Grass",
+            "ObjectPath": "War/Content/Materials/Environment/Grass.0"
+          },
+          "MaterialSlotName": "Material #506",
+          "ImportedMaterialSlotName": "Material #504",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 282.23242,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 255.56563,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 6.8540344,
+          "Y": -0.83461,
+          "Z": 155.61449
+        },
+        "BoxExtent": {
+          "X": 231.61098,
+          "Y": 217.25453,
+          "Z": 164.84967
+        },
+        "SphereRadius": 258.64264
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TallGrass:BodySetup_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/TallGrass.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TallGrass:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/TallGrass.1"
+    },
+    "LightingGuid": "9B79E528-47E2F5DD-7F436AA4-E6EED8FB",
+    "RenderData": null
+  }
+]

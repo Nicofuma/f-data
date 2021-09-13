@@ -1,0 +1,228 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "BarbedWireMesh",
+    "Outer": "BPTrenchBarbedWireT1_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPTrenchBarbedWireT1_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPTrenchBarbedWireT1_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Trenches/Modifications/BPTrenchBarbedWireT1.10"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class ModificationTemplate",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPTrenchBarbedWireT1_C:BarbedWireMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/Trenches/Modifications/BPTrenchBarbedWireT1.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTrenchBarbedWireT1_C:BarbedWireCollision",
+        "ObjectPath": "War/Content/Blueprints/Structures/Trenches/Modifications/BPTrenchBarbedWireT1.4"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTrenchBarbedWireT1_C:DefaultSceneRoot",
+        "ObjectPath": "War/Content/Blueprints/Structures/Trenches/Modifications/BPTrenchBarbedWireT1.5"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPTrenchBarbedWireT1_C",
+    "Name": "Default__BPTrenchBarbedWireT1_C"
+  },
+  {
+    "Type": "BarbedWireComponent",
+    "Name": "BarbedWireCollision_GEN_VARIABLE",
+    "Outer": "BPTrenchBarbedWireT1_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 500.0,
+        "Y": 55.0,
+        "Z": 16.0
+      },
+      "ComponentTags": [
+        "ModBarbedWire",
+        "ModLeft",
+        "ExcludeFromBuildSite",
+        "SideLeft"
+      ]
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "BarbedWireCollision",
+    "Outer": "BPTrenchBarbedWireT1_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BarbedWireComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "DefaultSceneRoot",
+    "Outer": "BPTrenchBarbedWireT1_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SceneComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPTrenchBarbedWireT1_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPTrenchBarbedWireT1_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Trenches/Modifications/BPTrenchBarbedWireT1.6"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node BPTrenchBarbedWireT1_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/Trenches/Modifications/BPTrenchBarbedWireT1.8"
+        },
+        {
+          "ObjectName": "SCS_Node BPTrenchBarbedWireT1_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/Trenches/Modifications/BPTrenchBarbedWireT1.9"
+        }
+      ],
+      "VariableGuid": "D1678F2B-4F2B50B5-9EFFE99A-D728D79F",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BarbedWireComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BarbedWireComponent BPTrenchBarbedWireT1_C:BarbedWireCollision_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Trenches/Modifications/BPTrenchBarbedWireT1.3"
+      },
+      "VariableGuid": "F9B7005F-4904ECF7-DE138ABE-1F21C38F",
+      "InternalVariableName": "BarbedWireCollision"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPTrenchBarbedWireT1_C:BarbedWireMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Trenches/Modifications/BPTrenchBarbedWireT1.11"
+      },
+      "VariableGuid": "C443AAB3-4156738D-86FD928C-EC313F52",
+      "InternalVariableName": "BarbedWireMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPTrenchBarbedWireT1_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPTrenchBarbedWireT1_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "War/Content/Blueprints/Structures/Trenches/Modifications/BPTrenchBarbedWireT1.7"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPTrenchBarbedWireT1_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "War/Content/Blueprints/Structures/Trenches/Modifications/BPTrenchBarbedWireT1.7"
+        },
+        {
+          "ObjectName": "SCS_Node BPTrenchBarbedWireT1_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/Trenches/Modifications/BPTrenchBarbedWireT1.8"
+        },
+        {
+          "ObjectName": "SCS_Node BPTrenchBarbedWireT1_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/Trenches/Modifications/BPTrenchBarbedWireT1.9"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPTrenchBarbedWireT1_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Trenches/Modifications/BPTrenchBarbedWireT1.7"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "BarbedWireMesh_GEN_VARIABLE",
+    "Outer": "BPTrenchBarbedWireT1_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh TrenchT1Barbedwire01",
+        "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/TrenchT1Barbedwire01.2"
+      },
+      "bGenerateOverlapEvents": false,
+      "CanCharacterStepUpOn": "ECB_No",
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.001347,
+        "Y": -67.80353,
+        "Z": -177.28915
+      },
+      "ComponentTags": [
+        "ModBarbedWire",
+        "ModLeft",
+        "ExcludeFromBuildSite",
+        "SideLeft"
+      ]
+    }
+  }
+]

@@ -1,0 +1,250 @@
+[
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "ABP_ConcreteMixer_C",
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "AnimBlueprintGeneratedClass",
+    "Name": "ABP_ConcreteMixer_C",
+    "Properties": {
+      "TargetSkeleton": {
+        "ObjectName": "Skeleton SK_ConcreteMixer_Skeleton",
+        "ObjectPath": "War/Content/Meshes/Shippables/SK_ConcreteMixer_Skeleton.0"
+      },
+      "OrderedSavedPoseIndicesMap": {
+        "AnimGraph": {
+          "OrderedSavedPoseNodeIndices": []
+        }
+      },
+      "EvaluateGraphExposedInputs": [
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "SourcePropertyName": "isActive",
+              "SourceSubPropertyName": "None",
+              "SourceArrayIndex": 0,
+              "bInstanceIsTarget": false,
+              "PostCopyOperation": "EPostCopyOperation::None",
+              "DestProperty": {
+                "ObjectName": "BoolProperty AnimNode_BlendListByBool:bActiveValue",
+                "ObjectPath": "/Script/AnimGraphRuntime"
+              },
+              "DestArrayIndex": 0,
+              "Size": 1,
+              "CachedSourceProperty": {
+                "ObjectName": "BoolProperty ABP_ConcreteMixer_C:isActive",
+                "ObjectPath": "War/Content/Animation/WorldAssets/ConcreteMixer/ABP_ConcreteMixer.3"
+              },
+              "CachedSourceStructSubProperty": null
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "ObjectName": "StructProperty ABP_ConcreteMixer_C:AnimGraphNode_BlendListByBool_109F8E544B6CBABE6D1041BB85C347E6",
+            "ObjectPath": "War/Content/Animation/WorldAssets/ConcreteMixer/ABP_ConcreteMixer.8"
+          }
+        }
+      ],
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty ABP_ConcreteMixer_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Animation/WorldAssets/ConcreteMixer/ABP_ConcreteMixer.0"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function ABP_ConcreteMixer_C:ExecuteUbergraph_ABP_ConcreteMixer",
+        "ObjectPath": "War/Content/Animation/WorldAssets/ConcreteMixer/ABP_ConcreteMixer.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class AnimInstance",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty ABP_ConcreteMixer_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Animation/WorldAssets/ConcreteMixer/ABP_ConcreteMixer.0"
+      },
+      {
+        "ObjectName": "Function ABP_ConcreteMixer_C:AnimGraph",
+        "ObjectPath": "War/Content/Animation/WorldAssets/ConcreteMixer/ABP_ConcreteMixer.5"
+      },
+      {
+        "ObjectName": "Function ABP_ConcreteMixer_C:ExecuteUbergraph_ABP_ConcreteMixer",
+        "ObjectPath": "War/Content/Animation/WorldAssets/ConcreteMixer/ABP_ConcreteMixer.7"
+      },
+      {
+        "ObjectName": "StructProperty ABP_ConcreteMixer_C:AnimGraphNode_Root_49956EDF4CF68AC6841AAC80ED187CB9",
+        "ObjectPath": "War/Content/Animation/WorldAssets/ConcreteMixer/ABP_ConcreteMixer.9"
+      },
+      {
+        "ObjectName": "StructProperty ABP_ConcreteMixer_C:AnimGraphNode_BlendListByBool_109F8E544B6CBABE6D1041BB85C347E6",
+        "ObjectPath": "War/Content/Animation/WorldAssets/ConcreteMixer/ABP_ConcreteMixer.8"
+      },
+      {
+        "ObjectName": "StructProperty ABP_ConcreteMixer_C:AnimGraphNode_SequencePlayer_F434E7F34D4D783EC25BF19D337A5E10",
+        "ObjectPath": "War/Content/Animation/WorldAssets/ConcreteMixer/ABP_ConcreteMixer.10"
+      },
+      {
+        "ObjectName": "BoolProperty ABP_ConcreteMixer_C:isActive",
+        "ObjectPath": "War/Content/Animation/WorldAssets/ConcreteMixer/ABP_ConcreteMixer.3"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 524288,
+    "ClassWithin": null,
+    "ClassConfigName": "/Game/Animation/WorldAssets/ConcreteMixer/ABP_ConcreteMixer_393215",
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "ABP_ConcreteMixer_C",
+    "Name": "Default__ABP_ConcreteMixer_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "AnimGraphNode_Root_49956EDF4CF68AC6841AAC80ED187CB9": {
+        "Result": {
+          "LinkID": 1
+        },
+        "Name": "AnimGraph",
+        "Group": "None"
+      },
+      "AnimGraphNode_BlendListByBool_109F8E544B6CBABE6D1041BB85C347E6": {
+        "bActiveValue": false,
+        "BlendPose": [
+          {
+            "LinkID": 2
+          },
+          {
+            "LinkID": -1
+          }
+        ],
+        "BlendTime": [
+          1.0,
+          2.0
+        ],
+        "TransitionType": "EBlendListTransitionType::StandardBlend",
+        "BlendType": "EAlphaBlendOption::Linear",
+        "bResetChildOnActivation": false,
+        "CustomBlendCurve": null,
+        "BlendProfile": null
+      },
+      "AnimGraphNode_SequencePlayer_F434E7F34D4D783EC25BF19D337A5E10": {
+        "Sequence": {
+          "ObjectName": "AnimSequence Anim_ConcreteMixer_mixing",
+          "ObjectPath": "War/Content/Animation/WorldAssets/ConcreteMixer/Anim_ConcreteMixer_mixing.0"
+        },
+        "PlayRateBasis": 1.0,
+        "PlayRate": 1.0,
+        "PlayRateScaleBiasClamp": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        },
+        "StartPosition": 0.0,
+        "bLoopAnimation": true,
+        "GroupIndex": -1,
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "isActive",
+    "Outer": "ABP_ConcreteMixer_C",
+    "PropertyFlags": 65541,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraph",
+    "Outer": "AnimGraph",
+    "PropertyFlags": 384,
+    "Struct": {
+      "ObjectName": "ScriptStruct PoseLink",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "AnimGraph",
+    "Outer": "ABP_ConcreteMixer_C",
+    "Children": [
+      {
+        "ObjectName": "StructProperty ABP_ConcreteMixer_C:AnimGraph.AnimGraph",
+        "ObjectPath": "War/Content/Animation/WorldAssets/ConcreteMixer/ABP_ConcreteMixer.4"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_ABP_ConcreteMixer",
+    "PropertyFlags": 148
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ABP_ConcreteMixer",
+    "Outer": "ABP_ConcreteMixer_C",
+    "Children": [
+      {
+        "ObjectName": "IntProperty ABP_ConcreteMixer_C:ExecuteUbergraph_ABP_ConcreteMixer.EntryPoint",
+        "ObjectPath": "War/Content/Animation/WorldAssets/ConcreteMixer/ABP_ConcreteMixer.6"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_BlendListByBool_109F8E544B6CBABE6D1041BB85C347E6",
+    "Outer": "ABP_ConcreteMixer_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_BlendListByBool",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_Root_49956EDF4CF68AC6841AAC80ED187CB9",
+    "Outer": "ABP_ConcreteMixer_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_Root",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_SequencePlayer_F434E7F34D4D783EC25BF19D337A5E10",
+    "Outer": "ABP_ConcreteMixer_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_SequencePlayer",
+      "ObjectPath": "/Script/Engine"
+    }
+  }
+]

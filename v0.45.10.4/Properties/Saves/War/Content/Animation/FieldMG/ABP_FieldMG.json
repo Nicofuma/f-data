@@ -1,0 +1,912 @@
+[
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "ABP_FieldMG_C",
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "AnimBlueprintGeneratedClass",
+    "Name": "ABP_FieldMG_C",
+    "Properties": {
+      "BakedStateMachines": [
+        {
+          "MachineName": "firingState",
+          "InitialState": 0,
+          "States": [
+            {
+              "StateName": "Idle",
+              "Transitions": [
+                {
+                  "CanTakeDelegateIndex": 7,
+                  "CustomResultNodeIndex": -1,
+                  "TransitionIndex": 0,
+                  "bDesiredTransitionReturnValue": true,
+                  "bAutomaticRemainingTimeRule": false,
+                  "PoseEvaluatorLinks": []
+                }
+              ],
+              "StateRootNodeIndex": 4,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "FullyBlendedNotify": -1,
+              "bIsAConduit": false,
+              "EntryRuleNodeIndex": -1,
+              "PlayerNodeIndices": [],
+              "LayerNodeIndices": [],
+              "bAlwaysResetOnEntry": false
+            },
+            {
+              "StateName": "Firing",
+              "Transitions": [
+                {
+                  "CanTakeDelegateIndex": 8,
+                  "CustomResultNodeIndex": -1,
+                  "TransitionIndex": 1,
+                  "bDesiredTransitionReturnValue": true,
+                  "bAutomaticRemainingTimeRule": false,
+                  "PoseEvaluatorLinks": []
+                }
+              ],
+              "StateRootNodeIndex": 5,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "FullyBlendedNotify": -1,
+              "bIsAConduit": false,
+              "EntryRuleNodeIndex": -1,
+              "PlayerNodeIndices": [
+                6
+              ],
+              "LayerNodeIndices": [],
+              "bAlwaysResetOnEntry": false
+            }
+          ],
+          "Transitions": [
+            {
+              "PreviousState": 0,
+              "NextState": 1,
+              "CrossfadeDuration": 0.05,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "InterruptNotify": -1,
+              "BlendMode": "EAlphaBlendOption::HermiteCubic",
+              "CustomCurve": null,
+              "BlendProfile": null,
+              "LogicType": "ETransitionLogicType::TLT_StandardBlend",
+              "StateName": "None"
+            },
+            {
+              "PreviousState": 1,
+              "NextState": 0,
+              "CrossfadeDuration": 0.2,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "InterruptNotify": -1,
+              "BlendMode": "EAlphaBlendOption::HermiteCubic",
+              "CustomCurve": null,
+              "BlendProfile": null,
+              "LogicType": "ETransitionLogicType::TLT_StandardBlend",
+              "StateName": "None"
+            }
+          ]
+        }
+      ],
+      "TargetSkeleton": {
+        "ObjectName": "Skeleton SK_FieldMG_Skeleton",
+        "ObjectPath": "War/Content/Meshes/Vehicles/SK_FieldMG_Skeleton.1"
+      },
+      "OrderedSavedPoseIndicesMap": {
+        "AnimGraph": {
+          "OrderedSavedPoseNodeIndices": []
+        }
+      },
+      "EvaluateGraphExposedInputs": [
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "SourcePropertyName": "GunnerYaw",
+              "SourceSubPropertyName": "None",
+              "SourceArrayIndex": 0,
+              "bInstanceIsTarget": false,
+              "PostCopyOperation": "EPostCopyOperation::None",
+              "DestProperty": {
+                "ObjectName": "FloatProperty AnimNode_BlendSpacePlayer:X",
+                "ObjectPath": "/Script/AnimGraphRuntime"
+              },
+              "DestArrayIndex": 0,
+              "Size": 4,
+              "CachedSourceProperty": {
+                "ObjectName": "FloatProperty SimVehicleGunnerSupportAnimInstance:GunnerYaw",
+                "ObjectPath": "/Script/War"
+              },
+              "CachedSourceStructSubProperty": null
+            },
+            {
+              "SourcePropertyName": "GunnerPitch",
+              "SourceSubPropertyName": "None",
+              "SourceArrayIndex": 0,
+              "bInstanceIsTarget": false,
+              "PostCopyOperation": "EPostCopyOperation::None",
+              "DestProperty": {
+                "ObjectName": "FloatProperty AnimNode_BlendSpacePlayer:Y",
+                "ObjectPath": "/Script/AnimGraphRuntime"
+              },
+              "DestArrayIndex": 0,
+              "Size": 4,
+              "CachedSourceProperty": {
+                "ObjectName": "FloatProperty SimVehicleGunnerSupportAnimInstance:GunnerPitch",
+                "ObjectPath": "/Script/War"
+              },
+              "CachedSourceStructSubProperty": null
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "ObjectName": "StructProperty ABP_FieldMG_C:AnimGraphNode_RotationOffsetBlendSpace_4B4277FD45337DBCAD8914B34F98E4EC",
+            "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.20"
+          }
+        },
+        {
+          "BoundFunction": "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_FieldMG_AnimGraphNode_SequencePlayer_F6F00BDD40E500B7B285BE92EFE3CA75",
+          "CopyRecords": [],
+          "Function": {
+            "ObjectName": "Function ABP_FieldMG_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_FieldMG_AnimGraphNode_SequencePlayer_F6F00BDD40E500B7B285BE92EFE3CA75",
+            "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.15"
+          },
+          "ValueHandlerNodeProperty": {
+            "ObjectName": "StructProperty ABP_FieldMG_C:AnimGraphNode_SequencePlayer_F6F00BDD40E500B7B285BE92EFE3CA75",
+            "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.23"
+          }
+        },
+        {
+          "BoundFunction": "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_FieldMG_AnimGraphNode_SequencePlayer_B3B39B304CC2488E49D047A774B6796F",
+          "CopyRecords": [],
+          "Function": {
+            "ObjectName": "Function ABP_FieldMG_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_FieldMG_AnimGraphNode_SequencePlayer_B3B39B304CC2488E49D047A774B6796F",
+            "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.14"
+          },
+          "ValueHandlerNodeProperty": {
+            "ObjectName": "StructProperty ABP_FieldMG_C:AnimGraphNode_SequencePlayer_B3B39B304CC2488E49D047A774B6796F",
+            "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.22"
+          }
+        },
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "SourcePropertyName": "bIsFiring",
+              "SourceSubPropertyName": "None",
+              "SourceArrayIndex": 0,
+              "bInstanceIsTarget": false,
+              "PostCopyOperation": "EPostCopyOperation::None",
+              "DestProperty": {
+                "ObjectName": "BoolProperty AnimNode_TransitionResult:bCanEnterTransition",
+                "ObjectPath": "/Script/Engine"
+              },
+              "DestArrayIndex": 0,
+              "Size": 1,
+              "CachedSourceProperty": {
+                "ObjectName": "BoolProperty SimVehicleGunnerSupportAnimInstance:bIsFiring",
+                "ObjectPath": "/Script/War"
+              },
+              "CachedSourceStructSubProperty": null
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "ObjectName": "StructProperty ABP_FieldMG_C:AnimGraphNode_TransitionResult_0C8D084B4878D8A1935BA48063CD6978",
+            "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.27"
+          }
+        },
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "SourcePropertyName": "bIsFiring",
+              "SourceSubPropertyName": "None",
+              "SourceArrayIndex": 0,
+              "bInstanceIsTarget": false,
+              "PostCopyOperation": "EPostCopyOperation::LogicalNegateBool",
+              "DestProperty": {
+                "ObjectName": "BoolProperty AnimNode_TransitionResult:bCanEnterTransition",
+                "ObjectPath": "/Script/Engine"
+              },
+              "DestArrayIndex": 0,
+              "Size": 1,
+              "CachedSourceProperty": {
+                "ObjectName": "BoolProperty SimVehicleGunnerSupportAnimInstance:bIsFiring",
+                "ObjectPath": "/Script/War"
+              },
+              "CachedSourceStructSubProperty": null
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "ObjectName": "StructProperty ABP_FieldMG_C:AnimGraphNode_TransitionResult_E1C9D1BD44A922EFFEFDB7A7471F7312",
+            "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.28"
+          }
+        },
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "SourcePropertyName": "Speed",
+              "SourceSubPropertyName": "None",
+              "SourceArrayIndex": 0,
+              "bInstanceIsTarget": false,
+              "PostCopyOperation": "EPostCopyOperation::None",
+              "DestProperty": {
+                "ObjectName": "FloatProperty AnimNode_BlendSpacePlayer:X",
+                "ObjectPath": "/Script/AnimGraphRuntime"
+              },
+              "DestArrayIndex": 0,
+              "Size": 4,
+              "CachedSourceProperty": {
+                "ObjectName": "FloatProperty SimVehicleAnimInstance:Speed",
+                "ObjectPath": "/Script/War"
+              },
+              "CachedSourceStructSubProperty": null
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "ObjectName": "StructProperty ABP_FieldMG_C:AnimGraphNode_BlendSpacePlayer_70DF12A34B11FC631A67A9BD62953432",
+            "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.18"
+          }
+        }
+      ],
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty ABP_FieldMG_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.0"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function ABP_FieldMG_C:ExecuteUbergraph_ABP_FieldMG",
+        "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class SimVehicleGunnerSupportAnimInstance",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty ABP_FieldMG_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.0"
+      },
+      {
+        "ObjectName": "Function ABP_FieldMG_C:AnimGraph",
+        "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.13"
+      },
+      {
+        "ObjectName": "Function ABP_FieldMG_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_FieldMG_AnimGraphNode_SequencePlayer_B3B39B304CC2488E49D047A774B6796F",
+        "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.14"
+      },
+      {
+        "ObjectName": "Function ABP_FieldMG_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_FieldMG_AnimGraphNode_SequencePlayer_F6F00BDD40E500B7B285BE92EFE3CA75",
+        "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.15"
+      },
+      {
+        "ObjectName": "Function ABP_FieldMG_C:ExecuteUbergraph_ABP_FieldMG",
+        "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.5"
+      },
+      {
+        "ObjectName": "StructProperty ABP_FieldMG_C:AnimGraphNode_Root_87A8F84F407E2EF8BABA388ED3905E44",
+        "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.3"
+      },
+      {
+        "ObjectName": "StructProperty ABP_FieldMG_C:AnimGraphNode_LayeredBoneBlend_7133AFF0437CE351A7C81BB4EB0C4FC7",
+        "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.19"
+      },
+      {
+        "ObjectName": "StructProperty ABP_FieldMG_C:AnimGraphNode_BlendSpacePlayer_70DF12A34B11FC631A67A9BD62953432",
+        "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.18"
+      },
+      {
+        "ObjectName": "StructProperty ABP_FieldMG_C:AnimGraphNode_TransitionResult_E1C9D1BD44A922EFFEFDB7A7471F7312",
+        "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.28"
+      },
+      {
+        "ObjectName": "StructProperty ABP_FieldMG_C:AnimGraphNode_TransitionResult_0C8D084B4878D8A1935BA48063CD6978",
+        "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.27"
+      },
+      {
+        "ObjectName": "StructProperty ABP_FieldMG_C:AnimGraphNode_SequencePlayer_AA5044AE42FEBFA2173FE9BA33BEC877",
+        "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.21"
+      },
+      {
+        "ObjectName": "StructProperty ABP_FieldMG_C:AnimGraphNode_StateResult_F14D910B4B80B68398A1F5BFA274FDA7",
+        "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.26"
+      },
+      {
+        "ObjectName": "StructProperty ABP_FieldMG_C:AnimGraphNode_StateResult_1D55AC6345B3155D72EF889E4D127E37",
+        "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.25"
+      },
+      {
+        "ObjectName": "StructProperty ABP_FieldMG_C:AnimGraphNode_StateMachine_DF7EAB7D45C7CC9230B6DEB9788026E0",
+        "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.24"
+      },
+      {
+        "ObjectName": "StructProperty ABP_FieldMG_C:AnimGraphNode_SequencePlayer_B3B39B304CC2488E49D047A774B6796F",
+        "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.22"
+      },
+      {
+        "ObjectName": "StructProperty ABP_FieldMG_C:AnimGraphNode_SequencePlayer_F6F00BDD40E500B7B285BE92EFE3CA75",
+        "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.23"
+      },
+      {
+        "ObjectName": "StructProperty ABP_FieldMG_C:AnimGraphNode_RotationOffsetBlendSpace_4B4277FD45337DBCAD8914B34F98E4EC",
+        "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.20"
+      },
+      {
+        "ObjectName": "IntProperty ABP_FieldMG_C:WheelRotationSpeedFactor",
+        "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.17"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 6,
+    "ClassWithin": null,
+    "ClassConfigName": "/Game/Animation/FieldMG/ABP_FieldMG_15",
+    "ClassGeneratedBy": null,
+    "Interfaces": [],
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "ABP_FieldMG_C",
+    "Name": "Default__ABP_FieldMG_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "AnimGraphNode_Root_87A8F84F407E2EF8BABA388ED3905E44": {
+        "Result": {
+          "LinkID": 11
+        },
+        "Name": "AnimGraph",
+        "Group": "None"
+      },
+      "AnimGraphNode_LayeredBoneBlend_7133AFF0437CE351A7C81BB4EB0C4FC7": {
+        "BasePose": {
+          "LinkID": 2
+        },
+        "BlendPoses": [
+          {
+            "LinkID": 8
+          },
+          {
+            "LinkID": 9
+          },
+          {
+            "LinkID": 10
+          }
+        ],
+        "LayerSetup": [
+          {
+            "BranchFilters": [
+              {
+                "BoneName": "mg_pivot",
+                "BlendDepth": 0
+              }
+            ]
+          },
+          {
+            "BranchFilters": [
+              {
+                "BoneName": "wheel_L",
+                "BlendDepth": 0
+              }
+            ]
+          },
+          {
+            "BranchFilters": [
+              {
+                "BoneName": "wheel_R",
+                "BlendDepth": 0
+              }
+            ]
+          }
+        ],
+        "BlendWeights": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "bMeshSpaceRotationBlend": false,
+        "bMeshSpaceScaleBlend": false,
+        "CurveBlendOption": "ECurveBlendOption::MaxWeight",
+        "bBlendRootMotionBasedOnRootBone": true,
+        "LODThreshold": -1,
+        "PerBoneBlendWeights": [
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 0.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 0.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 0.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 1.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 1.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 1.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 1.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 1.0
+          },
+          {
+            "SourceIndex": 1,
+            "BlendWeight": 1.0
+          },
+          {
+            "SourceIndex": 2,
+            "BlendWeight": 1.0
+          }
+        ],
+        "SkeletonGuid": "B483B9AE-46A361CE-E65B138B-F58C57AB",
+        "VirtualBoneGuid": "00000000-00000000-00000000-00000000"
+      },
+      "AnimGraphNode_BlendSpacePlayer_70DF12A34B11FC631A67A9BD62953432": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0,
+        "PlayRate": 1.0,
+        "bLoop": true,
+        "bResetPlayTimeWhenBlendSpaceChanges": true,
+        "StartPosition": 0.0,
+        "BlendSpace": {
+          "ObjectName": "BlendSpace1D BS_FieldMG_movement",
+          "ObjectPath": "War/Content/Animation/FieldMG/BS_FieldMG_movement.0"
+        },
+        "PreviousBlendSpace": null,
+        "GroupIndex": -1,
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "AnimGraphNode_TransitionResult_E1C9D1BD44A922EFFEFDB7A7471F7312": {
+        "bCanEnterTransition": false
+      },
+      "AnimGraphNode_TransitionResult_0C8D084B4878D8A1935BA48063CD6978": {
+        "bCanEnterTransition": false
+      },
+      "AnimGraphNode_SequencePlayer_AA5044AE42FEBFA2173FE9BA33BEC877": {
+        "Sequence": {
+          "ObjectName": "AnimSequence Anim_FieldMG_firing_8bps",
+          "ObjectPath": "War/Content/Animation/FieldMG/Anim_FieldMG_firing_8bps.0"
+        },
+        "PlayRateBasis": 1.0,
+        "PlayRate": 1.0,
+        "PlayRateScaleBiasClamp": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        },
+        "StartPosition": 0.0,
+        "bLoopAnimation": true,
+        "GroupIndex": -1,
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "AnimGraphNode_StateResult_F14D910B4B80B68398A1F5BFA274FDA7": {
+        "Result": {
+          "LinkID": 5
+        },
+        "Name": "None",
+        "Group": "None"
+      },
+      "AnimGraphNode_StateResult_1D55AC6345B3155D72EF889E4D127E37": {
+        "Result": {
+          "LinkID": -1
+        },
+        "Name": "None",
+        "Group": "None"
+      },
+      "AnimGraphNode_StateMachine_DF7EAB7D45C7CC9230B6DEB9788026E0": {
+        "StateMachineIndexInClass": 0,
+        "MaxTransitionsPerFrame": 3,
+        "bSkipFirstUpdateTransition": true,
+        "bReinitializeOnBecomingRelevant": true
+      },
+      "AnimGraphNode_SequencePlayer_B3B39B304CC2488E49D047A774B6796F": {
+        "Sequence": {
+          "ObjectName": "AnimSequence Anim_FieldMG_wheel_speed289_835",
+          "ObjectPath": "War/Content/Animation/FieldMG/Anim_FieldMG_wheel_speed289_835.0"
+        },
+        "PlayRateBasis": 289.835,
+        "PlayRate": 1.0,
+        "PlayRateScaleBiasClamp": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        },
+        "StartPosition": 0.0,
+        "bLoopAnimation": true,
+        "GroupIndex": -1,
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "AnimGraphNode_SequencePlayer_F6F00BDD40E500B7B285BE92EFE3CA75": {
+        "Sequence": {
+          "ObjectName": "AnimSequence Anim_FieldMG_wheel_speed289_835",
+          "ObjectPath": "War/Content/Animation/FieldMG/Anim_FieldMG_wheel_speed289_835.0"
+        },
+        "PlayRateBasis": 289.835,
+        "PlayRate": 1.0,
+        "PlayRateScaleBiasClamp": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        },
+        "StartPosition": 0.0,
+        "bLoopAnimation": true,
+        "GroupIndex": -1,
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "AnimGraphNode_RotationOffsetBlendSpace_4B4277FD45337DBCAD8914B34F98E4EC": {
+        "BasePose": {
+          "LinkID": 1
+        },
+        "LODThreshold": -1,
+        "Alpha": 1.0,
+        "AlphaScaleBias": {
+          "Scale": 1.0,
+          "Bias": 0.0
+        },
+        "AlphaBoolBlend": {
+          "BlendInTime": 0.0,
+          "BlendOutTime": 0.0,
+          "BlendOption": "EAlphaBlendOption::Linear",
+          "bInitialized": false,
+          "CustomCurve": null,
+          "AlphaBlend": {
+            "CustomCurve": null,
+            "BlendTime": 0.2,
+            "BlendOption": "EAlphaBlendOption::Linear"
+          }
+        },
+        "AlphaCurveName": "None",
+        "AlphaScaleBiasClamp": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        },
+        "AlphaInputType": "EAnimAlphaInputType::Float",
+        "bAlphaBoolEnabled": false,
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0,
+        "PlayRate": 1.0,
+        "bLoop": true,
+        "bResetPlayTimeWhenBlendSpaceChanges": true,
+        "StartPosition": 0.0,
+        "BlendSpace": {
+          "ObjectName": "AimOffsetBlendSpace AO_FieldMG_Gun",
+          "ObjectPath": "War/Content/Animation/FieldMG/AO_FieldMG_Gun.0"
+        },
+        "PreviousBlendSpace": null,
+        "GroupIndex": -1,
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "WheelRotationSpeedFactor": 250
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_Root_87A8F84F407E2EF8BABA388ED3905E44",
+    "Outer": "ABP_FieldMG_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_Root",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_ABP_FieldMG",
+    "PropertyFlags": 148
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ABP_FieldMG",
+    "Outer": "ABP_FieldMG_C",
+    "Children": [
+      {
+        "ObjectName": "IntProperty ABP_FieldMG_C:ExecuteUbergraph_ABP_FieldMG.EntryPoint",
+        "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.4"
+      },
+      {
+        "ObjectName": "IntProperty ABP_FieldMG_C:ExecuteUbergraph_ABP_FieldMG.CallFunc_Multiply_IntInt_ReturnValue",
+        "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.16"
+      },
+      {
+        "ObjectName": "FloatProperty ABP_FieldMG_C:ExecuteUbergraph_ABP_FieldMG.CallFunc_Multiply_IntFloat_ReturnValue",
+        "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.8"
+      },
+      {
+        "ObjectName": "BoolProperty ABP_FieldMG_C:ExecuteUbergraph_ABP_FieldMG.CallFunc_EqualEqual_FloatFloat_ReturnValue",
+        "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.6"
+      },
+      {
+        "ObjectName": "FloatProperty ABP_FieldMG_C:ExecuteUbergraph_ABP_FieldMG.CallFunc_SelectFloat_ReturnValue",
+        "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.10"
+      },
+      {
+        "ObjectName": "FloatProperty ABP_FieldMG_C:ExecuteUbergraph_ABP_FieldMG.CallFunc_Multiply_IntFloat_ReturnValue_1",
+        "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.9"
+      },
+      {
+        "ObjectName": "BoolProperty ABP_FieldMG_C:ExecuteUbergraph_ABP_FieldMG.CallFunc_EqualEqual_FloatFloat_ReturnValue_1",
+        "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.7"
+      },
+      {
+        "ObjectName": "FloatProperty ABP_FieldMG_C:ExecuteUbergraph_ABP_FieldMG.CallFunc_SelectFloat_ReturnValue_1",
+        "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.11"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_EqualEqual_FloatFloat_ReturnValue",
+    "Outer": "ExecuteUbergraph_ABP_FieldMG",
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_EqualEqual_FloatFloat_ReturnValue_1",
+    "Outer": "ExecuteUbergraph_ABP_FieldMG",
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_Multiply_IntFloat_ReturnValue",
+    "Outer": "ExecuteUbergraph_ABP_FieldMG"
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_Multiply_IntFloat_ReturnValue_1",
+    "Outer": "ExecuteUbergraph_ABP_FieldMG"
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_SelectFloat_ReturnValue",
+    "Outer": "ExecuteUbergraph_ABP_FieldMG"
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_SelectFloat_ReturnValue_1",
+    "Outer": "ExecuteUbergraph_ABP_FieldMG"
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraph",
+    "Outer": "AnimGraph",
+    "PropertyFlags": 384,
+    "Struct": {
+      "ObjectName": "ScriptStruct PoseLink",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "AnimGraph",
+    "Outer": "ABP_FieldMG_C",
+    "Children": [
+      {
+        "ObjectName": "StructProperty ABP_FieldMG_C:AnimGraph.AnimGraph",
+        "ObjectPath": "War/Content/Animation/FieldMG/ABP_FieldMG.12"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "Function",
+    "Name": "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_FieldMG_AnimGraphNode_SequencePlayer_B3B39B304CC2488E49D047A774B6796F",
+    "Outer": "ABP_FieldMG_C",
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "Function",
+    "Name": "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_FieldMG_AnimGraphNode_SequencePlayer_F6F00BDD40E500B7B285BE92EFE3CA75",
+    "Outer": "ABP_FieldMG_C",
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Multiply_IntInt_ReturnValue",
+    "Outer": "ExecuteUbergraph_ABP_FieldMG"
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "WheelRotationSpeedFactor",
+    "Outer": "ABP_FieldMG_C",
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_BlendSpacePlayer_70DF12A34B11FC631A67A9BD62953432",
+    "Outer": "ABP_FieldMG_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_BlendSpacePlayer",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_LayeredBoneBlend_7133AFF0437CE351A7C81BB4EB0C4FC7",
+    "Outer": "ABP_FieldMG_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_LayeredBoneBlend",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_RotationOffsetBlendSpace_4B4277FD45337DBCAD8914B34F98E4EC",
+    "Outer": "ABP_FieldMG_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_RotationOffsetBlendSpace",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_SequencePlayer_AA5044AE42FEBFA2173FE9BA33BEC877",
+    "Outer": "ABP_FieldMG_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_SequencePlayer",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_SequencePlayer_B3B39B304CC2488E49D047A774B6796F",
+    "Outer": "ABP_FieldMG_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_SequencePlayer",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_SequencePlayer_F6F00BDD40E500B7B285BE92EFE3CA75",
+    "Outer": "ABP_FieldMG_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_SequencePlayer",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_StateMachine_DF7EAB7D45C7CC9230B6DEB9788026E0",
+    "Outer": "ABP_FieldMG_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_StateMachine",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_StateResult_1D55AC6345B3155D72EF889E4D127E37",
+    "Outer": "ABP_FieldMG_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_StateResult",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_StateResult_F14D910B4B80B68398A1F5BFA274FDA7",
+    "Outer": "ABP_FieldMG_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_StateResult",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_TransitionResult_0C8D084B4878D8A1935BA48063CD6978",
+    "Outer": "ABP_FieldMG_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_TransitionResult",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_TransitionResult_E1C9D1BD44A922EFFEFDB7A7471F7312",
+    "Outer": "ABP_FieldMG_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_TransitionResult",
+      "ObjectPath": "/Script/Engine"
+    }
+  }
+]

@@ -1,0 +1,148 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "foxholeturretCritical",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "foxholeturretCritical",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x15236"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "foxholeturretCritical",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RepeatingMetalRust",
+            "ObjectPath": "War/Content/Materials/Resources/RepeatingMetalRust.0"
+          },
+          "MaterialSlotName": "Foxhole",
+          "ImportedMaterialSlotName": "RepeatingMetalRust",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 9.669656,
+            "LocalUVDensities": 443.44598,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RepeatingRope",
+            "ObjectPath": "War/Content/Materials/Environment/Props/RepeatingRope.0"
+          },
+          "MaterialSlotName": "RepeatingRope",
+          "ImportedMaterialSlotName": "RepeatingRope",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 18.865444,
+            "LocalUVDensities": 547.8456,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant AmmoBox",
+            "ObjectPath": "War/Content/Materials/Resources/AmmoBox.0"
+          },
+          "MaterialSlotName": "RepeatingMetalRust",
+          "ImportedMaterialSlotName": "AmmoBox",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 142.90985,
+            "LocalUVDensities": 549.96594,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Ammobelt",
+            "ObjectPath": "War/Content/Materials/Resources/Ammobelt.0"
+          },
+          "MaterialSlotName": "RepeatingCanvas",
+          "ImportedMaterialSlotName": "Ammobelt",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 16.734865,
+            "LocalUVDensities": 546.27435,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FoxholeTurretCritical",
+            "ObjectPath": "War/Content/Materials/Structures/FoxholeTurretCritical.0"
+          },
+          "MaterialSlotName": "AmmoBox",
+          "ImportedMaterialSlotName": "RepeatingCanvas",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 324.36487,
+            "LocalUVDensities": 553.84467,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 547.8719,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 3.0517578E-05,
+          "Y": 0.0,
+          "Z": 26.326733
+        },
+        "BoxExtent": {
+          "X": 216.14319,
+          "Y": 209.41335,
+          "Z": 48.052082
+        },
+        "SphereRadius": 299.08093
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup foxholeturretCritical:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/foxholeturretCritical.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision foxholeturretCritical:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Structures/foxholeturretCritical.1"
+    },
+    "LightingGuid": "6E8105D6-412403AC-1715A185-097413B3",
+    "RenderData": null
+  }
+]

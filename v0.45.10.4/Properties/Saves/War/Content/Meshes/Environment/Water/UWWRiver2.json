@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "UWWRiver2",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "UWWRiver2",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x86AD"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "UWWRiver2",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "Engine/Content/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "Material #25",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 49408.34,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 49408.34,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 32106.645,
+          "Y": -14572.891,
+          "Z": -139.7605
+        },
+        "BoxExtent": {
+          "X": 92380.49,
+          "Y": 106409.74,
+          "Z": 655.1433
+        },
+        "SphereRadius": 131380.38
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup UWWRiver2:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Water/UWWRiver2.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision UWWRiver2:NavCollision_4",
+      "ObjectPath": "War/Content/Meshes/Environment/Water/UWWRiver2.1"
+    },
+    "LightingGuid": "2D7C4931-493C9B83-17A6DB8E-32F7A8A0",
+    "RenderData": null
+  }
+]

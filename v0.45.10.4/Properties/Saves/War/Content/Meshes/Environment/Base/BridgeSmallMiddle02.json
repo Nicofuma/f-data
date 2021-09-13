@@ -1,0 +1,106 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_824",
+    "Outer": "BridgeSmallMiddle02",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 358.74106,
+              "Y": 9.865936,
+              "Z": 42.441437
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 736.088,
+            "Y": 433.84808,
+            "Z": 24.231602,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_22",
+    "Outer": "BridgeSmallMiddle02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x7606"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "BridgeSmallMiddle02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant WoodRepeating03",
+            "ObjectPath": "War/Content/Materials/Environment/WoodRepeating03.0"
+          },
+          "MaterialSlotName": "WoodRepeating03",
+          "ImportedMaterialSlotName": "WoodRepeating03",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 388.93768,
+            "LocalUVDensities": 1337.8353,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1337.8353,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 358.74106,
+          "Y": 9.865936,
+          "Z": 50.441406
+        },
+        "BoxExtent": {
+          "X": 368.044,
+          "Y": 216.92404,
+          "Z": 28.922241
+        },
+        "SphereRadius": 420.07126
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup BridgeSmallMiddle02:BodySetup_824",
+      "ObjectPath": "War/Content/Meshes/Environment/Base/BridgeSmallMiddle02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision BridgeSmallMiddle02:NavCollision_22",
+      "ObjectPath": "War/Content/Meshes/Environment/Base/BridgeSmallMiddle02.1"
+    },
+    "LightingGuid": "82F6730A-48E2BA39-F59356B1-3236C883",
+    "RenderData": null
+  }
+]

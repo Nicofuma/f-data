@@ -1,0 +1,79 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Outer": "Grenade01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "Grenade01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x3113"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Grenade01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Grenade",
+            "ObjectPath": "War/Content/Materials/Weapons/Grenade.0"
+          },
+          "MaterialSlotName": "Material #26",
+          "ImportedMaterialSlotName": "Material #26",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 34.65729,
+            "LocalUVDensities": 39.51631,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 39.51631,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 6.8865147,
+          "Y": 5.8484783,
+          "Z": 11.720374
+        },
+        "SphereRadius": 12.350822
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Grenade01:BodySetup_1",
+      "ObjectPath": "War/Content/FX/Mesh/Grenade01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Grenade01:NavCollision_2",
+      "ObjectPath": "War/Content/FX/Mesh/Grenade01.1"
+    },
+    "LightingGuid": "7E3646EA-4C4CEDAC-A33EAC92-29B24758",
+    "RenderData": null
+  }
+]

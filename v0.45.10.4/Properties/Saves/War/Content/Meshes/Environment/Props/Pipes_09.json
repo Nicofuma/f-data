@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Pipes_09",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_449",
+    "Outer": "Pipes_09",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x412D"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Pipes_09",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Pipes",
+            "ObjectPath": "War/Content/Materials/Environment/Pipes.0"
+          },
+          "MaterialSlotName": "Material #6349",
+          "ImportedMaterialSlotName": "Material #6349",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 489.9212,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 489.9212,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 39.53971,
+          "Y": 91.86928,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 90.9436,
+          "Y": 91.85567,
+          "Z": 51.39654
+        },
+        "SphereRadius": 129.22408
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Pipes_09:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Pipes_09.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Pipes_09:NavCollision_449",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Pipes_09.1"
+    },
+    "LightingGuid": "40921E16-44F98BBA-335EC581-4D218C68",
+    "RenderData": null
+  }
+]

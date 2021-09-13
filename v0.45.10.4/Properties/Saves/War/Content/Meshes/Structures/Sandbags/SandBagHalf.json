@@ -1,0 +1,169 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SandBagHalf",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -200.08855,
+                "Y": 39.18463,
+                "Z": 0.0
+              },
+              {
+                "X": 199.91145,
+                "Y": 39.18463,
+                "Z": 0.0
+              },
+              {
+                "X": -200.08855,
+                "Y": -40.81537,
+                "Z": 0.0
+              },
+              {
+                "X": 199.91145,
+                "Y": -40.81537,
+                "Z": 0.0
+              },
+              {
+                "X": -200.08855,
+                "Y": 39.18463,
+                "Z": 80.0
+              },
+              {
+                "X": 199.91145,
+                "Y": 39.18463,
+                "Z": 80.0
+              },
+              {
+                "X": -200.08855,
+                "Y": -40.81537,
+                "Z": 80.0
+              },
+              {
+                "X": 199.91145,
+                "Y": -40.81537,
+                "Z": 80.0
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -200.08855,
+                "Y": -40.81537,
+                "Z": 0.0
+              },
+              "Max": {
+                "X": 199.91145,
+                "Y": 39.18463,
+                "Z": 80.0
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SandBagHalf",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 457,
+        "SizeOnDisk": 457,
+        "OffsetInFile": "0xA864"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SandBagHalf",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Sandbag",
+            "ObjectPath": "War/Content/Materials/Structures/Sandbag.0"
+          },
+          "MaterialSlotName": "Sandbag",
+          "ImportedMaterialSlotName": "Sandbag",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 342.8736,
+            "LocalUVDensities": 703.2459,
+            "LocalUVDensities": 737.7953,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 737.7953,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 2,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.020248413,
+          "Y": -0.4554062,
+          "Z": 48.123775
+        },
+        "BoxExtent": {
+          "X": 200.1756,
+          "Y": 52.856445,
+          "Z": 47.030796
+        },
+        "SphereRadius": 205.88135
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SandBagHalf:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/Sandbags/SandBagHalf.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SandBagHalf:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Structures/Sandbags/SandBagHalf.1"
+    },
+    "LightingGuid": "27BF0628-4F599AB2-4BE482AC-41257C7A",
+    "RenderData": null
+  }
+]

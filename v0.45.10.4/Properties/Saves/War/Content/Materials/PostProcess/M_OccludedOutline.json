@@ -1,0 +1,206 @@
+[
+  {
+    "Type": "Material",
+    "Name": "M_OccludedOutline",
+    "Properties": {
+      "EmissiveColor": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionLinearInterpolate_0",
+        "UseConstant": false,
+        "Constant": {
+          "R": 0,
+          "G": 0,
+          "B": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "MaterialDomain": "MD_PostProcess",
+      "Expressions": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter M_OccludedOutline:MaterialExpressionScalarParameter_0",
+          "ObjectPath": "War/Content/Materials/PostProcess/M_OccludedOutline.1"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter M_OccludedOutline:MaterialExpressionScalarParameter_1",
+          "ObjectPath": "War/Content/Materials/PostProcess/M_OccludedOutline.2"
+        },
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionVectorParameter M_OccludedOutline:MaterialExpressionVectorParameter_2",
+          "ObjectPath": "War/Content/Materials/PostProcess/M_OccludedOutline.3"
+        },
+        {
+          "ObjectName": "MaterialExpressionVectorParameter M_OccludedOutline:MaterialExpressionVectorParameter_5",
+          "ObjectPath": "War/Content/Materials/PostProcess/M_OccludedOutline.4"
+        },
+        {
+          "ObjectName": "MaterialExpressionVectorParameter M_OccludedOutline:MaterialExpressionVectorParameter_6",
+          "ObjectPath": "War/Content/Materials/PostProcess/M_OccludedOutline.5"
+        },
+        {
+          "ObjectName": "MaterialExpressionVectorParameter M_OccludedOutline:MaterialExpressionVectorParameter_7",
+          "ObjectPath": "War/Content/Materials/PostProcess/M_OccludedOutline.6"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "bCanMaskedBeAssumedOpaque": true,
+      "BlendableLocation": "BL_BeforeTonemapping",
+      "StateId": "713F64BF-4783FD93-6BEA538D-DA12A684",
+      "CachedQualityLevelsUsed": [
+        false,
+        true,
+        false
+      ]
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_0",
+    "Outer": "M_OccludedOutline",
+    "Properties": {
+      "DefaultValue": 16777215.0,
+      "ParameterName": "MaxZ",
+      "ExpressionGUID": "DBD5A20B-42C5A6A1-958276AE-C22E09AE",
+      "Material": {
+        "ObjectName": "Material M_OccludedOutline",
+        "ObjectPath": "War/Content/Materials/PostProcess/M_OccludedOutline.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_1",
+    "Outer": "M_OccludedOutline",
+    "Properties": {
+      "DefaultValue": 0.66,
+      "ParameterName": "Alpha",
+      "ExpressionGUID": "C8AF1ACE-42F455E8-9CA59BBC-5BA35849",
+      "Material": {
+        "ObjectName": "Material M_OccludedOutline",
+        "ObjectPath": "War/Content/Materials/PostProcess/M_OccludedOutline.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionVectorParameter",
+    "Name": "MaterialExpressionVectorParameter_2",
+    "Outer": "M_OccludedOutline",
+    "Properties": {
+      "DefaultValue": {
+        "R": 0.19029574,
+        "G": 0.18630004,
+        "B": 0.46,
+        "A": 0.0,
+        "Hex": "313075"
+      },
+      "ParameterName": "PlayerHighlightColor",
+      "ExpressionGUID": "009531AC-427D8C4D-3077C4BA-8259F5F1",
+      "Material": {
+        "ObjectName": "Material M_OccludedOutline",
+        "ObjectPath": "War/Content/Materials/PostProcess/M_OccludedOutline.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionVectorParameter",
+    "Name": "MaterialExpressionVectorParameter_5",
+    "Outer": "M_OccludedOutline",
+    "Properties": {
+      "DefaultValue": {
+        "R": 0.2168904,
+        "G": 0.425,
+        "B": 0.21037501,
+        "A": 0.0,
+        "Hex": "376C36"
+      },
+      "ParameterName": "FriendlyHighlightColor",
+      "ExpressionGUID": "306B45DB-453D4639-96FA6D93-D535EB41",
+      "Material": {
+        "ObjectName": "Material M_OccludedOutline",
+        "ObjectPath": "War/Content/Materials/PostProcess/M_OccludedOutline.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionVectorParameter",
+    "Name": "MaterialExpressionVectorParameter_6",
+    "Outer": "M_OccludedOutline",
+    "Properties": {
+      "DefaultValue": {
+        "R": 0.1,
+        "G": 0.08709008,
+        "B": 0.0515,
+        "A": 0.0,
+        "Hex": "1A160D"
+      },
+      "ParameterName": "NeutralHighlightColor",
+      "ExpressionGUID": "75B53242-45B0B42E-E287489E-ACCB1E45",
+      "Material": {
+        "ObjectName": "Material M_OccludedOutline",
+        "ObjectPath": "War/Content/Materials/PostProcess/M_OccludedOutline.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionVectorParameter",
+    "Name": "MaterialExpressionVectorParameter_7",
+    "Outer": "M_OccludedOutline",
+    "Properties": {
+      "DefaultValue": {
+        "R": 0.37,
+        "G": 0.08907534,
+        "B": 0.08325001,
+        "A": 1.0,
+        "Hex": "5E1715"
+      },
+      "ParameterName": "EnemyHighlightColor",
+      "ExpressionGUID": "8F755232-4A1A9D27-4ACF5CA7-B02100BD",
+      "Material": {
+        "ObjectName": "Material M_OccludedOutline",
+        "ObjectPath": "War/Content/Materials/PostProcess/M_OccludedOutline.0"
+      }
+    }
+  }
+]

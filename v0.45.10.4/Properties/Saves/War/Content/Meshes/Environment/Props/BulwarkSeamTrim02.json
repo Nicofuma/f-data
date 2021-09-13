@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "BulwarkSeamTrim02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "BulwarkSeamTrim02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2162"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "BulwarkSeamTrim02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BulwarkWall",
+            "ObjectPath": "War/Content/Materials/Environment/Props/BulwarkWall.0"
+          },
+          "MaterialSlotName": "BulwarkWall",
+          "ImportedMaterialSlotName": "BulwarkWall",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1070.5962,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1070.5962,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -6.4659348,
+          "Y": 386.04395,
+          "Z": 891.78796
+        },
+        "BoxExtent": {
+          "X": 63.47164,
+          "Y": 50.09723,
+          "Z": 106.50952
+        },
+        "SphereRadius": 120.368645
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup BulwarkSeamTrim02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/BulwarkSeamTrim02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision BulwarkSeamTrim02:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/BulwarkSeamTrim02.1"
+    },
+    "LightingGuid": "12F08153-4B8FF46E-28EE789E-49F0E028",
+    "RenderData": null
+  }
+]

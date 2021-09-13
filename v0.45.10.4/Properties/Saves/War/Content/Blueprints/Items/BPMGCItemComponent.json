@@ -1,0 +1,93 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPMGCItemComponent_C",
+    "SuperStruct": {
+      "ObjectName": "Class HeavyMachineGunItemComponent",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPMGCItemComponent_C",
+    "Name": "Default__BPMGCItemComponent_C",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_MGC",
+        "ObjectPath": "War/Content/Meshes/Weapons/SK_MGC.0"
+      },
+      "FireCameraShake": {
+        "ObjectName": "BlueprintGeneratedClass RifleFireCameraShake_C",
+        "ObjectPath": "War/Content/Blueprints/Items/RifleFireCameraShake.0"
+      },
+      "ImpactEffect": {
+        "ObjectName": "BlueprintGeneratedClass RifleImpactEffect_C",
+        "ObjectPath": "War/Content/Blueprints/Items/RifleImpactEffect.1"
+      },
+      "WeaponFireFXClass": {
+        "ObjectName": "BlueprintGeneratedClass TracerFireMG_C",
+        "ObjectPath": "War/Content/Blueprints/TracerFireMG.1"
+      },
+      "WeaponShotSFX": {
+        "FiringLoop": {
+          "ObjectName": "SoundCue MGC-RFShot_Cue",
+          "ObjectPath": "War/Content/Audio/SFX/Weapons/MGC/MGC-RFShot_Cue.0"
+        },
+        "FiringStopped": {
+          "ObjectName": "SoundCue MGC-RFTail_Cue",
+          "ObjectPath": "War/Content/Audio/SFX/Weapons/MGC/MGC-RFTail_Cue.0"
+        }
+      },
+      "MuzzleFlashPS": {
+        "ObjectName": "ParticleSystem hmgMF",
+        "ObjectPath": "War/Content/FX/hmgMF.58"
+      },
+      "bRequiresOpenVehiclePlatform": true,
+      "bCheckForOpenSpaceWhenFiring": true,
+      "EquippedGripType": "EEquippedWeaponGripType::LargeProneRifle",
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage ATG_Equipping",
+          "ObjectPath": "War/Content/Animation/Character/ATG_ATRifle/ATG_Equipping.0"
+        }
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage ATG_Unnequipping",
+          "ObjectPath": "War/Content/Animation/Character/ATG_ATRifle/ATG_Unnequipping.0"
+        }
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage HMG_Shooting",
+          "ObjectPath": "War/Content/Animation/Character/HMG_HeavyMachineGun/HMG_Shooting.0"
+        },
+        "IsLooping": true
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage ATG_Reloading",
+          "ObjectPath": "War/Content/Animation/Character/ATG_ATRifle/ATG_Reloading.0"
+        },
+        "Duration": 3.5
+      },
+      "ReloadSoundCue": {
+        "ObjectName": "SoundCue HeavyMGReload",
+        "ObjectPath": "War/Content/Audio/SFX/Weapons/HeavyMG/HeavyMGReload.0"
+      },
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_HMG_C",
+        "ObjectPath": "War/Content/Animation/Weapons/ABP_HMG.1"
+      },
+      "CompatibleAmmoCodeName": "MGAmmo",
+      "bRequiresCoverOrLowStanceToInvoke": true
+    }
+  }
+]

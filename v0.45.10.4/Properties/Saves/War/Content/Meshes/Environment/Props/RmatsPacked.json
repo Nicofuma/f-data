@@ -1,0 +1,100 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "RmatsPacked",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_26",
+    "Outer": "RmatsPacked",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1BE2C"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "RmatsPacked",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RefinedMaterialPickup",
+            "ObjectPath": "War/Content/Materials/Pickups/RefinedMaterialPickup.0"
+          },
+          "MaterialSlotName": "RefinedMaterialPickup",
+          "ImportedMaterialSlotName": "RefinedMaterialPickup",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 222.62442,
+            "LocalUVDensities": 440.3824,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 726.4884
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FactoryBasicFacility",
+            "ObjectPath": "War/Content/Materials/Environment/Props/FactoryBasicFacility.0"
+          },
+          "MaterialSlotName": "Burlap",
+          "ImportedMaterialSlotName": "Burlap",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 741.1135,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 818.8685,
+            "LocalUVDensities": 721.18866
+          }
+        }
+      ],
+      "LightmapUVDensity": 724.1061,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 3,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 181.1688,
+          "Y": -69.50198,
+          "Z": 137.224
+        },
+        "BoxExtent": {
+          "X": 115.17523,
+          "Y": 168.79324,
+          "Z": 150.67996
+        },
+        "SphereRadius": 228.83037
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup RmatsPacked:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/RmatsPacked.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision RmatsPacked:NavCollision_26",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/RmatsPacked.1"
+    },
+    "LightingGuid": "A444D39A-4E64071A-A1B1C29F-3619B94A",
+    "RenderData": null
+  }
+]

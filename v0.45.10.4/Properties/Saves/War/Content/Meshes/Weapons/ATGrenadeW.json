@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ATGrenadeW",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "ATGrenadeW",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x6573"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ATGrenadeW",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ATGrenadeW",
+            "ObjectPath": "War/Content/Materials/Weapons/ATGrenadeW.0"
+          },
+          "MaterialSlotName": "ATGrenadeW ",
+          "ImportedMaterialSlotName": "ATGrenadeW ",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 65.51859,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 65.51859,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 1.0500679,
+          "Z": 17.158989
+        },
+        "BoxExtent": {
+          "X": 13.816025,
+          "Y": 6.481923,
+          "Z": 17.13987
+        },
+        "SphereRadius": 22.03997
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ATGrenadeW:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Weapons/ATGrenadeW.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ATGrenadeW:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Weapons/ATGrenadeW.1"
+    },
+    "LightingGuid": "D78E2B94-447FA53C-C2CE2295-EE95008A",
+    "RenderData": null
+  }
+]

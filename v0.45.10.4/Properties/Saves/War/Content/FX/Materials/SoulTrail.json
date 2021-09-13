@@ -1,0 +1,158 @@
+[
+  {
+    "Type": "MaterialInstanceConstant",
+    "Name": "SoulTrail",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Material BloodWave",
+        "ObjectPath": "War/Content/FX/Materials/BloodWave.0"
+      },
+      "bHasStaticPermutationResource": true,
+      "ScalarParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "AlphaMult",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 3.185209,
+          "ExpressionGUID": "6094020A-47BDE84B-D8C36EB3-278C5C65"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Roughness",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 1.0,
+          "ExpressionGUID": "AFA009D4-44DFD252-220DF999-BF0D4D00"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "RefractionDepthBias",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "VectorParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "GradientMask",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 1.0,
+            "A": 0.0,
+            "Hex": "0000FF"
+          },
+          "ExpressionGUID": "5FA16C6D-4D214FB3-117E3DA0-7EC0679F"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "colour",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFFFFF"
+          },
+          "ExpressionGUID": "252F9146-47327438-A38FE299-9EC8048D"
+        }
+      ],
+      "TextureParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "Blend GradientTexture",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "ObjectName": "Texture2D 2GradientHorizontal",
+            "ObjectPath": "War/Content/FX/Textures/2GradientHorizontal.0"
+          },
+          "ExpressionGUID": "B406624D-4FCA2A30-1F94BCA8-9D67852B"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "GradientTexture",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "ObjectName": "Texture2D 2GradientHorizontal",
+            "ObjectPath": "War/Content/FX/Textures/2GradientHorizontal.0"
+          },
+          "ExpressionGUID": "FB7B2479-4F010346-52C30381-7A5AB064"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "WaveTexture",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "ObjectName": "Texture2D TransformSpirit",
+            "ObjectPath": "War/Content/FX/Textures/Trail/TransformSpirit.0"
+          },
+          "ExpressionGUID": "6472907B-47B7C163-BF42FEB2-D05B044B"
+        }
+      ],
+      "BasePropertyOverrides": {
+        "TwoSided": true,
+        "BlendMode": "BLEND_Translucent",
+        "OpacityMaskClipValue": 0.3333
+      },
+      "StaticParameters": {
+        "StaticSwitchParameters": [
+          {
+            "Value": false,
+            "ParameterInfo": {
+              "Name": "Gradient Blend",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "73DD774D-4EAB3699-E1163F9C-3D20FDE5"
+          },
+          {
+            "Value": false,
+            "ParameterInfo": {
+              "Name": "Debug Test Anim",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "221C591F-43DC6BB6-AB8D21A5-C8713833"
+          },
+          {
+            "Value": false,
+            "ParameterInfo": {
+              "Name": "X or Y Anim? ",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "771ED405-460F0CFB-90639784-F33C3506"
+          }
+        ]
+      },
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "2GradientHorizontal"
+        }
+      ]
+    }
+  }
+]

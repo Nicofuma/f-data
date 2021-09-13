@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "RefinedFuelPickup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "RefinedFuelPickup",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x449A"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "RefinedFuelPickup",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RefinedFuel",
+            "ObjectPath": "War/Content/Materials/Resources/RefinedFuel.0"
+          },
+          "MaterialSlotName": "RefinedFuel",
+          "ImportedMaterialSlotName": "RefinedFuel",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 105.964874,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 105.964874,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -1.9073486E-06,
+          "Z": 30.356483
+        },
+        "BoxExtent": {
+          "X": 25.070074,
+          "Y": 25.070076,
+          "Z": 31.124878
+        },
+        "SphereRadius": 39.378582
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup RefinedFuelPickup:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Resources/RefinedFuelPickup.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision RefinedFuelPickup:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Resources/RefinedFuelPickup.1"
+    },
+    "LightingGuid": "B3F1D8D3-43024CC3-EBE485A1-CE590AD7",
+    "RenderData": null
+  }
+]

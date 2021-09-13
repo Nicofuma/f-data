@@ -1,0 +1,99 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FortIModCeremonialWeaponMountC",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "FortIModCeremonialWeaponMountC",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x346EB"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FortIModCeremonialWeaponMountC",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Infrastructure02",
+            "ObjectPath": "War/Content/Materials/Structures/Infrastructure02.0"
+          },
+          "MaterialSlotName": "IMod02",
+          "ImportedMaterialSlotName": "IMod02",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 355.9156,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Infrastructure01",
+            "ObjectPath": "War/Content/Materials/Structures/Infrastructure01.0"
+          },
+          "MaterialSlotName": "IMod01",
+          "ImportedMaterialSlotName": "IMod01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 431.8801,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 369.1529,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 9.27104,
+          "Z": 117.150276
+        },
+        "BoxExtent": {
+          "X": 228.2573,
+          "Y": 30.520855,
+          "Z": 148.8677
+        },
+        "SphereRadius": 258.04703
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FortIModCeremonialWeaponMountC:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/FortIModCeremonialWeaponMountC.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FortIModCeremonialWeaponMountC:NavCollision_4",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/FortIModCeremonialWeaponMountC.1"
+    },
+    "LightingGuid": "BFF4DAF3-449760E8-6F4C7583-9098C4D6",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "SoldierSupplies_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript SoldierSupplies_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/SoldierSupplies.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class BasicItemPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "SoldierSupplies_C",
+    "Name": "Default__SoldierSupplies_C",
+    "Properties": {
+      "Encumbrance": 40,
+      "CodeName": "SoldierSupplies",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "5162F3A94F70B8053E4BF1888C8BBA85",
+        "SourceString": "Soldier Supplies"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "BCE330BA4D26B58F918928B570537C7B",
+        "SourceString": "A standard issue set of supplies for foot soldiers. Bases must be stockpiled with Soldier Supplies in order for players to spawn."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D ClothItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/ClothItemIcon.0"
+      },
+      "ItemCategory": "EItemCategory::Supplies",
+      "ItemProfileType": "EItemProfileType::Supplies",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__SoldierSupplies_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/SoldierSupplies.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__SoldierSupplies_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/SoldierSupplies.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__SoldierSupplies_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "SoldierSupplies_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent SoldierSupplies_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/SoldierSupplies.3"
+      },
+      "VariableGuid": "45A57A6F-468C52B1-5687A28D-A161DA72",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "SoldierSupplies_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node SoldierSupplies_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/SoldierSupplies.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__SoldierSupplies_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__SoldierSupplies_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/SoldierSupplies.2"
+      }
+    }
+  }
+]

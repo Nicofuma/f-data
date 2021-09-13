@@ -1,0 +1,1251 @@
+[
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "BPArmoredCarMobilityC_C",
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPArmoredCarMobilityC_C",
+    "Super": "BPArmoredCarBaseC_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPArmoredCarMobilityC_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.44"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler BPArmoredCarMobilityC_C:InheritableComponentHandler",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.16"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty BPArmoredCarMobilityC_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.0"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function BPArmoredCarMobilityC_C:ExecuteUbergraph_BPArmoredCarMobilityC",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.9"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass BPArmoredCarBaseC_C",
+      "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarBaseC.1"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty BPArmoredCarMobilityC_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.0"
+      },
+      {
+        "ObjectName": "Function BPArmoredCarMobilityC_C:BPOnVehicleOn",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.10"
+      },
+      {
+        "ObjectName": "Function BPArmoredCarMobilityC_C:ExecuteUbergraph_BPArmoredCarMobilityC",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.9"
+      },
+      {
+        "ObjectName": "ObjectProperty BPArmoredCarMobilityC_C:PassengerExit",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.7"
+      },
+      {
+        "ObjectName": "ObjectProperty BPArmoredCarMobilityC_C:PassengerTrigger",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.19"
+      },
+      {
+        "ObjectName": "ObjectProperty BPArmoredCarMobilityC_C:PassengerSeat3",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.18"
+      },
+      {
+        "ObjectName": "ObjectProperty BPArmoredCarMobilityC_C:PassengerSeat2",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.17"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 655360,
+    "ClassWithin": null,
+    "ClassConfigName": "/Game/Animation/TerrainVehicles/ArmoredCar/ABP_ArmoredCarDefensive_tankette_720895",
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPArmoredCarMobilityC_C",
+    "Name": "Default__BPArmoredCarMobilityC_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "IdleLoop": {
+        "ObjectName": "AudioComponent Default__BPArmoredCarMobilityC_C:IdleLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.6"
+      },
+      "RearLeftTireDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPArmoredCarMobilityC_C:RearLeftTireDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.26"
+      },
+      "RearLeftTireDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPArmoredCarMobilityC_C:RearLeftTireDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.25"
+      },
+      "RearRightTireDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPArmoredCarMobilityC_C:RearRightTireDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.28"
+      },
+      "RearRightTireDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPArmoredCarMobilityC_C:RearRightTireDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.27"
+      },
+      "MainDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPArmoredCarMobilityC_C:MainDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.22"
+      },
+      "MainDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPArmoredCarMobilityC_C:MainDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.21"
+      },
+      "SkiddingDirtPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPArmoredCarMobilityC_C:SkiddingDirtPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.29"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "639F527B4A7646DCCBA495B78526CE17",
+        "SourceString": "T12 “Actaeon” Tankette"
+      },
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "A40D542946300888923570B8BDDA5B89",
+        "SourceString": "Armoured Car"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "0981CE2B474FA3D6CC6145B9A34B2B3B",
+        "SourceString": "This complete overhaul of the T3 Armoured Car is reinforced with tank armour. While these extra defenses lower the T12’s overall speed and handling, the addition of treads provide increased performance in less than ideal terrain."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D ArmoredCarDefensiveVehicleIcon",
+        "ObjectPath": "War/Content/Textures/UI/VehicleIcons/ArmoredCarDefensiveVehicleIcon.0"
+      },
+      "TechID": "ETechID::UnlockArmoredCarMobility",
+      "CodeName": "ArmoredCarMobilityC",
+      "VehicleMovementProfileType": "EVehicleMovementProfileType::FulltrackLight",
+      "ArmourType": "EArmourType::Tier2Tank",
+      "ArmourDirectionBoneNamesList": [
+        {
+          "ArmourDirection": "EArmourDirection::Left",
+          "BoneNamesList": [
+            "threadsPivot_L"
+          ]
+        },
+        {
+          "ArmourDirection": "EArmourDirection::Right",
+          "BoneNamesList": [
+            "threadsPivot_R"
+          ]
+        }
+      ],
+      "DestroyedMesh": {
+        "ObjectName": "StaticMeshComponent Default__BPArmoredCarMobilityC_C:DestroyedMesh",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.50"
+      },
+      "MinorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPArmoredCarMobilityC_C:MinorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.24"
+      },
+      "MajorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPArmoredCarMobilityC_C:MajorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.23"
+      },
+      "DriveLoop": {
+        "ObjectName": "AudioComponent Default__BPArmoredCarMobilityC_C:DriveLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.5"
+      },
+      "BackUpSFXLoop": {
+        "ObjectName": "AudioComponent Default__BPArmoredCarMobilityC_C:BackUpSFXLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.4"
+      },
+      "CameraRigComponent": {
+        "ObjectName": "PlayerCameraRigComponent Default__BPArmoredCarMobilityC_C:CameraRigVehicle",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.30"
+      },
+      "FrontAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__BPArmoredCarMobilityC_C:FrontAxelCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.33"
+      },
+      "RearAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__BPArmoredCarMobilityC_C:RearAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.36"
+      },
+      "FrontLeftRollCastLocation": {
+        "ObjectName": "SceneComponent Default__BPArmoredCarMobilityC_C:FrontRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.34"
+      },
+      "FrontRightRollCastLocation": {
+        "ObjectName": "SceneComponent Default__BPArmoredCarMobilityC_C:RearRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.37"
+      },
+      "LeftSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__BPArmoredCarMobilityC_C:LeftSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.35"
+      },
+      "RightSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__BPArmoredCarMobilityC_C:RightSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.38"
+      },
+      "VehicleCollision": {
+        "ObjectName": "BoxComponent Default__BPArmoredCarMobilityC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.14"
+      },
+      "PassengerArea": {
+        "ObjectName": "BoxComponent Default__BPArmoredCarMobilityC_C:PassengerBaseBox",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.13"
+      },
+      "AFKTimeoutComponent": {
+        "ObjectName": "AFKTimeoutComponent Default__BPArmoredCarMobilityC_C:AFKTimeoutComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.3"
+      },
+      "TreadInfo": [
+        {
+          "PhysicalMaterial": {
+            "ObjectName": "PhysicalMaterial DirtPhys",
+            "ObjectPath": "War/Content/PhysicalMaterials/DirtPhys.0"
+          },
+          "TreadActor": {
+            "ObjectName": "BlueprintGeneratedClass DirtTread_C",
+            "ObjectPath": "War/Content/Textures/Decal/DirtTread.0"
+          }
+        },
+        {
+          "PhysicalMaterial": {
+            "ObjectName": "PhysicalMaterial RoadPhys",
+            "ObjectPath": "War/Content/PhysicalMaterials/RoadPhys.0"
+          },
+          "TreadActor": {
+            "ObjectName": "BlueprintGeneratedClass DirtTread_C",
+            "ObjectPath": "War/Content/Textures/Decal/DirtTread.0"
+          }
+        },
+        {
+          "PhysicalMaterial": {
+            "ObjectName": "PhysicalMaterial SnowPhys",
+            "ObjectPath": "War/Content/PhysicalMaterials/SnowPhys.0"
+          },
+          "TreadActor": {
+            "ObjectName": "BlueprintGeneratedClass Snowtread_C",
+            "ObjectPath": "War/Content/Textures/Decal/Snowtread.0"
+          }
+        },
+        {
+          "PhysicalMaterial": {
+            "ObjectName": "PhysicalMaterial GrassPhys",
+            "ObjectPath": "War/Content/PhysicalMaterials/GrassPhys.0"
+          },
+          "TreadActor": {
+            "ObjectName": "BlueprintGeneratedClass DirtTread_C",
+            "ObjectPath": "War/Content/Textures/Decal/DirtTread.0"
+          }
+        }
+      ],
+      "Treads": {
+        "TrackMaterialIndices": 1,
+        "TrackMaterialIndices": 0,
+        "TrackLength": 13500.0
+      },
+      "MuzzleInfo": [
+        {
+          "GunnerIndex": 1,
+          "MuzzleIndex": 0,
+          "SocketName": "S_Muzzle"
+        }
+      ],
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPArmoredCarMobilityC_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.51"
+      },
+      "Mesh": {
+        "ObjectName": "SkeletalMeshComponent Default__BPArmoredCarMobilityC_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.45"
+      },
+      "CharacterMovement": {
+        "ObjectName": "RWDVehicleMovementComponent Default__BPArmoredCarMobilityC_C:CharMoveComp",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.31"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent Default__BPArmoredCarMobilityC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.15"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPArmoredCarMobilityC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.14"
+      }
+    }
+  },
+  {
+    "Type": "AFKTimeoutComponent",
+    "Name": "AFKTimeoutComponent",
+    "Outer": "Default__BPArmoredCarMobilityC_C"
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "BackUpSFXLoop",
+    "Outer": "Default__BPArmoredCarMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPArmoredCarMobilityC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.15"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "DriveLoop",
+    "Outer": "Default__BPArmoredCarMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPArmoredCarMobilityC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.15"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "IdleLoop",
+    "Outer": "Default__BPArmoredCarMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPArmoredCarMobilityC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.14"
+      }
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "PassengerExit",
+    "Outer": "BPArmoredCarMobilityC_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class VehicleExitComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_BPArmoredCarMobilityC",
+    "PropertyFlags": 148
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BPArmoredCarMobilityC",
+    "Outer": "BPArmoredCarMobilityC_C",
+    "Children": [
+      {
+        "ObjectName": "IntProperty BPArmoredCarMobilityC_C:ExecuteUbergraph_BPArmoredCarMobilityC.EntryPoint",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.8"
+      },
+      {
+        "ObjectName": "BoolProperty BPArmoredCarMobilityC_C:ExecuteUbergraph_BPArmoredCarMobilityC.K2Node_Event_IsOn",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.12"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "Function",
+    "Name": "BPOnVehicleOn",
+    "Outer": "BPArmoredCarMobilityC_C",
+    "Super": "BPOnVehicleOn",
+    "SuperStruct": {
+      "ObjectName": "Function BPArmoredCarBaseC_C:BPOnVehicleOn",
+      "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarBaseC.10"
+    },
+    "Children": [
+      {
+        "ObjectName": "BoolProperty BPArmoredCarMobilityC_C:BPOnVehicleOn.IsOn",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.11"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "IsOn",
+    "Outer": "BPOnVehicleOn",
+    "PropertyFlags": 148,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_Event_IsOn",
+    "Outer": "ExecuteUbergraph_BPArmoredCarMobilityC",
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "PassengerBaseBox",
+    "Outer": "Default__BPArmoredCarMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPArmoredCarMobilityC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.14"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "VehicleCollision",
+    "Outer": "Default__BPArmoredCarMobilityC_C",
+    "Properties": {
+      "BodyInstance": {
+        "CollisionProfileName": "HalfTrackRoot",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "OverlapDowncast",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Projectile",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      },
+      "OnComponentBeginOverlap": null
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__BPArmoredCarMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPArmoredCarMobilityC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.14"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BPArmoredCarMobilityC_C",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class SpotLightComponent",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SpotLightComponent BPArmoredCarMobilityC_C:SpotLight_L_GEN_VARIABLE",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.46"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass BPArmoredCarBaseC_C",
+              "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarBaseC.1"
+            },
+            "SCSVariableName": "SpotLight_L",
+            "AssociatedGuid": "CAC6BBA6-472F2553-A5203291-C4707652"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class SpotLightComponent",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SpotLightComponent BPArmoredCarMobilityC_C:SpotLight_R_GEN_VARIABLE",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.47"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass BPArmoredCarBaseC_C",
+              "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarBaseC.1"
+            },
+            "SCSVariableName": "SpotLight_R",
+            "AssociatedGuid": "70690A71-4A5BD895-62EC64A8-4CD65510"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class ParticleSystemComponent",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "ParticleSystemComponent BPArmoredCarMobilityC_C:Exhaust_GEN_VARIABLE",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.20"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass BPArmoredCarBaseC_C",
+              "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarBaseC.1"
+            },
+            "SCSVariableName": "Exhaust",
+            "AssociatedGuid": "72430BD1-49DC51D2-AD2C7998-8D71DE09"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class StaticMeshComponent",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "StaticMeshComponent BPArmoredCarMobilityC_C:Light_R_GEN_VARIABLE",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.49"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass BPArmoredCarBaseC_C",
+              "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarBaseC.1"
+            },
+            "SCSVariableName": "Light_R",
+            "AssociatedGuid": "E39512DB-429556F2-903494B4-A7EAFA2F"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class StaticMeshComponent",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "StaticMeshComponent BPArmoredCarMobilityC_C:Light_L_GEN_VARIABLE",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.48"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass BPArmoredCarBaseC_C",
+              "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarBaseC.1"
+            },
+            "SCSVariableName": "Light_L",
+            "AssociatedGuid": "8BB437F1-45E6F2E2-032AAD95-C206FFB3"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class VehicleSeatComponent",
+            "ObjectPath": "/Script/War"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "VehicleSeatComponent BPArmoredCarMobilityC_C:GunnerSeat1_GEN_VARIABLE",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.54"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass BPArmoredCarBaseC_C",
+              "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarBaseC.1"
+            },
+            "SCSVariableName": "GunnerSeat1",
+            "AssociatedGuid": "63A89C8B-4635EE63-4B6CBAA1-98F34963"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class VehicleSeatComponent",
+            "ObjectPath": "/Script/War"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "VehicleSeatComponent BPArmoredCarMobilityC_C:DriverSeat0_GEN_VARIABLE",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.53"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass BPArmoredCarBaseC_C",
+              "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarBaseC.1"
+            },
+            "SCSVariableName": "DriverSeat0",
+            "AssociatedGuid": "0E9FE6A0-4F635D35-23CAE586-37E51450"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "PassengerSeat2",
+    "Outer": "BPArmoredCarMobilityC_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class VehicleSeatComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "PassengerSeat3",
+    "Outer": "BPArmoredCarMobilityC_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class VehicleSeatComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "PassengerTrigger",
+    "Outer": "BPArmoredCarMobilityC_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class VehicleTriggerComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "Exhaust_GEN_VARIABLE",
+    "Outer": "BPArmoredCarMobilityC_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": -38.11547,
+        "Y": -232.2712,
+        "Z": 93.91603
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MainDirtHighSpeedPS",
+    "Outer": "Default__BPArmoredCarMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPArmoredCarMobilityC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.14"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MainDirtLowSpeedPS",
+    "Outer": "Default__BPArmoredCarMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPArmoredCarMobilityC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.14"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MajorDamagePS",
+    "Outer": "Default__BPArmoredCarMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPArmoredCarMobilityC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.15"
+      },
+      "RelativeLocation": {
+        "X": 108.03692,
+        "Y": 0.0,
+        "Z": 6.1E-05
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MinorDamagePS",
+    "Outer": "Default__BPArmoredCarMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPArmoredCarMobilityC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.15"
+      },
+      "RelativeLocation": {
+        "X": 108.03692,
+        "Y": 0.0,
+        "Z": 6.1035156E-05
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearLeftTireDirtHighSpeedPS",
+    "Outer": "Default__BPArmoredCarMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPArmoredCarMobilityC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.14"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearLeftTireDirtLowSpeedPS",
+    "Outer": "Default__BPArmoredCarMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPArmoredCarMobilityC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.14"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearRightTireDirtHighSpeedPS",
+    "Outer": "Default__BPArmoredCarMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPArmoredCarMobilityC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.14"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearRightTireDirtLowSpeedPS",
+    "Outer": "Default__BPArmoredCarMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPArmoredCarMobilityC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.14"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "SkiddingDirtPS",
+    "Outer": "Default__BPArmoredCarMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPArmoredCarMobilityC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.14"
+      }
+    }
+  },
+  {
+    "Type": "PlayerCameraRigComponent",
+    "Name": "CameraRigVehicle",
+    "Outer": "Default__BPArmoredCarMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPArmoredCarMobilityC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.15"
+      }
+    }
+  },
+  {
+    "Type": "RWDVehicleMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__BPArmoredCarMobilityC_C",
+    "Properties": {
+      "CenterOfGravityHeight": 0.4,
+      "EngineForce": 7500.0,
+      "BrakeForce": 20000.0,
+      "HandbrakeForce": 20000.0,
+      "RollingResistance": 900.0,
+      "MaxWalkSpeed": 1151.246,
+      "Mass": 3000.0
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPArmoredCarMobilityC_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontAxelCastLocation",
+    "Outer": "Default__BPArmoredCarMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPArmoredCarMobilityC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.15"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontRightAxleCastLocation",
+    "Outer": "Default__BPArmoredCarMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPArmoredCarMobilityC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.15"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "LeftSideTrackLocation",
+    "Outer": "Default__BPArmoredCarMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPArmoredCarMobilityC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.15"
+      },
+      "RelativeLocation": {
+        "X": -105.37186,
+        "Y": -125.19667,
+        "Z": -154.99994
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearAxleCastLocation",
+    "Outer": "Default__BPArmoredCarMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPArmoredCarMobilityC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.15"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearRightAxleCastLocation",
+    "Outer": "Default__BPArmoredCarMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPArmoredCarMobilityC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.15"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RightSideTrackLocation",
+    "Outer": "Default__BPArmoredCarMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPArmoredCarMobilityC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.15"
+      },
+      "RelativeLocation": {
+        "X": -98.2104,
+        "Y": 116.23498,
+        "Z": -155.0
+      }
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPArmoredCarMobilityC_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.32"
+      },
+      "VariableGuid": "8908ED20-44A99943-043B29A1-1A6C391B",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_19",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class VehicleSeatComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "VehicleSeatComponent BPArmoredCarMobilityC_C:PassengerSeat2_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.55"
+      },
+      "AttachToName": "S_Chassis",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "867737E7-4C15D205-3EC5CDBA-511D5454",
+      "InternalVariableName": "PassengerSeat2"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_20",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class VehicleSeatComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "VehicleSeatComponent BPArmoredCarMobilityC_C:PassengerSeat3_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.56"
+      },
+      "AttachToName": "S_Chassis",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "ED60F64D-4B3058CC-40FFF39F-26981ACF",
+      "InternalVariableName": "PassengerSeat3"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_21",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class VehicleTriggerComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "VehicleTriggerComponent BPArmoredCarMobilityC_C:PassengerTrigger_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.57"
+      },
+      "ParentComponentOrVariableName": "VehicleCollision",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "75D356E3-41055875-E45E2E9F-34B975E6",
+      "InternalVariableName": "PassengerTrigger"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_22",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class VehicleExitComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "VehicleExitComponent BPArmoredCarMobilityC_C:PassengerExit_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.52"
+      },
+      "ParentComponentOrVariableName": "VehicleCollision",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "DF2497A6-49A72D41-91D39481-54AC33BA",
+      "InternalVariableName": "PassengerExit"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPArmoredCarMobilityC_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPArmoredCarMobilityC_C:SimpleConstructionScript_0.SCS_Node_19",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.40"
+        },
+        {
+          "ObjectName": "SCS_Node BPArmoredCarMobilityC_C:SimpleConstructionScript_0.SCS_Node_20",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.41"
+        },
+        {
+          "ObjectName": "SCS_Node BPArmoredCarMobilityC_C:SimpleConstructionScript_0.SCS_Node_21",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.42"
+        },
+        {
+          "ObjectName": "SCS_Node BPArmoredCarMobilityC_C:SimpleConstructionScript_0.SCS_Node_22",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.43"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPArmoredCarMobilityC_C:SimpleConstructionScript_0.SCS_Node_19",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.40"
+        },
+        {
+          "ObjectName": "SCS_Node BPArmoredCarMobilityC_C:SimpleConstructionScript_0.SCS_Node_20",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.41"
+        },
+        {
+          "ObjectName": "SCS_Node BPArmoredCarMobilityC_C:SimpleConstructionScript_0.SCS_Node_21",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.42"
+        },
+        {
+          "ObjectName": "SCS_Node BPArmoredCarMobilityC_C:SimpleConstructionScript_0.SCS_Node_22",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.43"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPArmoredCarMobilityC_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.39"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__BPArmoredCarMobilityC_C",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_ArmoredCarDefensive_tankette_C",
+        "ObjectPath": "War/Content/Animation/TerrainVehicles/ArmoredCar/ABP_ArmoredCarDefensive_tankette.1"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_ArmoredCarDefensiveC_tankette",
+        "ObjectPath": "War/Content/Meshes/Vehicles/PrototypeVehicles/SK_ArmoredCarDefensiveC_tankette.0"
+      },
+      "BodyInstance": {
+        "ObjectType": "ECC_Vehicle",
+        "CollisionProfileName": "HalfTrackMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPArmoredCarMobilityC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.15"
+      }
+    }
+  },
+  {
+    "Type": "SpotLightComponent",
+    "Name": "SpotLight_L_GEN_VARIABLE",
+    "Outer": "BPArmoredCarMobilityC_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 77.76373,
+        "Y": 199.61293,
+        "Z": 71.23132
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SpotLightComponent",
+    "Name": "SpotLight_R_GEN_VARIABLE",
+    "Outer": "BPArmoredCarMobilityC_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": -77.91906,
+        "Y": 198.73434,
+        "Z": 71.15384
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Light_L_GEN_VARIABLE",
+    "Outer": "BPArmoredCarMobilityC_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 77.84001,
+        "Y": 195.15787,
+        "Z": 71.356384
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      },
+      "RelativeScale3D": {
+        "X": 0.895,
+        "Y": 0.830267,
+        "Z": 0.895
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Light_R_GEN_VARIABLE",
+    "Outer": "BPArmoredCarMobilityC_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": -77.9208,
+        "Y": 195.16985,
+        "Z": 71.35608
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      },
+      "RelativeScale3D": {
+        "X": 0.895,
+        "Y": 0.83026654,
+        "Z": 0.895
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "DestroyedMesh",
+    "Outer": "Default__BPArmoredCarMobilityC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPArmoredCarMobilityC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityC.15"
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPArmoredCarMobilityC_C"
+  },
+  {
+    "Type": "VehicleExitComponent",
+    "Name": "PassengerExit_GEN_VARIABLE",
+    "Outer": "BPArmoredCarMobilityC_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": -350.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VehicleSeatComponent",
+    "Name": "DriverSeat0_GEN_VARIABLE",
+    "Outer": "BPArmoredCarMobilityC_C",
+    "Properties": {
+      "MountCodeName": "ScoutVehicleDriver",
+      "MountComponent": {
+        "ObjectName": "BlueprintGeneratedClass BPScoutVehicleDriverNarrow_C",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ScoutVehicle/BPScoutVehicleDriverNarrow.0"
+      },
+      "bIsExposed": true,
+      "bIsWoundable": true,
+      "RelativeLocation": {
+        "X": 44.660427,
+        "Y": -19.80734,
+        "Z": 79.198456
+      }
+    }
+  },
+  {
+    "Type": "VehicleSeatComponent",
+    "Name": "GunnerSeat1_GEN_VARIABLE",
+    "Outer": "BPArmoredCarMobilityC_C",
+    "Properties": {
+      "MountCodeName": "ArmoredCarMobilityGunner",
+      "MountComponent": {
+        "ObjectName": "BlueprintGeneratedClass BPArmoredCarMobilityGunnerComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ArmoredCar/BPArmoredCarMobilityGunnerComponent.0"
+      },
+      "bIsExposed": true,
+      "bIsWoundable": true,
+      "RelativeLocation": {
+        "X": -30.508263,
+        "Y": 14.076782,
+        "Z": 70.64172
+      }
+    }
+  },
+  {
+    "Type": "VehicleSeatComponent",
+    "Name": "PassengerSeat2_GEN_VARIABLE",
+    "Outer": "BPArmoredCarMobilityC_C",
+    "Properties": {
+      "Index": 2,
+      "TriggerName": "PassengerTrigger",
+      "ExitName": "PassengerExit",
+      "bIsExposed": true,
+      "bIsWoundable": true,
+      "RelativeLocation": {
+        "X": -38.02958,
+        "Y": -136.11165,
+        "Z": 78.22812
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VehicleSeatComponent",
+    "Name": "PassengerSeat3_GEN_VARIABLE",
+    "Outer": "BPArmoredCarMobilityC_C",
+    "Properties": {
+      "Index": 3,
+      "TriggerName": "PassengerTrigger",
+      "ExitName": "PassengerExit",
+      "bIsExposed": true,
+      "bIsWoundable": true,
+      "RelativeLocation": {
+        "X": 39.039406,
+        "Y": -135.46027,
+        "Z": 78.72378
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VehicleTriggerComponent",
+    "Name": "PassengerTrigger_GEN_VARIABLE",
+    "Outer": "BPArmoredCarMobilityC_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": -350.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  }
+]

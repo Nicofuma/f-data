@@ -1,0 +1,124 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "StoneStairs03",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -4.709244,
+              "Y": 267.41898,
+              "Z": 123.552986
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 37.90613
+            },
+            "X": 309.86566,
+            "Y": 499.39636,
+            "Z": 63.02405,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": -4.7107697,
+              "Y": 55.73178,
+              "Z": 269.5535
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": -1.2937678
+            },
+            "X": 309.86566,
+            "Y": 70.4221,
+            "Z": 63.02405,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_531",
+    "Outer": "StoneStairs03",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 509,
+        "SizeOnDisk": 509,
+        "OffsetInFile": "0xA2B4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "StoneStairs03",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BrickSingle02",
+            "ObjectPath": "War/Content/Materials/Environment/BrickSingle02.0"
+          },
+          "MaterialSlotName": "Material #97",
+          "ImportedMaterialSlotName": "Material #97",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 759.422,
+            "LocalUVDensities": 314.13565,
+            "LocalUVDensities": 1559.9274,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1559.9274,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 2,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -4.7096405,
+          "Y": 248.07759,
+          "Z": 140.0
+        },
+        "BoxExtent": {
+          "X": 154.93283,
+          "Y": 216.65274,
+          "Z": 162.76044
+        },
+        "SphereRadius": 301.102
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup StoneStairs03:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Base/StoneStairs03.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision StoneStairs03:NavCollision_531",
+      "ObjectPath": "War/Content/Meshes/Environment/Base/StoneStairs03.1"
+    },
+    "LightingGuid": "1611DDB3-42C32659-D934A991-392324B6",
+    "RenderData": null
+  }
+]

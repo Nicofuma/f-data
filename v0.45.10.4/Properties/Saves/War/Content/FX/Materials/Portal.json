@@ -1,0 +1,444 @@
+[
+  {
+    "Type": "Material",
+    "Name": "Portal",
+    "Properties": {
+      "EmissiveColor": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionLinearInterpolate_0",
+        "UseConstant": false,
+        "Constant": {
+          "R": 0,
+          "G": 0,
+          "B": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "BlendMode": "BLEND_Translucent",
+      "ShadingModel": "MSM_Unlit",
+      "ShadingModels": {
+        "ShadingModelField": 1
+      },
+      "WorldPositionOffset": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionRotateAboutAxis_0",
+        "UseConstant": false,
+        "Constant": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        }
+      },
+      "Refraction": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionLinearInterpolate_2",
+        "UseConstant": false,
+        "Constant": 0.0
+      },
+      "TwoSided": true,
+      "bUsesDistortion": true,
+      "Expressions": [
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionMaterialFunctionCall Portal:MaterialExpressionMaterialFunctionCall_1",
+          "ObjectPath": "War/Content/FX/Materials/Portal.2"
+        },
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSample Portal:MaterialExpressionTextureSample_0",
+          "ObjectPath": "War/Content/FX/Materials/Portal.8"
+        },
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter Portal:MaterialExpressionScalarParameter_0",
+          "ObjectPath": "War/Content/FX/Materials/Portal.4"
+        },
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionMaterialFunctionCall Portal:MaterialExpressionMaterialFunctionCall_0",
+          "ObjectPath": "War/Content/FX/Materials/Portal.1"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSample Portal:MaterialExpressionTextureSample_1",
+          "ObjectPath": "War/Content/FX/Materials/Portal.9"
+        },
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter Portal:MaterialExpressionScalarParameter_1",
+          "ObjectPath": "War/Content/FX/Materials/Portal.5"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionVectorParameter Portal:MaterialExpressionVectorParameter_0",
+          "ObjectPath": "War/Content/FX/Materials/Portal.10"
+        },
+        {
+          "ObjectName": "MaterialExpressionVectorParameter Portal:MaterialExpressionVectorParameter_1",
+          "ObjectPath": "War/Content/FX/Materials/Portal.11"
+        },
+        {
+          "ObjectName": "MaterialExpressionScalarParameter Portal:MaterialExpressionScalarParameter_2",
+          "ObjectPath": "War/Content/FX/Materials/Portal.6"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter Portal:MaterialExpressionScalarParameter_3",
+          "ObjectPath": "War/Content/FX/Materials/Portal.7"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionMaterialFunctionCall Portal:MaterialExpressionMaterialFunctionCall_2",
+          "ObjectPath": "War/Content/FX/Materials/Portal.3"
+        }
+      ],
+      "MaterialFunctionInfos": [
+        {
+          "StateId": "51BAB8B3-4E7EFBFD-B4515E9F-9703A6B1",
+          "Function": {
+            "ObjectName": "MaterialFunction ComponentPivotLocation",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ComponentPivotLocation.0"
+          }
+        },
+        {
+          "StateId": "5B938C50-440B6892-955AD79F-CD1A8337",
+          "Function": {
+            "ObjectName": "MaterialFunction BreakOutFloat3Components",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components.0"
+          }
+        },
+        {
+          "StateId": "C330DE33-4A86FAB2-7255B1AC-3A6AC1B4",
+          "Function": {
+            "ObjectName": "MaterialFunction Transform3x3Matrix",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Math/Transform3x3Matrix.1"
+          }
+        },
+        {
+          "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+          "Function": {
+            "ObjectName": "MaterialFunction VectorLength",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+          }
+        },
+        {
+          "StateId": "3B1300D3-4B5D563F-7F502B85-53801988",
+          "Function": {
+            "ObjectName": "MaterialFunction ObjectScale",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ObjectScale.3"
+          }
+        },
+        {
+          "StateId": "C90913CC-475A15CC-96C0E383-A61AAE63",
+          "Function": {
+            "ObjectName": "MaterialFunction MakeVectorsOrthogonal",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Math/MakeVectorsOrthogonal.0"
+          }
+        },
+        {
+          "StateId": "B4E96314-41D6EFDA-C87DBB9C-4F9F03B5",
+          "Function": {
+            "ObjectName": "MaterialFunction CameraVectorWithWPOOptions",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/CameraVectorWithWPOOptions.0"
+          }
+        },
+        {
+          "StateId": "057104BE-419EB8A2-40A62A8C-3874BCD2",
+          "Function": {
+            "ObjectName": "MaterialFunction InverseTransformMatrix",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Math/InverseTransformMatrix.0"
+          }
+        },
+        {
+          "StateId": "64DF9AF2-4C9703A5-A01FCB86-B6FDA30E",
+          "Function": {
+            "ObjectName": "MaterialFunction AlignMeshToTheCamera",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/AlignMeshToTheCamera.8"
+          }
+        },
+        {
+          "StateId": "BF4C35A2-41694269-CB7E7AB8-38AC31E3",
+          "Function": {
+            "ObjectName": "MaterialFunction RemapValueRange",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions03/Math/RemapValueRange.0"
+          }
+        },
+        {
+          "StateId": "1044CE4E-42046A72-AF141192-1B2C7889",
+          "Function": {
+            "ObjectName": "MaterialFunction ObjectPivotPoint",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ObjectPivotPoint.0"
+          }
+        }
+      ],
+      "bCanMaskedBeAssumedOpaque": true,
+      "StateId": "20C0B421-462BD17A-33D6D185-1D5E1F26",
+      "CachedQualityLevelsUsed": [
+        false,
+        true,
+        false
+      ]
+    }
+  },
+  {
+    "Type": "MaterialExpressionMaterialFunctionCall",
+    "Name": "MaterialExpressionMaterialFunctionCall_0",
+    "Outer": "Portal",
+    "Properties": {
+      "MaterialFunction": {
+        "ObjectName": "MaterialFunction RemapValueRange",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions03/Math/RemapValueRange.0"
+      },
+      "Material": {
+        "ObjectName": "Material Portal",
+        "ObjectPath": "War/Content/FX/Materials/Portal.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionMaterialFunctionCall",
+    "Name": "MaterialExpressionMaterialFunctionCall_1",
+    "Outer": "Portal",
+    "Properties": {
+      "MaterialFunction": {
+        "ObjectName": "MaterialFunction AlignMeshToTheCamera",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/AlignMeshToTheCamera.8"
+      },
+      "Material": {
+        "ObjectName": "Material Portal",
+        "ObjectPath": "War/Content/FX/Materials/Portal.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionMaterialFunctionCall",
+    "Name": "MaterialExpressionMaterialFunctionCall_2",
+    "Outer": "Portal",
+    "Properties": {
+      "MaterialFunction": {
+        "ObjectName": "MaterialFunction ObjectPivotPoint",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ObjectPivotPoint.0"
+      },
+      "Material": {
+        "ObjectName": "Material Portal",
+        "ObjectPath": "War/Content/FX/Materials/Portal.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_0",
+    "Outer": "Portal",
+    "Properties": {
+      "DefaultValue": 1.0,
+      "ParameterName": "Tiling",
+      "ExpressionGUID": "3E076E20-45A42F49-AA5B71B2-B8C4DE65",
+      "Material": {
+        "ObjectName": "Material Portal",
+        "ObjectPath": "War/Content/FX/Materials/Portal.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_1",
+    "Outer": "Portal",
+    "Properties": {
+      "DefaultValue": 1.0,
+      "ParameterName": "Tiling2",
+      "ExpressionGUID": "A9F79C80-4BF2B4AA-67C69C87-5063AC2B",
+      "Material": {
+        "ObjectName": "Material Portal",
+        "ObjectPath": "War/Content/FX/Materials/Portal.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_2",
+    "Outer": "Portal",
+    "Properties": {
+      "DefaultValue": 50.082836,
+      "ParameterName": "MaskMult",
+      "ExpressionGUID": "777F14CC-41E4E38B-4F797693-C7FAA5CA",
+      "Material": {
+        "ObjectName": "Material Portal",
+        "ObjectPath": "War/Content/FX/Materials/Portal.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_3",
+    "Outer": "Portal",
+    "Properties": {
+      "DefaultValue": 1.33,
+      "ParameterName": "RefractionAmount",
+      "ExpressionGUID": "6F025C4D-488C0B0A-116C32B7-EFA8CA0D",
+      "Material": {
+        "ObjectName": "Material Portal",
+        "ObjectPath": "War/Content/FX/Materials/Portal.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_0",
+    "Outer": "Portal",
+    "Properties": {
+      "Coordinates": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionPanner_0"
+      },
+      "Texture": {
+        "ObjectName": "Texture2D TilingNoises01",
+        "ObjectPath": "War/Content/FX/Textures/NoiseMasks/TilingNoises01.0"
+      },
+      "SamplerType": "SAMPLERTYPE_LinearColor",
+      "Material": {
+        "ObjectName": "Material Portal",
+        "ObjectPath": "War/Content/FX/Materials/Portal.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_1",
+    "Outer": "Portal",
+    "Properties": {
+      "Coordinates": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionPanner_1"
+      },
+      "Texture": {
+        "ObjectName": "Texture2D Caustics_D",
+        "ObjectPath": "War/Content/FX/Textures/Caustics_D.0"
+      },
+      "Material": {
+        "ObjectName": "Material Portal",
+        "ObjectPath": "War/Content/FX/Materials/Portal.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionVectorParameter",
+    "Name": "MaterialExpressionVectorParameter_0",
+    "Outer": "Portal",
+    "Properties": {
+      "DefaultValue": {
+        "R": 1.9834495,
+        "G": 7.0,
+        "B": 0.3489766,
+        "A": 1.0,
+        "Hex": "FAF959"
+      },
+      "ParameterName": "PortalColourHot",
+      "ExpressionGUID": "F5F91369-40BF9192-063129AA-10521597",
+      "Material": {
+        "ObjectName": "Material Portal",
+        "ObjectPath": "War/Content/FX/Materials/Portal.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionVectorParameter",
+    "Name": "MaterialExpressionVectorParameter_1",
+    "Outer": "Portal",
+    "Properties": {
+      "DefaultValue": {
+        "R": 0.014415085,
+        "G": 0.026041666,
+        "B": 0.005380778,
+        "A": 1.0,
+        "Hex": "040701"
+      },
+      "ParameterName": "PortalColourEdge",
+      "ExpressionGUID": "7979B7AC-4D2B4CF2-C3ED2184-04F5BC8E",
+      "Material": {
+        "ObjectName": "Material Portal",
+        "ObjectPath": "War/Content/FX/Materials/Portal.0"
+      }
+    }
+  }
+]

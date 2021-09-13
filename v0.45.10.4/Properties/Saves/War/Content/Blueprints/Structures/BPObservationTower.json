@@ -1,0 +1,398 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "Decal",
+    "Outer": "BPObservationTower_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class DecalComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPObservationTower_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPObservationTower_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPObservationTower.15"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class ObservationTower",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPObservationTower_C:Decal",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPObservationTower.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPObservationTower_C:MultiplexedStaticMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPObservationTower.8"
+      },
+      {
+        "ObjectName": "ObjectProperty BPObservationTower_C:WatchTowerMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPObservationTower.9"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPObservationTower_C",
+    "Name": "Default__BPObservationTower_C",
+    "Properties": {
+      "MapIntelligenceSourceComponent": {
+        "ObjectName": "MapIntelligenceSourceComponent Default__BPObservationTower_C:MapIntelligenceSource",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPObservationTower.6"
+      },
+      "TeamFlagMeshComponent": {
+        "ObjectName": "TeamFlagMeshComponent Default__BPObservationTower_C:TeamFlagMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPObservationTower.18"
+      },
+      "ProceduralUseVolumeFactor": 1.0,
+      "BuildGhostClass": null,
+      "BuildSiteClass": {
+        "ObjectName": "Class StructureBuildSite",
+        "ObjectPath": "/Script/War"
+      },
+      "BaseStructureClass": {
+        "ObjectName": "BlueprintGeneratedClass BPDestroyedObservationTower_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedObservationTower.1"
+      },
+      "Icon": {
+        "ObjectName": "Texture2D MapIconObservationTower",
+        "ObjectPath": "War/Content/Textures/UI/MapIcons/MapIconObservationTower.0"
+      },
+      "bRequiresVehicleToBuild": true,
+      "CodeName": "ObservationTower",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "F62892A14508665628B6A9BDE279D2BF",
+        "SourceString": "Observation Tower"
+      },
+      "ProfileType": "EStructureProfileType::GenericWorldStructure",
+      "ArmourType": "EArmourType::Tier3Structure",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPObservationTower_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPObservationTower.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPObservationTower_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPObservationTower.4"
+      },
+      "DestroyedFX": {
+        "ObjectName": "ParticleSystem GrenadeBlast",
+        "ObjectPath": "War/Content/FX/GrenadeBlast.151"
+      },
+      "MaxHealth": 2000,
+      "Health": 2000,
+      "MapIconType": "EMapIconType::ObservationTower",
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPObservationTower_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPObservationTower.17"
+      },
+      "PrimaryActorTick": {
+        "bStartWithTickEnabled": false
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPObservationTower_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPObservationTower.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPObservationTower_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPObservationTower_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 400.0,
+        "Y": 400.0,
+        "Z": 400.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPObservationTower_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPObservationTower.3"
+      }
+    }
+  },
+  {
+    "Type": "DecalComponent",
+    "Name": "Decal_GEN_VARIABLE",
+    "Outer": "BPObservationTower_C",
+    "Properties": {
+      "DecalMaterial": {
+        "ObjectName": "MaterialInstanceConstant DirtPatch",
+        "ObjectPath": "War/Content/Materials/Decals/DirtPatch.0"
+      },
+      "DecalSize": {
+        "X": 128.0,
+        "Y": 600.0,
+        "Z": 600.0
+      },
+      "RelativeLocation": {
+        "X": -12.10933,
+        "Y": 7.649328,
+        "Z": -86.65491
+      },
+      "RelativeRotation": {
+        "Pitch": -90.0,
+        "Yaw": 0.0,
+        "Roll": -90.00009
+      }
+    }
+  },
+  {
+    "Type": "MapIntelligenceSourceComponent",
+    "Name": "MapIntelligenceSource",
+    "Outer": "Default__BPObservationTower_C",
+    "Properties": {
+      "DetectionRadius": 24000.0
+    }
+  },
+  {
+    "Type": "MultiplexedStaticMeshComponent",
+    "Name": "MultiplexedStaticMesh_GEN_VARIABLE",
+    "Outer": "BPObservationTower_C",
+    "Properties": {
+      "TargetTag": "Multiplexed",
+      "MeshStops": [
+        {
+          "Threshold": 0,
+          "StaticMesh": {
+            "ObjectName": "StaticMesh ObservationTowerCritical",
+            "ObjectPath": "War/Content/Meshes/Structures/ObservationTowerCritical.2"
+          }
+        },
+        {
+          "Threshold": 33,
+          "StaticMesh": {
+            "ObjectName": "StaticMesh ObservationTowerDamaged",
+            "ObjectPath": "War/Content/Meshes/Structures/ObservationTowerDamaged.2"
+          }
+        },
+        {
+          "Threshold": 66,
+          "StaticMesh": {
+            "ObjectName": "StaticMesh ObservationTower",
+            "ObjectPath": "War/Content/Meshes/Structures/ObservationTower.2"
+          }
+        }
+      ],
+      "InputValue": 100,
+      "SelectedMeshIndex": 2
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "MultiplexedStaticMesh",
+    "Outer": "BPObservationTower_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class MultiplexedStaticMeshComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "WatchTowerMesh",
+    "Outer": "BPObservationTower_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPObservationTower_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPObservationTower_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPObservationTower.10"
+      },
+      "VariableGuid": "D27D19DB-4EE9A6C3-BBBFE2A8-301058D9",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPObservationTower_C:WatchTowerMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPObservationTower.16"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "7CF8437C-48E5C03D-D6A60EB9-3689AE33",
+      "InternalVariableName": "WatchTowerMesh"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class DecalComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "DecalComponent BPObservationTower_C:Decal_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPObservationTower.5"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "D1B733B4-4DDA1296-B093888F-2294A815",
+      "InternalVariableName": "Decal"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class MultiplexedStaticMeshComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "MultiplexedStaticMeshComponent BPObservationTower_C:MultiplexedStaticMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPObservationTower.7"
+      },
+      "VariableGuid": "47BB71EE-4E3ACEA5-3A2B0888-3FFD56EC",
+      "InternalVariableName": "MultiplexedStaticMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPObservationTower_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPObservationTower_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPObservationTower.12"
+        },
+        {
+          "ObjectName": "SCS_Node BPObservationTower_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPObservationTower.14"
+        },
+        {
+          "ObjectName": "SCS_Node BPObservationTower_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPObservationTower.13"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPObservationTower_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPObservationTower.12"
+        },
+        {
+          "ObjectName": "SCS_Node BPObservationTower_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPObservationTower.14"
+        },
+        {
+          "ObjectName": "SCS_Node BPObservationTower_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPObservationTower.13"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPObservationTower_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPObservationTower.11"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "WatchTowerMesh_GEN_VARIABLE",
+    "Outer": "BPObservationTower_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh ObservationTower",
+        "ObjectPath": "War/Content/Meshes/Structures/ObservationTower.2"
+      },
+      "bGenerateOverlapEvents": false,
+      "bReceivesDecals": false,
+      "BodyInstance": {
+        "bOverrideMass": true,
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        },
+        "MassInKgOverride": 2000.0
+      },
+      "ComponentTags": [
+        "Multiplexed"
+      ]
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPObservationTower_C"
+  },
+  {
+    "Type": "TeamFlagMeshComponent",
+    "Name": "TeamFlagMesh",
+    "Outer": "Default__BPObservationTower_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPObservationTower_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPObservationTower.3"
+      },
+      "RelativeLocation": {
+        "X": -177.97102,
+        "Y": 13.472508,
+        "Z": 854.1865
+      },
+      "RelativeScale3D": {
+        "X": 0.7,
+        "Y": 0.7,
+        "Z": 0.5
+      }
+    }
+  }
+]

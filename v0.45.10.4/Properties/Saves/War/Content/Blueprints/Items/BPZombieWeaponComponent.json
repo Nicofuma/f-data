@@ -1,0 +1,121 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPZombieWeaponComponent_C",
+    "SuperStruct": {
+      "ObjectName": "Class ZombieWeaponComponent",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPZombieWeaponComponent_C",
+    "Name": "Default__BPZombieWeaponComponent_C",
+    "Properties": {
+      "WeaponInfo": [
+        {
+          "Type": "EZombieType::Regular",
+          "Name": {
+            "Namespace": "",
+            "Key": "A118FB2547E814568480A2A0B38FDA95",
+            "SourceString": "Claws"
+          },
+          "Icon": {
+            "ObjectName": "Texture2D UndeadAttack1Icon",
+            "ObjectPath": "War/Content/Textures/UI/ItemIcons/UndeadAttack1Icon.0"
+          },
+          "MeleeDamageType": null,
+          "SecondaryAttack": "EZombieSecondaryAttack::None",
+          "ActivityState": "ECharacterActivityState::Idle",
+          "Cooldown": 0.0
+        },
+        {
+          "Type": "EZombieType::Spitter",
+          "Name": {
+            "Namespace": "",
+            "Key": "0F133E1549CB4947FC8556A8CB1532AA",
+            "SourceString": "Claws / Ichor Spit"
+          },
+          "Icon": {
+            "ObjectName": "Texture2D UndeadAttack2Icon",
+            "ObjectPath": "War/Content/Textures/UI/ItemIcons/UndeadAttack2Icon.0"
+          },
+          "MeleeDamageType": null,
+          "SecondaryAttack": "EZombieSecondaryAttack::Ranged",
+          "ActivityState": "ECharacterActivityState::ZombieSecondaryT2",
+          "Cooldown": 2.0
+        },
+        {
+          "Type": "EZombieType::Tank",
+          "Name": {
+            "Namespace": "",
+            "Key": "C3779E524F6A882B9E5D64A136919AD9",
+            "SourceString": "Claws / Spire Smash"
+          },
+          "Icon": {
+            "ObjectName": "Texture2D UndeadAttack3Icon",
+            "ObjectPath": "War/Content/Textures/UI/ItemIcons/UndeadAttack3Icon.0"
+          },
+          "MeleeDamageType": {
+            "ObjectName": "Class TankZombieDamageType",
+            "ObjectPath": "/Script/War"
+          },
+          "SecondaryAttack": "EZombieSecondaryAttack::FrontalAOE",
+          "ActivityState": "ECharacterActivityState::ZombieSecondaryT3",
+          "Cooldown": 4.0
+        }
+      ],
+      "ProjectileClass": {
+        "ObjectName": "BlueprintGeneratedClass BPZombieGrenade_C",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieGrenade.1"
+      },
+      "ProjectileSpeed": 1400.0,
+      "ProjectileSoundCue": {
+        "ObjectName": "SoundCue ZombieGrenadeSpit",
+        "ObjectPath": "War/Content/Audio/SFX/Zombie/ZombieGrenadeSpit.0"
+      },
+      "ProjectilePS": {
+        "ObjectName": "ParticleSystem BloodShot",
+        "ObjectPath": "War/Content/FX/BloodShot.35"
+      },
+      "SmashExplosionEffect": {
+        "ObjectName": "BlueprintGeneratedClass BPZombieSmashExplosion_C",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieSmashExplosion.1"
+      },
+      "SmashBaseDamage": 600.0,
+      "SmashRadius": 350.0,
+      "EquippedGripType": "EEquippedWeaponGripType::Rifle",
+      "ActivityStateInfos": {
+        "Duration": 0.01
+      },
+      "ActivityStateInfos": {
+        "Duration": 0.01
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage Zombie_MeleeAttack",
+          "ObjectPath": "War/Content/Animation/Character/Events/Zombie_MeleeAttack.0"
+        }
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage Zombie_EvolRanged_SpecialAttack",
+          "ObjectPath": "War/Content/Animation/Character/Events/Zombie_EvolRanged_SpecialAttack.0"
+        }
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage Zombie_EvolTank_SpecialAttack",
+          "ObjectPath": "War/Content/Animation/Character/Events/Zombie_EvolTank_SpecialAttack.0"
+        }
+      }
+    }
+  }
+]

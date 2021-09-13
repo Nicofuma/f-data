@@ -1,0 +1,111 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "WoodBarrel_01",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 61.76733
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 63.503925,
+            "Y": 62.171364,
+            "Z": 125.731224,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "BuildScale3D": {
+        "X": 0.8,
+        "Y": 0.8,
+        "Z": 0.8
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "WoodBarrel_01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0xCE0"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "WoodBarrel_01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant WoodenBarrel",
+            "ObjectPath": "War/Content/Materials/Environment/Props/WoodenBarrel.0"
+          },
+          "MaterialSlotName": "WoodenBarrel",
+          "ImportedMaterialSlotName": "WoodenBarrel",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 417.61163,
+            "LocalUVDensities": 229.4684,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 229.4684,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 61.767323
+        },
+        "BoxExtent": {
+          "X": 43.856926,
+          "Y": 43.190643,
+          "Z": 62.86561
+        },
+        "SphereRadius": 74.2594
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup WoodBarrel_01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/WoodBarrel_01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision WoodBarrel_01:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/WoodBarrel_01.1"
+    },
+    "LightingGuid": "EF65896A-47DCF895-D15163B0-B75EE1FF",
+    "RenderData": null
+  }
+]

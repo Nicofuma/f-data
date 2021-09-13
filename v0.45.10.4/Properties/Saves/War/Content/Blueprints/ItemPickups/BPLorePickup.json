@@ -1,0 +1,148 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPLorePickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPLorePickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPLorePickup.6"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class LorePickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPLorePickup_C",
+    "Name": "Default__BPLorePickup_C",
+    "Properties": {
+      "ReadableTextComponent": {
+        "ObjectName": "ReadableTextComponent Default__BPLorePickup_C:ReadableTextComponent",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPLorePickup.3"
+      },
+      "Encumbrance": 1,
+      "CodeName": "Lore",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "F2AB280042425AAE9859E4A70B9D01DE",
+        "SourceString": "Torn Note"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "93AE30D441B4109D6984648C19951D08",
+        "SourceString": "A torn piece of paper containing a fragment of text."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D ResourceClothIcon",
+        "ObjectPath": "War/Content/Slate/Images/ResourceClothIcon.0"
+      },
+      "ItemProfileType": "EItemProfileType::UniqueItem",
+      "ItemMesh": {
+        "ObjectName": "StaticMeshComponent Default__BPLorePickup_C:ItemMesh",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPLorePickup.7"
+      },
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPLorePickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPLorePickup.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPLorePickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPLorePickup.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPLorePickup_C"
+  },
+  {
+    "Type": "ReadableTextComponent",
+    "Name": "ReadableTextComponent",
+    "Outer": "Default__BPLorePickup_C",
+    "Properties": {
+      "HeaderText": {
+        "Namespace": "",
+        "Key": "AE04B8B84010EB990A6610AE404BC3D9",
+        "SourceString": "A torn piece of paper containing a fragment of text."
+      },
+      "FlavourText": {
+        "Namespace": "",
+        "Key": "C3EE5CFD440F4BCC1C4434B2C9D71E64",
+        "SourceString": "A torn piece of paper containing a fragment of text."
+      },
+      "BodyText": {
+        "Namespace": "",
+        "Key": "674CA47E439A61FCE860FBAA0FF42E21",
+        "SourceString": "I was still naked, and although I did not feel the least bit of shame, I was disturbed to realize that modesty had deserted me . . . Our progress towards the hospital was interminably slow, until finally, my legs, stiff from drying blood, refused to carry me farther. The strength, even the will, to go on deserted me, so I told my wife, who was almost as badly hurt as I, to go on alone. This she objected to, but there was no choice. She had to go ahead and try to find someone to come back for me."
+      },
+      "Icon": {
+        "ImageSize": {
+          "X": 100.0,
+          "Y": 100.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D ResourceClothIcon",
+          "ObjectPath": "War/Content/Slate/Images/ResourceClothIcon.0"
+        }
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPLorePickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPLorePickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPLorePickup.4"
+      },
+      "VariableGuid": "A6E67211-42075F8B-83DB17BB-D07E50C7",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPLorePickup_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPLorePickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPLorePickup.5"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPLorePickup_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh Cloth02",
+        "ObjectPath": "War/Content/Meshes/Resources/Cloth02.2"
+      },
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPLorePickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPLorePickup.2"
+      }
+    }
+  }
+]

@@ -1,0 +1,116 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "StaticCraneDestroyed",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "StaticCraneDestroyed",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x52DF0"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "StaticCraneDestroyed",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant StaticCrane",
+            "ObjectPath": "War/Content/Materials/Structures/StaticCrane.0"
+          },
+          "MaterialSlotName": "StaticCraneBase",
+          "ImportedMaterialSlotName": "StaticCraneBase",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1039.3757,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ConstructionYardCrane",
+            "ObjectPath": "War/Content/Materials/Structures/ConstructionYardCrane.0"
+          },
+          "MaterialSlotName": "ConstructionYardCrane",
+          "ImportedMaterialSlotName": "ConstructionYardCrane",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 896.5869,
+            "LocalUVDensities": 816.66144,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ConstructionVehicleCanvas",
+            "ObjectPath": "War/Content/Materials/Environment/Props/ConstructionVehicleCanvas.0"
+          },
+          "MaterialSlotName": "Canvas",
+          "ImportedMaterialSlotName": "Canvas",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 241.88216,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 816.66144,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -531.1898,
+          "Y": 35.55394,
+          "Z": 471.3238
+        },
+        "BoxExtent": {
+          "X": 904.9739,
+          "Y": 243.3229,
+          "Z": 585.8543
+        },
+        "SphereRadius": 1055.9418
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup StaticCraneDestroyed:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/StaticCraneDestroyed.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision StaticCraneDestroyed:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Structures/StaticCraneDestroyed.1"
+    },
+    "LightingGuid": "753F13F4-490DCAC0-AE046892-6B524048",
+    "RenderData": null
+  }
+]

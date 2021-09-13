@@ -1,0 +1,1046 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_0"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_1"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_0",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_1",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_0",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired BloodTrail01:ParticleModuleRequired_0",
+        "ObjectPath": "War/Content/FX/BloodTrail01.15"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleSpawnPerUnit BloodTrail01:ParticleModuleSpawnPerUnit_0",
+          "ObjectPath": "War/Content/FX/BloodTrail01.23"
+        },
+        {
+          "ObjectName": "ParticleModuleLifetime BloodTrail01:ParticleModuleLifetime_0",
+          "ObjectPath": "War/Content/FX/BloodTrail01.10"
+        },
+        {
+          "ObjectName": "ParticleModuleSize BloodTrail01:ParticleModuleSize_0",
+          "ObjectPath": "War/Content/FX/BloodTrail01.17"
+        },
+        {
+          "ObjectName": "ParticleModuleColor BloodTrail01:ParticleModuleColor_0",
+          "ObjectPath": "War/Content/FX/BloodTrail01.7"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife BloodTrail01:ParticleModuleSizeMultiplyLife_0",
+          "ObjectPath": "War/Content/FX/BloodTrail01.19"
+        },
+        {
+          "ObjectName": "ParticleModuleLocationPrimitiveSphere BloodTrail01:ParticleModuleLocationPrimitiveSphere_0",
+          "ObjectPath": "War/Content/FX/BloodTrail01.12"
+        },
+        {
+          "ObjectName": "ParticleModuleAccelerationConstant BloodTrail01:ParticleModuleAccelerationConstant_0",
+          "ObjectPath": "War/Content/FX/BloodTrail01.6"
+        }
+      ],
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn BloodTrail01:ParticleModuleSpawn_0",
+        "ObjectPath": "War/Content/FX/BloodTrail01.21"
+      },
+      "PeakActiveParticles": 65
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_1",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired BloodTrail01:ParticleModuleRequired_1",
+        "ObjectPath": "War/Content/FX/BloodTrail01.16"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleSpawnPerUnit BloodTrail01:ParticleModuleSpawnPerUnit_1",
+          "ObjectPath": "War/Content/FX/BloodTrail01.24"
+        },
+        {
+          "ObjectName": "ParticleModuleLifetime BloodTrail01:ParticleModuleLifetime_1",
+          "ObjectPath": "War/Content/FX/BloodTrail01.11"
+        },
+        {
+          "ObjectName": "ParticleModuleSize BloodTrail01:ParticleModuleSize_1",
+          "ObjectPath": "War/Content/FX/BloodTrail01.18"
+        },
+        {
+          "ObjectName": "ParticleModuleColor BloodTrail01:ParticleModuleColor_1",
+          "ObjectPath": "War/Content/FX/BloodTrail01.8"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife BloodTrail01:ParticleModuleSizeMultiplyLife_1",
+          "ObjectPath": "War/Content/FX/BloodTrail01.20"
+        },
+        {
+          "ObjectName": "ParticleModuleLocationPrimitiveSphere BloodTrail01:ParticleModuleLocationPrimitiveSphere_1",
+          "ObjectPath": "War/Content/FX/BloodTrail01.13"
+        },
+        {
+          "ObjectName": "ParticleModuleParameterDynamic BloodTrail01:ParticleModuleParameterDynamic_0",
+          "ObjectPath": "War/Content/FX/BloodTrail01.14"
+        },
+        {
+          "ObjectName": "ParticleModuleColorScaleOverLife BloodTrail01:ParticleModuleColorScaleOverLife_0",
+          "ObjectPath": "War/Content/FX/BloodTrail01.9"
+        }
+      ],
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn BloodTrail01:ParticleModuleSpawn_1",
+        "ObjectPath": "War/Content/FX/BloodTrail01.22"
+      },
+      "PeakActiveParticles": 152
+    }
+  },
+  {
+    "Type": "ParticleModuleAccelerationConstant",
+    "Name": "ParticleModuleAccelerationConstant_0",
+    "Outer": "BloodTrail01",
+    "Properties": {
+      "Acceleration": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -250.0
+      },
+      "bAlwaysInWorldSpace": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColor",
+    "Name": "ParticleModuleColor_0",
+    "Outer": "BloodTrail01",
+    "Properties": {
+      "StartColor": {
+        "MaxValue": 0.0625,
+        "MinValueVec": {
+          "X": 0.0625,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 0.0625,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0625,
+            0.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "StartAlpha": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColor",
+    "Name": "ParticleModuleColor_1",
+    "Outer": "BloodTrail01",
+    "Properties": {
+      "StartColor": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "StartAlpha": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColorScaleOverLife",
+    "Name": "ParticleModuleColorScaleOverLife_0",
+    "Outer": "BloodTrail01",
+    "Properties": {
+      "ColorScaleOverLife": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "AlphaScaleOverLife": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 127.0,
+          "Values": [
+            0.0,
+            0.23511228,
+            0.69049585,
+            0.99122083,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.99122065,
+            0.88362324,
+            0.69049525,
+            0.45870274,
+            0.23511207,
+            0.066589,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 128,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_0",
+    "Outer": "BloodTrail01",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 1.0,
+        "MaxValue": 1.45,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0,
+            1.45
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_1",
+    "Outer": "BloodTrail01",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 0.6,
+        "MaxValue": 1.2,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.6,
+            1.2
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLocationPrimitiveSphere",
+    "Name": "ParticleModuleLocationPrimitiveSphere_0",
+    "Outer": "BloodTrail01",
+    "Properties": {
+      "StartRadius": {
+        "MinValue": 15.0,
+        "MaxValue": 15.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            15.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "Velocity": true,
+      "VelocityScale": {
+        "MinValue": 6.0,
+        "MaxValue": 6.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            6.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "StartLocation": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "b3DDrawMode": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLocationPrimitiveSphere",
+    "Name": "ParticleModuleLocationPrimitiveSphere_1",
+    "Outer": "BloodTrail01",
+    "Properties": {
+      "StartRadius": {
+        "MinValue": 15.0,
+        "MaxValue": 15.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            15.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "Velocity": true,
+      "VelocityScale": {
+        "MinValue": 6.0,
+        "MaxValue": 6.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            6.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "StartLocation": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "b3DDrawMode": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleParameterDynamic",
+    "Name": "ParticleModuleParameterDynamic_0",
+    "Outer": "BloodTrail01",
+    "Properties": {
+      "DynamicParams": [
+        {
+          "ParamName": "Decay",
+          "bUseEmitterTime": false,
+          "bSpawnTimeOnly": false,
+          "ValueMethod": "EDPV_UserSet",
+          "bScaleVelocityByParamValue": false,
+          "ParamValue": {
+            "MinValue": -0.004463384,
+            "MaxValue": 1.0001291,
+            "Distribution": null,
+            "Table": {
+              "TimeScale": 14.999999,
+              "TimeBias": 0.0,
+              "Values": [
+                1.0,
+                0.92388153,
+                0.73025787,
+                0.49047962,
+                0.27648887,
+                0.16520326,
+                0.1120832,
+                0.07110865,
+                0.040766504,
+                0.019555617,
+                0.0059812632,
+                -0.0014704188,
+                -0.0042870766,
+                -0.0039841114,
+                -0.0020531528,
+                0.0
+              ],
+              "Op": 1,
+              "EntryCount": 16,
+              "EntryStride": 1,
+              "SubEntryStride": 0,
+              "LockFlag": 0
+            }
+          }
+        },
+        {
+          "ParamName": "UOffset",
+          "bUseEmitterTime": false,
+          "bSpawnTimeOnly": true,
+          "ValueMethod": "EDPV_UserSet",
+          "bScaleVelocityByParamValue": false,
+          "ParamValue": {
+            "MinValue": -1.0,
+            "MaxValue": 1.0,
+            "Distribution": null,
+            "Table": {
+              "TimeScale": 0.0,
+              "TimeBias": 0.0,
+              "Values": [
+                -1.0,
+                1.0
+              ],
+              "Op": 2,
+              "EntryCount": 1,
+              "EntryStride": 2,
+              "SubEntryStride": 1,
+              "LockFlag": 0
+            }
+          }
+        },
+        {
+          "ParamName": "VOffset",
+          "bUseEmitterTime": false,
+          "bSpawnTimeOnly": true,
+          "ValueMethod": "EDPV_UserSet",
+          "bScaleVelocityByParamValue": false,
+          "ParamValue": {
+            "MinValue": -1.0,
+            "MaxValue": 1.0,
+            "Distribution": null,
+            "Table": {
+              "TimeScale": 0.0,
+              "TimeBias": 0.0,
+              "Values": [
+                -1.0,
+                1.0
+              ],
+              "Op": 2,
+              "EntryCount": 1,
+              "EntryStride": 2,
+              "SubEntryStride": 1,
+              "LockFlag": 0
+            }
+          }
+        },
+        {
+          "ParamName": "Param4",
+          "bUseEmitterTime": false,
+          "bSpawnTimeOnly": false,
+          "ValueMethod": "EDPV_UserSet",
+          "bScaleVelocityByParamValue": false,
+          "ParamValue": {
+            "MinValue": 1.0,
+            "MaxValue": 1.0,
+            "Distribution": null,
+            "Table": {
+              "TimeScale": 0.0,
+              "TimeBias": 0.0,
+              "Values": [
+                1.0
+              ],
+              "Op": 1,
+              "EntryCount": 1,
+              "EntryStride": 1,
+              "SubEntryStride": 0,
+              "LockFlag": 0
+            }
+          }
+        }
+      ],
+      "UpdateFlags": 9,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_0",
+    "Outer": "BloodTrail01",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant BloodParticle",
+        "ObjectPath": "War/Content/FX/Materials/BloodParticle.0"
+      },
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant BloodTrail01:ParticleModuleRequired_0.RequiredDistributionSpawnRate",
+          "ObjectPath": "War/Content/FX/BloodTrail01.0"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_1",
+    "Outer": "BloodTrail01",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant BloodSpatterParticle",
+        "ObjectPath": "War/Content/FX/Materials/BloodSpatterParticle.0"
+      },
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant BloodTrail01:ParticleModuleRequired_1.RequiredDistributionSpawnRate",
+          "ObjectPath": "War/Content/FX/BloodTrail01.1"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_0",
+    "Outer": "BloodTrail01",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 5.0,
+        "MaxValue": 13.0,
+        "MinValueVec": {
+          "X": 5.0,
+          "Y": 5.0,
+          "Z": 5.0
+        },
+        "MaxValueVec": {
+          "X": 13.0,
+          "Y": 13.0,
+          "Z": 13.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            5.0,
+            5.0,
+            5.0,
+            13.0,
+            13.0,
+            13.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_1",
+    "Outer": "BloodTrail01",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 120.0,
+        "MaxValue": 100.0,
+        "MinValueVec": {
+          "X": 120.0,
+          "Y": 120.0,
+          "Z": 120.0
+        },
+        "MaxValueVec": {
+          "X": 100.0,
+          "Y": 100.0,
+          "Z": 100.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            120.0,
+            120.0,
+            120.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_0",
+    "Outer": "BloodTrail01",
+    "Properties": {
+      "LifeMultiplier": {
+        "MaxValue": 1.0,
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 1.0,
+          "Values": [
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_1",
+    "Outer": "BloodTrail01",
+    "Properties": {
+      "LifeMultiplier": {
+        "MinValue": 1.0,
+        "MaxValue": 2.0099616,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 2.0099616,
+          "Y": 2.0,
+          "Z": 2.0
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 6.9999995,
+          "Values": [
+            1.0,
+            1.0,
+            1.0,
+            1.4272254,
+            1.0554098,
+            1.3464491,
+            1.7146848,
+            1.198267,
+            1.602494,
+            1.8893646,
+            1.3935925,
+            1.781659,
+            1.9782498,
+            1.6064075,
+            1.8974679,
+            2.0083272,
+            1.801733,
+            1.963445,
+            2.0065818,
+            1.9445902,
+            1.9931142,
+            2.0,
+            2.0,
+            2.0
+          ],
+          "Op": 1,
+          "EntryCount": 8,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_0",
+    "Outer": "BloodTrail01",
+    "Properties": {
+      "Rate": {
+        "MinValue": 20.0,
+        "MaxValue": 20.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            20.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant BloodTrail01:ParticleModuleSpawn_0.BurstScaleDistribution",
+          "ObjectPath": "War/Content/FX/BloodTrail01.2"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_1",
+    "Outer": "BloodTrail01",
+    "Properties": {
+      "Rate": {
+        "MinValue": 20.0,
+        "MaxValue": 20.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            20.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant BloodTrail01:ParticleModuleSpawn_1.BurstScaleDistribution",
+          "ObjectPath": "War/Content/FX/BloodTrail01.3"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawnPerUnit",
+    "Name": "ParticleModuleSpawnPerUnit_0",
+    "Outer": "BloodTrail01",
+    "Properties": {
+      "SpawnPerUnit": {
+        "MinValue": 2.0,
+        "MaxValue": 2.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            2.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "bProcessSpawnRate": false,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawnPerUnit",
+    "Name": "ParticleModuleSpawnPerUnit_1",
+    "Outer": "BloodTrail01",
+    "Properties": {
+      "SpawnPerUnit": {
+        "MinValue": 5.0,
+        "MaxValue": 5.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            5.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_0",
+    "Outer": "BloodTrail01",
+    "Properties": {
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel BloodTrail01:ParticleSpriteEmitter_0.ParticleLODLevel_0",
+          "ObjectPath": "War/Content/FX/BloodTrail01.4"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_1",
+    "Outer": "BloodTrail01",
+    "Properties": {
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel BloodTrail01:ParticleSpriteEmitter_1.ParticleLODLevel_0",
+          "ObjectPath": "War/Content/FX/BloodTrail01.5"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "BloodTrail01",
+    "Properties": {
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter BloodTrail01:ParticleSpriteEmitter_0",
+          "ObjectPath": "War/Content/FX/BloodTrail01.25"
+        },
+        {
+          "ObjectName": "ParticleSpriteEmitter BloodTrail01:ParticleSpriteEmitter_1",
+          "ObjectPath": "War/Content/FX/BloodTrail01.26"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "bShouldResetPeakCounts": true,
+      "CustomOcclusionBounds": {
+        "Min": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Max": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "IsValid": 1
+      }
+    }
+  }
+]

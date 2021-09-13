@@ -1,0 +1,188 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Handrail",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": 11.502051,
+                "Y": 579.1412,
+                "Z": 8.783184
+              },
+              {
+                "X": -11.50198,
+                "Y": 579.1412,
+                "Z": 8.783184
+              },
+              {
+                "X": 11.502051,
+                "Y": -579.1412,
+                "Z": 8.782995
+              },
+              {
+                "X": -11.5020275,
+                "Y": -579.1412,
+                "Z": 8.782995
+              },
+              {
+                "X": 11.502051,
+                "Y": 536.1136,
+                "Z": 82.567764
+              },
+              {
+                "X": 11.502051,
+                "Y": 579.1412,
+                "Z": 39.540165
+              },
+              {
+                "X": 11.502051,
+                "Y": -579.1412,
+                "Z": 39.539974
+              },
+              {
+                "X": 11.502051,
+                "Y": -536.1136,
+                "Z": 82.56759
+              },
+              {
+                "X": -11.5020275,
+                "Y": -536.1136,
+                "Z": 82.56759
+              },
+              {
+                "X": -11.5020275,
+                "Y": -579.1412,
+                "Z": 39.539974
+              },
+              {
+                "X": -11.50198,
+                "Y": 579.1412,
+                "Z": 39.540165
+              },
+              {
+                "X": -11.50198,
+                "Y": 536.1136,
+                "Z": 82.567764
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -11.5020275,
+                "Y": -579.1412,
+                "Z": 8.782995
+              },
+              "Max": {
+                "X": 11.502051,
+                "Y": 579.1412,
+                "Z": 82.567764
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Handrail",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 697,
+        "SizeOnDisk": 697,
+        "OffsetInFile": "0x645B"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Handrail",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TransferArea",
+            "ObjectPath": "War/Content/Materials/Structures/TransferArea.0"
+          },
+          "MaterialSlotName": "TransferArea",
+          "ImportedMaterialSlotName": "TransferArea",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 2502.5989,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 2502.5989,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 6.1035156E-05,
+          "Z": 44.870026
+        },
+        "BoxExtent": {
+          "X": 5.8689356,
+          "Y": 578.62195,
+          "Z": 45.061253
+        },
+        "SphereRadius": 580.3739
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Handrail:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/Handrail.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Handrail:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Structures/Handrail.1"
+    },
+    "LightingGuid": "50797C1D-4308F56B-C64165BF-7E57D103",
+    "RenderData": null
+  }
+]

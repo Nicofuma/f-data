@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "IModBedBlanket01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "IModBedBlanket01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x8A8A"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "IModBedBlanket01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortIModBeds01",
+            "ObjectPath": "War/Content/Materials/Structures/FortIModBeds01.0"
+          },
+          "MaterialSlotName": "FortIModBeds01",
+          "ImportedMaterialSlotName": "FortIModBeds01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 257.1895,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 257.1895,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 7.6293945E-06,
+          "Y": 0.959322,
+          "Z": -0.39233208
+        },
+        "BoxExtent": {
+          "X": 46.82734,
+          "Y": 17.719923,
+          "Z": 18.939913
+        },
+        "SphereRadius": 49.87307
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup IModBedBlanket01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/IModBedBlanket01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision IModBedBlanket01:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/IModBedBlanket01.1"
+    },
+    "LightingGuid": "1E7F099F-402D0CAF-6488EDBF-84E658DE",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,105 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Lantern02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_6",
+    "Outer": "Lantern02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x103DE"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Lantern02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Lamp02",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Lamp02.0"
+          },
+          "MaterialSlotName": "MI_OilLamp_01a",
+          "ImportedMaterialSlotName": "MI_OilLamp_01a",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 99.45925,
+            "LocalUVDensities": 93.16562,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant LampGlass",
+            "ObjectPath": "War/Content/Materials/Environment/LampGlass.0"
+          },
+          "MaterialSlotName": "MI_OilLamp_Glass_01a",
+          "ImportedMaterialSlotName": "MI_OilLamp_Glass_01a",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 184.97723,
+            "LocalUVDensities": 92.78043,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 93.04901,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 26.352903
+        },
+        "BoxExtent": {
+          "X": 16.911432,
+          "Y": 16.911432,
+          "Z": 26.352907
+        },
+        "SphereRadius": 26.996859
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Lantern02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Lantern02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Lantern02:NavCollision_6",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Lantern02.1"
+    },
+    "LightingGuid": "3A84C261-4A5EAA1B-A19DADA2-1F537360",
+    "RenderData": null
+  }
+]

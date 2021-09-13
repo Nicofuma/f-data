@@ -1,0 +1,202 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "SkeletalMesh",
+    "Outer": "BPInfantrySupportGun_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SkeletalMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPInfantrySupportGun_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPInfantrySupportGun_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPInfantrySupportGun.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class GearPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPInfantrySupportGun_C:SkeletalMesh",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPInfantrySupportGun.0"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPInfantrySupportGun_C",
+    "Name": "Default__BPInfantrySupportGun_C",
+    "Properties": {
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPInfantrySupportGunComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Items/BPInfantrySupportGunComponent.0"
+      },
+      "Encumbrance": 300,
+      "CodeName": "ISGTC",
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "76136D0F46C3642451FCDDB81F56883B",
+        "SourceString": "Infantry Support Gun"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "C421087D42EAA7BE9C1A01B20BA34B2B",
+        "SourceString": "Daucus isg.III"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "2FB514B043F93A4BA9104F86B8F50C3D",
+        "SourceString": "This heavy infantry cannon requires a tripod for stability. The Daucus is designed to give infantry a foothold against enemy vehicles and light fortifications or established fortified garrisons."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D InfantrySupportGunItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/InfantrySupportGunItemIcon.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Large",
+      "ItemCategory": "EItemCategory::HeavyArms",
+      "ItemProfileType": "EItemProfileType::HandheldWeapon",
+      "FactionVariant": "EFactionId::Colonials",
+      "TechID": "ETechID::UnlockISG",
+      "bIsLarge": true,
+      "ItemMesh": {
+        "ObjectName": "StaticMeshComponent Default__BPInfantrySupportGun_C:ItemMesh",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPInfantrySupportGun.9"
+      },
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPInfantrySupportGun_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPInfantrySupportGun.3"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPInfantrySupportGun_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPInfantrySupportGun.3"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPInfantrySupportGun_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 20.0,
+        "Y": 120.0,
+        "Z": 32.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPInfantrySupportGun_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPInfantrySupportGun_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPInfantrySupportGun.4"
+      },
+      "VariableGuid": "F13C3093-45B1355C-0BCB71B1-38890D71",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SkeletalMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SkeletalMeshComponent BPInfantrySupportGun_C:SkeletalMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPInfantrySupportGun.8"
+      },
+      "ParentComponentOrVariableName": "ItemBox",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "2A3B1E86-408EC11D-C46A328E-05EDEE6A",
+      "InternalVariableName": "SkeletalMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPInfantrySupportGun_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPInfantrySupportGun_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/ItemPickups/BPInfantrySupportGun.6"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPInfantrySupportGun_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/ItemPickups/BPInfantrySupportGun.6"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPInfantrySupportGun_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPInfantrySupportGun.5"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SkeletalMesh_GEN_VARIABLE",
+    "Outer": "BPInfantrySupportGun_C",
+    "Properties": {
+      "ClothingSimulationFactory": {
+        "ObjectName": "Class ClothingSimulationFactoryNv",
+        "ObjectPath": "/Script/ClothingSystemRuntimeNv"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_InfantrySupportGun",
+        "ObjectPath": "War/Content/Meshes/Weapons/SK_InfantrySupportGun.0"
+      },
+      "bReceivesDecals": false,
+      "RelativeLocation": {
+        "X": 1.7476834E-06,
+        "Y": -45.0,
+        "Z": 14.321259
+      },
+      "RelativeRotation": {
+        "Pitch": 90.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPInfantrySupportGun_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPInfantrySupportGun_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPInfantrySupportGun.3"
+      }
+    }
+  }
+]

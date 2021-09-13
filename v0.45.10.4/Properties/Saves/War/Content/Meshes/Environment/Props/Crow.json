@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Crow",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "Crow",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x91F9"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Crow",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Crow",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Crow.0"
+          },
+          "MaterialSlotName": "Crow",
+          "ImportedMaterialSlotName": "Crow",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 138.90787,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.045368195,
+          "Y": 7.6293945E-06,
+          "Z": 70.44881
+        },
+        "BoxExtent": {
+          "X": 59.531746,
+          "Y": 69.00391,
+          "Z": 60.950043
+        },
+        "SphereRadius": 83.00885
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Crow:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Crow.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Crow:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Crow.1"
+    },
+    "LightingGuid": "736DEB87-408755F9-A86060BC-6AD0C52B",
+    "RenderData": null
+  }
+]

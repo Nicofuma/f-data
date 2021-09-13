@@ -1,0 +1,168 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_2",
+    "Outer": "ResourceContainer",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -150.01996,
+                "Y": -300.00735,
+                "Z": -0.39945436
+              },
+              {
+                "X": 150.02002,
+                "Y": -300.00735,
+                "Z": -0.39945436
+              },
+              {
+                "X": -150.01996,
+                "Y": -300.00735,
+                "Z": 206.68976
+              },
+              {
+                "X": 150.02002,
+                "Y": -300.00735,
+                "Z": 206.68976
+              },
+              {
+                "X": -150.01996,
+                "Y": 300.1473,
+                "Z": -0.39945006
+              },
+              {
+                "X": 150.02002,
+                "Y": 300.1473,
+                "Z": -0.39945006
+              },
+              {
+                "X": -150.01996,
+                "Y": 300.1473,
+                "Z": 206.68976
+              },
+              {
+                "X": 150.02002,
+                "Y": 300.1473,
+                "Z": 206.68976
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -150.01996,
+                "Y": -300.00735,
+                "Z": -0.39945436
+              },
+              "Max": {
+                "X": 150.02002,
+                "Y": 300.1473,
+                "Z": 206.68976
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_3",
+    "Outer": "ResourceContainer",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 457,
+        "SizeOnDisk": 457,
+        "OffsetInFile": "0x1038D"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ResourceContainer",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ResouceContainer",
+            "ObjectPath": "War/Content/Materials/Structures/ResouceContainer.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1193.7206,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1193.7206,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0010070801,
+          "Z": 107.66462
+        },
+        "BoxExtent": {
+          "X": 155.56343,
+          "Y": 300.1463,
+          "Z": 108.06407
+        },
+        "SphereRadius": 352.52182
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ResourceContainer:BodySetup_2",
+      "ObjectPath": "War/Content/Meshes/Shippables/ResourceContainer.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ResourceContainer:NavCollision_3",
+      "ObjectPath": "War/Content/Meshes/Shippables/ResourceContainer.1"
+    },
+    "LightingGuid": "BF34427D-4A13B57A-38265689-447CC138",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "RelicTruckDestroyed",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "RelicTruckDestroyed",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x58E18"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "RelicTruckDestroyed",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RelicTruckDestroyed",
+            "ObjectPath": "War/Content/Materials/Vehicles/RelicTruckDestroyed.0"
+          },
+          "MaterialSlotName": "Test",
+          "ImportedMaterialSlotName": "Test",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1004.7284,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1004.7284,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 7.7540436,
+          "Y": -32.200806,
+          "Z": 180.35005
+        },
+        "BoxExtent": {
+          "X": 192.66628,
+          "Y": 466.93262,
+          "Z": 189.41193
+        },
+        "SphereRadius": 483.3851
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup RelicTruckDestroyed:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Vehicles/RelicTruckDestroyed.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision RelicTruckDestroyed:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Vehicles/RelicTruckDestroyed.1"
+    },
+    "LightingGuid": "EE1DEF4D-450818A7-F6ECB7AD-42D07E0C",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Brick1h",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "Brick1h",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x5009"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Brick1h",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant StoneWall1",
+            "ObjectPath": "War/Content/Materials/Environment/Props/StoneWall1.0"
+          },
+          "MaterialSlotName": "WallTop_low0",
+          "ImportedMaterialSlotName": "WallTop_low0",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 956.2112,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 253.5959,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 253.5959,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 2,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -12.816231,
+          "Y": -2.9757614,
+          "Z": 13.761977
+        },
+        "BoxExtent": {
+          "X": 83.85355,
+          "Y": 87.15286,
+          "Z": 14.118416
+        },
+        "SphereRadius": 106.82746
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Brick1h:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Walls/Brick1h.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Brick1h:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Walls/Brick1h.1"
+    },
+    "LightingGuid": "8ACF26C9-45F2AE77-C724449F-E4866CD9",
+    "RenderData": null
+  }
+]

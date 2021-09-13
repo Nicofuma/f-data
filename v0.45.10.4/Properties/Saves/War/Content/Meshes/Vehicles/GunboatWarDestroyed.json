@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "GunboatWarDestroyed",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "GunboatWarDestroyed",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x33DD9"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "GunboatWarDestroyed",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant GunBoatWarDestroyed",
+            "ObjectPath": "War/Content/Materials/Vehicles/GunBoatWarDestroyed.0"
+          },
+          "MaterialSlotName": "GunboatWar",
+          "ImportedMaterialSlotName": "GunboatWar",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1694.5046,
+            "LocalUVDensities": 1.3649861,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1.3649861,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 34.82585,
+          "Y": 88.68262,
+          "Z": 24.852509
+        },
+        "BoxExtent": {
+          "X": 263.75107,
+          "Y": 780.2256,
+          "Z": 303.85965
+        },
+        "SphereRadius": 796.2148
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup GunboatWarDestroyed:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Vehicles/GunboatWarDestroyed.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision GunboatWarDestroyed:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Vehicles/GunboatWarDestroyed.1"
+    },
+    "LightingGuid": "44DDB64F-41B27AC2-8E33B890-6D9FB1B6",
+    "RenderData": null
+  }
+]

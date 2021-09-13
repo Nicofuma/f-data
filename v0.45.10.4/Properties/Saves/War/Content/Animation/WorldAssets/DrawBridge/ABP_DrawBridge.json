@@ -1,0 +1,314 @@
+[
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "ABP_DrawBridge_C",
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "AnimBlueprintGeneratedClass",
+    "Name": "ABP_DrawBridge_C",
+    "Properties": {
+      "TargetSkeleton": {
+        "ObjectName": "Skeleton DrawBridge_Skeleton",
+        "ObjectPath": "War/Content/Meshes/Structures/DrawBridge_Skeleton.0"
+      },
+      "OrderedSavedPoseIndicesMap": {
+        "AnimGraph": {
+          "OrderedSavedPoseNodeIndices": []
+        }
+      },
+      "EvaluateGraphExposedInputs": [
+        {
+          "BoundFunction": "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_DrawBridge_AnimGraphNode_BlendSpacePlayer_9F50B76E4E4D6592956AE688C2374612",
+          "CopyRecords": [],
+          "Function": {
+            "ObjectName": "Function ABP_DrawBridge_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_DrawBridge_AnimGraphNode_BlendSpacePlayer_9F50B76E4E4D6592956AE688C2374612",
+            "ObjectPath": "War/Content/Animation/WorldAssets/DrawBridge/ABP_DrawBridge.9"
+          },
+          "ValueHandlerNodeProperty": {
+            "ObjectName": "StructProperty ABP_DrawBridge_C:AnimGraphNode_BlendSpacePlayer_9F50B76E4E4D6592956AE688C2374612",
+            "ObjectPath": "War/Content/Animation/WorldAssets/DrawBridge/ABP_DrawBridge.10"
+          }
+        },
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "SourcePropertyName": "OpenProgress",
+              "SourceSubPropertyName": "None",
+              "SourceArrayIndex": 0,
+              "bInstanceIsTarget": false,
+              "PostCopyOperation": "EPostCopyOperation::None",
+              "DestProperty": {
+                "ObjectName": "FloatProperty AnimNode_BlendSpacePlayer:X",
+                "ObjectPath": "/Script/AnimGraphRuntime"
+              },
+              "DestArrayIndex": 0,
+              "Size": 4,
+              "CachedSourceProperty": {
+                "ObjectName": "FloatProperty DrawbridgeAnimInstance:OpenProgress",
+                "ObjectPath": "/Script/War"
+              },
+              "CachedSourceStructSubProperty": null
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "ObjectName": "StructProperty ABP_DrawBridge_C:AnimGraphNode_BlendSpacePlayer_BC96291C47D69D6DD37FEC8C79ABA7AB",
+            "ObjectPath": "War/Content/Animation/WorldAssets/DrawBridge/ABP_DrawBridge.11"
+          }
+        }
+      ],
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty ABP_DrawBridge_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Animation/WorldAssets/DrawBridge/ABP_DrawBridge.0"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function ABP_DrawBridge_C:ExecuteUbergraph_ABP_DrawBridge",
+        "ObjectPath": "War/Content/Animation/WorldAssets/DrawBridge/ABP_DrawBridge.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class DrawbridgeAnimInstance",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty ABP_DrawBridge_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Animation/WorldAssets/DrawBridge/ABP_DrawBridge.0"
+      },
+      {
+        "ObjectName": "Function ABP_DrawBridge_C:AnimGraph",
+        "ObjectPath": "War/Content/Animation/WorldAssets/DrawBridge/ABP_DrawBridge.8"
+      },
+      {
+        "ObjectName": "Function ABP_DrawBridge_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_DrawBridge_AnimGraphNode_BlendSpacePlayer_9F50B76E4E4D6592956AE688C2374612",
+        "ObjectPath": "War/Content/Animation/WorldAssets/DrawBridge/ABP_DrawBridge.9"
+      },
+      {
+        "ObjectName": "Function ABP_DrawBridge_C:ExecuteUbergraph_ABP_DrawBridge",
+        "ObjectPath": "War/Content/Animation/WorldAssets/DrawBridge/ABP_DrawBridge.5"
+      },
+      {
+        "ObjectName": "StructProperty ABP_DrawBridge_C:AnimGraphNode_Root_4E974A914E9B85EB32BF51A13088A6FA",
+        "ObjectPath": "War/Content/Animation/WorldAssets/DrawBridge/ABP_DrawBridge.3"
+      },
+      {
+        "ObjectName": "StructProperty ABP_DrawBridge_C:AnimGraphNode_BlendSpacePlayer_BC96291C47D69D6DD37FEC8C79ABA7AB",
+        "ObjectPath": "War/Content/Animation/WorldAssets/DrawBridge/ABP_DrawBridge.11"
+      },
+      {
+        "ObjectName": "StructProperty ABP_DrawBridge_C:AnimGraphNode_LayeredBoneBlend_5ACC5BF4494822D6E8BE489D520005CA",
+        "ObjectPath": "War/Content/Animation/WorldAssets/DrawBridge/ABP_DrawBridge.12"
+      },
+      {
+        "ObjectName": "StructProperty ABP_DrawBridge_C:AnimGraphNode_BlendSpacePlayer_9F50B76E4E4D6592956AE688C2374612",
+        "ObjectPath": "War/Content/Animation/WorldAssets/DrawBridge/ABP_DrawBridge.10"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 1536,
+    "ClassWithin": null,
+    "ClassConfigName": "/Game/Animation/WorldAssets/DrawBridge/ABP_DrawBridge_2559",
+    "ClassGeneratedBy": null,
+    "Interfaces": [],
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "ABP_DrawBridge_C",
+    "Name": "Default__ABP_DrawBridge_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "AnimGraphNode_Root_4E974A914E9B85EB32BF51A13088A6FA": {
+        "Result": {
+          "LinkID": 2
+        },
+        "Name": "AnimGraph",
+        "Group": "None"
+      },
+      "AnimGraphNode_BlendSpacePlayer_BC96291C47D69D6DD37FEC8C79ABA7AB": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0,
+        "PlayRate": 1.0,
+        "bLoop": true,
+        "bResetPlayTimeWhenBlendSpaceChanges": true,
+        "StartPosition": 0.0,
+        "BlendSpace": {
+          "ObjectName": "BlendSpace1D BS_Drawbridge_OpenToClose",
+          "ObjectPath": "War/Content/Animation/WorldAssets/DrawBridge/BS_Drawbridge_OpenToClose.0"
+        },
+        "PreviousBlendSpace": null,
+        "GroupIndex": -1,
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "AnimGraphNode_LayeredBoneBlend_5ACC5BF4494822D6E8BE489D520005CA": {
+        "BasePose": {
+          "LinkID": 3
+        },
+        "BlendPoses": [
+          {
+            "LinkID": 1
+          }
+        ],
+        "LayerSetup": [
+          {
+            "BranchFilters": [
+              {
+                "BoneName": "bridge",
+                "BlendDepth": 0
+              }
+            ]
+          }
+        ],
+        "BlendWeights": [
+          1.0
+        ],
+        "bMeshSpaceRotationBlend": false,
+        "bMeshSpaceScaleBlend": false,
+        "CurveBlendOption": "ECurveBlendOption::MaxWeight",
+        "bBlendRootMotionBasedOnRootBone": true,
+        "LODThreshold": -1,
+        "PerBoneBlendWeights": [
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 0.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 1.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 0.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 0.0
+          }
+        ],
+        "SkeletonGuid": "5042E916-4FA0342F-BA8ADEAE-03E02E32",
+        "VirtualBoneGuid": "00000000-00000000-00000000-00000000"
+      },
+      "AnimGraphNode_BlendSpacePlayer_9F50B76E4E4D6592956AE688C2374612": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0,
+        "PlayRate": 1.0,
+        "bLoop": true,
+        "bResetPlayTimeWhenBlendSpaceChanges": true,
+        "StartPosition": 0.0,
+        "BlendSpace": {
+          "ObjectName": "BlendSpace1D BS_Drawbridge_SwitchOnToOff",
+          "ObjectPath": "War/Content/Animation/WorldAssets/DrawBridge/BS_Drawbridge_SwitchOnToOFF.0"
+        },
+        "PreviousBlendSpace": null,
+        "GroupIndex": -1,
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      }
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_Root_4E974A914E9B85EB32BF51A13088A6FA",
+    "Outer": "ABP_DrawBridge_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_Root",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_ABP_DrawBridge",
+    "PropertyFlags": 148
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ABP_DrawBridge",
+    "Outer": "ABP_DrawBridge_C",
+    "Children": [
+      {
+        "ObjectName": "IntProperty ABP_DrawBridge_C:ExecuteUbergraph_ABP_DrawBridge.EntryPoint",
+        "ObjectPath": "War/Content/Animation/WorldAssets/DrawBridge/ABP_DrawBridge.4"
+      },
+      {
+        "ObjectName": "FloatProperty ABP_DrawBridge_C:ExecuteUbergraph_ABP_DrawBridge.CallFunc_Conv_BoolToFloat_ReturnValue",
+        "ObjectPath": "War/Content/Animation/WorldAssets/DrawBridge/ABP_DrawBridge.6"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_Conv_BoolToFloat_ReturnValue",
+    "Outer": "ExecuteUbergraph_ABP_DrawBridge"
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraph",
+    "Outer": "AnimGraph",
+    "PropertyFlags": 384,
+    "Struct": {
+      "ObjectName": "ScriptStruct PoseLink",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "AnimGraph",
+    "Outer": "ABP_DrawBridge_C",
+    "Children": [
+      {
+        "ObjectName": "StructProperty ABP_DrawBridge_C:AnimGraph.AnimGraph",
+        "ObjectPath": "War/Content/Animation/WorldAssets/DrawBridge/ABP_DrawBridge.7"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "Function",
+    "Name": "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_DrawBridge_AnimGraphNode_BlendSpacePlayer_9F50B76E4E4D6592956AE688C2374612",
+    "Outer": "ABP_DrawBridge_C",
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_BlendSpacePlayer_9F50B76E4E4D6592956AE688C2374612",
+    "Outer": "ABP_DrawBridge_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_BlendSpacePlayer",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_BlendSpacePlayer_BC96291C47D69D6DD37FEC8C79ABA7AB",
+    "Outer": "ABP_DrawBridge_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_BlendSpacePlayer",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_LayeredBoneBlend_5ACC5BF4494822D6E8BE489D520005CA",
+    "Outer": "ABP_DrawBridge_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_LayeredBoneBlend",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  }
+]

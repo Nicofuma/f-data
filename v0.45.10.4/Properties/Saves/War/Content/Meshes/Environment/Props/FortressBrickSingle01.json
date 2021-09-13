@@ -1,0 +1,111 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FortressBrickSingle01",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -1.5258789E-05,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 100.16525,
+            "Y": 50.0,
+            "Z": 50.000015,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "FortressBrickSingle01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x1A18"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FortressBrickSingle01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortressBrickSingle01",
+            "ObjectPath": "War/Content/Materials/Environment/FortressBrickSingle01.0"
+          },
+          "MaterialSlotName": "Material #25",
+          "ImportedMaterialSlotName": "Material #25",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 262.07312,
+            "LocalUVDensities": 200.74045,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 200.74045,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -1.5258789E-05,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 50.082626,
+          "Y": 25.0,
+          "Z": 25.000008
+        },
+        "SphereRadius": 58.462135
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FortressBrickSingle01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FortressBrickSingle01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FortressBrickSingle01:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FortressBrickSingle01.1"
+    },
+    "LightingGuid": "B659F059-4D085066-4CE4379A-58108C45",
+    "RenderData": null
+  }
+]

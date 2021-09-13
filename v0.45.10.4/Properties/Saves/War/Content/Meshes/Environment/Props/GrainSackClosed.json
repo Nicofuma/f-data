@@ -1,0 +1,94 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "GrainSackClosed",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "BuildScale3D": {
+        "X": 1.2,
+        "Y": 1.2,
+        "Z": 1.2
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_3",
+    "Outer": "GrainSackClosed",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x717B"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "GrainSackClosed",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant GrainSackClosed",
+            "ObjectPath": "War/Content/Materials/Environment/Props/GrainSackClosed.0"
+          },
+          "MaterialSlotName": "GrainSack_Inst",
+          "ImportedMaterialSlotName": "GrainSack_Inst",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 229.32289,
+            "LocalUVDensities": 208.39319,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 208.39319,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.09189224,
+          "Y": 0.27316666,
+          "Z": 50.06066
+        },
+        "BoxExtent": {
+          "X": 50.362328,
+          "Y": 37.045387,
+          "Z": 50.34114
+        },
+        "SphereRadius": 69.46947
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup GrainSackClosed:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/GrainSackClosed.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision GrainSackClosed:NavCollision_3",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/GrainSackClosed.1"
+    },
+    "LightingGuid": "F7A4C3C3-4DA6034C-739F88B9-2A2C7689",
+    "RenderData": null
+  }
+]

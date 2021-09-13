@@ -1,0 +1,120 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "RifleCPickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript RifleCPickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleCPickup.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class FirearmPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "RifleCPickup_C",
+    "Name": "Default__RifleCPickup_C",
+    "Properties": {
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass RifleCComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Items/RifleCComponent.0"
+      },
+      "Encumbrance": 70,
+      "CodeName": "RifleC",
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "671650254E645DC2CCB422BFA5CA15A2",
+        "SourceString": "Rifle"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "770417CE42088AA92FE02D86D984ED04",
+        "SourceString": "Argenti r.II Rifle"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "76EDC9134006C46E4FC69882DD36D110",
+        "SourceString": "The primary infantry rifle of the Colonial Legion. Its predecessor, The Volta Repeater, was a sturdy, reliable firearm but had many limitations, namely, fire rate. The Argenti solves this limitation as well as being more compact and lightweight."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D RifleCItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/RifleCItemIcon.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Primary",
+      "ItemCategory": "EItemCategory::SmallArms",
+      "ItemProfileType": "EItemProfileType::HandheldWeapon",
+      "FactionVariant": "EFactionId::Colonials",
+      "ItemMesh": {
+        "ObjectName": "StaticMeshComponent Default__RifleCPickup_C:ItemMesh",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleCPickup.6"
+      },
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__RifleCPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleCPickup.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__RifleCPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleCPickup.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__RifleCPickup_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "RifleCPickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent RifleCPickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleCPickup.3"
+      },
+      "VariableGuid": "B75C5946-482C8E30-9A9ABC90-FC718626",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "RifleCPickup_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node RifleCPickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleCPickup.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__RifleCPickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__RifleCPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleCPickup.2"
+      }
+    }
+  }
+]

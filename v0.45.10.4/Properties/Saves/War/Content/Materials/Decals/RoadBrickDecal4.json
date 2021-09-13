@@ -1,0 +1,105 @@
+[
+  {
+    "Type": "MaterialInstanceConstant",
+    "Name": "RoadBrickDecal4",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "MaterialInstanceConstant RoadBrickDecal",
+        "ObjectPath": "War/Content/Materials/Decals/RoadBrickDecal.0"
+      },
+      "bHasStaticPermutationResource": true,
+      "ScalarParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "RefractionDepthBias",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "TextureParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "Alpha Texture",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "ObjectName": "Texture2D RoadBrickMasks01",
+            "ObjectPath": "War/Content/Textures/Environment/RoadBrickMasks01.0"
+          },
+          "ExpressionGUID": "FED23234-4839D9CC-99AD1796-27F88F59"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "DiffuseLinear",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "ObjectName": "Texture2D Craters01",
+            "ObjectPath": "War/Content/Textures/Decal/Craters01.0"
+          },
+          "ExpressionGUID": "EED65AA7-48319B96-488C94B0-3EEFAD22"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "DiffuseSRGB",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "ObjectName": "Texture2D RoadBrickDecalD",
+            "ObjectPath": "War/Content/Textures/Environment/RoadBrickDecalD.0"
+          },
+          "ExpressionGUID": "3101A609-4F0220A1-B5A2879B-BA268523"
+        }
+      ],
+      "BasePropertyOverrides": {
+        "BlendMode": "BLEND_Translucent",
+        "OpacityMaskClipValue": 0.3333
+      },
+      "StaticParameters": {
+        "StaticSwitchParameters": [
+          {
+            "Value": true,
+            "ParameterInfo": {
+              "Name": "Alpha Texture?",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "068FA427-4FE9DA5E-ACEBDFAA-1132095F"
+          },
+          {
+            "Value": false,
+            "ParameterInfo": {
+              "Name": "Linear Color?",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "2CA21DBB-406D7B35-DF863AA7-5B760E3F"
+          }
+        ],
+        "StaticComponentMaskParameters": [
+          {
+            "R": false,
+            "G": false,
+            "B": true,
+            "A": false,
+            "ParameterInfo": {
+              "Name": "Alpha Channel Selector",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "B4CB5BB9-482F419C-75F9B9AA-2E2558BF"
+          }
+        ]
+      }
+    }
+  }
+]

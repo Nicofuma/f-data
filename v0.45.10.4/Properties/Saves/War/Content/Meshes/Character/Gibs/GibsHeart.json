@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "GibsHeart",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "GibsHeart",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1D97"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "GibsHeart",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Gibs",
+            "ObjectPath": "War/Content/Materials/Character/Gibs.0"
+          },
+          "MaterialSlotName": "Gibs",
+          "ImportedMaterialSlotName": "Gibs",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 173.39752,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 173.39752,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -7.6293945E-06
+        },
+        "BoxExtent": {
+          "X": 2.9762344,
+          "Y": 7.9330716,
+          "Z": 3.0272903
+        },
+        "SphereRadius": 7.981276
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup GibsHeart:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Character/Gibs/GibsHeart.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision GibsHeart:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Character/Gibs/GibsHeart.1"
+    },
+    "LightingGuid": "3039968F-447FE2A5-DC8C1984-80D8D286",
+    "RenderData": null
+  }
+]

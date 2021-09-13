@@ -1,0 +1,111 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Canoe01",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 1.8310548E-05,
+              "Z": 62.739918
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 108.22191,
+            "Y": 519.8356,
+            "Z": 98.24668,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "BuildScale3D": {
+        "X": 1.2,
+        "Y": 1.2,
+        "Z": 1.2
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_74",
+    "Outer": "Canoe01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x333C2"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Canoe01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Canoe01",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Canoe01.0"
+          },
+          "MaterialSlotName": "MI_Canoe_01a",
+          "ImportedMaterialSlotName": "MI_Canoe_01a",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 821.9584,
+            "LocalUVDensities": 928.5877,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 928.5877,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 3.0517578E-05,
+          "Z": 59.62763
+        },
+        "BoxExtent": {
+          "X": 64.615265,
+          "Y": 270.42206,
+          "Z": 59.62766
+        },
+        "SphereRadius": 271.25153
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Canoe01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Canoe01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Canoe01:NavCollision_74",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Canoe01.1"
+    },
+    "LightingGuid": "D64B0589-48590381-93E33EAE-E3D133FF",
+    "RenderData": null
+  }
+]

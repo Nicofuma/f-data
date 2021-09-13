@@ -1,0 +1,102 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPZombieWeaponPickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPZombieWeaponPickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPZombieWeaponPickup.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class FirearmPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPZombieWeaponPickup_C",
+    "Name": "Default__BPZombieWeaponPickup_C",
+    "Properties": {
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPZombieWeaponComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Items/BPZombieWeaponComponent.0"
+      },
+      "Encumbrance": 0,
+      "bHideContent": true,
+      "CodeName": "ZombieWeapon",
+      "Icon": {
+        "ObjectName": "Texture2D MapIconFortCursed",
+        "ObjectPath": "War/Content/Textures/UI/MapIcons/MapIconFortCursed.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Primary",
+      "ItemCategory": "EItemCategory::SmallArms",
+      "ItemProfileType": "EItemProfileType::UniqueItem",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPZombieWeaponPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPZombieWeaponPickup.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPZombieWeaponPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPZombieWeaponPickup.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPZombieWeaponPickup_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPZombieWeaponPickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPZombieWeaponPickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPZombieWeaponPickup.3"
+      },
+      "VariableGuid": "FBF04340-40D71A47-9ED11191-32B797F3",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPZombieWeaponPickup_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPZombieWeaponPickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPZombieWeaponPickup.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPZombieWeaponPickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPZombieWeaponPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPZombieWeaponPickup.2"
+      }
+    }
+  }
+]

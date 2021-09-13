@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "skeleton_Seated",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "skeleton_Seated",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x3F581"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "skeleton_Seated",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Skeleton",
+            "ObjectPath": "War/Content/Materials/Skeleton.0"
+          },
+          "MaterialSlotName": "Skeleton",
+          "ImportedMaterialSlotName": "Skeleton",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -7.6293945E-06,
+          "Y": -1.663456,
+          "Z": 59.396908
+        },
+        "BoxExtent": {
+          "X": 66.33354,
+          "Y": 47.30606,
+          "Z": 62.51048
+        },
+        "SphereRadius": 96.806656
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup skeleton_Seated:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/skeleton_Seated.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision skeleton_Seated:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/skeleton_Seated.1"
+    },
+    "LightingGuid": "698B0BDA-4C31785D-426710AF-96AA33D0",
+    "RenderData": null
+  }
+]

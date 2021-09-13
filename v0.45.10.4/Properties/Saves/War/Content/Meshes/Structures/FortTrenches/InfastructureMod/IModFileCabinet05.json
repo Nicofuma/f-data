@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "IModFileCabinet05",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "IModFileCabinet05",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xF6C"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "IModFileCabinet05",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortIModLockers01",
+            "ObjectPath": "War/Content/Materials/Structures/FortIModLockers01.0"
+          },
+          "MaterialSlotName": "FortIModLockers01",
+          "ImportedMaterialSlotName": "FortIModLockers01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 530.3565,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 530.3565,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 2.2888184E-05,
+          "Y": 7.6293945E-06,
+          "Z": 135.90086
+        },
+        "BoxExtent": {
+          "X": 40.116554,
+          "Y": 66.96747,
+          "Z": 136.01892
+        },
+        "SphereRadius": 156.82832
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup IModFileCabinet05:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/IModFileCabinet05.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision IModFileCabinet05:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/IModFileCabinet05.1"
+    },
+    "LightingGuid": "D1008C7B-404B9A40-63290FB4-ABF2AB6B",
+    "RenderData": null
+  }
+]

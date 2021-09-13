@@ -1,0 +1,117 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "SatchelChargePickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript SatchelChargePickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/SatchelChargePickup.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class GearPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "SatchelChargePickup_C",
+    "Name": "Default__SatchelChargePickup_C",
+    "Properties": {
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass SatchelChargeComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Items/SatchelChargeComponent.0"
+      },
+      "Encumbrance": 200,
+      "CodeName": "SatchelCharge",
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "A743BB444525A583C294849B3935850D",
+        "SourceString": "Explosive Charge"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "7A3587F74B3445640C1250AFA458FAB8",
+        "SourceString": "Alligator Charge"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "9B06C72346F1084273B2758AD002F280",
+        "SourceString": "This heavy-duty explosive device is designed to deal significant damage to structures and stationary vehicles. "
+      },
+      "Icon": {
+        "ObjectName": "Texture2D SatchelCharge",
+        "ObjectPath": "War/Content/Textures/UI/StructureIcons/SatchelCharge.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Tertiary",
+      "ItemCategory": "EItemCategory::Utility",
+      "ItemProfileType": "EItemProfileType::Tool",
+      "TechID": "ETechID::UnlockSatchelCharge",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__SatchelChargePickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/SatchelChargePickup.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__SatchelChargePickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/SatchelChargePickup.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__SatchelChargePickup_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "SatchelChargePickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent SatchelChargePickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/SatchelChargePickup.3"
+      },
+      "VariableGuid": "541BAD53-4B377223-83DFE384-33E208F3",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "SatchelChargePickup_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node SatchelChargePickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/SatchelChargePickup.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__SatchelChargePickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__SatchelChargePickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/SatchelChargePickup.2"
+      }
+    }
+  }
+]

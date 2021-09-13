@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_10764",
+    "Outer": "Axe",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Axe",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x3543"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Axe",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Tools03",
+            "ObjectPath": "War/Content/Materials/Structures/Tools03.0"
+          },
+          "MaterialSlotName": "Tools03",
+          "ImportedMaterialSlotName": "Tools03",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 144.5838,
+            "LocalUVDensities": 103.94717,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 103.94717,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -12.414791,
+          "Y": -4.7683716E-06,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 19.666367,
+          "Y": 4.710185,
+          "Z": 71.89709
+        },
+        "SphereRadius": 73.78862
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Axe:BodySetup_10764",
+      "ObjectPath": "War/Content/Meshes/Weapons/Axe.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Axe:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Weapons/Axe.1"
+    },
+    "LightingGuid": "187FBAA8-49BD7B75-04D7C7B2-131E528B",
+    "RenderData": null
+  }
+]

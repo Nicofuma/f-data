@@ -1,0 +1,118 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPCarbinePickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPCarbinePickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPCarbinePickup.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class FirearmPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPCarbinePickup_C",
+    "Name": "Default__BPCarbinePickup_C",
+    "Properties": {
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPCarbineComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Items/BPCarbineComponent.0"
+      },
+      "Encumbrance": 70,
+      "CodeName": "RifleLightW",
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "610D700C432EFF5F6750528CD640F4D3",
+        "SourceString": "Rifle"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "418494C0485C2EBAD79685B37CF19EA1",
+        "SourceString": "Blakerow 871"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "DA6402FF48D12AD93CAF8C864C27C39B",
+        "SourceString": "The Blakerow is a carbine with a high rate of fire compared to its bolt-action predecessor. This increased fire rate does come at the cost of innate stopping power; however, its versatility and lightweight frame more than make up for any perceived shortcomings."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D CarbineItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/CarbineItemIcon.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Primary",
+      "ItemCategory": "EItemCategory::SmallArms",
+      "ItemProfileType": "EItemProfileType::HandheldWeapon",
+      "FactionVariant": "EFactionId::Wardens",
+      "TechID": "ETechID::UnlockRifleLight",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPCarbinePickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPCarbinePickup.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPCarbinePickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPCarbinePickup.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPCarbinePickup_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPCarbinePickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPCarbinePickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPCarbinePickup.3"
+      },
+      "VariableGuid": "FBF04340-40D71A47-9ED11191-32B797F3",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPCarbinePickup_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPCarbinePickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPCarbinePickup.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPCarbinePickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPCarbinePickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPCarbinePickup.2"
+      }
+    }
+  }
+]

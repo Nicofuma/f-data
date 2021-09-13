@@ -1,0 +1,407 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "Foundation",
+    "Outer": "BPEmplacedMachineGun_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SkeletalMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPEmplacedMachineGun_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPEmplacedMachineGun_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedMachineGun.12"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class EmplacedWeapon",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPEmplacedMachineGun_C:Foundation",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedMachineGun.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPEmplacedMachineGun_C:MultiplexedSkeletalMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedMachineGun.6"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPEmplacedMachineGun_C",
+    "Name": "Default__BPEmplacedMachineGun_C",
+    "Properties": {
+      "EmplacedTrackingModifier": 2.0,
+      "Mesh": {
+        "ObjectName": "SkeletalMeshComponent Default__BPEmplacedMachineGun_C:SkeletalMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedMachineGun.14"
+      },
+      "OccupiableComponent": {
+        "ObjectName": "OccupiableComponent Default__BPEmplacedMachineGun_C:OccupiableComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedMachineGun.7"
+      },
+      "PackagedMesh": {
+        "ObjectName": "StaticMesh EmplacedMGPacked",
+        "ObjectPath": "War/Content/Meshes/Structures/EmplacedMGPacked.2"
+      },
+      "EmplacedIncomingDamageModifier": 0.25,
+      "BuildGhostClass": null,
+      "BuildSiteClass": {
+        "ObjectName": "Class StructureBuildSite",
+        "ObjectPath": "/Script/War"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "3B0D81B74712D0185F47C98FE74E91CB",
+        "SourceString": "An anti-aircraft flak cannon repurposed as a defensive emplacement against infantry."
+      },
+      "ShippableInfo": {
+        "Type": "EShippableType::Normal"
+      },
+      "Icon": {
+        "ObjectName": "Texture2D EmplacedMGIcon",
+        "ObjectPath": "War/Content/Textures/UI/StructureIcons/EmplacedMGIcon.0"
+      },
+      "BuildLocationType": "EBuildLocationType::ConstructionYard",
+      "CodeName": "EmplacedMachineGun",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "4AB092614A2F40BA6EBDF18BFE68D865",
+        "SourceString": "12.7 Anti Infantry Flak Gun"
+      },
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPEmplacedMachineGun_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedMachineGun.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPEmplacedMachineGun_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedMachineGun.4"
+      },
+      "DestroyedFX": {
+        "ObjectName": "ParticleSystem GrenadeBlast",
+        "ObjectPath": "War/Content/FX/GrenadeBlast.151"
+      },
+      "TechID": "ETechID::UnlockEmplacedFieldMG",
+      "MountComponent": {
+        "ObjectName": "BlueprintGeneratedClass BPEmplacedMachineGunMountComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedMachineGunMountComponent.0"
+      },
+      "MaxHealth": 1000,
+      "Health": 1000,
+      "DropLocationOffset": {
+        "X": -200.0,
+        "Y": 0.0,
+        "Z": 10.0
+      },
+      "bRotateDropLocation": true,
+      "IsVaultable": false,
+      "StructureNetRelevancySize": "EStructureNetRelevancySize::Small",
+      "bIsStockpilable": true,
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPEmplacedMachineGun_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedMachineGun.15"
+      },
+      "MinNetUpdateFrequency": 15.0,
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPEmplacedMachineGun_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedMachineGun.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPEmplacedMachineGun_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPEmplacedMachineGun_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 240.0,
+        "Y": 240.0,
+        "Z": 150.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPEmplacedMachineGun_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedMachineGun.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 148.71841
+      }
+    }
+  },
+  {
+    "Type": "MultiplexedSkeletalMeshComponent",
+    "Name": "MultiplexedSkeletalMesh_GEN_VARIABLE",
+    "Outer": "BPEmplacedMachineGun_C",
+    "Properties": {
+      "TargetTag": "Multiplexed",
+      "MeshStops": [
+        {
+          "Threshold": 0,
+          "SkeletalMesh": {
+            "ObjectName": "SkeletalMesh SK_EmplacedMG",
+            "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/SK_EmplacedMG.0"
+          }
+        },
+        {
+          "Threshold": 33,
+          "SkeletalMesh": {
+            "ObjectName": "SkeletalMesh SK_EmplacedMG",
+            "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/SK_EmplacedMG.0"
+          }
+        },
+        {
+          "Threshold": 66,
+          "SkeletalMesh": {
+            "ObjectName": "SkeletalMesh SK_EmplacedMG",
+            "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/SK_EmplacedMG.0"
+          }
+        }
+      ],
+      "InputValue": 100,
+      "SelectedMeshIndex": 2
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "MultiplexedSkeletalMesh",
+    "Outer": "BPEmplacedMachineGun_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class MultiplexedSkeletalMeshComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "OccupiableComponent",
+    "Name": "OccupiableComponent",
+    "Outer": "Default__BPEmplacedMachineGun_C",
+    "Properties": {
+      "bTeleportBack": false,
+      "MountCodeName": "EmplacedMachineGunGunner",
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPEmplacedMachineGun_C:SkeletalMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedMachineGun.14"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPEmplacedMachineGun_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPEmplacedMachineGun_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedMachineGun.8"
+      },
+      "VariableGuid": "6F9A620C-4B15380B-2CC77895-979D14F2",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class MultiplexedSkeletalMeshComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "MultiplexedSkeletalMeshComponent BPEmplacedMachineGun_C:MultiplexedSkeletalMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedMachineGun.5"
+      },
+      "VariableGuid": "7E269B41-44D05ECF-650A2F99-93625811",
+      "InternalVariableName": "MultiplexedSkeletalMesh"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SkeletalMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SkeletalMeshComponent BPEmplacedMachineGun_C:Foundation_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedMachineGun.13"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "B9B2F331-40537441-D9583FB5-FB6F945E",
+      "InternalVariableName": "Foundation"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPEmplacedMachineGun_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPEmplacedMachineGun_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedMachineGun.10"
+        },
+        {
+          "ObjectName": "SCS_Node BPEmplacedMachineGun_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedMachineGun.11"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPEmplacedMachineGun_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedMachineGun.10"
+        },
+        {
+          "ObjectName": "SCS_Node BPEmplacedMachineGun_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedMachineGun.11"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPEmplacedMachineGun_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedMachineGun.9"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "Foundation_GEN_VARIABLE",
+    "Outer": "BPEmplacedMachineGun_C",
+    "Properties": {
+      "ClothingSimulationFactory": {
+        "ObjectName": "Class ClothingSimulationFactoryNv",
+        "ObjectPath": "/Script/ClothingSystemRuntimeNv"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_EmplacedFoundation",
+        "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/SK_EmplacedFoundation.0"
+      },
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldDynamic",
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 15.0
+      },
+      "ComponentTags": [
+        "IncludeInBuildSite"
+      ]
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SkeletalMesh",
+    "Outer": "Default__BPEmplacedMachineGun_C",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_EmplacedMG_C",
+        "ObjectPath": "War/Content/Animation/WorldAssets/Fort_and_Trenches/ABP_EmplacedMG.1"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_EmplacedMG",
+        "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/SK_EmplacedMG.0"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant EmplacedMG",
+          "ObjectPath": "War/Content/Materials/Structures/EmplacedMG.0"
+        }
+      ],
+      "bReceivesDecals": false,
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldDynamic",
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPEmplacedMachineGun_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPEmplacedMachineGun.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 75.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 270.0,
+        "Roll": 0.0
+      },
+      "ComponentTags": [
+        "Multiplexed",
+        "IncludeInBuildSite",
+        "IncludeInBuildGhost"
+      ]
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPEmplacedMachineGun_C"
+  }
+]

@@ -1,0 +1,108 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPScrap_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPScrap_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPScrap.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class BasicItemPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPScrap_C",
+    "Name": "Default__BPScrap_C",
+    "Properties": {
+      "CodeName": "Metal",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "7CA33D364273C2F29F4A939EC26A7DCA",
+        "SourceString": "Salvage"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "2065AF3241C2861FE7B9F08FC03C7DC7",
+        "SourceString": "Salvage that can be recycled into other resources at a Refinery"
+      },
+      "Icon": {
+        "ObjectName": "Texture2D SalvageIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/SalvageIcon.0"
+      },
+      "ItemCategory": "EItemCategory::Supplies",
+      "ItemProfileType": "EItemProfileType::RawResource",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPScrap_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPScrap.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPScrap_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPScrap.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPScrap_C",
+    "Properties": {
+      "bReceivesDecals": false
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPScrap_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPScrap_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPScrap.3"
+      },
+      "VariableGuid": "A0751F8B-46A22E9A-705EF3A3-8C436BDB",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPScrap_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPScrap_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPScrap.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPScrap_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPScrap_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPScrap.2"
+      }
+    }
+  }
+]

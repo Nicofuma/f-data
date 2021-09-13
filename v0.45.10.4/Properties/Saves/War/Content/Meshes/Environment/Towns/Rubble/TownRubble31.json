@@ -1,0 +1,281 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "TownRubble31",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -1.9905624,
+                "Y": 111.41849,
+                "Z": -213.72699
+              },
+              {
+                "X": 35.475147,
+                "Y": 111.41849,
+                "Z": -213.72699
+              },
+              {
+                "X": -1.9905624,
+                "Y": 1.2382507,
+                "Z": -213.72699
+              },
+              {
+                "X": 35.475147,
+                "Y": 1.2382507,
+                "Z": -213.72699
+              },
+              {
+                "X": -1.9905624,
+                "Y": 111.41849,
+                "Z": 163.9548
+              },
+              {
+                "X": 35.475147,
+                "Y": 111.41849,
+                "Z": 163.9548
+              },
+              {
+                "X": -1.9905624,
+                "Y": 1.2382507,
+                "Z": 218.99997
+              },
+              {
+                "X": 35.475147,
+                "Y": 1.2382507,
+                "Z": 218.99997
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -1.9905624,
+                "Y": 1.2382507,
+                "Z": -213.72699
+              },
+              "Max": {
+                "X": 35.475147,
+                "Y": 111.41849,
+                "Z": 218.99997
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "VertexData": [
+              {
+                "X": 181.26419,
+                "Y": 37.402836,
+                "Z": -213.72691
+              },
+              {
+                "X": 181.26418,
+                "Y": -0.062874064,
+                "Z": -213.72691
+              },
+              {
+                "X": 33.841873,
+                "Y": 37.40284,
+                "Z": -213.72691
+              },
+              {
+                "X": 33.841873,
+                "Y": -0.062871434,
+                "Z": -213.72691
+              },
+              {
+                "X": 181.26419,
+                "Y": 37.402836,
+                "Z": 175.54282
+              },
+              {
+                "X": 181.26418,
+                "Y": -0.062874064,
+                "Z": 175.54282
+              },
+              {
+                "X": 33.841873,
+                "Y": 37.40284,
+                "Z": 175.54282
+              },
+              {
+                "X": 33.841873,
+                "Y": -0.062871434,
+                "Z": 175.54282
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": 33.841873,
+                "Y": -0.062874064,
+                "Z": -213.72691
+              },
+              "Max": {
+                "X": 181.26419,
+                "Y": 37.40284,
+                "Z": 175.54282
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "TownRubble31",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 893,
+        "SizeOnDisk": 893,
+        "OffsetInFile": "0x4586"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TownRubble31",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownBrickWall03",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownBrickWall03.0"
+          },
+          "MaterialSlotName": "TownBrickWall03",
+          "ImportedMaterialSlotName": "TownBrickWall03",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 266.30173,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownBrickWall03",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownBrickWall03.0"
+          },
+          "MaterialSlotName": "TownBrickWall01",
+          "ImportedMaterialSlotName": "TownBrickWall01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 306.27393,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownWoodBeams01",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownWoodBeams01.0"
+          },
+          "MaterialSlotName": "TownWoodBeams01",
+          "ImportedMaterialSlotName": "TownWoodBeams01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 326.24307,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 87.953964,
+          "Y": 67.71026,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 93.96965,
+          "Y": 67.71233,
+          "Z": 213.72699
+        },
+        "SphereRadius": 240.77095
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TownRubble31:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Rubble/TownRubble31.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TownRubble31:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Rubble/TownRubble31.1"
+    },
+    "LightingGuid": "AAA63312-48AEA67F-998D79B9-2BA91FA3",
+    "RenderData": null
+  }
+]

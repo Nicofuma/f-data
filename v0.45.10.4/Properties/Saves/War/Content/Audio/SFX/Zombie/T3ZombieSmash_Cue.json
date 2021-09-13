@@ -1,0 +1,100 @@
+[
+  {
+    "Type": "SoundCue",
+    "Name": "T3ZombieSmash_Cue",
+    "Properties": {
+      "FirstNode": {
+        "ObjectName": "SoundNodeModulator T3ZombieSmash_Cue:SoundNodeModulator_0",
+        "ObjectPath": "War/Content/Audio/SFX/Zombie/T3ZombieSmash_Cue.1"
+      },
+      "VolumeMultiplier": 1.3,
+      "SoundClassObject": {
+        "ObjectName": "SoundClass Explosions",
+        "ObjectPath": "War/Content/Audio/SoundClasses/SFX.1"
+      },
+      "Duration": 3.4365625,
+      "MaxDistance": 15200.0,
+      "AttenuationSettings": {
+        "ObjectName": "SoundAttenuation Grenades",
+        "ObjectPath": "War/Content/Audio/Attenuations/Grenades.0"
+      }
+    }
+  },
+  {
+    "Type": "SoundNodeModulator",
+    "Name": "SoundNodeModulator_0",
+    "Outer": "T3ZombieSmash_Cue",
+    "Properties": {
+      "PitchMin": 0.9,
+      "PitchMax": 1.1,
+      "VolumeMin": 0.7,
+      "VolumeMax": 1.3,
+      "ChildNodes": [
+        {
+          "ObjectName": "SoundNodeRandom T3ZombieSmash_Cue:SoundNodeRandom_0",
+          "ObjectPath": "War/Content/Audio/SFX/Zombie/T3ZombieSmash_Cue.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SoundNodeRandom",
+    "Name": "SoundNodeRandom_0",
+    "Outer": "T3ZombieSmash_Cue",
+    "Properties": {
+      "Weights": [
+        0.1,
+        0.9,
+        1.0
+      ],
+      "bRandomizeWithoutReplacement": false,
+      "ChildNodes": [
+        {
+          "ObjectName": "SoundNodeWavePlayer T3ZombieSmash_Cue:SoundNodeWavePlayer_2",
+          "ObjectPath": "War/Content/Audio/SFX/Zombie/T3ZombieSmash_Cue.5"
+        },
+        {
+          "ObjectName": "SoundNodeWavePlayer T3ZombieSmash_Cue:SoundNodeWavePlayer_0",
+          "ObjectPath": "War/Content/Audio/SFX/Zombie/T3ZombieSmash_Cue.3"
+        },
+        {
+          "ObjectName": "SoundNodeWavePlayer T3ZombieSmash_Cue:SoundNodeWavePlayer_1",
+          "ObjectPath": "War/Content/Audio/SFX/Zombie/T3ZombieSmash_Cue.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SoundNodeWavePlayer",
+    "Name": "SoundNodeWavePlayer_0",
+    "Outer": "T3ZombieSmash_Cue",
+    "Properties": {
+      "SoundWaveAssetPtr": {
+        "AssetPathName": "/Game/Audio/SFX/Zombie/T3ZombieSmash02.T3ZombieSmash02",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "SoundNodeWavePlayer",
+    "Name": "SoundNodeWavePlayer_1",
+    "Outer": "T3ZombieSmash_Cue",
+    "Properties": {
+      "SoundWaveAssetPtr": {
+        "AssetPathName": "/Game/Audio/SFX/Zombie/T3ZombieSmash03.T3ZombieSmash03",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "SoundNodeWavePlayer",
+    "Name": "SoundNodeWavePlayer_2",
+    "Outer": "T3ZombieSmash_Cue",
+    "Properties": {
+      "SoundWaveAssetPtr": {
+        "AssetPathName": "/Game/Audio/SFX/Zombie/T3ZombieSmash01.T3ZombieSmash01",
+        "SubPathString": ""
+      }
+    }
+  }
+]

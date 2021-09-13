@@ -1,0 +1,410 @@
+[
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "BPRocket_C",
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPRocket_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPRocket_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocket.17"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty BPRocket_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocket.0"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function BPRocket_C:ExecuteUbergraph_BPRocket",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocket.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class Rocket",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty BPRocket_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocket.0"
+      },
+      {
+        "ObjectName": "Function BPRocket_C:BPBeginLaunch",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocket.8"
+      },
+      {
+        "ObjectName": "Function BPRocket_C:ExecuteUbergraph_BPRocket",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocket.5"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 393216,
+    "ClassWithin": null,
+    "ClassConfigName": "/Game/Animation/WorldAssets/Rocket/ABP_Rocket_589823",
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPRocket_C",
+    "Name": "Default__BPRocket_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMeshComponent Default__BPRocket_C:Rocket Mesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocket.18"
+      },
+      "FuelingParticleSystem": {
+        "ObjectName": "ParticleSystemComponent Default__BPRocket_C:Fueling Particle System",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocket.11"
+      },
+      "GroundParticleSystem": {
+        "ObjectName": "ParticleSystemComponent Default__BPRocket_C:Ground Particle System",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocket.12"
+      },
+      "LaunchParticleSystem": {
+        "ObjectName": "ParticleSystemComponent Default__BPRocket_C:Launch Particle System",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocket.14"
+      },
+      "InFlightParticleSystem": {
+        "ObjectName": "ParticleSystemComponent Default__BPRocket_C:In Flight Particle System",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocket.13"
+      },
+      "LaunchSoundCue": {
+        "ObjectName": "SoundCue RocketLaunch_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Structure/Rocket/RocketLaunch_Cue.0"
+      },
+      "ImpactSoundCue": {
+        "ObjectName": "SoundCue RocketImpact_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Structure/Rocket/RocketImpact_Cue.0"
+      },
+      "InFlightCameraShake": {
+        "ObjectName": "BlueprintGeneratedClass BPRocketCameraShake_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocketCameraShake.0"
+      },
+      "LaunchAnimationTime": 4.1,
+      "FlightAnimationTime": 3.0,
+      "InitialResourceRequirements": [
+        {
+          "ItemCodeName": "RocketBooster",
+          "Quantity": 1
+        },
+        {
+          "ItemCodeName": "Warhead",
+          "Quantity": 1
+        }
+      ],
+      "FuelRequiredForLocalLaunch": 720,
+      "FuelRequiredForGlobalLaunch": 1440,
+      "ImpactEffectClass": {
+        "AssetPathName": "/Game/Blueprints/Structures/BPRocketImpactEffect.BPRocketImpactEffect_C",
+        "SubPathString": ""
+      },
+      "GroundZeroClass": {
+        "AssetPathName": "/Game/Blueprints/Structures/BPRocketGroundZero.BPRocketGroundZero_C",
+        "SubPathString": ""
+      },
+      "ProceduralUseVolumeFactor": 1.0,
+      "BuildGhostClass": null,
+      "BuildSiteClass": {
+        "ObjectName": "Class RocketBuildSite",
+        "ObjectPath": "/Script/War"
+      },
+      "CodeName": "Rocket",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "05D8FCE14C1B2295EB11CE89E8C6DA24",
+        "SourceString": "Rocket"
+      },
+      "ProfileType": "EStructureProfileType::GenericWorldStructure",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPRocket_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocket.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPRocket_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocket.7"
+      },
+      "MaxHealth": 1500,
+      "Health": 1500,
+      "DropLocationOffset": {
+        "X": 0.0,
+        "Y": -325.0,
+        "Z": -175.0
+      },
+      "bRotateDropLocation": true,
+      "IsVaultable": false,
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPRocket_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocket.19"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPRocket_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocket.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPRocket_C"
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_BPRocket",
+    "PropertyFlags": 148
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BPRocket",
+    "Outer": "BPRocket_C",
+    "Children": [
+      {
+        "ObjectName": "IntProperty BPRocket_C:ExecuteUbergraph_BPRocket.EntryPoint",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocket.4"
+      },
+      {
+        "ObjectName": "ObjectProperty BPRocket_C:ExecuteUbergraph_BPRocket.CallFunc_GetAnimInstance_ReturnValue",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocket.9"
+      },
+      {
+        "ObjectName": "ObjectProperty BPRocket_C:ExecuteUbergraph_BPRocket.K2Node_DynamicCast_AsABP_Rocket",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocket.10"
+      },
+      {
+        "ObjectName": "BoolProperty BPRocket_C:ExecuteUbergraph_BPRocket.K2Node_DynamicCast_bSuccess",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocket.6"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess",
+    "Outer": "ExecuteUbergraph_BPRocket",
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPRocket_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 175.0,
+        "Y": 175.0,
+        "Z": 675.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPRocket_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocket.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 675.0
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BPBeginLaunch",
+    "Outer": "BPRocket_C",
+    "SuperStruct": {
+      "ObjectName": "Function Rocket:BPBeginLaunch",
+      "ObjectPath": "/Script/War"
+    },
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetAnimInstance_ReturnValue",
+    "Outer": "ExecuteUbergraph_BPRocket",
+    "PropertyClass": {
+      "ObjectName": "Class AnimInstance",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsABP_Rocket",
+    "Outer": "ExecuteUbergraph_BPRocket",
+    "PropertyClass": {
+      "ObjectName": "AnimBlueprintGeneratedClass ABP_Rocket_C",
+      "ObjectPath": "War/Content/Animation/WorldAssets/Rocket/ABP_Rocket.1"
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "Fueling Particle System",
+    "Outer": "Default__BPRocket_C",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem RocketIdle",
+        "ObjectPath": "War/Content/FX/RocketIdle.15"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPRocket_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocket.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 55.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "Ground Particle System",
+    "Outer": "Default__BPRocket_C",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem RocketLaunch01",
+        "ObjectPath": "War/Content/FX/RocketLaunch01.84"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPRocket_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocket.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 15.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "In Flight Particle System",
+    "Outer": "Default__BPRocket_C",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem RocketLaunch02",
+        "ObjectPath": "War/Content/FX/RocketLaunch02.67"
+      },
+      "TranslucencySortPriority": 3,
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPRocket_C:Rocket Mesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocket.18"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 20.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "Launch Particle System",
+    "Outer": "Default__BPRocket_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPRocket_C:Rocket Mesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocket.18"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -45.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPRocket_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPRocket_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocket.15"
+      },
+      "VariableGuid": "C69946C3-4C718592-222B5F80-C979F8D5",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPRocket_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPRocket_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocket.16"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "Rocket Mesh",
+    "Outer": "Default__BPRocket_C",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_Rocket_C",
+        "ObjectPath": "War/Content/Animation/WorldAssets/Rocket/ABP_Rocket.1"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_Rocket",
+        "ObjectPath": "War/Content/Meshes/Structures/SK_Rocket.0"
+      },
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldDynamic",
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPRocket_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPRocket.3"
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPRocket_C"
+  }
+]

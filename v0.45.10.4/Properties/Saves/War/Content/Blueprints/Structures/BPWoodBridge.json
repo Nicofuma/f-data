@@ -1,0 +1,310 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "MultiplexedStaticMesh",
+    "Outer": "BPWoodBridge_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class MultiplexedStaticMeshComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPWoodBridge_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPWoodBridge_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPWoodBridge.12"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class Bridge",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPWoodBridge_C:MultiplexedStaticMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPWoodBridge.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPWoodBridge_C:BridgeMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPWoodBridge.7"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPWoodBridge_C",
+    "Name": "Default__BPWoodBridge_C",
+    "Properties": {
+      "BelowBlockingVolume": {
+        "ObjectName": "BoxComponent Default__BPWoodBridge_C:BelowBlockingVolume",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPWoodBridge.4"
+      },
+      "BuildSiteClass": {
+        "ObjectName": "BlueprintGeneratedClass WoodBridgeBuildSite_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/WoodBridgeBuildSite.1"
+      },
+      "BaseStructureClass": {
+        "ObjectName": "BlueprintGeneratedClass DestroyedWoodBridge_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/DestroyedWoodBridge.1"
+      },
+      "Icon": {
+        "ObjectName": "Texture2D SandbagsStructureIcon",
+        "ObjectPath": "War/Content/Textures/UI/StructureIcons/SandbagsStructureIcon.0"
+      },
+      "DestroyedDamageRadius": 900.0,
+      "CodeName": "WoodBridge",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "655FB97942504A7D058CC1AE8E61436A",
+        "SourceString": "Wood Bridge"
+      },
+      "ArmourType": "EArmourType::Tier2BStructure",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPWoodBridge_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPWoodBridge.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPWoodBridge_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPWoodBridge.5"
+      },
+      "DestroyedFX": {
+        "ObjectName": "ParticleSystem BridgeExplosionWoiod",
+        "ObjectPath": "War/Content/FX/BridgeExplosionWoiod.55"
+      },
+      "DestroyedSoundCue": {
+        "ObjectName": "SoundCue BridgeExplodeWood_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/BridgeExplodeWood_Cue.0"
+      },
+      "MaxHealth": 1200,
+      "Health": 1200,
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPWoodBridge_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPWoodBridge.14"
+      },
+      "NetCullDistanceSquared": 50000000.0,
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPWoodBridge_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPWoodBridge.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPWoodBridge_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BelowBlockingVolume",
+    "Outer": "Default__BPWoodBridge_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 1900.0,
+        "Y": 200.0,
+        "Z": 300.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPWoodBridge_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPWoodBridge.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": -0.00012207031,
+        "Z": -350.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPWoodBridge_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 10.0,
+        "Y": 10.0,
+        "Z": 10.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPWoodBridge_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPWoodBridge.3"
+      }
+    }
+  },
+  {
+    "Type": "MultiplexedStaticMeshComponent",
+    "Name": "MultiplexedStaticMesh_GEN_VARIABLE",
+    "Outer": "BPWoodBridge_C",
+    "Properties": {
+      "MeshStops": [
+        {
+          "Threshold": 0,
+          "StaticMesh": {
+            "ObjectName": "StaticMesh BridgeWood01Critical",
+            "ObjectPath": "War/Content/Meshes/Structures/BridgeWood01Critical.2"
+          }
+        },
+        {
+          "Threshold": 33,
+          "StaticMesh": {
+            "ObjectName": "StaticMesh BridgeWood01Damaged",
+            "ObjectPath": "War/Content/Meshes/Structures/BridgeWood01Damaged.2"
+          }
+        },
+        {
+          "Threshold": 66,
+          "StaticMesh": {
+            "ObjectName": "StaticMesh BridgeWood01",
+            "ObjectPath": "War/Content/Meshes/Structures/BridgeWood01.2"
+          }
+        }
+      ],
+      "InputValue": 100,
+      "SelectedMeshIndex": 2
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "BridgeMesh",
+    "Outer": "BPWoodBridge_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPWoodBridge_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPWoodBridge_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPWoodBridge.8"
+      },
+      "VariableGuid": "14141C72-4CAFEE5D-A9D10C96-31C1C860",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPWoodBridge_C:BridgeMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPWoodBridge.13"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "1D711608-433A6C96-BC6A738F-CAD271FC",
+      "InternalVariableName": "BridgeMesh"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class MultiplexedStaticMeshComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "MultiplexedStaticMeshComponent BPWoodBridge_C:MultiplexedStaticMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPWoodBridge.6"
+      },
+      "VariableGuid": "7CBD0F83-4DCD5FA4-1C1EF587-F8112AC0",
+      "InternalVariableName": "MultiplexedStaticMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPWoodBridge_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPWoodBridge_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPWoodBridge.10"
+        },
+        {
+          "ObjectName": "SCS_Node BPWoodBridge_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPWoodBridge.11"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPWoodBridge_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPWoodBridge.10"
+        },
+        {
+          "ObjectName": "SCS_Node BPWoodBridge_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPWoodBridge.11"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPWoodBridge_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPWoodBridge.9"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "BridgeMesh_GEN_VARIABLE",
+    "Outer": "BPWoodBridge_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh BridgeWood01",
+        "ObjectPath": "War/Content/Meshes/Structures/BridgeWood01.2"
+      },
+      "bGenerateOverlapEvents": false,
+      "BodyInstance": {
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPWoodBridge_C"
+  }
+]

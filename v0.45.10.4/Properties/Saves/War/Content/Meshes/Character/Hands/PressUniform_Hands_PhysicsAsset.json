@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "PressUniform_Hands_PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup PressUniform_Hands_PhysicsAsset:SkeletalBodySetup_0",
+          "ObjectPath": "War/Content/Meshes/Character/Hands/PressUniform_Hands_PhysicsAsset.1"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup PressUniform_Hands_PhysicsAsset:SkeletalBodySetup_1",
+          "ObjectPath": "War/Content/Meshes/Character/Hands/PressUniform_Hands_PhysicsAsset.2"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "PressUniform_Hands_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 12.264523,
+              "Y": -2.7650452,
+              "Z": -1.5988865
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 86.00941,
+              "Roll": -81.82033
+            },
+            "Radius": 10.288649,
+            "Length": 16.351593,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "hand_l",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "PressUniform_Hands_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -12.319361,
+              "Y": 2.6572075,
+              "Z": 1.648529
+            },
+            "Rotation": {
+              "Pitch": 6.830189E-06,
+              "Yaw": 87.08581,
+              "Roll": -72.86065
+            },
+            "Radius": 10.470246,
+            "Length": 16.038008,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "hand_r",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  }
+]

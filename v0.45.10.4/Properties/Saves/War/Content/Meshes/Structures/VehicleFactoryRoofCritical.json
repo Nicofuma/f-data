@@ -1,0 +1,281 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "VehicleFactoryRoofCritical",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -800.4302,
+                "Y": -823.3693,
+                "Z": 543.15796
+              },
+              {
+                "X": -1.1844177,
+                "Y": -823.36926,
+                "Z": 739.7474
+              },
+              {
+                "X": -800.4302,
+                "Y": -823.3693,
+                "Z": 569.54974
+              },
+              {
+                "X": -1.1844177,
+                "Y": -823.36926,
+                "Z": 766.13916
+              },
+              {
+                "X": -800.4302,
+                "Y": 793.8042,
+                "Z": 543.15796
+              },
+              {
+                "X": -1.1844177,
+                "Y": 793.80426,
+                "Z": 739.7474
+              },
+              {
+                "X": -800.4302,
+                "Y": 793.8042,
+                "Z": 569.54974
+              },
+              {
+                "X": -1.1844177,
+                "Y": 793.80426,
+                "Z": 766.13916
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -800.4302,
+                "Y": -823.3693,
+                "Z": 543.15796
+              },
+              "Max": {
+                "X": -1.1844177,
+                "Y": 793.80426,
+                "Z": 766.13916
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "VertexData": [
+              {
+                "X": 800.4303,
+                "Y": 793.9053,
+                "Z": 543.15796
+              },
+              {
+                "X": -1.1400778,
+                "Y": 793.90533,
+                "Z": 739.74744
+              },
+              {
+                "X": 800.4303,
+                "Y": 793.9053,
+                "Z": 569.54974
+              },
+              {
+                "X": -1.1400778,
+                "Y": 793.9053,
+                "Z": 766.1392
+              },
+              {
+                "X": 800.43005,
+                "Y": -823.26825,
+                "Z": 543.15796
+              },
+              {
+                "X": -1.1403221,
+                "Y": -823.2682,
+                "Z": 739.74744
+              },
+              {
+                "X": 800.43005,
+                "Y": -823.26825,
+                "Z": 569.54974
+              },
+              {
+                "X": -1.1403221,
+                "Y": -823.26825,
+                "Z": 766.1392
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -1.1403221,
+                "Y": -823.26825,
+                "Z": 543.15796
+              },
+              "Max": {
+                "X": 800.4303,
+                "Y": 793.90533,
+                "Z": 766.1392
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "VehicleFactoryRoofCritical",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 893,
+        "SizeOnDisk": 893,
+        "OffsetInFile": "0xAC21"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VehicleFactoryRoofCritical",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant WoodRepeating03",
+            "ObjectPath": "War/Content/Materials/Environment/WoodRepeating03.0"
+          },
+          "MaterialSlotName": "Wood",
+          "ImportedMaterialSlotName": "Wood",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 353.99304,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant CorrugatedSheetsRust2",
+            "ObjectPath": "War/Content/Materials/Resources/CorrugatedSheetsRust2.0"
+          },
+          "MaterialSlotName": "Material #339",
+          "ImportedMaterialSlotName": "Material #339",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 458.4377,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant CorrugatedSheetsRust2",
+            "ObjectPath": "War/Content/Materials/Resources/CorrugatedSheetsRust2.0"
+          },
+          "MaterialSlotName": "CorrugatedSheets",
+          "ImportedMaterialSlotName": "CorrugatedSheets",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 440.85632,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 407.1546,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -12.166138,
+          "Y": -22.874329,
+          "Z": 662.42786
+        },
+        "BoxExtent": {
+          "X": 814.192,
+          "Y": 841.1044,
+          "Z": 121.73959
+        },
+        "SphereRadius": 1171.7524
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup VehicleFactoryRoofCritical:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/VehicleFactoryRoofCritical.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision VehicleFactoryRoofCritical:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Structures/VehicleFactoryRoofCritical.1"
+    },
+    "LightingGuid": "C0014133-4076360A-FC9D98B4-9ACA1A31",
+    "RenderData": null
+  }
+]

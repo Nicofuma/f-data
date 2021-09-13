@@ -1,0 +1,89 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FishingBoat01Stencil",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "FishingBoat01Stencil",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xD6E"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FishingBoat01Stencil",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "Engine/Content/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "FishingBoat",
+          "ImportedMaterialSlotName": "FishingBoat",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 115.33508,
+            "LocalUVDensities": 1.0002196,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1.0002196,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -1.788269,
+          "Y": 1.5258789E-05,
+          "Z": 84.84491
+        },
+        "BoxExtent": {
+          "X": 300.4663,
+          "Y": 84.31793,
+          "Z": 0.0
+        },
+        "SphereRadius": 306.96545
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FishingBoat01Stencil:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FishingBoat01Stencil.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FishingBoat01Stencil:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FishingBoat01Stencil.1"
+    },
+    "LightingGuid": "BA7065F6-4E255BCD-265872B1-8F3A947E",
+    "RenderData": null
+  }
+]

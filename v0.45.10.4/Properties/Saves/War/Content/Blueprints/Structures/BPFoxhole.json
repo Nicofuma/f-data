@@ -1,0 +1,668 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "FoxholeTurretGround",
+    "Outer": "BPFoxhole_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPFoxhole_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPFoxhole_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.21"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class FoxholeTurret",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPFoxhole_C:FoxholeTurretGround",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFoxhole_C:MultiplexedStaticMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.12"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFoxhole_C:Decal1",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.10"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFoxhole_C:Box",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.9"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFoxhole_C:FoxholeMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.11"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPFoxhole_C",
+    "Name": "Default__BPFoxhole_C",
+    "Properties": {
+      "OccupiableComponent": {
+        "ObjectName": "OccupiableComponent Default__BPFoxhole_C:OccupyComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.13"
+      },
+      "ImpactEffect": {
+        "ObjectName": "BlueprintGeneratedClass RifleImpactEffect_C",
+        "ObjectPath": "War/Content/Blueprints/Items/RifleImpactEffect.1"
+      },
+      "WeaponFireFXClass": {
+        "ObjectName": "BlueprintGeneratedClass TracerFireFX_C",
+        "ObjectPath": "War/Content/Blueprints/TracerFireFX.1"
+      },
+      "ShotSoundCue": {
+        "ObjectName": "SoundCue RifleShot_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Weapons/RifleShot_Cue.0"
+      },
+      "MuzzleFlashPS": {
+        "ObjectName": "ParticleSystem RifleMF",
+        "ObjectPath": "War/Content/FX/RifleMF.58"
+      },
+      "WeaponDamage": 40.0,
+      "MaximumRange": 2500.0,
+      "BestJitterConeHalfAngle": 4.0,
+      "WorstJitterConeHalfAngle": 20.0,
+      "FiringPeriod": 1.0,
+      "TimeToFullFireRateAndAccuracy": 5.0,
+      "EnemyPursueDuration": 5.5,
+      "MuzzleFlashLocationComponent": {
+        "ObjectName": "ArrowComponent Default__BPFoxhole_C:MuzzleFxLocationComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.3"
+      },
+      "FiringConeAngle": 180.0,
+      "FlagMesh": {
+        "ObjectName": "TeamFlagMeshComponent Default__BPFoxhole_C:FlagMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.25"
+      },
+      "bCanBeHidden": true,
+      "ProceduralUseVolumeFactor": 1.0,
+      "NoBuildPhysicalMaterials": [
+        {
+          "ObjectName": "PhysicalMaterial WetSandPhys",
+          "ObjectPath": "War/Content/PhysicalMaterials/WetSandPhys.0"
+        },
+        {
+          "ObjectName": "PhysicalMaterial HighwayPhys",
+          "ObjectPath": "War/Content/PhysicalMaterials/HighwayPhys.0"
+        },
+        {
+          "ObjectName": "PhysicalMaterial T1RoadPhys",
+          "ObjectPath": "War/Content/PhysicalMaterials/T1RoadPhys.0"
+        },
+        {
+          "ObjectName": "PhysicalMaterial T2RoadPhys",
+          "ObjectPath": "War/Content/PhysicalMaterials/T2RoadPhys.0"
+        },
+        {
+          "ObjectName": "PhysicalMaterial T3RoadPhys",
+          "ObjectPath": "War/Content/PhysicalMaterials/T3RoadPhys.0"
+        },
+        {
+          "ObjectName": "PhysicalMaterial SandPhys",
+          "ObjectPath": "War/Content/PhysicalMaterials/SandPhys.0"
+        },
+        {
+          "ObjectName": "PhysicalMaterial TownStone",
+          "ObjectPath": "War/Content/PhysicalMaterials/TownStone.0"
+        }
+      ],
+      "BuildGhostClass": null,
+      "BuildSiteClass": {
+        "ObjectName": "Class StructureBuildSite",
+        "ObjectPath": "/Script/War"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "F4ADAFDF42BE57D344F38FBF9DA3C24A",
+        "SourceString": "A foxhole manned by a soldier that fires at nearby enemies."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D FoxholeTurretIcon",
+        "ObjectPath": "War/Content/Textures/UI/StructureIcons/FoxholeTurretIcon.0"
+      },
+      "BuildLocationType": "EBuildLocationType::Anywhere",
+      "CodeName": "Foxhole",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "FDC127B145FE19FF672F51844E8482C8",
+        "SourceString": "Foxhole"
+      },
+      "ArmourType": "EArmourType::Tier0Structure",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPFoxhole_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.4"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPFoxhole_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.6"
+      },
+      "DestroyedFX": {
+        "ObjectName": "ParticleSystem GrenadeBlast",
+        "ObjectPath": "War/Content/FX/GrenadeBlast.151"
+      },
+      "DestroyedSoundCue": {
+        "ObjectName": "SoundCue StructureExplosionSmall_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/StructureExplosionSmall_Cue.0"
+      },
+      "MaxHealth": 350,
+      "Health": 350,
+      "IsVaultable": false,
+      "MapIntelligenceType": "EMapIntelligenceType::Defense",
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPFoxhole_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.24"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPFoxhole_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.4"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "MuzzleFxLocationComponent",
+    "Outer": "Default__BPFoxhole_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFoxhole_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.4"
+      },
+      "RelativeLocation": {
+        "X": 217.3356,
+        "Y": -1.7466583,
+        "Z": 54.014465
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPFoxhole_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "Box_GEN_VARIABLE",
+    "Outer": "BPFoxhole_C",
+    "Properties": {
+      "AreaClass": {
+        "ObjectName": "Class NavArea_Obstacle",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "StructureDamageableSeeThroughMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapDowncast",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 6.1035156E-05,
+        "Z": 50.0
+      },
+      "RelativeScale3D": {
+        "X": 4.0,
+        "Y": 4.0,
+        "Z": 2.35
+      },
+      "ComponentTags": [
+        "IncludeInBuildSite"
+      ],
+      "bCanEverAffectNavigation": false
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPFoxhole_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 200.0,
+        "Y": 200.0,
+        "Z": 64.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFoxhole_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.4"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 64.0
+      }
+    }
+  },
+  {
+    "Type": "DecalComponent",
+    "Name": "Decal1_GEN_VARIABLE",
+    "Outer": "BPFoxhole_C",
+    "Properties": {
+      "DecalMaterial": {
+        "ObjectName": "MaterialInstanceConstant DirtPatch",
+        "ObjectPath": "War/Content/Materials/Decals/DirtPatch.0"
+      },
+      "SortOrder": 3,
+      "RelativeLocation": {
+        "X": 0.0034609204,
+        "Y": 0.00023951687,
+        "Z": -17.235558
+      },
+      "RelativeRotation": {
+        "Pitch": -90.0,
+        "Yaw": 1.5178198E-06,
+        "Roll": 3.0517578E-05
+      },
+      "RelativeScale3D": {
+        "X": 0.2583126,
+        "Y": 1.4163114,
+        "Z": 1.4163114
+      }
+    }
+  },
+  {
+    "Type": "MultiplexedStaticMeshComponent",
+    "Name": "MultiplexedStaticMesh_GEN_VARIABLE",
+    "Outer": "BPFoxhole_C",
+    "Properties": {
+      "TargetTag": "Multiplexed",
+      "MeshStops": [
+        {
+          "Threshold": 0,
+          "StaticMesh": {
+            "ObjectName": "StaticMesh foxholeturretCritical",
+            "ObjectPath": "War/Content/Meshes/Structures/foxholeturretCritical.2"
+          }
+        },
+        {
+          "Threshold": 33,
+          "StaticMesh": {
+            "ObjectName": "StaticMesh foxholeturretDamaged",
+            "ObjectPath": "War/Content/Meshes/Structures/foxholeturretDamaged.2"
+          }
+        },
+        {
+          "Threshold": 66,
+          "StaticMesh": {
+            "ObjectName": "StaticMesh foxholeturret",
+            "ObjectPath": "War/Content/Meshes/Structures/foxholeturret.2"
+          }
+        }
+      ],
+      "InputValue": 100,
+      "SelectedMeshIndex": 2
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Box",
+    "Outer": "BPFoxhole_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BoxComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Decal1",
+    "Outer": "BPFoxhole_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class DecalComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "FoxholeMesh",
+    "Outer": "BPFoxhole_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "MultiplexedStaticMesh",
+    "Outer": "BPFoxhole_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class MultiplexedStaticMeshComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "OccupiableComponent",
+    "Name": "OccupyComponent",
+    "Outer": "Default__BPFoxhole_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFoxhole_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.4"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -70.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPFoxhole_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPFoxhole_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.14"
+      },
+      "VariableGuid": "B692036D-41768086-1E33EF9D-E041CA90",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPFoxhole_C:FoxholeMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.22"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "B29E8AA4-4D24FD45-3457438B-829CF157",
+      "InternalVariableName": "FoxholeMesh"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BoxComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent BPFoxhole_C:Box_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.5"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "4EBB11EA-49DC42F3-3E662C93-5A38D7BE",
+      "InternalVariableName": "Box"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPFoxhole_C:FoxholeTurretGround_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.23"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "272E8CDA-4588FCC5-18A34F80-124D9B21",
+      "InternalVariableName": "FoxholeTurretGround"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class DecalComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "DecalComponent BPFoxhole_C:Decal1_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.7"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "859499F2-4A4628E6-D67366BE-FBCFD10F",
+      "InternalVariableName": "Decal1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class MultiplexedStaticMeshComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "MultiplexedStaticMeshComponent BPFoxhole_C:MultiplexedStaticMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.8"
+      },
+      "VariableGuid": "AD086836-4193CF9E-828B409F-B8FDB08B",
+      "InternalVariableName": "MultiplexedStaticMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPFoxhole_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPFoxhole_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.16"
+        },
+        {
+          "ObjectName": "SCS_Node BPFoxhole_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.17"
+        },
+        {
+          "ObjectName": "SCS_Node BPFoxhole_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.19"
+        },
+        {
+          "ObjectName": "SCS_Node BPFoxhole_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.20"
+        },
+        {
+          "ObjectName": "SCS_Node BPFoxhole_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.18"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPFoxhole_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.16"
+        },
+        {
+          "ObjectName": "SCS_Node BPFoxhole_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.17"
+        },
+        {
+          "ObjectName": "SCS_Node BPFoxhole_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.19"
+        },
+        {
+          "ObjectName": "SCS_Node BPFoxhole_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.20"
+        },
+        {
+          "ObjectName": "SCS_Node BPFoxhole_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.18"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPFoxhole_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.15"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "FoxholeMesh_GEN_VARIABLE",
+    "Outer": "BPFoxhole_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh foxholeturret",
+        "ObjectPath": "War/Content/Meshes/Structures/foxholeturret.2"
+      },
+      "bGenerateOverlapEvents": false,
+      "bReceivesDecals": false,
+      "bAffectDistanceFieldLighting": false,
+      "CanCharacterStepUpOn": "ECB_No",
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "ComponentTags": [
+        "Multiplexed",
+        "IncludeInBuildSite",
+        "IncludeInBuildGhost"
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "FoxholeTurretGround_GEN_VARIABLE",
+    "Outer": "BPFoxhole_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh FoxholeTurretGround",
+        "ObjectPath": "War/Content/Meshes/Structures/FoxholeTurretGround.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant Crater",
+          "ObjectPath": "War/Content/Materials/Environment/Crater.0"
+        }
+      ],
+      "bAffectDistanceFieldLighting": false,
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "ComponentTags": [
+        "IncludeInBuildSite",
+        "IncludeInBuildGhost"
+      ]
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPFoxhole_C"
+  },
+  {
+    "Type": "TeamFlagMeshComponent",
+    "Name": "FlagMesh",
+    "Outer": "Default__BPFoxhole_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFoxhole_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFoxhole.4"
+      },
+      "RelativeLocation": {
+        "X": -185.71613,
+        "Y": -130.6668,
+        "Z": -102.38333
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 30.001188,
+        "Roll": 0.0
+      },
+      "RelativeScale3D": {
+        "X": 0.7,
+        "Y": 0.7,
+        "Z": 0.5
+      }
+    }
+  }
+]

@@ -1,0 +1,116 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "OilTankerDestroyed",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "OilTankerDestroyed",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x79985"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "OilTankerDestroyed",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant OilTanker",
+            "ObjectPath": "War/Content/Materials/Vehicles/OilTanker.0"
+          },
+          "MaterialSlotName": "Truck",
+          "ImportedMaterialSlotName": "Truck",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 743.8516,
+            "LocalUVDensities": 1.3145387,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TruckColDamaged",
+            "ObjectPath": "War/Content/Materials/Vehicles/TruckColDamaged.0"
+          },
+          "MaterialSlotName": "Truck_ncl1_1",
+          "ImportedMaterialSlotName": "Truck_ncl1_1",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1182.2273,
+            "LocalUVDensities": 2.295954,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownWoodFloor01a",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownWoodFloor01a.0"
+          },
+          "MaterialSlotName": "Material #637",
+          "ImportedMaterialSlotName": "Material #637",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 100.09995,
+            "LocalUVDensities": 1.3982079,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 2.1531482,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -15.477081,
+          "Y": -30.692139,
+          "Z": 172.01518
+        },
+        "BoxExtent": {
+          "X": 199.16934,
+          "Y": 432.336,
+          "Z": 186.19957
+        },
+        "SphereRadius": 458.9775
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup OilTankerDestroyed:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Vehicles/OilTankerDestroyed.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision OilTankerDestroyed:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Vehicles/OilTankerDestroyed.1"
+    },
+    "LightingGuid": "D1CF6431-40794C2B-4570D787-996C44ED",
+    "RenderData": null
+  }
+]

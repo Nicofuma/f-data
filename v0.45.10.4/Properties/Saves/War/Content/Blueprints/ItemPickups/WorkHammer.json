@@ -1,0 +1,109 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WorkHammer_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WorkHammer_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/WorkHammer.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class GearPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "WorkHammer_C",
+    "Name": "Default__WorkHammer_C",
+    "Properties": {
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPHammerComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Items/BPHammerComponent.0"
+      },
+      "CodeName": "WorkHammer",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "CDD85623466B9FE5030799B32B30AFCA",
+        "SourceString": "Hammer"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "DED233DD427B065FCD3D17BD30D6F2E9",
+        "SourceString": "A tool used to build structures and assemble materials."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D HammerIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/HammerIcon.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Primary",
+      "ItemProfileType": "EItemProfileType::Tool",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__WorkHammer_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/WorkHammer.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__WorkHammer_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/WorkHammer.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__WorkHammer_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WorkHammer_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WorkHammer_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/WorkHammer.3"
+      },
+      "VariableGuid": "F13C3093-45B1355C-0BCB71B1-38890D71",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "WorkHammer_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WorkHammer_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/WorkHammer.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__WorkHammer_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__WorkHammer_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/WorkHammer.2"
+      }
+    }
+  }
+]

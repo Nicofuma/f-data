@@ -1,0 +1,106 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_29470",
+    "Outer": "WoodBeam03",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 8.433136,
+              "Y": -1.0127983,
+              "Z": -0.49061298
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 645.8097,
+            "Y": 87.90421,
+            "Z": 20.419476,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "WoodBeam03",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x2F48"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "WoodBeam03",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant WoodRepeating03",
+            "ObjectPath": "War/Content/Materials/Environment/WoodRepeating03.0"
+          },
+          "MaterialSlotName": "WoodRepeating03",
+          "ImportedMaterialSlotName": "WoodRepeating03",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 212.87172,
+            "LocalUVDensities": 410.139,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 410.139,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 8.433136,
+          "Y": -1.0127983,
+          "Z": -0.49061298
+        },
+        "BoxExtent": {
+          "X": 322.90485,
+          "Y": 43.952106,
+          "Z": 10.209738
+        },
+        "SphereRadius": 325.41937
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup WoodBeam03:BodySetup_29470",
+      "ObjectPath": "War/Content/Meshes/Environment/Base/WoodBeam03.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision WoodBeam03:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Base/WoodBeam03.1"
+    },
+    "LightingGuid": "218D1E56-44ED200F-9D2B7EB6-B89B9FCD",
+    "RenderData": null
+  }
+]

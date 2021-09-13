@@ -1,0 +1,105 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "RVFWall01Critical",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": -34.644714,
+              "Z": 258.01553
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 904.76306,
+            "Y": 69.30237,
+            "Z": 516.25226,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "RVFWall01Critical",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x12481"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "RVFWall01Critical",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ConcreteFoundation1",
+            "ObjectPath": "War/Content/Materials/Environment/House/ConcreteFoundation1.0"
+          },
+          "MaterialSlotName": "Concrete",
+          "ImportedMaterialSlotName": "Concrete",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 960.6121,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 960.6121,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.051879883,
+          "Y": -186.1701,
+          "Z": 362.50684
+        },
+        "BoxExtent": {
+          "X": 636.2516,
+          "Y": 238.52594,
+          "Z": 365.08755
+        },
+        "SphereRadius": 771.3594
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup RVFWall01Critical:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/RVFWall01Critical.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision RVFWall01Critical:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Structures/RVFWall01Critical.1"
+    },
+    "LightingGuid": "681C0B19-41AB65F1-3F1ED48C-9DF48A4C",
+    "RenderData": null
+  }
+]

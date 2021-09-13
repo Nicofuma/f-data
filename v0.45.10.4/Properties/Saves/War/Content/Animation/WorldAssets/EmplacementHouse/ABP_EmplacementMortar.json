@@ -1,0 +1,757 @@
+[
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "ABP_EmplacementMortar_C",
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "AnimBlueprintGeneratedClass",
+    "Name": "ABP_EmplacementMortar_C",
+    "Properties": {
+      "BakedStateMachines": [
+        {
+          "MachineName": "crankMovement",
+          "InitialState": 0,
+          "States": [
+            {
+              "StateName": "idle",
+              "Transitions": [
+                {
+                  "CanTakeDelegateIndex": 7,
+                  "CustomResultNodeIndex": -1,
+                  "TransitionIndex": 0,
+                  "bDesiredTransitionReturnValue": true,
+                  "bAutomaticRemainingTimeRule": false,
+                  "PoseEvaluatorLinks": []
+                }
+              ],
+              "StateRootNodeIndex": 4,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "FullyBlendedNotify": -1,
+              "bIsAConduit": false,
+              "EntryRuleNodeIndex": -1,
+              "PlayerNodeIndices": [],
+              "LayerNodeIndices": [],
+              "bAlwaysResetOnEntry": false
+            },
+            {
+              "StateName": "crank",
+              "Transitions": [
+                {
+                  "CanTakeDelegateIndex": 8,
+                  "CustomResultNodeIndex": -1,
+                  "TransitionIndex": 1,
+                  "bDesiredTransitionReturnValue": true,
+                  "bAutomaticRemainingTimeRule": false,
+                  "PoseEvaluatorLinks": []
+                }
+              ],
+              "StateRootNodeIndex": 5,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "FullyBlendedNotify": -1,
+              "bIsAConduit": false,
+              "EntryRuleNodeIndex": -1,
+              "PlayerNodeIndices": [
+                6
+              ],
+              "LayerNodeIndices": [],
+              "bAlwaysResetOnEntry": false
+            }
+          ],
+          "Transitions": [
+            {
+              "PreviousState": 0,
+              "NextState": 1,
+              "CrossfadeDuration": 0.2,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "InterruptNotify": -1,
+              "BlendMode": "EAlphaBlendOption::HermiteCubic",
+              "CustomCurve": null,
+              "BlendProfile": null,
+              "LogicType": "ETransitionLogicType::TLT_StandardBlend",
+              "StateName": "None"
+            },
+            {
+              "PreviousState": 1,
+              "NextState": 0,
+              "CrossfadeDuration": 0.2,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "InterruptNotify": -1,
+              "BlendMode": "EAlphaBlendOption::HermiteCubic",
+              "CustomCurve": null,
+              "BlendProfile": null,
+              "LogicType": "ETransitionLogicType::TLT_StandardBlend",
+              "StateName": "None"
+            }
+          ]
+        }
+      ],
+      "TargetSkeleton": {
+        "ObjectName": "Skeleton EmplacementMortar_Skeleton",
+        "ObjectPath": "War/Content/Meshes/Structures/EmplacementMortar_Skeleton.2"
+      },
+      "OrderedSavedPoseIndicesMap": {
+        "AnimGraph": {
+          "OrderedSavedPoseNodeIndices": []
+        }
+      },
+      "EvaluateGraphExposedInputs": [
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "SourcePropertyName": "CannonPitch",
+              "SourceSubPropertyName": "None",
+              "SourceArrayIndex": 0,
+              "bInstanceIsTarget": false,
+              "PostCopyOperation": "EPostCopyOperation::None",
+              "DestProperty": {
+                "ObjectName": "FloatProperty AnimNode_BlendSpacePlayer:X",
+                "ObjectPath": "/Script/AnimGraphRuntime"
+              },
+              "DestArrayIndex": 0,
+              "Size": 4,
+              "CachedSourceProperty": {
+                "ObjectName": "FloatProperty ABP_EmplacementMortar_C:CannonPitch",
+                "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.11"
+              },
+              "CachedSourceStructSubProperty": null
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "ObjectName": "StructProperty ABP_EmplacementMortar_C:AnimGraphNode_BlendSpacePlayer_F6C9EEE5482F02B46B55B2947B56BB8A",
+            "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.21"
+          }
+        },
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "SourcePropertyName": "CannonYaw",
+              "SourceSubPropertyName": "None",
+              "SourceArrayIndex": 0,
+              "bInstanceIsTarget": false,
+              "PostCopyOperation": "EPostCopyOperation::None",
+              "DestProperty": {
+                "ObjectName": "FloatProperty AnimNode_BlendSpacePlayer:X",
+                "ObjectPath": "/Script/AnimGraphRuntime"
+              },
+              "DestArrayIndex": 0,
+              "Size": 4,
+              "CachedSourceProperty": {
+                "ObjectName": "FloatProperty ABP_EmplacementMortar_C:CannonYaw",
+                "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.12"
+              },
+              "CachedSourceStructSubProperty": null
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "ObjectName": "StructProperty ABP_EmplacementMortar_C:AnimGraphNode_BlendSpacePlayer_BC199F2A4A9EE8B4B37CE3AFC8A3892C",
+            "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.20"
+          }
+        },
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "SourcePropertyName": "isCannonCrankMoving",
+              "SourceSubPropertyName": "None",
+              "SourceArrayIndex": 0,
+              "bInstanceIsTarget": false,
+              "PostCopyOperation": "EPostCopyOperation::None",
+              "DestProperty": {
+                "ObjectName": "BoolProperty AnimNode_TransitionResult:bCanEnterTransition",
+                "ObjectPath": "/Script/Engine"
+              },
+              "DestArrayIndex": 0,
+              "Size": 1,
+              "CachedSourceProperty": {
+                "ObjectName": "BoolProperty ABP_EmplacementMortar_C:isCannonCrankMoving",
+                "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.8"
+              },
+              "CachedSourceStructSubProperty": null
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "ObjectName": "StructProperty ABP_EmplacementMortar_C:AnimGraphNode_TransitionResult_D95C8780487E68B324FAD1B73AA73797",
+            "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.28"
+          }
+        },
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "SourcePropertyName": "isCannonCrankMoving",
+              "SourceSubPropertyName": "None",
+              "SourceArrayIndex": 0,
+              "bInstanceIsTarget": false,
+              "PostCopyOperation": "EPostCopyOperation::LogicalNegateBool",
+              "DestProperty": {
+                "ObjectName": "BoolProperty AnimNode_TransitionResult:bCanEnterTransition",
+                "ObjectPath": "/Script/Engine"
+              },
+              "DestArrayIndex": 0,
+              "Size": 1,
+              "CachedSourceProperty": {
+                "ObjectName": "BoolProperty ABP_EmplacementMortar_C:isCannonCrankMoving",
+                "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.8"
+              },
+              "CachedSourceStructSubProperty": null
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "ObjectName": "StructProperty ABP_EmplacementMortar_C:AnimGraphNode_TransitionResult_D01A3E694F0CBA181F40009323872EAB",
+            "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.27"
+          }
+        }
+      ],
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty ABP_EmplacementMortar_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.0"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function ABP_EmplacementMortar_C:ExecuteUbergraph_ABP_EmplacementMortar",
+        "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class AnimInstance",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty ABP_EmplacementMortar_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.0"
+      },
+      {
+        "ObjectName": "Function ABP_EmplacementMortar_C:AnimGraph",
+        "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.17"
+      },
+      {
+        "ObjectName": "Function ABP_EmplacementMortar_C:BlueprintUpdateAnimation",
+        "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.9"
+      },
+      {
+        "ObjectName": "Function ABP_EmplacementMortar_C:ExecuteUbergraph_ABP_EmplacementMortar",
+        "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.5"
+      },
+      {
+        "ObjectName": "StructProperty ABP_EmplacementMortar_C:AnimGraphNode_Root_9EA9C1534ED8CAAC30194CBC28570ACB",
+        "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.3"
+      },
+      {
+        "ObjectName": "StructProperty ABP_EmplacementMortar_C:AnimGraphNode_TransitionResult_D01A3E694F0CBA181F40009323872EAB",
+        "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.27"
+      },
+      {
+        "ObjectName": "StructProperty ABP_EmplacementMortar_C:AnimGraphNode_TransitionResult_D95C8780487E68B324FAD1B73AA73797",
+        "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.28"
+      },
+      {
+        "ObjectName": "StructProperty ABP_EmplacementMortar_C:AnimGraphNode_SequencePlayer_1E5D19BB419F767F865A76B4BFFC25D8",
+        "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.23"
+      },
+      {
+        "ObjectName": "StructProperty ABP_EmplacementMortar_C:AnimGraphNode_StateResult_1F1BB747484E8071B9BC62A46E09DB15",
+        "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.25"
+      },
+      {
+        "ObjectName": "StructProperty ABP_EmplacementMortar_C:AnimGraphNode_StateResult_6F516D664848085F5BDA2297798CF9B4",
+        "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.26"
+      },
+      {
+        "ObjectName": "StructProperty ABP_EmplacementMortar_C:AnimGraphNode_StateMachine_27FFCBB24B143B9C92BD31B6C60A2BBD",
+        "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.24"
+      },
+      {
+        "ObjectName": "StructProperty ABP_EmplacementMortar_C:AnimGraphNode_BlendSpacePlayer_BC199F2A4A9EE8B4B37CE3AFC8A3892C",
+        "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.20"
+      },
+      {
+        "ObjectName": "StructProperty ABP_EmplacementMortar_C:AnimGraphNode_BlendSpacePlayer_F6C9EEE5482F02B46B55B2947B56BB8A",
+        "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.21"
+      },
+      {
+        "ObjectName": "StructProperty ABP_EmplacementMortar_C:AnimGraphNode_LayeredBoneBlend_7DE253EA4385328A6E06FCBB1C26DB68",
+        "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.22"
+      },
+      {
+        "ObjectName": "BoolProperty ABP_EmplacementMortar_C:isCannonCrankMoving",
+        "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.8"
+      },
+      {
+        "ObjectName": "FloatProperty ABP_EmplacementMortar_C:CannonYaw",
+        "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.12"
+      },
+      {
+        "ObjectName": "FloatProperty ABP_EmplacementMortar_C:CannonPitch",
+        "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.11"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 1536,
+    "ClassWithin": null,
+    "ClassConfigName": "/Game/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar_2559",
+    "ClassGeneratedBy": null,
+    "Interfaces": [],
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "ABP_EmplacementMortar_C",
+    "Name": "Default__ABP_EmplacementMortar_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "AnimGraphNode_Root_9EA9C1534ED8CAAC30194CBC28570ACB": {
+        "Result": {
+          "LinkID": 9
+        },
+        "Name": "AnimGraph",
+        "Group": "None"
+      },
+      "AnimGraphNode_TransitionResult_D01A3E694F0CBA181F40009323872EAB": {
+        "bCanEnterTransition": false
+      },
+      "AnimGraphNode_TransitionResult_D95C8780487E68B324FAD1B73AA73797": {
+        "bCanEnterTransition": false
+      },
+      "AnimGraphNode_SequencePlayer_1E5D19BB419F767F865A76B4BFFC25D8": {
+        "Sequence": {
+          "ObjectName": "AnimSequence Anim_EmplacementMortar_cranking",
+          "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/Anim_EmplacementMortar_cranking.0"
+        },
+        "PlayRateBasis": 1.0,
+        "PlayRate": 1.0,
+        "PlayRateScaleBiasClamp": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        },
+        "StartPosition": 0.0,
+        "bLoopAnimation": true,
+        "GroupIndex": -1,
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "AnimGraphNode_StateResult_1F1BB747484E8071B9BC62A46E09DB15": {
+        "Result": {
+          "LinkID": 3
+        },
+        "Name": "None",
+        "Group": "None"
+      },
+      "AnimGraphNode_StateResult_6F516D664848085F5BDA2297798CF9B4": {
+        "Result": {
+          "LinkID": -1
+        },
+        "Name": "None",
+        "Group": "None"
+      },
+      "AnimGraphNode_StateMachine_27FFCBB24B143B9C92BD31B6C60A2BBD": {
+        "StateMachineIndexInClass": 0,
+        "MaxTransitionsPerFrame": 3,
+        "bSkipFirstUpdateTransition": true,
+        "bReinitializeOnBecomingRelevant": true
+      },
+      "AnimGraphNode_BlendSpacePlayer_BC199F2A4A9EE8B4B37CE3AFC8A3892C": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0,
+        "PlayRate": 1.0,
+        "bLoop": true,
+        "bResetPlayTimeWhenBlendSpaceChanges": true,
+        "StartPosition": 0.0,
+        "BlendSpace": {
+          "ObjectName": "BlendSpace1D BS_EmplacementMortar_horizontalMovement",
+          "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/BS_EmplacementMortar_horizontalMovement.0"
+        },
+        "PreviousBlendSpace": null,
+        "GroupIndex": -1,
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "AnimGraphNode_BlendSpacePlayer_F6C9EEE5482F02B46B55B2947B56BB8A": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0,
+        "PlayRate": 1.0,
+        "bLoop": true,
+        "bResetPlayTimeWhenBlendSpaceChanges": true,
+        "StartPosition": 0.0,
+        "BlendSpace": {
+          "ObjectName": "BlendSpace1D BS_EmplacementMortar_verticalMovement",
+          "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/BS_EmplacementMortar_verticalMovement.0"
+        },
+        "PreviousBlendSpace": null,
+        "GroupIndex": -1,
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "AnimGraphNode_LayeredBoneBlend_7DE253EA4385328A6E06FCBB1C26DB68": {
+        "BasePose": {
+          "LinkID": 7
+        },
+        "BlendPoses": [
+          {
+            "LinkID": 8
+          },
+          {
+            "LinkID": 6
+          }
+        ],
+        "LayerSetup": [
+          {
+            "BranchFilters": [
+              {
+                "BoneName": "pistonBottom",
+                "BlendDepth": 0
+              },
+              {
+                "BoneName": "verticalRotationPivot",
+                "BlendDepth": 0
+              }
+            ]
+          },
+          {
+            "BranchFilters": [
+              {
+                "BoneName": "hinge",
+                "BlendDepth": 0
+              }
+            ]
+          }
+        ],
+        "BlendWeights": [
+          1.0,
+          1.0
+        ],
+        "bMeshSpaceRotationBlend": false,
+        "bMeshSpaceScaleBlend": false,
+        "CurveBlendOption": "ECurveBlendOption::MaxWeight",
+        "bBlendRootMotionBasedOnRootBone": true,
+        "LODThreshold": -1,
+        "PerBoneBlendWeights": [
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 0.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 0.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 1.0
+          },
+          {
+            "SourceIndex": 1,
+            "BlendWeight": 1.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 1.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 1.0
+          }
+        ],
+        "SkeletonGuid": "AE782813-4F9D8C30-669F4892-AA14F8DF",
+        "VirtualBoneGuid": "00000000-00000000-00000000-00000000"
+      }
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_Root_9EA9C1534ED8CAAC30194CBC28570ACB",
+    "Outer": "ABP_EmplacementMortar_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_Root",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_ABP_EmplacementMortar",
+    "PropertyFlags": 148
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ABP_EmplacementMortar",
+    "Outer": "ABP_EmplacementMortar_C",
+    "Children": [
+      {
+        "ObjectName": "IntProperty ABP_EmplacementMortar_C:ExecuteUbergraph_ABP_EmplacementMortar.EntryPoint",
+        "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.4"
+      },
+      {
+        "ObjectName": "ObjectProperty ABP_EmplacementMortar_C:ExecuteUbergraph_ABP_EmplacementMortar.CallFunc_GetOwningActor_ReturnValue",
+        "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.19"
+      },
+      {
+        "ObjectName": "InterfaceProperty ABP_EmplacementMortar_C:ExecuteUbergraph_ABP_EmplacementMortar.K2Node_DynamicCast_AsGunner_Support",
+        "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.18"
+      },
+      {
+        "ObjectName": "BoolProperty ABP_EmplacementMortar_C:ExecuteUbergraph_ABP_EmplacementMortar.K2Node_DynamicCast_bSuccess",
+        "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.7"
+      },
+      {
+        "ObjectName": "FloatProperty ABP_EmplacementMortar_C:ExecuteUbergraph_ABP_EmplacementMortar.K2Node_Event_DeltaTimeX",
+        "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.15"
+      },
+      {
+        "ObjectName": "BoolProperty ABP_EmplacementMortar_C:ExecuteUbergraph_ABP_EmplacementMortar.CallFunc_IsGunnerWorking_ReturnValue",
+        "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.6"
+      },
+      {
+        "ObjectName": "StructProperty ABP_EmplacementMortar_C:ExecuteUbergraph_ABP_EmplacementMortar.CallFunc_GetGunnerYawAndPitch_ReturnValue",
+        "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.29"
+      },
+      {
+        "ObjectName": "FloatProperty ABP_EmplacementMortar_C:ExecuteUbergraph_ABP_EmplacementMortar.CallFunc_BreakVector2D_X",
+        "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.13"
+      },
+      {
+        "ObjectName": "FloatProperty ABP_EmplacementMortar_C:ExecuteUbergraph_ABP_EmplacementMortar.CallFunc_BreakVector2D_Y",
+        "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.14"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsGunnerWorking_ReturnValue",
+    "Outer": "ExecuteUbergraph_ABP_EmplacementMortar",
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess",
+    "Outer": "ExecuteUbergraph_ABP_EmplacementMortar",
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "isCannonCrankMoving",
+    "Outer": "ABP_EmplacementMortar_C",
+    "PropertyFlags": 65541,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "Function",
+    "Name": "BlueprintUpdateAnimation",
+    "Outer": "ABP_EmplacementMortar_C",
+    "SuperStruct": {
+      "ObjectName": "Function AnimInstance:BlueprintUpdateAnimation",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "FloatProperty ABP_EmplacementMortar_C:BlueprintUpdateAnimation.DeltaTimeX",
+        "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.10"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "DeltaTimeX",
+    "Outer": "BlueprintUpdateAnimation",
+    "PropertyFlags": 148
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CannonPitch",
+    "Outer": "ABP_EmplacementMortar_C",
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CannonYaw",
+    "Outer": "ABP_EmplacementMortar_C",
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector2D_X",
+    "Outer": "ExecuteUbergraph_ABP_EmplacementMortar"
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector2D_Y",
+    "Outer": "ExecuteUbergraph_ABP_EmplacementMortar"
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "K2Node_Event_DeltaTimeX",
+    "Outer": "ExecuteUbergraph_ABP_EmplacementMortar"
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraph",
+    "Outer": "AnimGraph",
+    "PropertyFlags": 384,
+    "Struct": {
+      "ObjectName": "ScriptStruct PoseLink",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "AnimGraph",
+    "Outer": "ABP_EmplacementMortar_C",
+    "Children": [
+      {
+        "ObjectName": "StructProperty ABP_EmplacementMortar_C:AnimGraph.AnimGraph",
+        "ObjectPath": "War/Content/Animation/WorldAssets/EmplacementHouse/ABP_EmplacementMortar.16"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "InterfaceProperty",
+    "Name": "K2Node_DynamicCast_AsGunner_Support",
+    "Outer": "ExecuteUbergraph_ABP_EmplacementMortar",
+    "InterfaceClass": {
+      "ObjectName": "Class GunnerSupport",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetOwningActor_ReturnValue",
+    "Outer": "ExecuteUbergraph_ABP_EmplacementMortar",
+    "PropertyClass": {
+      "ObjectName": "Class Actor",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_BlendSpacePlayer_BC199F2A4A9EE8B4B37CE3AFC8A3892C",
+    "Outer": "ABP_EmplacementMortar_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_BlendSpacePlayer",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_BlendSpacePlayer_F6C9EEE5482F02B46B55B2947B56BB8A",
+    "Outer": "ABP_EmplacementMortar_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_BlendSpacePlayer",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_LayeredBoneBlend_7DE253EA4385328A6E06FCBB1C26DB68",
+    "Outer": "ABP_EmplacementMortar_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_LayeredBoneBlend",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_SequencePlayer_1E5D19BB419F767F865A76B4BFFC25D8",
+    "Outer": "ABP_EmplacementMortar_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_SequencePlayer",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_StateMachine_27FFCBB24B143B9C92BD31B6C60A2BBD",
+    "Outer": "ABP_EmplacementMortar_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_StateMachine",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_StateResult_1F1BB747484E8071B9BC62A46E09DB15",
+    "Outer": "ABP_EmplacementMortar_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_StateResult",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_StateResult_6F516D664848085F5BDA2297798CF9B4",
+    "Outer": "ABP_EmplacementMortar_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_StateResult",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_TransitionResult_D01A3E694F0CBA181F40009323872EAB",
+    "Outer": "ABP_EmplacementMortar_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_TransitionResult",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_TransitionResult_D95C8780487E68B324FAD1B73AA73797",
+    "Outer": "ABP_EmplacementMortar_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_TransitionResult",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_GetGunnerYawAndPitch_ReturnValue",
+    "Outer": "ExecuteUbergraph_ABP_EmplacementMortar",
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector2D",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  }
+]

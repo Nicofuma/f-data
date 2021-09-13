@@ -1,0 +1,361 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "TownWLargeG1_C",
+    "Super": "TownWLargeGS1_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript TownWLargeG1_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeG1.18"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler TownWLargeG1_C:InheritableComponentHandler",
+        "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeG1.14"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass TownWLargeGS1_C",
+      "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeGS1.1"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "TownWLargeG1_C",
+    "Name": "Default__TownWLargeG1_C",
+    "Properties": {
+      "GenericStockpileComponent": {
+        "ObjectName": "GenericItemStockpileComponent Default__TownWLargeG1_C:GenericStockpileComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeG1.13"
+      },
+      "TechTreeComponent": {
+        "ObjectName": "TechTreeComponent Default__TownWLargeG1_C:TechTreeComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeG1.20"
+      },
+      "MapIntelligenceSourceComponent": {
+        "ObjectName": "MapIntelligenceSourceComponent Default__TownWLargeG1_C:MapIntelligenceSource",
+        "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeG1.15"
+      },
+      "SpawnPoint0": {
+        "ObjectName": "ChildActorComponent Default__TownWLargeG1_C:SpawnPoint0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeG1.10"
+      },
+      "SpawnPoint1": {
+        "ObjectName": "ChildActorComponent Default__TownWLargeG1_C:SpawnPoint1",
+        "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeG1.11"
+      },
+      "SpawnPoints": [
+        {
+          "ObjectName": "ChildActorComponent Default__TownWLargeG1_C:SpawnPoint0",
+          "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeG1.10"
+        },
+        {
+          "ObjectName": "ChildActorComponent Default__TownWLargeG1_C:SpawnPoint1",
+          "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeG1.11"
+        }
+      ],
+      "BuildSiteClass": {
+        "ObjectName": "BlueprintGeneratedClass TownWLargeG1BuildSite_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeG1BuildSite.0"
+      },
+      "BaseStructureClass": {
+        "ObjectName": "BlueprintGeneratedClass TownWLargeG1Destroyed_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeG1Destroyed.1"
+      },
+      "CodeName": "GarrisonStation1",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__TownWLargeG1_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeG1.4"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__TownWLargeG1_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeG1.5"
+      },
+      "GarrisonComponent": {
+        "ObjectName": "GarrisonComponent Default__TownWLargeG1_C:GarrisonComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeG1.12"
+      },
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__TownWLargeG1_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeG1.19"
+      },
+      "NetCullDistanceSquared": 144000000.0,
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__TownWLargeG1_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeG1.4"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "MobileSpawnPointArrow",
+    "Outer": "SpawnPoint0_WarMobilePlayerSpawn_CAT"
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "MobileSpawnPointArrow",
+    "Outer": "SpawnPoint1_WarMobilePlayerSpawn_CAT"
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__TownWLargeG1_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__TownWLargeG1_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 700.0,
+        "Y": 537.16425,
+        "Z": 395.37766
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__TownWLargeG1_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeG1.4"
+      },
+      "RelativeLocation": {
+        "X": 753.95764,
+        "Y": 657.381,
+        "Z": 239.80078
+      },
+      "RelativeScale3D": {
+        "X": 1.1795534,
+        "Y": 1.3226577,
+        "Z": 0.6102398
+      }
+    }
+  },
+  {
+    "Type": "BPStructureInteriorArea_C",
+    "Name": "BPStructureInteriorArea1_GEN_VARIABLE",
+    "Outer": "TownWLargeG1_C",
+    "Properties": {
+      "OnComponentBeginOverlap": null,
+      "OnComponentEndOverlap": null
+    }
+  },
+  {
+    "Type": "BPStructureInteriorArea_C",
+    "Name": "BPStructureInteriorArea_GEN_VARIABLE",
+    "Outer": "TownWLargeG1_C",
+    "Properties": {
+      "OnComponentBeginOverlap": null,
+      "OnComponentEndOverlap": null
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "SpawnPoint0_WarPlayerStart_CAT"
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "SpawnPoint1_WarPlayerStart_CAT"
+  },
+  {
+    "Type": "ChildActorComponent",
+    "Name": "SpawnPoint0",
+    "Outer": "Default__TownWLargeG1_C",
+    "Properties": {
+      "ChildActorTemplate": {
+        "ObjectName": "WarMobilePlayerSpawn Default__TownWLargeG1_C:SpawnPoint0.SpawnPoint0_WarMobilePlayerSpawn_CAT",
+        "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeG1.21"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__TownWLargeG1_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeG1.4"
+      }
+    }
+  },
+  {
+    "Type": "ChildActorComponent",
+    "Name": "SpawnPoint1",
+    "Outer": "Default__TownWLargeG1_C",
+    "Properties": {
+      "ChildActorTemplate": {
+        "ObjectName": "WarMobilePlayerSpawn Default__TownWLargeG1_C:SpawnPoint1.SpawnPoint1_WarMobilePlayerSpawn_CAT",
+        "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeG1.22"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__TownWLargeG1_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeG1.4"
+      }
+    }
+  },
+  {
+    "Type": "GarrisonComponent",
+    "Name": "GarrisonComponent",
+    "Outer": "Default__TownWLargeG1_C"
+  },
+  {
+    "Type": "GenericItemStockpileComponent",
+    "Name": "GenericStockpileComponent",
+    "Outer": "Default__TownWLargeG1_C"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "TownWLargeG1_C",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "BlueprintGeneratedClass BPStructureInteriorArea_C",
+            "ObjectPath": "War/Content/Blueprints/Structures/BPStructureInteriorArea.0"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "BPStructureInteriorArea_C TownWLargeG1_C:BPStructureInteriorArea1_GEN_VARIABLE",
+            "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeG1.6"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass TownWLargeGS1_C",
+              "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeGS1.1"
+            },
+            "SCSVariableName": "BPStructureInteriorArea1",
+            "AssociatedGuid": "87148140-4B70DE63-78BCBAA5-DC8FFEA3"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "BlueprintGeneratedClass BPStructureInteriorArea_C",
+            "ObjectPath": "War/Content/Blueprints/Structures/BPStructureInteriorArea.0"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "BPStructureInteriorArea_C TownWLargeG1_C:BPStructureInteriorArea_GEN_VARIABLE",
+            "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeG1.7"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass TownWLargeGS1_C",
+              "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeGS1.1"
+            },
+            "SCSVariableName": "BPStructureInteriorArea",
+            "AssociatedGuid": "74CBDAA4-4F52C1A9-F21B07BA-AAD8D8F5"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MapIntelligenceSourceComponent",
+    "Name": "MapIntelligenceSource",
+    "Outer": "Default__TownWLargeG1_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "TownWLargeG1_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent TownWLargeG1_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeG1.16"
+      },
+      "VariableGuid": "5C50591B-4D6D1BD8-7978FC83-4D4DD6AE",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "TownWLargeG1_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node TownWLargeG1_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeG1.17"
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__TownWLargeG1_C"
+  },
+  {
+    "Type": "TechTreeComponent",
+    "Name": "TechTreeComponent",
+    "Outer": "Default__TownWLargeG1_C"
+  },
+  {
+    "Type": "WarMobilePlayerSpawn",
+    "Name": "SpawnPoint0_WarMobilePlayerSpawn_CAT",
+    "Outer": "SpawnPoint0",
+    "Properties": {
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__TownWLargeG1_C:SpawnPoint0.SpawnPoint0_WarMobilePlayerSpawn_CAT.MobileSpawnPointArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeG1.2"
+      }
+    }
+  },
+  {
+    "Type": "WarMobilePlayerSpawn",
+    "Name": "SpawnPoint1_WarMobilePlayerSpawn_CAT",
+    "Outer": "SpawnPoint1",
+    "Properties": {
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__TownWLargeG1_C:SpawnPoint1.SpawnPoint1_WarMobilePlayerSpawn_CAT.MobileSpawnPointArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeG1.3"
+      }
+    }
+  },
+  {
+    "Type": "WarPlayerStart",
+    "Name": "SpawnPoint0_WarPlayerStart_CAT",
+    "Outer": "SpawnPoint0",
+    "Properties": {
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent Default__TownWLargeG1_C:SpawnPoint0.SpawnPoint0_WarPlayerStart_CAT.CollisionCapsule",
+        "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeG1.8"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent Default__TownWLargeG1_C:SpawnPoint0.SpawnPoint0_WarPlayerStart_CAT.CollisionCapsule",
+        "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeG1.8"
+      }
+    }
+  },
+  {
+    "Type": "WarPlayerStart",
+    "Name": "SpawnPoint1_WarPlayerStart_CAT",
+    "Outer": "SpawnPoint1",
+    "Properties": {
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent Default__TownWLargeG1_C:SpawnPoint1.SpawnPoint1_WarPlayerStart_CAT.CollisionCapsule",
+        "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeG1.9"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent Default__TownWLargeG1_C:SpawnPoint1.SpawnPoint1_WarPlayerStart_CAT.CollisionCapsule",
+        "ObjectPath": "War/Content/Blueprints/Structures/Town/TownWLargeG1.9"
+      }
+    }
+  }
+]

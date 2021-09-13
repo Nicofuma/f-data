@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_817",
+    "Outer": "SmallPlants02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SmallPlants02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x76D0"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SmallPlants02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant SmallPlants01",
+            "ObjectPath": "War/Content/Materials/Environment/SmallPlants01.0"
+          },
+          "MaterialSlotName": "SmallPlants01",
+          "ImportedMaterialSlotName": "SmallPlants01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 42.379433,
+            "LocalUVDensities": 122.811584,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 122.811584,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 6.747078,
+          "Y": -12.952412,
+          "Z": 48.673557
+        },
+        "BoxExtent": {
+          "X": 35.367043,
+          "Y": 41.039234,
+          "Z": 49.026047
+        },
+        "SphereRadius": 67.105095
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SmallPlants02:BodySetup_817",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/SmallPlants02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SmallPlants02:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/SmallPlants02.1"
+    },
+    "LightingGuid": "ACB720CC-46FDB6BA-DC7B12AE-D34EE08A",
+    "RenderData": null
+  }
+]

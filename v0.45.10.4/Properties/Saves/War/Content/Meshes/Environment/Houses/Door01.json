@@ -1,0 +1,106 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Door01",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 1.5258789E-05,
+              "Y": 0.0,
+              "Z": 140.16118
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 128.06998,
+            "Y": 12.845404,
+            "Z": 283.02347,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "Door01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x7D43"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Door01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Door01",
+            "ObjectPath": "War/Content/Materials/Environment/House/Door01.0"
+          },
+          "MaterialSlotName": "Door01",
+          "ImportedMaterialSlotName": "Door01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 316.94342,
+            "LocalUVDensities": 339.1758,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 339.1758,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.5258789E-05,
+          "Y": 0.0,
+          "Z": 140.16118
+        },
+        "BoxExtent": {
+          "X": 64.03499,
+          "Y": 16.493301,
+          "Z": 141.51173
+        },
+        "SphereRadius": 155.44145
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Door01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Houses/Door01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Door01:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Houses/Door01.1"
+    },
+    "LightingGuid": "A9749944-450A56FA-63C8CE9B-D36987E4",
+    "RenderData": null
+  }
+]

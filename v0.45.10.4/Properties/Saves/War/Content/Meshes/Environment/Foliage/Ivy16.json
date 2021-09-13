@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Ivy16",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "Ivy16",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x19A7"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Ivy16",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Ivy",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Ivy.0"
+          },
+          "MaterialSlotName": "Material #1043",
+          "ImportedMaterialSlotName": "Material #1043",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 564.0625,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 564.0625,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 18.448975,
+          "Y": 4.903221,
+          "Z": -102.11603
+        },
+        "BoxExtent": {
+          "X": 480.30133,
+          "Y": 128.83693,
+          "Z": 206.36578
+        },
+        "SphereRadius": 501.25137
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Ivy16:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/Ivy16.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Ivy16:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/Ivy16.1"
+    },
+    "LightingGuid": "12C44C6F-40A8D502-812012B6-E8ACFAEC",
+    "RenderData": null
+  }
+]

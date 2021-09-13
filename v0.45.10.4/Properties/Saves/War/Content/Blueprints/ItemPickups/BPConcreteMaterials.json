@@ -1,0 +1,106 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPConcreteMaterials_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPConcreteMaterials_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPConcreteMaterials.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class BasicItemPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPConcreteMaterials_C",
+    "Name": "Default__BPConcreteMaterials_C",
+    "Properties": {
+      "Encumbrance": 100,
+      "CodeName": "Concrete",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "5CC855AD44D4A3DE4CD46FAF3F453A75",
+        "SourceString": "Concrete Materials"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "4D5A76724A74523DF63DEB81EDAB21D5",
+        "SourceString": "A concrete compound that is used to build heavily fortified structures."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D CivicMaterialsIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/CivicMaterialsIcon.0"
+      },
+      "ItemCategory": "EItemCategory::Supplies",
+      "ItemProfileType": "EItemProfileType::OnSiteResources",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPConcreteMaterials_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPConcreteMaterials.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPConcreteMaterials_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPConcreteMaterials.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPConcreteMaterials_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPConcreteMaterials_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPConcreteMaterials_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPConcreteMaterials.3"
+      },
+      "VariableGuid": "7DFC56CB-4050DE35-BFFBD28A-174B5F02",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPConcreteMaterials_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPConcreteMaterials_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPConcreteMaterials.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPConcreteMaterials_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPConcreteMaterials_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPConcreteMaterials.2"
+      }
+    }
+  }
+]

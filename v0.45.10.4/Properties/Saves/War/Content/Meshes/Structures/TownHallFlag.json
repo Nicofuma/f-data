@@ -1,0 +1,99 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "TownHallFlag",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "TownHallFlag",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x303C"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TownHallFlag",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RepeatingMetal3",
+            "ObjectPath": "War/Content/Materials/Resources/RepeatingMetal3.0"
+          },
+          "MaterialSlotName": "Material #3904",
+          "ImportedMaterialSlotName": "Material #3904",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 40.368557,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FlagHangingWardens",
+            "ObjectPath": "War/Content/Materials/Structures/FlagHangingWardens.0"
+          },
+          "MaterialSlotName": "Flag",
+          "ImportedMaterialSlotName": "Flag",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 269.17657,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 255.09161,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -34.829865,
+          "Y": 67.102234,
+          "Z": 663.45746
+        },
+        "BoxExtent": {
+          "X": 492.1664,
+          "Y": 526.6764,
+          "Z": 126.32056
+        },
+        "SphereRadius": 728.4793
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TownHallFlag:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/TownHallFlag.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TownHallFlag:NavCollision_4",
+      "ObjectPath": "War/Content/Meshes/Structures/TownHallFlag.1"
+    },
+    "LightingGuid": "BD9E103C-4DF33E3B-97CA0CB2-A367C1D5",
+    "RenderData": null
+  }
+]

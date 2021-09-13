@@ -1,0 +1,104 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Ivy04",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Ivy04",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x4584"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Ivy04",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant IVy",
+            "ObjectPath": "War/Content/Materials/Environment/IVy.0"
+          },
+          "MaterialSlotName": "IVy",
+          "ImportedMaterialSlotName": "IVy",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1007.39984,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant IVy2",
+            "ObjectPath": "War/Content/Materials/Environment/IVy2.0"
+          },
+          "MaterialSlotName": "IVy2",
+          "ImportedMaterialSlotName": "IVy2",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 98.33144,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 331.8019,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -428.12427,
+          "Y": -14.801788,
+          "Z": -11.206116
+        },
+        "BoxExtent": {
+          "X": 434.90192,
+          "Y": 72.098495,
+          "Z": 66.99366
+        },
+        "SphereRadius": 435.95352
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Ivy04:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/Ivy04.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Ivy04:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/Ivy04.1"
+    },
+    "LightingGuid": "3108E768-43C54C37-08CE9D97-CFCE7DF3",
+    "RenderData": null
+  }
+]

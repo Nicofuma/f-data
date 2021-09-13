@@ -1,0 +1,78 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "GibsTorso",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "GibsTorso",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x31FC"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "GibsTorso",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Gibs",
+            "ObjectPath": "War/Content/Materials/Character/Gibs.0"
+          },
+          "MaterialSlotName": "Gibs",
+          "ImportedMaterialSlotName": "Gibs",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 221.68492,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 221.68492,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 27.907986,
+          "Y": 19.281143,
+          "Z": 26.103104
+        },
+        "SphereRadius": 33.176086
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup GibsTorso:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Character/Gibs/GibsTorso.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision GibsTorso:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Character/Gibs/GibsTorso.1"
+    },
+    "LightingGuid": "F059C084-42F579A8-EB6367BB-B2AB3B47",
+    "RenderData": null
+  }
+]

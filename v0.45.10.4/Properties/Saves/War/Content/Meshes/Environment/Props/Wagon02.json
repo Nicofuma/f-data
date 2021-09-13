@@ -1,0 +1,111 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Wagon02",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 38.392403,
+              "Y": 0.0,
+              "Z": 79.86429
+            },
+            "Rotation": {
+              "Pitch": -18.194782,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 169.74597,
+            "Y": 166.38863,
+            "Z": 155.13835,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "BuildScale3D": {
+        "X": 1.4,
+        "Y": 1.4,
+        "Z": 1.4
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Wagon02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x1DC8A"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Wagon02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Wagon02",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Wagon02.0"
+          },
+          "MaterialSlotName": "Wagon_Inst",
+          "ImportedMaterialSlotName": "Wagon_Inst",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 724.47107,
+            "LocalUVDensities": 751.2719,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 751.2719,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 99.25971,
+          "Y": 0.0,
+          "Z": 88.40589
+        },
+        "BoxExtent": {
+          "X": 173.16711,
+          "Y": 95.11324,
+          "Z": 93.15861
+        },
+        "SphereRadius": 198.45503
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Wagon02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Wagon02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Wagon02:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Wagon02.1"
+    },
+    "LightingGuid": "333B58D8-47BE6A09-BDBC6F89-0DCDD0A2",
+    "RenderData": null
+  }
+]

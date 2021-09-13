@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SpotlightCone2",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "SpotlightCone2",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xDFA"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SpotlightCone2",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant LightBeamSpotlight",
+            "ObjectPath": "War/Content/FX/Materials/LightBeamSpotlight.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 2906.593,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 2906.593,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -1949.6866,
+          "Z": 0.00024414062
+        },
+        "BoxExtent": {
+          "X": 1900.3943,
+          "Y": 1949.6866,
+          "Z": 1900.3942
+        },
+        "SphereRadius": 2722.6416
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SpotlightCone2:BodySetup_0",
+      "ObjectPath": "War/Content/FX/Mesh/SpotlightCone2.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SpotlightCone2:NavCollision_2",
+      "ObjectPath": "War/Content/FX/Mesh/SpotlightCone2.1"
+    },
+    "LightingGuid": "7B426947-4E5E7E8F-9EB34CAB-DD7F137C",
+    "RenderData": null
+  }
+]

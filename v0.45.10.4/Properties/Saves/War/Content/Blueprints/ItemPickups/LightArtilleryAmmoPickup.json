@@ -1,0 +1,184 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "ItemMeshSK",
+    "Outer": "LightArtilleryAmmoPickup_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SkeletalMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "LightArtilleryAmmoPickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript LightArtilleryAmmoPickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/LightArtilleryAmmoPickup.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class ExplosiveAmmoPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty LightArtilleryAmmoPickup_C:ItemMeshSK",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/LightArtilleryAmmoPickup.0"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "LightArtilleryAmmoPickup_C",
+    "Name": "Default__LightArtilleryAmmoPickup_C",
+    "Properties": {
+      "ExplosionClass": {
+        "ObjectName": "BlueprintGeneratedClass LightArtilleryExplosion_C",
+        "ObjectPath": "War/Content/Blueprints/Items/LightArtilleryExplosion.1"
+      },
+      "ShotSoundCue": {
+        "ObjectName": "SoundCue LightArtilleryShotW_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Weapons/StaticArtillery/LightArtilleryShotW_Cue.0"
+      },
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPLightArtilleryAmmoComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Items/BPLightArtilleryAmmoComponent.0"
+      },
+      "Encumbrance": 250,
+      "CodeName": "LightArtilleryAmmo",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "13AB0A45458F0A204D117D8A93C2BBF5",
+        "SourceString": "120mm"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "11BDEECC4BE58B703497BBBD7D816687",
+        "SourceString": "Payload for light artillery weapons."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D LightArtilleryAmmoItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/LightArtilleryAmmoItemIcon.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Large",
+      "ItemCategory": "EItemCategory::HeavyArms",
+      "ItemProfileType": "EItemProfileType::HeavyAmmo",
+      "bIsLarge": true,
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__LightArtilleryAmmoPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/LightArtilleryAmmoPickup.3"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__LightArtilleryAmmoPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/LightArtilleryAmmoPickup.3"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__LightArtilleryAmmoPickup_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "LightArtilleryAmmoPickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent LightArtilleryAmmoPickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/LightArtilleryAmmoPickup.4"
+      },
+      "VariableGuid": "25E2F609-4EFE723F-7D3AF29B-4E876B09",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SkeletalMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SkeletalMeshComponent LightArtilleryAmmoPickup_C:ItemMeshSK_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/LightArtilleryAmmoPickup.8"
+      },
+      "ParentComponentOrVariableName": "ItemBox",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "534FA1E8-4C065193-EBD64CB3-D26EC449",
+      "InternalVariableName": "ItemMeshSK"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "LightArtilleryAmmoPickup_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node LightArtilleryAmmoPickup_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/ItemPickups/LightArtilleryAmmoPickup.6"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node LightArtilleryAmmoPickup_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/ItemPickups/LightArtilleryAmmoPickup.6"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node LightArtilleryAmmoPickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/LightArtilleryAmmoPickup.5"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "ItemMeshSK_GEN_VARIABLE",
+    "Outer": "LightArtilleryAmmoPickup_C",
+    "Properties": {
+      "bEnablePhysicsOnDedicatedServer": false,
+      "ClothingSimulationFactory": {
+        "ObjectName": "Class ClothingSimulationFactoryNv",
+        "ObjectPath": "/Script/ClothingSystemRuntimeNv"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_LightArtilleryAmmo",
+        "ObjectPath": "War/Content/Meshes/Weapons/SK_LightArtilleryAmmo.0"
+      },
+      "bReceivesDecals": false
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__LightArtilleryAmmoPickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__LightArtilleryAmmoPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/LightArtilleryAmmoPickup.3"
+      }
+    }
+  }
+]

@@ -1,0 +1,103 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_2",
+    "Outer": "Bush05Dead",
+    "Properties": {
+      "AggGeom": {
+        "SphereElems": [
+          {
+            "Center": {
+              "X": -1.1484222,
+              "Y": -10.223549,
+              "Z": 66.89425
+            },
+            "Radius": 74.964554,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_30",
+    "Outer": "Bush05Dead",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 5521,
+        "SizeOnDisk": 5521,
+        "OffsetInFile": "0x1C9D"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Bush05Dead",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BirchBushSnow",
+            "ObjectPath": "War/Content/Materials/Environment/Props/BirchBushSnow.0"
+          },
+          "MaterialSlotName": "Material #2775",
+          "ImportedMaterialSlotName": "Material #2775",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 207.77066,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 207.77066,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -1.1484222,
+          "Y": -10.223656,
+          "Z": 90.1944
+        },
+        "BoxExtent": {
+          "X": 90.771225,
+          "Y": 99.52107,
+          "Z": 99.598206
+        },
+        "SphereRadius": 126.10864
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Bush05Dead:BodySetup_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/Bush05Dead.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Bush05Dead:NavCollision_30",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/Bush05Dead.1"
+    },
+    "LightingGuid": "43A204F8-4A27DCE4-A18312A2-F6C81B04",
+    "RenderData": null
+  }
+]

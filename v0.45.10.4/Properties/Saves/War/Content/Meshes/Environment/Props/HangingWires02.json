@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "HangingWires02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "HangingWires02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1515"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "HangingWires02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant HangingWires01",
+            "ObjectPath": "War/Content/Materials/Environment/Props/HangingWires01.0"
+          },
+          "MaterialSlotName": "Material #33",
+          "ImportedMaterialSlotName": "Material #33",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 663.6104,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 663.6104,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.061035156,
+          "Y": -1.5734177,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 245.46335,
+          "Y": 1.9671097,
+          "Z": 41.156616
+        },
+        "SphereRadius": 248.498
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup HangingWires02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/HangingWires02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision HangingWires02:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/HangingWires02.1"
+    },
+    "LightingGuid": "52D7EEF9-4922E44F-F662149C-AB995149",
+    "RenderData": null
+  }
+]

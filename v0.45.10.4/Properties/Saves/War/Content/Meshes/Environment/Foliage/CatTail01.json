@@ -1,0 +1,114 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_2",
+    "Outer": "CatTail01",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -31.14437,
+              "Y": -39.13424,
+              "Z": 75.1075
+            },
+            "Rotation": {
+              "Pitch": -0.0007923019,
+              "Yaw": -179.99995,
+              "Roll": -179.99995
+            },
+            "Radius": 168.35292,
+            "Length": 107.82019,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "CatTail01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 5521,
+        "SizeOnDisk": 5521,
+        "OffsetInFile": "0x128BD"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "CatTail01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant CatTail01",
+            "ObjectPath": "War/Content/Materials/Environment/CatTail01.0"
+          },
+          "MaterialSlotName": "Material #25",
+          "ImportedMaterialSlotName": "TallGrass",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 137.31877,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 137.31877,
+      "LightMapResolution": 64,
+      "PositiveBoundsExtension": {
+        "X": 500.0,
+        "Y": 500.0,
+        "Z": 500.0
+      },
+      "NegativeBoundsExtension": {
+        "X": 500.0,
+        "Y": 500.0,
+        "Z": 500.0
+      },
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -2.7264404,
+          "Y": 19.75586,
+          "Z": 172.29326
+        },
+        "BoxExtent": {
+          "X": 658.083,
+          "Y": 640.622,
+          "Z": 683.80743
+        },
+        "SphereRadius": 1145.0164
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup CatTail01:BodySetup_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/CatTail01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision CatTail01:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/CatTail01.1"
+    },
+    "LightingGuid": "6E647F8D-478BF8BE-C3D594B6-B65932BB",
+    "RenderData": null
+  }
+]

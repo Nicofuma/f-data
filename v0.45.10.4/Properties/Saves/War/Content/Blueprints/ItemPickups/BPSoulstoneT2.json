@@ -1,0 +1,113 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPSoulstoneT2_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPSoulstoneT2_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPSoulstoneT2.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class BasicItemPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPSoulstoneT2_C",
+    "Name": "Default__BPSoulstoneT2_C",
+    "Properties": {
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPSoulstoneComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Items/BPSoulstoneComponent.0"
+      },
+      "Encumbrance": 10,
+      "bHideContent": true,
+      "CodeName": "SoulstoneT2",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "896907914105A4A3DB7B018E35DFB187",
+        "SourceString": "Damned Soulstone"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "20EE70944EF045CA6D01B9A5A81FF236",
+        "SourceString": "Use the stone to accept a deadly curse and become host to the damned spirit of an Avartach."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D Soulstone02Icon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/Soulstone02Icon.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Tertiary",
+      "ItemCategory": "EItemCategory::Supplies",
+      "ItemProfileType": "EItemProfileType::Tool",
+      "TechID": "ETechID::UnlockSoulstoneTier2",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPSoulstoneT2_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPSoulstoneT2.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPSoulstoneT2_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPSoulstoneT2.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPSoulstoneT2_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPSoulstoneT2_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPSoulstoneT2_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPSoulstoneT2.3"
+      },
+      "VariableGuid": "45A57A6F-468C52B1-5687A28D-A161DA72",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPSoulstoneT2_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPSoulstoneT2_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPSoulstoneT2.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPSoulstoneT2_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPSoulstoneT2_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPSoulstoneT2.2"
+      }
+    }
+  }
+]

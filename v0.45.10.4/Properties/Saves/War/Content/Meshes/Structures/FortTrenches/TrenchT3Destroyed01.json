@@ -1,0 +1,185 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "TrenchT3Destroyed01",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -525.0,
+                "Y": 175.0,
+                "Z": 0.0
+              },
+              {
+                "X": 525.0,
+                "Y": 175.0,
+                "Z": 0.0
+              },
+              {
+                "X": -525.0,
+                "Y": -175.0,
+                "Z": 0.0
+              },
+              {
+                "X": 525.0,
+                "Y": -175.0,
+                "Z": 0.0
+              },
+              {
+                "X": -525.0,
+                "Y": 175.0,
+                "Z": 165.0
+              },
+              {
+                "X": 525.0,
+                "Y": 175.0,
+                "Z": 165.0
+              },
+              {
+                "X": -525.0,
+                "Y": -175.0,
+                "Z": 165.0
+              },
+              {
+                "X": 525.0,
+                "Y": -175.0,
+                "Z": 165.0
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -525.0,
+                "Y": -175.0,
+                "Z": 0.0
+              },
+              "Max": {
+                "X": 525.0,
+                "Y": 175.0,
+                "Z": 165.0
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "TrenchT3Destroyed01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 457,
+        "SizeOnDisk": 457,
+        "OffsetInFile": "0x6E95"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TrenchT3Destroyed01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortTrenchT3ConcreteDirt01",
+            "ObjectPath": "War/Content/Materials/Structures/FortTrenchT3ConcreteDirt01.0"
+          },
+          "MaterialSlotName": "FortTrenchT3ConcreteDirt",
+          "ImportedMaterialSlotName": "Dirt",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1434.6951,
+            "LocalUVDensities": 1.8010231,
+            "LocalUVDensities": 1.5488945,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortDirt03",
+            "ObjectPath": "War/Content/Materials/Structures/FortDirt03.0"
+          },
+          "MaterialSlotName": "FortDirt03",
+          "ImportedMaterialSlotName": "FortTrenchT3ConcreteDirt",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1.8010231,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 17.443115,
+          "Y": 9.366943,
+          "Z": 82.002396
+        },
+        "BoxExtent": {
+          "X": 482.2224,
+          "Y": 198.39925,
+          "Z": 108.86772
+        },
+        "SphereRadius": 500.61798
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TrenchT3Destroyed01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/TrenchT3Destroyed01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TrenchT3Destroyed01:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/TrenchT3Destroyed01.1"
+    },
+    "LightingGuid": "58E41E1E-4CFE62EE-104D45AF-8CF702B4",
+    "RenderData": null
+  }
+]

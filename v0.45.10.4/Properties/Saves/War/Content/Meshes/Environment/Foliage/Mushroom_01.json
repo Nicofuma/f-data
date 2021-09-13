@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Mushroom_01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Mushroom_01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x471C"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Mushroom_01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Mushrooms",
+            "ObjectPath": "War/Content/Materials/Environment/Mushrooms.0"
+          },
+          "MaterialSlotName": "Mushrooms01",
+          "ImportedMaterialSlotName": "Mushrooms01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 168.85054,
+            "LocalUVDensities": 215.65086,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 215.65086,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 30.31248
+        },
+        "BoxExtent": {
+          "X": 93.022354,
+          "Y": 60.328205,
+          "Z": 30.31248
+        },
+        "SphereRadius": 94.8836
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Mushroom_01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/Mushroom_01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Mushroom_01:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/Mushroom_01.1"
+    },
+    "LightingGuid": "C11A9EEE-45E0ACE5-639BCFB5-97325D4A",
+    "RenderData": null
+  }
+]

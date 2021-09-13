@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SoulTrail01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "SoulTrail01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x23A6"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SoulTrail01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant SoulTrail",
+            "ObjectPath": "War/Content/FX/Materials/SoulTrail.0"
+          },
+          "MaterialSlotName": "Material #494",
+          "ImportedMaterialSlotName": "Material #494",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 97.07436,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 97.07436,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 17.343372,
+          "Y": -67.56872,
+          "Z": 70.79421
+        },
+        "BoxExtent": {
+          "X": 24.63509,
+          "Y": 67.56873,
+          "Z": 70.94359
+        },
+        "SphereRadius": 100.1408
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SoulTrail01:BodySetup_0",
+      "ObjectPath": "War/Content/FX/Mesh/DeadHarvest/SoulTrail01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SoulTrail01:NavCollision_2",
+      "ObjectPath": "War/Content/FX/Mesh/DeadHarvest/SoulTrail01.1"
+    },
+    "LightingGuid": "A18A97D0-4C7A1379-C24F45BC-524C6578",
+    "RenderData": null
+  }
+]

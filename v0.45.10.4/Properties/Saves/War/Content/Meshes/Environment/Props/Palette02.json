@@ -1,0 +1,105 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Palette02",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 14.536921
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 200.04025,
+            "Y": 199.7251,
+            "Z": 23.736607,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_3",
+    "Outer": "Palette02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x2DFD"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Palette02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Palette",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Palette.0"
+          },
+          "MaterialSlotName": "Material #187",
+          "ImportedMaterialSlotName": "Material #187",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 504.83203,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 504.83203,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 14.536921
+        },
+        "BoxExtent": {
+          "X": 100.02013,
+          "Y": 99.86255,
+          "Z": 11.868303
+        },
+        "SphereRadius": 141.76277
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Palette02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Palette02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Palette02:NavCollision_3",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Palette02.1"
+    },
+    "LightingGuid": "155C9615-4ECEFC27-F7EBB086-DD283FF6",
+    "RenderData": null
+  }
+]

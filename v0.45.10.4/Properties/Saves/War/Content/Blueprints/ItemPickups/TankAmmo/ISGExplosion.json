@@ -1,0 +1,109 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ISGExplosion_C",
+    "Super": "RPGExplosion_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript ISGExplosion_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/TankAmmo/ISGExplosion.6"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler ISGExplosion_C:InheritableComponentHandler",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/TankAmmo/ISGExplosion.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass RPGExplosion_C",
+      "ObjectPath": "War/Content/Blueprints/Items/RPGExplosion.1"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "ISGExplosion_C",
+    "Name": "Default__ISGExplosion_C",
+    "Properties": {
+      "ParticleSystemOverrides": [
+        {
+          "PhysicalSurface": "SurfaceType_Default",
+          "ExplosionFX": {
+            "ObjectName": "ParticleSystem ISGImpact",
+            "ObjectPath": "War/Content/FX/ISGImpact.57"
+          },
+          "Decal": {
+            "DecalMaterial": null,
+            "DecalSize": {
+              "X": 200.0,
+              "Y": 200.0,
+              "Z": 200.0
+            },
+            "LifeSpan": 500.0,
+            "FadeScreenSize": 0.01
+          }
+        }
+      ],
+      "ExplosionSound": {
+        "ObjectName": "SoundCue FieldGunImpact_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Vehicles/FieldGun/FieldGunImpact_Cue.0"
+      },
+      "ExplosionLight": {
+        "ObjectName": "PointLightComponent Default__ISGExplosion_C:ExplosionLight",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/TankAmmo/ISGExplosion.3"
+      },
+      "RootComponent": {
+        "ObjectName": "PointLightComponent Default__ISGExplosion_C:ExplosionLight",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/TankAmmo/ISGExplosion.3"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "ISGExplosion_C"
+  },
+  {
+    "Type": "PointLightComponent",
+    "Name": "ExplosionLight",
+    "Outer": "Default__ISGExplosion_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "ISGExplosion_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent ISGExplosion_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/TankAmmo/ISGExplosion.4"
+      },
+      "VariableGuid": "56BD8617-42C6CE0F-59F498B0-986EEB01",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "ISGExplosion_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node ISGExplosion_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/TankAmmo/ISGExplosion.5"
+      }
+    }
+  }
+]

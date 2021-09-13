@@ -1,0 +1,101 @@
+[
+  {
+    "Type": "SkeletalMeshSocket",
+    "Name": "SkeletalMeshSocket_0",
+    "Outer": "WeaponRifle_Skeleton",
+    "Properties": {
+      "SocketName": "S_Muzzle",
+      "BoneName": "RifleInfantry",
+      "RelativeLocation": {
+        "X": 7.6293945E-05,
+        "Y": 104.23735,
+        "Z": 8.763389
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 89.99966,
+        "Roll": 4.530696E-21
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshSocket",
+    "Name": "SkeletalMeshSocket_1",
+    "Outer": "WeaponRifle_Skeleton",
+    "Properties": {
+      "SocketName": "S_Payload",
+      "BoneName": "RifleInfantry",
+      "RelativeLocation": {
+        "X": 7.6E-05,
+        "Y": 104.23735,
+        "Z": 8.763389
+      }
+    }
+  },
+  {
+    "Type": "Skeleton",
+    "Name": "WeaponRifle_Skeleton",
+    "Properties": {
+      "BoneTree": [
+        {
+          "TranslationRetargetingMode": "EBoneTranslationRetargetingMode::Animation"
+        }
+      ],
+      "Sockets": [
+        {
+          "ObjectName": "SkeletalMeshSocket WeaponRifle_Skeleton:SkeletalMeshSocket_0",
+          "ObjectPath": "War/Content/Meshes/Weapons/WeaponRifle_Skeleton.0"
+        },
+        {
+          "ObjectName": "SkeletalMeshSocket WeaponRifle_Skeleton:SkeletalMeshSocket_1",
+          "ObjectPath": "War/Content/Meshes/Weapons/WeaponRifle_Skeleton.1"
+        }
+      ]
+    },
+    "ReferenceSkeleton": {
+      "FinalRefBoneInfo": [
+        {
+          "Name": "RifleInfantry",
+          "ParentIndex": -1
+        }
+      ],
+      "FinalRefBonePose": [
+        {
+          "Rotation": {
+            "X": -3.061617E-17,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "SizeSquared": 1.0,
+            "Size": 1.0,
+            "IsNormalized": true
+          },
+          "Translation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      ],
+      "FinalNameToIndexMap": {
+        "RifleInfantry": 0
+      }
+    },
+    "Guid": "C5C7C987-4E8713A8-27EBCC8D-96386D1A",
+    "AnimRetargetSources": {},
+    "NameMappings": {
+      "AnimationCurves": {
+        "GuidMap": null,
+        "UidMap": null,
+        "CurveMetaDataMap": {}
+      }
+    },
+    "ExistingMarkerNames": null
+  }
+]

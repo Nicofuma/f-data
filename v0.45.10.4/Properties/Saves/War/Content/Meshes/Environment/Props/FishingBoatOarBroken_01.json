@@ -1,0 +1,100 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FishingBoatOarBroken_01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "FishingBoatOarBroken_01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x210B"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FishingBoatOarBroken_01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FishingBoat",
+            "ObjectPath": "War/Content/Materials/Environment/Props/FishingBoat.0"
+          },
+          "MaterialSlotName": "Material #28",
+          "ImportedMaterialSlotName": "Material #28",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 649.1309,
+            "LocalUVDensities": 108.03744,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant WoodRepeatingEnd03",
+            "ObjectPath": "War/Content/Materials/Environment/WoodRepeatingEnd03.0"
+          },
+          "MaterialSlotName": "Material #25",
+          "ImportedMaterialSlotName": "Material #25",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 27.959824,
+            "LocalUVDensities": 92.06756,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 106.88139,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 88.20577,
+          "Y": 11.68248,
+          "Z": 5.10585
+        },
+        "SphereRadius": 88.254845
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FishingBoatOarBroken_01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FishingBoatOarBroken_01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FishingBoatOarBroken_01:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FishingBoatOarBroken_01.1"
+    },
+    "LightingGuid": "8ABC9536-477A3B31-0A38109D-56E233D0",
+    "RenderData": null
+  }
+]

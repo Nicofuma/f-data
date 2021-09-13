@@ -1,0 +1,567 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPFieldMortarW_C",
+    "Super": "BPFieldArtillery_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPFieldMortarW_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.29"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler BPFieldMortarW_C:InheritableComponentHandler",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.9"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass BPFieldArtillery_C",
+      "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldArtillery.1"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPFieldMortarW_C",
+    "Name": "Default__BPFieldMortarW_C",
+    "Properties": {
+      "IdleLoop": {
+        "ObjectName": "AudioComponent Default__BPFieldMortarW_C:IdleLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.5"
+      },
+      "RearLeftTireDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPFieldMortarW_C:RearLeftTireDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.15"
+      },
+      "RearLeftTireDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPFieldMortarW_C:RearLeftTireDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.14"
+      },
+      "RearRightTireDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPFieldMortarW_C:RearRightTireDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.17"
+      },
+      "RearRightTireDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPFieldMortarW_C:RearRightTireDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.16"
+      },
+      "MainDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPFieldMortarW_C:MainDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.11"
+      },
+      "MainDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPFieldMortarW_C:MainDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.10"
+      },
+      "SkiddingDirtPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPFieldMortarW_C:SkiddingDirtPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.18"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "0673BCEB43455DC91EE6A0980BD835A3",
+        "SourceString": "Balfour Falconer 250mm"
+      },
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "C59C329548265373EEF4548DEDCFFE7E",
+        "SourceString": "Field Mortar"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "344B222241D96C2B5647BCB4CE9DDD88",
+        "SourceString": "A heavy mobile mortar platform fitted with a thick frontal shield for assaulting fortified locations."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D FieldMortarWIcon",
+        "ObjectPath": "War/Content/Textures/UI/VehicleIcons/FieldMortarWIcon.0"
+      },
+      "TechID": "ETechID::UnlockFieldMortar",
+      "FactionVariant": "EFactionId::Wardens",
+      "CodeName": "FieldMortarW",
+      "ArmourType": "EArmourType::Tier2Tank",
+      "DestroyedMesh": {
+        "ObjectName": "StaticMeshComponent Default__BPFieldMortarW_C:DestroyedMesh",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.31"
+      },
+      "MinorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPFieldMortarW_C:MinorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.13"
+      },
+      "MajorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPFieldMortarW_C:MajorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.12"
+      },
+      "DriveLoop": {
+        "ObjectName": "AudioComponent Default__BPFieldMortarW_C:DriveLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.4"
+      },
+      "BackUpSFXLoop": {
+        "ObjectName": "AudioComponent Default__BPFieldMortarW_C:BackUpSFXLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.3"
+      },
+      "CameraRigComponent": {
+        "ObjectName": "PlayerCameraRigComponent Default__BPFieldMortarW_C:CameraRigVehicle",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.19"
+      },
+      "FrontAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__BPFieldMortarW_C:FrontAxelCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.22"
+      },
+      "RearAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__BPFieldMortarW_C:RearAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.25"
+      },
+      "FrontLeftRollCastLocation": {
+        "ObjectName": "SceneComponent Default__BPFieldMortarW_C:FrontRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.23"
+      },
+      "FrontRightRollCastLocation": {
+        "ObjectName": "SceneComponent Default__BPFieldMortarW_C:RearRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.26"
+      },
+      "LeftSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__BPFieldMortarW_C:LeftSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.24"
+      },
+      "RightSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__BPFieldMortarW_C:RightSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.27"
+      },
+      "VehicleCollision": {
+        "ObjectName": "BoxComponent Default__BPFieldMortarW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.7"
+      },
+      "PassengerArea": {
+        "ObjectName": "BoxComponent Default__BPFieldMortarW_C:PassengerBaseBox",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.6"
+      },
+      "AFKTimeoutComponent": {
+        "ObjectName": "AFKTimeoutComponent Default__BPFieldMortarW_C:AFKTimeoutComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.2"
+      },
+      "MuzzleInfo": [
+        {
+          "GunnerIndex": 1,
+          "MuzzleIndex": 0,
+          "SocketName": "S_Muzzle_MortarW"
+        }
+      ],
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPFieldMortarW_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.32"
+      },
+      "Mesh": {
+        "ObjectName": "SkeletalMeshComponent Default__BPFieldMortarW_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.30"
+      },
+      "CharacterMovement": {
+        "ObjectName": "RWDVehicleMovementComponent Default__BPFieldMortarW_C:CharMoveComp",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.20"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldMortarW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.8"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPFieldMortarW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.7"
+      }
+    }
+  },
+  {
+    "Type": "AFKTimeoutComponent",
+    "Name": "AFKTimeoutComponent",
+    "Outer": "Default__BPFieldMortarW_C"
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "BackUpSFXLoop",
+    "Outer": "Default__BPFieldMortarW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldMortarW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.8"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "DriveLoop",
+    "Outer": "Default__BPFieldMortarW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldMortarW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.8"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "IdleLoop",
+    "Outer": "Default__BPFieldMortarW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFieldMortarW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.7"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "PassengerBaseBox",
+    "Outer": "Default__BPFieldMortarW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFieldMortarW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.7"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "VehicleCollision",
+    "Outer": "Default__BPFieldMortarW_C",
+    "Properties": {
+      "OnComponentBeginOverlap": null
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__BPFieldMortarW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFieldMortarW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.7"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BPFieldMortarW_C",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class VehicleSeatComponent",
+            "ObjectPath": "/Script/War"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "VehicleSeatComponent BPFieldMortarW_C:PassengerSeat1_GEN_VARIABLE",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.33"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass BPFieldArtillery_C",
+              "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldArtillery.1"
+            },
+            "SCSVariableName": "PassengerSeat1",
+            "AssociatedGuid": "35560FDC-496180DD-68FD179B-036794FE"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MainDirtHighSpeedPS",
+    "Outer": "Default__BPFieldMortarW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFieldMortarW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MainDirtLowSpeedPS",
+    "Outer": "Default__BPFieldMortarW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFieldMortarW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MajorDamagePS",
+    "Outer": "Default__BPFieldMortarW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldMortarW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.8"
+      },
+      "RelativeLocation": {
+        "X": 10.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MinorDamagePS",
+    "Outer": "Default__BPFieldMortarW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldMortarW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.8"
+      },
+      "RelativeLocation": {
+        "X": 10.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearLeftTireDirtHighSpeedPS",
+    "Outer": "Default__BPFieldMortarW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFieldMortarW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearLeftTireDirtLowSpeedPS",
+    "Outer": "Default__BPFieldMortarW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFieldMortarW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearRightTireDirtHighSpeedPS",
+    "Outer": "Default__BPFieldMortarW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFieldMortarW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearRightTireDirtLowSpeedPS",
+    "Outer": "Default__BPFieldMortarW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFieldMortarW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "SkiddingDirtPS",
+    "Outer": "Default__BPFieldMortarW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFieldMortarW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.7"
+      }
+    }
+  },
+  {
+    "Type": "PlayerCameraRigComponent",
+    "Name": "CameraRigVehicle",
+    "Outer": "Default__BPFieldMortarW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldMortarW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.8"
+      }
+    }
+  },
+  {
+    "Type": "RWDVehicleMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__BPFieldMortarW_C",
+    "Properties": {
+      "EngineForce": 3500.0,
+      "MaxWalkSpeed": 638.7919
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPFieldMortarW_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontAxelCastLocation",
+    "Outer": "Default__BPFieldMortarW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldMortarW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontRightAxleCastLocation",
+    "Outer": "Default__BPFieldMortarW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldMortarW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "LeftSideTrackLocation",
+    "Outer": "Default__BPFieldMortarW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldMortarW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearAxleCastLocation",
+    "Outer": "Default__BPFieldMortarW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldMortarW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearRightAxleCastLocation",
+    "Outer": "Default__BPFieldMortarW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldMortarW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RightSideTrackLocation",
+    "Outer": "Default__BPFieldMortarW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldMortarW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.8"
+      }
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPFieldMortarW_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.21"
+      },
+      "VariableGuid": "AD8D5601-4C904E85-CBBD44A4-AAE49426",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPFieldMortarW_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPFieldMortarW_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.28"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__BPFieldMortarW_C",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_FieldMortarW_C",
+        "ObjectPath": "War/Content/Animation/Field_vehicles/FieldMortar/ABP_FieldMortarW.1"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh FieldMortarW",
+        "ObjectPath": "War/Content/Meshes/Vehicles/FieldMortarW.0"
+      },
+      "VisibilityBasedAnimTickOption": "EVisibilityBasedAnimTickOption::AlwaysTickPoseAndRefreshBones",
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldMortarW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.8"
+      },
+      "RelativeLocation": {
+        "X": 15.0,
+        "Y": 1.3149912E-06,
+        "Z": -140.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "DestroyedMesh",
+    "Outer": "Default__BPFieldMortarW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldMortarW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldMortarW.8"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPFieldMortarW_C"
+  },
+  {
+    "Type": "VehicleSeatComponent",
+    "Name": "PassengerSeat1_GEN_VARIABLE",
+    "Outer": "BPFieldMortarW_C",
+    "Properties": {
+      "MountCodeName": "FieldMortarGunner",
+      "MountComponent": {
+        "ObjectName": "BlueprintGeneratedClass BPFieldMortarGunnerW_C",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MortarTank/BPFieldMortarGunnerW.0"
+      }
+    }
+  }
+]

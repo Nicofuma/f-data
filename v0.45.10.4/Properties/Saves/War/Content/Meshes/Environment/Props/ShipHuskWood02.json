@@ -1,0 +1,99 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ShipHuskWood02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_3",
+    "Outer": "ShipHuskWood02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x4425C"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ShipHuskWood02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ShipWreckWoodBeams02",
+            "ObjectPath": "War/Content/Materials/Environment/Props/ShipWreckWoodBeams02.0"
+          },
+          "MaterialSlotName": "ShipWreckWoodBeam01",
+          "ImportedMaterialSlotName": "ShipWreckWoodBeam01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 398.4199,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ShipWreckRope01",
+            "ObjectPath": "War/Content/Materials/Environment/Props/ShipWreckRope01.0"
+          },
+          "MaterialSlotName": "ShipWreckRope01",
+          "ImportedMaterialSlotName": "ShipWreckRope01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 91.52519,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 340.92038,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 13.720276,
+          "Y": -33.46765,
+          "Z": 60.472473
+        },
+        "BoxExtent": {
+          "X": 598.4949,
+          "Y": 1285.7444,
+          "Z": 523.36804
+        },
+        "SphereRadius": 1292.1182
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ShipHuskWood02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ShipHuskWood02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ShipHuskWood02:NavCollision_3",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ShipHuskWood02.1"
+    },
+    "LightingGuid": "74488474-406E0A0A-554276AF-BA39074F",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,448 @@
+[
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "ABP_StaticCrane_C",
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "AnimBlueprintGeneratedClass",
+    "Name": "ABP_StaticCrane_C",
+    "Properties": {
+      "TargetSkeleton": {
+        "ObjectName": "Skeleton SK_StaticCrane_Skeleton",
+        "ObjectPath": "War/Content/Meshes/Structures/SK_StaticCrane_Skeleton.2"
+      },
+      "OrderedSavedPoseIndicesMap": {
+        "AnimGraph": {
+          "OrderedSavedPoseNodeIndices": []
+        }
+      },
+      "EvaluateGraphExposedInputs": [
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "SourcePropertyName": "Yaw",
+              "SourceSubPropertyName": "None",
+              "SourceArrayIndex": 0,
+              "bInstanceIsTarget": false,
+              "PostCopyOperation": "EPostCopyOperation::None",
+              "DestProperty": {
+                "ObjectName": "FloatProperty AnimNode_BlendSpacePlayer:X",
+                "ObjectPath": "/Script/AnimGraphRuntime"
+              },
+              "DestArrayIndex": 0,
+              "Size": 4,
+              "CachedSourceProperty": {
+                "ObjectName": "FloatProperty CraneComponentAnimInstance:Yaw",
+                "ObjectPath": "/Script/War"
+              },
+              "CachedSourceStructSubProperty": null
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "ObjectName": "StructProperty ABP_StaticCrane_C:AnimGraphNode_BlendSpacePlayer_4E0BEC474351C353D7169CB099B544B1",
+            "ObjectPath": "War/Content/Animation/WorldAssets/StaticCrane/ABP_StaticCrane.7"
+          }
+        },
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "SourcePropertyName": "HorizontalDistanceToTarget",
+              "SourceSubPropertyName": "None",
+              "SourceArrayIndex": 0,
+              "bInstanceIsTarget": false,
+              "PostCopyOperation": "EPostCopyOperation::None",
+              "DestProperty": {
+                "ObjectName": "FloatProperty AnimNode_BlendSpacePlayer:X",
+                "ObjectPath": "/Script/AnimGraphRuntime"
+              },
+              "DestArrayIndex": 0,
+              "Size": 4,
+              "CachedSourceProperty": {
+                "ObjectName": "FloatProperty CraneComponentAnimInstance:HorizontalDistanceToTarget",
+                "ObjectPath": "/Script/War"
+              },
+              "CachedSourceStructSubProperty": null
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "ObjectName": "StructProperty ABP_StaticCrane_C:AnimGraphNode_BlendSpacePlayer_EE86026A4C7CC55C5ACC30B7AFFBA765",
+            "ObjectPath": "War/Content/Animation/WorldAssets/StaticCrane/ABP_StaticCrane.8"
+          }
+        },
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "SourcePropertyName": "PulleyLength",
+              "SourceSubPropertyName": "None",
+              "SourceArrayIndex": 0,
+              "bInstanceIsTarget": false,
+              "PostCopyOperation": "EPostCopyOperation::None",
+              "DestProperty": {
+                "ObjectName": "FloatProperty AnimNode_BlendSpacePlayer:X",
+                "ObjectPath": "/Script/AnimGraphRuntime"
+              },
+              "DestArrayIndex": 0,
+              "Size": 4,
+              "CachedSourceProperty": {
+                "ObjectName": "FloatProperty CraneComponentAnimInstance:PulleyLength",
+                "ObjectPath": "/Script/War"
+              },
+              "CachedSourceStructSubProperty": null
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "ObjectName": "StructProperty ABP_StaticCrane_C:AnimGraphNode_RotationOffsetBlendSpace_8F5EFB6D4DF9AF3C58F9D0A0C483911B",
+            "ObjectPath": "War/Content/Animation/WorldAssets/StaticCrane/ABP_StaticCrane.11"
+          }
+        }
+      ],
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty ABP_StaticCrane_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Animation/WorldAssets/StaticCrane/ABP_StaticCrane.0"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function ABP_StaticCrane_C:ExecuteUbergraph_ABP_StaticCrane",
+        "ObjectPath": "War/Content/Animation/WorldAssets/StaticCrane/ABP_StaticCrane.6"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class CraneComponentAnimInstance",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty ABP_StaticCrane_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Animation/WorldAssets/StaticCrane/ABP_StaticCrane.0"
+      },
+      {
+        "ObjectName": "Function ABP_StaticCrane_C:AnimGraph",
+        "ObjectPath": "War/Content/Animation/WorldAssets/StaticCrane/ABP_StaticCrane.4"
+      },
+      {
+        "ObjectName": "Function ABP_StaticCrane_C:ExecuteUbergraph_ABP_StaticCrane",
+        "ObjectPath": "War/Content/Animation/WorldAssets/StaticCrane/ABP_StaticCrane.6"
+      },
+      {
+        "ObjectName": "StructProperty ABP_StaticCrane_C:AnimGraphNode_Root_4FEE286F468A9B2956175D8EBF4AD1DF",
+        "ObjectPath": "War/Content/Animation/WorldAssets/StaticCrane/ABP_StaticCrane.10"
+      },
+      {
+        "ObjectName": "StructProperty ABP_StaticCrane_C:AnimGraphNode_RotationOffsetBlendSpace_8F5EFB6D4DF9AF3C58F9D0A0C483911B",
+        "ObjectPath": "War/Content/Animation/WorldAssets/StaticCrane/ABP_StaticCrane.11"
+      },
+      {
+        "ObjectName": "StructProperty ABP_StaticCrane_C:AnimGraphNode_BlendSpacePlayer_EE86026A4C7CC55C5ACC30B7AFFBA765",
+        "ObjectPath": "War/Content/Animation/WorldAssets/StaticCrane/ABP_StaticCrane.8"
+      },
+      {
+        "ObjectName": "StructProperty ABP_StaticCrane_C:AnimGraphNode_BlendSpacePlayer_4E0BEC474351C353D7169CB099B544B1",
+        "ObjectPath": "War/Content/Animation/WorldAssets/StaticCrane/ABP_StaticCrane.7"
+      },
+      {
+        "ObjectName": "StructProperty ABP_StaticCrane_C:AnimGraphNode_LayeredBoneBlend_41AC4689434A62577CE9B5B2F5D0E8EB",
+        "ObjectPath": "War/Content/Animation/WorldAssets/StaticCrane/ABP_StaticCrane.9"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 458752,
+    "ClassWithin": null,
+    "ClassConfigName": "/Game/Animation/WorldAssets/StaticCrane/ABP_StaticCrane_327679",
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "ABP_StaticCrane_C",
+    "Name": "Default__ABP_StaticCrane_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "AnimGraphNode_Root_4FEE286F468A9B2956175D8EBF4AD1DF": {
+        "Result": {
+          "LinkID": 4
+        },
+        "Name": "AnimGraph",
+        "Group": "None"
+      },
+      "AnimGraphNode_RotationOffsetBlendSpace_8F5EFB6D4DF9AF3C58F9D0A0C483911B": {
+        "BasePose": {
+          "LinkID": 2
+        },
+        "LODThreshold": -1,
+        "Alpha": 1.0,
+        "AlphaScaleBias": {
+          "Scale": 1.0,
+          "Bias": 0.0
+        },
+        "AlphaBoolBlend": {
+          "BlendInTime": 0.0,
+          "BlendOutTime": 0.0,
+          "BlendOption": "EAlphaBlendOption::Linear",
+          "bInitialized": false,
+          "CustomCurve": null,
+          "AlphaBlend": {
+            "CustomCurve": null,
+            "BlendTime": 0.2,
+            "BlendOption": "EAlphaBlendOption::Linear"
+          }
+        },
+        "AlphaCurveName": "None",
+        "AlphaScaleBiasClamp": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        },
+        "AlphaInputType": "EAnimAlphaInputType::Float",
+        "bAlphaBoolEnabled": false,
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0,
+        "PlayRate": 1.0,
+        "bLoop": true,
+        "bResetPlayTimeWhenBlendSpaceChanges": true,
+        "StartPosition": 0.0,
+        "BlendSpace": {
+          "ObjectName": "AimOffsetBlendSpace1D AO_StaticCrane_hookDepth",
+          "ObjectPath": "War/Content/Animation/WorldAssets/StaticCrane/AO_StaticCrane_hookDepth.0"
+        },
+        "PreviousBlendSpace": null,
+        "GroupIndex": -1,
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "AnimGraphNode_BlendSpacePlayer_EE86026A4C7CC55C5ACC30B7AFFBA765": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0,
+        "PlayRate": 1.0,
+        "bLoop": true,
+        "bResetPlayTimeWhenBlendSpaceChanges": true,
+        "StartPosition": 0.0,
+        "BlendSpace": {
+          "ObjectName": "BlendSpace1D BS_StaticCrane_horizontalMovement",
+          "ObjectPath": "War/Content/Animation/WorldAssets/StaticCrane/BS_StaticCrane_horizontalMovement.0"
+        },
+        "PreviousBlendSpace": null,
+        "GroupIndex": -1,
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "AnimGraphNode_BlendSpacePlayer_4E0BEC474351C353D7169CB099B544B1": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0,
+        "PlayRate": 1.0,
+        "bLoop": true,
+        "bResetPlayTimeWhenBlendSpaceChanges": true,
+        "StartPosition": 0.0,
+        "BlendSpace": {
+          "ObjectName": "BlendSpace1D BS_StaticCrane_horizontalRotation",
+          "ObjectPath": "War/Content/Animation/WorldAssets/StaticCrane/BS_StaticCrane_horizontalRotation.0"
+        },
+        "PreviousBlendSpace": null,
+        "GroupIndex": -1,
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "AnimGraphNode_LayeredBoneBlend_41AC4689434A62577CE9B5B2F5D0E8EB": {
+        "BasePose": {
+          "LinkID": 3
+        },
+        "BlendPoses": [
+          {
+            "LinkID": 1
+          }
+        ],
+        "LayerSetup": [
+          {
+            "BranchFilters": [
+              {
+                "BoneName": "arm_Pivot",
+                "BlendDepth": 0
+              },
+              {
+                "BoneName": "hook",
+                "BlendDepth": 0
+              },
+              {
+                "BoneName": "counterweight",
+                "BlendDepth": 0
+              }
+            ]
+          }
+        ],
+        "BlendWeights": [
+          1.0
+        ],
+        "bMeshSpaceRotationBlend": false,
+        "bMeshSpaceScaleBlend": false,
+        "CurveBlendOption": "ECurveBlendOption::MaxWeight",
+        "bBlendRootMotionBasedOnRootBone": true,
+        "LODThreshold": -1,
+        "PerBoneBlendWeights": [
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 0.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 0.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 1.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 1.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 1.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 1.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 1.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 1.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 1.0
+          },
+          {
+            "SourceIndex": 0,
+            "BlendWeight": 1.0
+          }
+        ],
+        "SkeletonGuid": "48FDBB7C-4D4C72C8-B6AD38A0-580485BF",
+        "VirtualBoneGuid": "00000000-00000000-00000000-00000000"
+      },
+      "HorizontalDistanceToTarget": 450.0,
+      "CraneHeight": 500.0
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraph",
+    "Outer": "AnimGraph",
+    "PropertyFlags": 384,
+    "Struct": {
+      "ObjectName": "ScriptStruct PoseLink",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "AnimGraph",
+    "Outer": "ABP_StaticCrane_C",
+    "Children": [
+      {
+        "ObjectName": "StructProperty ABP_StaticCrane_C:AnimGraph.AnimGraph",
+        "ObjectPath": "War/Content/Animation/WorldAssets/StaticCrane/ABP_StaticCrane.3"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_ABP_StaticCrane",
+    "PropertyFlags": 148
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ABP_StaticCrane",
+    "Outer": "ABP_StaticCrane_C",
+    "Children": [
+      {
+        "ObjectName": "IntProperty ABP_StaticCrane_C:ExecuteUbergraph_ABP_StaticCrane.EntryPoint",
+        "ObjectPath": "War/Content/Animation/WorldAssets/StaticCrane/ABP_StaticCrane.5"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_BlendSpacePlayer_4E0BEC474351C353D7169CB099B544B1",
+    "Outer": "ABP_StaticCrane_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_BlendSpacePlayer",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_BlendSpacePlayer_EE86026A4C7CC55C5ACC30B7AFFBA765",
+    "Outer": "ABP_StaticCrane_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_BlendSpacePlayer",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_LayeredBoneBlend_41AC4689434A62577CE9B5B2F5D0E8EB",
+    "Outer": "ABP_StaticCrane_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_LayeredBoneBlend",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_Root_4FEE286F468A9B2956175D8EBF4AD1DF",
+    "Outer": "ABP_StaticCrane_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_Root",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AnimGraphNode_RotationOffsetBlendSpace_8F5EFB6D4DF9AF3C58F9D0A0C483911B",
+    "Outer": "ABP_StaticCrane_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct AnimNode_RotationOffsetBlendSpace",
+      "ObjectPath": "/Script/AnimGraphRuntime"
+    }
+  }
+]

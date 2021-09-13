@@ -1,0 +1,162 @@
+[
+  {
+    "Type": "MaterialExpressionTextureObject",
+    "Name": "MaterialExpressionTextureObject_0",
+    "Outer": "NormalFromHeightmap",
+    "Properties": {
+      "Function": {
+        "ObjectName": "MaterialFunction NormalFromHeightmap",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions03/Procedurals/NormalFromHeightmap.4"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_0",
+    "Outer": "NormalFromHeightmap",
+    "Properties": {
+      "Coordinates": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionAdd_3"
+      },
+      "TextureObject": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionFunctionInput_7"
+      },
+      "Function": {
+        "ObjectName": "MaterialFunction NormalFromHeightmap",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions03/Procedurals/NormalFromHeightmap.4"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_2",
+    "Outer": "NormalFromHeightmap",
+    "Properties": {
+      "Coordinates": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionFunctionInput_6"
+      },
+      "TextureObject": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionFunctionInput_7"
+      },
+      "Function": {
+        "ObjectName": "MaterialFunction NormalFromHeightmap",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions03/Procedurals/NormalFromHeightmap.4"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_4",
+    "Outer": "NormalFromHeightmap",
+    "Properties": {
+      "Coordinates": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionAdd_2"
+      },
+      "TextureObject": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionFunctionInput_7"
+      },
+      "Function": {
+        "ObjectName": "MaterialFunction NormalFromHeightmap",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions03/Procedurals/NormalFromHeightmap.4"
+      }
+    }
+  },
+  {
+    "Type": "MaterialFunction",
+    "Name": "NormalFromHeightmap",
+    "Properties": {
+      "Description": "Takes a heightmap input and generates a normal map from it.",
+      "FunctionExpressions": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSample NormalFromHeightmap:MaterialExpressionTextureSample_2",
+          "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions03/Procedurals/NormalFromHeightmap.2"
+        },
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureObject NormalFromHeightmap:MaterialExpressionTextureObject_0",
+          "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions03/Procedurals/NormalFromHeightmap.0"
+        },
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSample NormalFromHeightmap:MaterialExpressionTextureSample_0",
+          "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions03/Procedurals/NormalFromHeightmap.1"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSample NormalFromHeightmap:MaterialExpressionTextureSample_4",
+          "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions03/Procedurals/NormalFromHeightmap.3"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "bExposeToLibrary": true,
+      "StateId": "4DBA499D-4798490F-6672E7A0-5A808288"
+    }
+  }
+]

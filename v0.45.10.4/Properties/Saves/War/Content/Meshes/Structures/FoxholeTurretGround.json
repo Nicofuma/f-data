@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FoxholeTurretGround",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "FoxholeTurretGround",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2817"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FoxholeTurretGround",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "Engine/Content/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "Foxhole",
+          "ImportedMaterialSlotName": "Foxhole",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 438.97543,
+            "LocalUVDensities": 784.7925,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 784.7925,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.572937,
+          "Y": -0.572937,
+          "Z": 4.713623
+        },
+        "BoxExtent": {
+          "X": 200.0,
+          "Y": 200.0,
+          "Z": 43.99829
+        },
+        "SphereRadius": 286.2444
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FoxholeTurretGround:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FoxholeTurretGround.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FoxholeTurretGround:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FoxholeTurretGround.1"
+    },
+    "LightingGuid": "31BBE469-46A6B033-0AAE5881-89869D98",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,100 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ChainWallChainlink",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "ChainWallChainlink",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x16D2"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ChainWallChainlink",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BarbedWireStraight",
+            "ObjectPath": "War/Content/Materials/Environment/BarbedWireStraight.0"
+          },
+          "MaterialSlotName": "BarbedWireStraight",
+          "ImportedMaterialSlotName": "BarbedWireStraight",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 114.72684,
+            "LocalUVDensities": 1301.7292,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Chainlink",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Chainlink.0"
+          },
+          "MaterialSlotName": "Chainlink",
+          "ImportedMaterialSlotName": "Chainlink",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 139.12175,
+            "LocalUVDensities": 1282.962,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1292.37,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.7973633,
+          "Y": -2.1232948,
+          "Z": 36.23932
+        },
+        "BoxExtent": {
+          "X": 602.1372,
+          "Y": 10.197871,
+          "Z": 274.0171
+        },
+        "SphereRadius": 661.57214
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ChainWallChainlink:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ChainWallChainlink.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ChainWallChainlink:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ChainWallChainlink.1"
+    },
+    "LightingGuid": "A19B7804-4ACC376C-EFB431B5-CDF48DB7",
+    "RenderData": null
+  }
+]

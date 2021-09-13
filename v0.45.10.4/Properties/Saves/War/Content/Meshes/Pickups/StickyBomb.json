@@ -1,0 +1,100 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "StickyBomb",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "StickyBomb",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x4CE9"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "StickyBomb",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant StickyBombPickup",
+            "ObjectPath": "War/Content/Materials/Pickups/StickyBombPickup.0"
+          },
+          "MaterialSlotName": "Material #25",
+          "ImportedMaterialSlotName": "Material #25",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 47.753246,
+            "LocalUVDensities": 57.88679,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material Burning",
+            "ObjectPath": "War/Content/Materials/Resources/Burning.0"
+          },
+          "MaterialSlotName": "Rope",
+          "ImportedMaterialSlotName": "Rope",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 23.087906,
+            "LocalUVDensities": 59.260498,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 58.12852,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -9.692093,
+          "Y": 0.0,
+          "Z": 1.9073486E-06
+        },
+        "BoxExtent": {
+          "X": 46.89651,
+          "Y": 8.989493,
+          "Z": 8.990917
+        },
+        "SphereRadius": 47.023113
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup StickyBomb:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Pickups/StickyBomb.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision StickyBomb:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Pickups/StickyBomb.1"
+    },
+    "LightingGuid": "C6F06434-45ADA12B-8FF748AB-25DAF31B",
+    "RenderData": null
+  }
+]

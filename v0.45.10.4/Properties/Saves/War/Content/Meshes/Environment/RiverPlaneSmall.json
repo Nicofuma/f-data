@@ -1,0 +1,78 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "RiverPlaneSmall",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "RiverPlaneSmall",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xB55"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "RiverPlaneSmall",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "Engine/Content/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 8249.333,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 8249.333,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 2725.5723,
+          "Y": 12212.322,
+          "Z": 3.4594693E-12
+        },
+        "SphereRadius": 12512.776
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup RiverPlaneSmall:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/RiverPlaneSmall.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision RiverPlaneSmall:NavCollision_4",
+      "ObjectPath": "War/Content/Meshes/Environment/RiverPlaneSmall.1"
+    },
+    "LightingGuid": "F68C92D7-4C2B26C8-4A3E8681-C4CC08BE",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "BonePile",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "BonePile",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x3F09"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "BonePile",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BonePile",
+            "ObjectPath": "War/Content/Materials/Event/BonePile.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 148.29373,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 148.29373,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.20828247,
+          "Y": -0.20285034,
+          "Z": 37.49967
+        },
+        "BoxExtent": {
+          "X": 261.5855,
+          "Y": 261.58615,
+          "Z": 44.36113
+        },
+        "SphereRadius": 291.72504
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup BonePile:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Event/BonePile.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision BonePile:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Event/BonePile.1"
+    },
+    "LightingGuid": "7D89E150-46CA6399-19B965BF-A0FED129",
+    "RenderData": null
+  }
+]

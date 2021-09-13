@@ -1,0 +1,147 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Barn3RoofCritical",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_9",
+    "Outer": "Barn3RoofCritical",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x4170D"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Barn3RoofCritical",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MetalBarnAssets",
+            "ObjectPath": "War/Content/Materials/Environment/Props/MetalBarnAssets.0"
+          },
+          "MaterialSlotName": "MetalBarnAssets",
+          "ImportedMaterialSlotName": "MetalBarnAssets",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 444.6642,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant WoodBarnTileDamaged",
+            "ObjectPath": "War/Content/Materials/Environment/Props/WoodBarnTileDamaged.0"
+          },
+          "MaterialSlotName": "WoodBarnTilePainted",
+          "ImportedMaterialSlotName": "WoodBarnTilePainted",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 495.01944,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant WoodBarnPlanksDamaged",
+            "ObjectPath": "War/Content/Materials/Environment/Props/WoodBarnPlanksDamaged.0"
+          },
+          "MaterialSlotName": "WoodBarnPlanksPainted",
+          "ImportedMaterialSlotName": "WoodBarnPlanksPainted",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 294.1055,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MetalBarnRoofs",
+            "ObjectPath": "War/Content/Materials/Environment/Props/MetalBarnRoofs.0"
+          },
+          "MaterialSlotName": "MetalBarnRoof",
+          "ImportedMaterialSlotName": "MetalBarnRoof",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 846.2911,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant WoodBarnPlanksDamaged",
+            "ObjectPath": "War/Content/Materials/Environment/Props/WoodBarnPlanksDamaged.0"
+          },
+          "MaterialSlotName": "WoodBarnPlanks",
+          "ImportedMaterialSlotName": "WoodBarnPlanks",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 299.1285,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 469.73477,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -251.33514,
+          "Y": 57.375366,
+          "Z": 568.36316
+        },
+        "BoxExtent": {
+          "X": 736.7156,
+          "Y": 617.1693,
+          "Z": 263.448
+        },
+        "SphereRadius": 982.0251
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Barn3RoofCritical:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Barn3RoofCritical.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Barn3RoofCritical:NavCollision_9",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Barn3RoofCritical.1"
+    },
+    "LightingGuid": "7CDDEF57-488BC68A-7ED52DAF-A9CFC87D",
+    "RenderData": null
+  }
+]

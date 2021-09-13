@@ -1,0 +1,942 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "ViewTargetCamera",
+    "Outer": "BPFrontierBase_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class CameraComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPFrontierBase_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPFrontierBase_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.37"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class FrontierBase",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPFrontierBase_C:ViewTargetCamera",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFrontierBase_C:MultiplexedStaticMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.28"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFrontierBase_C:Decal",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.27"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFrontierBase_C:PointLight",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.29"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPFrontierBase_C",
+    "Name": "Default__BPFrontierBase_C",
+    "Properties": {
+      "TeamFlagMeshComponent": {
+        "ObjectName": "TeamFlagMeshComponent Default__BPFrontierBase_C:TeamFlagMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.40"
+      },
+      "MeshComponent": {
+        "ObjectName": "StaticMeshComponent Default__BPFrontierBase_C:Mesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.38"
+      },
+      "SpawnPoint1": {
+        "ObjectName": "ChildActorComponent Default__BPFrontierBase_C:MobileSpawnPoint1",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.15"
+      },
+      "SpawnPoint2": {
+        "ObjectName": "ChildActorComponent Default__BPFrontierBase_C:MobileSpawnPoint2",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.16"
+      },
+      "SpawnPoint3": {
+        "ObjectName": "ChildActorComponent Default__BPFrontierBase_C:MobileSpawnPoint3",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.17"
+      },
+      "SpawnPoint4": {
+        "ObjectName": "ChildActorComponent Default__BPFrontierBase_C:MobileSpawnPoint4",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.18"
+      },
+      "SpawnPoint5": {
+        "ObjectName": "ChildActorComponent Default__BPFrontierBase_C:MobileSpawnPoint5",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.19"
+      },
+      "SpawnPoint6": {
+        "ObjectName": "ChildActorComponent Default__BPFrontierBase_C:MobileSpawnPoint6",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.20"
+      },
+      "SpawnPoint7": {
+        "ObjectName": "ChildActorComponent Default__BPFrontierBase_C:MobileSpawnPoint7",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.21"
+      },
+      "SpawnPoint8": {
+        "ObjectName": "ChildActorComponent Default__BPFrontierBase_C:MobileSpawnPoint8",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.22"
+      },
+      "SpawnPoints": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "GenericStockpileComponent": {
+        "ObjectName": "GenericItemStockpileComponent Default__BPFrontierBase_C:GenericStockpileComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.25"
+      },
+      "TechTreeComponent": {
+        "ObjectName": "TechTreeComponent Default__BPFrontierBase_C:TechTreeComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.41"
+      },
+      "SirenLoop": {
+        "ObjectName": "AudioComponent Default__BPFrontierBase_C:SirenLoop",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.12"
+      },
+      "SpawnPointType": "ESpawnPointType::FrontierBase",
+      "BaseTunnelConnectionRange": 4000,
+      "NoBuildPhysicalMaterials": [
+        {
+          "ObjectName": "PhysicalMaterial WetSandPhys",
+          "ObjectPath": "War/Content/PhysicalMaterials/WetSandPhys.0"
+        },
+        {
+          "ObjectName": "PhysicalMaterial SandPhys",
+          "ObjectPath": "War/Content/PhysicalMaterials/SandPhys.0"
+        }
+      ],
+      "MapBoundaryBuildRule": "EMapBoundaryBuildRule::OnlyBuildableNearBorder",
+      "BuildGhostClass": {
+        "ObjectName": "BlueprintGeneratedClass BPFrontierBaseGhost_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseGhost.1"
+      },
+      "BuildSiteClass": {
+        "ObjectName": "BlueprintGeneratedClass BPFrontierBaseBuildSite_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseBuildSite.1"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "898B594A43D5B461B32B2F969B385EF9",
+        "SourceString": "A special Forward Base that can only be built near a region border that's adjacent to friendly territory. This structure decays quickly."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D BarracksStructureIcon",
+        "ObjectPath": "War/Content/Textures/UI/StructureIcons/BarracksStructureIcon.0"
+      },
+      "bRequiresVehicleToBuild": false,
+      "CodeName": "FrontierBase",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "1207C72B493DF724C6F08DB4C221B14B",
+        "SourceString": "Frontier Base"
+      },
+      "ArmourType": "EArmourType::Tier1Structure",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBase_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.11"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPFrontierBase_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.13"
+      },
+      "DestroyedFX": {
+        "ObjectName": "ParticleSystem GrenadeBlast",
+        "ObjectPath": "War/Content/FX/GrenadeBlast.151"
+      },
+      "GarrisonComponent": {
+        "ObjectName": "GarrisonComponent Default__BPFrontierBase_C:GarrisonComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.24"
+      },
+      "MaxHealth": 1250,
+      "Health": 1250,
+      "MapIconType": "EMapIconType::FrontierBase",
+      "DropLocationOffset": {
+        "X": 0.0,
+        "Y": 500.0,
+        "Z": 10.0
+      },
+      "StructureNetRelevancySize": "EStructureNetRelevancySize::Medium",
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPFrontierBase_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.39"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBase_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.11"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "MobileSpawnPointArrow",
+    "Outer": "MobileSpawnPoint1_WarMobilePlayerSpawn_CAT"
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "MobileSpawnPointArrow",
+    "Outer": "MobileSpawnPoint2_WarMobilePlayerSpawn_CAT"
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "MobileSpawnPointArrow",
+    "Outer": "MobileSpawnPoint3_WarMobilePlayerSpawn_CAT"
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "MobileSpawnPointArrow",
+    "Outer": "MobileSpawnPoint4_WarMobilePlayerSpawn_CAT"
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "MobileSpawnPointArrow",
+    "Outer": "MobileSpawnPoint5_WarMobilePlayerSpawn_CAT"
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "MobileSpawnPointArrow",
+    "Outer": "MobileSpawnPoint6_WarMobilePlayerSpawn_CAT"
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "MobileSpawnPointArrow",
+    "Outer": "MobileSpawnPoint7_WarMobilePlayerSpawn_CAT"
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "MobileSpawnPointArrow",
+    "Outer": "MobileSpawnPoint8_WarMobilePlayerSpawn_CAT"
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPFrontierBase_C"
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "SirenLoop",
+    "Outer": "Default__BPFrontierBase_C",
+    "Properties": {
+      "Sound": {
+        "ObjectName": "SoundCue RocketSiren_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Structure/Rocket/RocketSiren_Cue.0"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBase_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.11"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPFrontierBase_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 600.0,
+        "Y": 600.0,
+        "Z": 150.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBase_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.11"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 150.0
+      }
+    }
+  },
+  {
+    "Type": "CameraComponent",
+    "Name": "ViewTargetCamera_GEN_VARIABLE",
+    "Outer": "BPFrontierBase_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 1500.0,
+        "Z": 2000.0
+      },
+      "RelativeRotation": {
+        "Pitch": -59.99922,
+        "Yaw": -90.0,
+        "Roll": 0.000102
+      }
+    }
+  },
+  {
+    "Type": "ChildActorComponent",
+    "Name": "MobileSpawnPoint1",
+    "Outer": "Default__BPFrontierBase_C",
+    "Properties": {
+      "ChildActorClass": {
+        "ObjectName": "Class WarMobilePlayerSpawn",
+        "ObjectPath": "/Script/War"
+      },
+      "ChildActorTemplate": {
+        "ObjectName": "WarMobilePlayerSpawn Default__BPFrontierBase_C:MobileSpawnPoint1.MobileSpawnPoint1_WarMobilePlayerSpawn_CAT",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.42"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBase_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.11"
+      },
+      "RelativeLocation": {
+        "X": -114.32641,
+        "Y": 573.02936,
+        "Z": 301.0089
+      }
+    }
+  },
+  {
+    "Type": "ChildActorComponent",
+    "Name": "MobileSpawnPoint2",
+    "Outer": "Default__BPFrontierBase_C",
+    "Properties": {
+      "ChildActorClass": {
+        "ObjectName": "Class WarMobilePlayerSpawn",
+        "ObjectPath": "/Script/War"
+      },
+      "ChildActorTemplate": {
+        "ObjectName": "WarMobilePlayerSpawn Default__BPFrontierBase_C:MobileSpawnPoint2.MobileSpawnPoint2_WarMobilePlayerSpawn_CAT",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.43"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBase_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.11"
+      },
+      "RelativeLocation": {
+        "X": 57.47902,
+        "Y": 427.8167,
+        "Z": 301.00958
+      }
+    }
+  },
+  {
+    "Type": "ChildActorComponent",
+    "Name": "MobileSpawnPoint3",
+    "Outer": "Default__BPFrontierBase_C",
+    "Properties": {
+      "ChildActorClass": {
+        "ObjectName": "Class WarMobilePlayerSpawn",
+        "ObjectPath": "/Script/War"
+      },
+      "ChildActorTemplate": {
+        "ObjectName": "WarMobilePlayerSpawn Default__BPFrontierBase_C:MobileSpawnPoint3.MobileSpawnPoint3_WarMobilePlayerSpawn_CAT",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.44"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBase_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.11"
+      },
+      "RelativeLocation": {
+        "X": -282.16077,
+        "Y": 429.43134,
+        "Z": 301.0089
+      }
+    }
+  },
+  {
+    "Type": "ChildActorComponent",
+    "Name": "MobileSpawnPoint4",
+    "Outer": "Default__BPFrontierBase_C",
+    "Properties": {
+      "ChildActorClass": {
+        "ObjectName": "Class WarMobilePlayerSpawn",
+        "ObjectPath": "/Script/War"
+      },
+      "ChildActorTemplate": {
+        "ObjectName": "WarMobilePlayerSpawn Default__BPFrontierBase_C:MobileSpawnPoint4.MobileSpawnPoint4_WarMobilePlayerSpawn_CAT",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.45"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBase_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.11"
+      },
+      "RelativeLocation": {
+        "X": 206.2829,
+        "Y": 424.43134,
+        "Z": 301.00934
+      }
+    }
+  },
+  {
+    "Type": "ChildActorComponent",
+    "Name": "MobileSpawnPoint5",
+    "Outer": "Default__BPFrontierBase_C",
+    "Properties": {
+      "ChildActorClass": {
+        "ObjectName": "Class WarMobilePlayerSpawn",
+        "ObjectPath": "/Script/War"
+      },
+      "ChildActorTemplate": {
+        "ObjectName": "WarMobilePlayerSpawn Default__BPFrontierBase_C:MobileSpawnPoint5.MobileSpawnPoint5_WarMobilePlayerSpawn_CAT",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.46"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBase_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.11"
+      },
+      "RelativeLocation": {
+        "X": -114.94131,
+        "Y": 433.28217,
+        "Z": 301.0089
+      }
+    }
+  },
+  {
+    "Type": "ChildActorComponent",
+    "Name": "MobileSpawnPoint6",
+    "Outer": "Default__BPFrontierBase_C",
+    "Properties": {
+      "ChildActorClass": {
+        "ObjectName": "Class WarMobilePlayerSpawn",
+        "ObjectPath": "/Script/War"
+      },
+      "ChildActorTemplate": {
+        "ObjectName": "WarMobilePlayerSpawn Default__BPFrontierBase_C:MobileSpawnPoint6.MobileSpawnPoint6_WarMobilePlayerSpawn_CAT",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.47"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBase_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.11"
+      },
+      "RelativeLocation": {
+        "X": 203.56146,
+        "Y": 573.68915,
+        "Z": 301.00934
+      }
+    }
+  },
+  {
+    "Type": "ChildActorComponent",
+    "Name": "MobileSpawnPoint7",
+    "Outer": "Default__BPFrontierBase_C",
+    "Properties": {
+      "ChildActorClass": {
+        "ObjectName": "Class WarMobilePlayerSpawn",
+        "ObjectPath": "/Script/War"
+      },
+      "ChildActorTemplate": {
+        "ObjectName": "WarMobilePlayerSpawn Default__BPFrontierBase_C:MobileSpawnPoint7.MobileSpawnPoint7_WarMobilePlayerSpawn_CAT",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.48"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBase_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.11"
+      },
+      "RelativeLocation": {
+        "X": -277.35077,
+        "Y": 583.95404,
+        "Z": 301.0089
+      }
+    }
+  },
+  {
+    "Type": "ChildActorComponent",
+    "Name": "MobileSpawnPoint8",
+    "Outer": "Default__BPFrontierBase_C",
+    "Properties": {
+      "ChildActorClass": {
+        "ObjectName": "Class WarMobilePlayerSpawn",
+        "ObjectPath": "/Script/War"
+      },
+      "ChildActorTemplate": {
+        "ObjectName": "WarMobilePlayerSpawn Default__BPFrontierBase_C:MobileSpawnPoint8.MobileSpawnPoint8_WarMobilePlayerSpawn_CAT",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.49"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBase_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.11"
+      },
+      "RelativeLocation": {
+        "X": 51.683105,
+        "Y": 574.07904,
+        "Z": 301.00958
+      }
+    }
+  },
+  {
+    "Type": "DecalComponent",
+    "Name": "Decal_GEN_VARIABLE",
+    "Outer": "BPFrontierBase_C",
+    "Properties": {
+      "DecalMaterial": {
+        "ObjectName": "MaterialInstanceConstant DirtPatch",
+        "ObjectPath": "War/Content/Materials/Decals/DirtPatch.0"
+      },
+      "DecalSize": {
+        "X": 139.64244,
+        "Y": 654.5738,
+        "Z": 654.5738
+      },
+      "RelativeLocation": {
+        "X": -20.871796,
+        "Y": -9.194778,
+        "Z": -0.0001447669
+      },
+      "RelativeRotation": {
+        "Pitch": -90.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "GarrisonComponent",
+    "Name": "GarrisonComponent",
+    "Outer": "Default__BPFrontierBase_C"
+  },
+  {
+    "Type": "GenericItemStockpileComponent",
+    "Name": "GenericStockpileComponent",
+    "Outer": "Default__BPFrontierBase_C"
+  },
+  {
+    "Type": "MultiplexedStaticMeshComponent",
+    "Name": "MultiplexedStaticMesh_GEN_VARIABLE",
+    "Outer": "BPFrontierBase_C",
+    "Properties": {
+      "TargetTag": "Multiplexed",
+      "MeshStops": [
+        {
+          "Threshold": 0,
+          "StaticMesh": {
+            "ObjectName": "StaticMesh BarracksCritical",
+            "ObjectPath": "War/Content/Meshes/Structures/BarracksCritical.2"
+          }
+        },
+        {
+          "Threshold": 33,
+          "StaticMesh": {
+            "ObjectName": "StaticMesh BarracksDamaged",
+            "ObjectPath": "War/Content/Meshes/Structures/BarracksDamaged.2"
+          }
+        },
+        {
+          "Threshold": 66,
+          "StaticMesh": {
+            "ObjectName": "StaticMesh Barracks",
+            "ObjectPath": "War/Content/Meshes/Structures/Barracks.2"
+          }
+        }
+      ],
+      "InputValue": 100,
+      "SelectedMeshIndex": 2
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Decal",
+    "Outer": "BPFrontierBase_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class DecalComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "MultiplexedStaticMesh",
+    "Outer": "BPFrontierBase_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class MultiplexedStaticMeshComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "PointLight",
+    "Outer": "BPFrontierBase_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class PointLightComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "PointLightComponent",
+    "Name": "PointLight_GEN_VARIABLE",
+    "Outer": "BPFrontierBase_C",
+    "Properties": {
+      "bUseInverseSquaredFalloff": false,
+      "LightFalloffExponent": 10.440371,
+      "SourceRadius": 35.0,
+      "AttenuationRadius": 3000.0,
+      "ShadowSharpen": 0.155963,
+      "bUseRayTracedDistanceFieldShadows": true,
+      "Intensity": 7.0,
+      "LightColor": {
+        "R": 140,
+        "G": 211,
+        "B": 255,
+        "A": 255,
+        "Hex": "FF8CD3FF"
+      },
+      "RelativeLocation": {
+        "X": 0.83217525,
+        "Y": 371.80286,
+        "Z": 154.147
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPFrontierBase_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPFrontierBase_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.31"
+      },
+      "VariableGuid": "9D1395B6-45E4FC3E-BCFFFEAA-3CE71F12",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class PointLightComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "PointLightComponent BPFrontierBase_C:PointLight_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.30"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "88188C68-44DB8F57-9DB3BE84-3B5B4C01",
+      "InternalVariableName": "PointLight"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class CameraComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "CameraComponent BPFrontierBase_C:ViewTargetCamera_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.14"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "9BB276D0-4D12B068-45A786B8-8C3C865B",
+      "InternalVariableName": "ViewTargetCamera"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class DecalComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "DecalComponent BPFrontierBase_C:Decal_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.23"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "4E90FEE7-47BC0D86-7DBAA68A-15BFF61D",
+      "InternalVariableName": "Decal"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class MultiplexedStaticMeshComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "MultiplexedStaticMeshComponent BPFrontierBase_C:MultiplexedStaticMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.26"
+      },
+      "VariableGuid": "B093B2DD-4FDFD7D1-335D339B-9A18E86E",
+      "InternalVariableName": "MultiplexedStaticMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPFrontierBase_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPFrontierBase_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.33"
+        },
+        {
+          "ObjectName": "SCS_Node BPFrontierBase_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.35"
+        },
+        {
+          "ObjectName": "SCS_Node BPFrontierBase_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.36"
+        },
+        {
+          "ObjectName": "SCS_Node BPFrontierBase_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.34"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPFrontierBase_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.33"
+        },
+        {
+          "ObjectName": "SCS_Node BPFrontierBase_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.35"
+        },
+        {
+          "ObjectName": "SCS_Node BPFrontierBase_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.36"
+        },
+        {
+          "ObjectName": "SCS_Node BPFrontierBase_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.34"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPFrontierBase_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.32"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Mesh",
+    "Outer": "Default__BPFrontierBase_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh Barracks",
+        "ObjectPath": "War/Content/Meshes/Structures/Barracks.2"
+      },
+      "bReceivesDecals": false,
+      "bAffectDistanceFieldLighting": false,
+      "CanCharacterStepUpOn": "ECB_No",
+      "BodyInstance": {
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBase_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.11"
+      },
+      "ComponentTags": [
+        "Multiplexed"
+      ]
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPFrontierBase_C"
+  },
+  {
+    "Type": "TeamFlagMeshComponent",
+    "Name": "TeamFlagMesh",
+    "Outer": "Default__BPFrontierBase_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBase_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.11"
+      },
+      "RelativeLocation": {
+        "X": 259.31256,
+        "Y": -303.27167,
+        "Z": -7.886414
+      }
+    }
+  },
+  {
+    "Type": "TechTreeComponent",
+    "Name": "TechTreeComponent",
+    "Outer": "Default__BPFrontierBase_C",
+    "Properties": {
+      "DataClass": {
+        "ObjectName": "BlueprintGeneratedClass BPMinimalForwardBaseTechTree_C",
+        "ObjectPath": "War/Content/Blueprints/TechTree/BPMinimalForwardBaseTechTree.0"
+      },
+      "bStartsCompleted": true
+    }
+  },
+  {
+    "Type": "WarMobilePlayerSpawn",
+    "Name": "MobileSpawnPoint1_WarMobilePlayerSpawn_CAT",
+    "Outer": "MobileSpawnPoint1",
+    "Properties": {
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBase_C:MobileSpawnPoint1.MobileSpawnPoint1_WarMobilePlayerSpawn_CAT.MobileSpawnPointArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.3"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBase_C:MobileSpawnPoint1.MobileSpawnPoint1_WarMobilePlayerSpawn_CAT.MobileSpawnPointArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.3"
+      }
+    }
+  },
+  {
+    "Type": "WarMobilePlayerSpawn",
+    "Name": "MobileSpawnPoint2_WarMobilePlayerSpawn_CAT",
+    "Outer": "MobileSpawnPoint2",
+    "Properties": {
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBase_C:MobileSpawnPoint2.MobileSpawnPoint2_WarMobilePlayerSpawn_CAT.MobileSpawnPointArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.4"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBase_C:MobileSpawnPoint2.MobileSpawnPoint2_WarMobilePlayerSpawn_CAT.MobileSpawnPointArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.4"
+      }
+    }
+  },
+  {
+    "Type": "WarMobilePlayerSpawn",
+    "Name": "MobileSpawnPoint3_WarMobilePlayerSpawn_CAT",
+    "Outer": "MobileSpawnPoint3",
+    "Properties": {
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBase_C:MobileSpawnPoint3.MobileSpawnPoint3_WarMobilePlayerSpawn_CAT.MobileSpawnPointArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.5"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBase_C:MobileSpawnPoint3.MobileSpawnPoint3_WarMobilePlayerSpawn_CAT.MobileSpawnPointArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.5"
+      }
+    }
+  },
+  {
+    "Type": "WarMobilePlayerSpawn",
+    "Name": "MobileSpawnPoint4_WarMobilePlayerSpawn_CAT",
+    "Outer": "MobileSpawnPoint4",
+    "Properties": {
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBase_C:MobileSpawnPoint4.MobileSpawnPoint4_WarMobilePlayerSpawn_CAT.MobileSpawnPointArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.6"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBase_C:MobileSpawnPoint4.MobileSpawnPoint4_WarMobilePlayerSpawn_CAT.MobileSpawnPointArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.6"
+      }
+    }
+  },
+  {
+    "Type": "WarMobilePlayerSpawn",
+    "Name": "MobileSpawnPoint5_WarMobilePlayerSpawn_CAT",
+    "Outer": "MobileSpawnPoint5",
+    "Properties": {
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBase_C:MobileSpawnPoint5.MobileSpawnPoint5_WarMobilePlayerSpawn_CAT.MobileSpawnPointArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.7"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBase_C:MobileSpawnPoint5.MobileSpawnPoint5_WarMobilePlayerSpawn_CAT.MobileSpawnPointArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.7"
+      }
+    }
+  },
+  {
+    "Type": "WarMobilePlayerSpawn",
+    "Name": "MobileSpawnPoint6_WarMobilePlayerSpawn_CAT",
+    "Outer": "MobileSpawnPoint6",
+    "Properties": {
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBase_C:MobileSpawnPoint6.MobileSpawnPoint6_WarMobilePlayerSpawn_CAT.MobileSpawnPointArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.8"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBase_C:MobileSpawnPoint6.MobileSpawnPoint6_WarMobilePlayerSpawn_CAT.MobileSpawnPointArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.8"
+      }
+    }
+  },
+  {
+    "Type": "WarMobilePlayerSpawn",
+    "Name": "MobileSpawnPoint7_WarMobilePlayerSpawn_CAT",
+    "Outer": "MobileSpawnPoint7",
+    "Properties": {
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBase_C:MobileSpawnPoint7.MobileSpawnPoint7_WarMobilePlayerSpawn_CAT.MobileSpawnPointArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.9"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBase_C:MobileSpawnPoint7.MobileSpawnPoint7_WarMobilePlayerSpawn_CAT.MobileSpawnPointArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.9"
+      }
+    }
+  },
+  {
+    "Type": "WarMobilePlayerSpawn",
+    "Name": "MobileSpawnPoint8_WarMobilePlayerSpawn_CAT",
+    "Outer": "MobileSpawnPoint8",
+    "Properties": {
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBase_C:MobileSpawnPoint8.MobileSpawnPoint8_WarMobilePlayerSpawn_CAT.MobileSpawnPointArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.10"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBase_C:MobileSpawnPoint8.MobileSpawnPoint8_WarMobilePlayerSpawn_CAT.MobileSpawnPointArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBase.10"
+      }
+    }
+  }
+]

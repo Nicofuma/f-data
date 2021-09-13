@@ -1,0 +1,105 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "WardenHelmetPile02",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -14.046814,
+              "Y": -2.9523773,
+              "Z": 14.358683
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 95.43104,
+            "Y": 109.96471,
+            "Z": 29.280687,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_3",
+    "Outer": "WardenHelmetPile02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x29B28"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "WardenHelmetPile02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Helmet_MetalWarden",
+            "ObjectPath": "War/Content/Materials/Character/Helmet_MetalWarden.0"
+          },
+          "MaterialSlotName": "Helmet",
+          "ImportedMaterialSlotName": "Helmet",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 83.34109,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 83.34109,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -14.046814,
+          "Y": -2.9523773,
+          "Z": 14.358683
+        },
+        "BoxExtent": {
+          "X": 72.645874,
+          "Y": 79.91271,
+          "Z": 14.640344
+        },
+        "SphereRadius": 87.922195
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup WardenHelmetPile02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/WardenHelmetPile02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision WardenHelmetPile02:NavCollision_3",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/WardenHelmetPile02.1"
+    },
+    "LightingGuid": "1493E135-4CA483E9-C4D442A6-B33863B7",
+    "RenderData": null
+  }
+]

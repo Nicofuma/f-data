@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "TownSidewalkCorner02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "TownSidewalkCorner02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1929"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TownSidewalkCorner02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownSidewalkTrim01",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownSidewalkTrim01.0"
+          },
+          "MaterialSlotName": "Material #599",
+          "ImportedMaterialSlotName": "Material #599",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 377.252,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 377.252,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 326.9515,
+          "Y": 309.66843,
+          "Z": 12.500023
+        },
+        "BoxExtent": {
+          "X": 326.95145,
+          "Y": 326.9515,
+          "Z": 12.500023
+        },
+        "SphereRadius": 462.54813
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TownSidewalkCorner02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/TownSidewalkCorner02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TownSidewalkCorner02:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/TownSidewalkCorner02.1"
+    },
+    "LightingGuid": "1C95F239-4CD2128B-6C75BC82-5E998648",
+    "RenderData": null
+  }
+]

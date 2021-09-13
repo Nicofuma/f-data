@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FireEscapePlatform1a",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "FireEscapePlatform1a",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x9F7C"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FireEscapePlatform1a",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant GarrisonStationTrims",
+            "ObjectPath": "War/Content/Materials/Environment/Props/GarrisonStationTrims.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 88.4278,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 88.4278,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.13121796,
+          "Y": -1.5258789E-05,
+          "Z": 41.37248
+        },
+        "BoxExtent": {
+          "X": 75.4411,
+          "Y": 223.9942,
+          "Z": 53.51082
+        },
+        "SphereRadius": 241.31381
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FireEscapePlatform1a:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FireEscapePlatform1a.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FireEscapePlatform1a:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FireEscapePlatform1a.1"
+    },
+    "LightingGuid": "5768079B-4190EA8D-A493DC9F-CECF7C3F",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,136 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Birch02Critical",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -23.027605,
+              "Y": 1.993704,
+              "Z": 156.56563
+            },
+            "Rotation": {
+              "Pitch": 0.11795053,
+              "Yaw": -0.12597637,
+              "Roll": -1.7312622
+            },
+            "Radius": 45.22877,
+            "Length": 282.93774,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "Birch02Critical",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 5521,
+        "SizeOnDisk": 5521,
+        "OffsetInFile": "0x19ACC"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Birch02Critical",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BirchBarkDamaged",
+            "ObjectPath": "War/Content/Materials/Environment/Props/BirchBarkDamaged.0"
+          },
+          "MaterialSlotName": "BirchBark",
+          "ImportedMaterialSlotName": "BirchBark",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 355.7944,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 6.436685,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TreeInterior",
+            "ObjectPath": "War/Content/Materials/Environment/Props/TreeInterior.0"
+          },
+          "MaterialSlotName": "TreeInterior",
+          "ImportedMaterialSlotName": "TreeInterior",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 95.22988,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 1.3669305,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BirchPatch",
+            "ObjectPath": "War/Content/Materials/Environment/Props/BirchPatch.0"
+          },
+          "MaterialSlotName": "Decal",
+          "ImportedMaterialSlotName": "Decal",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 546.5343,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 224.89029,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -25.553253,
+          "Y": -55.38098,
+          "Z": 284.43005
+        },
+        "BoxExtent": {
+          "X": 381.71857,
+          "Y": 381.71857,
+          "Z": 332.8413
+        },
+        "SphereRadius": 477.56876
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Birch02Critical:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/Birch02Critical.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Birch02Critical:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/Birch02Critical.1"
+    },
+    "LightingGuid": "2212C889-402AC80F-912F41AA-491FADEC",
+    "RenderData": null
+  }
+]

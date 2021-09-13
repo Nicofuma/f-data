@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "DrawBridgeGhost",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_5",
+    "Outer": "DrawBridgeGhost",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xE455"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "DrawBridgeGhost",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material BuildGhost",
+            "ObjectPath": "War/Content/Materials/Structures/BuildGhost.0"
+          },
+          "MaterialSlotName": "DrawBridge",
+          "ImportedMaterialSlotName": "DrawBridge",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 2214.2078,
+            "LocalUVDensities": 1.1786178,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1.1786178,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -580.41846,
+          "Z": 33.6071
+        },
+        "BoxExtent": {
+          "X": 458.07614,
+          "Y": 521.75134,
+          "Z": 215.71382
+        },
+        "SphereRadius": 711.71606
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup DrawBridgeGhost:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/DrawBridgeGhost.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision DrawBridgeGhost:NavCollision_5",
+      "ObjectPath": "War/Content/Meshes/Structures/DrawBridgeGhost.1"
+    },
+    "LightingGuid": "8294E3DD-41A7E8A4-7EF05B8F-D0DCA46B",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,121 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "PistolLightWPickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript PistolLightWPickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/PistolLightWPickup.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class FirearmPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "PistolLightWPickup_C",
+    "Name": "Default__PistolLightWPickup_C",
+    "Properties": {
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass PistolLightWComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Items/PistolLightWComponent.0"
+      },
+      "Encumbrance": 50,
+      "CodeName": "PistolLightW",
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "BDC296CB4E025D9E9394098723F62DF0",
+        "SourceString": "Pistol"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "67AA4568474AFEA6E543FBAB5F68C864",
+        "SourceString": "Cascadier 873"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "00B5C6404394B5C78A6EA5B626AA3E1F",
+        "SourceString": "This unique sidearm fires in three-round bursts. The Cascadier may not have the stopping power of its cousins, but it more than makes up for it with its lightweight frame, concealability and fire rate."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D PistolLightWItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/PistolLightWItemIcon.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Secondary",
+      "ItemCategory": "EItemCategory::SmallArms",
+      "ItemProfileType": "EItemProfileType::HandheldWeapon",
+      "FactionVariant": "EFactionId::Wardens",
+      "TechID": "ETechID::UnlockPistolLight",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__PistolLightWPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/PistolLightWPickup.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__PistolLightWPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/PistolLightWPickup.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__PistolLightWPickup_C",
+    "Properties": {
+      "bReceivesDecals": false
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "PistolLightWPickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent PistolLightWPickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/PistolLightWPickup.3"
+      },
+      "VariableGuid": "FBF04340-40D71A47-9ED11191-32B797F3",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "PistolLightWPickup_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node PistolLightWPickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/PistolLightWPickup.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__PistolLightWPickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__PistolLightWPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/PistolLightWPickup.2"
+      }
+    }
+  }
+]

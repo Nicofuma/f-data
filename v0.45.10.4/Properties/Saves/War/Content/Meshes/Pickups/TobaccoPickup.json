@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "TobaccoPickup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "TobaccoPickup",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x896C"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TobaccoPickup",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TobaccoPickup",
+            "ObjectPath": "War/Content/Materials/Pickups/TobaccoPickup.0"
+          },
+          "MaterialSlotName": "Tobacco",
+          "ImportedMaterialSlotName": "Tobacco",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 93.081894,
+            "LocalUVDensities": 117.70979,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 117.70979,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.21194077,
+          "Y": -11.185066,
+          "Z": 8.906681
+        },
+        "BoxExtent": {
+          "X": 17.966276,
+          "Y": 23.313717,
+          "Z": 8.977586
+        },
+        "SphereRadius": 28.782206
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TobaccoPickup:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Pickups/TobaccoPickup.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TobaccoPickup:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Pickups/TobaccoPickup.1"
+    },
+    "LightingGuid": "CA87F7C0-4A0DA964-FF0423B7-EC945831",
+    "RenderData": null
+  }
+]

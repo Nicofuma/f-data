@@ -1,0 +1,116 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "AmbulanceDestroyed",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "AmbulanceDestroyed",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x79340"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "AmbulanceDestroyed",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant AmbulanceDestroyed",
+            "ObjectPath": "War/Content/Materials/Vehicles/AmbulanceDestroyed.0"
+          },
+          "MaterialSlotName": "Ambulance",
+          "ImportedMaterialSlotName": "Ambulance",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 811.1187,
+            "LocalUVDensities": 2.2043154,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Tire01",
+            "ObjectPath": "War/Content/Materials/Vehicles/Tire01.0"
+          },
+          "MaterialSlotName": "Tire",
+          "ImportedMaterialSlotName": "Tire",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 122.196,
+            "LocalUVDensities": 1.9005209,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RepeatingRope",
+            "ObjectPath": "War/Content/Materials/Environment/Props/RepeatingRope.0"
+          },
+          "MaterialSlotName": "Rope",
+          "ImportedMaterialSlotName": "Rope",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 12.670876,
+            "LocalUVDensities": 1.5191461,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 2.080007,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 4.1920166,
+          "Y": 20.13797,
+          "Z": 138.15616
+        },
+        "BoxExtent": {
+          "X": 168.29413,
+          "Y": 313.03372,
+          "Z": 146.84761
+        },
+        "SphereRadius": 359.13144
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup AmbulanceDestroyed:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Vehicles/AmbulanceDestroyed.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision AmbulanceDestroyed:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Vehicles/AmbulanceDestroyed.1"
+    },
+    "LightingGuid": "59F1CE6F-4B2689A1-628976BA-D6AFC1FC",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,111 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BandagesPickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BandagesPickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BandagesPickup.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class GearPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BandagesPickup_C",
+    "Name": "Default__BandagesPickup_C",
+    "Properties": {
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BandagesComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Items/BandagesComponent.0"
+      },
+      "Encumbrance": 1,
+      "CodeName": "Bandages",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "A6C68EC44575D472629393947913DE1B",
+        "SourceString": "Bandages"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "EBB791414DBF7EED5D7129B9D59B93F8",
+        "SourceString": "Used to stem bleeding."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D BandagesItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/BandagesItemIcon.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Tertiary",
+      "ItemCategory": "EItemCategory::Medical",
+      "ItemProfileType": "EItemProfileType::StackableTool",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BandagesPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BandagesPickup.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BandagesPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BandagesPickup.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BandagesPickup_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BandagesPickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BandagesPickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BandagesPickup.3"
+      },
+      "VariableGuid": "4D026B0B-47C94A2C-5958D38F-0A15C98C",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BandagesPickup_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BandagesPickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BandagesPickup.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BandagesPickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BandagesPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BandagesPickup.2"
+      }
+    }
+  }
+]

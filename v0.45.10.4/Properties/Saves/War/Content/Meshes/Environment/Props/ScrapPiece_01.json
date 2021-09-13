@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ScrapPiece_01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "ScrapPiece_01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x140E"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ScrapPiece_01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ScrapPickup",
+            "ObjectPath": "War/Content/Materials/Pickups/ScrapPickup.0"
+          },
+          "MaterialSlotName": "Material #70",
+          "ImportedMaterialSlotName": "Material #70",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 275.78183,
+            "LocalUVDensities": 206.07689,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 206.07689,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 58.914093,
+          "Y": 69.064514,
+          "Z": 12.434021
+        },
+        "SphereRadius": 79.85563
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ScrapPiece_01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ScrapPiece_01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ScrapPiece_01:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ScrapPiece_01.1"
+    },
+    "LightingGuid": "FDF2AE95-4047B327-30C3DCA7-65789459",
+    "RenderData": null
+  }
+]

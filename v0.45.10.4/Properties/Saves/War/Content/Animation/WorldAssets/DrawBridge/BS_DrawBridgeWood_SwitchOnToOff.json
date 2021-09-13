@@ -1,0 +1,87 @@
+[
+  {
+    "Type": "BlendSpace1D",
+    "Name": "BS_DrawBridgeWood_SwitchOnToOff",
+    "Properties": {
+      "InterpolationParam": {
+        "InterpolationTime": 0.2
+      },
+      "SampleData": [
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence POSE_DrawBridgeWood_closed",
+            "ObjectPath": "War/Content/Animation/WorldAssets/DrawBridge/POSE_DrawBridgeWood_closed.0"
+          },
+          "SampleValue": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence POSE_DrawBridgeWood_open",
+            "ObjectPath": "War/Content/Animation/WorldAssets/DrawBridge/POSE_DrawBridgeWood_open.0"
+          },
+          "SampleValue": {
+            "X": 1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        }
+      ],
+      "GridSamples": [
+        {
+          "Indices": 1,
+          "Indices": 0,
+          "Indices": -1,
+          "Weights": 0.0,
+          "Weights": 1.0,
+          "Weights": 0.0
+        },
+        {
+          "Indices": 1,
+          "Indices": 0,
+          "Indices": -1,
+          "Weights": 0.25,
+          "Weights": 0.75,
+          "Weights": 0.0
+        },
+        {
+          "Indices": 1,
+          "Indices": 0,
+          "Indices": -1,
+          "Weights": 0.5,
+          "Weights": 0.5,
+          "Weights": 0.0
+        },
+        {
+          "Indices": 1,
+          "Indices": 0,
+          "Indices": -1,
+          "Weights": 0.75,
+          "Weights": 0.25,
+          "Weights": 0.0
+        },
+        {
+          "Indices": 1,
+          "Indices": 0,
+          "Indices": -1,
+          "Weights": 1.0,
+          "Weights": 0.0,
+          "Weights": 0.0
+        }
+      ],
+      "BlendParameters": {
+        "DisplayName": "isOpen",
+        "Max": 1.0
+      },
+      "Skeleton": {
+        "ObjectName": "Skeleton DrawBridgeWood_Skeleton",
+        "ObjectPath": "War/Content/Meshes/Structures/DrawBridgeWood_Skeleton.0"
+      }
+    }
+  }
+]

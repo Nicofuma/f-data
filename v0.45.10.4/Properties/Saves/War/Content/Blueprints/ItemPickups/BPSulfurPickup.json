@@ -1,0 +1,109 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPSulfurPickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPSulfurPickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPSulfurPickup.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class BasicItemPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPSulfurPickup_C",
+    "Name": "Default__BPSulfurPickup_C",
+    "Properties": {
+      "Encumbrance": 24,
+      "CodeName": "Sulfur",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "F546B4DD4883E4AF4C7FF59D6533F5AD",
+        "SourceString": "Sulfur"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "80B758FE4E346EE2AC991085E2A8AE76",
+        "SourceString": "Sulfur that can be refined into Heavy Explosive Materials at a Refinery"
+      },
+      "Icon": {
+        "ObjectName": "Texture2D SulfurIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/SulfurIcon.0"
+      },
+      "ItemCategory": "EItemCategory::Supplies",
+      "ItemProfileType": "EItemProfileType::RawResource",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPSulfurPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPSulfurPickup.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPSulfurPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPSulfurPickup.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPSulfurPickup_C",
+    "Properties": {
+      "bReceivesDecals": false
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPSulfurPickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPSulfurPickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPSulfurPickup.3"
+      },
+      "VariableGuid": "A0751F8B-46A22E9A-705EF3A3-8C436BDB",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPSulfurPickup_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPSulfurPickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPSulfurPickup.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPSulfurPickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPSulfurPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPSulfurPickup.2"
+      }
+    }
+  }
+]

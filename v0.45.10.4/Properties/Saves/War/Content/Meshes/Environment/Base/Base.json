@@ -1,0 +1,181 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_4612",
+    "Outer": "Base",
+    "Properties": {
+      "CollisionTraceFlag": "CTF_UseComplexAsSimple",
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_42",
+    "Outer": "Base",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 1333557,
+        "SizeOnDisk": 1333557,
+        "OffsetInFile": "0xBE2A2"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Base",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Bricks",
+            "ObjectPath": "War/Content/Materials/Environment/Bricks.0"
+          },
+          "MaterialSlotName": "Bricks",
+          "ImportedMaterialSlotName": "Bricks",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 491.2984,
+            "LocalUVDensities": 12401.088,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BricksTrim",
+            "ObjectPath": "War/Content/Materials/Environment/BricksTrim.0"
+          },
+          "MaterialSlotName": "BricksTrim",
+          "ImportedMaterialSlotName": "BricksTrim",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 220.48752,
+            "LocalUVDensities": 11884.141,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material Dirt",
+            "ObjectPath": "War/Content/FX/Materials/Dirt.0"
+          },
+          "MaterialSlotName": "Dirt",
+          "ImportedMaterialSlotName": "Dirt",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 526.3314,
+            "LocalUVDensities": 12311.518,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant WoodRepeating03",
+            "ObjectPath": "War/Content/Materials/Environment/WoodRepeating03.0"
+          },
+          "MaterialSlotName": "WoodRepeating03",
+          "ImportedMaterialSlotName": "WoodRepeating03",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 473.10583,
+            "LocalUVDensities": 12525.176,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BricksSingle",
+            "ObjectPath": "War/Content/Materials/Environment/BricksSingle.0"
+          },
+          "MaterialSlotName": "BricksSingle",
+          "ImportedMaterialSlotName": "BricksSingle",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 299.49265,
+            "LocalUVDensities": 11934.766,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BricksSingle",
+            "ObjectPath": "War/Content/Materials/Environment/BricksSingle.0"
+          },
+          "MaterialSlotName": "BricksSingle_1",
+          "ImportedMaterialSlotName": "BricksSingle_1",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 291.0782,
+            "LocalUVDensities": 11882.223,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BricksWorn",
+            "ObjectPath": "War/Content/Materials/Environment/BricksWorn.0"
+          },
+          "MaterialSlotName": "BricksWorn",
+          "ImportedMaterialSlotName": "BricksWorn",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 629.0765,
+            "LocalUVDensities": 11983.819,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 12340.268,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.7037964,
+          "Y": 5.373474,
+          "Z": 497.72797
+        },
+        "BoxExtent": {
+          "X": 677.36066,
+          "Y": 557.4939,
+          "Z": 521.55756
+        },
+        "SphereRadius": 927.41284
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Base:BodySetup_4612",
+      "ObjectPath": "War/Content/Meshes/Environment/Base/Base.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Base:NavCollision_42",
+      "ObjectPath": "War/Content/Meshes/Environment/Base/Base.1"
+    },
+    "LightingGuid": "DBA0F0FC-48D1FC4B-8F00CDAC-13076D7D",
+    "RenderData": null
+  }
+]

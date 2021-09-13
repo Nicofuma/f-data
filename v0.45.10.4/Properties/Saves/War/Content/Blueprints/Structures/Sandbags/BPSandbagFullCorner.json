@@ -1,0 +1,538 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "ObstructionCheckBoxCenter",
+    "Outer": "BPSandbagFullCorner_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class ObstructionCheckBoxComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPSandbagFullCorner_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPSandbagFullCorner_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullCorner.23"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class Wall",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPSandbagFullCorner_C:ObstructionCheckBoxCenter",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullCorner.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPSandbagFullCorner_C:ObstructionCheckBoxRight",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullCorner.9"
+      },
+      {
+        "ObjectName": "ObjectProperty BPSandbagFullCorner_C:ObstructionCheckBoxLeft",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullCorner.8"
+      },
+      {
+        "ObjectName": "ObjectProperty BPSandbagFullCorner_C:RightSocket",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullCorner.10"
+      },
+      {
+        "ObjectName": "ObjectProperty BPSandbagFullCorner_C:LeftSocket",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullCorner.7"
+      },
+      {
+        "ObjectName": "ObjectProperty BPSandbagFullCorner_C:SandbagsMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullCorner.11"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPSandbagFullCorner_C",
+    "Name": "Default__BPSandbagFullCorner_C",
+    "Properties": {
+      "bAllowStanding": true,
+      "BuildGhostClass": null,
+      "Description": {
+        "Namespace": "",
+        "Key": "EA56CCDE43FC0991E677259A509C9412",
+        "SourceString": "A defensive wall that hinders enemy movement and provides cover during combat."
+      },
+      "CodeName": "SandbagFullCorner",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "739242F64BFBD98DAC6357B0334BF983",
+        "SourceString": "Sandbag Wall (Corner)"
+      },
+      "ProfileType": "EStructureProfileType::FieldStructure",
+      "ArmourType": "EArmourType::Tier2BStructure",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPSandbagFullCorner_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullCorner.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPSandbagFullCorner_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullCorner.4"
+      },
+      "DestroyedFX": {
+        "ObjectName": "ParticleSystem GrenadeBlast",
+        "ObjectPath": "War/Content/FX/GrenadeBlast.151"
+      },
+      "DestroyedSoundCue": {
+        "ObjectName": "SoundCue StructureExplosionSmall_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/StructureExplosionSmall_Cue.0"
+      },
+      "MaxHealth": 800,
+      "Health": 800,
+      "StructureNetRelevancySize": "EStructureNetRelevancySize::Small",
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPSandbagFullCorner_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullCorner.25"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPSandbagFullCorner_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullCorner.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPSandbagFullCorner_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPSandbagFullCorner_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 250.0,
+        "Y": 250.0,
+        "Z": 128.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPSandbagFullCorner_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullCorner.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 128.0
+      }
+    }
+  },
+  {
+    "Type": "BuildSocketComponent",
+    "Name": "LeftSocket_GEN_VARIABLE",
+    "Outer": "BPSandbagFullCorner_C",
+    "Properties": {
+      "SocketTags": [
+        {
+          "SocketTypeMask": 1,
+          "SocketTypeCategory": 1,
+          "Tag": "None",
+          "ShowsTag": "None",
+          "MaxZOffset": 0.0,
+          "ApplicationRule": "EBuildSocketTagRule::AffectsBoth",
+          "ConnectorAttachmentTag": "None"
+        }
+      ],
+      "RelativeLocation": {
+        "X": -199.9995,
+        "Y": -153.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 180.00021,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BuildSocketComponent",
+    "Name": "RightSocket_GEN_VARIABLE",
+    "Outer": "BPSandbagFullCorner_C",
+    "Properties": {
+      "SocketTags": [
+        {
+          "SocketTypeMask": 1,
+          "SocketTypeCategory": 1,
+          "Tag": "None",
+          "ShowsTag": "None",
+          "MaxZOffset": 0.0,
+          "ApplicationRule": "EBuildSocketTagRule::AffectsBoth",
+          "ConnectorAttachmentTag": "None"
+        }
+      ],
+      "RelativeLocation": {
+        "X": 154.0,
+        "Y": 195.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.00016,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "LeftSocket",
+    "Outer": "BPSandbagFullCorner_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BuildSocketComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "ObstructionCheckBoxLeft",
+    "Outer": "BPSandbagFullCorner_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class ObstructionCheckBoxComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "ObstructionCheckBoxRight",
+    "Outer": "BPSandbagFullCorner_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class ObstructionCheckBoxComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "RightSocket",
+    "Outer": "BPSandbagFullCorner_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BuildSocketComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "SandbagsMesh",
+    "Outer": "BPSandbagFullCorner_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObstructionCheckBoxComponent",
+    "Name": "ObstructionCheckBoxCenter_GEN_VARIABLE",
+    "Outer": "BPSandbagFullCorner_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 90.0,
+        "Y": 40.0,
+        "Z": 110.0
+      },
+      "RelativeLocation": {
+        "X": 83.45874,
+        "Y": -90.61659,
+        "Z": 110.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 42.303745,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ObstructionCheckBoxComponent",
+    "Name": "ObstructionCheckBoxLeft_GEN_VARIABLE",
+    "Outer": "BPSandbagFullCorner_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 120.0,
+        "Y": 40.0,
+        "Z": 110.0
+      },
+      "RelativeLocation": {
+        "X": -79.126434,
+        "Y": -153.59949,
+        "Z": 110.0
+      }
+    }
+  },
+  {
+    "Type": "ObstructionCheckBoxComponent",
+    "Name": "ObstructionCheckBoxRight_GEN_VARIABLE",
+    "Outer": "BPSandbagFullCorner_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 120.0,
+        "Y": 40.0,
+        "Z": 110.0
+      },
+      "RelativeLocation": {
+        "X": 147.4942,
+        "Y": 76.333824,
+        "Z": 110.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 84.839005,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPSandbagFullCorner_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPSandbagFullCorner_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullCorner.15"
+      },
+      "VariableGuid": "14141C72-4CAFEE5D-A9D10C96-31C1C860",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class ObstructionCheckBoxComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ObstructionCheckBoxComponent BPSandbagFullCorner_C:ObstructionCheckBoxLeft_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullCorner.13"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "E6799687-4084A8D4-179B2FBF-111074C5",
+      "InternalVariableName": "ObstructionCheckBoxLeft"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPSandbagFullCorner_C:SandbagsMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullCorner.24"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "280FD47C-4B79E4CF-704ACC96-695FCDF1",
+      "InternalVariableName": "SandbagsMesh"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BuildSocketComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BuildSocketComponent BPSandbagFullCorner_C:LeftSocket_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullCorner.5"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "0536EC3C-48CF164C-2A018C86-683F8A3C",
+      "InternalVariableName": "LeftSocket"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BuildSocketComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BuildSocketComponent BPSandbagFullCorner_C:RightSocket_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullCorner.6"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "2302476F-47C077EA-F78FD08C-3CFB6805",
+      "InternalVariableName": "RightSocket"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class ObstructionCheckBoxComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ObstructionCheckBoxComponent BPSandbagFullCorner_C:ObstructionCheckBoxRight_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullCorner.14"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "831E2E90-43CA7378-D3F3AC9D-42D7BBE6",
+      "InternalVariableName": "ObstructionCheckBoxRight"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class ObstructionCheckBoxComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ObstructionCheckBoxComponent BPSandbagFullCorner_C:ObstructionCheckBoxCenter_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullCorner.12"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "703FB4D2-47F20540-C668C2B6-BCF594AB",
+      "InternalVariableName": "ObstructionCheckBoxCenter"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPSandbagFullCorner_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPSandbagFullCorner_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullCorner.18"
+        },
+        {
+          "ObjectName": "SCS_Node BPSandbagFullCorner_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullCorner.19"
+        },
+        {
+          "ObjectName": "SCS_Node BPSandbagFullCorner_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullCorner.20"
+        },
+        {
+          "ObjectName": "SCS_Node BPSandbagFullCorner_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullCorner.17"
+        },
+        {
+          "ObjectName": "SCS_Node BPSandbagFullCorner_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullCorner.21"
+        },
+        {
+          "ObjectName": "SCS_Node BPSandbagFullCorner_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullCorner.22"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPSandbagFullCorner_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullCorner.18"
+        },
+        {
+          "ObjectName": "SCS_Node BPSandbagFullCorner_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullCorner.19"
+        },
+        {
+          "ObjectName": "SCS_Node BPSandbagFullCorner_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullCorner.20"
+        },
+        {
+          "ObjectName": "SCS_Node BPSandbagFullCorner_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullCorner.17"
+        },
+        {
+          "ObjectName": "SCS_Node BPSandbagFullCorner_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullCorner.21"
+        },
+        {
+          "ObjectName": "SCS_Node BPSandbagFullCorner_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullCorner.22"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPSandbagFullCorner_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullCorner.16"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "SandbagsMesh_GEN_VARIABLE",
+    "Outer": "BPSandbagFullCorner_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh SandBagFullCorner",
+        "ObjectPath": "War/Content/Meshes/Structures/Sandbags/SandBagFullCorner.2"
+      },
+      "bReceivesDecals": false,
+      "CanCharacterStepUpOn": "ECB_Owner",
+      "BodyInstance": {
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        },
+        "MassInKgOverride": 367.56195
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPSandbagFullCorner_C"
+  }
+]

@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "HospitalCurtains02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "HospitalCurtains02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x4050"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "HospitalCurtains02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant HospitalCurtains",
+            "ObjectPath": "War/Content/Materials/Environment/Props/HospitalCurtains.0"
+          },
+          "MaterialSlotName": "Material #599",
+          "ImportedMaterialSlotName": "Material #599",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 310.6593,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 310.6593,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.4347763,
+          "Y": 1.6760292,
+          "Z": 106.378365
+        },
+        "BoxExtent": {
+          "X": 108.32733,
+          "Y": 20.150126,
+          "Z": 127.45098
+        },
+        "SphereRadius": 166.43344
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup HospitalCurtains02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/HospitalCurtains02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision HospitalCurtains02:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/HospitalCurtains02.1"
+    },
+    "LightingGuid": "16B374D6-48D095D9-D0517CB6-FFE66FBA",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,856 @@
+[
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "BPShipyard_C",
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPShipyard_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPShipyard_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.37"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty BPShipyard_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.0"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function BPShipyard_C:ExecuteUbergraph_BPShipyard",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class VehicleFactory",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty BPShipyard_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.0"
+      },
+      {
+        "ObjectName": "Function BPShipyard_C:BPSetTeamVisuals",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.17"
+      },
+      {
+        "ObjectName": "Function BPShipyard_C:ExecuteUbergraph_BPShipyard",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.7"
+      },
+      {
+        "ObjectName": "ObjectProperty BPShipyard_C:TemperatureModifierBox1",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.5"
+      },
+      {
+        "ObjectName": "ObjectProperty BPShipyard_C:TemperatureModifierBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.25"
+      },
+      {
+        "ObjectName": "ObjectProperty BPShipyard_C:Flag",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.22"
+      },
+      {
+        "ObjectName": "ObjectProperty BPShipyard_C:Audio",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.19"
+      },
+      {
+        "ObjectName": "ObjectProperty BPShipyard_C:PointLight4",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.24"
+      },
+      {
+        "ObjectName": "ObjectProperty BPShipyard_C:MultiplexedStaticMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.23"
+      },
+      {
+        "ObjectName": "ObjectProperty BPShipyard_C:DockingVolume",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.20"
+      },
+      {
+        "ObjectName": "ObjectProperty BPShipyard_C:Factory",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.21"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 524288,
+    "ClassWithin": null,
+    "ClassConfigName": "/Game/Audio/Ambient/PortWaves_Cue_1179647",
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPShipyard_C",
+    "Name": "Default__BPShipyard_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "BuildLocationFilter": "EBuildLocationType::Shipyard",
+      "GarageFootprintComponent": {
+        "ObjectName": "BoxComponent Default__BPShipyard_C:GarageFootprint",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.10"
+      },
+      "CraneSpawnLocationComponent": {
+        "ObjectName": "CraneSpawnLocationComponent Default__BPShipyard_C:CraneSpawnLocationComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.13"
+      },
+      "BuildSiteClass": {
+        "ObjectName": "BlueprintGeneratedClass BPShipyardBuildSite_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyardBuildSite.1"
+      },
+      "BaseStructureClass": {
+        "ObjectName": "BlueprintGeneratedClass BPDestroyedShipyard_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedShipyard.1"
+      },
+      "DestroyedDamageRadius": 1000.0,
+      "bRequiresVehicleToBuild": false,
+      "CodeName": "Shipyard",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "D058A4D446C86625165A51A257F46A11",
+        "SourceString": "Shipyard"
+      },
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPShipyard_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPShipyard_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.11"
+      },
+      "DestroyedFX": {
+        "ObjectName": "ParticleSystem BridgeExplosion1",
+        "ObjectPath": "War/Content/FX/BridgeExplosion1.52"
+      },
+      "TechComponentIDs": [
+        "ETechComponentID::Industry"
+      ],
+      "MaxHealth": 2000,
+      "Health": 2000,
+      "MapIconType": "EMapIconType::Shipyard",
+      "DropLocationOffset": {
+        "X": -2600.0,
+        "Y": -400.0,
+        "Z": 100.0
+      },
+      "bRotateDropLocation": true,
+      "ScreenToUse": "ESimScreen::BuildFromStructure",
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPShipyard_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.40"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPShipyard_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPShipyard_C"
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "Audio_GEN_VARIABLE",
+    "Outer": "BPShipyard_C",
+    "Properties": {
+      "Sound": {
+        "ObjectName": "SoundCue PortWaves_Cue",
+        "ObjectPath": "War/Content/Audio/Ambient/PortWaves_Cue.0"
+      }
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "TemperatureModifierBox1",
+    "Outer": "BPShipyard_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class TemperatureModifierBoxComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_BPShipyard",
+    "PropertyFlags": 148
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BPShipyard",
+    "Outer": "BPShipyard_C",
+    "Children": [
+      {
+        "ObjectName": "IntProperty BPShipyard_C:ExecuteUbergraph_BPShipyard.EntryPoint",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.6"
+      },
+      {
+        "ObjectName": "IntProperty BPShipyard_C:ExecuteUbergraph_BPShipyard.K2Node_Event_VisualTeamId",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.15"
+      },
+      {
+        "ObjectName": "BoolProperty BPShipyard_C:ExecuteUbergraph_BPShipyard.CallFunc_HasAuthority_ReturnValue",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.9"
+      },
+      {
+        "ObjectName": "ByteProperty BPShipyard_C:ExecuteUbergraph_BPShipyard.CallFunc_Conv_IntToByte_ReturnValue",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.12"
+      },
+      {
+        "ObjectName": "BoolProperty BPShipyard_C:ExecuteUbergraph_BPShipyard.CallFunc_EqualEqual_ByteByte_ReturnValue",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.8"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue",
+    "Outer": "ExecuteUbergraph_BPShipyard",
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_HasAuthority_ReturnValue",
+    "Outer": "ExecuteUbergraph_BPShipyard",
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "GarageFootprint",
+    "Outer": "Default__BPShipyard_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 650.9195,
+        "Y": 290.8938,
+        "Z": 100.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPShipyard_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.3"
+      },
+      "RelativeLocation": {
+        "X": 855.0,
+        "Y": -400.0,
+        "Z": 120.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 180.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPShipyard_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPShipyard_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.3"
+      },
+      "RelativeLocation": {
+        "X": -344.38586,
+        "Y": 358.73767,
+        "Z": 188.91577
+      },
+      "RelativeScale3D": {
+        "X": 1.4703422,
+        "Y": 0.96025467,
+        "Z": 1.5913122
+      }
+    }
+  },
+  {
+    "Type": "ByteProperty",
+    "Name": "CallFunc_Conv_IntToByte_ReturnValue",
+    "Outer": "ExecuteUbergraph_BPShipyard",
+    "Enum": null
+  },
+  {
+    "Type": "CraneSpawnLocationComponent",
+    "Name": "CraneSpawnLocationComponent",
+    "Outer": "Default__BPShipyard_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPShipyard_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.3"
+      }
+    }
+  },
+  {
+    "Type": "DockComponent",
+    "Name": "DockingVolume_GEN_VARIABLE",
+    "Outer": "BPShipyard_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 160.0,
+        "Y": 300.0,
+        "Z": 128.0
+      },
+      "RelativeLocation": {
+        "X": 160.91946,
+        "Y": -399.99963,
+        "Z": 90.0
+      }
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "K2Node_Event_VisualTeamId",
+    "Outer": "ExecuteUbergraph_BPShipyard",
+    "PropertyFlags": 2
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "VisualTeamId",
+    "Outer": "BPSetTeamVisuals",
+    "PropertyFlags": 150
+  },
+  {
+    "Type": "Function",
+    "Name": "BPSetTeamVisuals",
+    "Outer": "BPShipyard_C",
+    "SuperStruct": {
+      "ObjectName": "Function TeamStructure:BPSetTeamVisuals",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty BPShipyard_C:BPSetTeamVisuals.VisualTeamId",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.16"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "MultiplexedStaticMeshComponent",
+    "Name": "MultiplexedStaticMesh_GEN_VARIABLE",
+    "Outer": "BPShipyard_C",
+    "Properties": {
+      "TargetTag": "Multiplexed",
+      "MeshStops": [
+        {
+          "Threshold": 0,
+          "StaticMesh": {
+            "ObjectName": "StaticMesh ShipyardCritical",
+            "ObjectPath": "War/Content/Meshes/Structures/ShipyardCritical.2"
+          }
+        },
+        {
+          "Threshold": 33,
+          "StaticMesh": {
+            "ObjectName": "StaticMesh ShipyardDamaged",
+            "ObjectPath": "War/Content/Meshes/Structures/ShipyardDamaged.2"
+          }
+        },
+        {
+          "Threshold": 66,
+          "StaticMesh": {
+            "ObjectName": "StaticMesh Shipyard",
+            "ObjectPath": "War/Content/Meshes/Structures/Shipyard.2"
+          }
+        }
+      ],
+      "InputValue": 100,
+      "SelectedMeshIndex": 2
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Audio",
+    "Outer": "BPShipyard_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class AudioComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "DockingVolume",
+    "Outer": "BPShipyard_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class DockComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Factory",
+    "Outer": "BPShipyard_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Flag",
+    "Outer": "BPShipyard_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "MultiplexedStaticMesh",
+    "Outer": "BPShipyard_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class MultiplexedStaticMeshComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "PointLight4",
+    "Outer": "BPShipyard_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class PointLightComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "TemperatureModifierBox",
+    "Outer": "BPShipyard_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class TemperatureModifierBoxComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "PointLightComponent",
+    "Name": "PointLight4_GEN_VARIABLE",
+    "Outer": "BPShipyard_C",
+    "Properties": {
+      "bUseInverseSquaredFalloff": false,
+      "LightFalloffExponent": 2.513762,
+      "SourceRadius": 30.0,
+      "AttenuationRadius": 2000.0,
+      "bUseRayTracedDistanceFieldShadows": true,
+      "RayStartOffsetDepthScale": 0.0,
+      "Intensity": 3.0,
+      "LightColor": {
+        "R": 116,
+        "G": 203,
+        "B": 255,
+        "A": 255,
+        "Hex": "FF74CBFF"
+      },
+      "CastShadows": false,
+      "RelativeLocation": {
+        "X": 1624.914,
+        "Y": 188.72583,
+        "Z": 453.4381
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPShipyard_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPShipyard_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.27"
+      },
+      "VariableGuid": "A76FB2FF-4F7FC01B-7DBE84A1-F185B859",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPShipyard_C:Factory_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.38"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "FDDA3C79-44F4B083-980DCEA6-2A5FAED6",
+      "InternalVariableName": "Factory"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_10",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class PointLightComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "PointLightComponent BPShipyard_C:PointLight4_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.26"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "C92559ED-430160C2-4639EC88-0AE23C45",
+      "InternalVariableName": "PointLight4"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class DockComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "DockComponent BPShipyard_C:DockingVolume_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.14"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "3CCD1114-4BF2B726-57433585-57B59AD1",
+      "InternalVariableName": "DockingVolume"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class MultiplexedStaticMeshComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "MultiplexedStaticMeshComponent BPShipyard_C:MultiplexedStaticMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.18"
+      },
+      "VariableGuid": "2271848E-49E97D1B-1596B9BE-65C84438",
+      "InternalVariableName": "MultiplexedStaticMesh"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class AudioComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "AudioComponent BPShipyard_C:Audio_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.4"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "89841A30-44CE6A51-B67792BC-79D8A82A",
+      "InternalVariableName": "Audio"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPShipyard_C:Flag_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.39"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "BED7F7C5-470BA5E4-2657D0B5-ACBA0668",
+      "InternalVariableName": "Flag"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class TemperatureModifierBoxComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "TemperatureModifierBoxComponent BPShipyard_C:TemperatureModifierBox_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.42"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "C9DE429E-480E8626-8B214AB5-5BB562F4",
+      "InternalVariableName": "TemperatureModifierBox"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class TemperatureModifierBoxComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "TemperatureModifierBoxComponent BPShipyard_C:TemperatureModifierBox1_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.41"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "1897910F-42B271FF-F6A87883-C424F128",
+      "InternalVariableName": "TemperatureModifierBox1"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPShipyard_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPShipyard_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.29"
+        },
+        {
+          "ObjectName": "SCS_Node BPShipyard_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.31"
+        },
+        {
+          "ObjectName": "SCS_Node BPShipyard_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.32"
+        },
+        {
+          "ObjectName": "SCS_Node BPShipyard_C:SimpleConstructionScript_0.SCS_Node_10",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.30"
+        },
+        {
+          "ObjectName": "SCS_Node BPShipyard_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.33"
+        },
+        {
+          "ObjectName": "SCS_Node BPShipyard_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.34"
+        },
+        {
+          "ObjectName": "SCS_Node BPShipyard_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.35"
+        },
+        {
+          "ObjectName": "SCS_Node BPShipyard_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.36"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPShipyard_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.29"
+        },
+        {
+          "ObjectName": "SCS_Node BPShipyard_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.31"
+        },
+        {
+          "ObjectName": "SCS_Node BPShipyard_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.32"
+        },
+        {
+          "ObjectName": "SCS_Node BPShipyard_C:SimpleConstructionScript_0.SCS_Node_10",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.30"
+        },
+        {
+          "ObjectName": "SCS_Node BPShipyard_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.33"
+        },
+        {
+          "ObjectName": "SCS_Node BPShipyard_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.34"
+        },
+        {
+          "ObjectName": "SCS_Node BPShipyard_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.35"
+        },
+        {
+          "ObjectName": "SCS_Node BPShipyard_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.36"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPShipyard_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPShipyard.28"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Factory_GEN_VARIABLE",
+    "Outer": "BPShipyard_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh Shipyard",
+        "ObjectPath": "War/Content/Meshes/Structures/Shipyard.2"
+      },
+      "OverrideMaterials": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "bGenerateOverlapEvents": false,
+      "BodyInstance": {
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "ComponentTags": [
+        "Multiplexed"
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Flag_GEN_VARIABLE",
+    "Outer": "BPShipyard_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh Plane",
+        "ObjectPath": "War/Content/Meshes/Measurement/Plane.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant FlagHangingColonials",
+          "ObjectPath": "War/Content/Materials/Structures/FlagHangingColonials.0"
+        }
+      ],
+      "bGenerateOverlapEvents": false,
+      "CanCharacterStepUpOn": "ECB_No",
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -802.8688,
+        "Y": 763.92633,
+        "Z": 455.0504
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": 90.0
+      },
+      "RelativeScale3D": {
+        "X": 1.8,
+        "Y": 2.7,
+        "Z": 1.0
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPShipyard_C"
+  },
+  {
+    "Type": "TemperatureModifierBoxComponent",
+    "Name": "TemperatureModifierBox1_GEN_VARIABLE",
+    "Outer": "BPShipyard_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 900.0,
+        "Y": 410.0,
+        "Z": 500.0
+      },
+      "OnComponentBeginOverlap": null,
+      "OnComponentEndOverlap": null,
+      "RelativeLocation": {
+        "X": -1685.0,
+        "Y": -360.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "TemperatureModifierBoxComponent",
+    "Name": "TemperatureModifierBox_GEN_VARIABLE",
+    "Outer": "BPShipyard_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 1300.0,
+        "Y": 650.0,
+        "Z": 500.0
+      },
+      "OnComponentBeginOverlap": null,
+      "OnComponentEndOverlap": null,
+      "RelativeLocation": {
+        "X": 515.0,
+        "Y": -120.0,
+        "Z": 0.0
+      }
+    }
+  }
+]

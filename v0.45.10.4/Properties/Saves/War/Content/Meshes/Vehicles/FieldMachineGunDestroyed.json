@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FieldMachineGunDestroyed",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "FieldMachineGunDestroyed",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x294A0"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FieldMachineGunDestroyed",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FieldMachineGunDestroyed",
+            "ObjectPath": "War/Content/Materials/Vehicles/FieldMachineGunDestroyed.0"
+          },
+          "MaterialSlotName": "FieldMachineGun",
+          "ImportedMaterialSlotName": "FieldMachineGun",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 607.7504,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 607.7504,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 35.190186,
+          "Y": -6.8856964,
+          "Z": 114.16225
+        },
+        "BoxExtent": {
+          "X": 267.54703,
+          "Y": 171.51254,
+          "Z": 118.98179
+        },
+        "SphereRadius": 286.58038
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FieldMachineGunDestroyed:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Vehicles/FieldMachineGunDestroyed.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FieldMachineGunDestroyed:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Vehicles/FieldMachineGunDestroyed.1"
+    },
+    "LightingGuid": "C0CE3CBB-46ACD3AA-4BAF3F95-AA9A5E1B",
+    "RenderData": null
+  }
+]

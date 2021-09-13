@@ -1,0 +1,119 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "RadioBackpackPickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript RadioBackpackPickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RadioBackpackPickup.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class RadioBackpackPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "RadioBackpackPickup_C",
+    "Name": "Default__RadioBackpackPickup_C",
+    "Properties": {
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPRadioBackpackItemComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Items/BPRadioBackpackItemComponent.0"
+      },
+      "Encumbrance": 150,
+      "CodeName": "RadioBackpack",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "3ECB953145353AABCC3C759CB1EEA6E8",
+        "SourceString": "Radio Backpack"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "DA2722CA43AD4A92B2476DA0B958D6B9",
+        "SourceString": "Automatically gathers map intel periodically when equipped. The Radio Backpack is also used to transmit other sensitive information across long distances."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D RadioBackpackItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/RadioBackpackItemIcon.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Body",
+      "ItemCategory": "EItemCategory::Utility",
+      "ItemProfileType": "EItemProfileType::Accessory",
+      "TechID": "ETechID::UnlockRadioBackpack",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__RadioBackpackPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RadioBackpackPickup.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__RadioBackpackPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RadioBackpackPickup.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__RadioBackpackPickup_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 64.0,
+        "Y": 30.57192,
+        "Z": 22.76623
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "RadioBackpackPickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent RadioBackpackPickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RadioBackpackPickup.3"
+      },
+      "VariableGuid": "A0B0A06C-47E65888-47D771B1-095101D6",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "RadioBackpackPickup_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node RadioBackpackPickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RadioBackpackPickup.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__RadioBackpackPickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__RadioBackpackPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RadioBackpackPickup.2"
+      }
+    }
+  }
+]

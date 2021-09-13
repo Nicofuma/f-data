@@ -1,0 +1,119 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "PistolPickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript PistolPickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/PistolPickup.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class FirearmPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "PistolPickup_C",
+    "Name": "Default__PistolPickup_C",
+    "Properties": {
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass PistolComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Items/PistolComponent.0"
+      },
+      "Encumbrance": 50,
+      "CodeName": "Pistol",
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "8EBE57634CE6461066C690A06CAA547C",
+        "SourceString": "Pistol"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "0230F99747DEF69F9FE9528E651BC05A",
+        "SourceString": "Ferro 879"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "820F10CC4B6498DD2EE4B6BFFED204F3",
+        "SourceString": "A pistol imported from Estrella in the east, the Ferro 879 is a common sight on many battlefields."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D PistolItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/PistolItemIcon.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Secondary",
+      "ItemCategory": "EItemCategory::SmallArms",
+      "ItemProfileType": "EItemProfileType::HandheldWeapon",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__PistolPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/PistolPickup.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__PistolPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/PistolPickup.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__PistolPickup_C",
+    "Properties": {
+      "bReceivesDecals": false
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "PistolPickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent PistolPickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/PistolPickup.3"
+      },
+      "VariableGuid": "FBF04340-40D71A47-9ED11191-32B797F3",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "PistolPickup_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node PistolPickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/PistolPickup.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__PistolPickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__PistolPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/PistolPickup.2"
+      }
+    }
+  }
+]

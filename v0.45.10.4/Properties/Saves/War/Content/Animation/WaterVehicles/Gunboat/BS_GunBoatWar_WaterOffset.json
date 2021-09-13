@@ -1,0 +1,99 @@
+[
+  {
+    "Type": "BlendSpace1D",
+    "Name": "BS_GunBoatWar_WaterOffset",
+    "Properties": {
+      "InterpolationParam": {
+        "InterpolationTime": 1.0
+      },
+      "SampleData": [
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence POSE_GunBoatWar_WaterLevel_down100",
+            "ObjectPath": "War/Content/Animation/WaterVehicles/Gunboat/POSE_GunBoatWar_WaterLevel_down100.0"
+          },
+          "SampleValue": {
+            "X": -100.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence POSE_GunBoatWar_WaterLevel_up100",
+            "ObjectPath": "War/Content/Animation/WaterVehicles/Gunboat/POSE_GunBoatWar_WaterLevel_up100.0"
+          },
+          "SampleValue": {
+            "X": 100.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence POSE_GunBoatWar_WaterLevel_Neutral0",
+            "ObjectPath": "War/Content/Animation/WaterVehicles/Gunboat/POSE_GunBoatWar_WaterLevel_Neutral0.0"
+          },
+          "SampleValue": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        }
+      ],
+      "GridSamples": [
+        {
+          "Indices": 2,
+          "Indices": 0,
+          "Indices": -1,
+          "Weights": 0.0,
+          "Weights": 1.0,
+          "Weights": 0.0
+        },
+        {
+          "Indices": 2,
+          "Indices": 0,
+          "Indices": -1,
+          "Weights": 0.5,
+          "Weights": 0.5,
+          "Weights": 0.0
+        },
+        {
+          "Indices": 2,
+          "Indices": 0,
+          "Indices": -1,
+          "Weights": 1.0,
+          "Weights": 0.0,
+          "Weights": 0.0
+        },
+        {
+          "Indices": 1,
+          "Indices": 2,
+          "Indices": -1,
+          "Weights": 0.5,
+          "Weights": 0.5,
+          "Weights": 0.0
+        },
+        {
+          "Indices": 1,
+          "Indices": 2,
+          "Indices": -1,
+          "Weights": 1.0,
+          "Weights": 0.0,
+          "Weights": 0.0
+        }
+      ],
+      "BlendParameters": {
+        "DisplayName": "WaterOffset",
+        "Min": -100.0
+      },
+      "Skeleton": {
+        "ObjectName": "Skeleton SK_GunBoatWar_Skeleton",
+        "ObjectPath": "War/Content/Meshes/Vehicles/SK_GunBoatWar_Skeleton.7"
+      }
+    }
+  }
+]

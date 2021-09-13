@@ -1,0 +1,99 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "InteractGrey",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "InteractGrey",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x3F31"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "InteractGrey",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant CalloutBlack",
+            "ObjectPath": "War/Content/Materials/Structures/CalloutBlack.0"
+          },
+          "MaterialSlotName": "Black",
+          "ImportedMaterialSlotName": "Black",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 35.231537,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant CalloutGrey",
+            "ObjectPath": "War/Content/Materials/Structures/CalloutGrey.0"
+          },
+          "MaterialSlotName": "White",
+          "ImportedMaterialSlotName": "White",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 24.076727,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 30.47732,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 19.452606,
+          "Y": 0.0,
+          "Z": 6.718352
+        },
+        "BoxExtent": {
+          "X": 67.197876,
+          "Y": 47.71615,
+          "Z": 6.725095
+        },
+        "SphereRadius": 67.85563
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup InteractGrey:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/UI/InteractGrey.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision InteractGrey:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/UI/InteractGrey.1"
+    },
+    "LightingGuid": "7D71EADB-47F37C0C-5DB62582-97A85EE0",
+    "RenderData": null
+  }
+]

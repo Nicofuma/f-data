@@ -1,0 +1,94 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Bucket",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "BuildScale3D": {
+        "X": 1.2,
+        "Y": 1.2,
+        "Z": 1.2
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "Bucket",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x415F"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Bucket",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Bucket",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Bucket.0"
+          },
+          "MaterialSlotName": "Bucket_Inst",
+          "ImportedMaterialSlotName": "Bucket_Inst",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 191.51704,
+            "LocalUVDensities": 206.97578,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 206.97578,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.13242912,
+          "Y": -0.1359272,
+          "Z": 20.364506
+        },
+        "BoxExtent": {
+          "X": 23.882612,
+          "Y": 23.886108,
+          "Z": 23.692913
+        },
+        "SphereRadius": 33.491924
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Bucket:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Bucket.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Bucket:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Bucket.1"
+    },
+    "LightingGuid": "652F72E3-42C0A043-7138B5AB-48F8838C",
+    "RenderData": null
+  }
+]

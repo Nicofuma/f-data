@@ -1,0 +1,194 @@
+[
+  {
+    "Type": "MaterialExpressionMaterialFunctionCall",
+    "Name": "MaterialExpressionMaterialFunctionCall_21",
+    "Outer": "AlignMeshToTheCamera",
+    "Properties": {
+      "MaterialFunction": {
+        "ObjectName": "MaterialFunction ComponentPivotLocation",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ComponentPivotLocation.0"
+      },
+      "Function": {
+        "ObjectName": "MaterialFunction AlignMeshToTheCamera",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/AlignMeshToTheCamera.8"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionMaterialFunctionCall",
+    "Name": "MaterialExpressionMaterialFunctionCall_23",
+    "Outer": "AlignMeshToTheCamera",
+    "Properties": {
+      "MaterialFunction": {
+        "ObjectName": "MaterialFunction ObjectScale",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ObjectScale.3"
+      },
+      "Function": {
+        "ObjectName": "MaterialFunction AlignMeshToTheCamera",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/AlignMeshToTheCamera.8"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionMaterialFunctionCall",
+    "Name": "MaterialExpressionMaterialFunctionCall_24",
+    "Outer": "AlignMeshToTheCamera",
+    "Properties": {
+      "MaterialFunction": {
+        "ObjectName": "MaterialFunction MakeVectorsOrthogonal",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Math/MakeVectorsOrthogonal.0"
+      },
+      "Function": {
+        "ObjectName": "MaterialFunction AlignMeshToTheCamera",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/AlignMeshToTheCamera.8"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionMaterialFunctionCall",
+    "Name": "MaterialExpressionMaterialFunctionCall_26",
+    "Outer": "AlignMeshToTheCamera",
+    "Properties": {
+      "MaterialFunction": {
+        "ObjectName": "MaterialFunction Transform3x3Matrix",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Math/Transform3x3Matrix.1"
+      },
+      "Function": {
+        "ObjectName": "MaterialFunction AlignMeshToTheCamera",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/AlignMeshToTheCamera.8"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionMaterialFunctionCall",
+    "Name": "MaterialExpressionMaterialFunctionCall_44",
+    "Outer": "AlignMeshToTheCamera",
+    "Properties": {
+      "MaterialFunction": {
+        "ObjectName": "MaterialFunction Transform3x3Matrix",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Math/Transform3x3Matrix.1"
+      },
+      "Function": {
+        "ObjectName": "MaterialFunction AlignMeshToTheCamera",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/AlignMeshToTheCamera.8"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionMaterialFunctionCall",
+    "Name": "MaterialExpressionMaterialFunctionCall_76",
+    "Outer": "AlignMeshToTheCamera",
+    "Properties": {
+      "MaterialFunction": {
+        "ObjectName": "MaterialFunction CameraVectorWithWPOOptions",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/CameraVectorWithWPOOptions.0"
+      },
+      "Function": {
+        "ObjectName": "MaterialFunction AlignMeshToTheCamera",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/AlignMeshToTheCamera.8"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionMaterialFunctionCall",
+    "Name": "MaterialExpressionMaterialFunctionCall_77",
+    "Outer": "AlignMeshToTheCamera",
+    "Properties": {
+      "MaterialFunction": {
+        "ObjectName": "MaterialFunction InverseTransformMatrix",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Math/InverseTransformMatrix.0"
+      },
+      "Function": {
+        "ObjectName": "MaterialFunction AlignMeshToTheCamera",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/AlignMeshToTheCamera.8"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionMaterialFunctionCall",
+    "Name": "MaterialExpressionMaterialFunctionCall_79",
+    "Outer": "AlignMeshToTheCamera",
+    "Properties": {
+      "MaterialFunction": {
+        "ObjectName": "MaterialFunction MakeVectorsOrthogonal",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Math/MakeVectorsOrthogonal.0"
+      },
+      "Function": {
+        "ObjectName": "MaterialFunction AlignMeshToTheCamera",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/AlignMeshToTheCamera.8"
+      }
+    }
+  },
+  {
+    "Type": "MaterialFunction",
+    "Name": "AlignMeshToTheCamera",
+    "Properties": {
+      "Description": "Aligns a static mesh to the camera and allows the user to rotate the mesh by altering the objects basis vectors.",
+      "FunctionExpressions": [
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionMaterialFunctionCall AlignMeshToTheCamera:MaterialExpressionMaterialFunctionCall_21",
+          "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/AlignMeshToTheCamera.0"
+        },
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionMaterialFunctionCall AlignMeshToTheCamera:MaterialExpressionMaterialFunctionCall_26",
+          "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/AlignMeshToTheCamera.3"
+        },
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionMaterialFunctionCall AlignMeshToTheCamera:MaterialExpressionMaterialFunctionCall_23",
+          "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/AlignMeshToTheCamera.1"
+        },
+        null,
+        {
+          "ObjectName": "MaterialExpressionMaterialFunctionCall AlignMeshToTheCamera:MaterialExpressionMaterialFunctionCall_24",
+          "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/AlignMeshToTheCamera.2"
+        },
+        null,
+        {
+          "ObjectName": "MaterialExpressionMaterialFunctionCall AlignMeshToTheCamera:MaterialExpressionMaterialFunctionCall_44",
+          "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/AlignMeshToTheCamera.4"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionMaterialFunctionCall AlignMeshToTheCamera:MaterialExpressionMaterialFunctionCall_76",
+          "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/AlignMeshToTheCamera.5"
+        },
+        {
+          "ObjectName": "MaterialExpressionMaterialFunctionCall AlignMeshToTheCamera:MaterialExpressionMaterialFunctionCall_77",
+          "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/AlignMeshToTheCamera.6"
+        },
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionMaterialFunctionCall AlignMeshToTheCamera:MaterialExpressionMaterialFunctionCall_79",
+          "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/AlignMeshToTheCamera.7"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "bExposeToLibrary": true,
+      "StateId": "64DF9AF2-4C9703A5-A01FCB86-B6FDA30E"
+    }
+  }
+]

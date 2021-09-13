@@ -1,0 +1,105 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Tarp04",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -0.44113922,
+              "Y": 0.0,
+              "Z": 77.838615
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 218.83023,
+            "Y": 218.83023,
+            "Z": 157.20561,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_3",
+    "Outer": "Tarp04",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x10123"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Tarp04",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Tarp",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Tarp.0"
+          },
+          "MaterialSlotName": "Material #490",
+          "ImportedMaterialSlotName": "Material #490",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 211.27081,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 211.27081,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.44113922,
+          "Y": 0.0,
+          "Z": 77.838615
+        },
+        "BoxExtent": {
+          "X": 109.415115,
+          "Y": 109.415115,
+          "Z": 78.602806
+        },
+        "SphereRadius": 157.55238
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Tarp04:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Tarp04.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Tarp04:NavCollision_3",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Tarp04.1"
+    },
+    "LightingGuid": "3404AFA0-428B06B8-ABA56FA4-457012DB",
+    "RenderData": null
+  }
+]

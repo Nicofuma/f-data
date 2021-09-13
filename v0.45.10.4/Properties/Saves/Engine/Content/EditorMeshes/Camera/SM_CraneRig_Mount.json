@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_CraneRig_Mount",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SM_CraneRig_Mount",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1F44"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_CraneRig_Mount",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_CineMat_Rig",
+            "ObjectPath": "Engine/Content/EditorMaterials/Camera/MI_CineMat_Rig.0"
+          },
+          "MaterialSlotName": "MI_CineMat_Rig",
+          "ImportedMaterialSlotName": "MI_CineMat_Rig",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 56.217842,
+            "LocalUVDensities": 258.1868,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 258.1868,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0014533997,
+          "Y": -0.05207634,
+          "Z": 0.0016708374
+        },
+        "BoxExtent": {
+          "X": 32.011185,
+          "Y": 22.125809,
+          "Z": 46.189617
+        },
+        "SphereRadius": 59.388313
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_CraneRig_Mount:BodySetup_0",
+      "ObjectPath": "Engine/Content/EditorMeshes/Camera/SM_CraneRig_Mount.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_CraneRig_Mount:NavCollision_0",
+      "ObjectPath": "Engine/Content/EditorMeshes/Camera/SM_CraneRig_Mount.1"
+    },
+    "LightingGuid": "93A8F31B-46D53836-73C09798-CBE9C990",
+    "RenderData": null
+  }
+]

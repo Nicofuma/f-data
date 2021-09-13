@@ -1,0 +1,598 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPFieldATGunW_C",
+    "Super": "BPFieldGunBase_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPFieldATGunW_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.30"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler BPFieldATGunW_C:InheritableComponentHandler",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.9"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass BPFieldGunBase_C",
+      "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldGunBase.1"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPFieldATGunW_C",
+    "Name": "Default__BPFieldATGunW_C",
+    "Properties": {
+      "MuzzleFlashPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPFieldATGunW_C:MuzzleFlashPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.14"
+      },
+      "IdleLoop": {
+        "ObjectName": "AudioComponent Default__BPFieldATGunW_C:IdleLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.5"
+      },
+      "RearLeftTireDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPFieldATGunW_C:RearLeftTireDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.16"
+      },
+      "RearLeftTireDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPFieldATGunW_C:RearLeftTireDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.15"
+      },
+      "RearRightTireDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPFieldATGunW_C:RearRightTireDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.18"
+      },
+      "RearRightTireDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPFieldATGunW_C:RearRightTireDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.17"
+      },
+      "MainDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPFieldATGunW_C:MainDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.11"
+      },
+      "MainDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPFieldATGunW_C:MainDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.10"
+      },
+      "SkiddingDirtPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPFieldATGunW_C:SkiddingDirtPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.19"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "12789D284F4BCB8FF2D378A1663B148E",
+        "SourceString": "Collins Cannon 68mm"
+      },
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "693F90974659B10C261BBCBE17021047",
+        "SourceString": "Field AT Gun"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "022E03A4467A8F5BEF74C283D1924B8B",
+        "SourceString": "The Collins Cannon is a mobile Anti-Tank field gun firing 68mm armour-piercing rounds."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D FieldAntiTankWarVehicleIcon",
+        "ObjectPath": "War/Content/Textures/UI/VehicleIcons/FieldAntiTankWarVehicleIcon.0"
+      },
+      "TechID": "ETechID::UnlockFieldATGun",
+      "VehicleBuildType": "EVehicleBuildType::VehicleFactory",
+      "FactionVariant": "EFactionId::Wardens",
+      "CodeName": "FieldATW",
+      "DestroyedMesh": {
+        "ObjectName": "StaticMeshComponent Default__BPFieldATGunW_C:DestroyedMesh",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.32"
+      },
+      "MinorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPFieldATGunW_C:MinorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.13"
+      },
+      "MajorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPFieldATGunW_C:MajorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.12"
+      },
+      "FrozenEnterSound": null,
+      "DriveLoop": {
+        "ObjectName": "AudioComponent Default__BPFieldATGunW_C:DriveLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.4"
+      },
+      "BackUpSFXLoop": {
+        "ObjectName": "AudioComponent Default__BPFieldATGunW_C:BackUpSFXLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.3"
+      },
+      "CameraRigComponent": {
+        "ObjectName": "PlayerCameraRigComponent Default__BPFieldATGunW_C:CameraRigVehicle",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.20"
+      },
+      "FrontAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__BPFieldATGunW_C:FrontAxelCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.23"
+      },
+      "RearAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__BPFieldATGunW_C:RearAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.26"
+      },
+      "FrontLeftRollCastLocation": {
+        "ObjectName": "SceneComponent Default__BPFieldATGunW_C:FrontRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.24"
+      },
+      "FrontRightRollCastLocation": {
+        "ObjectName": "SceneComponent Default__BPFieldATGunW_C:RearRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.27"
+      },
+      "LeftSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__BPFieldATGunW_C:LeftSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.25"
+      },
+      "RightSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__BPFieldATGunW_C:RightSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.28"
+      },
+      "VehicleCollision": {
+        "ObjectName": "BoxComponent Default__BPFieldATGunW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.7"
+      },
+      "PassengerArea": {
+        "ObjectName": "BoxComponent Default__BPFieldATGunW_C:PassengerBaseBox",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.6"
+      },
+      "AFKTimeoutComponent": {
+        "ObjectName": "AFKTimeoutComponent Default__BPFieldATGunW_C:AFKTimeoutComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.2"
+      },
+      "MuzzleInfo": [
+        {
+          "GunnerIndex": 1,
+          "MuzzleIndex": 0,
+          "SocketName": "S_MuzzleW"
+        }
+      ],
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPFieldATGunW_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.33"
+      },
+      "Mesh": {
+        "ObjectName": "SkeletalMeshComponent Default__BPFieldATGunW_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.31"
+      },
+      "CharacterMovement": {
+        "ObjectName": "RWDVehicleMovementComponent Default__BPFieldATGunW_C:CharMoveComp",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.21"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldATGunW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.8"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPFieldATGunW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.7"
+      }
+    }
+  },
+  {
+    "Type": "AFKTimeoutComponent",
+    "Name": "AFKTimeoutComponent",
+    "Outer": "Default__BPFieldATGunW_C"
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "BackUpSFXLoop",
+    "Outer": "Default__BPFieldATGunW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldATGunW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.8"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "DriveLoop",
+    "Outer": "Default__BPFieldATGunW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldATGunW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.8"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "IdleLoop",
+    "Outer": "Default__BPFieldATGunW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFieldATGunW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.7"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "PassengerBaseBox",
+    "Outer": "Default__BPFieldATGunW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFieldATGunW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.7"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "VehicleCollision",
+    "Outer": "Default__BPFieldATGunW_C",
+    "Properties": {
+      "OnComponentBeginOverlap": null
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__BPFieldATGunW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFieldATGunW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.7"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BPFieldATGunW_C",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class VehicleSeatComponent",
+            "ObjectPath": "/Script/War"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "VehicleSeatComponent BPFieldATGunW_C:PassengerSeat1_GEN_VARIABLE",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.35"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass BPFieldGunBase_C",
+              "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldGunBase.1"
+            },
+            "SCSVariableName": "PassengerSeat1",
+            "AssociatedGuid": "B4D722B0-405B2E17-A22536B3-0B4D923D"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class VehicleSeatComponent",
+            "ObjectPath": "/Script/War"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "VehicleSeatComponent BPFieldATGunW_C:DriverSeat0_GEN_VARIABLE",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.34"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass BPFieldGunBase_C",
+              "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldGunBase.1"
+            },
+            "SCSVariableName": "DriverSeat0",
+            "AssociatedGuid": "78AFAB88-43DA531C-20DE21AE-5F973D44"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MainDirtHighSpeedPS",
+    "Outer": "Default__BPFieldATGunW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFieldATGunW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MainDirtLowSpeedPS",
+    "Outer": "Default__BPFieldATGunW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFieldATGunW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MajorDamagePS",
+    "Outer": "Default__BPFieldATGunW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldATGunW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.8"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MinorDamagePS",
+    "Outer": "Default__BPFieldATGunW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldATGunW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.8"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MuzzleFlashPS",
+    "Outer": "Default__BPFieldATGunW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFieldATGunW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearLeftTireDirtHighSpeedPS",
+    "Outer": "Default__BPFieldATGunW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFieldATGunW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearLeftTireDirtLowSpeedPS",
+    "Outer": "Default__BPFieldATGunW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFieldATGunW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearRightTireDirtHighSpeedPS",
+    "Outer": "Default__BPFieldATGunW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFieldATGunW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearRightTireDirtLowSpeedPS",
+    "Outer": "Default__BPFieldATGunW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFieldATGunW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "SkiddingDirtPS",
+    "Outer": "Default__BPFieldATGunW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPFieldATGunW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.7"
+      }
+    }
+  },
+  {
+    "Type": "PlayerCameraRigComponent",
+    "Name": "CameraRigVehicle",
+    "Outer": "Default__BPFieldATGunW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldATGunW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.8"
+      }
+    }
+  },
+  {
+    "Type": "RWDVehicleMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__BPFieldATGunW_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPFieldATGunW_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontAxelCastLocation",
+    "Outer": "Default__BPFieldATGunW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldATGunW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontRightAxleCastLocation",
+    "Outer": "Default__BPFieldATGunW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldATGunW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "LeftSideTrackLocation",
+    "Outer": "Default__BPFieldATGunW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldATGunW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearAxleCastLocation",
+    "Outer": "Default__BPFieldATGunW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldATGunW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearRightAxleCastLocation",
+    "Outer": "Default__BPFieldATGunW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldATGunW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RightSideTrackLocation",
+    "Outer": "Default__BPFieldATGunW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldATGunW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.8"
+      }
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPFieldATGunW_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.22"
+      },
+      "VariableGuid": "ACC4C139-494B1454-22D78E88-E5E88FF7",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPFieldATGunW_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPFieldATGunW_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.29"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__BPFieldATGunW_C",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_FieldATGun_C",
+        "ObjectPath": "War/Content/Animation/Field_vehicles/FieldATgun/ABP_FieldATGun.1"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_FieldATGunWar",
+        "ObjectPath": "War/Content/Meshes/Vehicles/PrototypeVehicles/FieldVehicles/SK_FieldATGunWar.0"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldATGunW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.8"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "DestroyedMesh",
+    "Outer": "Default__BPFieldATGunW_C",
+    "Properties": {
+      "StaticMesh": null,
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPFieldATGunW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunW.8"
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPFieldATGunW_C"
+  },
+  {
+    "Type": "VehicleSeatComponent",
+    "Name": "DriverSeat0_GEN_VARIABLE",
+    "Outer": "BPFieldATGunW_C",
+    "Properties": {
+      "MountCodeName": "FieldATGunDriver",
+      "MountComponent": {
+        "ObjectName": "BlueprintGeneratedClass BPFieldATGunDriver_C",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/FieldWeapons/BPFieldATGunDriver.0"
+      },
+      "RelativeLocation": {
+        "X": 68.62026,
+        "Y": -74.14735,
+        "Z": 87.74502
+      }
+    }
+  },
+  {
+    "Type": "VehicleSeatComponent",
+    "Name": "PassengerSeat1_GEN_VARIABLE",
+    "Outer": "BPFieldATGunW_C",
+    "Properties": {
+      "MountCodeName": "FieldATGunGunner",
+      "MountComponent": {
+        "ObjectName": "BlueprintGeneratedClass BPFieldATGunGunner_C",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Halftrack/BPFieldATGunGunner.0"
+      },
+      "RelativeLocation": {
+        "X": -58.150097,
+        "Y": -73.70274,
+        "Z": 89.99979
+      }
+    }
+  }
+]

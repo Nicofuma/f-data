@@ -1,0 +1,722 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPMapList_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPMapList_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Data/BPMapList.4"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class MapList",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPMapList_C",
+    "Name": "Default__BPMapList_C",
+    "Properties": {
+      "MapDatabase": {
+        "Sandbox": {
+          "DisplayName": {
+            "Namespace": "",
+            "Key": "37B739C040326A295FBAD29A69980A24",
+            "SourceString": "Sandbox"
+          },
+          "WorldConquestMapId": "EWorldConquestMapId::Invalid",
+          "Description": {
+            "CultureInvariantString": null
+          },
+          "Image": {
+            "ObjectName": "Texture2D MapHeartlands",
+            "ObjectPath": "War/Content/Textures/UI/MapHeartlands.0"
+          },
+          "bIsInHexGrid": false,
+          "GridCoord": {
+            "X": 4294967295,
+            "Y": 4294967295
+          }
+        },
+        "Westgate": {
+          "DisplayName": {
+            "Namespace": "",
+            "Key": "16258E294F8E8CF1EDFA8CB4CA4707E4",
+            "SourceString": "Westgate"
+          },
+          "WorldConquestMapId": "EWorldConquestMapId::Westgate",
+          "Description": {
+            "Namespace": "",
+            "Key": "076637A24233DBF5417C718F69030FA9",
+            "SourceString": "This rocky region is home to the westernmost keep along the steadfast Bulwark, a continental wall built to draw a southern border. South of the wall, the Ceo Highlands surround several villages which were once abandoned during the construction of the wall. The Bulwark has stood for hundreds of years in this contested region, and continues to stand the test of time."
+          },
+          "Image": {
+            "ObjectName": "Texture2D MapWestgateHex",
+            "ObjectPath": "War/Content/Textures/UI/HexMaps/Processed/MapWestgateHex.0"
+          },
+          "bIsInHexGrid": false,
+          "GridCoord": {
+            "X": 4294967295,
+            "Y": 4294967295
+          }
+        },
+        "HomeRegionC": {
+          "DisplayName": {
+            "Namespace": "",
+            "Key": "B4E25007455E19F7C46FA1B02479FFC8",
+            "SourceString": "Colonial Home Region"
+          },
+          "WorldConquestMapId": "EWorldConquestMapId::HomeRegionC",
+          "Description": {
+            "Namespace": "",
+            "Key": "A82740F7473A2F8CC0A42489B77C9115",
+            "SourceString": "Colonial Home Region"
+          },
+          "Image": {
+            "ObjectName": "Texture2D MapHomeRegionC",
+            "ObjectPath": "War/Content/Textures/UI/HexMaps/Processed/MapHomeRegionC.0"
+          },
+          "bIsInHexGrid": false,
+          "GridCoord": {
+            "X": 0,
+            "Y": 0
+          }
+        },
+        "HomeRegionW": {
+          "DisplayName": {
+            "Namespace": "",
+            "Key": "694BDF4449C49C96C5B048A3438DE700",
+            "SourceString": "Warden Home Region"
+          },
+          "WorldConquestMapId": "EWorldConquestMapId::HomeRegionW",
+          "Description": {
+            "Namespace": "",
+            "Key": "428C81BB40F0123488E9A5A2FB0338CF",
+            "SourceString": "Warden Home Region"
+          },
+          "Image": {
+            "ObjectName": "Texture2D MapHomeRegionW",
+            "ObjectPath": "War/Content/Textures/UI/HexMaps/Processed/MapHomeRegionW.0"
+          },
+          "bIsInHexGrid": false,
+          "GridCoord": {
+            "X": 0,
+            "Y": 0
+          }
+        },
+        "ShootingRange": {
+          "DisplayName": {
+            "Namespace": "",
+            "Key": "9D09A3A146AC3E155096D1A43D1F9208",
+            "SourceString": "Shooting Range"
+          },
+          "WorldConquestMapId": "EWorldConquestMapId::Invalid",
+          "Description": {
+            "Namespace": "",
+            "Key": "95D710E94C3B8896EBE99D9F381AAB42",
+            "SourceString": "Shooting Range"
+          },
+          "Image": {
+            "ObjectName": "Texture2D MapDeadlandsHex",
+            "ObjectPath": "War/Content/Textures/UI/HexMaps/Processed/MapDeadlandsHex.0"
+          },
+          "bIsInHexGrid": false,
+          "GridCoord": {
+            "X": 4294967295,
+            "Y": 4294967295
+          }
+        },
+        "DeadLandsHex": {
+          "DisplayName": {
+            "Namespace": "",
+            "Key": "50543183449C2997415B22AE63AF6C11",
+            "SourceString": "Deadlands"
+          },
+          "WorldConquestMapId": "EWorldConquestMapId::DeadLandsHex",
+          "Description": {
+            "Namespace": "",
+            "Key": "7CB557104FED2795D366558DA0299B3A",
+            "SourceString": "Once the heart of the Warden empire, the Deadlands now serves as a stark reminder of the Great Wars. Built atop the bones of this once great capital are several small towns and villages. Bisecting the north and south of the region is a great river that flows out towards The Endless Shore."
+          },
+          "Image": {
+            "ObjectName": "Texture2D MapDeadlandsHex",
+            "ObjectPath": "War/Content/Textures/UI/HexMaps/Processed/MapDeadlandsHex.0"
+          },
+          "bIsInHexGrid": true,
+          "GridCoord": {
+            "X": 0,
+            "Y": 0
+          }
+        },
+        "CallahansPassageHex": {
+          "DisplayName": {
+            "Namespace": "",
+            "Key": "4F9A35C74CCD098CBC8E2CB5282F7363",
+            "SourceString": "Callahan's Passage"
+          },
+          "WorldConquestMapId": "EWorldConquestMapId::CallahansPassageHex",
+          "Description": {
+            "Namespace": "",
+            "Key": "778E0F4C414BDAC4500E5980B9E3631C",
+            "SourceString": "When the Wardens lost the Deadlands, they fell back to Callahan’s passage. Using its narrow passages and mountainous geography they would try and bottleneck their foes. Harsh, and unforgiving, the natural obstacles of the passage are just as much of a threat to a soldier’s life as their enemies waiting in ambush."
+          },
+          "Image": {
+            "ObjectName": "Texture2D MapCallahansPassageHex",
+            "ObjectPath": "War/Content/Textures/UI/HexMaps/Processed/MapCallahansPassageHex.0"
+          },
+          "bIsInHexGrid": true,
+          "GridCoord": {
+            "X": 0,
+            "Y": 4294967295
+          }
+        },
+        "MarbanHollow": {
+          "DisplayName": {
+            "Namespace": "",
+            "Key": "EE3DB42E41B0B62FA992C39549273450",
+            "SourceString": "Marban Hollow"
+          },
+          "WorldConquestMapId": "EWorldConquestMapId::MarbanHollow",
+          "Description": {
+            "Namespace": "WorldGridEditor",
+            "Key": "MapDescriptionTodo",
+            "SourceString": "TODO"
+          },
+          "Image": {
+            "ObjectName": "Texture2D MapMarbanHollow",
+            "ObjectPath": "War/Content/Textures/UI/HexMaps/Processed/MapMarbanHollow.0"
+          },
+          "bIsInHexGrid": true,
+          "GridCoord": {
+            "X": 1,
+            "Y": 4294967295
+          }
+        },
+        "UmbralWildwoodHex": {
+          "DisplayName": {
+            "Namespace": "",
+            "Key": "DCEF29C54E6D58C5ECB774AF4C20DAC0",
+            "SourceString": "Umbral Wildwood"
+          },
+          "WorldConquestMapId": "EWorldConquestMapId::UmbralWildwoodHex",
+          "Description": {
+            "Namespace": "",
+            "Key": "52D53A3B41FC06417158ABAA3450AFB3",
+            "SourceString": "To the west of the Heartlands lies a vast hinterland that remained largely untouched before the Great Wars. As resources dwindled in the north, the dense frontier of the Umbral Wildwood began to be harvested for lumber. The river that flows through the center of the region provides a perfect way to transport lumber to the north. As such, this abundant source of timber and resources has since fueled the war machine on both fronts, but at what cost?"
+          },
+          "Image": {
+            "ObjectName": "Texture2D MapUmbralWildwoodHex",
+            "ObjectPath": "War/Content/Textures/UI/HexMaps/Processed/MapUmbralWildwoodHex.0"
+          },
+          "bIsInHexGrid": true,
+          "GridCoord": {
+            "X": 0,
+            "Y": 1
+          }
+        },
+        "MooringCountyHex": {
+          "DisplayName": {
+            "Namespace": "",
+            "Key": "D9B6FB49468C450578CD0D8D26D1D4BF",
+            "SourceString": "The Moors"
+          },
+          "WorldConquestMapId": "EWorldConquestMapId::MooringCountyHex",
+          "Description": {
+            "Namespace": "WorldGridEditor",
+            "Key": "MapDescriptionTodo",
+            "SourceString": "TODO"
+          },
+          "Image": {
+            "ObjectName": "Texture2D MapMooringCountyHex",
+            "ObjectPath": "War/Content/Textures/UI/HexMaps/Processed/MapMooringCountyHex.0"
+          },
+          "bIsInHexGrid": true,
+          "GridCoord": {
+            "X": 4294967295,
+            "Y": 4294967295
+          }
+        },
+        "HeartlandsHex": {
+          "DisplayName": {
+            "Namespace": "",
+            "Key": "7070E73940FB03E91FFA34A56C6BFCD3",
+            "SourceString": "The Heartlands"
+          },
+          "WorldConquestMapId": "EWorldConquestMapId::HeartlandsHex",
+          "Description": {
+            "Namespace": "WorldGridEditor",
+            "Key": "MapDescriptionTodo",
+            "SourceString": "TODO"
+          },
+          "Image": {
+            "ObjectName": "Texture2D MapHeartlandsHex",
+            "ObjectPath": "War/Content/Textures/UI/HexMaps/Processed/MapHeartlandsHex.0"
+          },
+          "bIsInHexGrid": true,
+          "GridCoord": {
+            "X": 4294967295,
+            "Y": 2
+          }
+        },
+        "LochMorHex": {
+          "DisplayName": {
+            "Namespace": "",
+            "Key": "D82F50EF4012892D696D6597D23A005C",
+            "SourceString": "Loch Mór"
+          },
+          "WorldConquestMapId": "EWorldConquestMapId::LochMorHex",
+          "Description": {
+            "Namespace": "WorldGridEditor",
+            "Key": "MapDescriptionTodo",
+            "SourceString": "TODO"
+          },
+          "Image": {
+            "ObjectName": "Texture2D MapLochMorHex",
+            "ObjectPath": "War/Content/Textures/UI/HexMaps/Processed/MapLochMorHex.0"
+          },
+          "bIsInHexGrid": true,
+          "GridCoord": {
+            "X": 4294967295,
+            "Y": 1
+          }
+        },
+        "LinnMercyHex": {
+          "DisplayName": {
+            "Namespace": "",
+            "Key": "E2A0B5824B0196EA936335A23E37BD1B",
+            "SourceString": "The Linn of Mercy"
+          },
+          "WorldConquestMapId": "EWorldConquestMapId::LinnMercyHex",
+          "Description": {
+            "Namespace": "WorldGridEditor",
+            "Key": "MapDescriptionTodo",
+            "SourceString": "TODO"
+          },
+          "Image": {
+            "ObjectName": "Texture2D MapLinnMercyHex",
+            "ObjectPath": "War/Content/Textures/UI/HexMaps/Processed/MapLinnMercyHex.0"
+          },
+          "bIsInHexGrid": true,
+          "GridCoord": {
+            "X": 4294967295,
+            "Y": 0
+          }
+        },
+        "ReachingTrailHex": {
+          "DisplayName": {
+            "Namespace": "",
+            "Key": "A224B2E4471B9FD5BF35C495644F6BA3",
+            "SourceString": "Reaching Trail"
+          },
+          "WorldConquestMapId": "EWorldConquestMapId::ReachingTrailHex",
+          "Description": {
+            "Namespace": "WorldGridEditor",
+            "Key": "MapDescriptionTodo",
+            "SourceString": "TODO"
+          },
+          "Image": {
+            "ObjectName": "Texture2D MapReachingTrailHex",
+            "ObjectPath": "War/Content/Textures/UI/HexMaps/Processed/MapReachingTrailHex.0"
+          },
+          "bIsInHexGrid": true,
+          "GridCoord": {
+            "X": 0,
+            "Y": 4294967294
+          }
+        },
+        "StonecradleHex": {
+          "DisplayName": {
+            "Namespace": "",
+            "Key": "59E8BE264020946BEF523698ECA0F5B7",
+            "SourceString": "Stonecradle"
+          },
+          "WorldConquestMapId": "EWorldConquestMapId::StonecradleHex",
+          "Description": {
+            "Namespace": "WorldGridEditor",
+            "Key": "MapDescriptionTodo",
+            "SourceString": "TODO"
+          },
+          "Image": {
+            "ObjectName": "Texture2D MapStonecradleHex",
+            "ObjectPath": "War/Content/Textures/UI/HexMaps/Processed/MapStonecradleHex.0"
+          },
+          "bIsInHexGrid": true,
+          "GridCoord": {
+            "X": 4294967294,
+            "Y": 0
+          }
+        },
+        "FarranacCoastHex": {
+          "DisplayName": {
+            "Namespace": "",
+            "Key": "57D7648D4F194749C85E928D05B5A70D",
+            "SourceString": "Farranac Coast"
+          },
+          "WorldConquestMapId": "EWorldConquestMapId::FarranacCoastHex",
+          "Description": {
+            "Namespace": "WorldGridEditor",
+            "Key": "MapDescriptionTodo",
+            "SourceString": "TODO"
+          },
+          "Image": {
+            "ObjectName": "Texture2D MapFarranacCoastHex",
+            "ObjectPath": "War/Content/Textures/UI/HexMaps/Processed/MapFarranacCoastHex.0"
+          },
+          "bIsInHexGrid": true,
+          "GridCoord": {
+            "X": 4294967294,
+            "Y": 1
+          }
+        },
+        "WestgateHex": {
+          "DisplayName": {
+            "Namespace": "",
+            "Key": "DD5A1A274EB023259806C58D29A492C9",
+            "SourceString": "Westgate"
+          },
+          "WorldConquestMapId": "EWorldConquestMapId::WestgateHex",
+          "Description": {
+            "Namespace": "WorldGridEditor",
+            "Key": "MapDescriptionTodo",
+            "SourceString": "TODO"
+          },
+          "Image": {
+            "ObjectName": "Texture2D MapWestgateHex",
+            "ObjectPath": "War/Content/Textures/UI/HexMaps/Processed/MapWestgateHex.0"
+          },
+          "bIsInHexGrid": true,
+          "GridCoord": {
+            "X": 4294967294,
+            "Y": 2
+          }
+        },
+        "FishermansRowHex": {
+          "DisplayName": {
+            "Namespace": "",
+            "Key": "449596294FB9226948547B973E043D91",
+            "SourceString": "Fisherman's Row"
+          },
+          "WorldConquestMapId": "EWorldConquestMapId::FishermansRowHex",
+          "Description": {
+            "Namespace": "WorldGridEditor",
+            "Key": "MapDescriptionTodo",
+            "SourceString": "TODO"
+          },
+          "Image": {
+            "ObjectName": "Texture2D MapFishermansRowHex",
+            "ObjectPath": "War/Content/Textures/UI/HexMaps/Processed/MapFishermansRowHex.0"
+          },
+          "bIsInHexGrid": true,
+          "GridCoord": {
+            "X": 4294967293,
+            "Y": 2
+          }
+        },
+        "OarbreakerHex": {
+          "DisplayName": {
+            "Namespace": "",
+            "Key": "2AAC40474BC0CE1B892471BD8EDE0E19",
+            "SourceString": "The Oarbreaker Isles"
+          },
+          "WorldConquestMapId": "EWorldConquestMapId::OarbreakerHex",
+          "Description": {
+            "Namespace": "WorldGridEditor",
+            "Key": "MapDescriptionTodo",
+            "SourceString": "TODO"
+          },
+          "Image": {
+            "ObjectName": "Texture2D MapOarbreakerHex",
+            "ObjectPath": "War/Content/Textures/UI/HexMaps/Processed/MapOarbreakerHex.0"
+          },
+          "bIsInHexGrid": true,
+          "GridCoord": {
+            "X": 4294967293,
+            "Y": 1
+          }
+        },
+        "GreatMarchHex": {
+          "DisplayName": {
+            "Namespace": "",
+            "Key": "F7E1B53E48C889D3D33893B5DFFB5495",
+            "SourceString": "Great March"
+          },
+          "WorldConquestMapId": "EWorldConquestMapId::GreatMarchHex",
+          "Description": {
+            "Namespace": "WorldGridEditor",
+            "Key": "MapDescriptionTodo",
+            "SourceString": "TODO"
+          },
+          "Image": {
+            "ObjectName": "Texture2D MapGreatMarchHex",
+            "ObjectPath": "War/Content/Textures/UI/HexMaps/Processed/MapGreatMarchHex.0"
+          },
+          "bIsInHexGrid": true,
+          "GridCoord": {
+            "X": 0,
+            "Y": 2
+          }
+        },
+        "TempestIslandHex": {
+          "DisplayName": {
+            "Namespace": "",
+            "Key": "B207ABF64C9F10DE8E85D0BDFBAFD400",
+            "SourceString": "Tempest Island"
+          },
+          "WorldConquestMapId": "EWorldConquestMapId::TempestIslandHex",
+          "Description": {
+            "Namespace": "WorldGridEditor",
+            "Key": "MapDescriptionTodo",
+            "SourceString": "TODO"
+          },
+          "Image": {
+            "ObjectName": "Texture2D MapTempestIslandHex",
+            "ObjectPath": "War/Content/Textures/UI/HexMaps/Processed/MapTempestIslandHex.0"
+          },
+          "bIsInHexGrid": true,
+          "GridCoord": {
+            "X": 3,
+            "Y": 4294967295
+          }
+        },
+        "GodcroftsHex": {
+          "DisplayName": {
+            "Namespace": "",
+            "Key": "170370784574F0AEF96ECEB66220F2B2",
+            "SourceString": "Godcrofts"
+          },
+          "WorldConquestMapId": "EWorldConquestMapId::GodcroftsHex",
+          "Description": {
+            "Namespace": "WorldGridEditor",
+            "Key": "MapDescriptionTodo",
+            "SourceString": "TODO"
+          },
+          "Image": {
+            "ObjectName": "Texture2D MapGodcroftsHex",
+            "ObjectPath": "War/Content/Textures/UI/HexMaps/Processed/MapGodcroftsHex.0"
+          },
+          "bIsInHexGrid": true,
+          "GridCoord": {
+            "X": 3,
+            "Y": 4294967294
+          }
+        },
+        "EndlessShoreHex": {
+          "DisplayName": {
+            "Namespace": "",
+            "Key": "B9DA6B5F45A0FABF547FEFA2FC7B6881",
+            "SourceString": "Endless Shore"
+          },
+          "WorldConquestMapId": "EWorldConquestMapId::EndlessShoreHex",
+          "Description": {
+            "Namespace": "WorldGridEditor",
+            "Key": "MapDescriptionTodo",
+            "SourceString": "TODO"
+          },
+          "Image": {
+            "ObjectName": "Texture2D MapEndlessShoreHex",
+            "ObjectPath": "War/Content/Textures/UI/HexMaps/Processed/MapEndlessShoreHex.0"
+          },
+          "bIsInHexGrid": true,
+          "GridCoord": {
+            "X": 2,
+            "Y": 4294967295
+          }
+        },
+        "AllodsBightHex": {
+          "DisplayName": {
+            "Namespace": "",
+            "Key": "5C79445E40FA6074E16A10AA6DF9A734",
+            "SourceString": "Allod's Bight"
+          },
+          "WorldConquestMapId": "EWorldConquestMapId::AllodsBightHex",
+          "Description": {
+            "Namespace": "WorldGridEditor",
+            "Key": "MapDescriptionTodo",
+            "SourceString": "TODO"
+          },
+          "Image": {
+            "ObjectName": "Texture2D MapAllodsBightHex",
+            "ObjectPath": "War/Content/Textures/UI/HexMaps/Processed/MapAllodsBightHex.0"
+          },
+          "bIsInHexGrid": true,
+          "GridCoord": {
+            "X": 2,
+            "Y": 0
+          }
+        },
+        "WeatheredExpanseHex": {
+          "DisplayName": {
+            "Namespace": "",
+            "Key": "EAF874214365A20BAB342E91EFBA36D2",
+            "SourceString": "Weathered Expanse"
+          },
+          "WorldConquestMapId": "EWorldConquestMapId::WeatheredExpanseHex",
+          "Description": {
+            "Namespace": "WorldGridEditor",
+            "Key": "MapDescriptionTodo",
+            "SourceString": "TODO"
+          },
+          "Image": {
+            "ObjectName": "Texture2D MapWeatheredExpanseHex",
+            "ObjectPath": "War/Content/Textures/UI/HexMaps/Processed/MapWeatheredExpanseHex.0"
+          },
+          "bIsInHexGrid": true,
+          "GridCoord": {
+            "X": 2,
+            "Y": 4294967294
+          }
+        },
+        "DrownedValeHex": {
+          "DisplayName": {
+            "Namespace": "",
+            "Key": "CCBD688740306E23122CC5846B72C9D0",
+            "SourceString": "The Drowned Vale"
+          },
+          "WorldConquestMapId": "EWorldConquestMapId::DrownedValeHex",
+          "Description": {
+            "Namespace": "WorldGridEditor",
+            "Key": "MapDescriptionTodo",
+            "SourceString": "TODO"
+          },
+          "Image": {
+            "ObjectName": "Texture2D MapDrownedValeHex",
+            "ObjectPath": "War/Content/Textures/UI/HexMaps/Processed/MapDrownedValeHex.0"
+          },
+          "bIsInHexGrid": true,
+          "GridCoord": {
+            "X": 1,
+            "Y": 0
+          }
+        },
+        "ShackledChasmHex": {
+          "DisplayName": {
+            "Namespace": "",
+            "Key": "504F47234A204666F84DABADE26369F5",
+            "SourceString": "Shackled Chasm"
+          },
+          "WorldConquestMapId": "EWorldConquestMapId::ShackledChasmHex",
+          "Description": {
+            "Namespace": "WorldGridEditor",
+            "Key": "MapDescriptionTodo",
+            "SourceString": "TODO"
+          },
+          "Image": {
+            "ObjectName": "Texture2D MapShackledChasmHex",
+            "ObjectPath": "War/Content/Textures/UI/HexMaps/Processed/MapShackledChasmHex.0"
+          },
+          "bIsInHexGrid": true,
+          "GridCoord": {
+            "X": 1,
+            "Y": 1
+          }
+        },
+        "ViperPitHex": {
+          "DisplayName": {
+            "Namespace": "",
+            "Key": "3ACE816B4AD403A67040DFA537A6365E",
+            "SourceString": "Viper Pit"
+          },
+          "WorldConquestMapId": "EWorldConquestMapId::ViperPitHex",
+          "Description": {
+            "Namespace": "WorldGridEditor",
+            "Key": "MapDescriptionTodo",
+            "SourceString": "TODO"
+          },
+          "Image": {
+            "ObjectName": "Texture2D MapViperPitHex",
+            "ObjectPath": "War/Content/Textures/UI/HexMaps/Processed/MapViperPitHex.0"
+          },
+          "bIsInHexGrid": true,
+          "GridCoord": {
+            "X": 1,
+            "Y": 4294967294
+          }
+        },
+        "FishermansRowHexFCL": {
+          "DisplayName": {
+            "Namespace": "",
+            "Key": "28238C874BD5B1BB515065BED96800A9",
+            "SourceString": "FCL Map"
+          },
+          "WorldConquestMapId": "EWorldConquestMapId::FishermansRowFCL",
+          "Description": {
+            "Namespace": "",
+            "Key": "E992ED4A43280BC07A4994A25A2060DC",
+            "SourceString": "A map made for FCL"
+          },
+          "Image": {
+            "ObjectName": "Texture2D MapFishermansRowHexFCL",
+            "ObjectPath": "War/Content/Textures/UI/HexMaps/Processed/MapFishermansRowHexFCL.0"
+          },
+          "bIsInHexGrid": false,
+          "GridCoord": {
+            "X": 0,
+            "Y": 0
+          }
+        },
+        "FoxholeFestivalMap": {
+          "DisplayName": {
+            "Namespace": "",
+            "Key": "CA83548445E2DA579570468924396561",
+            "SourceString": "Festival Map"
+          },
+          "WorldConquestMapId": "EWorldConquestMapId::FoxholeFestivalMap",
+          "Description": {
+            "CultureInvariantString": null
+          },
+          "Image": {
+            "ObjectName": "Texture2D FoxholeFestivalMap",
+            "ObjectPath": "War/Content/Textures/UI/HexMaps/Processed/FoxholeFestivalMap.0"
+          },
+          "bIsInHexGrid": false,
+          "GridCoord": {
+            "X": 0,
+            "Y": 0
+          }
+        }
+      },
+      "RootComponent": null
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPMapList_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPMapList_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Data/BPMapList.2"
+      },
+      "VariableGuid": "F2C5395F-45F00ACA-EBB82880-DE7E7E26",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPMapList_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPMapList_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Data/BPMapList.3"
+      }
+    }
+  }
+]

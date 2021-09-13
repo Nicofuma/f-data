@@ -1,0 +1,105 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "campsite02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "campsite02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x21634"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "campsite02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ShorelineRocks",
+            "ObjectPath": "War/Content/Materials/Environment/ShorelineRocks.0"
+          },
+          "MaterialSlotName": "ShorelineRocks",
+          "ImportedMaterialSlotName": "Material #157",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 114.734955,
+            "LocalUVDensities": 58.624214,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Log",
+            "ObjectPath": "War/Content/Materials/Environment/Log.0"
+          },
+          "MaterialSlotName": "Log",
+          "ImportedMaterialSlotName": "Rocks",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 240.66156,
+            "LocalUVDensities": 197.15248,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 94.30413,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 3.7075272,
+          "Y": -5.1540947,
+          "Z": 24.260107
+        },
+        "BoxExtent": {
+          "X": 49.106956,
+          "Y": 52.235004,
+          "Z": 34.52169
+        },
+        "SphereRadius": 58.622353
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup campsite02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/campsite02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision campsite02:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/campsite02.1"
+    },
+    "LightingGuid": "98925489-4A00876C-6D943695-FCF0AB44",
+    "RenderData": null
+  }
+]

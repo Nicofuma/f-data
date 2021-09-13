@@ -1,0 +1,96 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "RiverDLHex",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "RiverDLHex",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1A3A8"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "RiverDLHex",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": null,
+          "MaterialSlotName": "Standardmaterial",
+          "ImportedMaterialSlotName": "Material #26",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "Engine/Content/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "Standardmaterial",
+          "ImportedMaterialSlotName": "Standardmaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 36236.69,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 36236.69,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 23594.258,
+          "Y": 15218.836,
+          "Z": -208.64365
+        },
+        "BoxExtent": {
+          "X": 133454.62,
+          "Y": 88680.74,
+          "Z": 2.5406876
+        },
+        "SphereRadius": 139605.31
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup RiverDLHex:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/RiverDLHex.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision RiverDLHex:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/RiverDLHex.1"
+    },
+    "LightingGuid": "D841355A-492F4395-C1C360BB-012F274A",
+    "RenderData": null
+  }
+]

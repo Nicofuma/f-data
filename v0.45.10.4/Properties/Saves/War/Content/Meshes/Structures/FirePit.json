@@ -1,0 +1,152 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FirePit",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -1.4171906,
+              "Y": -0.909256,
+              "Z": 96.66687
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Radius": 120.61719,
+            "Length": 106.785645,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "FirePit",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 5521,
+        "SizeOnDisk": 5521,
+        "OffsetInFile": "0x1585E"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FirePit",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FireBarrel",
+            "ObjectPath": "War/Content/FX/Materials/FireBarrel.0"
+          },
+          "MaterialSlotName": "FireBarrel",
+          "ImportedMaterialSlotName": "FireBarrel",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TrenchBranches",
+            "ObjectPath": "War/Content/Materials/Environment/TrenchBranches.0"
+          },
+          "MaterialSlotName": "TrenchBranches",
+          "ImportedMaterialSlotName": "TrenchBranches",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 174.8652,
+            "LocalUVDensities": 2.9894583,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Ash",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Ash.0"
+          },
+          "MaterialSlotName": "ASh",
+          "ImportedMaterialSlotName": "ASh",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 148.1173,
+            "LocalUVDensities": 1.090895,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortDirt01",
+            "ObjectPath": "War/Content/Materials/Structures/FortDirt01.0"
+          },
+          "MaterialSlotName": "Crater",
+          "ImportedMaterialSlotName": "Crater",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 167.75815,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 4.8652954,
+          "Y": 6.900879,
+          "Z": 82.88545
+        },
+        "BoxExtent": {
+          "X": 152.13647,
+          "Y": 141.9389,
+          "Z": 191.21146
+        },
+        "SphereRadius": 213.16547
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FirePit:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FirePit.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FirePit:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Structures/FirePit.1"
+    },
+    "LightingGuid": "66763ABA-4123B18D-35D5409F-0722F2F5",
+    "RenderData": null
+  }
+]

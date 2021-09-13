@@ -1,0 +1,109 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FarmFence_low",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -3.29599,
+              "Y": 10.283335,
+              "Z": 86.89903
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 538.7123,
+            "Y": 42.843323,
+            "Z": 201.22725,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "ShootThroughStatic",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_51",
+    "Outer": "FarmFence_low",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x9DE3"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FarmFence_low",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FenceWood",
+            "ObjectPath": "War/Content/Materials/Environment/FenceWood.0"
+          },
+          "MaterialSlotName": "FencePillar_low10",
+          "ImportedMaterialSlotName": "FarmFence",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 479.58398,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 479.58398,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -3.29599,
+          "Y": 10.283335,
+          "Z": 141.47086
+        },
+        "BoxExtent": {
+          "X": 269.35614,
+          "Y": 21.421661,
+          "Z": 175.20212
+        },
+        "SphereRadius": 309.758
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FarmFence_low:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FarmFence_low.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FarmFence_low:NavCollision_51",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FarmFence_low.1"
+    },
+    "LightingGuid": "0A6C875D-40BA31B7-4120868F-90800939",
+    "RenderData": null
+  }
+]

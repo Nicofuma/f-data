@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "HangedManMetal",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "HangedManMetal",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x7BC6"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "HangedManMetal",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant HangedManMetal",
+            "ObjectPath": "War/Content/Materials/Environment/Props/HangedManMetal.0"
+          },
+          "MaterialSlotName": "HangedManLogo",
+          "ImportedMaterialSlotName": "HangedManLogo",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 154.93556,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 154.93556,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 15.096981,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 55.012028,
+          "Y": 15.5620365,
+          "Z": 55.01203
+        },
+        "SphereRadius": 71.530235
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup HangedManMetal:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/HangedManMetal.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision HangedManMetal:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/HangedManMetal.1"
+    },
+    "LightingGuid": "4C373A45-4BD92BA0-7ACC93BF-7C26BDAC",
+    "RenderData": null
+  }
+]

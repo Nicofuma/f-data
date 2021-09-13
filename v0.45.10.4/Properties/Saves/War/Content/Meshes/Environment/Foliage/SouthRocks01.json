@@ -1,0 +1,104 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SouthRocks01",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -1.5258789E-05,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "Pitch": 90.0,
+              "Yaw": -4.7636437,
+              "Roll": 15.236855
+            },
+            "Radius": 108.15137,
+            "Length": 69.146545,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "SouthRocks01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 5521,
+        "SizeOnDisk": 5521,
+        "OffsetInFile": "0x27EC"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SouthRocks01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant SouthRocks",
+            "ObjectPath": "War/Content/Materials/Environment/SouthRocks.0"
+          },
+          "MaterialSlotName": "SouthRocks",
+          "ImportedMaterialSlotName": "SouthRocks",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 793.4058,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 793.4058,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -1.5258789E-05,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 138.44362,
+          "Y": 121.68173,
+          "Z": 63.500057
+        },
+        "SphereRadius": 154.8555
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SouthRocks01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/SouthRocks01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SouthRocks01:NavCollision_4",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/SouthRocks01.1"
+    },
+    "LightingGuid": "B1663C14-4606910B-45F5BE93-9F254493",
+    "RenderData": null
+  }
+]

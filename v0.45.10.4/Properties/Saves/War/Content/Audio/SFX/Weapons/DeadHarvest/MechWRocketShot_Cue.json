@@ -1,0 +1,109 @@
+[
+  {
+    "Type": "SoundCue",
+    "Name": "MechWRocketShot_Cue",
+    "Properties": {
+      "FirstNode": {
+        "ObjectName": "SoundNodeModulator MechWRocketShot_Cue:SoundNodeModulator_0",
+        "ObjectPath": "War/Content/Audio/SFX/Weapons/DeadHarvest/MechWRocketShot_Cue.1"
+      },
+      "VolumeMultiplier": 1.0,
+      "AttenuationOverrides": {
+        "DistanceAlgorithm": "EAttenuationDistanceModel::Inverse",
+        "AttenuationShapeExtents": {
+          "X": 500.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "FalloffDistance": 20000.0
+      },
+      "SoundClassObject": {
+        "ObjectName": "SoundClass Explosions",
+        "ObjectPath": "War/Content/Audio/SoundClasses/SFX.1"
+      },
+      "Duration": 1.9265417,
+      "MaxDistance": 18000.0,
+      "AttenuationSettings": {
+        "ObjectName": "SoundAttenuation LargeExplosives",
+        "ObjectPath": "War/Content/Audio/Attenuations/LargeExplosives.0"
+      }
+    }
+  },
+  {
+    "Type": "SoundNodeModulator",
+    "Name": "SoundNodeModulator_0",
+    "Outer": "MechWRocketShot_Cue",
+    "Properties": {
+      "PitchMin": 0.7,
+      "PitchMax": 1.3,
+      "VolumeMin": 0.7,
+      "VolumeMax": 1.3,
+      "ChildNodes": [
+        {
+          "ObjectName": "SoundNodeRandom MechWRocketShot_Cue:SoundNodeRandom_0",
+          "ObjectPath": "War/Content/Audio/SFX/Weapons/DeadHarvest/MechWRocketShot_Cue.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SoundNodeRandom",
+    "Name": "SoundNodeRandom_0",
+    "Outer": "MechWRocketShot_Cue",
+    "Properties": {
+      "Weights": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bRandomizeWithoutReplacement": false,
+      "ChildNodes": [
+        {
+          "ObjectName": "SoundNodeWavePlayer MechWRocketShot_Cue:SoundNodeWavePlayer_1",
+          "ObjectPath": "War/Content/Audio/SFX/Weapons/DeadHarvest/MechWRocketShot_Cue.3"
+        },
+        {
+          "ObjectName": "SoundNodeWavePlayer MechWRocketShot_Cue:SoundNodeWavePlayer_2",
+          "ObjectPath": "War/Content/Audio/SFX/Weapons/DeadHarvest/MechWRocketShot_Cue.4"
+        },
+        {
+          "ObjectName": "SoundNodeWavePlayer MechWRocketShot_Cue:SoundNodeWavePlayer_3",
+          "ObjectPath": "War/Content/Audio/SFX/Weapons/DeadHarvest/MechWRocketShot_Cue.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SoundNodeWavePlayer",
+    "Name": "SoundNodeWavePlayer_1",
+    "Outer": "MechWRocketShot_Cue",
+    "Properties": {
+      "SoundWaveAssetPtr": {
+        "AssetPathName": "/Game/Audio/SFX/Weapons/DeadHarvest/MechWRocketShot01.MechWRocketShot01",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "SoundNodeWavePlayer",
+    "Name": "SoundNodeWavePlayer_2",
+    "Outer": "MechWRocketShot_Cue",
+    "Properties": {
+      "SoundWaveAssetPtr": {
+        "AssetPathName": "/Game/Audio/SFX/Weapons/DeadHarvest/MechWRocketShot02.MechWRocketShot02",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "SoundNodeWavePlayer",
+    "Name": "SoundNodeWavePlayer_3",
+    "Outer": "MechWRocketShot_Cue",
+    "Properties": {
+      "SoundWaveAssetPtr": {
+        "AssetPathName": "/Game/Audio/SFX/Weapons/DeadHarvest/MechWRocketShot03.MechWRocketShot03",
+        "SubPathString": ""
+      }
+    }
+  }
+]

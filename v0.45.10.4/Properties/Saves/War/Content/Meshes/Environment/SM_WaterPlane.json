@@ -1,0 +1,101 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_5",
+    "Outer": "SM_WaterPlane",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 100.0,
+            "Y": 100.0,
+            "Z": 6.1232338E-15,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "bDoubleSidedGeometry": true,
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "SM_WaterPlane",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x17AD0"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_WaterPlane",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material BasicWater",
+            "ObjectPath": "War/Content/Materials/BasicWater.0"
+          },
+          "MaterialSlotName": "BasicWater",
+          "ImportedMaterialSlotName": "BasicWater",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 100.0,
+            "LocalUVDensities": 106.66731,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 106.66731,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 50.0,
+          "Y": 50.0,
+          "Z": 3.0616169E-15
+        },
+        "SphereRadius": 70.71068
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_WaterPlane:BodySetup_5",
+      "ObjectPath": "War/Content/Meshes/Environment/SM_WaterPlane.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_WaterPlane:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/SM_WaterPlane.1"
+    },
+    "LightingGuid": "3EF8AFFA-47A5D88E-E29B6197-A9C3B4E0",
+    "RenderData": null
+  }
+]

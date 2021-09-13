@@ -1,0 +1,221 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "CanalWall1",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": 799.78076,
+                "Y": 226.7716,
+                "Z": -480.43643
+              },
+              {
+                "X": 0.0,
+                "Y": -120.52918,
+                "Z": -480.43652
+              },
+              {
+                "X": 0.0,
+                "Y": -120.52927,
+                "Z": -3.9273422E-05
+              },
+              {
+                "X": 0.0,
+                "Y": 226.7716,
+                "Z": -480.43643
+              },
+              {
+                "X": 799.78076,
+                "Y": -120.52927,
+                "Z": -3.9273422E-05
+              },
+              {
+                "X": 799.78076,
+                "Y": -120.52918,
+                "Z": -480.43652
+              },
+              {
+                "X": 0.0,
+                "Y": 117.09307,
+                "Z": -5.892543E-07
+              },
+              {
+                "X": 799.78076,
+                "Y": 117.09307,
+                "Z": -2.1672524E-07
+              },
+              {
+                "X": 0.0,
+                "Y": -120.52898,
+                "Z": -1148.1455
+              },
+              {
+                "X": 0.0,
+                "Y": 226.7718,
+                "Z": -1148.1455
+              },
+              {
+                "X": 799.78076,
+                "Y": -120.52898,
+                "Z": -1148.1455
+              },
+              {
+                "X": 799.78076,
+                "Y": 226.7718,
+                "Z": -1148.1455
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": 0.0,
+                "Y": -120.52927,
+                "Z": -1148.1455
+              },
+              "Max": {
+                "X": 799.78076,
+                "Y": 226.7718,
+                "Z": -2.1672524E-07
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "CanalWall1",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 577,
+        "SizeOnDisk": 577,
+        "OffsetInFile": "0x4B50"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "CanalWall1",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant CanalRepeating",
+            "ObjectPath": "War/Content/Materials/Environment/Props/CanalRepeating.0"
+          },
+          "MaterialSlotName": "CanalPillar_low0",
+          "ImportedMaterialSlotName": "CanalWall",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 715.8379,
+            "LocalUVDensities": 2335.747,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant CanalTrims",
+            "ObjectPath": "War/Content/Materials/Environment/Props/CanalTrims.0"
+          },
+          "MaterialSlotName": "CanalWall_low0.001",
+          "ImportedMaterialSlotName": "CanalWall_low0.001",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 468.70197,
+            "LocalUVDensities": 2396.898,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "Engine/Content/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "Trims",
+          "ImportedMaterialSlotName": "Trims",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 2364.8105,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 399.86902,
+          "Y": 66.982956,
+          "Z": -555.72754
+        },
+        "BoxExtent": {
+          "X": 400.6401,
+          "Y": 192.0776,
+          "Z": 565.2335
+        },
+        "SphereRadius": 717.3417
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup CanalWall1:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Walls/CanalWall1.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision CanalWall1:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Walls/CanalWall1.1"
+    },
+    "LightingGuid": "40004AA6-4DCC15DE-AD7948A0-9F4B8133",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,169 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "TownWLargeShed1",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 199.99997,
+              "Y": 149.99998,
+              "Z": 162.49998
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 400.00006,
+            "Y": 300.00006,
+            "Z": 325.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_12",
+    "Outer": "TownWLargeShed1",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x8089"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TownWLargeShed1",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownWoodBeams01",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownWoodBeams01.0"
+          },
+          "MaterialSlotName": "Wood",
+          "ImportedMaterialSlotName": "WoodBeams",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 203.7338,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownWoodTrim01",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownWoodTrim01.0"
+          },
+          "MaterialSlotName": "WoodTrim",
+          "ImportedMaterialSlotName": "WoodTrim",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 346.48932,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownRoofShingles01",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownRoofShingles01.0"
+          },
+          "MaterialSlotName": "TownWindowGlass",
+          "ImportedMaterialSlotName": "TownWindowGlass",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 323.28043,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownWoodBeams02",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownWoodBeams02.0"
+          },
+          "MaterialSlotName": "Material #1020",
+          "ImportedMaterialSlotName": "Material #1020",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 197.68271,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownRainGutter01",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownRainGutter01.0"
+          },
+          "MaterialSlotName": "RoofTrim",
+          "ImportedMaterialSlotName": "RoofTrim",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 260.18484,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 253.10072,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 196.74629,
+          "Y": 154.13445,
+          "Z": 169.47285
+        },
+        "BoxExtent": {
+          "X": 223.86917,
+          "Y": 170.26875,
+          "Z": 179.90128
+        },
+        "SphereRadius": 319.59897
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TownWLargeShed1:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/TownWLargeShed1.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TownWLargeShed1:NavCollision_12",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/TownWLargeShed1.1"
+    },
+    "LightingGuid": "CE5DED6A-43A801C9-2888EB90-FEC78358",
+    "RenderData": null
+  }
+]

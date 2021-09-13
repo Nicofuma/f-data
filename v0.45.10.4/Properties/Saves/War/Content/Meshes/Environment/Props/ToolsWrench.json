@@ -1,0 +1,89 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_10747",
+    "Outer": "ToolsWrench",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "ToolsWrench",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x35AF"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ToolsWrench",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Tools01",
+            "ObjectPath": "War/Content/Materials/Structures/Tools01.0"
+          },
+          "MaterialSlotName": "Tools01",
+          "ImportedMaterialSlotName": "Tools01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 93.888855,
+            "LocalUVDensities": 51.870415,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 51.870415,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -1.7166138E-05,
+          "Y": 9.536743E-07,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 29.298645,
+          "Y": 6.6419935,
+          "Z": 1.564867
+        },
+        "SphereRadius": 29.434662
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ToolsWrench:BodySetup_10747",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ToolsWrench.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ToolsWrench:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ToolsWrench.1"
+    },
+    "LightingGuid": "DF6FD5DA-453C7B00-5141B48D-6EF815D3",
+    "RenderData": null
+  }
+]

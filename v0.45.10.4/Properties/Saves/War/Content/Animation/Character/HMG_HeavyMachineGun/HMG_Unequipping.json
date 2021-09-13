@@ -1,0 +1,120 @@
+[
+  {
+    "Type": "AnimMontage",
+    "Name": "HMG_Unequipping",
+    "Properties": {
+      "BlendOut": {
+        "BlendTime": 0.07
+      },
+      "CompositeSections": [
+        {
+          "SectionName": "Default",
+          "NextSectionName": "None",
+          "MetaData": [],
+          "LinkedMontage": {
+            "ObjectName": "AnimMontage HMG_Unequipping",
+            "ObjectPath": "War/Content/Animation/Character/HMG_HeavyMachineGun/HMG_Unequipping.0"
+          },
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 1.0,
+          "LinkValue": 0.0,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence HMG_Stand_equip",
+            "ObjectPath": "War/Content/Animation/Character/HMG_HeavyMachineGun/HMG_Stand_equip.1"
+          }
+        },
+        {
+          "SectionName": "Crouched",
+          "NextSectionName": "None",
+          "MetaData": [],
+          "LinkedMontage": {
+            "ObjectName": "AnimMontage HMG_Unequipping",
+            "ObjectPath": "War/Content/Animation/Character/HMG_HeavyMachineGun/HMG_Unequipping.0"
+          },
+          "SlotIndex": 0,
+          "SegmentIndex": 1,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 1.0,
+          "SegmentLength": 1.0,
+          "LinkValue": 1.0,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence HMG_Crouch_equip",
+            "ObjectPath": "War/Content/Animation/Character/HMG_HeavyMachineGun/HMG_Crouch_equip.1"
+          }
+        },
+        {
+          "SectionName": "Prone",
+          "NextSectionName": "None",
+          "MetaData": [],
+          "LinkedMontage": {
+            "ObjectName": "AnimMontage HMG_Unequipping",
+            "ObjectPath": "War/Content/Animation/Character/HMG_HeavyMachineGun/HMG_Unequipping.0"
+          },
+          "SlotIndex": 0,
+          "SegmentIndex": 2,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 2.0,
+          "SegmentLength": 1.0,
+          "LinkValue": 2.0,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence HMG_Prone_equip",
+            "ObjectPath": "War/Content/Animation/Character/HMG_HeavyMachineGun/HMG_Prone_equip.1"
+          }
+        }
+      ],
+      "SlotAnimTracks": [
+        {
+          "SlotName": "UpperBody",
+          "AnimTrack": {
+            "AnimSegments": [
+              {
+                "AnimReference": {
+                  "ObjectName": "AnimSequence HMG_Stand_equip",
+                  "ObjectPath": "War/Content/Animation/Character/HMG_HeavyMachineGun/HMG_Stand_equip.1"
+                },
+                "StartPos": 0.0,
+                "AnimStartTime": 0.0,
+                "AnimEndTime": 1.5,
+                "AnimPlayRate": -1.5,
+                "LoopingCount": 1
+              },
+              {
+                "AnimReference": {
+                  "ObjectName": "AnimSequence HMG_Crouch_equip",
+                  "ObjectPath": "War/Content/Animation/Character/HMG_HeavyMachineGun/HMG_Crouch_equip.1"
+                },
+                "StartPos": 1.0,
+                "AnimStartTime": 0.0,
+                "AnimEndTime": 1.5,
+                "AnimPlayRate": -1.5,
+                "LoopingCount": 1
+              },
+              {
+                "AnimReference": {
+                  "ObjectName": "AnimSequence HMG_Prone_equip",
+                  "ObjectPath": "War/Content/Animation/Character/HMG_HeavyMachineGun/HMG_Prone_equip.1"
+                },
+                "StartPos": 2.0,
+                "AnimStartTime": 0.0,
+                "AnimEndTime": 1.5,
+                "AnimPlayRate": -1.5,
+                "LoopingCount": 1
+              }
+            ]
+          }
+        }
+      ],
+      "SequenceLength": 3.0,
+      "Skeleton": {
+        "ObjectName": "Skeleton Character_Male_Skeleton",
+        "ObjectPath": "War/Content/Meshes/Character/Character_Male_Skeleton.7"
+      }
+    }
+  }
+]

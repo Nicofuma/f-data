@@ -1,0 +1,233 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FortT1GunAI",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -274.75232,
+                "Y": 274.75232,
+                "Z": 17.129028
+              },
+              {
+                "X": 274.75232,
+                "Y": 274.75232,
+                "Z": 17.129028
+              },
+              {
+                "X": -274.75232,
+                "Y": -274.75232,
+                "Z": 17.129028
+              },
+              {
+                "X": 274.75232,
+                "Y": -274.75232,
+                "Z": 17.129028
+              },
+              {
+                "X": -268.9886,
+                "Y": 268.9886,
+                "Z": 341.3681
+              },
+              {
+                "X": 268.9886,
+                "Y": 268.9886,
+                "Z": 341.3681
+              },
+              {
+                "X": -268.9886,
+                "Y": -268.9886,
+                "Z": 341.3681
+              },
+              {
+                "X": 268.9886,
+                "Y": -268.9886,
+                "Z": 341.3681
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -274.75232,
+                "Y": -274.75232,
+                "Z": 17.129028
+              },
+              "Max": {
+                "X": 274.75232,
+                "Y": 274.75232,
+                "Z": 341.3681
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "FortT1GunAI",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 457,
+        "SizeOnDisk": 457,
+        "OffsetInFile": "0x4C749"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FortT1GunAI",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortT1WoodLogs01",
+            "ObjectPath": "War/Content/Materials/Structures/FortT1WoodLogs01.0"
+          },
+          "MaterialSlotName": "T1WoodLogs01",
+          "ImportedMaterialSlotName": "T1WoodLogs01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 322.23175,
+            "LocalUVDensities": 0.9831772,
+            "LocalUVDensities": 0.9831772,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortDirt02",
+            "ObjectPath": "War/Content/Materials/Structures/FortDirt02.0"
+          },
+          "MaterialSlotName": "Dirt",
+          "ImportedMaterialSlotName": "Rope",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 374.62793,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RepeatingRope",
+            "ObjectPath": "War/Content/Materials/Environment/Props/RepeatingRope.0"
+          },
+          "MaterialSlotName": "Rope",
+          "ImportedMaterialSlotName": "T1Roof",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 15.600582,
+            "LocalUVDensities": 1.2194821,
+            "LocalUVDensities": 1.2194821,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortT1RoofAI",
+            "ObjectPath": "War/Content/Materials/Structures/FortT1RoofAI.0"
+          },
+          "MaterialSlotName": "T1Roof",
+          "ImportedMaterialSlotName": "FortAIDefenses",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1002.79126,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant GarrisonWindowT3Metal01",
+            "ObjectPath": "War/Content/Materials/Structures/GarrisonWindowT3Metal01.0"
+          },
+          "MaterialSlotName": "T3Garrision",
+          "ImportedMaterialSlotName": "Dirt",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 290.46933,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1.0528799,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -8.034485,
+          "Y": -8.600372,
+          "Z": 183.74394
+        },
+        "BoxExtent": {
+          "X": 317.1189,
+          "Y": 321.30164,
+          "Z": 183.74394
+        },
+        "SphereRadius": 470.3092
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FortT1GunAI:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortT1GunAI.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FortT1GunAI:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortT1GunAI.1"
+    },
+    "LightingGuid": "496E32A2-43F465B8-EABC0E8B-0BCC19FB",
+    "RenderData": null
+  }
+]

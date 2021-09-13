@@ -1,0 +1,113 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "RadioPickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript RadioPickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RadioPickup.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class RadioPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "RadioPickup_C",
+    "Name": "Default__RadioPickup_C",
+    "Properties": {
+      "CodeName": "Radio",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "7882040A4E9DD011B5595396C7678DB9",
+        "SourceString": "Radio"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "3B4077CA4052EC844401F0AE9BFF7005",
+        "SourceString": "Receives map intelligence updates"
+      },
+      "Icon": {
+        "ObjectName": "Texture2D RadioItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/RadioItemIcon.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Utility",
+      "ItemCategory": "EItemCategory::Utility",
+      "ItemProfileType": "EItemProfileType::Tool",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__RadioPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RadioPickup.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__RadioPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RadioPickup.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__RadioPickup_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 64.0,
+        "Y": 30.57192,
+        "Z": 22.76623
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "RadioPickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent RadioPickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RadioPickup.3"
+      },
+      "VariableGuid": "DE30D4EF-4241894A-9E6C3DBD-4D6D2CCF",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "RadioPickup_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node RadioPickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RadioPickup.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__RadioPickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__RadioPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RadioPickup.2"
+      }
+    }
+  }
+]

@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "MachineryVarious04",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "MachineryVarious04",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xB6CE"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "MachineryVarious04",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownCoalPlantMetal01",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownCoalPlantMetal01.0"
+          },
+          "MaterialSlotName": "Material #1021",
+          "ImportedMaterialSlotName": "Material #1021",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 819.97943,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 819.97943,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.9758301,
+          "Y": 93.475586,
+          "Z": 123.92433
+        },
+        "BoxExtent": {
+          "X": 176.88231,
+          "Y": 93.36719,
+          "Z": 225.74466
+        },
+        "SphereRadius": 226.4606
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup MachineryVarious04:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/MachineryVarious04.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision MachineryVarious04:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/MachineryVarious04.1"
+    },
+    "LightingGuid": "7547A412-4F6143DA-1532CEB0-0F3CF98D",
+    "RenderData": null
+  }
+]

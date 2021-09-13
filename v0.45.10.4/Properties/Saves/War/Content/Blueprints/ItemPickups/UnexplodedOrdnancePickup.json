@@ -1,0 +1,112 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "UnexplodedOrdnancePickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript UnexplodedOrdnancePickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/UnexplodedOrdnancePickup.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class GearPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "UnexplodedOrdnancePickup_C",
+    "Name": "Default__UnexplodedOrdnancePickup_C",
+    "Properties": {
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass UnexplodedOrdnanceComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Items/UnexplodedOrdnanceComponent.0"
+      },
+      "Encumbrance": 200,
+      "CodeName": "UnexplodedOrdnance",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "F26794294A3B51CA3550059E92E2BB5E",
+        "SourceString": "Unexploded Ordnance"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "C3F9FEAF410C6FED92CDB2BCAABF3C9A",
+        "SourceString": "An old war artillery shell that failed to detonate. Etchings on the side indicate a powerful payload and should be handled carefully."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D UnexplodedOrdnanceIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/UnexplodedOrdnanceIcon.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Tertiary",
+      "ItemCategory": "EItemCategory::Utility",
+      "ItemProfileType": "EItemProfileType::UniqueItem",
+      "TechID": "ETechID::UnlockSatchelCharge",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__UnexplodedOrdnancePickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/UnexplodedOrdnancePickup.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__UnexplodedOrdnancePickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/UnexplodedOrdnancePickup.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__UnexplodedOrdnancePickup_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "UnexplodedOrdnancePickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent UnexplodedOrdnancePickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/UnexplodedOrdnancePickup.3"
+      },
+      "VariableGuid": "541BAD53-4B377223-83DFE384-33E208F3",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "UnexplodedOrdnancePickup_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node UnexplodedOrdnancePickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/UnexplodedOrdnancePickup.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__UnexplodedOrdnancePickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__UnexplodedOrdnancePickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/UnexplodedOrdnancePickup.2"
+      }
+    }
+  }
+]

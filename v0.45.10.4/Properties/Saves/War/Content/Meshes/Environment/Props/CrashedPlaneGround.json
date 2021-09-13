@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "CrashedPlaneGround",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "CrashedPlaneGround",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x35D99"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "CrashedPlaneGround",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TrenchDirtTile",
+            "ObjectPath": "War/Content/Materials/Environment/TrenchDirtTile.0"
+          },
+          "MaterialSlotName": "TrenchDirt",
+          "ImportedMaterialSlotName": "TrenchDirt",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1256.8679,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1256.8679,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 50.416138,
+          "Y": -209.19965,
+          "Z": 37.233677
+        },
+        "BoxExtent": {
+          "X": 448.63092,
+          "Y": 658.6874,
+          "Z": 91.683105
+        },
+        "SphereRadius": 784.9037
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup CrashedPlaneGround:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/CrashedPlaneGround.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision CrashedPlaneGround:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/CrashedPlaneGround.1"
+    },
+    "LightingGuid": "C12BCF96-41869446-E9BB5587-F24FDEBC",
+    "RenderData": null
+  }
+]

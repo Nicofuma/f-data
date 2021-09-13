@@ -1,0 +1,104 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "TrenchBranchWall2",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "TrenchBranchWall2",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xD935"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TrenchBranchWall2",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TrenchBranches",
+            "ObjectPath": "War/Content/Materials/Environment/TrenchBranches.0"
+          },
+          "MaterialSlotName": "TrenchBranches",
+          "ImportedMaterialSlotName": "TrenchBranches",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 268.2567,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TrenchBranchWall",
+            "ObjectPath": "War/Content/Materials/Environment/TrenchBranchWall.0"
+          },
+          "MaterialSlotName": "TrenchBranchWallTile",
+          "ImportedMaterialSlotName": "TrenchBranchWallTile",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 356.10968,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 286.7001,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -1.5258789E-05,
+          "Y": -1.9073486E-06,
+          "Z": 121.02198
+        },
+        "BoxExtent": {
+          "X": 203.64844,
+          "Y": 26.019264,
+          "Z": 201.04454
+        },
+        "SphereRadius": 267.57184
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TrenchBranchWall2:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/TrenchBranchWall2.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TrenchBranchWall2:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/TrenchBranchWall2.1"
+    },
+    "LightingGuid": "BBD3A8A6-42B2FCC3-C0370897-712EFDB6",
+    "RenderData": null
+  }
+]

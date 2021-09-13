@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Sewergrate01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "Sewergrate01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2C0A"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Sewergrate01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Sewergrates01",
+            "ObjectPath": "War/Content/Materials/Environment/Town/Sewergrates01.0"
+          },
+          "MaterialSlotName": "SewersGrates01",
+          "ImportedMaterialSlotName": "SewersGrates01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 417.29248,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 417.29248,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 7.6293945E-06,
+          "Y": 0.0,
+          "Z": 4.051888
+        },
+        "BoxExtent": {
+          "X": 75.45816,
+          "Y": 75.45815,
+          "Z": 5.217165
+        },
+        "SphereRadius": 75.638306
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Sewergrate01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Sewergrate01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Sewergrate01:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Sewergrate01.1"
+    },
+    "LightingGuid": "F3FEE819-493B49FC-AE3A3482-653346CA",
+    "RenderData": null
+  }
+]

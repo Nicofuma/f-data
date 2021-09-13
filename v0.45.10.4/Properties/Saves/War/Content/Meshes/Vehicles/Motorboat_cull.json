@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Motorboat_cull",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Motorboat_cull",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1D2F"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Motorboat_cull",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material StencilOnly",
+            "ObjectPath": "War/Content/Materials/Character/StencilOnly.0"
+          },
+          "MaterialSlotName": "Material #523",
+          "ImportedMaterialSlotName": "Material #523",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 310.03613,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 310.03613,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -10.947754,
+          "Z": 36.227142
+        },
+        "BoxExtent": {
+          "X": 76.80237,
+          "Y": 224.15913,
+          "Z": 50.060127
+        },
+        "SphereRadius": 239.48477
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Motorboat_cull:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Vehicles/Motorboat_cull.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Motorboat_cull:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Vehicles/Motorboat_cull.1"
+    },
+    "LightingGuid": "2801BDF9-4EBF475B-43FC38AD-BA0D65ED",
+    "RenderData": null
+  }
+]

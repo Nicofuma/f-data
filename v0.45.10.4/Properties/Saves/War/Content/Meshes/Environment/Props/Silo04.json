@@ -1,0 +1,105 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Silo04",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -4.5776367E-05,
+              "Y": 1.5258789E-05,
+              "Z": 150.05243
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Radius": 198.96628,
+            "Length": 445.75458,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Silo04",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 5521,
+        "SizeOnDisk": 5521,
+        "OffsetInFile": "0x12374"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Silo04",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MetalPanelRust",
+            "ObjectPath": "War/Content/Materials/Resources/MetalPanelRust.0"
+          },
+          "MaterialSlotName": "MetalPanelRust",
+          "ImportedMaterialSlotName": "MetalPanelRust",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 287.8104,
+            "LocalUVDensities": 1200.8368,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1200.8368,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -4.5776367E-05,
+          "Y": 1.5258789E-05,
+          "Z": 244.75174
+        },
+        "BoxExtent": {
+          "X": 217.1911,
+          "Y": 193.97395,
+          "Z": 326.04855
+        },
+        "SphereRadius": 393.51755
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Silo04:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Silo04.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Silo04:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Silo04.1"
+    },
+    "LightingGuid": "7AE488A8-48616F3E-0A95878E-D33A1163",
+    "RenderData": null
+  }
+]

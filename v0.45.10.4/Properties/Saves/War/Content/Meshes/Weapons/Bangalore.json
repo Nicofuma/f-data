@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Bangalore",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Bangalore",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1A70"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Bangalore",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Bangalore",
+            "ObjectPath": "War/Content/Materials/Weapons/Bangalore.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 83.50894,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 83.50894,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -1.4305115E-06,
+          "Z": -3.3541565
+        },
+        "BoxExtent": {
+          "X": 4.9738693,
+          "Y": 4.9738846,
+          "Z": 86.83928
+        },
+        "SphereRadius": 86.981606
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Bangalore:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Weapons/Bangalore.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Bangalore:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Weapons/Bangalore.1"
+    },
+    "LightingGuid": "4D360D18-4395A9E3-E1EF7080-FEC0F972",
+    "RenderData": null
+  }
+]

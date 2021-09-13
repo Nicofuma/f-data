@@ -1,0 +1,129 @@
+[
+  {
+    "Type": "Material",
+    "Name": "Topmat",
+    "Properties": {
+      "Specular": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 1,
+        "MaskR": 1,
+        "MaskG": 1,
+        "MaskB": 1,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionTextureSample_40",
+        "UseConstant": false,
+        "Constant": 0.5
+      },
+      "Normal": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 1,
+        "MaskR": 1,
+        "MaskG": 1,
+        "MaskB": 1,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionTextureSample_41",
+        "UseConstant": false,
+        "Constant": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        }
+      },
+      "bUsedWithSkeletalMesh": true,
+      "Expressions": [
+        {
+          "ObjectName": "MaterialExpressionTextureSample Topmat:MaterialExpressionTextureSample_39",
+          "ObjectPath": "War/Content/Captain/Topmat.1"
+        },
+        {
+          "ObjectName": "MaterialExpressionTextureSample Topmat:MaterialExpressionTextureSample_40",
+          "ObjectPath": "War/Content/Captain/Topmat.2"
+        },
+        {
+          "ObjectName": "MaterialExpressionTextureSample Topmat:MaterialExpressionTextureSample_41",
+          "ObjectPath": "War/Content/Captain/Topmat.3"
+        },
+        null,
+        {
+          "ObjectName": "MaterialExpressionVectorParameter Topmat:MaterialExpressionVectorParameter_0",
+          "ObjectPath": "War/Content/Captain/Topmat.4"
+        }
+      ],
+      "bCanMaskedBeAssumedOpaque": true,
+      "StateId": "B2C09861-4660D844-D3769587-03B79D03",
+      "CachedQualityLevelsUsed": [
+        false,
+        true,
+        false
+      ]
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_39",
+    "Outer": "Topmat",
+    "Properties": {
+      "Texture": {
+        "ObjectName": "Texture2D SK_SoldierPawn_Top_Diffuse",
+        "ObjectPath": "War/Content/Captain/SK_SoldierPawn_Top_Diffuse.0"
+      },
+      "Material": {
+        "ObjectName": "Material Topmat",
+        "ObjectPath": "War/Content/Captain/Topmat.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_40",
+    "Outer": "Topmat",
+    "Properties": {
+      "Texture": {
+        "ObjectName": "Texture2D SK_SoldierPawn_Top_Specular",
+        "ObjectPath": "War/Content/Captain/SK_SoldierPawn_Top_Specular.0"
+      },
+      "Material": {
+        "ObjectName": "Material Topmat",
+        "ObjectPath": "War/Content/Captain/Topmat.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_41",
+    "Outer": "Topmat",
+    "Properties": {
+      "Texture": {
+        "ObjectName": "Texture2D SK_SoldierPawn_Top_Normal",
+        "ObjectPath": "War/Content/Captain/SK_SoldierPawn_Top_Normal.0"
+      },
+      "SamplerType": "SAMPLERTYPE_Normal",
+      "Material": {
+        "ObjectName": "Material Topmat",
+        "ObjectPath": "War/Content/Captain/Topmat.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionVectorParameter",
+    "Name": "MaterialExpressionVectorParameter_0",
+    "Outer": "Topmat",
+    "Properties": {
+      "DefaultValue": {
+        "R": 1.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FF0000"
+      },
+      "ParameterName": "TopColor",
+      "ExpressionGUID": "41244C75-4DCA5AC5-86454280-4E0B5511",
+      "Material": {
+        "ObjectName": "Material Topmat",
+        "ObjectPath": "War/Content/Captain/Topmat.0"
+      }
+    }
+  }
+]

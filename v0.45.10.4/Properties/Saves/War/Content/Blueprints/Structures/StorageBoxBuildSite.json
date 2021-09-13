@@ -1,0 +1,312 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "Box",
+    "Outer": "StorageBoxBuildSite_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BoxComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "StorageBoxBuildSite_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript StorageBoxBuildSite_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/StorageBoxBuildSite.12"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class StructureBuildSite",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty StorageBoxBuildSite_C:Box",
+        "ObjectPath": "War/Content/Blueprints/Structures/StorageBoxBuildSite.0"
+      },
+      {
+        "ObjectName": "ObjectProperty StorageBoxBuildSite_C:StaticMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/StorageBoxBuildSite.7"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "StorageBoxBuildSite_C",
+    "Name": "Default__StorageBoxBuildSite_C",
+    "Properties": {
+      "ObstructionCheckVolume": {
+        "ObjectName": "BoxComponent Default__StorageBoxBuildSite_C:ObstructionCheckVolume",
+        "ObjectPath": "War/Content/Blueprints/Structures/StorageBoxBuildSite.4"
+      },
+      "CodeName": "StorageBoxBuildSite",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__StorageBoxBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/StorageBoxBuildSite.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__StorageBoxBuildSite_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/StorageBoxBuildSite.5"
+      },
+      "MaxHealth": 400,
+      "Health": 400,
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__StorageBoxBuildSite_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/StorageBoxBuildSite.14"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__StorageBoxBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/StorageBoxBuildSite.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__StorageBoxBuildSite_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ObstructionCheckVolume",
+    "Outer": "Default__StorageBoxBuildSite_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__StorageBoxBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/StorageBoxBuildSite.3"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__StorageBoxBuildSite_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 90.0,
+        "Y": 42.5,
+        "Z": 43.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__StorageBoxBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/StorageBoxBuildSite.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 43.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "Box_GEN_VARIABLE",
+    "Outer": "StorageBoxBuildSite_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 90.0,
+        "Y": 43.0,
+        "Z": 70.0
+      },
+      "AreaClass": {
+        "ObjectName": "Class NavArea_Obstacle",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "StructureDamageableSeeThroughMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapDowncast",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 70.0
+      }
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "StaticMesh",
+    "Outer": "StorageBoxBuildSite_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "StorageBoxBuildSite_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent StorageBoxBuildSite_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/StorageBoxBuildSite.8"
+      },
+      "VariableGuid": "648ADD0B-44A316A8-296FFAB4-6D7AC019",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BoxComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent StorageBoxBuildSite_C:Box_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/StorageBoxBuildSite.6"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "5E32457E-4FEE06AA-39C1B7BE-F8B7E0E6",
+      "InternalVariableName": "Box"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent StorageBoxBuildSite_C:StaticMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/StorageBoxBuildSite.13"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "86C507D5-47AD1F33-3AFDD6A5-F58B22DF",
+      "InternalVariableName": "StaticMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "StorageBoxBuildSite_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node StorageBoxBuildSite_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/StorageBoxBuildSite.11"
+        },
+        {
+          "ObjectName": "SCS_Node StorageBoxBuildSite_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/StorageBoxBuildSite.10"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node StorageBoxBuildSite_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/StorageBoxBuildSite.11"
+        },
+        {
+          "ObjectName": "SCS_Node StorageBoxBuildSite_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/StorageBoxBuildSite.10"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node StorageBoxBuildSite_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/StorageBoxBuildSite.9"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh_GEN_VARIABLE",
+    "Outer": "StorageBoxBuildSite_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh StorageContainer",
+        "ObjectPath": "War/Content/Meshes/Resources/StorageContainer.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material BuildSite",
+          "ObjectPath": "War/Content/Materials/Structures/BuildSite.0"
+        },
+        {
+          "ObjectName": "Material BuildGhost",
+          "ObjectPath": "War/Content/Materials/Structures/BuildGhost.0"
+        },
+        {
+          "ObjectName": "Material BuildGhost",
+          "ObjectPath": "War/Content/Materials/Structures/BuildGhost.0"
+        },
+        {
+          "ObjectName": "Material BuildGhost",
+          "ObjectPath": "War/Content/Materials/Structures/BuildGhost.0"
+        }
+      ],
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "MassInKgOverride": 168.54219
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__StorageBoxBuildSite_C"
+  }
+]

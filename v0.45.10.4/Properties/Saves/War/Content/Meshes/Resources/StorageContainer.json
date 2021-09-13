@@ -1,0 +1,106 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "StorageContainer",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": -0.532032,
+              "Z": 43.097908
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 179.67763,
+            "Y": 86.72612,
+            "Z": 86.195816,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "StorageContainer",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x2D1F"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "StorageContainer",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant StorageContainer",
+            "ObjectPath": "War/Content/Materials/Resources/StorageContainer.0"
+          },
+          "MaterialSlotName": "Material #6577",
+          "ImportedMaterialSlotName": "Material #6577",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 453.32745,
+            "LocalUVDensities": 460.6294,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 460.6294,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -0.532032,
+          "Z": 43.097908
+        },
+        "BoxExtent": {
+          "X": 89.83881,
+          "Y": 43.36306,
+          "Z": 43.097908
+        },
+        "SphereRadius": 108.59193
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup StorageContainer:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Resources/StorageContainer.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision StorageContainer:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Resources/StorageContainer.1"
+    },
+    "LightingGuid": "A48933FD-4C85DC00-E3730F86-84CE20B0",
+    "RenderData": null
+  }
+]

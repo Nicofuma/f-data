@@ -1,0 +1,99 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Invalid",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "Invalid",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x5189"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Invalid",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant CalloutRed",
+            "ObjectPath": "War/Content/Materials/Structures/CalloutRed.0"
+          },
+          "MaterialSlotName": "Material #592",
+          "ImportedMaterialSlotName": "Material #592",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 3.9505367,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant CalloutBlack",
+            "ObjectPath": "War/Content/Materials/Structures/CalloutBlack.0"
+          },
+          "MaterialSlotName": "Black",
+          "ImportedMaterialSlotName": "Black",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 4.4425797,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 4.2118654,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -1.1444092E-05,
+          "Z": 7.706068
+        },
+        "BoxExtent": {
+          "X": 58.679,
+          "Y": 58.679,
+          "Z": 7.8082314
+        },
+        "SphereRadius": 58.685562
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Invalid:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/UI/Invalid.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Invalid:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/UI/Invalid.1"
+    },
+    "LightingGuid": "FF1FDF49-47A3A223-CED0E088-030C31B6",
+    "RenderData": null
+  }
+]

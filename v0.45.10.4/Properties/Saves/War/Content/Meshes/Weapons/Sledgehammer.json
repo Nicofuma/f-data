@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_10763",
+    "Outer": "Sledgehammer",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Sledgehammer",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2869"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Sledgehammer",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Tools03",
+            "ObjectPath": "War/Content/Materials/Structures/Tools03.0"
+          },
+          "MaterialSlotName": "Tools03",
+          "ImportedMaterialSlotName": "Tools03",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 145.80222,
+            "LocalUVDensities": 98.81333,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 98.81333,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.1444092E-05,
+          "Y": -6.67572E-06,
+          "Z": -7.6293945E-06
+        },
+        "BoxExtent": {
+          "X": 17.786064,
+          "Y": 7.4698524,
+          "Z": 70.30592
+        },
+        "SphereRadius": 70.50561
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Sledgehammer:BodySetup_10763",
+      "ObjectPath": "War/Content/Meshes/Weapons/Sledgehammer.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Sledgehammer:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Weapons/Sledgehammer.1"
+    },
+    "LightingGuid": "EE1CDE7F-48326547-A3822584-7C8CC36A",
+    "RenderData": null
+  }
+]

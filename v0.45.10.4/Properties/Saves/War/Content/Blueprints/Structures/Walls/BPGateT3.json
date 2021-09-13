@@ -1,0 +1,1127 @@
+[
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "BPGateT3_C",
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPGateT3_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPGateT3_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.45"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty BPGateT3_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.0"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function BPGateT3_C:ExecuteUbergraph_BPGateT3",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.6"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class Gate",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty BPGateT3_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.0"
+      },
+      {
+        "ObjectName": "Function BPGateT3_C:BPSetTeamVisuals",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.21"
+      },
+      {
+        "ObjectName": "Function BPGateT3_C:ReceiveBeginPlay",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.22"
+      },
+      {
+        "ObjectName": "Function BPGateT3_C:ExecuteUbergraph_BPGateT3",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.6"
+      },
+      {
+        "ObjectName": "ObjectProperty BPGateT3_C:DamageBoxRight",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.4"
+      },
+      {
+        "ObjectName": "ObjectProperty BPGateT3_C:DamageBoxLeft",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.25"
+      },
+      {
+        "ObjectName": "ObjectProperty BPGateT3_C:BuildMeshDummy",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.24"
+      },
+      {
+        "ObjectName": "ObjectProperty BPGateT3_C:MultiplexedSkeletalMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.29"
+      },
+      {
+        "ObjectName": "ObjectProperty BPGateT3_C:PillarRight",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.31"
+      },
+      {
+        "ObjectName": "ObjectProperty BPGateT3_C:PillarLeft",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.30"
+      },
+      {
+        "ObjectName": "ObjectProperty BPGateT3_C:LeftSocket",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.28"
+      },
+      {
+        "ObjectName": "ObjectProperty BPGateT3_C:RightSocket",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.32"
+      },
+      {
+        "ObjectName": "ObjectProperty BPGateT3_C:Decal",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.26"
+      },
+      {
+        "ObjectName": "ObjectProperty BPGateT3_C:FlagMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.27"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 1792,
+    "ClassWithin": null,
+    "ClassConfigName": "/Game/Animation/WorldAssets/GateDoor/ABP_GateDoor_5887",
+    "ClassGeneratedBy": null,
+    "Interfaces": [],
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPGateT3_C",
+    "Name": "Default__BPGateT3_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "OpeningSoundCue": {
+        "ObjectName": "SoundCue GateOpenClose2_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Environment/GateOpenClose2_Cue.0"
+      },
+      "NoBuildCollider": {
+        "ObjectName": "BoxComponent Default__BPGateT3_C:NoBuildCollider",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.13"
+      },
+      "GateCollider": {
+        "ObjectName": "BoxComponent Default__BPGateT3_C:GateCollider",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.12"
+      },
+      "GateDoorMesh": {
+        "ObjectName": "SkeletalMeshComponent Default__BPGateT3_C:GateDoorMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.47"
+      },
+      "BuildGhostClass": null,
+      "Description": {
+        "Namespace": "",
+        "Key": "75C05BD74EA44B3459F6DD9AE7D7477F",
+        "SourceString": "A gate that provides access to a walled off area."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D Gate-T3Icon",
+        "ObjectPath": "War/Content/Textures/UI/StructureIcons/Gate-T3Icon.0"
+      },
+      "bRequiresVehicleToBuild": true,
+      "CodeName": "GateT3",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "4BAC9851464E59D977437285DF1586DC",
+        "SourceString": "Gate (Tier 3)"
+      },
+      "ArmourType": "EArmourType::Tier3Structure",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPGateT3_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPGateT3_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.14"
+      },
+      "DestroyedFX": {
+        "ObjectName": "ParticleSystem GrenadeBlast",
+        "ObjectPath": "War/Content/FX/GrenadeBlast.151"
+      },
+      "TechID": "ETechID::UnlockGateTier3",
+      "MaxHealth": 3000,
+      "Health": 3000,
+      "IsVaultable": false,
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPGateT3_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.51"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPGateT3_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPGateT3_C"
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "DamageBoxRight",
+    "Outer": "BPGateT3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BoxComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_BPGateT3",
+    "PropertyFlags": 148
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BPGateT3",
+    "Outer": "BPGateT3_C",
+    "Children": [
+      {
+        "ObjectName": "IntProperty BPGateT3_C:ExecuteUbergraph_BPGateT3.EntryPoint",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.5"
+      },
+      {
+        "ObjectName": "BoolProperty BPGateT3_C:ExecuteUbergraph_BPGateT3.CallFunc_HasAuthority_ReturnValue",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.8"
+      },
+      {
+        "ObjectName": "IntProperty BPGateT3_C:ExecuteUbergraph_BPGateT3.K2Node_Event_VisualTeamId",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.19"
+      },
+      {
+        "ObjectName": "ByteProperty BPGateT3_C:ExecuteUbergraph_BPGateT3.CallFunc_Conv_IntToByte_ReturnValue",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.17"
+      },
+      {
+        "ObjectName": "BoolProperty BPGateT3_C:ExecuteUbergraph_BPGateT3.CallFunc_EqualEqual_ByteByte_ReturnValue",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.7"
+      },
+      {
+        "ObjectName": "BoolProperty BPGateT3_C:ExecuteUbergraph_BPGateT3.CallFunc_SetStaticMesh_ReturnValue",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.9"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue",
+    "Outer": "ExecuteUbergraph_BPGateT3",
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_HasAuthority_ReturnValue",
+    "Outer": "ExecuteUbergraph_BPGateT3",
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_SetStaticMesh_ReturnValue",
+    "Outer": "ExecuteUbergraph_BPGateT3",
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "DamageBoxLeft_GEN_VARIABLE",
+    "Outer": "BPGateT3_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 32.0,
+        "Y": 32.0,
+        "Z": 200.0
+      },
+      "AreaClass": {
+        "ObjectName": "Class NavArea_Obstacle",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bGenerateOverlapEvents": false,
+      "CanCharacterStepUpOn": "ECB_No",
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -750.0,
+        "Y": 0.0,
+        "Z": 200.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "DamageBoxRight_GEN_VARIABLE",
+    "Outer": "BPGateT3_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 32.0,
+        "Y": 32.0,
+        "Z": 200.0
+      },
+      "AreaClass": {
+        "ObjectName": "Class NavArea_Obstacle",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bGenerateOverlapEvents": false,
+      "CanCharacterStepUpOn": "ECB_No",
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 750.0,
+        "Y": 0.0,
+        "Z": 200.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "GateCollider",
+    "Outer": "Default__BPGateT3_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 750.0,
+        "Y": 32.0,
+        "Z": 200.0
+      },
+      "bGenerateOverlapEvents": false,
+      "CanCharacterStepUpOn": "ECB_No",
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPGateT3_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 200.0
+      },
+      "ComponentTags": [
+        "IncludeInBuildGhost",
+        "IncludeInBuildSIte"
+      ]
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "NoBuildCollider",
+    "Outer": "Default__BPGateT3_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 700.0,
+        "Y": 64.0,
+        "Z": 256.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPGateT3_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 256.0
+      },
+      "ComponentTags": [
+        "ExcludeFromBuildSite",
+        "ExcludeFromBuildGhost"
+      ]
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPGateT3_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 750.0,
+        "Y": 1000.0,
+        "Z": 300.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPGateT3_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 200.0
+      },
+      "ComponentTags": [
+        "ExcludeFromBuildGhost"
+      ]
+    }
+  },
+  {
+    "Type": "BuildSocketComponent",
+    "Name": "LeftSocket_GEN_VARIABLE",
+    "Outer": "BPGateT3_C",
+    "Properties": {
+      "SocketTags": [
+        {
+          "SocketTypeMask": 512,
+          "SocketTypeCategory": 512,
+          "Tag": "SideLeft",
+          "ShowsTag": "None",
+          "MaxZOffset": 200.0,
+          "ApplicationRule": "EBuildSocketTagRule::AffectsLowerZ",
+          "ConnectorAttachmentTag": "None"
+        }
+      ],
+      "MaxZRotation": 150.0,
+      "MaxHeightAboveLandscape": 200.0,
+      "MaxDepthBelowLandscape": 200.0,
+      "RelativeLocation": {
+        "X": -750.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 180.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BuildSocketComponent",
+    "Name": "RightSocket_GEN_VARIABLE",
+    "Outer": "BPGateT3_C",
+    "Properties": {
+      "SocketTags": [
+        {
+          "SocketTypeMask": 512,
+          "SocketTypeCategory": 512,
+          "Tag": "SideRight",
+          "ShowsTag": "None",
+          "MaxZOffset": 200.0,
+          "ApplicationRule": "EBuildSocketTagRule::AffectsLowerZ",
+          "ConnectorAttachmentTag": "None"
+        }
+      ],
+      "MaxZRotation": 150.0,
+      "MaxHeightAboveLandscape": 200.0,
+      "MaxDepthBelowLandscape": 200.0,
+      "RelativeLocation": {
+        "X": 750.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ByteProperty",
+    "Name": "CallFunc_Conv_IntToByte_ReturnValue",
+    "Outer": "ExecuteUbergraph_BPGateT3",
+    "Enum": null
+  },
+  {
+    "Type": "DecalComponent",
+    "Name": "Decal_GEN_VARIABLE",
+    "Outer": "BPGateT3_C",
+    "Properties": {
+      "DecalMaterial": {
+        "ObjectName": "MaterialInstanceConstant DirtPatch",
+        "ObjectPath": "War/Content/Materials/Decals/DirtPatch.0"
+      },
+      "DecalSize": {
+        "X": 130.44202,
+        "Y": 400.0,
+        "Z": 700.0
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 50.0
+      },
+      "RelativeRotation": {
+        "Pitch": -90.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "K2Node_Event_VisualTeamId",
+    "Outer": "ExecuteUbergraph_BPGateT3",
+    "PropertyFlags": 2
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "VisualTeamId",
+    "Outer": "BPSetTeamVisuals",
+    "PropertyFlags": 150
+  },
+  {
+    "Type": "Function",
+    "Name": "BPSetTeamVisuals",
+    "Outer": "BPGateT3_C",
+    "SuperStruct": {
+      "ObjectName": "Function TeamStructure:BPSetTeamVisuals",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty BPGateT3_C:BPSetTeamVisuals.VisualTeamId",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.20"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BPGateT3_C",
+    "SuperStruct": {
+      "ObjectName": "Function Actor:ReceiveBeginPlay",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "MultiplexedSkeletalMeshComponent",
+    "Name": "MultiplexedSkeletalMesh_GEN_VARIABLE",
+    "Outer": "BPGateT3_C",
+    "Properties": {
+      "TargetTag": "Gate",
+      "MeshStops": [
+        {
+          "Threshold": 0,
+          "SkeletalMesh": {
+            "ObjectName": "SkeletalMesh SK_GateDoor-T3_Critical",
+            "ObjectPath": "War/Content/Meshes/Structures/Walls/SK_GateDoor-T3_Critical.0"
+          }
+        },
+        {
+          "Threshold": 33,
+          "SkeletalMesh": {
+            "ObjectName": "SkeletalMesh SK_GateDoor-T3_Damaged",
+            "ObjectPath": "War/Content/Meshes/Structures/Walls/SK_GateDoor-T3_Damaged.0"
+          }
+        },
+        {
+          "Threshold": 66,
+          "SkeletalMesh": {
+            "ObjectName": "SkeletalMesh SK_GateDoor-T3",
+            "ObjectPath": "War/Content/Meshes/Structures/Walls/SK_GateDoor-T3.0"
+          }
+        }
+      ],
+      "InputValue": 100,
+      "SelectedMeshIndex": 2
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "BuildMeshDummy",
+    "Outer": "BPGateT3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SkeletalMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "DamageBoxLeft",
+    "Outer": "BPGateT3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BoxComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Decal",
+    "Outer": "BPGateT3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class DecalComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "FlagMesh",
+    "Outer": "BPGateT3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "LeftSocket",
+    "Outer": "BPGateT3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BuildSocketComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "MultiplexedSkeletalMesh",
+    "Outer": "BPGateT3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class MultiplexedSkeletalMeshComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "PillarLeft",
+    "Outer": "BPGateT3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "PillarRight",
+    "Outer": "BPGateT3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "RightSocket",
+    "Outer": "BPGateT3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BuildSocketComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPGateT3_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPGateT3_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.33"
+      },
+      "VariableGuid": "774EE825-4A3D7951-F94E3D98-EE75CBEE",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BuildSocketComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BuildSocketComponent BPGateT3_C:RightSocket_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.16"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "A187C285-461603B0-04CD8FBD-F1992EEA",
+      "InternalVariableName": "RightSocket"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_10",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class MultiplexedSkeletalMeshComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "MultiplexedSkeletalMeshComponent BPGateT3_C:MultiplexedSkeletalMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.23"
+      },
+      "VariableGuid": "56CE45E3-49EE5AE6-DC128983-10BCA8B3",
+      "InternalVariableName": "MultiplexedSkeletalMesh"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_11",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BoxComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent BPGateT3_C:DamageBoxRight_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.11"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "4D67BFC9-46BF7DD3-66DAC79C-3DA478F5",
+      "InternalVariableName": "DamageBoxRight"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPGateT3_C:FlagMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.48"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "8031D5C4-4CA67205-41AA8289-37D36393",
+      "InternalVariableName": "FlagMesh"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class DecalComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "DecalComponent BPGateT3_C:Decal_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.18"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "384FC257-4231B706-FB7C7899-A0041CB4",
+      "InternalVariableName": "Decal"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BuildSocketComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BuildSocketComponent BPGateT3_C:LeftSocket_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.15"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "2D9A5C3B-4B066EB4-81928791-319B163D",
+      "InternalVariableName": "LeftSocket"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPGateT3_C:PillarLeft_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.49"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "18C78B13-499C3193-A1C427A4-B5C675FD",
+      "InternalVariableName": "PillarLeft"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPGateT3_C:PillarRight_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.50"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "BC2694B8-411968AB-83208180-EEDD4615",
+      "InternalVariableName": "PillarRight"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_8",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SkeletalMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SkeletalMeshComponent BPGateT3_C:BuildMeshDummy_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.46"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "9B340ACF-4CBE614F-DC43BAA7-5D914181",
+      "InternalVariableName": "BuildMeshDummy"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_9",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BoxComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent BPGateT3_C:DamageBoxLeft_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.10"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "36F2B251-45F47FC4-D5846C87-2F9F3670",
+      "InternalVariableName": "DamageBoxLeft"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPGateT3_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPGateT3_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.38"
+        },
+        {
+          "ObjectName": "SCS_Node BPGateT3_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.39"
+        },
+        {
+          "ObjectName": "SCS_Node BPGateT3_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.35"
+        },
+        {
+          "ObjectName": "SCS_Node BPGateT3_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.40"
+        },
+        {
+          "ObjectName": "SCS_Node BPGateT3_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.41"
+        },
+        {
+          "ObjectName": "SCS_Node BPGateT3_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.42"
+        },
+        {
+          "ObjectName": "SCS_Node BPGateT3_C:SimpleConstructionScript_0.SCS_Node_10",
+          "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.36"
+        },
+        {
+          "ObjectName": "SCS_Node BPGateT3_C:SimpleConstructionScript_0.SCS_Node_8",
+          "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.43"
+        },
+        {
+          "ObjectName": "SCS_Node BPGateT3_C:SimpleConstructionScript_0.SCS_Node_9",
+          "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.44"
+        },
+        {
+          "ObjectName": "SCS_Node BPGateT3_C:SimpleConstructionScript_0.SCS_Node_11",
+          "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.37"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPGateT3_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.38"
+        },
+        {
+          "ObjectName": "SCS_Node BPGateT3_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.39"
+        },
+        {
+          "ObjectName": "SCS_Node BPGateT3_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.35"
+        },
+        {
+          "ObjectName": "SCS_Node BPGateT3_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.40"
+        },
+        {
+          "ObjectName": "SCS_Node BPGateT3_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.41"
+        },
+        {
+          "ObjectName": "SCS_Node BPGateT3_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.42"
+        },
+        {
+          "ObjectName": "SCS_Node BPGateT3_C:SimpleConstructionScript_0.SCS_Node_10",
+          "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.36"
+        },
+        {
+          "ObjectName": "SCS_Node BPGateT3_C:SimpleConstructionScript_0.SCS_Node_8",
+          "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.43"
+        },
+        {
+          "ObjectName": "SCS_Node BPGateT3_C:SimpleConstructionScript_0.SCS_Node_9",
+          "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.44"
+        },
+        {
+          "ObjectName": "SCS_Node BPGateT3_C:SimpleConstructionScript_0.SCS_Node_11",
+          "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.37"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPGateT3_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.34"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "BuildMeshDummy_GEN_VARIABLE",
+    "Outer": "BPGateT3_C",
+    "Properties": {
+      "ClothingSimulationFactory": {
+        "ObjectName": "Class ClothingSimulationFactoryNv",
+        "ObjectPath": "/Script/ClothingSystemRuntimeNv"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_GateDoor-T3",
+        "ObjectPath": "War/Content/Meshes/Structures/Walls/SK_GateDoor-T3.0"
+      },
+      "OverrideMaterials": [
+        null,
+        {
+          "ObjectName": "MaterialInstanceConstant BarbedWire",
+          "ObjectPath": "War/Content/Materials/Environment/BarbedWire.0"
+        }
+      ],
+      "bReceivesDecals": false,
+      "ComponentTags": [
+        "IncludeInBuildGhost",
+        "IncludeInBuildSite"
+      ]
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "GateDoorMesh",
+    "Outer": "Default__BPGateT3_C",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_GateDoor_C",
+        "ObjectPath": "War/Content/Animation/WorldAssets/GateDoor/ABP_GateDoor.1"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_GateDoor-T3",
+        "ObjectPath": "War/Content/Meshes/Structures/Walls/SK_GateDoor-T3.0"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPGateT3_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Walls/BPGateT3.3"
+      },
+      "ComponentTags": [
+        "ExcludeFromBuildSite",
+        "ExcludeFromBuildGhost",
+        "Gate"
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "FlagMesh_GEN_VARIABLE",
+    "Outer": "BPGateT3_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh GateFactionMarker02",
+        "ObjectPath": "War/Content/Meshes/Structures/Walls/GateFactionMarker02.2"
+      },
+      "bGenerateOverlapEvents": false,
+      "bReceivesDecals": false,
+      "CanCharacterStepUpOn": "ECB_No",
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "ComponentTags": [
+        "ExcludeFromBuildSite",
+        "ExcludeFromBuildGhost"
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "PillarLeft_GEN_VARIABLE",
+    "Outer": "BPGateT3_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh Pillar-T3",
+        "ObjectPath": "War/Content/Meshes/Structures/Walls/Pillar-T3.2"
+      },
+      "bGenerateOverlapEvents": false,
+      "CanCharacterStepUpOn": "ECB_No",
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -750.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "ComponentTags": [
+        "SideLeft",
+        "IncludeInBuildSite",
+        "IncludeInBuildGhost"
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "PillarRight_GEN_VARIABLE",
+    "Outer": "BPGateT3_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh Pillar-T3",
+        "ObjectPath": "War/Content/Meshes/Structures/Walls/Pillar-T3.2"
+      },
+      "bGenerateOverlapEvents": false,
+      "CanCharacterStepUpOn": "ECB_No",
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 750.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "ComponentTags": [
+        "SideRight",
+        "IncludeInBuildSite",
+        "IncludeInBuildGhost"
+      ]
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPGateT3_C"
+  }
+]

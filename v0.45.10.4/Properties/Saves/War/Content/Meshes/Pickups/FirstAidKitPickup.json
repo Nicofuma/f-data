@@ -1,0 +1,100 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FirstAidKitPickup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "FirstAidKitPickup",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xD116"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FirstAidKitPickup",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FirstAidKit",
+            "ObjectPath": "War/Content/Materials/Resources/FirstAidKit.0"
+          },
+          "MaterialSlotName": "Material #6284",
+          "ImportedMaterialSlotName": "Material #6284",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 96.89985,
+            "LocalUVDensities": 1.2857733,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BandagesPickup",
+            "ObjectPath": "War/Content/Materials/Pickups/BandagesPickup.0"
+          },
+          "MaterialSlotName": "BandagesPickup",
+          "ImportedMaterialSlotName": "BandagesPickup",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 63.7281,
+            "LocalUVDensities": 92.68975,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 57.928864,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -12.173759,
+          "Y": -3.4332275E-05,
+          "Z": 20.696009
+        },
+        "BoxExtent": {
+          "X": 38.40276,
+          "Y": 33.550484,
+          "Z": 20.820026
+        },
+        "SphereRadius": 50.506756
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FirstAidKitPickup:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Pickups/FirstAidKitPickup.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FirstAidKitPickup:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Pickups/FirstAidKitPickup.1"
+    },
+    "LightingGuid": "5CBF1C31-436A3A51-315017B9-84E7B7C9",
+    "RenderData": null
+  }
+]

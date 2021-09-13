@@ -1,0 +1,96 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "GunTurret_Physics",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup GunTurret_Physics:SkeletalBodySetup_9",
+          "ObjectPath": "War/Content/Meshes/Structures/GunTurret_Physics.2"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup GunTurret_Physics:SkeletalBodySetup_10",
+          "ObjectPath": "War/Content/Meshes/Structures/GunTurret_Physics.1"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_10",
+    "Outer": "GunTurret_Physics",
+    "Properties": {
+      "AggGeom": {
+        "SphereElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": -3.587799,
+              "Z": 6.6535645
+            },
+            "Radius": 170.31012,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "root",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_9",
+    "Outer": "GunTurret_Physics",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": -17.120605,
+              "Z": 57.29001
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 251.40063,
+            "Y": 263.33685,
+            "Z": 107.41754,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 204.02673,
+              "Z": 56.485077
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 51.243042,
+            "Y": 179.04376,
+            "Z": 30.560669,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "top_horizontalPivot",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  }
+]

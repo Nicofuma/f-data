@@ -1,0 +1,654 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_3"
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_1",
+    "Outer": "ParticleSpriteEmitter_3",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired SnowballTrail:ParticleModuleRequired_3",
+        "ObjectPath": "War/Content/FX/SnowballTrail.9"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleSpawnPerUnit SnowballTrail:ParticleModuleSpawnPerUnit_0",
+          "ObjectPath": "War/Content/FX/SnowballTrail.14"
+        },
+        {
+          "ObjectName": "ParticleModuleLifetime SnowballTrail:ParticleModuleLifetime_3",
+          "ObjectPath": "War/Content/FX/SnowballTrail.6"
+        },
+        {
+          "ObjectName": "ParticleModuleSize SnowballTrail:ParticleModuleSize_3",
+          "ObjectPath": "War/Content/FX/SnowballTrail.12"
+        },
+        {
+          "ObjectName": "ParticleModuleColor SnowballTrail:ParticleModuleColor_4",
+          "ObjectPath": "War/Content/FX/SnowballTrail.4"
+        },
+        {
+          "ObjectName": "ParticleModuleLocationPrimitiveSphere SnowballTrail:ParticleModuleLocationPrimitiveSphere_3",
+          "ObjectPath": "War/Content/FX/SnowballTrail.7"
+        },
+        {
+          "ObjectName": "ParticleModuleParameterDynamic_Seeded SnowballTrail:ParticleModuleParameterDynamic_Seeded_1",
+          "ObjectPath": "War/Content/FX/SnowballTrail.8"
+        },
+        {
+          "ObjectName": "ParticleModuleRotation SnowballTrail:ParticleModuleRotation_1",
+          "ObjectPath": "War/Content/FX/SnowballTrail.10"
+        },
+        {
+          "ObjectName": "ParticleModuleRotationRate SnowballTrail:ParticleModuleRotationRate_1",
+          "ObjectPath": "War/Content/FX/SnowballTrail.11"
+        },
+        {
+          "ObjectName": "ParticleModuleAccelerationDrag SnowballTrail:ParticleModuleAccelerationDrag_1",
+          "ObjectPath": "War/Content/FX/SnowballTrail.3"
+        },
+        {
+          "ObjectName": "ParticleModuleColorScaleOverLife SnowballTrail:ParticleModuleColorScaleOverLife_4",
+          "ObjectPath": "War/Content/FX/SnowballTrail.5"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity SnowballTrail:ParticleModuleVelocity_4",
+          "ObjectPath": "War/Content/FX/SnowballTrail.15"
+        },
+        {
+          "ObjectName": "ParticleModuleAccelerationConstant SnowballTrail:ParticleModuleAccelerationConstant_1",
+          "ObjectPath": "War/Content/FX/SnowballTrail.2"
+        }
+      ],
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn SnowballTrail:ParticleModuleSpawn_3",
+        "ObjectPath": "War/Content/FX/SnowballTrail.13"
+      },
+      "PeakActiveParticles": 42
+    }
+  },
+  {
+    "Type": "ParticleModuleAccelerationConstant",
+    "Name": "ParticleModuleAccelerationConstant_1",
+    "Outer": "SnowballTrail",
+    "Properties": {
+      "Acceleration": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -1000.0
+      },
+      "bAlwaysInWorldSpace": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleAccelerationDrag",
+    "Name": "ParticleModuleAccelerationDrag_1",
+    "Outer": "SnowballTrail",
+    "Properties": {
+      "DragCoefficientRaw": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "bAlwaysInWorldSpace": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColor",
+    "Name": "ParticleModuleColor_4",
+    "Outer": "SnowballTrail",
+    "Properties": {
+      "StartColor": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "StartAlpha": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColorScaleOverLife",
+    "Name": "ParticleModuleColorScaleOverLife_4",
+    "Outer": "SnowballTrail",
+    "Properties": {
+      "ColorScaleOverLife": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "AlphaScaleOverLife": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 6.9999995,
+          "Values": [
+            1.0,
+            0.9445903,
+            0.8017331,
+            0.6064074,
+            0.39359245,
+            0.19826688,
+            0.05540975,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 8,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_3",
+    "Outer": "SnowballTrail",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 1.0,
+        "MaxValue": 2.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0,
+            2.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLocationPrimitiveSphere",
+    "Name": "ParticleModuleLocationPrimitiveSphere_3",
+    "Outer": "SnowballTrail",
+    "Properties": {
+      "StartRadius": {
+        "MinValue": 10.0,
+        "MaxValue": 10.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            10.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "Velocity": true,
+      "VelocityScale": {
+        "MinValue": 50.0,
+        "MaxValue": 50.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            50.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "StartLocation": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleParameterDynamic_Seeded",
+    "Name": "ParticleModuleParameterDynamic_Seeded_1",
+    "Outer": "SnowballTrail",
+    "Properties": {
+      "DynamicParams": [
+        {
+          "ParamName": "SnowMelt",
+          "bUseEmitterTime": false,
+          "bSpawnTimeOnly": false,
+          "ValueMethod": "EDPV_UserSet",
+          "bScaleVelocityByParamValue": false,
+          "ParamValue": {
+            "MinValue": 0.0,
+            "MaxValue": 1.0,
+            "Distribution": null,
+            "Table": {
+              "TimeScale": 6.9999995,
+              "TimeBias": 0.0,
+              "Values": [
+                1.0,
+                0.9445903,
+                0.8017331,
+                0.6064074,
+                0.39359245,
+                0.19826688,
+                0.05540975,
+                0.0
+              ],
+              "Op": 1,
+              "EntryCount": 8,
+              "EntryStride": 1,
+              "SubEntryStride": 0,
+              "LockFlag": 0
+            }
+          }
+        },
+        {
+          "ParamName": "Param2",
+          "bUseEmitterTime": false,
+          "bSpawnTimeOnly": false,
+          "ValueMethod": "EDPV_UserSet",
+          "bScaleVelocityByParamValue": false,
+          "ParamValue": {
+            "MinValue": 1.0,
+            "MaxValue": 1.0,
+            "Distribution": null,
+            "Table": {
+              "TimeScale": 0.0,
+              "TimeBias": 0.0,
+              "Values": [
+                1.0
+              ],
+              "Op": 1,
+              "EntryCount": 1,
+              "EntryStride": 1,
+              "SubEntryStride": 0,
+              "LockFlag": 0
+            }
+          }
+        },
+        {
+          "ParamName": "Param3",
+          "bUseEmitterTime": false,
+          "bSpawnTimeOnly": false,
+          "ValueMethod": "EDPV_UserSet",
+          "bScaleVelocityByParamValue": false,
+          "ParamValue": {
+            "MinValue": 1.0,
+            "MaxValue": 1.0,
+            "Distribution": null,
+            "Table": {
+              "TimeScale": 0.0,
+              "TimeBias": 0.0,
+              "Values": [
+                1.0
+              ],
+              "Op": 1,
+              "EntryCount": 1,
+              "EntryStride": 1,
+              "SubEntryStride": 0,
+              "LockFlag": 0
+            }
+          }
+        },
+        {
+          "ParamName": "Param4",
+          "bUseEmitterTime": false,
+          "bSpawnTimeOnly": false,
+          "ValueMethod": "EDPV_UserSet",
+          "bScaleVelocityByParamValue": false,
+          "ParamValue": {
+            "MinValue": 1.0,
+            "MaxValue": 1.0,
+            "Distribution": null,
+            "Table": {
+              "TimeScale": 0.0,
+              "TimeBias": 0.0,
+              "Values": [
+                1.0
+              ],
+              "Op": 1,
+              "EntryCount": 1,
+              "EntryStride": 1,
+              "SubEntryStride": 0,
+              "LockFlag": 0
+            }
+          }
+        }
+      ],
+      "UpdateFlags": 15,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_3",
+    "Outer": "SnowballTrail",
+    "Properties": {
+      "Material": {
+        "ObjectName": "Material FallingSnow",
+        "ObjectPath": "War/Content/FX/Materials/FallingSnow.0"
+      },
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant SnowballTrail:ParticleModuleRequired_3.RequiredDistributionSpawnRate",
+          "ObjectPath": "War/Content/FX/SnowballTrail.0"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotation",
+    "Name": "ParticleModuleRotation_1",
+    "Outer": "SnowballTrail",
+    "Properties": {
+      "StartRotation": {
+        "MinValue": -1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -1.0,
+            1.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotationRate",
+    "Name": "ParticleModuleRotationRate_1",
+    "Outer": "SnowballTrail",
+    "Properties": {
+      "StartRotationRate": {
+        "MinValue": -0.1,
+        "MaxValue": 0.1,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -0.1,
+            0.1
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_3",
+    "Outer": "SnowballTrail",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 15.0,
+        "MaxValue": 10.0,
+        "MinValueVec": {
+          "X": 15.0,
+          "Y": 15.0,
+          "Z": 15.0
+        },
+        "MaxValueVec": {
+          "X": 10.0,
+          "Y": 10.0,
+          "Z": 10.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            15.0,
+            15.0,
+            15.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_3",
+    "Outer": "SnowballTrail",
+    "Properties": {
+      "Rate": {
+        "MinValue": 20.0,
+        "MaxValue": 20.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            20.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawnPerUnit",
+    "Name": "ParticleModuleSpawnPerUnit_0",
+    "Outer": "SnowballTrail",
+    "Properties": {
+      "SpawnPerUnit": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocity",
+    "Name": "ParticleModuleVelocity_4",
+    "Outer": "SnowballTrail",
+    "Properties": {
+      "StartVelocity": {
+        "MaxValue": 100.0,
+        "MaxValueVec": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 100.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "StartVelocityRadial": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_3",
+    "Outer": "SnowballTrail",
+    "Properties": {
+      "bUseLegacySpawningBehavior": true,
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel SnowballTrail:ParticleSpriteEmitter_3.ParticleLODLevel_1",
+          "ObjectPath": "War/Content/FX/SnowballTrail.1"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "SnowballTrail",
+    "Properties": {
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter SnowballTrail:ParticleSpriteEmitter_3",
+          "ObjectPath": "War/Content/FX/SnowballTrail.16"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "bShouldResetPeakCounts": true,
+      "CustomOcclusionBounds": {
+        "Min": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Max": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "IsValid": 1
+      }
+    }
+  }
+]

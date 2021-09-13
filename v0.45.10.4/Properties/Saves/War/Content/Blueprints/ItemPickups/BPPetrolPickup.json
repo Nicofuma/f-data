@@ -1,0 +1,111 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPPetrolPickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPPetrolPickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPPetrolPickup.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class GearPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPPetrolPickup_C",
+    "Name": "Default__BPPetrolPickup_C",
+    "Properties": {
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPPetrolComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Items/BPPetrolComponent.0"
+      },
+      "Encumbrance": 325,
+      "CodeName": "Petrol",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "3D321D484BE5C1D46A7248B3F9546D6C",
+        "SourceString": "Petrol"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "B8E16A6F4322F73241A86B8E99FBBDCD",
+        "SourceString": "High end fuel that's refined from Crude Oil. Vehicles and resource mines that run on Petrol are more effective."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D RefinedFuelIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/RefinedFuelIcon.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Tertiary",
+      "ItemCategory": "EItemCategory::Supplies",
+      "ItemProfileType": "EItemProfileType::RefinedFuel",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPPetrolPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPPetrolPickup.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPPetrolPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPPetrolPickup.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPPetrolPickup_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPPetrolPickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPPetrolPickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPPetrolPickup.3"
+      },
+      "VariableGuid": "D053F36C-4A0A5018-14EE5AA1-146C232E",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPPetrolPickup_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPPetrolPickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPPetrolPickup.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPPetrolPickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPPetrolPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPPetrolPickup.2"
+      }
+    }
+  }
+]

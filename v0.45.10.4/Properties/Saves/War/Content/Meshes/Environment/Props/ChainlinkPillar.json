@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ChainlinkPillar",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "ChainlinkPillar",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1806"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ChainlinkPillar",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ChainlinkCap",
+            "ObjectPath": "War/Content/Materials/Environment/Props/ChainlinkCap.0"
+          },
+          "MaterialSlotName": "ChainlinkCap",
+          "ImportedMaterialSlotName": "ChainlinkCap",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 262.94342,
+            "LocalUVDensities": 1195.3606,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 262.94342,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.042121887,
+          "Y": -0.09139824,
+          "Z": 49.032074
+        },
+        "BoxExtent": {
+          "X": 19.82666,
+          "Y": 19.826632,
+          "Z": 289.12637
+        },
+        "SphereRadius": 289.8224
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ChainlinkPillar:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ChainlinkPillar.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ChainlinkPillar:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ChainlinkPillar.1"
+    },
+    "LightingGuid": "C75D61AC-4B8839D4-30EFEE86-D5AF4C1E",
+    "RenderData": null
+  }
+]
