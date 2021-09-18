@@ -1,0 +1,103 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "BonePile02",
+    "Properties": {
+      "AggGeom": {
+        "SphereElems": [
+          {
+            "Center": {
+              "X": 11.400222,
+              "Y": -8.553356,
+              "Z": 3.6209006
+            },
+            "Radius": 45.884148,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_31",
+    "Outer": "BonePile02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 5521,
+        "SizeOnDisk": 5521,
+        "OffsetInFile": "0x38682"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "BonePile02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Skeleton",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Skeleton.0"
+          },
+          "MaterialSlotName": "Skeleton",
+          "ImportedMaterialSlotName": "Skeleton",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 168.53119,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 168.53119,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 8.863014,
+          "Y": -17.770645,
+          "Z": 22.709076
+        },
+        "BoxExtent": {
+          "X": 54.506462,
+          "Y": 50.44879,
+          "Z": 27.442795
+        },
+        "SphereRadius": 68.2408
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup BonePile02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/BonePile02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision BonePile02:NavCollision_31",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/BonePile02.1"
+    },
+    "LightingGuid": "AE276AD8-4078CDE9-B665A39D-071B6347",
+    "RenderData": null
+  }
+]

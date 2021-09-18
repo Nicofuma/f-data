@@ -1,0 +1,99 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FortIModLoungeW",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "FortIModLoungeW",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2AB06"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FortIModLoungeW",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Infrastructure05",
+            "ObjectPath": "War/Content/Materials/Structures/Infrastructure05.0"
+          },
+          "MaterialSlotName": "IMod05",
+          "ImportedMaterialSlotName": "IMod05",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 221.92525,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortIModKitchen",
+            "ObjectPath": "War/Content/Materials/Structures/FortIModKitchen.0"
+          },
+          "MaterialSlotName": "Kitchen.001",
+          "ImportedMaterialSlotName": "Kitchen.001",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 504.03363,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 462.94705,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -1.7261353,
+          "Y": -13.931824,
+          "Z": 132.48117
+        },
+        "BoxExtent": {
+          "X": 225.92499,
+          "Y": 61.70553,
+          "Z": 132.80006
+        },
+        "SphereRadius": 262.9838
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FortIModLoungeW:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/FortIModLoungeW.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FortIModLoungeW:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/FortIModLoungeW.1"
+    },
+    "LightingGuid": "90158860-4F6EFC6D-49AF2391-80482311",
+    "RenderData": null
+  }
+]

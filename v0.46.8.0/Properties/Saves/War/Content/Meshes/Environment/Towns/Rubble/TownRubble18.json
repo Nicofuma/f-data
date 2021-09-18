@@ -1,0 +1,137 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "TownRubble18",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -7.6293945E-06,
+              "Y": 1.5258789E-05,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 41.872818,
+            "Y": 296.2899,
+            "Z": 256.95947,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "TownRubble18",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x3067"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TownRubble18",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownWoodBeams02",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownWoodBeams02.0"
+          },
+          "MaterialSlotName": "TownWoodBeams02",
+          "ImportedMaterialSlotName": "TownWoodBeams02",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 290.49463,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownWindowGlass",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownWindowGlass.0"
+          },
+          "MaterialSlotName": "TownWindowGlass",
+          "ImportedMaterialSlotName": "TownWindowGlass",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 171.50255,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownWoodTrim01",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownWoodTrim01.0"
+          },
+          "MaterialSlotName": "TownWoodTrim01",
+          "ImportedMaterialSlotName": "TownWoodTrim01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 104.44662,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 229.82762,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -7.6293945E-06,
+          "Y": 1.5258789E-05,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 20.936409,
+          "Y": 148.14494,
+          "Z": 128.47974
+        },
+        "SphereRadius": 192.59439
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TownRubble18:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Rubble/TownRubble18.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TownRubble18:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Rubble/TownRubble18.1"
+    },
+    "LightingGuid": "F4CA3CAD-4548DB6C-53AC4286-191E359C",
+    "RenderData": null
+  }
+]

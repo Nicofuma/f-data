@@ -1,0 +1,180 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "ReadableText",
+    "Outer": "ReadableSign02_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class ReadableTextComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ReadableSign02_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript ReadableSign02_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Meshes/Environment/ReadableObjects/ReadableSign02.9"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class Actor",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty ReadableSign02_C:ReadableText",
+        "ObjectPath": "War/Content/Meshes/Environment/ReadableObjects/ReadableSign02.0"
+      },
+      {
+        "ObjectName": "ObjectProperty ReadableSign02_C:StaticMesh",
+        "ObjectPath": "War/Content/Meshes/Environment/ReadableObjects/ReadableSign02.3"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "ReadableSign02_C",
+    "Name": "Default__ReadableSign02_C"
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "StaticMesh",
+    "Outer": "ReadableSign02_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ReadableTextComponent",
+    "Name": "ReadableText_GEN_VARIABLE",
+    "Outer": "ReadableSign02_C",
+    "Properties": {
+      "HintText": {
+        "Namespace": "",
+        "Key": "24E8024C42E83507ACBC9D966442C164",
+        "SourceString": "Read Sign"
+      },
+      "RelativeLocation": {
+        "X": 12.0818405,
+        "Y": 3.4357986,
+        "Z": 160.94504
+      },
+      "RelativeScale3D": {
+        "X": 2.034119,
+        "Y": 2.0,
+        "Z": 4.7887783
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "ReadableSign02_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent ReadableSign02_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Meshes/Environment/ReadableObjects/ReadableSign02.5"
+      },
+      "VariableGuid": "909BD492-4C3044CC-1AAFAC88-D8F01E8E",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent ReadableSign02_C:StaticMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Meshes/Environment/ReadableObjects/ReadableSign02.10"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node ReadableSign02_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Meshes/Environment/ReadableObjects/ReadableSign02.8"
+        }
+      ],
+      "VariableGuid": "CFC6FD2A-4955038C-698F5FA1-5C04E0B5",
+      "InternalVariableName": "StaticMesh"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class ReadableTextComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ReadableTextComponent ReadableSign02_C:ReadableText_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Meshes/Environment/ReadableObjects/ReadableSign02.4"
+      },
+      "VariableGuid": "3BF18340-4AD7A9FC-DA477F8A-EC2A37B0",
+      "InternalVariableName": "ReadableText"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "ReadableSign02_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node ReadableSign02_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Meshes/Environment/ReadableObjects/ReadableSign02.7"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node ReadableSign02_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Meshes/Environment/ReadableObjects/ReadableSign02.7"
+        },
+        {
+          "ObjectName": "SCS_Node ReadableSign02_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Meshes/Environment/ReadableObjects/ReadableSign02.8"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node ReadableSign02_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Meshes/Environment/ReadableObjects/ReadableSign02.6"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh_GEN_VARIABLE",
+    "Outer": "ReadableSign02_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh Signposts_01",
+        "ObjectPath": "War/Content/Meshes/Environment/Props/Signposts_01.2"
+      }
+    }
+  }
+]

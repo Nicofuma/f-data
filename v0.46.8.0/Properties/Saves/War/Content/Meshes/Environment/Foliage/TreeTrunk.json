@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_450",
+    "Outer": "TreeTrunk",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "TreeTrunk",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1201C"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TreeTrunk",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Trunk",
+            "ObjectPath": "War/Content/Materials/Environment/Trunk.0"
+          },
+          "MaterialSlotName": "Trunk",
+          "ImportedMaterialSlotName": "Trunk",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1113.886,
+            "LocalUVDensities": 1102.6477,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1102.6477,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -26.285446,
+          "Y": -21.294495,
+          "Z": 501.93405
+        },
+        "BoxExtent": {
+          "X": 133.24924,
+          "Y": 102.40442,
+          "Z": 522.2264
+        },
+        "SphereRadius": 541.2137
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TreeTrunk:BodySetup_450",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/TreeTrunk.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TreeTrunk:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/TreeTrunk.1"
+    },
+    "LightingGuid": "08E273BA-4C976581-A3704AB9-AB905035",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,89 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FarmTools_LargeHoe",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "FarmTools_LargeHoe",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x30BF"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FarmTools_LargeHoe",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FarmTools",
+            "ObjectPath": "War/Content/Materials/Environment/Props/FarmTools.0"
+          },
+          "MaterialSlotName": "Material #25",
+          "ImportedMaterialSlotName": "Material #25",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 146.9903,
+            "LocalUVDensities": 87.48735,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 87.48735,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 7.6293945E-06,
+          "Y": 12.870422,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 15.764046,
+          "Y": 18.470226,
+          "Z": 96.65086
+        },
+        "SphereRadius": 97.67003
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FarmTools_LargeHoe:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FarmTools_LargeHoe.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FarmTools_LargeHoe:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FarmTools_LargeHoe.1"
+    },
+    "LightingGuid": "235148D8-402F4530-69530799-387143CC",
+    "RenderData": null
+  }
+]

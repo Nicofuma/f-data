@@ -1,0 +1,129 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Stove01",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": -19.198746,
+              "Z": 73.564804
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 117.62265,
+            "Y": 163.48582,
+            "Z": 146.24377,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 82.389084,
+              "Z": 27.526413
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 117.62265,
+            "Y": 40.774136,
+            "Z": 53.606358,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "BuildScale3D": {
+        "X": 1.8,
+        "Y": 1.8,
+        "Z": 1.8
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "Stove01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 509,
+        "SizeOnDisk": 509,
+        "OffsetInFile": "0x1C047"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Stove01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Stove01",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Stove01.0"
+          },
+          "MaterialSlotName": "MI_IronStove_01a",
+          "ImportedMaterialSlotName": "MI_IronStove_01a",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 397.09506,
+            "LocalUVDensities": 572.71545,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 572.71545,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -3.1812897,
+          "Z": 83.13902
+        },
+        "BoxExtent": {
+          "X": 58.811325,
+          "Y": 106.804855,
+          "Z": 83.13902
+        },
+        "SphereRadius": 125.18733
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Stove01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Stove01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Stove01:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Stove01.1"
+    },
+    "LightingGuid": "FC4C41B3-45AEA563-568259BE-EDD696F7",
+    "RenderData": null
+  }
+]

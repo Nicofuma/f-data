@@ -1,0 +1,345 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "MultiplexedStaticMesh",
+    "Outer": "BPSmallShippingContainer_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class MultiplexedStaticMeshComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPSmallShippingContainer_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPSmallShippingContainer_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSmallShippingContainer.11"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class ShippingContainer",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPSmallShippingContainer_C:MultiplexedStaticMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSmallShippingContainer.0"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPSmallShippingContainer_C",
+    "Name": "Default__BPSmallShippingContainer_C",
+    "Properties": {
+      "Colors": [
+        {
+          "R": 0.135417,
+          "G": 0.066298,
+          "B": 0.066298,
+          "A": 1.0,
+          "Hex": "231111"
+        },
+        {
+          "R": 0.041667,
+          "G": 0.041667,
+          "B": 0.041667,
+          "A": 1.0,
+          "Hex": "0B0B0B"
+        },
+        {
+          "R": 0.195095,
+          "G": 0.29004,
+          "B": 0.302083,
+          "A": 1.0,
+          "Hex": "324A4D"
+        },
+        {
+          "R": 0.107733,
+          "G": 0.145833,
+          "B": 0.10102,
+          "A": 1.0,
+          "Hex": "1B251A"
+        },
+        {
+          "R": 0.086724,
+          "G": 0.098722,
+          "B": 0.119792,
+          "A": 1.0,
+          "Hex": "16191F"
+        },
+        {
+          "R": 0.296875,
+          "G": 0.215043,
+          "B": 0.128337,
+          "A": 1.0,
+          "Hex": "4C3721"
+        },
+        {
+          "R": 0.28125,
+          "G": 0.147742,
+          "B": 0.117188,
+          "A": 1.0,
+          "Hex": "48261E"
+        }
+      ],
+      "MeshComponent": {
+        "ObjectName": "StaticMeshComponent Default__BPSmallShippingContainer_C:Mesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSmallShippingContainer.12"
+      },
+      "KillVolume": {
+        "ObjectName": "BoxComponent Default__BPSmallShippingContainer_C:KillVolume",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSmallShippingContainer.4"
+      },
+      "GenericStockpileComponent": {
+        "ObjectName": "GenericCrateStockpileComponent Default__BPSmallShippingContainer_C:GenericStockpileComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSmallShippingContainer.6"
+      },
+      "ProceduralUseVolumeFactor": 0.0,
+      "BuildGhostClass": null,
+      "BuildSiteClass": {
+        "ObjectName": "Class StructureBuildSite",
+        "ObjectPath": "/Script/War"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "D55919904C573E22D0A5609A1479144D",
+        "SourceString": "A container for shipping large quantities of Crates using Crane loaded vehicles. This type of container can be unloaded from any location."
+      },
+      "ShippableInfo": {
+        "Type": "EShippableType::Normal"
+      },
+      "Icon": {
+        "ObjectName": "Texture2D ShippingContainerShortIcon",
+        "ObjectPath": "War/Content/Textures/UI/StructureIcons/ShippingContainerShortIcon.0"
+      },
+      "BuildLocationType": "EBuildLocationType::ConstructionYard",
+      "CodeName": "SmallShippingContainer",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "4EBAB49149A468FFF86F8DB6F34921DE",
+        "SourceString": "Small Shipping Container"
+      },
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPSmallShippingContainer_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSmallShippingContainer.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPSmallShippingContainer_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSmallShippingContainer.5"
+      },
+      "DestroyedFX": {
+        "ObjectName": "ParticleSystem GrenadeBlast",
+        "ObjectPath": "War/Content/FX/GrenadeBlast.151"
+      },
+      "DestroyedSoundCue": {
+        "ObjectName": "SoundCue StructureExplosionSmall_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/StructureExplosionSmall_Cue.0"
+      },
+      "MaxHealth": 1000,
+      "Health": 1000,
+      "ScreenToUse": "ESimScreen::ShippingContainer",
+      "bIsStockpilable": true,
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPSmallShippingContainer_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSmallShippingContainer.13"
+      },
+      "NetCullDistanceSquared": 25000000.0,
+      "MinNetUpdateFrequency": 1.0,
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPSmallShippingContainer_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSmallShippingContainer.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPSmallShippingContainer_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "KillVolume",
+    "Outer": "Default__BPSmallShippingContainer_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 100.0,
+        "Y": 200.0,
+        "Z": 32.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPSmallShippingContainer_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSmallShippingContainer.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 310.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPSmallShippingContainer_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 380.0,
+        "Y": 520.0,
+        "Z": 300.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPSmallShippingContainer_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSmallShippingContainer.3"
+      }
+    }
+  },
+  {
+    "Type": "GenericCrateStockpileComponent",
+    "Name": "GenericStockpileComponent",
+    "Outer": "Default__BPSmallShippingContainer_C",
+    "Properties": {
+      "Configs": [
+        {
+          "Type": "EStockpileEntryType::ItemCrates",
+          "QuantityLimit": 32000,
+          "TotalQuantityLimit": 40,
+          "ValidEntriesOverride": [],
+          "PreStockedEntries": []
+        },
+        {
+          "Type": "EStockpileEntryType::ReservableItemCrates",
+          "QuantityLimit": 32000,
+          "TotalQuantityLimit": 40,
+          "ValidEntriesOverride": [],
+          "PreStockedEntries": []
+        }
+      ],
+      "RetrieveDurationModifier": 1.5
+    }
+  },
+  {
+    "Type": "MultiplexedStaticMeshComponent",
+    "Name": "MultiplexedStaticMesh_GEN_VARIABLE",
+    "Outer": "BPSmallShippingContainer_C",
+    "Properties": {
+      "MeshStops": [
+        {
+          "Threshold": 0,
+          "StaticMesh": {
+            "ObjectName": "StaticMesh ShippingContainerShortDamagedCritical",
+            "ObjectPath": "War/Content/Meshes/Shippables/ShippingContainerShortDamagedCritical.2"
+          }
+        },
+        {
+          "Threshold": 33,
+          "StaticMesh": {
+            "ObjectName": "StaticMesh ShippingContainerShortDamaged",
+            "ObjectPath": "War/Content/Meshes/Shippables/ShippingContainerShortDamaged.2"
+          }
+        },
+        {
+          "Threshold": 66,
+          "StaticMesh": {
+            "ObjectName": "StaticMesh ShippingContainerShort",
+            "ObjectPath": "War/Content/Meshes/Shippables/ShippingContainerShort.2"
+          }
+        }
+      ],
+      "InputValue": 100,
+      "SelectedMeshIndex": 2
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPSmallShippingContainer_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPSmallShippingContainer_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSmallShippingContainer.8"
+      },
+      "VariableGuid": "37B03939-494ABD7B-8233C4A5-6355017F",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class MultiplexedStaticMeshComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "MultiplexedStaticMeshComponent BPSmallShippingContainer_C:MultiplexedStaticMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSmallShippingContainer.7"
+      },
+      "VariableGuid": "D667579F-46309463-6D3D0483-D468D96E",
+      "InternalVariableName": "MultiplexedStaticMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPSmallShippingContainer_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPSmallShippingContainer_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPSmallShippingContainer.10"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPSmallShippingContainer_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPSmallShippingContainer.10"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPSmallShippingContainer_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSmallShippingContainer.9"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Mesh",
+    "Outer": "Default__BPSmallShippingContainer_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh ShippingContainerShort",
+        "ObjectPath": "War/Content/Meshes/Shippables/ShippingContainerShort.2"
+      },
+      "CanCharacterStepUpOn": "ECB_No",
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPSmallShippingContainer_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSmallShippingContainer.3"
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPSmallShippingContainer_C"
+  }
+]

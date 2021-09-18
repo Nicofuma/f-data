@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "UnexplodedOrdnancePickup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "UnexplodedOrdnancePickup",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x5780"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "UnexplodedOrdnancePickup",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant OldBomb01",
+            "ObjectPath": "War/Content/Materials/Environment/Props/OldBomb01.0"
+          },
+          "MaterialSlotName": "OldBomb01",
+          "ImportedMaterialSlotName": "OldBomb01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 157.21501,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 157.21501,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -2.4795532E-05,
+          "Y": -0.23880768,
+          "Z": 12.636619
+        },
+        "BoxExtent": {
+          "X": 13.520692,
+          "Y": 64.47603,
+          "Z": 13.865997
+        },
+        "SphereRadius": 65.52336
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup UnexplodedOrdnancePickup:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Pickups/UnexplodedOrdnancePickup.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision UnexplodedOrdnancePickup:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Pickups/UnexplodedOrdnancePickup.1"
+    },
+    "LightingGuid": "E0F94820-4FF021BB-7902128A-C37677B5",
+    "RenderData": null
+  }
+]

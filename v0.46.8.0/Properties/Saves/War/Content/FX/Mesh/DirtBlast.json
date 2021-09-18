@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "DirtBlast",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "DirtBlast",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xC81"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "DirtBlast",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "Engine/Content/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 171.30429,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 171.30429,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 107.27429
+        },
+        "BoxExtent": {
+          "X": 73.45883,
+          "Y": 73.45883,
+          "Z": 107.27428
+        },
+        "SphereRadius": 130.42163
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup DirtBlast:BodySetup_0",
+      "ObjectPath": "War/Content/FX/Mesh/DirtBlast.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision DirtBlast:NavCollision_2",
+      "ObjectPath": "War/Content/FX/Mesh/DirtBlast.1"
+    },
+    "LightingGuid": "65EB598A-44A0B588-51EFFAB1-609E8A02",
+    "RenderData": null
+  }
+]

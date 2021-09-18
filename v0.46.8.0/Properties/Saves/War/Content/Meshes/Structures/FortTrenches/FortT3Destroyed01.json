@@ -1,0 +1,169 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_2",
+    "Outer": "FortT3Destroyed01",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -255.0,
+                "Y": 255.0,
+                "Z": -68.80069
+              },
+              {
+                "X": 255.0,
+                "Y": 255.0,
+                "Z": -68.80069
+              },
+              {
+                "X": -255.0,
+                "Y": -255.0,
+                "Z": -68.80069
+              },
+              {
+                "X": 255.0,
+                "Y": -255.0,
+                "Z": -68.80069
+              },
+              {
+                "X": -255.0,
+                "Y": 255.0,
+                "Z": 165.0
+              },
+              {
+                "X": 255.0,
+                "Y": 255.0,
+                "Z": 165.0
+              },
+              {
+                "X": -255.0,
+                "Y": -255.0,
+                "Z": 165.0
+              },
+              {
+                "X": 255.0,
+                "Y": -255.0,
+                "Z": 165.0
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -255.0,
+                "Y": -255.0,
+                "Z": -68.80069
+              },
+              "Max": {
+                "X": 255.0,
+                "Y": 255.0,
+                "Z": 165.0
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "FortT3Destroyed01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 457,
+        "SizeOnDisk": 457,
+        "OffsetInFile": "0xAB78"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FortT3Destroyed01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortTrenchT3ConcreteDirt01",
+            "ObjectPath": "War/Content/Materials/Structures/FortTrenchT3ConcreteDirt01.0"
+          },
+          "MaterialSlotName": "FortTrenchT3ConcreteDirt",
+          "ImportedMaterialSlotName": "DirtT2",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1407.5074,
+            "LocalUVDensities": 1.7350714,
+            "LocalUVDensities": 1.5272027,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1.7350714,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -5.3786316,
+          "Y": -13.499512,
+          "Z": 66.43143
+        },
+        "BoxExtent": {
+          "X": 308.5379,
+          "Y": 313.07196,
+          "Z": 124.43868
+        },
+        "SphereRadius": 378.3232
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FortT3Destroyed01:BodySetup_2",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortT3Destroyed01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FortT3Destroyed01:NavCollision_4",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortT3Destroyed01.1"
+    },
+    "LightingGuid": "E189B5F6-4CC7024B-5A831CA9-97B509F9",
+    "RenderData": null
+  }
+]

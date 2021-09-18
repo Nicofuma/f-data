@@ -1,0 +1,100 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Outer": "ConstructionVehicleDestroyed",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "ConstructionVehicleDestroyed",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x72058"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ConstructionVehicleDestroyed",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ConstructionVehicleDestroyed",
+            "ObjectPath": "War/Content/Materials/Vehicles/ConstructionVehicleDestroyed.0"
+          },
+          "MaterialSlotName": "ConstructionVehicle",
+          "ImportedMaterialSlotName": "ConstructionVehicle",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1350.5648,
+            "LocalUVDensities": 1.3158863,
+            "LocalUVDensities": 4246.507,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ConstructionVehicleTreadDestroyed",
+            "ObjectPath": "War/Content/Materials/Vehicles/ConstructionVehicleTreadDestroyed.0"
+          },
+          "MaterialSlotName": "ConstructionVehicleTread",
+          "ImportedMaterialSlotName": "ConstructionVehicleTread",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 112.38183,
+            "LocalUVDensities": 1.002084,
+            "LocalUVDensities": 4237.373,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 4245.886,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 2,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 43.435394,
+          "Y": -105.87546,
+          "Z": 251.82759
+        },
+        "BoxExtent": {
+          "X": 408.4357,
+          "Y": 244.18967,
+          "Z": 262.5406
+        },
+        "SphereRadius": 481.2788
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ConstructionVehicleDestroyed:BodySetup_1",
+      "ObjectPath": "War/Content/Meshes/Vehicles/ConstructionVehicleDestroyed.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ConstructionVehicleDestroyed:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Vehicles/ConstructionVehicleDestroyed.1"
+    },
+    "LightingGuid": "48C472D3-4F208CBA-E52B8DA2-B1A1EF65",
+    "RenderData": null
+  }
+]

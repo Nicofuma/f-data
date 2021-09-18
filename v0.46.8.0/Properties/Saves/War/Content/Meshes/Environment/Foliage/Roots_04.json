@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_2",
+    "Outer": "Roots_04",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_3",
+    "Outer": "Roots_04",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x9693"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Roots_04",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Roots",
+            "ObjectPath": "War/Content/Materials/Environment/Roots.0"
+          },
+          "MaterialSlotName": "Root",
+          "ImportedMaterialSlotName": "Root",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 415.65475,
+            "LocalUVDensities": 390.75278,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 390.75278,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.016662598,
+          "Y": 0.0,
+          "Z": 4.378578
+        },
+        "BoxExtent": {
+          "X": 201.98282,
+          "Y": 52.969315,
+          "Z": 51.744354
+        },
+        "SphereRadius": 207.90178
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Roots_04:BodySetup_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/Roots_04.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Roots_04:NavCollision_3",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/Roots_04.1"
+    },
+    "LightingGuid": "3F9640D4-4F7CE2BB-096988AE-4AC5263A",
+    "RenderData": null
+  }
+]

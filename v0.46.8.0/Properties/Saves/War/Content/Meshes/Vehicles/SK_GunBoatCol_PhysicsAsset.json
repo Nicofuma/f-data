@@ -1,0 +1,452 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_GunBoatCol_PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1,
+        2
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup SK_GunBoatCol_PhysicsAsset:SkeletalBodySetup_9",
+          "ObjectPath": "War/Content/Meshes/Vehicles/SK_GunBoatCol_PhysicsAsset.5"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup SK_GunBoatCol_PhysicsAsset:SkeletalBodySetup_12",
+          "ObjectPath": "War/Content/Meshes/Vehicles/SK_GunBoatCol_PhysicsAsset.4"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup SK_GunBoatCol_PhysicsAsset:SkeletalBodySetup_1",
+          "ObjectPath": "War/Content/Meshes/Vehicles/SK_GunBoatCol_PhysicsAsset.3"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate SK_GunBoatCol_PhysicsAsset:PhysicsConstraintTemplate_7",
+          "ObjectPath": "War/Content/Meshes/Vehicles/SK_GunBoatCol_PhysicsAsset.2"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate SK_GunBoatCol_PhysicsAsset:PhysicsConstraintTemplate_1",
+          "ObjectPath": "War/Content/Meshes/Vehicles/SK_GunBoatCol_PhysicsAsset.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_1",
+    "Outer": "SK_GunBoatCol_PhysicsAsset",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "turretBack_Hpivot",
+        "ConstraintBone1": "turretBack_Hpivot",
+        "ConstraintBone2": "root",
+        "Pos2": {
+          "X": 0.0,
+          "Y": -507.44833,
+          "Z": 108.786255
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_7",
+    "Outer": "SK_GunBoatCol_PhysicsAsset",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "turretFront_Hpivot",
+        "ConstraintBone1": "turretFront_Hpivot",
+        "ConstraintBone2": "root",
+        "Pos2": {
+          "X": 0.0,
+          "Y": 358.89914,
+          "Z": 128.83344
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "SK_GunBoatCol_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -0.335602,
+              "Y": -17.195099,
+              "Z": 64.356316
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 194.93356,
+            "Y": 230.37488,
+            "Z": 120.986786,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "turretBack_Hpivot",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_12",
+    "Outer": "SK_GunBoatCol_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": -9.021421,
+              "Z": 61.257607
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 168.24557,
+            "Y": 105.00156,
+            "Z": 112.29954,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": 1.9073486E-06,
+              "Y": 65.97858,
+              "Z": 61.257607
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 89.245575,
+            "Y": 44.501556,
+            "Z": 112.29954,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": 3.8146973E-06,
+              "Y": -74.02141,
+              "Z": 61.257607
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 124.745575,
+            "Y": 25.501556,
+            "Z": 112.29954,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "turretFront_Hpivot",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_9",
+    "Outer": "SK_GunBoatCol_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 9.999993,
+              "Z": -116.34607
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 378.0,
+            "Y": 886.23627,
+            "Z": 285.47275,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": 0.0012817383,
+              "Y": 114.64334,
+              "Z": 137.84418
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 262.0,
+            "Y": 266.5,
+            "Z": 216.5,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": -154.72841,
+              "Z": 25.48923
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": -22.808195
+            },
+            "X": 262.5,
+            "Y": 421.5,
+            "Z": 300.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": 0.0012836456,
+              "Y": 94.64334,
+              "Z": 249.4898
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 184.5,
+            "Y": 267.0,
+            "Z": 79.5,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": 0.00907135,
+              "Y": 358.0789,
+              "Z": 77.84418
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 262.0,
+            "Y": 221.0,
+            "Z": 101.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": -129.66476,
+              "Y": 580.70386,
+              "Z": -97.295166
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -11.250256,
+              "Roll": 0.0
+            },
+            "X": 70.0,
+            "Y": 267.73627,
+            "Z": 247.97275,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": 130.38214,
+              "Y": 576.0921,
+              "Z": -97.295166
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 11.250272,
+              "Roll": 0.0
+            },
+            "X": 70.0,
+            "Y": 267.73627,
+            "Z": 247.97275,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": 74.63792,
+              "Y": 762.1307,
+              "Z": -97.295166
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 25.313034,
+              "Roll": 0.0
+            },
+            "X": 70.0,
+            "Y": 140.73627,
+            "Z": 247.97275,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": -76.61369,
+              "Y": 766.52795,
+              "Z": -97.295166
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -25.313011,
+              "Roll": 0.0
+            },
+            "X": 70.0,
+            "Y": 140.73627,
+            "Z": 247.97275,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": 4.7683716E-07,
+              "Y": 775.0,
+              "Z": -109.06738
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 146.5,
+            "Y": 145.23627,
+            "Z": 273.97275,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": 1.9073486E-06,
+              "Y": 575.0,
+              "Z": -109.06738
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 241.0,
+            "Y": 260.73627,
+            "Z": 285.47275,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": 105.87159,
+              "Y": -544.1989,
+              "Z": -22.950102
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -22.49984,
+              "Roll": 0.0
+            },
+            "X": 70.0,
+            "Y": 267.73627,
+            "Z": 247.97275,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": -105.78922,
+              "Y": -545.099,
+              "Z": -22.950104
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 22.499758,
+              "Roll": 0.0
+            },
+            "X": 70.0,
+            "Y": 267.73627,
+            "Z": 247.97275,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": 2.0,
+              "Y": -605.0,
+              "Z": -56.250244
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 173.0,
+            "Y": 157.73627,
+            "Z": 314.97275,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": 2.0,
+              "Y": -480.0,
+              "Z": -56.250244
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 232.5,
+            "Y": 91.23627,
+            "Z": 314.97275,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "root",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  }
+]

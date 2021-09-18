@@ -1,0 +1,100 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "BulwarkDressingMetalBracket",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 150.17505,
+            "Y": 492.95532,
+            "Z": 189.85376,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_3",
+    "Outer": "BulwarkDressingMetalBracket",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x4E8A"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "BulwarkDressingMetalBracket",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BulwarkMetalWorks",
+            "ObjectPath": "War/Content/Materials/Environment/BulwarkMetalWorks.0"
+          },
+          "MaterialSlotName": "SteelWall",
+          "ImportedMaterialSlotName": "SteelWall",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1299.0745,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1299.0745,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 75.087524,
+          "Y": 246.47766,
+          "Z": 94.92688
+        },
+        "SphereRadius": 274.59143
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup BulwarkDressingMetalBracket:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/BulwarkDressingMetalBracket.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision BulwarkDressingMetalBracket:NavCollision_3",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/BulwarkDressingMetalBracket.1"
+    },
+    "LightingGuid": "7598F682-41F6C368-DF706BBE-8C6F6CC0",
+    "RenderData": null
+  }
+]

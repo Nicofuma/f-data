@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "TrenchSandbagSpline04",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "TrenchSandbagSpline04",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xBA5D"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TrenchSandbagSpline04",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortT2SandbagStatic01",
+            "ObjectPath": "War/Content/Materials/Structures/FortT2SandbagStatic01.0"
+          },
+          "MaterialSlotName": "FortT2SandbagStatic01",
+          "ImportedMaterialSlotName": "FortT2SandbagStatic01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 214.841,
+            "LocalUVDensities": 1.283914,
+            "LocalUVDensities": 1.283914,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 214.841,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.30308533,
+          "Y": 0.62631035,
+          "Z": 3.0475693
+        },
+        "BoxExtent": {
+          "X": 60.17654,
+          "Y": 28.74007,
+          "Z": 77.94246
+        },
+        "SphereRadius": 79.07914
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TrenchSandbagSpline04:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Splines/TrenchSandbagSpline04.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TrenchSandbagSpline04:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Splines/TrenchSandbagSpline04.1"
+    },
+    "LightingGuid": "022834D0-4EB1AB3E-81213BB4-2AA120C0",
+    "RenderData": null
+  }
+]

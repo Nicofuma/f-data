@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Bush02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_3",
+    "Outer": "Bush02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x16DB"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Bush02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BirchBushSmall",
+            "ObjectPath": "War/Content/Materials/Environment/Props/BirchBushSmall.0"
+          },
+          "MaterialSlotName": "Material #2775",
+          "ImportedMaterialSlotName": "Material #2775",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 210.10063,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 210.10063,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -1.1484222,
+          "Y": -10.223656,
+          "Z": 90.1944
+        },
+        "BoxExtent": {
+          "X": 90.771225,
+          "Y": 99.52107,
+          "Z": 99.598206
+        },
+        "SphereRadius": 126.10864
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Bush02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/Bush02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Bush02:NavCollision_3",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/Bush02.1"
+    },
+    "LightingGuid": "B158D058-4B40963E-7E5541BC-CB063FD3",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,115 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "WoodFence02",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -0.011520386,
+              "Y": 9.372765,
+              "Z": 73.74414
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 422.06567,
+            "Y": 15.626701,
+            "Z": 151.23376,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "ShootThroughStatic",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "BuildScale3D": {
+        "X": 1.3,
+        "Y": 1.3,
+        "Z": 1.3
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "WoodFence02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x10998"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "WoodFence02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FarmFence",
+            "ObjectPath": "War/Content/Materials/Environment/Props/FarmFence.0"
+          },
+          "MaterialSlotName": "WoodFence_Inst",
+          "ImportedMaterialSlotName": "WoodFence_Inst",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 296.8394,
+            "LocalUVDensities": 313.94757,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 313.94757,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.011520386,
+          "Y": 4.1368637,
+          "Z": 73.74414
+        },
+        "BoxExtent": {
+          "X": 215.44186,
+          "Y": 18.829178,
+          "Z": 75.61688
+        },
+        "SphereRadius": 220.23589
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup WoodFence02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/WoodFence02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision WoodFence02:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/WoodFence02.1"
+    },
+    "LightingGuid": "BEB93C81-41B90F01-E7C0849A-C033EF1B",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,234 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Outer": "CoverWallKiosk2",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": 192.91972,
+                "Y": -146.69112,
+                "Z": 345.47882
+              },
+              {
+                "X": -189.18607,
+                "Y": -146.69113,
+                "Z": 345.47882
+              },
+              {
+                "X": 192.91972,
+                "Y": -146.69104,
+                "Z": -69.40908
+              },
+              {
+                "X": -189.18607,
+                "Y": -146.69106,
+                "Z": -69.40911
+              },
+              {
+                "X": 116.852974,
+                "Y": -43.23769,
+                "Z": 473.07892
+              },
+              {
+                "X": -113.11933,
+                "Y": -43.23769,
+                "Z": 473.07895
+              },
+              {
+                "X": -273.87814,
+                "Y": -4.4373483E-05,
+                "Z": 345.47885
+              },
+              {
+                "X": -273.87814,
+                "Y": 2.3220347E-05,
+                "Z": -69.40909
+              },
+              {
+                "X": 123.0186,
+                "Y": -8.551475E-05,
+                "Z": 473.07892
+              },
+              {
+                "X": -119.284935,
+                "Y": -8.115005E-05,
+                "Z": 473.07895
+              },
+              {
+                "X": 277.61182,
+                "Y": 8.412301E-06,
+                "Z": -69.40906
+              },
+              {
+                "X": 192.91971,
+                "Y": 146.69106,
+                "Z": -69.409035
+              },
+              {
+                "X": -189.18607,
+                "Y": 146.69106,
+                "Z": -69.409065
+              },
+              {
+                "X": -113.11933,
+                "Y": 43.23752,
+                "Z": 473.07895
+              },
+              {
+                "X": 116.852974,
+                "Y": 43.23752,
+                "Z": 473.07892
+              },
+              {
+                "X": 277.61182,
+                "Y": -5.918152E-05,
+                "Z": 345.47885
+              },
+              {
+                "X": -189.18607,
+                "Y": 146.69098,
+                "Z": 345.47888
+              },
+              {
+                "X": 192.91971,
+                "Y": 146.69098,
+                "Z": 345.47888
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -273.87814,
+                "Y": -146.69113,
+                "Z": -69.40911
+              },
+              "Max": {
+                "X": 277.61182,
+                "Y": 146.69106,
+                "Z": 473.07895
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_3",
+    "Outer": "CoverWallKiosk2",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 1225,
+        "SizeOnDisk": 1225,
+        "OffsetInFile": "0x89FB"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "CoverWallKiosk2",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant KioskTrimSheet",
+            "ObjectPath": "War/Content/Materials/Environment/Props/KioskTrimSheet.0"
+          },
+          "MaterialSlotName": "Metal",
+          "ImportedMaterialSlotName": "Metal",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 559.313,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BulwarkCapBorder",
+            "ObjectPath": "War/Content/Materials/Environment/BulwarkCapBorder.0"
+          },
+          "MaterialSlotName": "Stone",
+          "ImportedMaterialSlotName": "Stone",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 559.313,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -3.0517578E-05,
+          "Z": 198.94669
+        },
+        "BoxExtent": {
+          "X": 274.01318,
+          "Y": 188.88367,
+          "Z": 268.2542
+        },
+        "SphereRadius": 370.14606
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup CoverWallKiosk2:BodySetup_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Props/CoverWallKiosk2.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision CoverWallKiosk2:NavCollision_3",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Props/CoverWallKiosk2.1"
+    },
+    "LightingGuid": "682C1AF8-4353D5D1-A79146B2-0E87B90C",
+    "RenderData": null
+  }
+]

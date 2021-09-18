@@ -1,0 +1,587 @@
+[
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "BPGunboatW_C",
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPGunboatW_C",
+    "Super": "BPGunboatBaseW_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPGunboatW_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.35"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler BPGunboatW_C:InheritableComponentHandler",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.15"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty BPGunboatW_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.0"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function BPGunboatW_C:ExecuteUbergraph_BPGunboatW",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass BPGunboatBaseW_C",
+      "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatBaseW.1"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty BPGunboatW_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.0"
+      },
+      {
+        "ObjectName": "Function BPGunboatW_C:BPOnVehicleOn",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.8"
+      },
+      {
+        "ObjectName": "Function BPGunboatW_C:ExecuteUbergraph_BPGunboatW",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.7"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 524288,
+    "ClassWithin": null,
+    "ClassConfigName": "/Game/Animation/WaterVehicles/Gunboat/ABP_GunboatWar_589823",
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPGunboatW_C",
+    "Name": "Default__BPGunboatW_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "MachineGunMuzzleLocation": {
+        "ObjectName": "SceneComponent Default__BPGunboatW_C:MachineGunMuzzle",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.30"
+      },
+      "ArtilleryMuzzleLocation": {
+        "ObjectName": "SceneComponent Default__BPGunboatW_C:ArtilleryMuzzle",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.26"
+      },
+      "WorkVolume": {
+        "ObjectName": "BoxComponent Default__BPGunboatW_C:WorkVolume",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.13"
+      },
+      "FrontLeftWaterEmitter": {
+        "ObjectName": "ParticleSystemComponent Default__BPGunboatW_C:FrontLeftWaterEmitter",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.18"
+      },
+      "FrontRightWaterEmitter": {
+        "ObjectName": "ParticleSystemComponent Default__BPGunboatW_C:FrontRightWaterEmitter",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.19"
+      },
+      "BackLeftWaterEmitter": {
+        "ObjectName": "ParticleSystemComponent Default__BPGunboatW_C:BackLeftWaterEmitter",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.16"
+      },
+      "BackRightWaterEmitter": {
+        "ObjectName": "ParticleSystemComponent Default__BPGunboatW_C:BackRightWaterEmitter",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.17"
+      },
+      "FrontWakeWaterEmitter": {
+        "ObjectName": "ParticleSystemComponent Default__BPGunboatW_C:FrontWakeWaterEmitter",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.20"
+      },
+      "WakeWaterEmitter": {
+        "ObjectName": "ParticleSystemComponent Default__BPGunboatW_C:WakeWaterEmitter",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.23"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "A2ECDC8E41207845392AD4929FB3EEBD",
+        "SourceString": "74b-1 Ronan Gunship"
+      },
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "A79A92D84517A8941512A9863793E850",
+        "SourceString": "Gunboat"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "230E5F0740D53B7409D3C2ABBCA91D29",
+        "SourceString": "A naval vessel designed to bombard coastal targets. The Ronan is fitted with a 120mm light artillery cannon and a 12.7mm Machinegun."
+      },
+      "CodeName": "GunboatW",
+      "DestroyedMesh": {
+        "ObjectName": "StaticMeshComponent Default__BPGunboatW_C:DestroyedMesh",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.38"
+      },
+      "MinorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPGunboatW_C:MinorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.22"
+      },
+      "MajorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPGunboatW_C:MajorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.21"
+      },
+      "DriveLoop": {
+        "ObjectName": "AudioComponent Default__BPGunboatW_C:DriveLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.5"
+      },
+      "BackUpSFXLoop": {
+        "ObjectName": "AudioComponent Default__BPGunboatW_C:BackUpSFXLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.4"
+      },
+      "CameraRigComponent": {
+        "ObjectName": "PlayerCameraRigComponent Default__BPGunboatW_C:CameraRigVehicle",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.24"
+      },
+      "FrontAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__BPGunboatW_C:FrontAxelCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.27"
+      },
+      "RearAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__BPGunboatW_C:RearAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.31"
+      },
+      "FrontLeftRollCastLocation": {
+        "ObjectName": "SceneComponent Default__BPGunboatW_C:FrontRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.28"
+      },
+      "FrontRightRollCastLocation": {
+        "ObjectName": "SceneComponent Default__BPGunboatW_C:RearRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.32"
+      },
+      "LeftSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__BPGunboatW_C:LeftSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.29"
+      },
+      "RightSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__BPGunboatW_C:RightSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.33"
+      },
+      "VehicleCollision": {
+        "ObjectName": "BoxComponent Default__BPGunboatW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.12"
+      },
+      "PassengerArea": {
+        "ObjectName": "BoxComponent Default__BPGunboatW_C:PassengerBaseBox",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.11"
+      },
+      "AFKTimeoutComponent": {
+        "ObjectName": "AFKTimeoutComponent Default__BPGunboatW_C:AFKTimeoutComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.3"
+      },
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPGunboatW_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.39"
+      },
+      "Mesh": {
+        "ObjectName": "SkeletalMeshComponent Default__BPGunboatW_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.37"
+      },
+      "CharacterMovement": {
+        "ObjectName": "SimpleVehicleMovementComponent Default__BPGunboatW_C:CharMoveComp",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.36"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent Default__BPGunboatW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.14"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPGunboatW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.12"
+      }
+    }
+  },
+  {
+    "Type": "AFKTimeoutComponent",
+    "Name": "AFKTimeoutComponent",
+    "Outer": "Default__BPGunboatW_C"
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "BackUpSFXLoop",
+    "Outer": "Default__BPGunboatW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPGunboatW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.14"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "DriveLoop",
+    "Outer": "Default__BPGunboatW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPGunboatW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.14"
+      }
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_BPGunboatW",
+    "PropertyFlags": 148
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BPGunboatW",
+    "Outer": "BPGunboatW_C",
+    "Children": [
+      {
+        "ObjectName": "IntProperty BPGunboatW_C:ExecuteUbergraph_BPGunboatW.EntryPoint",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.6"
+      },
+      {
+        "ObjectName": "BoolProperty BPGunboatW_C:ExecuteUbergraph_BPGunboatW.K2Node_Event_IsOn",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.10"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "Function",
+    "Name": "BPOnVehicleOn",
+    "Outer": "BPGunboatW_C",
+    "Super": "BPOnVehicleOn",
+    "SuperStruct": {
+      "ObjectName": "Function BPGunboatBaseW_C:BPOnVehicleOn",
+      "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatBaseW.9"
+    },
+    "Children": [
+      {
+        "ObjectName": "BoolProperty BPGunboatW_C:BPOnVehicleOn.IsOn",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.9"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "IsOn",
+    "Outer": "BPOnVehicleOn",
+    "PropertyFlags": 148,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_Event_IsOn",
+    "Outer": "ExecuteUbergraph_BPGunboatW",
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "PassengerBaseBox",
+    "Outer": "Default__BPGunboatW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPGunboatW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.12"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "VehicleCollision",
+    "Outer": "Default__BPGunboatW_C",
+    "Properties": {
+      "OnComponentBeginOverlap": null
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "WorkVolume",
+    "Outer": "Default__BPGunboatW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPGunboatW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.12"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__BPGunboatW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPGunboatW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.12"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BPGunboatW_C"
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "BackLeftWaterEmitter",
+    "Outer": "Default__BPGunboatW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPGunboatW_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.37"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "BackRightWaterEmitter",
+    "Outer": "Default__BPGunboatW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPGunboatW_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.37"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "FrontLeftWaterEmitter",
+    "Outer": "Default__BPGunboatW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPGunboatW_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.37"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "FrontRightWaterEmitter",
+    "Outer": "Default__BPGunboatW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPGunboatW_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.37"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "FrontWakeWaterEmitter",
+    "Outer": "Default__BPGunboatW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPGunboatW_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.37"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MajorDamagePS",
+    "Outer": "Default__BPGunboatW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPGunboatW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.14"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MinorDamagePS",
+    "Outer": "Default__BPGunboatW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPGunboatW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.14"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "WakeWaterEmitter",
+    "Outer": "Default__BPGunboatW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPGunboatW_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.37"
+      }
+    }
+  },
+  {
+    "Type": "PlayerCameraRigComponent",
+    "Name": "CameraRigVehicle",
+    "Outer": "Default__BPGunboatW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPGunboatW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.14"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPGunboatW_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "ArtilleryMuzzle",
+    "Outer": "Default__BPGunboatW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPGunboatW_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.37"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontAxelCastLocation",
+    "Outer": "Default__BPGunboatW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPGunboatW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.14"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontRightAxleCastLocation",
+    "Outer": "Default__BPGunboatW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPGunboatW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.14"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "LeftSideTrackLocation",
+    "Outer": "Default__BPGunboatW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPGunboatW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.14"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "MachineGunMuzzle",
+    "Outer": "Default__BPGunboatW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPGunboatW_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.37"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearAxleCastLocation",
+    "Outer": "Default__BPGunboatW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPGunboatW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.14"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearRightAxleCastLocation",
+    "Outer": "Default__BPGunboatW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPGunboatW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.14"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RightSideTrackLocation",
+    "Outer": "Default__BPGunboatW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPGunboatW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.14"
+      }
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPGunboatW_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.25"
+      },
+      "VariableGuid": "E709F14C-4C123634-42C2849B-0BF871F3",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPGunboatW_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPGunboatW_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.34"
+      }
+    }
+  },
+  {
+    "Type": "SimpleVehicleMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__BPGunboatW_C"
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__BPGunboatW_C",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_GunboatWar_C",
+        "ObjectPath": "War/Content/Animation/WaterVehicles/Gunboat/ABP_GunboatWar.1"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_GunBoatWar",
+        "ObjectPath": "War/Content/Meshes/Vehicles/SK_GunBoatWar.0"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPGunboatW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.14"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "DestroyedMesh",
+    "Outer": "Default__BPGunboatW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPGunboatW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Gunboats/BPGunboatW.14"
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPGunboatW_C"
+  }
+]

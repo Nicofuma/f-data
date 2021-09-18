@@ -1,0 +1,89 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Noose01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Noose01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2C77"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Noose01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RepeatingRope",
+            "ObjectPath": "War/Content/Materials/Environment/Props/RepeatingRope.0"
+          },
+          "MaterialSlotName": "Material #26",
+          "ImportedMaterialSlotName": "Material #26",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 17.97242,
+            "LocalUVDensities": 0.00026902676,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 0.00026902676,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.0423841,
+          "Y": 8.849602,
+          "Z": 81.19285
+        },
+        "BoxExtent": {
+          "X": 9.431065,
+          "Y": 14.959423,
+          "Z": 95.28619
+        },
+        "SphereRadius": 96.20745
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Noose01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Noose01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Noose01:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Noose01.1"
+    },
+    "LightingGuid": "D89E6995-411204E4-97F72EA2-B6D0FFFE",
+    "RenderData": null
+  }
+]

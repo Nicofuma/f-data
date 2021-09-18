@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "BarrelFire",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_10",
+    "Outer": "BarrelFire",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xFE3"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "BarrelFire",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "Engine/Content/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 58.359844,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 58.359844,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.93837357,
+          "Y": 0.5788841,
+          "Z": 142.39966
+        },
+        "BoxExtent": {
+          "X": 36.519333,
+          "Y": 34.969597,
+          "Z": 29.44471
+        },
+        "SphereRadius": 47.27999
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup BarrelFire:BodySetup_0",
+      "ObjectPath": "War/Content/FX/Mesh/BarrelFire.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision BarrelFire:NavCollision_10",
+      "ObjectPath": "War/Content/FX/Mesh/BarrelFire.1"
+    },
+    "LightingGuid": "14F50A98-400AFA6C-9C76C6A6-E48CC2CE",
+    "RenderData": null
+  }
+]

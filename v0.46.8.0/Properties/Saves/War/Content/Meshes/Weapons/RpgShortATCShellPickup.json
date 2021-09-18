@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "RpgShortATCShellPickup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "RpgShortATCShellPickup",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x4A94"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "RpgShortATCShellPickup",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TankBuster",
+            "ObjectPath": "War/Content/Materials/Weapons/TankBuster.0"
+          },
+          "MaterialSlotName": "TankBuster",
+          "ImportedMaterialSlotName": "TankBuster",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 77.254684,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 77.254684,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 17.450226,
+          "Z": 4.7683716E-06
+        },
+        "BoxExtent": {
+          "X": 8.506899,
+          "Y": 17.450228,
+          "Z": 8.506901
+        },
+        "SphereRadius": 18.126383
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup RpgShortATCShellPickup:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Weapons/RpgShortATCShellPickup.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision RpgShortATCShellPickup:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Weapons/RpgShortATCShellPickup.1"
+    },
+    "LightingGuid": "A4B07274-46244C50-09A3A485-1E241BB0",
+    "RenderData": null
+  }
+]

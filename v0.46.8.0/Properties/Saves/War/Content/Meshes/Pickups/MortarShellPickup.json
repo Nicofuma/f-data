@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "MortarShellPickup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "MortarShellPickup",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x26B2"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "MortarShellPickup",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MortarShellPickup",
+            "ObjectPath": "War/Content/Materials/Pickups/MortarShellPickup.0"
+          },
+          "MaterialSlotName": "MortarShellPickup",
+          "ImportedMaterialSlotName": "MortarShellPickup",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 69.015724,
+            "LocalUVDensities": 78.91536,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 78.91536,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 5.722046E-06,
+          "Y": 0.0,
+          "Z": 10.367284
+        },
+        "BoxExtent": {
+          "X": 10.49149,
+          "Y": 40.54426,
+          "Z": 9.862483
+        },
+        "SphereRadius": 42.463142
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup MortarShellPickup:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Pickups/MortarShellPickup.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision MortarShellPickup:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Pickups/MortarShellPickup.1"
+    },
+    "LightingGuid": "BCD7584C-4BA47706-AE390EB6-CDC0DDD2",
+    "RenderData": null
+  }
+]

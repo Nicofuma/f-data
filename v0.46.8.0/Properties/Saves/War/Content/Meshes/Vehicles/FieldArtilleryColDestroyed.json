@@ -1,0 +1,121 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FieldArtilleryColDestroyed",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 3.0658112,
+              "Y": -35.799026,
+              "Z": 96.67493
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 310.78436,
+            "Y": 429.48764,
+            "Z": 268.98108,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "FieldArtilleryColDestroyed",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x3583B"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FieldArtilleryColDestroyed",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FieldWeaponBaseDestroyed",
+            "ObjectPath": "War/Content/Materials/Vehicles/FieldWeaponBaseDestroyed.0"
+          },
+          "MaterialSlotName": "FieldBase",
+          "ImportedMaterialSlotName": "FieldBase",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 514.8648,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FieldArtilleryDestroyed",
+            "ObjectPath": "War/Content/Materials/Vehicles/FieldArtilleryDestroyed.0"
+          },
+          "MaterialSlotName": "FieldArtillery",
+          "ImportedMaterialSlotName": "FieldArtillery",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 329.68924,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 485.33847,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 3.0658112,
+          "Y": -35.799026,
+          "Z": 96.67493
+        },
+        "BoxExtent": {
+          "X": 155.39218,
+          "Y": 214.74382,
+          "Z": 134.49054
+        },
+        "SphereRadius": 247.60387
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FieldArtilleryColDestroyed:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Vehicles/FieldArtilleryColDestroyed.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FieldArtilleryColDestroyed:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Vehicles/FieldArtilleryColDestroyed.1"
+    },
+    "LightingGuid": "3B61FB14-4F2132D1-7375338F-DDB0BF43",
+    "RenderData": null
+  }
+]

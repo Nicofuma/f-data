@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Radio",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "Radio",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x67D2"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Radio",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RadioPickup",
+            "ObjectPath": "War/Content/Materials/Pickups/RadioPickup.0"
+          },
+          "MaterialSlotName": "RadioPickup",
+          "ImportedMaterialSlotName": "RadioPickup",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 112.348915,
+            "LocalUVDensities": 132.93694,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 132.93694,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -1.9073486E-06,
+          "Y": 0.0,
+          "Z": 12.379572
+        },
+        "BoxExtent": {
+          "X": 12.539282,
+          "Y": 49.815666,
+          "Z": 16.758942
+        },
+        "SphereRadius": 53.53815
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Radio:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Pickups/Radio.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Radio:NavCollision_4",
+      "ObjectPath": "War/Content/Meshes/Pickups/Radio.1"
+    },
+    "LightingGuid": "B3341386-4697F4FF-857231A0-FA7FD3DE",
+    "RenderData": null
+  }
+]

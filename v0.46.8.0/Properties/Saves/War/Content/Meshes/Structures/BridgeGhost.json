@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "BridgeGhost",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_7",
+    "Outer": "BridgeGhost",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1CEAC"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "BridgeGhost",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material BuildGhost",
+            "ObjectPath": "War/Content/Materials/Structures/BuildGhost.0"
+          },
+          "MaterialSlotName": "BuildGhost",
+          "ImportedMaterialSlotName": "BuildGhost",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1.6732333,
+            "LocalUVDensities": 409246.3,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 409246.3,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -26.292114,
+          "Y": 7.9404907,
+          "Z": -47.5885
+        },
+        "BoxExtent": {
+          "X": 975.9157,
+          "Y": 410.6316,
+          "Z": 550.1994
+        },
+        "SphereRadius": 1154.6527
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup BridgeGhost:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/BridgeGhost.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision BridgeGhost:NavCollision_7",
+      "ObjectPath": "War/Content/Meshes/Structures/BridgeGhost.1"
+    },
+    "LightingGuid": "AD964A35-498BA67B-0AC00080-B9510884",
+    "RenderData": null
+  }
+]

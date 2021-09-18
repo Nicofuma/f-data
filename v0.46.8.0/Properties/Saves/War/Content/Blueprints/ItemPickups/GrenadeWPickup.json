@@ -1,0 +1,117 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GrenadeWPickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript GrenadeWPickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/GrenadeWPickup.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class GearPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "GrenadeWPickup_C",
+    "Name": "Default__GrenadeWPickup_C",
+    "Properties": {
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPGrenadeWItemComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Items/BPGrenadeWItemComponent.0"
+      },
+      "CodeName": "GrenadeW",
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "87EAD23B4A6AB0EA5B3E27BCB49F24C9",
+        "SourceString": "Grenade"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "7EE8DCCD4F2090DFB357BAB2A5722729",
+        "SourceString": "A3 Harpa Fragmentation Grenade"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "67F05FB94ABFE9B8118DF3B977384D11",
+        "SourceString": "This anti-personnel fragmentation grenade is designed with pull-pin mechanics and a timed fuse for user safety. Serrations in the casing allow for a better grip and increased fragmentation effectiveness."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D GrenadeItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/GrenadeItemIcon.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Tertiary",
+      "ItemCategory": "EItemCategory::HeavyArms",
+      "ItemFlagsMask": 9,
+      "ItemProfileType": "EItemProfileType::Throwable",
+      "FactionVariant": "EFactionId::Wardens",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__GrenadeWPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/GrenadeWPickup.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__GrenadeWPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/GrenadeWPickup.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__GrenadeWPickup_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "GrenadeWPickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent GrenadeWPickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/GrenadeWPickup.3"
+      },
+      "VariableGuid": "FBF04340-40D71A47-9ED11191-32B797F3",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "GrenadeWPickup_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node GrenadeWPickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/GrenadeWPickup.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__GrenadeWPickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__GrenadeWPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/GrenadeWPickup.2"
+      }
+    }
+  }
+]

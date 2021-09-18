@@ -1,0 +1,107 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GarrisonSupplies_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript GarrisonSupplies_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/GarrisonSupplies.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class BasicItemPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "GarrisonSupplies_C",
+    "Name": "Default__GarrisonSupplies_C",
+    "Properties": {
+      "Encumbrance": 40,
+      "CodeName": "GarrisonSupplies",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "433CCC20403F10F66C1C5DA1362E1E79",
+        "SourceString": "Garrison Supplies"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "7AFE9A2B4C71C427C66123A41C6FE678",
+        "SourceString": "Supplies for maintaining structures. Store at Bases to prevent decay on surrounding structures."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D GarrisonSuppliesIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/GarrisonSuppliesIcon.0"
+      },
+      "ItemCategory": "EItemCategory::Supplies",
+      "ItemProfileType": "EItemProfileType::Supplies",
+      "TechID": "ETechID::UnlockGarrisonSupplies",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__GarrisonSupplies_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/GarrisonSupplies.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__GarrisonSupplies_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/GarrisonSupplies.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__GarrisonSupplies_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "GarrisonSupplies_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent GarrisonSupplies_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/GarrisonSupplies.3"
+      },
+      "VariableGuid": "45A57A6F-468C52B1-5687A28D-A161DA72",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "GarrisonSupplies_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node GarrisonSupplies_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/GarrisonSupplies.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__GarrisonSupplies_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__GarrisonSupplies_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/GarrisonSupplies.2"
+      }
+    }
+  }
+]

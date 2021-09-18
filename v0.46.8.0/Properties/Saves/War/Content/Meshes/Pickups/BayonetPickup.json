@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "BayonetPickup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_5",
+    "Outer": "BayonetPickup",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x33BA"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "BayonetPickup",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BayonetPickup",
+            "ObjectPath": "War/Content/Materials/Pickups/BayonetPickup.0"
+          },
+          "MaterialSlotName": "Material #8117",
+          "ImportedMaterialSlotName": "Material #8117",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 49.11311,
+            "LocalUVDensities": 63.61429,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 63.61429,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 5.666813,
+          "Y": 5.60306,
+          "Z": 4.336115
+        },
+        "BoxExtent": {
+          "X": 29.356628,
+          "Y": 28.038183,
+          "Z": 4.7930565
+        },
+        "SphereRadius": 40.68909
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup BayonetPickup:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Pickups/BayonetPickup.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision BayonetPickup:NavCollision_5",
+      "ObjectPath": "War/Content/Meshes/Pickups/BayonetPickup.1"
+    },
+    "LightingGuid": "3440EAC9-4B67BE50-A8D3A2A0-25A45C3A",
+    "RenderData": null
+  }
+]

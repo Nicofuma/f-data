@@ -1,0 +1,197 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "StaticMesh",
+    "Outer": "BPDestroyedRocketFacility_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPDestroyedRocketFacility_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPDestroyedRocketFacility_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedRocketFacility.8"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class DestroyedRocketFacility",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPDestroyedRocketFacility_C:StaticMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedRocketFacility.0"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPDestroyedRocketFacility_C",
+    "Name": "Default__BPDestroyedRocketFacility_C",
+    "Properties": {
+      "CodeName": "DestroyedRocketFacility",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPDestroyedRocketFacility_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedRocketFacility.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPDestroyedRocketFacility_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedRocketFacility.4"
+      },
+      "MaxHealth": 100000000,
+      "MapIconType": "EMapIconType::RocketSite",
+      "UpgradeStructureCodeName": "RocketSite",
+      "IsVaultable": false,
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPDestroyedRocketFacility_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedRocketFacility.10"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPDestroyedRocketFacility_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedRocketFacility.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPDestroyedRocketFacility_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPDestroyedRocketFacility_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 800.0,
+        "Y": 550.0,
+        "Z": 128.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPDestroyedRocketFacility_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedRocketFacility.3"
+      },
+      "RelativeLocation": {
+        "X": 1050.0,
+        "Y": -680.0,
+        "Z": 128.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPDestroyedRocketFacility_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPDestroyedRocketFacility_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedRocketFacility.5"
+      },
+      "VariableGuid": "494648AF-4BF6836E-D439DBB9-43E7B0D9",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPDestroyedRocketFacility_C:StaticMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedRocketFacility.9"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "E445621D-4B8D2056-7860EBA3-37B9638D",
+      "InternalVariableName": "StaticMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPDestroyedRocketFacility_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPDestroyedRocketFacility_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedRocketFacility.7"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPDestroyedRocketFacility_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedRocketFacility.7"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPDestroyedRocketFacility_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedRocketFacility.6"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh_GEN_VARIABLE",
+    "Outer": "BPDestroyedRocketFacility_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh RocketFacilityDestroyed",
+        "ObjectPath": "War/Content/Meshes/Structures/RocketFacilityDestroyed.2"
+      },
+      "OverrideMaterials": [
+        null,
+        null,
+        null
+      ],
+      "BodyInstance": {
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPDestroyedRocketFacility_C"
+  }
+]

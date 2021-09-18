@@ -1,0 +1,199 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "ResistanceCampMesh",
+    "Outer": "BPFrontierBaseGhost_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPFrontierBaseGhost_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPFrontierBaseGhost_C:SimpleConstructionScript_2",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseGhost.8"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class BuildGhost",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPFrontierBaseGhost_C:ResistanceCampMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseGhost.0"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPFrontierBaseGhost_C",
+    "Name": "Default__BPFrontierBaseGhost_C",
+    "Properties": {
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBaseGhost_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseGhost.3"
+      },
+      "BuildFootprintComponent": {
+        "ObjectName": "BoxComponent Default__BPFrontierBaseGhost_C:BuildFootprint",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseGhost.4"
+      },
+      "bMapBoundaryRequired": true,
+      "MapBoundaryBuildRule": "EMapBoundaryBuildRule::OnlyBuildableNearBorder",
+      "bCheckWaterVolume": true,
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBaseGhost_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseGhost.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPFrontierBaseGhost_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BuildFootprint",
+    "Outer": "Default__BPFrontierBaseGhost_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 350.0,
+        "Y": 390.0,
+        "Z": 200.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFrontierBaseGhost_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseGhost.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 200.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPFrontierBaseGhost_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_2",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPFrontierBaseGhost_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseGhost.5"
+      },
+      "VariableGuid": "EF34EAF9-414BC7B4-BE1E83AE-100CA7AF",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_2",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPFrontierBaseGhost_C:ResistanceCampMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseGhost.9"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "61B7234F-455A8608-3D20E5BF-DE117982",
+      "InternalVariableName": "ResistanceCampMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_2",
+    "Outer": "BPFrontierBaseGhost_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPFrontierBaseGhost_C:SimpleConstructionScript_2.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseGhost.7"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPFrontierBaseGhost_C:SimpleConstructionScript_2.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseGhost.7"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPFrontierBaseGhost_C:SimpleConstructionScript_2.SCS_Node_4",
+        "ObjectPath": "War/Content/Blueprints/Structures/Bases/BPFrontierBaseGhost.6"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ResistanceCampMesh_GEN_VARIABLE",
+    "Outer": "BPFrontierBaseGhost_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh Barracks",
+        "ObjectPath": "War/Content/Meshes/Structures/Barracks.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material BuildGhost",
+          "ObjectPath": "War/Content/Materials/Structures/BuildGhost.0"
+        },
+        {
+          "ObjectName": "Material BuildGhost",
+          "ObjectPath": "War/Content/Materials/Structures/BuildGhost.0"
+        },
+        {
+          "ObjectName": "Material BuildGhost",
+          "ObjectPath": "War/Content/Materials/Structures/BuildGhost.0"
+        },
+        {
+          "ObjectName": "Material BuildGhost",
+          "ObjectPath": "War/Content/Materials/Structures/BuildGhost.0"
+        }
+      ],
+      "bReceivesDecals": false,
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "MassInKgOverride": 576.3657
+      }
+    }
+  }
+]

@@ -1,0 +1,111 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Outer": "Books_07",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.3468132,
+              "Y": 0.0,
+              "Z": 78.60262
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 83.63277,
+            "Y": 99.348404,
+            "Z": 157.84346,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "Books_07",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x6D1D"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Books_07",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Books",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Books.0"
+          },
+          "MaterialSlotName": "Books",
+          "ImportedMaterialSlotName": "Books",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 271.42572,
+            "LocalUVDensities": 536.508,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 536.508,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.3468132,
+          "Y": 0.0,
+          "Z": 78.60262
+        },
+        "BoxExtent": {
+          "X": 55.82097,
+          "Y": 81.47299,
+          "Z": 78.92173
+        },
+        "SphereRadius": 122.82123
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Books_07:BodySetup_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Books_07.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Books_07:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Books_07.1"
+    },
+    "LightingGuid": "35DA308A-4FC5629A-1A16F698-264923D7",
+    "RenderData": null
+  }
+]

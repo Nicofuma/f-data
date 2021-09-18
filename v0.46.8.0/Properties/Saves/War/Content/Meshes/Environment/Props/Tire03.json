@@ -1,0 +1,121 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Tire03",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 8.215149,
+              "Y": -5.98349,
+              "Z": 27.359417
+            },
+            "Rotation": {
+              "Pitch": -0.00039615095,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Radius": 67.614235,
+            "Length": 69.73032,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "Tire03",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 5521,
+        "SizeOnDisk": 5521,
+        "OffsetInFile": "0x999D"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Tire03",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Tire01",
+            "ObjectPath": "War/Content/Materials/Vehicles/Tire01.0"
+          },
+          "MaterialSlotName": "Tires",
+          "ImportedMaterialSlotName": "Tire01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 158.52068,
+            "LocalUVDensities": 315.93396,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Tire01",
+            "ObjectPath": "War/Content/Materials/Vehicles/Tire01.0"
+          },
+          "MaterialSlotName": "Tires",
+          "ImportedMaterialSlotName": "Tires",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 315.93396,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.8944855,
+          "Y": -7.829651,
+          "Z": 57.359367
+        },
+        "BoxExtent": {
+          "X": 73.78084,
+          "Y": 67.8954,
+          "Z": 51.266376
+        },
+        "SphereRadius": 89.5729
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Tire03:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Tire03.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Tire03:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Tire03.1"
+    },
+    "LightingGuid": "A793F318-4D74BCE7-6DF80FAB-A2938734",
+    "RenderData": null
+  }
+]

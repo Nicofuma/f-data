@@ -1,0 +1,122 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "HayStack03",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 47.940903
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 109.62356,
+            "Y": 204.61723,
+            "Z": 90.68538,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_11",
+    "Outer": "HayStack03",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x3930"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "HayStack03",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant HayBale",
+            "ObjectPath": "War/Content/Materials/Environment/Props/HayBale.0"
+          },
+          "MaterialSlotName": "Material #26",
+          "ImportedMaterialSlotName": "Material #26",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 227.49547,
+            "LocalUVDensities": 648.2631,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Hay",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Hay.0"
+          },
+          "MaterialSlotName": "Material #524",
+          "ImportedMaterialSlotName": "Material #524",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 234.17166,
+            "LocalUVDensities": 648.6978,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 648.4835,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 47.940903
+        },
+        "BoxExtent": {
+          "X": 63.185463,
+          "Y": 110.57456,
+          "Z": 47.3891
+        },
+        "SphereRadius": 132.46362
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup HayStack03:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/HayStack03.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision HayStack03:NavCollision_11",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/HayStack03.1"
+    },
+    "LightingGuid": "6590783C-48D64C39-DD7508BB-03BACFB1",
+    "RenderData": null
+  }
+]

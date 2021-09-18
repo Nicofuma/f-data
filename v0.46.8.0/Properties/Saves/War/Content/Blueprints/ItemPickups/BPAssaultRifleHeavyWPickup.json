@@ -1,0 +1,121 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPAssaultRifleHeavyWPickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPAssaultRifleHeavyWPickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPAssaultRifleHeavyWPickup.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class FirearmPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPAssaultRifleHeavyWPickup_C",
+    "Name": "Default__BPAssaultRifleHeavyWPickup_C",
+    "Properties": {
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass AssaultRifleHeavyW_C",
+        "ObjectPath": "War/Content/Blueprints/Items/AssaultRifleHeavyW.0"
+      },
+      "CodeName": "AssaultRifleHeavyW",
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "7D6C68A7498074E1BC64ABA586E26830",
+        "SourceString": "Assault Rifle"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "8BB336F4459740A6ADA7B28B2D91748B",
+        "SourceString": "Booker Storm Rifle Model 838"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "7A06F99C4E33063B047084890EF18C19",
+        "SourceString": "The Booker is a high-impact three-round burst Storm Rifle for those who like to shoot first."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D AssaultRifleHeavyWItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/AssaultRifleHeavyWItemIcon.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Primary",
+      "ItemCategory": "EItemCategory::SmallArms",
+      "ItemFlagsMask": 129,
+      "ItemProfileType": "EItemProfileType::HandheldWeapon",
+      "FactionVariant": "EFactionId::Wardens",
+      "TechID": "ETechID::UnlockAssaultRifleHeavy",
+      "ItemMesh": {
+        "ObjectName": "StaticMeshComponent Default__BPAssaultRifleHeavyWPickup_C:ItemMesh",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPAssaultRifleHeavyWPickup.6"
+      },
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPAssaultRifleHeavyWPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPAssaultRifleHeavyWPickup.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPAssaultRifleHeavyWPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPAssaultRifleHeavyWPickup.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPAssaultRifleHeavyWPickup_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPAssaultRifleHeavyWPickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPAssaultRifleHeavyWPickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPAssaultRifleHeavyWPickup.3"
+      },
+      "VariableGuid": "458964F5-453E00C5-81A3CA87-7F250F94",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPAssaultRifleHeavyWPickup_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPAssaultRifleHeavyWPickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPAssaultRifleHeavyWPickup.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPAssaultRifleHeavyWPickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPAssaultRifleHeavyWPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPAssaultRifleHeavyWPickup.2"
+      }
+    }
+  }
+]

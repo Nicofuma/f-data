@@ -1,0 +1,281 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SeaportSideway",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -1041.8751,
+                "Y": 1257.6351,
+                "Z": -798.82544
+              },
+              {
+                "X": -1041.8751,
+                "Y": 1257.635,
+                "Z": -29.300539
+              },
+              {
+                "X": -1041.8751,
+                "Y": -936.40125,
+                "Z": -798.8258
+              },
+              {
+                "X": -1041.8751,
+                "Y": -936.40137,
+                "Z": -29.300896
+              },
+              {
+                "X": -589.9024,
+                "Y": 1257.6351,
+                "Z": -798.82544
+              },
+              {
+                "X": -589.9024,
+                "Y": 1257.635,
+                "Z": -29.300539
+              },
+              {
+                "X": -589.9024,
+                "Y": -936.40125,
+                "Z": -798.8258
+              },
+              {
+                "X": -589.9024,
+                "Y": -936.40137,
+                "Z": -29.300896
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -1041.8751,
+                "Y": -936.40137,
+                "Z": -798.8258
+              },
+              "Max": {
+                "X": -589.9024,
+                "Y": 1257.6351,
+                "Z": -29.300539
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "VertexData": [
+              {
+                "X": 1041.8751,
+                "Y": 1257.6351,
+                "Z": -798.82544
+              },
+              {
+                "X": 1041.8751,
+                "Y": 1257.635,
+                "Z": -29.300539
+              },
+              {
+                "X": 1041.8751,
+                "Y": -936.40125,
+                "Z": -798.8258
+              },
+              {
+                "X": 1041.8751,
+                "Y": -936.40137,
+                "Z": -29.300896
+              },
+              {
+                "X": 589.9024,
+                "Y": 1257.6351,
+                "Z": -798.82544
+              },
+              {
+                "X": 589.9024,
+                "Y": 1257.635,
+                "Z": -29.300539
+              },
+              {
+                "X": 589.9024,
+                "Y": -936.40125,
+                "Z": -798.8258
+              },
+              {
+                "X": 589.9024,
+                "Y": -936.40137,
+                "Z": -29.300896
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": 589.9024,
+                "Y": -936.40137,
+                "Z": -798.8258
+              },
+              "Max": {
+                "X": 1041.8751,
+                "Y": 1257.6351,
+                "Z": -29.300539
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "SeaportSideway",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 893,
+        "SizeOnDisk": 893,
+        "OffsetInFile": "0x32E3"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SeaportSideway",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RelicBunkerMetalParts",
+            "ObjectPath": "War/Content/Materials/Environment/Props/RelicBunkerMetalParts.0"
+          },
+          "MaterialSlotName": "Metalbar",
+          "ImportedMaterialSlotName": "Metalbar",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 651.6562,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant LoadingDockBrick",
+            "ObjectPath": "War/Content/Materials/Environment/Props/LoadingDockBrick.0"
+          },
+          "MaterialSlotName": "Dambrick",
+          "ImportedMaterialSlotName": "Dambrick",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 329.01953,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant LoadingDockGravel",
+            "ObjectPath": "War/Content/Materials/Environment/Props/LoadingDockGravel.0"
+          },
+          "MaterialSlotName": "Concrete",
+          "ImportedMaterialSlotName": "Concrete",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 329.21808,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 443.77612,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 146.51703,
+          "Z": -413.5313
+        },
+        "BoxExtent": {
+          "X": 1068.6276,
+          "Y": 1115.8951,
+          "Z": 385.2945
+        },
+        "SphereRadius": 1592.1058
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SeaportSideway:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/SeaportSideway.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SeaportSideway:NavCollision_4",
+      "ObjectPath": "War/Content/Meshes/Structures/SeaportSideway.1"
+    },
+    "LightingGuid": "0CE2A18E-4113891A-50BFB0A9-A617286D",
+    "RenderData": null
+  }
+]

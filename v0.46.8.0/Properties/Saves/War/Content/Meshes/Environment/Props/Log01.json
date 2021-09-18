@@ -1,0 +1,106 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Log01",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.24588013,
+              "Y": 0.58490753,
+              "Z": 0.45781326
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 565.5855,
+            "Y": 65.60655,
+            "Z": 58.60544,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_8",
+    "Outer": "Log01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0xC66"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Log01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Log",
+            "ObjectPath": "War/Content/Materials/Environment/Log.0"
+          },
+          "MaterialSlotName": "Log",
+          "ImportedMaterialSlotName": "Log",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 581.71924,
+            "LocalUVDensities": 565.7036,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 565.7036,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.24588013,
+          "Y": 0.58490753,
+          "Z": 0.45781326
+        },
+        "BoxExtent": {
+          "X": 282.79276,
+          "Y": 32.803276,
+          "Z": 29.30272
+        },
+        "SphereRadius": 283.27032
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Log01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Log01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Log01:NavCollision_8",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Log01.1"
+    },
+    "LightingGuid": "CFF49045-415645CC-A60E8B93-01C8FA8B",
+    "RenderData": null
+  }
+]

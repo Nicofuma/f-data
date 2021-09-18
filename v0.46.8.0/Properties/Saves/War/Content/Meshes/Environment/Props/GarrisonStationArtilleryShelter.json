@@ -1,0 +1,153 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "GarrisonStationArtilleryShelter",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "GarrisonStationArtilleryShelter",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x576DB"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "GarrisonStationArtilleryShelter",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant GarrisonStationTrims",
+            "ObjectPath": "War/Content/Materials/Environment/Props/GarrisonStationTrims.0"
+          },
+          "MaterialSlotName": "TillingMetal",
+          "ImportedMaterialSlotName": "SafeHouse",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 543.27686,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant CoverBench1",
+            "ObjectPath": "War/Content/Materials/Environment/CoverBench1.0"
+          },
+          "MaterialSlotName": "WoodPlanks",
+          "ImportedMaterialSlotName": "TillingMetal",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 238.88489,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant GarrisonStationUpgrade",
+            "ObjectPath": "War/Content/Materials/Environment/Props/GarrisonStationUpgrade.0"
+          },
+          "MaterialSlotName": "UniqueParts",
+          "ImportedMaterialSlotName": "WoodPlanks",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 809.31757,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Sandbag",
+            "ObjectPath": "War/Content/Materials/Structures/Sandbag.0"
+          },
+          "MaterialSlotName": "Sandbag",
+          "ImportedMaterialSlotName": "UniqueParts",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 286.5345,
+            "LocalUVDensities": 581.44275,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material LanternEmissive",
+            "ObjectPath": "War/Content/Materials/LanternEmissive.0"
+          },
+          "MaterialSlotName": "DoorLight",
+          "ImportedMaterialSlotName": "Sandbag",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 830.6199,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 581.44275,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 751.7164,
+          "Y": 500.96426,
+          "Z": 182.63905
+        },
+        "BoxExtent": {
+          "X": 837.0507,
+          "Y": 593.76526,
+          "Z": 183.53175
+        },
+        "SphereRadius": 946.1996
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup GarrisonStationArtilleryShelter:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/GarrisonStationArtilleryShelter.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision GarrisonStationArtilleryShelter:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/GarrisonStationArtilleryShelter.1"
+    },
+    "LightingGuid": "00808994-40B49C2B-7B46B78D-59AD310C",
+    "RenderData": null
+  }
+]

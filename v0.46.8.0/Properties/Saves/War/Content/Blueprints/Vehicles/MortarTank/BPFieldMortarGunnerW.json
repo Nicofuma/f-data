@@ -1,0 +1,65 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPFieldMortarGunnerW_C",
+    "SuperStruct": {
+      "ObjectName": "Class ProjectileGunnerMountComponent",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPFieldMortarGunnerW_C",
+    "Name": "Default__BPFieldMortarGunnerW_C",
+    "Properties": {
+      "MuzzleFlashPS": {
+        "ObjectName": "ParticleSystem MortarTankMF",
+        "ObjectPath": "War/Content/FX/MortarTankMF.34"
+      },
+      "ReloadSoundCue": {
+        "ObjectName": "SoundCue FieldGunReload_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Vehicles/FieldGun/FieldGunReload_Cue.0"
+      },
+      "ShotSoundCue": {
+        "ObjectName": "SoundCue MortarTankBasicShot_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Vehicles/MortarTank/MortarTankBasicShot_Cue.0"
+      },
+      "MinSpeed": 1500.0,
+      "MaxSpeed": 4000.0,
+      "SpeedVariation": 0.0,
+      "ProjectileClass": {
+        "ObjectName": "BlueprintGeneratedClass BPMortarTankProjectile_C",
+        "ObjectPath": "War/Content/Blueprints/Items/BPMortarTankProjectile.1"
+      },
+      "bIsArtilleryMode": true,
+      "bTriggerDriverFiringState": true,
+      "AmmoName": "MortarTankAmmo",
+      "Icon": {
+        "ObjectName": "Texture2D MortarTankIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/MortarTankIcon.0"
+      },
+      "EquippedGripType": "EEquippedWeaponGripType::VehicleFieldArtillery",
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage NWP_FieldVehicle_Gunner_GenericFiring",
+          "ObjectPath": "War/Content/Animation/Character/NWP_NoWeapon/NWP_FieldVehicle_Gunner_GenericFiring.0"
+        }
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage NWP_FieldArtillery_Gunner_Reloading",
+          "ObjectPath": "War/Content/Animation/Character/NWP_NoWeapon/NWP_FieldArtillery_Gunner_Reloading.0"
+        },
+        "Duration": 5.5
+      },
+      "bMustBeStoppedToInvoke": true
+    }
+  }
+]

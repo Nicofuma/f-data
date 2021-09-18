@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "TrenchBranch3",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "TrenchBranch3",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x15F2"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TrenchBranch3",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TrenchBranches",
+            "ObjectPath": "War/Content/Materials/Environment/TrenchBranches.0"
+          },
+          "MaterialSlotName": "TrenchBranches",
+          "ImportedMaterialSlotName": "TrenchBranches",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 212.81493,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 212.81493,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.1223946,
+          "Y": 0.5766382,
+          "Z": 8.780746
+        },
+        "BoxExtent": {
+          "X": 10.362708,
+          "Y": 10.864196,
+          "Z": 112.67192
+        },
+        "SphereRadius": 112.8738
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TrenchBranch3:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/TrenchBranch3.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TrenchBranch3:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/TrenchBranch3.1"
+    },
+    "LightingGuid": "9ABA33B5-410E16D7-20A6EF9A-7D20BCBF",
+    "RenderData": null
+  }
+]

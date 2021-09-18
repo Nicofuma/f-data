@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Tesselated_halfsphere",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_13",
+    "Outer": "Tesselated_halfsphere",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2BEB"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Tesselated_halfsphere",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "Engine/Content/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 2171.8352,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 2171.8352,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.012531057
+        },
+        "BoxExtent": {
+          "X": 924.45087,
+          "Y": 924.4509,
+          "Z": 0.012531057
+        },
+        "SphereRadius": 952.27216
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Tesselated_halfsphere:BodySetup_0",
+      "ObjectPath": "War/Content/FX/Mesh/Tesselated_halfsphere.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Tesselated_halfsphere:NavCollision_13",
+      "ObjectPath": "War/Content/FX/Mesh/Tesselated_halfsphere.1"
+    },
+    "LightingGuid": "343D8EAC-4F76F4DD-B08794B3-D68FF47A",
+    "RenderData": null
+  }
+]

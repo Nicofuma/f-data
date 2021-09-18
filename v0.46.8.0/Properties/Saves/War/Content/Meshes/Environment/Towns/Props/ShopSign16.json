@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ShopSign16",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "ShopSign16",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2092"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ShopSign16",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ShopSign",
+            "ObjectPath": "War/Content/Materials/Environment/Props/ShopSign.0"
+          },
+          "MaterialSlotName": "ShopSign",
+          "ImportedMaterialSlotName": "ShopSign",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 745.14954,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 745.14954,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 5.340576E-05,
+          "Y": -8.436075,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 94.01681,
+          "Y": 16.794022,
+          "Z": 62.093758
+        },
+        "SphereRadius": 110.11744
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ShopSign16:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Props/ShopSign16.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ShopSign16:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Props/ShopSign16.1"
+    },
+    "LightingGuid": "C89092D8-4286F7C4-1ED6C6BB-6CC0CB6F",
+    "RenderData": null
+  }
+]

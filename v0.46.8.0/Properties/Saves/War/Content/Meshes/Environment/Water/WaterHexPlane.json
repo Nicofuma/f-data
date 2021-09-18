@@ -1,0 +1,78 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "WaterHexPlane",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "WaterHexPlane",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xD27B"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "WaterHexPlane",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material Water2",
+            "ObjectPath": "War/Content/Materials/Water2.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 64989.87,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 64989.87,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 129751.61,
+          "Y": 112628.41,
+          "Z": 3.190503E-11
+        },
+        "SphereRadius": 129751.65
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup WaterHexPlane:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Water/WaterHexPlane.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision WaterHexPlane:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Water/WaterHexPlane.1"
+    },
+    "LightingGuid": "9DFBE489-44BBD135-4D6A26A0-B2C1D3B4",
+    "RenderData": null
+  }
+]

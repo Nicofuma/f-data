@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "BloodBall",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "BloodBall",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xB0A2"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "BloodBall",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material BloodBall",
+            "ObjectPath": "War/Content/FX/Materials/BloodBall.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 120.83655,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 120.83655,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 5.722046E-06,
+          "Y": -1.9073486E-06,
+          "Z": -20.415398
+        },
+        "BoxExtent": {
+          "X": 21.180035,
+          "Y": 21.180035,
+          "Z": 60.86142
+        },
+        "SphereRadius": 60.888287
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup BloodBall:BodySetup_0",
+      "ObjectPath": "War/Content/FX/Mesh/DeadHarvest/BloodBall.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision BloodBall:NavCollision_2",
+      "ObjectPath": "War/Content/FX/Mesh/DeadHarvest/BloodBall.1"
+    },
+    "LightingGuid": "762791CD-4573C03B-6EE35685-DF4C8993",
+    "RenderData": null
+  }
+]

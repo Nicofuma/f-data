@@ -1,0 +1,99 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FortIModCallahanPortraitW",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "FortIModCallahanPortraitW",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x319A"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FortIModCallahanPortraitW",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant CallahanPortraitc",
+            "ObjectPath": "War/Content/Materials/Structures/CallahanPortraitc.0"
+          },
+          "MaterialSlotName": "Callahan",
+          "ImportedMaterialSlotName": "Callahan",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 118.42989,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant GoldFrame",
+            "ObjectPath": "War/Content/Materials/Structures/GoldFrame.0"
+          },
+          "MaterialSlotName": "GoldFrame",
+          "ImportedMaterialSlotName": "GoldFrame",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 169.6223,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 166.23401,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 34.93096,
+          "Z": 112.078125
+        },
+        "BoxExtent": {
+          "X": 65.43448,
+          "Y": 5.0690575,
+          "Z": 85.70907
+        },
+        "SphereRadius": 107.95097
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FortIModCallahanPortraitW:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/FortIModCallahanPortraitW.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FortIModCallahanPortraitW:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/FortIModCallahanPortraitW.1"
+    },
+    "LightingGuid": "7FC2E4F8-4B05A62D-A7BAAA93-4859A879",
+    "RenderData": null
+  }
+]

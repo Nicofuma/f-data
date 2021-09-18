@@ -1,0 +1,160 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "BarbedWire07",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 115.690994,
+              "Y": -7.467407,
+              "Z": 58.555077
+            },
+            "Rotation": {
+              "Pitch": 90.0,
+              "Yaw": 90.0,
+              "Roll": 100.0001
+            },
+            "Radius": 71.64347,
+            "Length": 114.47833,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": 271.64465,
+              "Y": -69.47035,
+              "Z": 58.555084
+            },
+            "Rotation": {
+              "Pitch": 90.0,
+              "Yaw": 0.0,
+              "Roll": 30.001263
+            },
+            "Radius": 71.64347,
+            "Length": 114.47833,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": 401.39774,
+              "Y": -187.6924,
+              "Z": 58.555096
+            },
+            "Rotation": {
+              "Pitch": 90.0,
+              "Yaw": 14.036263,
+              "Roll": 69.03673
+            },
+            "Radius": 71.64347,
+            "Length": 114.47833,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": 497.8417,
+              "Y": -353.83862,
+              "Z": 58.555103
+            },
+            "Rotation": {
+              "Pitch": 90.0,
+              "Yaw": -14.036263,
+              "Roll": 60.963684
+            },
+            "Radius": 71.64347,
+            "Length": 114.47833,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "ShootThroughStatic",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "BarbedWire07",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 22021,
+        "SizeOnDisk": 22021,
+        "OffsetInFile": "0x1B26B"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "BarbedWire07",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BarbedWireStraight",
+            "ObjectPath": "War/Content/Materials/Environment/BarbedWireStraight.0"
+          },
+          "MaterialSlotName": "BarbedWire",
+          "ImportedMaterialSlotName": "BarbedWire",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 210.56921,
+            "LocalUVDensities": 953.2309,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 953.2309,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 282.92245,
+          "Y": -205.88745,
+          "Z": 58.555748
+        },
+        "BoxExtent": {
+          "X": 291.43304,
+          "Y": 276.17816,
+          "Z": 67.65786
+        },
+        "SphereRadius": 383.72086
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup BarbedWire07:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/BarbedWire07.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision BarbedWire07:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/BarbedWire07.1"
+    },
+    "LightingGuid": "34DB8DB3-48A49BC0-F75426AA-38D1951B",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ArtyBurst01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "ArtyBurst01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xB62"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ArtyBurst01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material DirtExplosion01",
+            "ObjectPath": "War/Content/FX/Materials/DirtExplosion01.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 642.24713,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 642.24713,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 9.094947E-13,
+          "Z": 428.66782
+        },
+        "BoxExtent": {
+          "X": 236.56807,
+          "Y": 7.800264E-06,
+          "Z": 428.66782
+        },
+        "SphereRadius": 489.61264
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ArtyBurst01:BodySetup_0",
+      "ObjectPath": "War/Content/FX/Mesh/ArtyBurst01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ArtyBurst01:NavCollision_2",
+      "ObjectPath": "War/Content/FX/Mesh/ArtyBurst01.1"
+    },
+    "LightingGuid": "596B4A90-4C45D293-F6A43D8B-977353ED",
+    "RenderData": null
+  }
+]

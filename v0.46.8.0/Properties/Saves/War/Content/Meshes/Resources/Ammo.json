@@ -1,0 +1,100 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_2834",
+    "Outer": "Ammo",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_16",
+    "Outer": "Ammo",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x6672"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Ammo",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant AmmoBox",
+            "ObjectPath": "War/Content/Materials/Resources/AmmoBox.0"
+          },
+          "MaterialSlotName": "AmmoBox",
+          "ImportedMaterialSlotName": "AmmoBox",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 142.91434,
+            "LocalUVDensities": 234.51094,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Ammobelt",
+            "ObjectPath": "War/Content/Materials/Resources/Ammobelt.0"
+          },
+          "MaterialSlotName": "Ammobelt",
+          "ImportedMaterialSlotName": "Ammobelt",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 16.734867,
+            "LocalUVDensities": 232.80318,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 234.22284,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.6216774,
+          "Y": 6.937168,
+          "Z": 22.495504
+        },
+        "BoxExtent": {
+          "X": 25.353224,
+          "Y": 60.95503,
+          "Z": 22.495506
+        },
+        "SphereRadius": 68.65566
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Ammo:BodySetup_2834",
+      "ObjectPath": "War/Content/Meshes/Resources/Ammo.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Ammo:NavCollision_16",
+      "ObjectPath": "War/Content/Meshes/Resources/Ammo.1"
+    },
+    "LightingGuid": "90ED185F-47118B11-CDA7DEBD-38725E41",
+    "RenderData": null
+  }
+]

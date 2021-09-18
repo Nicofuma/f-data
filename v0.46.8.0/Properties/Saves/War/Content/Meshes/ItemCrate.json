@@ -1,0 +1,106 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_4129",
+    "Outer": "ItemCrate",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -9.1552734E-05,
+              "Y": 0.00021362305,
+              "Z": 35.152485
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 201.20648,
+            "Y": 113.83258,
+            "Z": 68.28534,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_10",
+    "Outer": "ItemCrate",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x3D55"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ItemCrate",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant AmmoCrate",
+            "ObjectPath": "War/Content/Materials/AmmoCrate.0"
+          },
+          "MaterialSlotName": "AmmoCrate",
+          "ImportedMaterialSlotName": "AmmoCrate",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 643.62054,
+            "LocalUVDensities": 343.50192,
+            "LocalUVDensities": 381.0775,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 381.0775,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 2,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -9.1552734E-05,
+          "Y": 0.00021362305,
+          "Z": 35.152485
+        },
+        "BoxExtent": {
+          "X": 100.60324,
+          "Y": 56.91629,
+          "Z": 34.14267
+        },
+        "SphereRadius": 118.68829
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ItemCrate:BodySetup_4129",
+      "ObjectPath": "War/Content/Meshes/ItemCrate.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ItemCrate:NavCollision_10",
+      "ObjectPath": "War/Content/Meshes/ItemCrate.1"
+    },
+    "LightingGuid": "01D8FBD9-4E4A099D-FFE588BC-EF9B4382",
+    "RenderData": null
+  }
+]

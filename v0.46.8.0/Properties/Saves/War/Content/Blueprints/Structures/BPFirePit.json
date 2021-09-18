@@ -1,0 +1,432 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "Decal",
+    "Outer": "BPFirePit_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class DecalComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPFirePit_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPFirePit_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFirePit.15"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class FirePit",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPFirePit_C:Decal",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFirePit.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFirePit_C:StaticMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFirePit.7"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPFirePit_C",
+    "Name": "Default__BPFirePit_C",
+    "Properties": {
+      "TemperatureModifierComponent": {
+        "ObjectName": "TemperatureModifierSphereComponent Default__BPFirePit_C:TemperatureModifierComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFirePit.19"
+      },
+      "FireMesh": {
+        "ObjectName": "StaticMeshComponent Default__BPFirePit_C:FireMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFirePit.17"
+      },
+      "Fire1ParticleSystem": {
+        "ObjectName": "ParticleSystemComponent Default__BPFirePit_C:Fire1ParticleSystem",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFirePit.8"
+      },
+      "Fire2ParticleSystem": {
+        "ObjectName": "ParticleSystemComponent Default__BPFirePit_C:Fire2ParticleSystem",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFirePit.9"
+      },
+      "Fire3ParticleSystem": {
+        "ObjectName": "ParticleSystemComponent Default__BPFirePit_C:Fire3ParticleSystem",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFirePit.10"
+      },
+      "FireSFXLoop": {
+        "ObjectName": "AudioComponent Default__BPFirePit_C:FireSFXLoop",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFirePit.4"
+      },
+      "DieselConsumptionRate": 300.0,
+      "ProceduralUseVolumeFactor": 1.0,
+      "NoBuildPhysicalMaterials": [
+        {
+          "ObjectName": "PhysicalMaterial IcePhys",
+          "ObjectPath": "War/Content/PhysicalMaterials/IcePhys.0"
+        }
+      ],
+      "BuildGhostClass": null,
+      "Description": {
+        "Namespace": "",
+        "Key": "BFD9047B46B1B1F5CE7BC49E3219D20B",
+        "SourceString": "A pit of fire used to keep soldiers warm during Snow Storms. Requires Diesel to fuel."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D FirePitIcon",
+        "ObjectPath": "War/Content/Textures/UI/StructureIcons/FirePitIcon.0"
+      },
+      "BuildLocationType": "EBuildLocationType::Anywhere",
+      "CodeName": "FirePit",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "07548A88486A71FF3E2BB385B00429DC",
+        "SourceString": "Fire Pit"
+      },
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPFirePit_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFirePit.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPFirePit_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFirePit.5"
+      },
+      "DestroyedFX": {
+        "ObjectName": "ParticleSystem ModBuildFlair",
+        "ObjectPath": "War/Content/FX/ModBuildFlair.14"
+      },
+      "DestroyedSoundCue": {
+        "ObjectName": "SoundCue WoodExplosion_cue",
+        "ObjectPath": "War/Content/Audio/SFX/Explosions/WoodExplosion_cue.0"
+      },
+      "MaxHealth": 400,
+      "Health": 400,
+      "DropLocationOffset": {
+        "X": 125.0,
+        "Y": 0.0,
+        "Z": 10.0
+      },
+      "bRotateDropLocation": true,
+      "IsVaultable": false,
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPFirePit_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFirePit.18"
+      },
+      "RemoteRole": "ROLE_None",
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPFirePit_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFirePit.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPFirePit_C"
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "FireSFXLoop",
+    "Outer": "Default__BPFirePit_C",
+    "Properties": {
+      "Sound": {
+        "ObjectName": "SoundCue Bonfire_Cue",
+        "ObjectPath": "War/Content/Audio/Ambient/Bonfire_Cue.0"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFirePit_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFirePit.3"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPFirePit_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 80.0,
+        "Y": 80.0,
+        "Z": 135.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFirePit_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFirePit.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 135.0
+      }
+    }
+  },
+  {
+    "Type": "DecalComponent",
+    "Name": "Decal_GEN_VARIABLE",
+    "Outer": "BPFirePit_C",
+    "Properties": {
+      "DecalMaterial": {
+        "ObjectName": "MaterialInstanceConstant AshDecal",
+        "ObjectPath": "War/Content/Materials/Decals/AshDecal.0"
+      },
+      "SortOrder": 5,
+      "DecalSize": {
+        "X": 128.0,
+        "Y": 175.0,
+        "Z": 175.0
+      },
+      "RelativeLocation": {
+        "X": 3.874302E-06,
+        "Y": -1.5258789E-05,
+        "Z": -59.644135
+      },
+      "RelativeRotation": {
+        "Pitch": -90.0,
+        "Yaw": 0.0,
+        "Roll": -0.0
+      }
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "StaticMesh",
+    "Outer": "BPFirePit_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "Fire1ParticleSystem",
+    "Outer": "Default__BPFirePit_C",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem FirePit01",
+        "ObjectPath": "War/Content/FX/FirePit01.68"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFirePit_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFirePit.3"
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "Fire2ParticleSystem",
+    "Outer": "Default__BPFirePit_C",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem FirePit02",
+        "ObjectPath": "War/Content/FX/FirePit02.68"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFirePit_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFirePit.3"
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "Fire3ParticleSystem",
+    "Outer": "Default__BPFirePit_C",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem FirePit03",
+        "ObjectPath": "War/Content/FX/FirePit03.68"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFirePit_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFirePit.3"
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPFirePit_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPFirePit_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFirePit.11"
+      },
+      "VariableGuid": "7CEB993F-4317825D-D4F213A0-CE235BF6",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPFirePit_C:StaticMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFirePit.16"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node BPFirePit_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPFirePit.14"
+        }
+      ],
+      "VariableGuid": "403F8494-4AE0AE2F-828E3ABF-2D4E3459",
+      "InternalVariableName": "StaticMesh"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class DecalComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "DecalComponent BPFirePit_C:Decal_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFirePit.6"
+      },
+      "VariableGuid": "65421144-4C407332-79F52BAE-A7B390A0",
+      "InternalVariableName": "Decal"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPFirePit_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPFirePit_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPFirePit.13"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPFirePit_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPFirePit.13"
+        },
+        {
+          "ObjectName": "SCS_Node BPFirePit_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPFirePit.14"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPFirePit_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFirePit.12"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh_GEN_VARIABLE",
+    "Outer": "BPFirePit_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh FirePit",
+        "ObjectPath": "War/Content/Meshes/Structures/FirePit.2"
+      },
+      "OverrideMaterials": [
+        null
+      ],
+      "BodyInstance": {
+        "CollisionProfileName": "StructureDamageableSeeThroughMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapDowncast",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "FireMesh",
+    "Outer": "Default__BPFirePit_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh FirePitFlame",
+        "ObjectPath": "War/Content/Meshes/Structures/FirePitFlame.2"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFirePit_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFirePit.3"
+      },
+      "bVisible": false
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPFirePit_C"
+  },
+  {
+    "Type": "TemperatureModifierSphereComponent",
+    "Name": "TemperatureModifierComponent",
+    "Outer": "Default__BPFirePit_C",
+    "Properties": {
+      "SphereRadius": 650.0,
+      "OnComponentBeginOverlap": null,
+      "OnComponentEndOverlap": null,
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFirePit_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFirePit.3"
+      }
+    }
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "T3ZombieShockwave",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "T3ZombieShockwave",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x4617"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "T3ZombieShockwave",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "Engine/Content/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "Material #494",
+          "ImportedMaterialSlotName": "Material #494",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1062.7394,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1062.7394,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.7925415,
+          "Y": -232.03482,
+          "Z": -14.384289
+        },
+        "BoxExtent": {
+          "X": 755.5352,
+          "Y": 492.67172,
+          "Z": 14.3843
+        },
+        "SphereRadius": 875.489
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup T3ZombieShockwave:BodySetup_0",
+      "ObjectPath": "War/Content/FX/Mesh/T3ZombieShockwave.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision T3ZombieShockwave:NavCollision_2",
+      "ObjectPath": "War/Content/FX/Mesh/T3ZombieShockwave.1"
+    },
+    "LightingGuid": "5568ABE4-42A30304-B4018E9C-41C76DFA",
+    "RenderData": null
+  }
+]

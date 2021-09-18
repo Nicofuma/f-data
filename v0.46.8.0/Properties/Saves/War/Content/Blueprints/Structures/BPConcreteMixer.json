@@ -1,0 +1,471 @@
+[
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "BPConcreteMixer_C",
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPConcreteMixer_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPConcreteMixer_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPConcreteMixer.24"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty BPConcreteMixer_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPConcreteMixer.0"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function BPConcreteMixer_C:ExecuteUbergraph_BPConcreteMixer",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPConcreteMixer.8"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class ConcreteMixer",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty BPConcreteMixer_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPConcreteMixer.0"
+      },
+      {
+        "ObjectName": "Function BPConcreteMixer_C:ReceiveBeginPlay",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPConcreteMixer.16"
+      },
+      {
+        "ObjectName": "Function BPConcreteMixer_C:UpdateVisuals_FastTick",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPConcreteMixer.17"
+      },
+      {
+        "ObjectName": "Function BPConcreteMixer_C:UpdateVisuals_SlowTick",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPConcreteMixer.18"
+      },
+      {
+        "ObjectName": "Function BPConcreteMixer_C:ExecuteUbergraph_BPConcreteMixer",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPConcreteMixer.8"
+      },
+      {
+        "ObjectName": "ObjectProperty BPConcreteMixer_C:RefiningSFX",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPConcreteMixer.6"
+      },
+      {
+        "ObjectName": "BoolProperty BPConcreteMixer_C:bIsPefiningSFXActive",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPConcreteMixer.5"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 9,
+    "ClassWithin": null,
+    "ClassConfigName": "/Game/Animation/WorldAssets/ConcreteMixer/ABP_ConcreteMixer_18",
+    "ClassGeneratedBy": null,
+    "Interfaces": [],
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPConcreteMixer_C",
+    "Name": "Default__BPConcreteMixer_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "MeshComponent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPConcreteMixer_C:SkeletalMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPConcreteMixer.25"
+      },
+      "PackagedMesh": {
+        "ObjectName": "StaticMesh ConcreteMixerPacked",
+        "ObjectPath": "War/Content/Meshes/Shippables/ConcreteMixerPacked.2"
+      },
+      "ResourceConverter": {
+        "RefinableItems": [
+          {
+            "SourceItemClass": {
+              "ObjectName": "BlueprintGeneratedClass BPComponentsPickup_C",
+              "ObjectPath": "War/Content/Blueprints/ItemPickups/BPComponentsPickup.0"
+            },
+            "RefinedItemClass": {
+              "ObjectName": "BlueprintGeneratedClass BPConcreteMaterials_C",
+              "ObjectPath": "War/Content/Blueprints/ItemPickups/BPConcreteMaterials.0"
+            },
+            "SpeedModifier": 30.0,
+            "YieldModifier": 0.1,
+            "MaxRefinedItemCount": 5000,
+            "TransferStackSize": 20
+          }
+        ]
+      },
+      "ProceduralUseVolumeFactor": 0.0,
+      "BuildGhostClass": null,
+      "BuildSiteClass": {
+        "ObjectName": "Class StructureBuildSite",
+        "ObjectPath": "/Script/War"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "898522CC4AC93FBD1DE535896836D8CF",
+        "SourceString": "A portable device that mixes various materials to form Concrete, which are used to build heavily fortified structures."
+      },
+      "ShippableInfo": {
+        "Type": "EShippableType::Normal"
+      },
+      "Icon": {
+        "ObjectName": "Texture2D ConcreteMixerIcon",
+        "ObjectPath": "War/Content/Textures/UI/StructureIcons/ConcreteMixerIcon.0"
+      },
+      "BuildLocationType": "EBuildLocationType::ConstructionYard",
+      "CodeName": "ConcreteMixer",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "D5B404CF40D1E05BD342BEA46DF35623",
+        "SourceString": "Concrete Mixer"
+      },
+      "ArmourType": "EArmourType::Tier2Structure",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPConcreteMixer_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPConcreteMixer.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPConcreteMixer_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPConcreteMixer.13"
+      },
+      "DestroyedFX": {
+        "ObjectName": "ParticleSystem GrenadeBlast",
+        "ObjectPath": "War/Content/FX/GrenadeBlast.151"
+      },
+      "DestroyedSoundCue": {
+        "ObjectName": "SoundCue StructureExplosionSmall_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/StructureExplosionSmall_Cue.0"
+      },
+      "TechID": "ETechID::UnlockConcreteMixer",
+      "MaxHealth": 1200,
+      "Health": 1200,
+      "ScreenToUse": "ESimScreen::ConcreteMixer",
+      "bIsStockpilable": true,
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPConcreteMixer_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPConcreteMixer.26"
+      },
+      "NetCullDistanceSquared": 25000000.0,
+      "MinNetUpdateFrequency": 1.0,
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPConcreteMixer_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPConcreteMixer.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPConcreteMixer_C"
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "RefiningSFX_GEN_VARIABLE",
+    "Outer": "BPConcreteMixer_C",
+    "Properties": {
+      "Sound": {
+        "ObjectName": "SoundCue ConcreteMixer_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Structure/ConcreteMixer/ConcreteMixer_Cue.0"
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "bIsPefiningSFXActive",
+    "Outer": "BPConcreteMixer_C",
+    "PropertyFlags": 65541,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "RefiningSFX",
+    "Outer": "BPConcreteMixer_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class AudioComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_BPConcreteMixer",
+    "PropertyFlags": 148
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BPConcreteMixer",
+    "Outer": "BPConcreteMixer_C",
+    "Children": [
+      {
+        "ObjectName": "IntProperty BPConcreteMixer_C:ExecuteUbergraph_BPConcreteMixer.EntryPoint",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPConcreteMixer.7"
+      },
+      {
+        "ObjectName": "DelegateProperty BPConcreteMixer_C:ExecuteUbergraph_BPConcreteMixer.K2Node_CreateDelegate_OutputDelegate",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPConcreteMixer.14"
+      },
+      {
+        "ObjectName": "StructProperty BPConcreteMixer_C:ExecuteUbergraph_BPConcreteMixer.CallFunc_K2_SetTimerDelegate_ReturnValue",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPConcreteMixer.27"
+      },
+      {
+        "ObjectName": "DelegateProperty BPConcreteMixer_C:ExecuteUbergraph_BPConcreteMixer.K2Node_CreateDelegate_OutputDelegate_1",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPConcreteMixer.15"
+      },
+      {
+        "ObjectName": "BoolProperty BPConcreteMixer_C:ExecuteUbergraph_BPConcreteMixer.CallFunc_IsRefining_ReturnValue",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPConcreteMixer.10"
+      },
+      {
+        "ObjectName": "StructProperty BPConcreteMixer_C:ExecuteUbergraph_BPConcreteMixer.CallFunc_K2_SetTimerDelegate_ReturnValue_1",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPConcreteMixer.28"
+      },
+      {
+        "ObjectName": "BoolProperty BPConcreteMixer_C:ExecuteUbergraph_BPConcreteMixer.CallFunc_HasAuthority_ReturnValue",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPConcreteMixer.9"
+      },
+      {
+        "ObjectName": "ObjectProperty BPConcreteMixer_C:ExecuteUbergraph_BPConcreteMixer.CallFunc_GetAnimInstance_ReturnValue",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPConcreteMixer.19"
+      },
+      {
+        "ObjectName": "ObjectProperty BPConcreteMixer_C:ExecuteUbergraph_BPConcreteMixer.K2Node_DynamicCast_AsABP_Concrete_Mixer",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPConcreteMixer.20"
+      },
+      {
+        "ObjectName": "BoolProperty BPConcreteMixer_C:ExecuteUbergraph_BPConcreteMixer.K2Node_DynamicCast_bSuccess",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPConcreteMixer.12"
+      },
+      {
+        "ObjectName": "BoolProperty BPConcreteMixer_C:ExecuteUbergraph_BPConcreteMixer.CallFunc_NotEqual_BoolBool_ReturnValue",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPConcreteMixer.11"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_HasAuthority_ReturnValue",
+    "Outer": "ExecuteUbergraph_BPConcreteMixer",
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsRefining_ReturnValue",
+    "Outer": "ExecuteUbergraph_BPConcreteMixer",
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_NotEqual_BoolBool_ReturnValue",
+    "Outer": "ExecuteUbergraph_BPConcreteMixer",
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess",
+    "Outer": "ExecuteUbergraph_BPConcreteMixer",
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPConcreteMixer_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 380.0,
+        "Y": 520.0,
+        "Z": 300.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPConcreteMixer_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPConcreteMixer.3"
+      }
+    }
+  },
+  {
+    "Type": "DelegateProperty",
+    "Name": "K2Node_CreateDelegate_OutputDelegate",
+    "Outer": "ExecuteUbergraph_BPConcreteMixer",
+    "SignatureFunction": {
+      "ObjectName": "DelegateFunction TimerDynamicDelegate__DelegateSignature",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "DelegateProperty",
+    "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+    "Outer": "ExecuteUbergraph_BPConcreteMixer",
+    "SignatureFunction": {
+      "ObjectName": "DelegateFunction TimerDynamicDelegate__DelegateSignature",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BPConcreteMixer_C",
+    "SuperStruct": {
+      "ObjectName": "Function Actor:ReceiveBeginPlay",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateVisuals_FastTick",
+    "Outer": "BPConcreteMixer_C",
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateVisuals_SlowTick",
+    "Outer": "BPConcreteMixer_C",
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetAnimInstance_ReturnValue",
+    "Outer": "ExecuteUbergraph_BPConcreteMixer",
+    "PropertyClass": {
+      "ObjectName": "Class AnimInstance",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsABP_Concrete_Mixer",
+    "Outer": "ExecuteUbergraph_BPConcreteMixer",
+    "PropertyClass": {
+      "ObjectName": "AnimBlueprintGeneratedClass ABP_ConcreteMixer_C",
+      "ObjectPath": "War/Content/Animation/WorldAssets/ConcreteMixer/ABP_ConcreteMixer.1"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPConcreteMixer_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPConcreteMixer_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPConcreteMixer.21"
+      },
+      "VariableGuid": "37B03939-494ABD7B-8233C4A5-6355017F",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class AudioComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "AudioComponent BPConcreteMixer_C:RefiningSFX_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPConcreteMixer.4"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "8F8750E4-40886A7F-0210C6B4-F7344D8C",
+      "InternalVariableName": "RefiningSFX"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPConcreteMixer_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPConcreteMixer_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPConcreteMixer.23"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPConcreteMixer_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPConcreteMixer.23"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPConcreteMixer_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPConcreteMixer.22"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SkeletalMesh",
+    "Outer": "Default__BPConcreteMixer_C",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_ConcreteMixer_C",
+        "ObjectPath": "War/Content/Animation/WorldAssets/ConcreteMixer/ABP_ConcreteMixer.1"
+      },
+      "AnimationData": {
+        "AnimToPlay": {
+          "ObjectName": "AnimSequence Anim_ConcreteMixer_mixing",
+          "ObjectPath": "War/Content/Animation/WorldAssets/ConcreteMixer/Anim_ConcreteMixer_mixing.0"
+        },
+        "bSavedPlaying": false
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_ConcreteMixer",
+        "ObjectPath": "War/Content/Meshes/Shippables/SK_ConcreteMixer.0"
+      },
+      "VisibilityBasedAnimTickOption": "EVisibilityBasedAnimTickOption::OnlyTickPoseWhenRendered",
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPConcreteMixer_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPConcreteMixer.3"
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPConcreteMixer_C"
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+    "Outer": "ExecuteUbergraph_BPConcreteMixer",
+    "Struct": {
+      "ObjectName": "ScriptStruct TimerHandle",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue_1",
+    "Outer": "ExecuteUbergraph_BPConcreteMixer",
+    "Struct": {
+      "ObjectName": "ScriptStruct TimerHandle",
+      "ObjectPath": "/Script/Engine"
+    }
+  }
+]

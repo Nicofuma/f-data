@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "WardenBagPickup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_6",
+    "Outer": "WardenBagPickup",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x752C"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "WardenBagPickup",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BagWarden",
+            "ObjectPath": "War/Content/Materials/Character/BagWarden.0"
+          },
+          "MaterialSlotName": "Material #521",
+          "ImportedMaterialSlotName": "Material #521",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 163.17104,
+            "LocalUVDensities": 176.26738,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 176.26738,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.9834957,
+          "Y": 0.0,
+          "Z": 18.022318
+        },
+        "BoxExtent": {
+          "X": 28.890247,
+          "Y": 55.909267,
+          "Z": 18.535328
+        },
+        "SphereRadius": 59.900696
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup WardenBagPickup:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Pickups/WardenBagPickup.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision WardenBagPickup:NavCollision_6",
+      "ObjectPath": "War/Content/Meshes/Pickups/WardenBagPickup.1"
+    },
+    "LightingGuid": "14FFF574-47355DB5-5CA48E85-4C94A5F7",
+    "RenderData": null
+  }
+]

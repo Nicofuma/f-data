@@ -1,0 +1,660 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "DefaultSceneRoot",
+    "Outer": "BPMapIntelligence_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SceneComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPMapIntelligence_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPMapIntelligence_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Data/BPMapIntelligence.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class MapIntelligence",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPMapIntelligence_C:DefaultSceneRoot",
+        "ObjectPath": "War/Content/Blueprints/Data/BPMapIntelligence.0"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPMapIntelligence_C",
+    "Name": "Default__BPMapIntelligence_C",
+    "Properties": {
+      "MapIntelligenceTypeConfigs": {
+        "FadeSeconds": 30.0,
+        "ExpirySeconds": 210.0,
+        "FactionIconBrush": {
+          "IconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D C-dot-act",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/C-dot-act.0"
+            }
+          },
+          "FadedIconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D C-dot-deact",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/C-dot-deact.0"
+            }
+          }
+        },
+        "FactionIconBrush": {
+          "IconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D W-dot-act",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/W-dot-act.0"
+            }
+          },
+          "FadedIconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D W-dot-deact",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/W-dot-deact.0"
+            }
+          }
+        },
+        "bRequiresPlayerLineOfSight": true
+      },
+      "MapIntelligenceTypeConfigs": {
+        "ExpirySeconds": 300.0,
+        "FactionIconBrush": {
+          "IconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D C-triang-act",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/C-triang-act.0"
+            }
+          },
+          "FadedIconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D C-triang-deact",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/C-triang-deact.0"
+            }
+          }
+        },
+        "FactionIconBrush": {
+          "IconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D W-triang-act",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/W-triang-act.0"
+            }
+          },
+          "FadedIconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D W-triang-deact",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/W-triang-deact.0"
+            }
+          }
+        }
+      },
+      "MapIntelligenceTypeConfigs": {
+        "FadeSeconds": 210.0,
+        "ExpirySeconds": 450.0,
+        "FactionIconBrush": {
+          "IconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D C-shield-act",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/C-shield-act.0"
+            }
+          },
+          "FadedIconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D C-shield-deact",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/C-shield-deact.0"
+            }
+          }
+        },
+        "FactionIconBrush": {
+          "IconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D W-shield-act",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/W-shield-act.0"
+            }
+          },
+          "FadedIconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D W-shield-deact",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/W-shield-deact.0"
+            }
+          }
+        }
+      },
+      "MapIntelligenceTypeConfigs": {
+        "FadeSeconds": 210.0,
+        "ExpirySeconds": 450.0,
+        "FactionIconBrush": {
+          "IconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D C-shevron-act",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/C-shevron-act.0"
+            }
+          },
+          "FadedIconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D C-shevron-deact",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/C-shevron-deact.0"
+            }
+          }
+        },
+        "FactionIconBrush": {
+          "IconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D W-shevron-act",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/W-shevron-act.0"
+            }
+          },
+          "FadedIconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D W-shevron-deact",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/W-shevron-deact.0"
+            }
+          }
+        }
+      },
+      "MapIntelligenceTypeConfigs": {
+        "FadeSeconds": 300.0,
+        "ExpirySeconds": 600.0,
+        "FactionIconBrush": {
+          "IconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D C-square-act",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/C-square-act.0"
+            }
+          },
+          "FadedIconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D C-square-deact",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/C-square-deact.0"
+            }
+          }
+        },
+        "FactionIconBrush": {
+          "IconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D W-square-act",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/W-square-act.0"
+            }
+          },
+          "FadedIconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D W-square-deact",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/W-square-deact.0"
+            }
+          }
+        }
+      },
+      "MapIntelligenceTypeConfigs": {
+        "FadeSeconds": 240.0,
+        "ExpirySeconds": 540.0,
+        "FactionIconBrush": {
+          "IconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D C-diamond-act",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/C-diamond-act.0"
+            }
+          },
+          "FadedIconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D C-diamond-deact",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/C-diamond-deact.0"
+            }
+          }
+        },
+        "FactionIconBrush": {
+          "IconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D W-diamond-act",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/W-diamond-act.0"
+            }
+          },
+          "FadedIconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D W-diamond-deact",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/W-diamond-deact.0"
+            }
+          }
+        }
+      },
+      "MapIntelligenceTypeConfigs": {
+        "FadeSeconds": 240.0,
+        "ExpirySeconds": 540.0,
+        "FactionIconBrush": {
+          "IconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D C-diamond-act",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/C-diamond-act.0"
+            }
+          },
+          "FadedIconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D C-diamond-deact",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/C-diamond-deact.0"
+            }
+          }
+        },
+        "FactionIconBrush": {
+          "IconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D W-diamond-act",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/W-diamond-act.0"
+            }
+          },
+          "FadedIconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D W-diamond-deact",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/W-diamond-deact.0"
+            }
+          }
+        }
+      },
+      "MapIntelligenceTypeConfigs": {
+        "FadeSeconds": 240.0,
+        "ExpirySeconds": 540.0,
+        "FactionIconBrush": {
+          "IconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D C-Medical-act",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/C-Medical-act.0"
+            }
+          },
+          "FadedIconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D C-Medical-deact",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/C-Medical-deact.0"
+            }
+          }
+        },
+        "FactionIconBrush": {
+          "IconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D W-Medical-act",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/W-Medical-act.0"
+            }
+          },
+          "FadedIconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D W-Medical-deact",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/W-Medical-deact.0"
+            }
+          }
+        }
+      },
+      "MapIntelligenceTypeConfigs": {
+        "FadeSeconds": 240.0,
+        "ExpirySeconds": 540.0
+      },
+      "MapIntelligenceTypeConfigs": {
+        "FadeSeconds": 30.0,
+        "ExpirySeconds": 210.0,
+        "FactionIconBrush": {
+          "IconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "TintColor": {
+              "SpecifiedColor": {
+                "R": 0.341915,
+                "G": 0.029557,
+                "B": 0.030713,
+                "A": 1.0,
+                "Hex": "570808"
+              }
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D C-dot-deact",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/C-dot-deact.0"
+            }
+          },
+          "FadedIconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "TintColor": {
+              "SpecifiedColor": {
+                "R": 0.341915,
+                "G": 0.029557,
+                "B": 0.030713,
+                "A": 0.4,
+                "Hex": "66570808"
+              }
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D C-dot-deact",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/C-dot-deact.0"
+            }
+          }
+        },
+        "FactionIconBrush": {
+          "IconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "TintColor": {
+              "SpecifiedColor": {
+                "R": 0.341915,
+                "G": 0.029557,
+                "B": 0.030713,
+                "A": 1.0,
+                "Hex": "570808"
+              }
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D C-dot-deact",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/C-dot-deact.0"
+            }
+          },
+          "FadedIconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "TintColor": {
+              "SpecifiedColor": {
+                "R": 0.341915,
+                "G": 0.029557,
+                "B": 0.030713,
+                "A": 0.4,
+                "Hex": "66570808"
+              }
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D C-dot-deact",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/C-dot-deact.0"
+            }
+          }
+        },
+        "bRequiresPlayerLineOfSight": true
+      },
+      "MapIntelligenceTypeConfigs": {
+        "FadeSeconds": 240.0,
+        "ExpirySeconds": 540.0,
+        "FactionIconBrush": {
+          "IconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D C-diamond-act",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/C-diamond-act.0"
+            }
+          },
+          "FadedIconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D C-diamond-deact",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/C-diamond-deact.0"
+            }
+          }
+        },
+        "FactionIconBrush": {
+          "IconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D W-diamond-act",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/W-diamond-act.0"
+            }
+          },
+          "FadedIconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D W-diamond-deact",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/W-diamond-deact.0"
+            }
+          }
+        }
+      },
+      "MapIntelligenceTypeConfigs": {
+        "FadeSeconds": 240.0,
+        "ExpirySeconds": 540.0,
+        "FactionIconBrush": {
+          "IconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D C-diamond-act",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/C-diamond-act.0"
+            }
+          },
+          "FadedIconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D C-diamond-deact",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/C-diamond-deact.0"
+            }
+          }
+        },
+        "FactionIconBrush": {
+          "IconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D W-diamond-act",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/W-diamond-act.0"
+            }
+          },
+          "FadedIconBrush": {
+            "ImageSize": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D W-diamond-deact",
+              "ObjectPath": "War/Content/Textures/UI/MapIcons/Intel/W-diamond-deact.0"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPMapIntelligence_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPMapIntelligence_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Data/BPMapIntelligence.3"
+      },
+      "VariableGuid": "006F0129-412866CD-D6C0D093-E4B0920F",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPMapIntelligence_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPMapIntelligence_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "War/Content/Blueprints/Data/BPMapIntelligence.4"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPMapIntelligence_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "War/Content/Blueprints/Data/BPMapIntelligence.4"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPMapIntelligence_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Data/BPMapIntelligence.4"
+      }
+    }
+  }
+]

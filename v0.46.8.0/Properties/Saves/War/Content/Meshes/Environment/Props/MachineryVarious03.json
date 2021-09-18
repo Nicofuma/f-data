@@ -1,0 +1,104 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "MachineryVarious03",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_3",
+    "Outer": "MachineryVarious03",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x231B3"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "MachineryVarious03",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownCoalPlantMetal01",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownCoalPlantMetal01.0"
+          },
+          "MaterialSlotName": "Material #1021",
+          "ImportedMaterialSlotName": "Material #1021",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 721.5222,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Chainlink",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Chainlink.0"
+          },
+          "MaterialSlotName": "Material #1022",
+          "ImportedMaterialSlotName": "Material #1022",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 100.02596,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 711.94525,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -6.1035156E-05,
+          "Y": 0.0,
+          "Z": 258.9839
+        },
+        "BoxExtent": {
+          "X": 182.28616,
+          "Y": 259.4989,
+          "Z": 313.72632
+        },
+        "SphereRadius": 410.39386
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup MachineryVarious03:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/MachineryVarious03.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision MachineryVarious03:NavCollision_3",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/MachineryVarious03.1"
+    },
+    "LightingGuid": "9A60BB33-4421D455-D522F0A4-0362CF5C",
+    "RenderData": null
+  }
+]

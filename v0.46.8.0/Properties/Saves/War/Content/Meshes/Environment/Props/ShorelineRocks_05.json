@@ -1,0 +1,89 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ShorelineRocks_05",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "ShorelineRocks_05",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x42F8"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ShorelineRocks_05",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ShorelineRocks",
+            "ObjectPath": "War/Content/Materials/Environment/ShorelineRocks.0"
+          },
+          "MaterialSlotName": "ShorelineRocks",
+          "ImportedMaterialSlotName": "ShorelineRocks",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 286.07715,
+            "LocalUVDensities": 144.22827,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 144.22827,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 3.8146973E-06,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 24.863333,
+          "Y": 37.121437,
+          "Z": 23.882278
+        },
+        "SphereRadius": 41.810436
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ShorelineRocks_05:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ShorelineRocks_05.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ShorelineRocks_05:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ShorelineRocks_05.1"
+    },
+    "LightingGuid": "CEE29A83-444DD099-4B661CA1-1A6C994B",
+    "RenderData": null
+  }
+]

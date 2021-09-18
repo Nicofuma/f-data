@@ -1,0 +1,121 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "RifleLightCPickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript RifleLightCPickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleLightCPickup.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class FirearmPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "RifleLightCPickup_C",
+    "Name": "Default__RifleLightCPickup_C",
+    "Properties": {
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass RifleLightCComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Items/RifleLightCComponent.0"
+      },
+      "CodeName": "RifleLightC",
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "C4063B6B44E3F25EBA2C36A73EE1F4D5",
+        "SourceString": "Rifle"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "C785DD3349F592FB7D2FD4967D9869E0",
+        "SourceString": "Fuscina pi.I"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "3BE591A74D78FD7F36DCD59B260FDC91",
+        "SourceString": "This unique rifle fires three rounds in rapid succession. The Fuscina is the first of its kind, designed for laying down suppressive fire during assaults on fortified enemy entrenchments."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D RifleLightCItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/RifleLightCItemIcon.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Primary",
+      "ItemCategory": "EItemCategory::SmallArms",
+      "ItemFlagsMask": 129,
+      "ItemProfileType": "EItemProfileType::HandheldWeapon",
+      "FactionVariant": "EFactionId::Colonials",
+      "TechID": "ETechID::UnlockRifleLight",
+      "ItemMesh": {
+        "ObjectName": "StaticMeshComponent Default__RifleLightCPickup_C:ItemMesh",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleLightCPickup.6"
+      },
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__RifleLightCPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleLightCPickup.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__RifleLightCPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleLightCPickup.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__RifleLightCPickup_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "RifleLightCPickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent RifleLightCPickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleLightCPickup.3"
+      },
+      "VariableGuid": "B75C5946-482C8E30-9A9ABC90-FC718626",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "RifleLightCPickup_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node RifleLightCPickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleLightCPickup.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__RifleLightCPickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__RifleLightCPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleLightCPickup.2"
+      }
+    }
+  }
+]

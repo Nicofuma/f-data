@@ -1,0 +1,121 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "RifleHeavyCPickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript RifleHeavyCPickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleHeavyCPickup.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class FirearmPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "RifleHeavyCPickup_C",
+    "Name": "Default__RifleHeavyCPickup_C",
+    "Properties": {
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass RifleHeavyCComponent_C",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleHeavyCComponent.0"
+      },
+      "CodeName": "RifleHeavyC",
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "C7C648304E7342CB9863B8B4A3529374",
+        "SourceString": "Heavy Rifle"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "3729A9FF46DEDAF0BE90E98712306EA0",
+        "SourceString": "Volta r.I Repeater"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "50FF15824C617C52A195538A0257910E",
+        "SourceString": "An old war Mesean rifle. It boasts high stopping power, but not as accurate as its modern variant. A weapon of legend, the Howling Lions wielded the Volta during their raid on the beaches of Fisherman’s Row."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D RifleHeavyCItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/RifleHeavyCItemIcon.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Primary",
+      "ItemCategory": "EItemCategory::SmallArms",
+      "ItemFlagsMask": 129,
+      "ItemProfileType": "EItemProfileType::HandheldWeapon",
+      "FactionVariant": "EFactionId::Colonials",
+      "TechID": "ETechID::UnlockRifleHeavy",
+      "ItemMesh": {
+        "ObjectName": "StaticMeshComponent Default__RifleHeavyCPickup_C:ItemMesh",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleHeavyCPickup.6"
+      },
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__RifleHeavyCPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleHeavyCPickup.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__RifleHeavyCPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleHeavyCPickup.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__RifleHeavyCPickup_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "RifleHeavyCPickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent RifleHeavyCPickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleHeavyCPickup.3"
+      },
+      "VariableGuid": "7618B329-4EFE72C9-D72654B7-ED3B4F87",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "RifleHeavyCPickup_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node RifleHeavyCPickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleHeavyCPickup.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__RifleHeavyCPickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__RifleHeavyCPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/RifleHeavyCPickup.2"
+      }
+    }
+  }
+]

@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "CarbinePickup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "CarbinePickup",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xDD11"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "CarbinePickup",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Carbine",
+            "ObjectPath": "War/Content/Materials/Weapons/Carbine.0"
+          },
+          "MaterialSlotName": "Material #29",
+          "ImportedMaterialSlotName": "Material #29",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 90.81136,
+            "LocalUVDensities": 108.72088,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 108.72088,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.6021042,
+          "Y": -3.0250473,
+          "Z": 3.7742188
+        },
+        "BoxExtent": {
+          "X": 49.300964,
+          "Y": 56.749817,
+          "Z": 3.9733002
+        },
+        "SphereRadius": 73.72708
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup CarbinePickup:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Resources/CarbinePickup.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision CarbinePickup:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Resources/CarbinePickup.1"
+    },
+    "LightingGuid": "45D79323-419831B9-01E41C96-242F1F16",
+    "RenderData": null
+  }
+]

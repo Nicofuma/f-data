@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Glass02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Glass02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2B19"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Glass02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant GlassBottles01",
+            "ObjectPath": "War/Content/Materials/Environment/Props/GlassBottles01.0"
+          },
+          "MaterialSlotName": "Material #1097",
+          "ImportedMaterialSlotName": "Material #1097",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 123.3032,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 123.3032,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -3.8146973E-06,
+          "Y": 9.536743E-07,
+          "Z": 14.663932
+        },
+        "BoxExtent": {
+          "X": 8.0253105,
+          "Y": 7.6325254,
+          "Z": 13.653684
+        },
+        "SphereRadius": 15.837572
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Glass02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Glass02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Glass02:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Glass02.1"
+    },
+    "LightingGuid": "A82EDFA2-471D3862-2D4B6982-6AD2E53A",
+    "RenderData": null
+  }
+]

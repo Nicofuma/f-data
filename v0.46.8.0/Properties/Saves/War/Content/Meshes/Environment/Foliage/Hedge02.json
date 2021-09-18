@@ -1,0 +1,114 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Hedge02",
+    "Properties": {
+      "AggGeom": {
+        "SphereElems": [
+          {
+            "Center": {
+              "X": 12.1380005,
+              "Y": -9.145571,
+              "Z": 128.00761
+            },
+            "Radius": 232.57817,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_87",
+    "Outer": "Hedge02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 5521,
+        "SizeOnDisk": 5521,
+        "OffsetInFile": "0xA3E6"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Hedge02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BirchBush02",
+            "ObjectPath": "War/Content/Materials/Environment/Props/BirchBush02.0"
+          },
+          "MaterialSlotName": "Material #2890",
+          "ImportedMaterialSlotName": "Material #2890",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 195.00699,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BirchBush",
+            "ObjectPath": "War/Content/Materials/Environment/Props/BirchBush.0"
+          },
+          "MaterialSlotName": "Material #2775",
+          "ImportedMaterialSlotName": "Material #2775",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 194.05847,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 194.35577,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -3.0517578E-05,
+          "Y": 3.0517578E-05,
+          "Z": 202.44737
+        },
+        "BoxExtent": {
+          "X": 314.03766,
+          "Y": 294.03165,
+          "Z": 221.20863
+        },
+        "SphereRadius": 360.78644
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Hedge02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/Hedge02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Hedge02:NavCollision_87",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/Hedge02.1"
+    },
+    "LightingGuid": "98E46D2A-4011A7F3-C6B10385-292F3F62",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_33",
+    "Outer": "StaticDecalPlane",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "StaticDecalPlane",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xB7D"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "StaticDecalPlane",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "Engine/Content/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 120.0,
+            "LocalUVDensities": 121.90476,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 121.90476,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 60.0,
+          "Y": 60.0,
+          "Z": 7.1525574E-06
+        },
+        "SphereRadius": 84.85281
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup StaticDecalPlane:BodySetup_33",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/StaticDecalPlane.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision StaticDecalPlane:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/StaticDecalPlane.1"
+    },
+    "LightingGuid": "A532EDBD-45E35F33-FB0F98AC-79053BE6",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,464 @@
+[
+  {
+    "Type": "Material",
+    "Name": "GroundCracks",
+    "Properties": {
+      "Normal": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMaterialFunctionCall_4",
+        "UseConstant": false,
+        "Constant": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        }
+      },
+      "EmissiveColor": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionLinearInterpolate_1",
+        "UseConstant": false,
+        "Constant": {
+          "R": 0,
+          "G": 0,
+          "B": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "MaterialDomain": "MD_DeferredDecal",
+      "BlendMode": "BLEND_Translucent",
+      "Expressions": [
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionMaterialFunctionCall GroundCracks:MaterialExpressionMaterialFunctionCall_4",
+          "ObjectPath": "War/Content/FX/Materials/GroundCracks.3"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionVectorParameter GroundCracks:MaterialExpressionVectorParameter_0",
+          "ObjectPath": "War/Content/FX/Materials/GroundCracks.14"
+        },
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSample GroundCracks:MaterialExpressionTextureSample_3",
+          "ObjectPath": "War/Content/FX/Materials/GroundCracks.9"
+        },
+        {
+          "ObjectName": "MaterialExpressionMaterialFunctionCall GroundCracks:MaterialExpressionMaterialFunctionCall_1",
+          "ObjectPath": "War/Content/FX/Materials/GroundCracks.1"
+        },
+        {
+          "ObjectName": "MaterialExpressionTextureObject GroundCracks:MaterialExpressionTextureObject_0",
+          "ObjectPath": "War/Content/FX/Materials/GroundCracks.7"
+        },
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureObject GroundCracks:MaterialExpressionTextureObject_1",
+          "ObjectPath": "War/Content/FX/Materials/GroundCracks.8"
+        },
+        {
+          "ObjectName": "MaterialExpressionMaterialFunctionCall GroundCracks:MaterialExpressionMaterialFunctionCall_3",
+          "ObjectPath": "War/Content/FX/Materials/GroundCracks.2"
+        },
+        {
+          "ObjectName": "MaterialExpressionTextureSample GroundCracks:MaterialExpressionTextureSample_4",
+          "ObjectPath": "War/Content/FX/Materials/GroundCracks.10"
+        },
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter GroundCracks:MaterialExpressionScalarParameter_0",
+          "ObjectPath": "War/Content/FX/Materials/GroundCracks.5"
+        },
+        {
+          "ObjectName": "MaterialExpressionScalarParameter GroundCracks:MaterialExpressionScalarParameter_1",
+          "ObjectPath": "War/Content/FX/Materials/GroundCracks.6"
+        },
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSample GroundCracks:MaterialExpressionTextureSample_5",
+          "ObjectPath": "War/Content/FX/Materials/GroundCracks.11"
+        },
+        {
+          "ObjectName": "MaterialExpressionTextureSample GroundCracks:MaterialExpressionTextureSample_6",
+          "ObjectPath": "War/Content/FX/Materials/GroundCracks.12"
+        },
+        null,
+        {
+          "ObjectName": "MaterialExpressionMaterialFunctionCall GroundCracks:MaterialExpressionMaterialFunctionCall_6",
+          "ObjectPath": "War/Content/FX/Materials/GroundCracks.4"
+        },
+        {
+          "ObjectName": "MaterialExpressionTextureSample GroundCracks:MaterialExpressionTextureSample_7",
+          "ObjectPath": "War/Content/FX/Materials/GroundCracks.13"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "MaterialFunctionInfos": [
+        {
+          "StateId": "F5C2D477-4BA63455-E32B4B96-0D7674B6",
+          "Function": {
+            "ObjectName": "MaterialFunction BlendAngleCorrectedNormals",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BlendAngleCorrectedNormals.0"
+          }
+        },
+        {
+          "StateId": "B7C71B91-4E2BB667-772D6CBE-2AB55665",
+          "Function": {
+            "ObjectName": "MaterialFunction LinearGradient",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient.0"
+          }
+        },
+        {
+          "StateId": "1F3C7ECC-4653CAFB-2A6AEE82-B1F2F3A5",
+          "Function": {
+            "ObjectName": "MaterialFunction CheapContrast",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast.1"
+          }
+        },
+        {
+          "StateId": "5B938C50-440B6892-955AD79F-CD1A8337",
+          "Function": {
+            "ObjectName": "MaterialFunction BreakOutFloat3Components",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components.0"
+          }
+        },
+        {
+          "StateId": "C330DE33-4A86FAB2-7255B1AC-3A6AC1B4",
+          "Function": {
+            "ObjectName": "MaterialFunction Transform3x3Matrix",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Math/Transform3x3Matrix.1"
+          }
+        },
+        {
+          "StateId": "972EFAAA-4C1C2B16-4BC287A2-B11C51DA",
+          "Function": {
+            "ObjectName": "MaterialFunction SafeNormalize",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/SafeNormalize.0"
+          }
+        },
+        {
+          "StateId": "B404464D-42313D79-E67091AA-AD61BE51",
+          "Function": {
+            "ObjectName": "MaterialFunction CreateThirdOrthogonalVector",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Math/CreateThirdOrthogonalVector.2"
+          }
+        },
+        {
+          "StateId": "E6A85460-4E707DD6-EBF457B4-A3E80A43",
+          "Function": {
+            "ObjectName": "MaterialFunction MakeFloat3",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3.0"
+          }
+        },
+        {
+          "StateId": "2C1DDB6E-406BC9FC-1D4141A1-7C82122A",
+          "Function": {
+            "ObjectName": "MaterialFunction BreakOutFloat2Components",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.0"
+          }
+        },
+        {
+          "StateId": "2BF7C43C-4A3799C4-F55B908F-E2320BF3",
+          "Function": {
+            "ObjectName": "MaterialFunction WorldAlignedNormals_HighQuality",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/WorldAlignedNormals_HighQuality.19"
+          }
+        },
+        {
+          "StateId": "4D973FF3-483B40BB-A5130A98-0654EB79",
+          "Function": {
+            "ObjectName": "MaterialFunction WorldAlignedNormal",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/WorldAlignedNormal.7"
+          }
+        },
+        {
+          "StateId": "B7C71B91-4E2BB667-772D6CBE-2AB55665",
+          "Function": {
+            "ObjectName": "MaterialFunction LinearGradient",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient.0"
+          }
+        },
+        {
+          "StateId": "1F3C7ECC-4653CAFB-2A6AEE82-B1F2F3A5",
+          "Function": {
+            "ObjectName": "MaterialFunction CheapContrast",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast.1"
+          }
+        },
+        {
+          "StateId": "BDC7AB9C-418E30AC-5815BFB0-1EF022E9",
+          "Function": {
+            "ObjectName": "MaterialFunction WorldAlignedTexture",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/WorldAlignedTexture.6"
+          }
+        },
+        {
+          "StateId": "B7C71B91-4E2BB667-772D6CBE-2AB55665",
+          "Function": {
+            "ObjectName": "MaterialFunction LinearGradient",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient.0"
+          }
+        },
+        {
+          "StateId": "62DC688F-43F7E16F-0CF5F486-8458FADB",
+          "Function": {
+            "ObjectName": "MaterialFunction ValueStep",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/ValueStep.1"
+          }
+        }
+      ],
+      "bCanMaskedBeAssumedOpaque": true,
+      "StateId": "A3560E03-4021C546-F9F4DD99-03B29968",
+      "CachedQualityLevelsUsed": [
+        false,
+        true,
+        false
+      ]
+    }
+  },
+  {
+    "Type": "MaterialExpressionMaterialFunctionCall",
+    "Name": "MaterialExpressionMaterialFunctionCall_1",
+    "Outer": "GroundCracks",
+    "Properties": {
+      "MaterialFunction": {
+        "ObjectName": "MaterialFunction WorldAlignedNormal",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/WorldAlignedNormal.7"
+      },
+      "Material": {
+        "ObjectName": "Material GroundCracks",
+        "ObjectPath": "War/Content/FX/Materials/GroundCracks.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionMaterialFunctionCall",
+    "Name": "MaterialExpressionMaterialFunctionCall_3",
+    "Outer": "GroundCracks",
+    "Properties": {
+      "MaterialFunction": {
+        "ObjectName": "MaterialFunction WorldAlignedTexture",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/WorldAlignedTexture.6"
+      },
+      "Material": {
+        "ObjectName": "Material GroundCracks",
+        "ObjectPath": "War/Content/FX/Materials/GroundCracks.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionMaterialFunctionCall",
+    "Name": "MaterialExpressionMaterialFunctionCall_4",
+    "Outer": "GroundCracks",
+    "Properties": {
+      "MaterialFunction": {
+        "ObjectName": "MaterialFunction BlendAngleCorrectedNormals",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BlendAngleCorrectedNormals.0"
+      },
+      "Material": {
+        "ObjectName": "Material GroundCracks",
+        "ObjectPath": "War/Content/FX/Materials/GroundCracks.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionMaterialFunctionCall",
+    "Name": "MaterialExpressionMaterialFunctionCall_6",
+    "Outer": "GroundCracks",
+    "Properties": {
+      "MaterialFunction": {
+        "ObjectName": "MaterialFunction ValueStep",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/ValueStep.1"
+      },
+      "Material": {
+        "ObjectName": "Material GroundCracks",
+        "ObjectPath": "War/Content/FX/Materials/GroundCracks.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_0",
+    "Outer": "GroundCracks",
+    "Properties": {
+      "DefaultValue": 700.0,
+      "ParameterName": "Crack Tiling",
+      "ExpressionGUID": "6F3817FE-4E5BA034-833C9086-7C018614",
+      "Material": {
+        "ObjectName": "Material GroundCracks",
+        "ObjectPath": "War/Content/FX/Materials/GroundCracks.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_1",
+    "Outer": "GroundCracks",
+    "Properties": {
+      "DefaultValue": 6.827535,
+      "ParameterName": "Glow Amount",
+      "ExpressionGUID": "E980999B-4D67BD12-DA2D598E-62B55B9C",
+      "Material": {
+        "ObjectName": "Material GroundCracks",
+        "ObjectPath": "War/Content/FX/Materials/GroundCracks.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureObject",
+    "Name": "MaterialExpressionTextureObject_0",
+    "Outer": "GroundCracks",
+    "Properties": {
+      "Texture": {
+        "ObjectName": "Texture2D ZombieT3CracksN",
+        "ObjectPath": "War/Content/FX/Textures/ZombieT3CracksN.0"
+      },
+      "SamplerType": "SAMPLERTYPE_Normal",
+      "Material": {
+        "ObjectName": "Material GroundCracks",
+        "ObjectPath": "War/Content/FX/Materials/GroundCracks.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureObject",
+    "Name": "MaterialExpressionTextureObject_1",
+    "Outer": "GroundCracks",
+    "Properties": {
+      "Texture": {
+        "ObjectName": "Texture2D ZombieT3Cracks",
+        "ObjectPath": "War/Content/FX/Textures/ZombieT3Cracks.0"
+      },
+      "Material": {
+        "ObjectName": "Material GroundCracks",
+        "ObjectPath": "War/Content/FX/Materials/GroundCracks.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_3",
+    "Outer": "GroundCracks",
+    "Properties": {
+      "Texture": {
+        "ObjectName": "Texture2D TrenchDirtTile2A",
+        "ObjectPath": "War/Content/Meshes/Environment/BaseBuildingPrototype/TrenchDirtTile2A.0"
+      },
+      "Material": {
+        "ObjectName": "Material GroundCracks",
+        "ObjectPath": "War/Content/FX/Materials/GroundCracks.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_4",
+    "Outer": "GroundCracks",
+    "Properties": {
+      "Texture": {
+        "ObjectName": "Texture2D ZombieT3Cracks",
+        "ObjectPath": "War/Content/FX/Textures/ZombieT3Cracks.0"
+      },
+      "Material": {
+        "ObjectName": "Material GroundCracks",
+        "ObjectPath": "War/Content/FX/Materials/GroundCracks.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_5",
+    "Outer": "GroundCracks",
+    "Properties": {
+      "Texture": {
+        "ObjectName": "Texture2D TrenchDirtTileM",
+        "ObjectPath": "War/Content/Textures/Props/TrenchDirtTileM.0"
+      },
+      "SamplerType": "SAMPLERTYPE_LinearColor",
+      "Material": {
+        "ObjectName": "Material GroundCracks",
+        "ObjectPath": "War/Content/FX/Materials/GroundCracks.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_6",
+    "Outer": "GroundCracks",
+    "Properties": {
+      "Texture": {
+        "ObjectName": "Texture2D TrenchDirtTileN",
+        "ObjectPath": "War/Content/Textures/Props/TrenchDirtTileN.0"
+      },
+      "SamplerType": "SAMPLERTYPE_Normal",
+      "Material": {
+        "ObjectName": "Material GroundCracks",
+        "ObjectPath": "War/Content/FX/Materials/GroundCracks.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_7",
+    "Outer": "GroundCracks",
+    "Properties": {
+      "Texture": {
+        "ObjectName": "Texture2D TilingNoise03",
+        "ObjectPath": "War/Content/Blueprints/FogSheet/Textures/Noise/TilingNoise03.0"
+      },
+      "SamplerType": "SAMPLERTYPE_LinearColor",
+      "Material": {
+        "ObjectName": "Material GroundCracks",
+        "ObjectPath": "War/Content/FX/Materials/GroundCracks.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionVectorParameter",
+    "Name": "MaterialExpressionVectorParameter_0",
+    "Outer": "GroundCracks",
+    "Properties": {
+      "DefaultValue": {
+        "R": 10.0,
+        "G": 0.1,
+        "B": 0.05,
+        "A": 1.0,
+        "Hex": "F61A0D"
+      },
+      "ParameterName": "Colour",
+      "ExpressionGUID": "335D4739-49ADE6A7-F186E485-1580B357",
+      "Material": {
+        "ObjectName": "Material GroundCracks",
+        "ObjectPath": "War/Content/FX/Materials/GroundCracks.0"
+      }
+    }
+  }
+]

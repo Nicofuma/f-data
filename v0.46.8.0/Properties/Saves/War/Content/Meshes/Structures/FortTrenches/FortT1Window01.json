@@ -1,0 +1,168 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FortT1Window01",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -250.0,
+                "Y": 10.0,
+                "Z": 0.0
+              },
+              {
+                "X": 250.0,
+                "Y": 10.0,
+                "Z": 0.0
+              },
+              {
+                "X": -250.0,
+                "Y": -10.0,
+                "Z": 0.0
+              },
+              {
+                "X": 250.0,
+                "Y": -10.0,
+                "Z": 0.0
+              },
+              {
+                "X": -250.0,
+                "Y": 10.0,
+                "Z": 150.0
+              },
+              {
+                "X": 250.0,
+                "Y": 10.0,
+                "Z": 150.0
+              },
+              {
+                "X": -250.0,
+                "Y": -10.0,
+                "Z": 150.0
+              },
+              {
+                "X": 250.0,
+                "Y": -10.0,
+                "Z": 150.0
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -250.0,
+                "Y": -10.0,
+                "Z": 0.0
+              },
+              "Max": {
+                "X": 250.0,
+                "Y": 10.0,
+                "Z": 150.0
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "FortT1Window01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 457,
+        "SizeOnDisk": 457,
+        "OffsetInFile": "0x94A1"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FortT1Window01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortT1WoodLogs01",
+            "ObjectPath": "War/Content/Materials/Structures/FortT1WoodLogs01.0"
+          },
+          "MaterialSlotName": "T1WoodLogs01",
+          "ImportedMaterialSlotName": "T1WoodLogs01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 344.18164,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 344.18164,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.852478,
+          "Y": 5.1994286,
+          "Z": 128.8024
+        },
+        "BoxExtent": {
+          "X": 251.13626,
+          "Y": 23.340084,
+          "Z": 138.36427
+        },
+        "SphereRadius": 286.0549
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FortT1Window01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortT1Window01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FortT1Window01:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortT1Window01.1"
+    },
+    "LightingGuid": "5560F697-4DCF4A2F-5FFCE387-304EB7B2",
+    "RenderData": null
+  }
+]

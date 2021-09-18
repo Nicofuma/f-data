@@ -1,0 +1,250 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPMetalBeamPlatform_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPMetalBeamPlatform_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPMetalBeamPlatform.9"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class MaterialPlatform",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPMetalBeamPlatform_C",
+    "Name": "Default__BPMetalBeamPlatform_C",
+    "Properties": {
+      "MeshComponent": {
+        "ObjectName": "StaticMeshComponent Default__BPMetalBeamPlatform_C:Mesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPMetalBeamPlatform.10"
+      },
+      "BoxCollision": {
+        "ObjectName": "BoxComponent Default__BPMetalBeamPlatform_C:BoxCollision",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPMetalBeamPlatform.3"
+      },
+      "InstancedStaticMeshComponent": {
+        "ObjectName": "InstancedStaticMeshComponent Default__BPMetalBeamPlatform_C:InstancedStaticMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPMetalBeamPlatform.6"
+      },
+      "GenericStockpileComponent": {
+        "ObjectName": "GenericItemStockpileComponent Default__BPMetalBeamPlatform_C:GenericStockpileComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPMetalBeamPlatform.5"
+      },
+      "MaterialCodeName": "MetalBeamMaterials",
+      "InstanceMeshWidth": 30.0,
+      "InstanceMeshDepth": 180.0,
+      "InstanceMeshOddWidth": 180.0,
+      "InstanceMeshOddDepth": 30.0,
+      "InstanceMeshHeight": 23.0,
+      "InstancesPerRow": 6,
+      "InstancesPerColumn": 2,
+      "InstancesPerOddRow": 1,
+      "InstancesPerOddColumn": 12,
+      "InstanceYawJitter": 2.0,
+      "InstancePitchJitter": 1.0,
+      "InstanceRollJitter": 1.0,
+      "InstanceOffsetJitter": 1.0,
+      "LayerScaleDownFactor": 1.0,
+      "InstanceGlobalScale": 1.5,
+      "InstanceMeshOffset": {
+        "X": -72.16641,
+        "Y": -89.68299,
+        "Z": 28.83326
+      },
+      "InstanceMeshOddLayerOffset": {
+        "X": 75.181564,
+        "Y": -78.34083,
+        "Z": 0.0
+      },
+      "BuildGhostClass": null,
+      "Description": {
+        "Namespace": "",
+        "Key": "32AEEC8540E370C3EC95A8A400E6FE60",
+        "SourceString": "A pallet of Metal Beams that's used for the construction of frontline defenses."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D MetalBeamPlatformItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/MetalBeamPlatformItemIcon.0"
+      },
+      "BuildLocationType": "EBuildLocationType::ConstructionYard",
+      "CodeName": "MetalBeamPlatform",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "E59501EA4534CCB41E21EC83DDF755F5",
+        "SourceString": "Metal Beam Pallet"
+      },
+      "ArmourType": "EArmourType::Tier1Structure",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPMetalBeamPlatform_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPMetalBeamPlatform.2"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPMetalBeamPlatform_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPMetalBeamPlatform.4"
+      },
+      "DestroyedFX": {
+        "ObjectName": "ParticleSystem GrenadeBlast",
+        "ObjectPath": "War/Content/FX/GrenadeBlast.151"
+      },
+      "TechID": "ETechID::UnlockTankStop",
+      "MaxHealth": 500,
+      "Health": 500,
+      "StructureNetRelevancySize": "EStructureNetRelevancySize::Small",
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPMetalBeamPlatform_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPMetalBeamPlatform.11"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPMetalBeamPlatform_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPMetalBeamPlatform.2"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPMetalBeamPlatform_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxCollision",
+    "Outer": "Default__BPMetalBeamPlatform_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 62.5,
+        "Y": 180.0,
+        "Z": 40.0
+      },
+      "AttachParent": {
+        "ObjectName": "StaticMeshComponent Default__BPMetalBeamPlatform_C:Mesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPMetalBeamPlatform.10"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 70.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPMetalBeamPlatform_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 145.0,
+        "Y": 220.0,
+        "Z": 150.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPMetalBeamPlatform_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPMetalBeamPlatform.2"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 90.0
+      }
+    }
+  },
+  {
+    "Type": "GenericItemStockpileComponent",
+    "Name": "GenericStockpileComponent",
+    "Outer": "Default__BPMetalBeamPlatform_C",
+    "Properties": {
+      "Configs": [
+        {
+          "Type": "EStockpileEntryType::Items",
+          "QuantityLimit": 32000,
+          "TotalQuantityLimit": 72,
+          "ValidEntriesOverride": [],
+          "PreStockedEntries": []
+        }
+      ]
+    }
+  },
+  {
+    "Type": "InstancedStaticMeshComponent",
+    "Name": "InstancedStaticMesh",
+    "Outer": "Default__BPMetalBeamPlatform_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh MetalBeamMaterial",
+        "ObjectPath": "War/Content/Meshes/Pickups/MetalBeamMaterial.2"
+      },
+      "AttachParent": {
+        "ObjectName": "StaticMeshComponent Default__BPMetalBeamPlatform_C:Mesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPMetalBeamPlatform.10"
+      },
+      "RelativeLocation": {
+        "X": -72.16641,
+        "Y": -89.68299,
+        "Z": 28.83326
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPMetalBeamPlatform_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPMetalBeamPlatform_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPMetalBeamPlatform.7"
+      },
+      "VariableGuid": "05A7D1CE-44009822-63759F83-36A75871",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPMetalBeamPlatform_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPMetalBeamPlatform_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPMetalBeamPlatform.8"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Mesh",
+    "Outer": "Default__BPMetalBeamPlatform_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh MaterialPlatform",
+        "ObjectPath": "War/Content/Meshes/Shippables/MaterialPlatform.2"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPMetalBeamPlatform_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPMetalBeamPlatform.2"
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPMetalBeamPlatform_C"
+  }
+]

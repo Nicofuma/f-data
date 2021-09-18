@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_4060",
+    "Outer": "Wood03",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_44",
+    "Outer": "Wood03",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x40F0"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Wood03",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Wood",
+            "ObjectPath": "War/Content/Materials/Resources/Wood.0"
+          },
+          "MaterialSlotName": "Wood",
+          "ImportedMaterialSlotName": "Wood",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 304.66864,
+            "LocalUVDensities": 235.75417,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 235.75417,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 7.6293945E-06,
+          "Z": 4.426182
+        },
+        "BoxExtent": {
+          "X": 121.52425,
+          "Y": 108.72821,
+          "Z": 11.36564
+        },
+        "SphereRadius": 146.04248
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Wood03:BodySetup_4060",
+      "ObjectPath": "War/Content/Meshes/Resources/Wood03.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Wood03:NavCollision_44",
+      "ObjectPath": "War/Content/Meshes/Resources/Wood03.1"
+    },
+    "LightingGuid": "A4419D9E-466BEE4C-47CE8EB8-2A4D3524",
+    "RenderData": null
+  }
+]

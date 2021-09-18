@@ -1,0 +1,115 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ATAmmoPickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript ATAmmoPickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/ATAmmoPickup.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class TankAmmoPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "ATAmmoPickup_C",
+    "Name": "Default__ATAmmoPickup_C",
+    "Properties": {
+      "ExplosionClass": {
+        "ObjectName": "BlueprintGeneratedClass TankAPExplosion_C",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/TankAmmo/TankAPExplosion.0"
+      },
+      "ShotSoundCue": {
+        "ObjectName": "SoundCue LightTankColonialShot_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Vehicles/LightTanks/Colonial/LightTankColonialShot_Cue.0"
+      },
+      "Encumbrance": 100,
+      "CodeName": "ATAmmo",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "A33D01AD430A1EC47E3F0FB33AE04726",
+        "SourceString": "68mm AT"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "9D943E8D4E850E3E30CA179B1354AF7D",
+        "SourceString": "An anti-tank shell that's effective against penetrating tank armour."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D ATAmmoIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/ATAmmoIcon.0"
+      },
+      "ItemCategory": "EItemCategory::HeavyArms",
+      "ItemFlagsMask": 17,
+      "ItemProfileType": "EItemProfileType::HeavyAmmo",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__ATAmmoPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/ATAmmoPickup.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__ATAmmoPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/ATAmmoPickup.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__ATAmmoPickup_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "ATAmmoPickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent ATAmmoPickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/ATAmmoPickup.3"
+      },
+      "VariableGuid": "E4836927-46317C14-DA95E9AF-E0862803",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "ATAmmoPickup_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node ATAmmoPickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/ATAmmoPickup.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__ATAmmoPickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__ATAmmoPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/ATAmmoPickup.2"
+      }
+    }
+  }
+]

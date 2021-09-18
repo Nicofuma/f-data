@@ -1,0 +1,105 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "TrenchWoodPlank2",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 20.547592,
+              "Y": 6.6454697,
+              "Z": -1.8468742
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 248.46707,
+            "Y": 225.02112,
+            "Z": 18.852665,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "TrenchWoodPlank2",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x4DC7"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TrenchWoodPlank2",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TrenchWoodPlanks",
+            "ObjectPath": "War/Content/Materials/Environment/Props/TrenchWoodPlanks.0"
+          },
+          "MaterialSlotName": "Material #627",
+          "ImportedMaterialSlotName": "Material #627",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 479.13882,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 479.13882,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 20.547592,
+          "Y": 6.6454697,
+          "Z": -1.8468742
+        },
+        "BoxExtent": {
+          "X": 124.233536,
+          "Y": 112.51056,
+          "Z": 9.426332
+        },
+        "SphereRadius": 164.13806
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TrenchWoodPlank2:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/TrenchWoodPlank2.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TrenchWoodPlank2:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/TrenchWoodPlank2.1"
+    },
+    "LightingGuid": "E938A6A1-4C1B7B2A-755AE5A4-903348FA",
+    "RenderData": null
+  }
+]

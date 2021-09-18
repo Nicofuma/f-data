@@ -1,0 +1,121 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPGrenadeUniformC_C",
+    "Super": "BPUniform_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPGrenadeUniformC_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPGrenadeUniformC.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass BPUniform_C",
+      "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPUniform.0"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPGrenadeUniformC_C",
+    "Name": "Default__BPGrenadeUniformC_C",
+    "Properties": {
+      "UniformType": "EUniformType::GrenadeC",
+      "SubTypeIcon": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D SubtypeGrenadeIcon",
+          "ObjectPath": "War/Content/Textures/UI/ItemIcons/SubtypeGrenadeIcon.0"
+        }
+      },
+      "CodeName": "GrenadeUniformC",
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "AF07559A4EE4BADF5CD568B39B29E62D",
+        "SourceString": "Colonial Grenade Uniform"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "C6AB3CE645BD260D33B61A90D068035A",
+        "SourceString": "Grenadier’s Baldric"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "75A97652480DAE1FCF336DAB0D641DB3",
+        "SourceString": "Of the most distinguished divisions of the Legion are the Grenadiers. They are outfitted with specialized satchels and pockets for maximizing their capacity to haul explosives."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D GrenadeUniformCIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/Uniforms/GrenadeUniformCIcon.0"
+      },
+      "FactionVariant": "EFactionId::Colonials",
+      "TechID": "ETechID::UnlockGrenadeUniform",
+      "ItemMesh": {
+        "ObjectName": "StaticMeshComponent Default__BPGrenadeUniformC_C:ItemMesh",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPGrenadeUniformC.6"
+      },
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPGrenadeUniformC_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPGrenadeUniformC.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPGrenadeUniformC_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPGrenadeUniformC.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPGrenadeUniformC_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPGrenadeUniformC_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPGrenadeUniformC_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPGrenadeUniformC.3"
+      },
+      "VariableGuid": "57CA561C-434D89CD-F65025A0-F66D62DF",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPGrenadeUniformC_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPGrenadeUniformC_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPGrenadeUniformC.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPGrenadeUniformC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPGrenadeUniformC_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Uniforms/BPGrenadeUniformC.2"
+      }
+    }
+  }
+]

@@ -1,0 +1,120 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "CoverStreetlamp1d",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -1.1444092E-05,
+              "Y": 0.0,
+              "Z": 276.09308
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Radius": 37.781887,
+            "Length": 633.23975,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "CoverStreetlamp1d",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 5521,
+        "SizeOnDisk": 5521,
+        "OffsetInFile": "0x1B3DE"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "CoverStreetlamp1d",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant StreetLamp",
+            "ObjectPath": "War/Content/Materials/Environment/Props/StreetLamp.0"
+          },
+          "MaterialSlotName": "Streetlamp",
+          "ImportedMaterialSlotName": "Streetlamp.001",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 374.91574,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material LanternEmissive",
+            "ObjectPath": "War/Content/Materials/LanternEmissive.0"
+          },
+          "MaterialSlotName": "Window",
+          "ImportedMaterialSlotName": "Window",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 103.30687,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 364.30518,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 50.32978,
+          "Y": -4.9591064E-05,
+          "Z": 280.065
+        },
+        "BoxExtent": {
+          "X": 79.60029,
+          "Y": 35.03588,
+          "Z": 331.72046
+        },
+        "SphereRadius": 342.39075
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup CoverStreetlamp1d:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Props/CoverStreetlamp1d.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision CoverStreetlamp1d:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Props/CoverStreetlamp1d.1"
+    },
+    "LightingGuid": "AE343C73-407291B0-8CD2A7AE-DF00374C",
+    "RenderData": null
+  }
+]

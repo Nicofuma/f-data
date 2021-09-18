@@ -1,0 +1,100 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "BulwarkDressing_stoneSlab_1",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 611.5471,
+            "Y": 843.9323,
+            "Z": 168.18637,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_3",
+    "Outer": "BulwarkDressing_stoneSlab_1",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x2AD1"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "BulwarkDressing_stoneSlab_1",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BulwarkSupports",
+            "ObjectPath": "War/Content/Materials/Environment/BulwarkSupports.0"
+          },
+          "MaterialSlotName": "StoneSupport",
+          "ImportedMaterialSlotName": "StoneSupport",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 2518.142,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 2518.142,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 305.77356,
+          "Y": 421.96616,
+          "Z": 84.093185
+        },
+        "SphereRadius": 514.8342
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup BulwarkDressing_stoneSlab_1:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/BulwarkDressing_stoneSlab_1.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision BulwarkDressing_stoneSlab_1:NavCollision_3",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/BulwarkDressing_stoneSlab_1.1"
+    },
+    "LightingGuid": "0F84B656-423A8CE5-ED3258BD-2992C460",
+    "RenderData": null
+  }
+]

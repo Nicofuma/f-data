@@ -1,0 +1,104 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "CellarDoor02South",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "CellarDoor02South",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x929F"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "CellarDoor02South",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownWoodBeams05",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownWoodBeams05.0"
+          },
+          "MaterialSlotName": "WoodBeams",
+          "ImportedMaterialSlotName": "WoodBeams",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 237.7934,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MetalBarnAssets",
+            "ObjectPath": "War/Content/Materials/Environment/Props/MetalBarnAssets.0"
+          },
+          "MaterialSlotName": "MetalBarnAssets",
+          "ImportedMaterialSlotName": "MetalBarnAssets",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 244.29768,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 239.59862,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 23.515442,
+          "Y": 5.8115616,
+          "Z": 11.661689
+        },
+        "BoxExtent": {
+          "X": 127.98868,
+          "Y": 105.14978,
+          "Z": 11.641702
+        },
+        "SphereRadius": 165.91183
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup CellarDoor02South:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Props/CellarDoor02South.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision CellarDoor02South:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Props/CellarDoor02South.1"
+    },
+    "LightingGuid": "EFF4C3D8-474A5309-22B189A4-029E7639",
+    "RenderData": null
+  }
+]

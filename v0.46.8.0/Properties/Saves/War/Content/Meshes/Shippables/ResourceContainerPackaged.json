@@ -1,0 +1,200 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ResourceContainerPackaged",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -150.01996,
+                "Y": -300.00735,
+                "Z": -0.39945436
+              },
+              {
+                "X": 150.02002,
+                "Y": -300.00735,
+                "Z": -0.39945436
+              },
+              {
+                "X": -150.01996,
+                "Y": -300.00735,
+                "Z": 206.68976
+              },
+              {
+                "X": 150.02002,
+                "Y": -300.00735,
+                "Z": 206.68976
+              },
+              {
+                "X": -150.01996,
+                "Y": 300.1473,
+                "Z": -0.39945006
+              },
+              {
+                "X": 150.02002,
+                "Y": 300.1473,
+                "Z": -0.39945006
+              },
+              {
+                "X": -150.01996,
+                "Y": 300.1473,
+                "Z": 206.68976
+              },
+              {
+                "X": 150.02002,
+                "Y": 300.1473,
+                "Z": 206.68976
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -150.01996,
+                "Y": -300.00735,
+                "Z": -0.39945436
+              },
+              "Max": {
+                "X": 150.02002,
+                "Y": 300.1473,
+                "Z": 206.68976
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_18",
+    "Outer": "ResourceContainerPackaged",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 457,
+        "SizeOnDisk": 457,
+        "OffsetInFile": "0x34299"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ResourceContainerPackaged",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ResouceContainer",
+            "ObjectPath": "War/Content/Materials/Structures/ResouceContainer.0"
+          },
+          "MaterialSlotName": "ShippableSheave",
+          "ImportedMaterialSlotName": "ShippableSheave",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1195.5443,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ProductionPartsTarp",
+            "ObjectPath": "War/Content/Materials/Environment/Props/ProductionPartsTarp.0"
+          },
+          "MaterialSlotName": "Material #938",
+          "ImportedMaterialSlotName": "Material #938",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 487.93982,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ShippingContainerSheave",
+            "ObjectPath": "War/Content/Materials/Structures/ShippingContainerSheave.0"
+          },
+          "MaterialSlotName": "Material #999",
+          "ImportedMaterialSlotName": "Material #999",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 181.37498,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 702.0982,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.14700317,
+          "Y": 0.04083252,
+          "Z": 100.69941
+        },
+        "BoxExtent": {
+          "X": 159.94983,
+          "Y": 309.94806,
+          "Z": 117.171036
+        },
+        "SphereRadius": 351.09656
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ResourceContainerPackaged:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Shippables/ResourceContainerPackaged.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ResourceContainerPackaged:NavCollision_18",
+      "ObjectPath": "War/Content/Meshes/Shippables/ResourceContainerPackaged.1"
+    },
+    "LightingGuid": "734A0687-447ECD4A-7B44AE8A-F0EAF112",
+    "RenderData": null
+  }
+]

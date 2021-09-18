@@ -1,0 +1,461 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "DefaultSceneRoot",
+    "Outer": "BPEditorTechTreeW_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SceneComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPEditorTechTreeW_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPEditorTechTreeW_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/TechTree/BPEditorTechTreeW.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class TechTree",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPEditorTechTreeW_C:DefaultSceneRoot",
+        "ObjectPath": "War/Content/Blueprints/TechTree/BPEditorTechTreeW.0"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPEditorTechTreeW_C",
+    "Name": "Default__BPEditorTechTreeW_C",
+    "Properties": {
+      "ItemInfo": {
+        "ETechID::UnlockGarrisonBuilding": {
+          "BrushOverride": {
+            "ImageSize": {
+              "X": 256.0,
+              "Y": 256.0
+            },
+            "Margin": {
+              "Left": 0.0,
+              "Top": 0.0,
+              "Right": 0.0,
+              "Bottom": 0.0
+            },
+            "TintColor": {
+              "SpecifiedColor": {
+                "R": 1.0,
+                "G": 1.0,
+                "B": 1.0,
+                "A": 1.0,
+                "Hex": "FFFFFF"
+              },
+              "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D GarrisonStructureIcon",
+              "ObjectPath": "War/Content/Textures/UI/StructureIcons/GarrisonStructureIcon.0"
+            },
+            "ResourceName": "None",
+            "UVRegion": {
+              "Min": {
+                "X": 0.0,
+                "Y": 0.0
+              },
+              "Max": {
+                "X": 0.0,
+                "Y": 0.0
+              },
+              "bIsValid": 0
+            },
+            "DrawAs": "ESlateBrushDrawType::Image",
+            "Tiling": "ESlateBrushTileType::NoTile",
+            "Mirroring": "ESlateBrushMirrorType::NoMirror",
+            "ImageType": "ESlateBrushImageType::NoImage",
+            "bIsDynamicallyLoaded": false
+          },
+          "DisplayNameOverride": {
+            "Namespace": "",
+            "Key": "94AC46B548A4FC977702D89D248CC255",
+            "SourceString": "Garrison Building"
+          },
+          "DescriptionOverride": {
+            "Namespace": "",
+            "Key": "E43F65CC45460C9DB34AEBBF6E6BAA12",
+            "SourceString": "An abandoned building in the world that has been fortified and garrisoned."
+          }
+        },
+        "ETechID::UnlockAdvancedConstruction": {
+          "BrushOverride": {
+            "ImageSize": {
+              "X": 256.0,
+              "Y": 256.0
+            },
+            "Margin": {
+              "Left": 0.0,
+              "Top": 0.0,
+              "Right": 0.0,
+              "Bottom": 0.0
+            },
+            "TintColor": {
+              "SpecifiedColor": {
+                "R": 1.0,
+                "G": 1.0,
+                "B": 1.0,
+                "A": 1.0,
+                "Hex": "FFFFFF"
+              },
+              "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+            },
+            "ResourceObject": {
+              "ObjectName": "Texture2D AdvancedConstructionIcon",
+              "ObjectPath": "War/Content/Textures/UI/VehicleIcons/AdvancedConstructionIcon.0"
+            },
+            "ResourceName": "None",
+            "UVRegion": {
+              "Min": {
+                "X": 0.0,
+                "Y": 0.0
+              },
+              "Max": {
+                "X": 0.0,
+                "Y": 0.0
+              },
+              "bIsValid": 0
+            },
+            "DrawAs": "ESlateBrushDrawType::Image",
+            "Tiling": "ESlateBrushTileType::NoTile",
+            "Mirroring": "ESlateBrushMirrorType::NoMirror",
+            "ImageType": "ESlateBrushImageType::NoImage",
+            "bIsDynamicallyLoaded": false
+          },
+          "DisplayNameOverride": {
+            "Namespace": "",
+            "Key": "B62CED0640FD52981331A0AD817292F0",
+            "SourceString": "Advanced Construction"
+          },
+          "DescriptionOverride": {
+            "Namespace": "",
+            "Key": "0A0E6AF14786EB264E9833908B59C664",
+            "SourceString": "Allows the Construction Vehicle to build defensive structures and walls."
+          }
+        }
+      },
+      "Categories": {
+        "Vehicles": {
+          "Levels": [
+            {
+              "ItemCodeName": "IronA",
+              "ItemsRequired": 250,
+              "TechRequired": 70,
+              "Items": [
+                {
+                  "CodeName": "TruckOffensiveC",
+                  "TechID": "ETechID::UnlockTruckOffensive"
+                },
+                {
+                  "CodeName": "MotorcycleC",
+                  "TechID": "ETechID::UnlockMotorcycle"
+                },
+                {
+                  "CodeName": "FieldMGC",
+                  "TechID": "ETechID::UnlockEmplacedFieldMG"
+                }
+              ],
+              "SecondaryItems": []
+            },
+            {
+              "ItemCodeName": "IronA",
+              "ItemsRequired": 500,
+              "TechRequired": 70,
+              "Items": [
+                {
+                  "CodeName": "TruckDumpC",
+                  "TechID": "ETechID::UnlockTruckDump"
+                }
+              ],
+              "SecondaryItems": []
+            },
+            {
+              "ItemCodeName": "IronA",
+              "ItemsRequired": 1000,
+              "TechRequired": 70,
+              "Items": [
+                {
+                  "CodeName": "ArmoredCarC",
+                  "TechID": "ETechID::UnlockArmoredCar"
+                },
+                {
+                  "CodeName": "MotorcycleOffensiveC",
+                  "TechID": "ETechID::UnlockMotorcycleOffensive"
+                },
+                {
+                  "CodeName": "FieldATC",
+                  "TechID": "ETechID::UnlockFieldATGun"
+                }
+              ],
+              "SecondaryItems": []
+            },
+            {
+              "ItemCodeName": "IronA",
+              "ItemsRequired": 1000,
+              "TechRequired": 70,
+              "Items": [
+                {
+                  "CodeName": "LandingCraftC",
+                  "TechID": "ETechID::UnlockLandingCraft"
+                },
+                {
+                  "CodeName": "ArmoredCarMobilityC",
+                  "TechID": "ETechID::UnlockArmoredCarMobility"
+                },
+                {
+                  "CodeName": "ScoutVehicleMobilityC",
+                  "TechID": "ETechID::UnlockScoutVehicleMobility"
+                }
+              ],
+              "SecondaryItems": []
+            },
+            {
+              "ItemCodeName": "IronA",
+              "ItemsRequired": 1000,
+              "TechRequired": 70,
+              "Items": [
+                {
+                  "CodeName": "LandingCraftOffensiveC",
+                  "TechID": "ETechID::UnlockLandingCraftOffensive"
+                },
+                {
+                  "CodeName": "HalftrackC",
+                  "TechID": "ETechID::UnlockHalfTrack"
+                },
+                {
+                  "CodeName": "ScoutVehicleOffensiveC",
+                  "TechID": "ETechID::UnlockScoutVehicleOffensive"
+                }
+              ],
+              "SecondaryItems": [
+                {
+                  "CodeName": "Freighter",
+                  "TechID": "ETechID::UnlockFreighter"
+                },
+                {
+                  "CodeName": "AmbulanceC",
+                  "TechID": "ETechID::UnlockAmbulance"
+                },
+                {
+                  "CodeName": "TroopShip",
+                  "TechID": "ETechID::UnlockTroopShip"
+                }
+              ]
+            },
+            {
+              "ItemCodeName": "IronA",
+              "ItemsRequired": 1200,
+              "TechRequired": 88,
+              "Items": [
+                {
+                  "CodeName": "GunboatC",
+                  "TechID": "ETechID::UnlockGunboat"
+                },
+                {
+                  "CodeName": "HalfTrackDefensiveC",
+                  "TechID": "ETechID::UnlockHalfTrackDefensive"
+                }
+              ],
+              "SecondaryItems": []
+            },
+            {
+              "ItemCodeName": "IronA",
+              "ItemsRequired": 1200,
+              "TechRequired": 88,
+              "Items": [
+                {
+                  "CodeName": "Harvester",
+                  "TechID": "ETechID::UnlockHarvester"
+                }
+              ],
+              "SecondaryItems": []
+            },
+            {
+              "ItemCodeName": "IronA",
+              "ItemsRequired": 1200,
+              "TechRequired": 88,
+              "Items": [
+                {
+                  "CodeName": "LightTankC",
+                  "TechID": "ETechID::UnlockLightTank"
+                }
+              ],
+              "SecondaryItems": []
+            },
+            {
+              "ItemCodeName": "IronA",
+              "ItemsRequired": 1500,
+              "TechRequired": 88,
+              "Items": [
+                {
+                  "CodeName": "MortarTankC",
+                  "TechID": "ETechID::UnlockMortarTank"
+                }
+              ],
+              "SecondaryItems": []
+            },
+            {
+              "ItemCodeName": "IronA",
+              "ItemsRequired": 1500,
+              "TechRequired": 88,
+              "Items": [
+                {
+                  "CodeName": "BattleTankC",
+                  "TechID": "ETechID::UnlockBattleTank"
+                }
+              ],
+              "SecondaryItems": []
+            },
+            {
+              "ItemCodeName": "IronA",
+              "ItemsRequired": 1500,
+              "TechRequired": 88,
+              "Items": [
+                {
+                  "CodeName": "BattletankDefensiveC",
+                  "TechID": "ETechID::UnlockBattleTankDefensive"
+                }
+              ],
+              "SecondaryItems": []
+            }
+          ]
+        },
+        "Misc": {
+          "Levels": [
+            {
+              "ItemCodeName": "AluminumA",
+              "ItemsRequired": 200,
+              "TechRequired": 220,
+              "Items": [
+                {
+                  "CodeName": "Shotgun",
+                  "TechID": "ETechID::UnlockShotgun"
+                },
+                {
+                  "CodeName": "SMGC",
+                  "TechID": "ETechID::UnlockRevolver"
+                }
+              ],
+              "SecondaryItems": [
+                {
+                  "CodeName": "FirstAidKit",
+                  "TechID": "ETechID::UnlockFirstAidKit"
+                }
+              ]
+            },
+            {
+              "ItemCodeName": "AluminumA",
+              "ItemsRequired": 200,
+              "TechRequired": 330,
+              "Items": [
+                {
+                  "CodeName": "Bayonet",
+                  "TechID": "ETechID::UnlockBayonet"
+                }
+              ],
+              "SecondaryItems": [
+                {
+                  "CodeName": "TraumaKit",
+                  "TechID": "ETechID::UnlockTraumaKit"
+                },
+                {
+                  "CodeName": "Binoculars",
+                  "TechID": "ETechID::UnlockBinoculars"
+                },
+                {
+                  "CodeName": "GreenAsh",
+                  "TechID": "ETechID::UnlockGreenAsh"
+                }
+              ]
+            },
+            {
+              "ItemCodeName": "AluminumA",
+              "ItemsRequired": 800,
+              "TechRequired": 220,
+              "Items": [
+                {
+                  "CodeName": "SatchelCharge",
+                  "TechID": "ETechID::UnlockSatchelCharge"
+                }
+              ],
+              "SecondaryItems": [
+                {
+                  "CodeName": "ForwardBase3",
+                  "TechID": "ETechID::UnlockForwardBaseTier3"
+                },
+                {
+                  "CodeName": "None",
+                  "TechID": "ETechID::UnlockAdvancedConstruction"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPEditorTechTreeW_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPEditorTechTreeW_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/TechTree/BPEditorTechTreeW.3"
+      },
+      "VariableGuid": "BDE93CDD-4B7123BC-C0B41AAA-A2CEDCEE",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPEditorTechTreeW_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPEditorTechTreeW_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "War/Content/Blueprints/TechTree/BPEditorTechTreeW.4"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPEditorTechTreeW_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "War/Content/Blueprints/TechTree/BPEditorTechTreeW.4"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPEditorTechTreeW_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/TechTree/BPEditorTechTreeW.4"
+      }
+    }
+  }
+]

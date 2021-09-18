@@ -1,0 +1,121 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "WoodOldPlatformv1",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 9.536743E-06,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 180.0,
+            "Y": 25.0,
+            "Z": 240.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_8",
+    "Outer": "WoodOldPlatformv1",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x19FFD"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "WoodOldPlatformv1",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant WoodBarnPlanks",
+            "ObjectPath": "War/Content/Materials/Environment/Props/WoodBarnPlanks.0"
+          },
+          "MaterialSlotName": "WoodBarnPlanks",
+          "ImportedMaterialSlotName": "WoodBarnPlanks",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 364.3706,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant WoodBarnPlanksPainted",
+            "ObjectPath": "War/Content/Materials/Environment/Props/WoodBarnPlanksPainted.0"
+          },
+          "MaterialSlotName": "WoodBarnPlanksPainted",
+          "ImportedMaterialSlotName": "WoodBarnPlanksPainted",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 287.02484,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 335.68262,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 9.536743E-06,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 95.09114,
+          "Y": 16.402082,
+          "Z": 127.872215
+        },
+        "SphereRadius": 144.71034
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup WoodOldPlatformv1:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/WoodOldPlatformv1.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision WoodOldPlatformv1:NavCollision_8",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/WoodOldPlatformv1.1"
+    },
+    "LightingGuid": "8EDB841C-4580133B-12096BA1-589DBE2D",
+    "RenderData": null
+  }
+]

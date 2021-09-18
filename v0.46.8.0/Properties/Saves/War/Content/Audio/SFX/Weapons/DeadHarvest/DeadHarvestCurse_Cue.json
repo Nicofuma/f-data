@@ -1,0 +1,46 @@
+[
+  {
+    "Type": "SoundCue",
+    "Name": "DeadHarvestCurse_Cue",
+    "Properties": {
+      "FirstNode": {
+        "ObjectName": "SoundNodeWavePlayer DeadHarvestCurse_Cue:SoundNodeWavePlayer_0",
+        "ObjectPath": "War/Content/Audio/SFX/Weapons/DeadHarvest/DeadHarvestCurse_Cue.1"
+      },
+      "VolumeMultiplier": 0.5,
+      "AttenuationOverrides": {
+        "DistanceAlgorithm": "EAttenuationDistanceModel::NaturalSound",
+        "AttenuationShapeExtents": {
+          "X": 2063.1995,
+          "Y": 0.0,
+          "Z": 0.0
+        }
+      },
+      "SoundClassObject": {
+        "ObjectName": "SoundClass AmbientForeground",
+        "ObjectPath": "War/Content/Audio/SoundClasses/AmbientForeground.0"
+      },
+      "ConcurrencyOverrides": {
+        "MaxCount": 3
+      },
+      "Duration": 10000.0,
+      "MaxDistance": 7000.0,
+      "AttenuationSettings": {
+        "ObjectName": "SoundAttenuation MediumAmbient",
+        "ObjectPath": "War/Content/Audio/Attenuations/MediumAmbient.0"
+      }
+    }
+  },
+  {
+    "Type": "SoundNodeWavePlayer",
+    "Name": "SoundNodeWavePlayer_0",
+    "Outer": "DeadHarvestCurse_Cue",
+    "Properties": {
+      "SoundWaveAssetPtr": {
+        "AssetPathName": "/Game/Audio/SFX/Weapons/DeadHarvest/DeadHarvestCurseAmbient.DeadHarvestCurseAmbient",
+        "SubPathString": ""
+      },
+      "bLooping": true
+    }
+  }
+]

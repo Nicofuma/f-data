@@ -1,0 +1,47 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPRelicBaseTechTree_C",
+    "SuperStruct": {
+      "ObjectName": "Class TechTreeComponentData",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPRelicBaseTechTree_C",
+    "Name": "Default__BPRelicBaseTechTree_C",
+    "Properties": {
+      "Items": [
+        {
+          "TechID": "ETechComponentID::ProvisionalGarrison",
+          "NextTechID": "ETechComponentID::SmallGarrison",
+          "InfrastructureType": "EInfrastructureType::Base",
+          "Requirement": 50,
+          "ModRequirement": 0
+        },
+        {
+          "TechID": "ETechComponentID::SmallGarrison",
+          "NextTechID": "ETechComponentID::LargeGarrison",
+          "InfrastructureType": "EInfrastructureType::Base",
+          "Requirement": 1600,
+          "ModRequirement": 0
+        },
+        {
+          "TechID": "ETechComponentID::LargeGarrison",
+          "NextTechID": "ETechComponentID::None",
+          "InfrastructureType": "EInfrastructureType::Base",
+          "Requirement": 4800,
+          "ModRequirement": 0
+        }
+      ]
+    }
+  }
+]

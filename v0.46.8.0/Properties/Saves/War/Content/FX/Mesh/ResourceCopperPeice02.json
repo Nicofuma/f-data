@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ResourceCopperPeice02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "ResourceCopperPeice02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xF1D"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ResourceCopperPeice02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ResourceCopper",
+            "ObjectPath": "War/Content/Materials/Resources/ResourceCopper.0"
+          },
+          "MaterialSlotName": "ResourcesCopper",
+          "ImportedMaterialSlotName": "ResourcesCopper",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 215.92891,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 215.92891,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.8153386,
+          "Y": -0.29432297,
+          "Z": -0.91398335
+        },
+        "BoxExtent": {
+          "X": 4.0454664,
+          "Y": 19.141132,
+          "Z": 4.397249
+        },
+        "SphereRadius": 19.150396
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ResourceCopperPeice02:BodySetup_0",
+      "ObjectPath": "War/Content/FX/Mesh/ResourceCopperPeice02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ResourceCopperPeice02:NavCollision_0",
+      "ObjectPath": "War/Content/FX/Mesh/ResourceCopperPeice02.1"
+    },
+    "LightingGuid": "83A72EED-4A9F4C49-307BC3A1-1AF8103D",
+    "RenderData": null
+  }
+]

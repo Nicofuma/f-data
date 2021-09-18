@@ -1,0 +1,89 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_TruckBaseC_Trailer",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_5",
+    "Outer": "SM_TruckBaseC_Trailer",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x16606"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_TruckBaseC_Trailer",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TruckCol",
+            "ObjectPath": "War/Content/Materials/Vehicles/TruckCol.0"
+          },
+          "MaterialSlotName": "Truck",
+          "ImportedMaterialSlotName": "Truck",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1196.6824,
+            "LocalUVDensities": 1.7776682,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1.7776682,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -183.37592,
+          "Z": 238.22829
+        },
+        "BoxExtent": {
+          "X": 151.0077,
+          "Y": 255.57635,
+          "Z": 145.4691
+        },
+        "SphereRadius": 311.91977
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_TruckBaseC_Trailer:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Vehicles/PrototypeVehicles/SM_TruckBaseC_Trailer.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_TruckBaseC_Trailer:NavCollision_5",
+      "ObjectPath": "War/Content/Meshes/Vehicles/PrototypeVehicles/SM_TruckBaseC_Trailer.1"
+    },
+    "LightingGuid": "56BC27FD-41488BAC-0DCA1491-D3BFE60B",
+    "RenderData": null
+  }
+]

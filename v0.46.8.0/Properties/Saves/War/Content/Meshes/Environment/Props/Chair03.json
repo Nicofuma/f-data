@@ -1,0 +1,111 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Chair03",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 5.5367966,
+              "Z": 62.24243
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 85.67119,
+            "Y": 91.20812,
+            "Z": 131.34161,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "BuildScale3D": {
+        "X": 1.1,
+        "Y": 1.1,
+        "Z": 1.1
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_98",
+    "Outer": "Chair03",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x133B3"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Chair03",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Chair03",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Chair03.0"
+          },
+          "MaterialSlotName": "Chair_mat",
+          "ImportedMaterialSlotName": "Chair_mat",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 360.0182,
+            "LocalUVDensities": 393.20612,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 393.20612,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 5.5367966,
+          "Z": 78.20026
+        },
+        "BoxExtent": {
+          "X": 64.83571,
+          "Y": 52.746216,
+          "Z": 78.21084
+        },
+        "SphereRadius": 103.86516
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Chair03:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Chair03.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Chair03:NavCollision_98",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Chair03.1"
+    },
+    "LightingGuid": "9461F8FA-443F2B21-2314F6BA-EAC0B6FE",
+    "RenderData": null
+  }
+]

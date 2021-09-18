@@ -1,0 +1,105 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "WoodOldPillarSquare",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 1.9073486E-06,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 58.182724,
+            "Y": 57.702972,
+            "Z": 528.2129,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_3",
+    "Outer": "WoodOldPillarSquare",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x1CEB"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "WoodOldPillarSquare",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant WoodBarnPlanks",
+            "ObjectPath": "War/Content/Materials/Environment/Props/WoodBarnPlanks.0"
+          },
+          "MaterialSlotName": "WoodBarnPlanks",
+          "ImportedMaterialSlotName": "WoodBarnPlanks",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 464.67172,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 464.67172,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 1.9073486E-06,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 29.091362,
+          "Y": 28.851486,
+          "Z": 264.10645
+        },
+        "SphereRadius": 266.28577
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup WoodOldPillarSquare:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/WoodOldPillarSquare.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision WoodOldPillarSquare:NavCollision_3",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/WoodOldPillarSquare.1"
+    },
+    "LightingGuid": "81CB1FA9-4D14F00E-BF00BF8B-E2D055B4",
+    "RenderData": null
+  }
+]

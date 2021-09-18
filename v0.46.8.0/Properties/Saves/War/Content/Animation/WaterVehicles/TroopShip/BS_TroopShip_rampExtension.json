@@ -1,0 +1,87 @@
+[
+  {
+    "Type": "BlendSpace1D",
+    "Name": "BS_TroopShip_rampExtension",
+    "Properties": {
+      "InterpolationParam": {
+        "InterpolationTime": 0.5
+      },
+      "SampleData": [
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence Anim_TroopShip_POSE_rampClosed",
+            "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/Anim_TroopShip_POSE_rampClosed.0"
+          },
+          "SampleValue": {
+            "X": 0.25,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence Anim_TroopShip_POSE_rampExtended",
+            "ObjectPath": "War/Content/Animation/WaterVehicles/TroopShip/Anim_TroopShip_POSE_rampExtended.0"
+          },
+          "SampleValue": {
+            "X": 1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        }
+      ],
+      "GridSamples": [
+        {
+          "Indices": 0,
+          "Indices": -1,
+          "Indices": -1,
+          "Weights": 1.0,
+          "Weights": 0.0,
+          "Weights": 0.0
+        },
+        {
+          "Indices": 1,
+          "Indices": 0,
+          "Indices": -1,
+          "Weights": 0.0,
+          "Weights": 1.0,
+          "Weights": 0.0
+        },
+        {
+          "Indices": 1,
+          "Indices": 0,
+          "Indices": -1,
+          "Weights": 0.33333334,
+          "Weights": 0.6666666,
+          "Weights": 0.0
+        },
+        {
+          "Indices": 1,
+          "Indices": 0,
+          "Indices": -1,
+          "Weights": 0.6666667,
+          "Weights": 0.3333333,
+          "Weights": 0.0
+        },
+        {
+          "Indices": 1,
+          "Indices": 0,
+          "Indices": -1,
+          "Weights": 1.0,
+          "Weights": 0.0,
+          "Weights": 0.0
+        }
+      ],
+      "BlendParameters": {
+        "DisplayName": "rampExtensionAmount",
+        "Max": 1.0
+      },
+      "Skeleton": {
+        "ObjectName": "Skeleton SK_TroopShip_Skeleton",
+        "ObjectPath": "War/Content/Meshes/Vehicles/SK_TroopShip_Skeleton.0"
+      }
+    }
+  }
+]

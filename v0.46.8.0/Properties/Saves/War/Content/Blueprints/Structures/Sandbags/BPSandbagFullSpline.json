@@ -1,0 +1,564 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "SandbagTarget",
+    "Outer": "BPSandbagFullSpline_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SceneComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPSandbagFullSpline_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPSandbagFullSpline_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullSpline.17"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class Wall",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPSandbagFullSpline_C:SandbagTarget",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullSpline.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPSandbagFullSpline_C:Sandbag",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullSpline.9"
+      },
+      {
+        "ObjectName": "ObjectProperty BPSandbagFullSpline_C:BackSocket",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullSpline.7"
+      },
+      {
+        "ObjectName": "ObjectProperty BPSandbagFullSpline_C:FrontSocket",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullSpline.8"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPSandbagFullSpline_C",
+    "Name": "Default__BPSandbagFullSpline_C",
+    "Properties": {
+      "bAllowStanding": true,
+      "bBuildOnBridges": true,
+      "bIsConnector": true,
+      "bIsManualConnector": true,
+      "ConnectorMinLength": 420.0,
+      "ConnectorMaxLength": 1000.0,
+      "MinLengthMaxHealthModifier": 0.5,
+      "ConnectorMinWidth": 0.0,
+      "BuildGhostClass": null,
+      "Description": {
+        "Namespace": "",
+        "Key": "3105F0534A0D724D774462A341DAA801",
+        "SourceString": "A defensive wall that hinders enemy movement and provides cover during combat."
+      },
+      "CodeName": "SandbagFullSpline",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "3277B2694BA3B6C9005989849F22FAC6",
+        "SourceString": "Sandbag Wall"
+      },
+      "ProfileType": "EStructureProfileType::FieldStructure",
+      "ArmourType": "EArmourType::Tier2BStructure",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPSandbagFullSpline_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullSpline.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPSandbagFullSpline_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullSpline.4"
+      },
+      "DestroyedFX": {
+        "ObjectName": "ParticleSystem GrenadeBlast",
+        "ObjectPath": "War/Content/FX/GrenadeBlast.151"
+      },
+      "MaxHealth": 1600,
+      "Health": 1600,
+      "StructureNetRelevancySize": "EStructureNetRelevancySize::Small",
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPSandbagFullSpline_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullSpline.20"
+      },
+      "NetDormancy": "DORM_Awake",
+      "NetCullDistanceSquared": 36000000.0,
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPSandbagFullSpline_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullSpline.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPSandbagFullSpline_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPSandbagFullSpline_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPSandbagFullSpline_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullSpline.3"
+      }
+    }
+  },
+  {
+    "Type": "BuildSocketComponent",
+    "Name": "BackSocket_GEN_VARIABLE",
+    "Outer": "BPSandbagFullSpline_C",
+    "Properties": {
+      "SocketTags": [
+        {
+          "SocketTypeMask": 4609,
+          "SocketTypeCategory": 1,
+          "Tag": "SideBack",
+          "ShowsTag": "None",
+          "MaxZOffset": 1200.0,
+          "ApplicationRule": "EBuildSocketTagRule::AffectsBoth",
+          "ConnectorAttachmentTag": "ConnectorBack"
+        }
+      ],
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -180.0,
+        "Roll": 0.0
+      },
+      "ComponentTags": [
+        "ConnectorRefCentreBack"
+      ]
+    }
+  },
+  {
+    "Type": "BuildSocketComponent",
+    "Name": "FrontSocket_GEN_VARIABLE",
+    "Outer": "BPSandbagFullSpline_C",
+    "Properties": {
+      "SocketTags": [
+        {
+          "SocketTypeMask": 4609,
+          "SocketTypeCategory": 1,
+          "Tag": "SideFront",
+          "ShowsTag": "None",
+          "MaxZOffset": 1200.0,
+          "ApplicationRule": "EBuildSocketTagRule::AffectsBoth",
+          "ConnectorAttachmentTag": "ConnectorFront"
+        }
+      ],
+      "RelativeLocation": {
+        "X": 360.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "ComponentTags": [
+        "ConnectorRefCentreFront",
+        "ManualConnectorSocket"
+      ]
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "BackSocket",
+    "Outer": "BPSandbagFullSpline_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BuildSocketComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "FrontSocket",
+    "Outer": "BPSandbagFullSpline_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BuildSocketComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Sandbag",
+    "Outer": "BPSandbagFullSpline_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SplineConnectorComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPSandbagFullSpline_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SandbagTarget_GEN_VARIABLE",
+    "Outer": "BPSandbagFullSpline_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 360.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "ComponentTags": [
+        "ConnectorFront",
+        "IncludeInBuildGhost",
+        "IncludeInBuildSite"
+      ]
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPSandbagFullSpline_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullSpline.10"
+      },
+      "VariableGuid": "E6F52BF5-4790F189-DB8FAAA8-80F617D3",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BuildSocketComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BuildSocketComponent BPSandbagFullSpline_C:FrontSocket_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullSpline.6"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "2A776C0C-44ECB5AA-E5E2A9AB-06C8B171",
+      "InternalVariableName": "FrontSocket"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_14",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPSandbagFullSpline_C:SandbagTarget_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullSpline.11"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "26CDB4C9-459947DA-BD163E89-F8EBD35F",
+      "InternalVariableName": "SandbagTarget"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BuildSocketComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BuildSocketComponent BPSandbagFullSpline_C:BackSocket_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullSpline.5"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "94E3C36A-408583A4-5D27B28D-E365AD83",
+      "InternalVariableName": "BackSocket"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SplineConnectorComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SplineConnectorComponent BPSandbagFullSpline_C:Sandbag_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullSpline.19"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "F0AFD0A8-4E511CAA-15F69393-BFFEA3EE",
+      "InternalVariableName": "Sandbag"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPSandbagFullSpline_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPSandbagFullSpline_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullSpline.13"
+        },
+        {
+          "ObjectName": "SCS_Node BPSandbagFullSpline_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullSpline.15"
+        },
+        {
+          "ObjectName": "SCS_Node BPSandbagFullSpline_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullSpline.16"
+        },
+        {
+          "ObjectName": "SCS_Node BPSandbagFullSpline_C:SimpleConstructionScript_0.SCS_Node_14",
+          "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullSpline.14"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPSandbagFullSpline_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullSpline.13"
+        },
+        {
+          "ObjectName": "SCS_Node BPSandbagFullSpline_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullSpline.15"
+        },
+        {
+          "ObjectName": "SCS_Node BPSandbagFullSpline_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullSpline.16"
+        },
+        {
+          "ObjectName": "SCS_Node BPSandbagFullSpline_C:SimpleConstructionScript_0.SCS_Node_14",
+          "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullSpline.14"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPSandbagFullSpline_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullSpline.12"
+      }
+    }
+  },
+  {
+    "Type": "SplineComponent",
+    "Name": "Spline",
+    "Outer": "Sandbag_GEN_VARIABLE",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SplineConnectorComponent BPSandbagFullSpline_C:Sandbag_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullSpline.19"
+      }
+    }
+  },
+  {
+    "Type": "SplineConnectorComponent",
+    "Name": "Sandbag_GEN_VARIABLE",
+    "Outer": "BPSandbagFullSpline_C",
+    "Properties": {
+      "TargetComponentName": "SandbagTarget",
+      "MeshConfigs": [
+        {
+          "Mesh": {
+            "ObjectName": "StaticMesh SandbagSpline01",
+            "ObjectPath": "War/Content/Meshes/Environment/Splines/SandbagSpline01.2"
+          },
+          "Meshes": [
+            {
+              "ObjectName": "StaticMesh SandbagFullSpline01",
+              "ObjectPath": "War/Content/Meshes/Environment/Splines/SandbagFullSpline01.2"
+            },
+            {
+              "ObjectName": "StaticMesh SandbagFullSpline02",
+              "ObjectPath": "War/Content/Meshes/Environment/Splines/SandbagFullSpline02.2"
+            },
+            {
+              "ObjectName": "StaticMesh SandbagFullSpline03",
+              "ObjectPath": "War/Content/Meshes/Environment/Splines/SandbagFullSpline03.2"
+            },
+            {
+              "ObjectName": "StaticMesh SandbagFullSpline04",
+              "ObjectPath": "War/Content/Meshes/Environment/Splines/SandbagFullSpline04.2"
+            }
+          ],
+          "bReceivesDecals": false,
+          "BuildGhostMaterialOverride": null,
+          "BuildSiteMaterialOverride": null,
+          "Mode": "ESplineConnectorMeshMode::Interval",
+          "BoxWidth": 0.0,
+          "BoxHeight": 0.0,
+          "CollisionProfileName": "NoCollision",
+          "StartIndex": 0,
+          "EndIndex": 4,
+          "SpawnPoints": [],
+          "SplineMeshAxis": "ESplineMeshAxis::Z",
+          "SplineStartOffset": {
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "SplineEndOffset": {
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "SplineBoundaryMin": 0.0,
+          "SplineBoundaryMax": 0.0,
+          "MinSplineLength": 5.0,
+          "bExtendSplineToMinLength": false,
+          "MinSplineLengthForCollision": 0.0,
+          "bCollisionOnly": false,
+          "Interval": 74.0,
+          "bEvenlySpace": false,
+          "bFillRemainder": false,
+          "StartOffset": 0.0,
+          "EndOffset": 20.0,
+          "RelativeTransform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "SizeSquared": 1.0,
+              "Size": 1.0,
+              "IsNormalized": true
+            },
+            "Translation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "RandomRotationVariance": {
+            "Pitch": 10.0,
+            "Yaw": 15.0,
+            "Roll": 0.0
+          },
+          "RandomPositionVariance": {
+            "X": 10.0,
+            "Y": 10.0,
+            "Z": 5.0
+          },
+          "ComponentTags": []
+        },
+        {
+          "Mesh": {
+            "ObjectName": "StaticMesh SplineCollision",
+            "ObjectPath": "War/Content/Meshes/Environment/Splines/SplineCollision.2"
+          },
+          "Meshes": [],
+          "bReceivesDecals": false,
+          "BuildGhostMaterialOverride": null,
+          "BuildSiteMaterialOverride": null,
+          "Mode": "ESplineConnectorMeshMode::Spline",
+          "BoxWidth": 0.0,
+          "BoxHeight": 0.0,
+          "CollisionProfileName": "StructureDamageableMesh",
+          "StartIndex": 0,
+          "EndIndex": 4,
+          "SpawnPoints": [],
+          "SplineMeshAxis": "ESplineMeshAxis::X",
+          "SplineStartOffset": {
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "SplineEndOffset": {
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "SplineBoundaryMin": 0.0,
+          "SplineBoundaryMax": 0.0,
+          "MinSplineLength": 5.0,
+          "bExtendSplineToMinLength": false,
+          "MinSplineLengthForCollision": 0.0,
+          "bCollisionOnly": true,
+          "Interval": 100.0,
+          "bEvenlySpace": false,
+          "bFillRemainder": false,
+          "StartOffset": 0.0,
+          "EndOffset": 0.0,
+          "RelativeTransform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": -0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "SizeSquared": 1.0,
+              "Size": 1.0,
+              "IsNormalized": true
+            },
+            "Translation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale3D": {
+              "X": 0.65,
+              "Y": 2.3,
+              "Z": 1.0
+            }
+          },
+          "RandomRotationVariance": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "RandomPositionVariance": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "ComponentTags": []
+        }
+      ],
+      "MaxBuffer": 400.0,
+      "MaxRadius": 400.0,
+      "BuildFootprintCapsuleRadius": 50.0,
+      "BuildFootprintCapsuleHalfHeight": 100.0,
+      "Spline": {
+        "ObjectName": "SplineComponent BPSandbagFullSpline_C:Sandbag_GEN_VARIABLE.Spline",
+        "ObjectPath": "War/Content/Blueprints/Structures/Sandbags/BPSandbagFullSpline.18"
+      },
+      "RelativeLocation": {
+        "X": 40.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "ComponentTags": [
+        "IncludeInBuildGhost",
+        "IncludeInBuildSite"
+      ]
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPSandbagFullSpline_C"
+  }
+]

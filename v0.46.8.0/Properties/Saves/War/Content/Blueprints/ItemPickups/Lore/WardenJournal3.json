@@ -1,0 +1,154 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WardenJournal3_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WardenJournal3_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Lore/WardenJournal3.6"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class LorePickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "WardenJournal3_C",
+    "Name": "Default__WardenJournal3_C",
+    "Properties": {
+      "ReadableTextComponent": {
+        "ObjectName": "ReadableTextComponent Default__WardenJournal3_C:ReadableTextComponent",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Lore/WardenJournal3.3"
+      },
+      "Encumbrance": 1,
+      "CodeName": "Lore7",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "52EB0F4342D4D660A6EC75AB58B8A661",
+        "SourceString": "Old Log"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "72D10E864DFB7279849AB0A81693C499",
+        "SourceString": "Old remains of a scout’s reconnaissance log."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D LoreIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/LoreIcon.0"
+      },
+      "ItemProfileType": "EItemProfileType::UniqueItem",
+      "ItemMesh": {
+        "ObjectName": "StaticMeshComponent Default__WardenJournal3_C:ItemMesh",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Lore/WardenJournal3.7"
+      },
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__WardenJournal3_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Lore/WardenJournal3.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__WardenJournal3_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Lore/WardenJournal3.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__WardenJournal3_C"
+  },
+  {
+    "Type": "ReadableTextComponent",
+    "Name": "ReadableTextComponent",
+    "Outer": "Default__WardenJournal3_C",
+    "Properties": {
+      "HeaderText": {
+        "Namespace": "",
+        "Key": "82292AFF4BA22239E6BDF6A722E35D85",
+        "SourceString": "Old remains of a scout’s reconnaissance log."
+      },
+      "FlavourText": {
+        "Namespace": "",
+        "Key": "673D1F6645956AEFAC52C8A1D3146B2F",
+        "SourceString": "Old remains of a scout’s reconnaissance log."
+      },
+      "BodyText": {
+        "Namespace": "",
+        "Key": "CC3CFC844BE740A9006E14ABB4847EAD",
+        "SourceString": "“ *0100*: Little movement, a few campfires, most are asleep. -- *0600*: Soldiers starting to move, transferring gear in and out of tents, still quiet. -- *0900*: Privates being drilled, hand to hand training. Standard procedures. They seem comfortable. -- *1200*: A small group of soldiers arrived on foot. They’re escorting another small group. Appears to be… young men and women, maybe even some children. -- *1500*: The children are now geared up and running laps around the camp with rifles. -- *1700*: Everyone is eating, a few soldiers on guard. -- *1900*: Children are being drilled like the privates earlier. They’re sloppy, disorganized.”"
+      },
+      "Icon": {
+        "ImageSize": {
+          "X": 100.0,
+          "Y": 100.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D LoreIcon",
+          "ObjectPath": "War/Content/Textures/UI/ItemIcons/LoreIcon.0"
+        }
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WardenJournal3_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WardenJournal3_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Lore/WardenJournal3.4"
+      },
+      "VariableGuid": "1A43722B-49178C1D-22117091-108B9063",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "WardenJournal3_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WardenJournal3_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Lore/WardenJournal3.5"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__WardenJournal3_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh LorePickup01",
+        "ObjectPath": "War/Content/Meshes/Pickups/LorePickup01.2"
+      },
+      "bRenderCustomDepth": false,
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__WardenJournal3_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/Lore/WardenJournal3.2"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 2.578247
+      }
+    }
+  }
+]

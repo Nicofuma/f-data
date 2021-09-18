@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Outer": "RockShorlineSmallSnow",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "RockShorlineSmallSnow",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xF78"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "RockShorlineSmallSnow",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RockShorlineSmallSnow",
+            "ObjectPath": "War/Content/Materials/Environment/RockShorlineSmallSnow.0"
+          },
+          "MaterialSlotName": "default",
+          "ImportedMaterialSlotName": "default",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 281.12387,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 281.12387,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 7.3425713,
+          "Y": 7.571823,
+          "Z": 7.8908005
+        },
+        "BoxExtent": {
+          "X": 61.28711,
+          "Y": 74.36342,
+          "Z": 68.61818
+        },
+        "SphereRadius": 78.701256
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup RockShorlineSmallSnow:BodySetup_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/RockShorlineSmallSnow.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision RockShorlineSmallSnow:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/RockShorlineSmallSnow.1"
+    },
+    "LightingGuid": "9F2DDF38-4B1B3715-77948F8E-C171494F",
+    "RenderData": null
+  }
+]

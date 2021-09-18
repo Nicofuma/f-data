@@ -1,0 +1,351 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "BackDefenseModSlot",
+    "Outer": "BPFortCommonDefenseMods_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "BlueprintGeneratedClass BPFortDefenseModSlot_C",
+      "ObjectPath": "War/Content/Blueprints/Structures/Forts/Modifications/BPFortDefenseModSlot.0"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPFortCommonDefenseMods_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPFortCommonDefenseMods_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommonDefenseMods.17"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class Template",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPFortCommonDefenseMods_C:BackDefenseModSlot",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommonDefenseMods.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortCommonDefenseMods_C:FrontDefenseModSlot",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommonDefenseMods.8"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortCommonDefenseMods_C:LeftDefenseModSlot",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommonDefenseMods.9"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortCommonDefenseMods_C:RightDefenseModSlot",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommonDefenseMods.10"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortCommonDefenseMods_C:DefaultSceneRoot",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommonDefenseMods.7"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPFortCommonDefenseMods_C",
+    "Name": "Default__BPFortCommonDefenseMods_C"
+  },
+  {
+    "Type": "BPFortDefenseModSlot_C",
+    "Name": "BackDefenseModSlot_GEN_VARIABLE",
+    "Outer": "BPFortCommonDefenseMods_C",
+    "Properties": {
+      "bIsLinkedToSocket": true,
+      "LinkedSocketNames": [
+        "BackFortSocket"
+      ],
+      "bOverrideSplineTarget": true,
+      "SplineTargetComponentNameOverride": "RightDefenseModSlot",
+      "SubComponentTags": [
+        "RoofVisibility"
+      ],
+      "RelativeLocation": {
+        "X": -220.0,
+        "Y": -220.0,
+        "Z": 150.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 135.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BPFortDefenseModSlot_C",
+    "Name": "FrontDefenseModSlot_GEN_VARIABLE",
+    "Outer": "BPFortCommonDefenseMods_C",
+    "Properties": {
+      "bIsLinkedToSocket": true,
+      "LinkedSocketNames": [
+        "FrontFortSocket"
+      ],
+      "bOverrideSplineTarget": true,
+      "SplineTargetComponentNameOverride": "LeftDefenseModSlot",
+      "SubComponentTags": [
+        "RoofVisibility"
+      ],
+      "RelativeLocation": {
+        "X": 220.0,
+        "Y": 220.0,
+        "Z": 150.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -44.999992,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BPFortDefenseModSlot_C",
+    "Name": "LeftDefenseModSlot_GEN_VARIABLE",
+    "Outer": "BPFortCommonDefenseMods_C",
+    "Properties": {
+      "bIsLinkedToSocket": true,
+      "LinkedSocketNames": [
+        "LeftFortSocket"
+      ],
+      "bOverrideSplineTarget": true,
+      "SplineTargetComponentNameOverride": "BackDefenseModSlot",
+      "SubComponentTags": [
+        "RoofVisibility"
+      ],
+      "RelativeLocation": {
+        "X": 220.0,
+        "Y": -220.0,
+        "Z": 150.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -135.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BPFortDefenseModSlot_C",
+    "Name": "RightDefenseModSlot_GEN_VARIABLE",
+    "Outer": "BPFortCommonDefenseMods_C",
+    "Properties": {
+      "bIsLinkedToSocket": true,
+      "LinkedSocketNames": [
+        "RightFortSocket"
+      ],
+      "bOverrideSplineTarget": true,
+      "SplineTargetComponentNameOverride": "FrontDefenseModSlot",
+      "SubComponentTags": [
+        "RoofVisibility"
+      ],
+      "RelativeLocation": {
+        "X": -220.0,
+        "Y": 220.0,
+        "Z": 150.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 44.999992,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "DefaultSceneRoot",
+    "Outer": "BPFortCommonDefenseMods_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SceneComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "FrontDefenseModSlot",
+    "Outer": "BPFortCommonDefenseMods_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "BlueprintGeneratedClass BPFortDefenseModSlot_C",
+      "ObjectPath": "War/Content/Blueprints/Structures/Forts/Modifications/BPFortDefenseModSlot.0"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "LeftDefenseModSlot",
+    "Outer": "BPFortCommonDefenseMods_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "BlueprintGeneratedClass BPFortDefenseModSlot_C",
+      "ObjectPath": "War/Content/Blueprints/Structures/Forts/Modifications/BPFortDefenseModSlot.0"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "RightDefenseModSlot",
+    "Outer": "BPFortCommonDefenseMods_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "BlueprintGeneratedClass BPFortDefenseModSlot_C",
+      "ObjectPath": "War/Content/Blueprints/Structures/Forts/Modifications/BPFortDefenseModSlot.0"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPFortCommonDefenseMods_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPFortCommonDefenseMods_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommonDefenseMods.11"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node BPFortCommonDefenseMods_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommonDefenseMods.14"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortCommonDefenseMods_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommonDefenseMods.15"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortCommonDefenseMods_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommonDefenseMods.16"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortCommonDefenseMods_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommonDefenseMods.13"
+        }
+      ],
+      "VariableGuid": "E9AAAF59-4AE339E8-6EC3EEA7-810AD800",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPFortDefenseModSlot_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/Modifications/BPFortDefenseModSlot.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BPFortDefenseModSlot_C BPFortCommonDefenseMods_C:BackDefenseModSlot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommonDefenseMods.3"
+      },
+      "VariableGuid": "38D3064A-46EB1B17-383A5BBA-C7C885C8",
+      "InternalVariableName": "BackDefenseModSlot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPFortDefenseModSlot_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/Modifications/BPFortDefenseModSlot.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BPFortDefenseModSlot_C BPFortCommonDefenseMods_C:RightDefenseModSlot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommonDefenseMods.6"
+      },
+      "VariableGuid": "D7F17B68-41BAFE46-B867148D-A7B19A3D",
+      "InternalVariableName": "RightDefenseModSlot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPFortDefenseModSlot_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/Modifications/BPFortDefenseModSlot.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BPFortDefenseModSlot_C BPFortCommonDefenseMods_C:LeftDefenseModSlot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommonDefenseMods.5"
+      },
+      "VariableGuid": "CAF86931-45272852-3E43429E-5CB9076A",
+      "InternalVariableName": "LeftDefenseModSlot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPFortDefenseModSlot_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/Modifications/BPFortDefenseModSlot.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BPFortDefenseModSlot_C BPFortCommonDefenseMods_C:FrontDefenseModSlot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommonDefenseMods.4"
+      },
+      "VariableGuid": "E62B83BE-4223E437-93FF68AB-5C3FE232",
+      "InternalVariableName": "FrontDefenseModSlot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPFortCommonDefenseMods_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPFortCommonDefenseMods_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommonDefenseMods.12"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPFortCommonDefenseMods_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommonDefenseMods.12"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortCommonDefenseMods_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommonDefenseMods.14"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortCommonDefenseMods_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommonDefenseMods.15"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortCommonDefenseMods_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommonDefenseMods.16"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortCommonDefenseMods_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommonDefenseMods.13"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPFortCommonDefenseMods_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommonDefenseMods.12"
+      }
+    }
+  }
+]

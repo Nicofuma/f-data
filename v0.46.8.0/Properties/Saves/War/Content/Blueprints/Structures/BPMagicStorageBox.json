@@ -1,0 +1,346 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "RepairBox",
+    "Outer": "BPMagicStorageBox_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BoxComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPMagicStorageBox_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPMagicStorageBox_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPMagicStorageBox.12"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class StorageBox",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPMagicStorageBox_C:RepairBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPMagicStorageBox.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPMagicStorageBox_C:MultiplexedStaticMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPMagicStorageBox.7"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPMagicStorageBox_C",
+    "Name": "Default__BPMagicStorageBox_C",
+    "Properties": {
+      "MeshComponent": {
+        "ObjectName": "StaticMeshComponent Default__BPMagicStorageBox_C:Mesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPMagicStorageBox.13"
+      },
+      "ReplenishRate": 5.0,
+      "bReplenishFirstItem": true,
+      "BuildSiteClass": {
+        "ObjectName": "BlueprintGeneratedClass StorageBoxBuildSite_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/StorageBoxBuildSite.1"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "5532E5884495DE4DD307FC9F8204F68C",
+        "SourceString": "A magical box that duplicates the item in its first inventory slot."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D StorageItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/StructureIcons/StorageItemIcon.0"
+      },
+      "BuildLocationType": "EBuildLocationType::TestShard",
+      "CodeName": "MagicBox",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "CCD6BBB24BE2A0D4D2DFBF9A585BEA9D",
+        "SourceString": "Magic Box"
+      },
+      "ProfileType": "EStructureProfileType::GenericWorldStructure",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPMagicStorageBox_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPMagicStorageBox.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPMagicStorageBox_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPMagicStorageBox.5"
+      },
+      "DestroyedFX": {
+        "ObjectName": "ParticleSystem GrenadeBlast",
+        "ObjectPath": "War/Content/FX/GrenadeBlast.151"
+      },
+      "DestroyedSoundCue": {
+        "ObjectName": "SoundCue StructureExplosionSmall_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/StructureExplosionSmall_Cue.0"
+      },
+      "MaxHealth": 400,
+      "Health": 400,
+      "ScreenToUse": "ESimScreen::StorageBox",
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPMagicStorageBox_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPMagicStorageBox.14"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPMagicStorageBox_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPMagicStorageBox.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPMagicStorageBox_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "RepairBox_GEN_VARIABLE",
+    "Outer": "BPMagicStorageBox_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 92.0,
+        "Y": 42.0,
+        "Z": 128.0
+      },
+      "AreaClass": {
+        "ObjectName": "Class NavArea_Obstacle",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "CanCharacterStepUpOn": "ECB_No",
+      "BodyInstance": {
+        "CollisionProfileName": "OverlapOnlyCamera",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapDowncast",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Projectile",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 128.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPMagicStorageBox_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 160.0,
+        "Y": 160.0,
+        "Z": 128.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPMagicStorageBox_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPMagicStorageBox.3"
+      }
+    }
+  },
+  {
+    "Type": "MultiplexedStaticMeshComponent",
+    "Name": "MultiplexedStaticMesh_GEN_VARIABLE",
+    "Outer": "BPMagicStorageBox_C",
+    "Properties": {
+      "MeshStops": [
+        {
+          "Threshold": 0,
+          "StaticMesh": {
+            "ObjectName": "StaticMesh StorageContainerCritical",
+            "ObjectPath": "War/Content/Meshes/Resources/StorageContainerCritical.2"
+          }
+        },
+        {
+          "Threshold": 33,
+          "StaticMesh": {
+            "ObjectName": "StaticMesh StorageContainerDamaged",
+            "ObjectPath": "War/Content/Meshes/Resources/StorageContainerDamaged.2"
+          }
+        },
+        {
+          "Threshold": 66,
+          "StaticMesh": {
+            "ObjectName": "StaticMesh StorageContainer",
+            "ObjectPath": "War/Content/Meshes/Resources/StorageContainer.2"
+          }
+        }
+      ],
+      "InputValue": 100,
+      "SelectedMeshIndex": 2
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "MultiplexedStaticMesh",
+    "Outer": "BPMagicStorageBox_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class MultiplexedStaticMeshComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPMagicStorageBox_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPMagicStorageBox_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPMagicStorageBox.8"
+      },
+      "VariableGuid": "37B03939-494ABD7B-8233C4A5-6355017F",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class MultiplexedStaticMeshComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "MultiplexedStaticMeshComponent BPMagicStorageBox_C:MultiplexedStaticMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPMagicStorageBox.6"
+      },
+      "VariableGuid": "B65A087D-4CA1AA4D-890F09B3-1854A5E8",
+      "InternalVariableName": "MultiplexedStaticMesh"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BoxComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent BPMagicStorageBox_C:RepairBox_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPMagicStorageBox.4"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "F864EF50-4FDE33AC-6C0591AE-96002DCD",
+      "InternalVariableName": "RepairBox"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPMagicStorageBox_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPMagicStorageBox_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPMagicStorageBox.10"
+        },
+        {
+          "ObjectName": "SCS_Node BPMagicStorageBox_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPMagicStorageBox.11"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPMagicStorageBox_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPMagicStorageBox.10"
+        },
+        {
+          "ObjectName": "SCS_Node BPMagicStorageBox_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPMagicStorageBox.11"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPMagicStorageBox_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPMagicStorageBox.9"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Mesh",
+    "Outer": "Default__BPMagicStorageBox_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh StorageContainer",
+        "ObjectPath": "War/Content/Meshes/Resources/StorageContainer.2"
+      },
+      "bReceivesDecals": false,
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPMagicStorageBox_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPMagicStorageBox.3"
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPMagicStorageBox_C"
+  }
+]

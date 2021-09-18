@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "T3ZombieSpikes_Spike7",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "T3ZombieSpikes_Spike7",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x10AC"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "T3ZombieSpikes_Spike7",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant CursedStonesNeutral",
+            "ObjectPath": "War/Content/Materials/Event/CursedStonesNeutral.0"
+          },
+          "MaterialSlotName": "CursedStones",
+          "ImportedMaterialSlotName": "CursedStones",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 173.27838,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 173.27838,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 9.536743E-07,
+          "Y": -1.2357159,
+          "Z": 15.460255
+        },
+        "BoxExtent": {
+          "X": 6.54333,
+          "Y": 5.72209,
+          "Z": 18.41106
+        },
+        "SphereRadius": 18.681995
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup T3ZombieSpikes_Spike7:BodySetup_0",
+      "ObjectPath": "War/Content/FX/Mesh/DeadHarvest/T3ZombieSpikes_Spike7.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision T3ZombieSpikes_Spike7:NavCollision_0",
+      "ObjectPath": "War/Content/FX/Mesh/DeadHarvest/T3ZombieSpikes_Spike7.1"
+    },
+    "LightingGuid": "6E13ED82-4EA8F168-E51A7998-7513298F",
+    "RenderData": null
+  }
+]

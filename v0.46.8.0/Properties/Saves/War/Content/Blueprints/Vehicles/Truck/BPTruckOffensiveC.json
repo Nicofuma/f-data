@@ -1,0 +1,618 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "LMGMount",
+    "Outer": "BPTruckOffensiveC_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SkeletalMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPTruckOffensiveC_C",
+    "Super": "BPTruckBaseC_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPTruckOffensiveC_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.32"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler BPTruckOffensiveC_C:InheritableComponentHandler",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.11"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass BPTruckBaseC_C",
+      "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckBaseC.1"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPTruckOffensiveC_C:LMGMount",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.0"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPTruckOffensiveC_C",
+    "Name": "Default__BPTruckOffensiveC_C",
+    "Properties": {
+      "WorkVolume": {
+        "ObjectName": "BoxComponent Default__BPTruckOffensiveC_C:WorkVolume",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.9"
+      },
+      "IdleLoop": {
+        "ObjectName": "AudioComponent Default__BPTruckOffensiveC_C:IdleLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.6"
+      },
+      "RearLeftTireDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPTruckOffensiveC_C:RearLeftTireDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.17"
+      },
+      "RearLeftTireDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPTruckOffensiveC_C:RearLeftTireDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.16"
+      },
+      "RearRightTireDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPTruckOffensiveC_C:RearRightTireDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.19"
+      },
+      "RearRightTireDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPTruckOffensiveC_C:RearRightTireDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.18"
+      },
+      "MainDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPTruckOffensiveC_C:MainDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.13"
+      },
+      "MainDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPTruckOffensiveC_C:MainDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.12"
+      },
+      "SkiddingDirtPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPTruckOffensiveC_C:SkiddingDirtPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.20"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "CDC357D3494B19BD5838C386BA12C336",
+        "SourceString": "R-9 “Speartip” Escort"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "5B043B4442B6B6E25CAFA0B996F519E3",
+        "SourceString": "This standard Truck is fitted with Light Machinegun in place of the passenger seat. It’s well suited as an escort for convoys or lightly armoured operations."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D TruckOffensiveVehicleIcon",
+        "ObjectPath": "War/Content/Textures/UI/VehicleIcons/TruckOffensiveVehicleIcon.0"
+      },
+      "TechID": "ETechID::UnlockTruckOffensive",
+      "CodeName": "TruckOffensiveC",
+      "bIsReserveStockpiled": false,
+      "DestroyedMesh": {
+        "ObjectName": "StaticMeshComponent Default__BPTruckOffensiveC_C:DestroyedMesh",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.35"
+      },
+      "MinorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPTruckOffensiveC_C:MinorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.15"
+      },
+      "MajorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPTruckOffensiveC_C:MajorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.14"
+      },
+      "DriveLoop": {
+        "ObjectName": "AudioComponent Default__BPTruckOffensiveC_C:DriveLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.5"
+      },
+      "BackUpSFXLoop": {
+        "ObjectName": "AudioComponent Default__BPTruckOffensiveC_C:BackUpSFXLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.4"
+      },
+      "CameraRigComponent": {
+        "ObjectName": "PlayerCameraRigComponent Default__BPTruckOffensiveC_C:CameraRigVehicle",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.21"
+      },
+      "FrontAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__BPTruckOffensiveC_C:FrontAxelCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.24"
+      },
+      "RearAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__BPTruckOffensiveC_C:RearAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.27"
+      },
+      "FrontLeftRollCastLocation": {
+        "ObjectName": "SceneComponent Default__BPTruckOffensiveC_C:FrontRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.25"
+      },
+      "FrontRightRollCastLocation": {
+        "ObjectName": "SceneComponent Default__BPTruckOffensiveC_C:RearRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.28"
+      },
+      "LeftSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__BPTruckOffensiveC_C:LeftSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.26"
+      },
+      "RightSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__BPTruckOffensiveC_C:RightSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.29"
+      },
+      "VehicleCollision": {
+        "ObjectName": "BoxComponent Default__BPTruckOffensiveC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.8"
+      },
+      "PassengerArea": {
+        "ObjectName": "BoxComponent Default__BPTruckOffensiveC_C:PassengerBaseBox",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.7"
+      },
+      "AFKTimeoutComponent": {
+        "ObjectName": "AFKTimeoutComponent Default__BPTruckOffensiveC_C:AFKTimeoutComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.3"
+      },
+      "ServerAnimTickMode": "EServerAnimTickMode::TickWhenOccupied",
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPTruckOffensiveC_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.36"
+      },
+      "Mesh": {
+        "ObjectName": "SkeletalMeshComponent Default__BPTruckOffensiveC_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.34"
+      },
+      "CharacterMovement": {
+        "ObjectName": "RWDVehicleMovementComponent Default__BPTruckOffensiveC_C:CharMoveComp",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.22"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent Default__BPTruckOffensiveC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.10"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPTruckOffensiveC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.8"
+      }
+    }
+  },
+  {
+    "Type": "AFKTimeoutComponent",
+    "Name": "AFKTimeoutComponent",
+    "Outer": "Default__BPTruckOffensiveC_C"
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "BackUpSFXLoop",
+    "Outer": "Default__BPTruckOffensiveC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTruckOffensiveC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.10"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "DriveLoop",
+    "Outer": "Default__BPTruckOffensiveC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTruckOffensiveC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.10"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "IdleLoop",
+    "Outer": "Default__BPTruckOffensiveC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPTruckOffensiveC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.8"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "PassengerBaseBox",
+    "Outer": "Default__BPTruckOffensiveC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPTruckOffensiveC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.8"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "VehicleCollision",
+    "Outer": "Default__BPTruckOffensiveC_C",
+    "Properties": {
+      "OnComponentHit": null,
+      "OnComponentBeginOverlap": null
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "WorkVolume",
+    "Outer": "Default__BPTruckOffensiveC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPTruckOffensiveC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.8"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__BPTruckOffensiveC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPTruckOffensiveC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.8"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BPTruckOffensiveC_C",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class VehicleSeatComponent",
+            "ObjectPath": "/Script/War"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "VehicleSeatComponent BPTruckOffensiveC_C:PassengerSeat1_GEN_VARIABLE",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.37"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass BPTruckBase_C",
+              "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckBase.1"
+            },
+            "SCSVariableName": "PassengerSeat1",
+            "AssociatedGuid": "00DA469B-41CD2652-2A774CA7-D94004CE"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MainDirtHighSpeedPS",
+    "Outer": "Default__BPTruckOffensiveC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPTruckOffensiveC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.8"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MainDirtLowSpeedPS",
+    "Outer": "Default__BPTruckOffensiveC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPTruckOffensiveC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.8"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MajorDamagePS",
+    "Outer": "Default__BPTruckOffensiveC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTruckOffensiveC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.10"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MinorDamagePS",
+    "Outer": "Default__BPTruckOffensiveC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTruckOffensiveC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.10"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearLeftTireDirtHighSpeedPS",
+    "Outer": "Default__BPTruckOffensiveC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPTruckOffensiveC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.8"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearLeftTireDirtLowSpeedPS",
+    "Outer": "Default__BPTruckOffensiveC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPTruckOffensiveC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.8"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearRightTireDirtHighSpeedPS",
+    "Outer": "Default__BPTruckOffensiveC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPTruckOffensiveC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.8"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearRightTireDirtLowSpeedPS",
+    "Outer": "Default__BPTruckOffensiveC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPTruckOffensiveC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.8"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "SkiddingDirtPS",
+    "Outer": "Default__BPTruckOffensiveC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPTruckOffensiveC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.8"
+      }
+    }
+  },
+  {
+    "Type": "PlayerCameraRigComponent",
+    "Name": "CameraRigVehicle",
+    "Outer": "Default__BPTruckOffensiveC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTruckOffensiveC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.10"
+      }
+    }
+  },
+  {
+    "Type": "RWDVehicleMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__BPTruckOffensiveC_C",
+    "Properties": {
+      "EngineForce": 17980.0,
+      "MaxWalkSpeed": 2855.3726
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPTruckOffensiveC_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontAxelCastLocation",
+    "Outer": "Default__BPTruckOffensiveC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTruckOffensiveC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.10"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontRightAxleCastLocation",
+    "Outer": "Default__BPTruckOffensiveC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTruckOffensiveC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.10"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "LeftSideTrackLocation",
+    "Outer": "Default__BPTruckOffensiveC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTruckOffensiveC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.10"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearAxleCastLocation",
+    "Outer": "Default__BPTruckOffensiveC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTruckOffensiveC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.10"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearRightAxleCastLocation",
+    "Outer": "Default__BPTruckOffensiveC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTruckOffensiveC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.10"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RightSideTrackLocation",
+    "Outer": "Default__BPTruckOffensiveC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTruckOffensiveC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.10"
+      }
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPTruckOffensiveC_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.23"
+      },
+      "VariableGuid": "40033BB7-452C609C-E7F799A4-143F7AF7",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SkeletalMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SkeletalMeshComponent BPTruckOffensiveC_C:LMGMount_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.33"
+      },
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "D24D544A-46115EFC-EB42F4A2-D55E75B3",
+      "InternalVariableName": "LMGMount"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPTruckOffensiveC_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPTruckOffensiveC_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.31"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPTruckOffensiveC_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.31"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPTruckOffensiveC_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.30"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "LMGMount_GEN_VARIABLE",
+    "Outer": "BPTruckOffensiveC_C",
+    "Properties": {
+      "ClothingSimulationFactory": {
+        "ObjectName": "Class ClothingSimulationFactoryNv",
+        "ObjectPath": "/Script/ClothingSystemRuntimeNv"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_TruckOffensiveC_LMGMount",
+        "ObjectPath": "War/Content/Meshes/Vehicles/PrototypeVehicles/SK_TruckOffensiveC_LMGMount.0"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant TruckColLMGMount",
+          "ObjectPath": "War/Content/Materials/Vehicles/TruckColLMGMount.0"
+        },
+        {
+          "ObjectName": "MaterialInstanceConstant LightMachineGun",
+          "ObjectPath": "War/Content/Materials/Weapons/LightMachineGun.0"
+        },
+        null,
+        null
+      ],
+      "bReceivesDecals": false
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__BPTruckOffensiveC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTruckOffensiveC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.10"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "DestroyedMesh",
+    "Outer": "Default__BPTruckOffensiveC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPTruckOffensiveC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveC.10"
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPTruckOffensiveC_C"
+  },
+  {
+    "Type": "VehicleSeatComponent",
+    "Name": "PassengerSeat1_GEN_VARIABLE",
+    "Outer": "BPTruckOffensiveC_C",
+    "Properties": {
+      "MountCodeName": "TruckOffensiveGunner",
+      "MountComponent": {
+        "ObjectName": "BlueprintGeneratedClass BPTruckOffensiveGunnerComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/Truck/BPTruckOffensiveGunnerComponent.0"
+      },
+      "bIsExposed": true,
+      "RelativeLocation": {
+        "X": -55.854027,
+        "Y": 137.35284,
+        "Z": 293.22778
+      }
+    }
+  }
+]

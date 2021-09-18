@@ -1,0 +1,112 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPTraumaKit_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPTraumaKit_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPTraumaKit.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class GearPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPTraumaKit_C",
+    "Name": "Default__BPTraumaKit_C",
+    "Properties": {
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPTraumaKitComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Items/BPTraumaKitComponent.0"
+      },
+      "Encumbrance": 100,
+      "CodeName": "TraumaKit",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "F21967B14A7EC84736BA428D37F5FA81",
+        "SourceString": "Trauma Kit"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "A6E5717A4BDCE5408E161581A5B9BA5A",
+        "SourceString": "Used by medics to revive wounded soldiers."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D TraumaKitItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/TraumaKitItemIcon.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Primary",
+      "ItemCategory": "EItemCategory::Medical",
+      "ItemFlagsMask": 1025,
+      "ItemProfileType": "EItemProfileType::Tool",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPTraumaKit_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPTraumaKit.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPTraumaKit_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPTraumaKit.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPTraumaKit_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPTraumaKit_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPTraumaKit_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPTraumaKit.3"
+      },
+      "VariableGuid": "F13C3093-45B1355C-0BCB71B1-38890D71",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPTraumaKit_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPTraumaKit_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPTraumaKit.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPTraumaKit_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPTraumaKit_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPTraumaKit.2"
+      }
+    }
+  }
+]

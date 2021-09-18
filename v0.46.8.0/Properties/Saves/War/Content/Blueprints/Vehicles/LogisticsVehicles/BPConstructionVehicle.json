@@ -1,0 +1,1241 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "OperatorSeat1",
+    "Outer": "BPConstructionVehicle_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class VehicleSeatComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPConstructionVehicle_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPConstructionVehicle_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.46"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class ConstructionVehicle",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPConstructionVehicle_C:OperatorSeat1",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPConstructionVehicle_C:DriverSeat0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.14"
+      },
+      {
+        "ObjectName": "ObjectProperty BPConstructionVehicle_C:OperatorExit",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.16"
+      },
+      {
+        "ObjectName": "ObjectProperty BPConstructionVehicle_C:DriverExit0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.13"
+      },
+      {
+        "ObjectName": "ObjectProperty BPConstructionVehicle_C:OperatorTrigger",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.17"
+      },
+      {
+        "ObjectName": "ObjectProperty BPConstructionVehicle_C:DriverTrigger",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.15"
+      },
+      {
+        "ObjectName": "ObjectProperty BPConstructionVehicle_C:Camera",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.12"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPConstructionVehicle_C",
+    "Name": "Default__BPConstructionVehicle_C",
+    "Properties": {
+      "BoomLocation": {
+        "ObjectName": "SceneComponent Default__BPConstructionVehicle_C:BoomLocationLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.30"
+      },
+      "HammerLocation": {
+        "ObjectName": "SceneComponent Default__BPConstructionVehicle_C:HammerLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.33"
+      },
+      "WorkSoundCue": {
+        "ObjectName": "SoundCue ConstructionImpact_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Vehicles/Construction/ConstructionImpact_Cue.0"
+      },
+      "WorkPS": {
+        "ObjectName": "ParticleSystem SledgeImpact",
+        "ObjectPath": "War/Content/FX/SledgeImpact.45"
+      },
+      "WorkVolume": {
+        "ObjectName": "BoxComponent Default__BPConstructionVehicle_C:WorkVolume",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.9"
+      },
+      "IdleLoop": {
+        "ObjectName": "AudioComponent Default__BPConstructionVehicle_C:IdleLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.6"
+      },
+      "DriveLoopPitchCurve": {
+        "ObjectName": "CurveFloat TankPitchCurve",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/TankPitchCurve.0"
+      },
+      "RearLeftTireDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPConstructionVehicle_C:RearLeftTireDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.23"
+      },
+      "RearLeftTireDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPConstructionVehicle_C:RearLeftTireDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.22"
+      },
+      "RearRightTireDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPConstructionVehicle_C:RearRightTireDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.25"
+      },
+      "RearRightTireDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPConstructionVehicle_C:RearRightTireDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.24"
+      },
+      "MainDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPConstructionVehicle_C:MainDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.19"
+      },
+      "MainDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPConstructionVehicle_C:MainDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.18"
+      },
+      "SkiddingDirtPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPConstructionVehicle_C:SkiddingDirtPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.26"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "7A6902A44E1A1E2C11E658AC23442D04",
+        "SourceString": "BMS - Universal Assembly Rig"
+      },
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "D450838B4D6D1F3EFC2A7FA6038A9EB9",
+        "SourceString": "Construction Vehicle"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "22F1FAD340F660C4257B4CAAADA3F53B",
+        "SourceString": "A specialized vehicle designed by the Basset Motor Society used in the construction of large structures."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D ConstructionVehicleIcon",
+        "ObjectPath": "War/Content/Textures/UI/VehicleIcons/ConstructionVehicleIcon.0"
+      },
+      "VehicleBuildType": "EVehicleBuildType::BuildableAnywhere",
+      "CodeName": "Construction",
+      "VehicleProfileType": "EVehicleProfileType::Construction",
+      "VehicleMovementProfileType": "EVehicleMovementProfileType::ConstructionTracked",
+      "ArmourType": "EArmourType::LightVehicle",
+      "DepthCuttoffForSwimDamage": 265.0,
+      "DestroyedMesh": {
+        "ObjectName": "StaticMeshComponent Default__BPConstructionVehicle_C:DestroyedMesh",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.48"
+      },
+      "MinorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPConstructionVehicle_C:MinorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.21"
+      },
+      "MajorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPConstructionVehicle_C:MajorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.20"
+      },
+      "DestroyedFX": {
+        "ObjectName": "ParticleSystem GrenadeBlast",
+        "ObjectPath": "War/Content/FX/GrenadeBlast.151"
+      },
+      "DestroyedSoundCue": {
+        "ObjectName": "SoundCue VehicleDeath_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Vehicles/Truck/VehicleDeath_Cue.0"
+      },
+      "BreakdownSoundCue": {
+        "ObjectName": "SoundCue TruckStall_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Vehicles/Truck/TruckStall_Cue.0"
+      },
+      "DriveLoop": {
+        "ObjectName": "AudioComponent Default__BPConstructionVehicle_C:DriveLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.5"
+      },
+      "BackUpSFXLoop": {
+        "ObjectName": "AudioComponent Default__BPConstructionVehicle_C:BackUpSFXLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.4"
+      },
+      "LockSound": {
+        "ObjectName": "SoundCue Lock_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Vehicles/Lock_Cue.0"
+      },
+      "CameraRigComponent": {
+        "ObjectName": "PlayerCameraRigComponent Default__BPConstructionVehicle_C:CameraRigVehicle",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.27"
+      },
+      "FrontAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__BPConstructionVehicle_C:FrontAxelCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.31"
+      },
+      "RearAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__BPConstructionVehicle_C:RearAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.35"
+      },
+      "FrontLeftRollCastLocation": {
+        "ObjectName": "SceneComponent Default__BPConstructionVehicle_C:FrontRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.32"
+      },
+      "FrontRightRollCastLocation": {
+        "ObjectName": "SceneComponent Default__BPConstructionVehicle_C:RearRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.36"
+      },
+      "LeftSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__BPConstructionVehicle_C:LeftSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.34"
+      },
+      "RightSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__BPConstructionVehicle_C:RightSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.37"
+      },
+      "VehicleCollision": {
+        "ObjectName": "BoxComponent Default__BPConstructionVehicle_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.8"
+      },
+      "PassengerArea": {
+        "ObjectName": "BoxComponent Default__BPConstructionVehicle_C:PassengerBaseBox",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.7"
+      },
+      "AFKTimeoutComponent": {
+        "ObjectName": "AFKTimeoutComponent Default__BPConstructionVehicle_C:AFKTimeoutComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.3"
+      },
+      "TreadInfo": [
+        {
+          "PhysicalMaterial": {
+            "ObjectName": "PhysicalMaterial DirtPhys",
+            "ObjectPath": "War/Content/PhysicalMaterials/DirtPhys.0"
+          },
+          "TreadActor": {
+            "ObjectName": "BlueprintGeneratedClass DirtTread_C",
+            "ObjectPath": "War/Content/Textures/Decal/DirtTread.0"
+          }
+        },
+        {
+          "PhysicalMaterial": {
+            "ObjectName": "PhysicalMaterial MudPhys",
+            "ObjectPath": "War/Content/PhysicalMaterials/MudPhys.0"
+          },
+          "TreadActor": {
+            "ObjectName": "BlueprintGeneratedClass DirtTread_C",
+            "ObjectPath": "War/Content/Textures/Decal/DirtTread.0"
+          }
+        },
+        {
+          "PhysicalMaterial": {
+            "ObjectName": "PhysicalMaterial GrassPhys",
+            "ObjectPath": "War/Content/PhysicalMaterials/GrassPhys.0"
+          },
+          "TreadActor": {
+            "ObjectName": "BlueprintGeneratedClass DirtTread_C",
+            "ObjectPath": "War/Content/Textures/Decal/DirtTread.0"
+          }
+        },
+        {
+          "PhysicalMaterial": {
+            "ObjectName": "PhysicalMaterial RoadPhys",
+            "ObjectPath": "War/Content/PhysicalMaterials/RoadPhys.0"
+          },
+          "TreadActor": {
+            "ObjectName": "BlueprintGeneratedClass DirtTread_C",
+            "ObjectPath": "War/Content/Textures/Decal/DirtTread.0"
+          }
+        },
+        {
+          "PhysicalMaterial": {
+            "ObjectName": "PhysicalMaterial SnowPhys",
+            "ObjectPath": "War/Content/PhysicalMaterials/SnowPhys.0"
+          },
+          "TreadActor": {
+            "ObjectName": "BlueprintGeneratedClass Snowtread_C",
+            "ObjectPath": "War/Content/Textures/Decal/Snowtread.0"
+          }
+        },
+        {
+          "PhysicalMaterial": {
+            "ObjectName": "PhysicalMaterial SandPhys",
+            "ObjectPath": "War/Content/PhysicalMaterials/SandPhys.0"
+          },
+          "TreadActor": {
+            "ObjectName": "BlueprintGeneratedClass SandTread_C",
+            "ObjectPath": "War/Content/Textures/Decal/SandTread.0"
+          }
+        },
+        {
+          "PhysicalMaterial": {
+            "ObjectName": "PhysicalMaterial WetSandPhys",
+            "ObjectPath": "War/Content/PhysicalMaterials/WetSandPhys.0"
+          },
+          "TreadActor": {
+            "ObjectName": "BlueprintGeneratedClass SandTread_C",
+            "ObjectPath": "War/Content/Textures/Decal/SandTread.0"
+          }
+        },
+        {
+          "PhysicalMaterial": {
+            "ObjectName": "PhysicalMaterial T1RoadPhys",
+            "ObjectPath": "War/Content/PhysicalMaterials/T1RoadPhys.0"
+          },
+          "TreadActor": {
+            "ObjectName": "BlueprintGeneratedClass DirtTread_C",
+            "ObjectPath": "War/Content/Textures/Decal/DirtTread.0"
+          }
+        },
+        {
+          "PhysicalMaterial": {
+            "ObjectName": "PhysicalMaterial T2RoadPhys",
+            "ObjectPath": "War/Content/PhysicalMaterials/T2RoadPhys.0"
+          },
+          "TreadActor": {
+            "ObjectName": "BlueprintGeneratedClass DirtTread_C",
+            "ObjectPath": "War/Content/Textures/Decal/DirtTread.0"
+          }
+        },
+        {
+          "PhysicalMaterial": {
+            "ObjectName": "PhysicalMaterial T3RoadPhys",
+            "ObjectPath": "War/Content/PhysicalMaterials/T3RoadPhys.0"
+          },
+          "TreadActor": {
+            "ObjectName": "BlueprintGeneratedClass DirtTread_C",
+            "ObjectPath": "War/Content/Textures/Decal/DirtTread.0"
+          }
+        }
+      ],
+      "Treads": {
+        "TrackMaterialIndices": 0,
+        "TrackMaterialIndices": 2,
+        "TrackLength": 40000.0
+      },
+      "LinearSpeedToTurnSpeedMapCurve": {
+        "ObjectName": "CurveFloat ConstructionVehicleSpeedCurve",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/ConstructionVehicleSpeedCurve.0"
+      },
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPConstructionVehicle_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.49"
+      },
+      "Mesh": {
+        "ObjectName": "SkeletalMeshComponent Default__BPConstructionVehicle_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.47"
+      },
+      "CharacterMovement": {
+        "ObjectName": "RWDVehicleMovementComponent Default__BPConstructionVehicle_C:CharMoveComp",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.28"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent Default__BPConstructionVehicle_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.11"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPConstructionVehicle_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.8"
+      }
+    }
+  },
+  {
+    "Type": "AFKTimeoutComponent",
+    "Name": "AFKTimeoutComponent",
+    "Outer": "Default__BPConstructionVehicle_C"
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "BackUpSFXLoop",
+    "Outer": "Default__BPConstructionVehicle_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPConstructionVehicle_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.11"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "DriveLoop",
+    "Outer": "Default__BPConstructionVehicle_C",
+    "Properties": {
+      "Sound": {
+        "ObjectName": "SoundCue ConstructionDrive_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Vehicles/Construction/ConstructionDrive_Cue.0"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPConstructionVehicle_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.11"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "IdleLoop",
+    "Outer": "Default__BPConstructionVehicle_C",
+    "Properties": {
+      "Sound": {
+        "ObjectName": "SoundCue ConstructionIdle_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Vehicles/Construction/ConstructionIdle_Cue.0"
+      },
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPConstructionVehicle_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.8"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "PassengerBaseBox",
+    "Outer": "Default__BPConstructionVehicle_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPConstructionVehicle_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.8"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "VehicleCollision",
+    "Outer": "Default__BPConstructionVehicle_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 250.0,
+        "Y": 150.0,
+        "Z": 125.0
+      },
+      "OnComponentBeginOverlap": null
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "WorkVolume",
+    "Outer": "Default__BPConstructionVehicle_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPConstructionVehicle_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.8"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -60.0
+      }
+    }
+  },
+  {
+    "Type": "CameraComponent",
+    "Name": "Camera_GEN_VARIABLE",
+    "Outer": "BPConstructionVehicle_C"
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__BPConstructionVehicle_C",
+    "Properties": {
+      "CapsuleHalfHeight": 200.0,
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPConstructionVehicle_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.8"
+      },
+      "RelativeLocation": {
+        "X": 10.666931,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Camera",
+    "Outer": "BPConstructionVehicle_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class CameraComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "DriverExit0",
+    "Outer": "BPConstructionVehicle_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class VehicleExitComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "DriverSeat0",
+    "Outer": "BPConstructionVehicle_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class VehicleSeatComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "DriverTrigger",
+    "Outer": "BPConstructionVehicle_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class VehicleTriggerComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "OperatorExit",
+    "Outer": "BPConstructionVehicle_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class VehicleExitComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "OperatorTrigger",
+    "Outer": "BPConstructionVehicle_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class VehicleTriggerComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MainDirtHighSpeedPS",
+    "Outer": "Default__BPConstructionVehicle_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPConstructionVehicle_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.8"
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MainDirtLowSpeedPS",
+    "Outer": "Default__BPConstructionVehicle_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPConstructionVehicle_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.8"
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MajorDamagePS",
+    "Outer": "Default__BPConstructionVehicle_C",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem TruckDamaged01",
+        "ObjectPath": "War/Content/FX/TruckDamaged01.50"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPConstructionVehicle_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.11"
+      },
+      "RelativeLocation": {
+        "X": 170.6529,
+        "Y": 0.0,
+        "Z": 56.233368
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MinorDamagePS",
+    "Outer": "Default__BPConstructionVehicle_C",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem TruckDamaged02",
+        "ObjectPath": "War/Content/FX/TruckDamaged02.35"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPConstructionVehicle_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.11"
+      },
+      "RelativeLocation": {
+        "X": 178.06825,
+        "Y": 0.0,
+        "Z": 48.816513
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearLeftTireDirtHighSpeedPS",
+    "Outer": "Default__BPConstructionVehicle_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPConstructionVehicle_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.8"
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearLeftTireDirtLowSpeedPS",
+    "Outer": "Default__BPConstructionVehicle_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPConstructionVehicle_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.8"
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearRightTireDirtHighSpeedPS",
+    "Outer": "Default__BPConstructionVehicle_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPConstructionVehicle_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.8"
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearRightTireDirtLowSpeedPS",
+    "Outer": "Default__BPConstructionVehicle_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPConstructionVehicle_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.8"
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "SkiddingDirtPS",
+    "Outer": "Default__BPConstructionVehicle_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPConstructionVehicle_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.8"
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "PlayerCameraRigComponent",
+    "Name": "CameraRigVehicle",
+    "Outer": "Default__BPConstructionVehicle_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPConstructionVehicle_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.11"
+      },
+      "RelativeRotation": {
+        "Pitch": -60.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "RWDVehicleMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__BPConstructionVehicle_C",
+    "Properties": {
+      "CenterOfGravityHeight": 0.2,
+      "EngineForce": 7600.0,
+      "BrakeForce": 35000.0,
+      "HandbrakeForce": 20000.0,
+      "AirResistance": 90.0,
+      "RollingResistance": 2400.0,
+      "DepthOffset": -195.0,
+      "MaxWalkSpeed": 571.9887,
+      "BrakingFriction": 2.0,
+      "bUseSeparateBrakingFriction": true,
+      "Mass": 10000.0
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPConstructionVehicle_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "BoomLocationLocation",
+    "Outer": "Default__BPConstructionVehicle_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPConstructionVehicle_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.47"
+      },
+      "RelativeLocation": {
+        "X": 304.1686,
+        "Y": 75.41852,
+        "Z": 219.55399
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontAxelCastLocation",
+    "Outer": "Default__BPConstructionVehicle_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPConstructionVehicle_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.11"
+      },
+      "RelativeLocation": {
+        "X": 194.0,
+        "Y": 0.0,
+        "Z": -160.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontRightAxleCastLocation",
+    "Outer": "Default__BPConstructionVehicle_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPConstructionVehicle_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.11"
+      },
+      "RelativeLocation": {
+        "X": 194.0,
+        "Y": -100.0,
+        "Z": -160.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "HammerLocation",
+    "Outer": "Default__BPConstructionVehicle_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__BPConstructionVehicle_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.47"
+      },
+      "RelativeLocation": {
+        "X": -192.93417,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "LeftSideTrackLocation",
+    "Outer": "Default__BPConstructionVehicle_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPConstructionVehicle_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.11"
+      },
+      "RelativeLocation": {
+        "X": -17.333435,
+        "Y": -85.26286,
+        "Z": -186.76268
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearAxleCastLocation",
+    "Outer": "Default__BPConstructionVehicle_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPConstructionVehicle_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.11"
+      },
+      "RelativeLocation": {
+        "X": -194.0,
+        "Y": 0.0,
+        "Z": -160.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearRightAxleCastLocation",
+    "Outer": "Default__BPConstructionVehicle_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPConstructionVehicle_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.11"
+      },
+      "RelativeLocation": {
+        "X": 194.0,
+        "Y": 100.0,
+        "Z": -160.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RightSideTrackLocation",
+    "Outer": "Default__BPConstructionVehicle_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPConstructionVehicle_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.11"
+      },
+      "RelativeLocation": {
+        "X": -19.99997,
+        "Y": 69.17578,
+        "Z": -186.76247
+      }
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPConstructionVehicle_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.29"
+      },
+      "VariableGuid": "132DBE68-48248206-FA91A090-350127F5",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class CameraComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "CameraComponent BPConstructionVehicle_C:Camera_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.10"
+      },
+      "ParentComponentOrVariableName": "CameraRigVehicle",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "C5DD9693-45557239-4DC83C91-46438F00",
+      "InternalVariableName": "Camera"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class VehicleTriggerComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "VehicleTriggerComponent BPConstructionVehicle_C:DriverTrigger_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.54"
+      },
+      "ParentComponentOrVariableName": "VehicleCollision",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "05BFBBDA-4D2131CF-6DA3BF82-AFC21721",
+      "InternalVariableName": "DriverTrigger"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class VehicleTriggerComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "VehicleTriggerComponent BPConstructionVehicle_C:OperatorTrigger_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.55"
+      },
+      "ParentComponentOrVariableName": "VehicleCollision",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "09A3A001-4C62A474-C189BEAE-C053E1F4",
+      "InternalVariableName": "OperatorTrigger"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class VehicleExitComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "VehicleExitComponent BPConstructionVehicle_C:DriverExit0_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.50"
+      },
+      "ParentComponentOrVariableName": "VehicleCollision",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "3AB2949A-482E7E0E-DC4B22A3-D4E6ACA8",
+      "InternalVariableName": "DriverExit0"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class VehicleExitComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "VehicleExitComponent BPConstructionVehicle_C:OperatorExit_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.51"
+      },
+      "ParentComponentOrVariableName": "VehicleCollision",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "64BE1720-430F53A2-B48778A8-4D4FB9B9",
+      "InternalVariableName": "OperatorExit"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class VehicleSeatComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "VehicleSeatComponent BPConstructionVehicle_C:DriverSeat0_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.52"
+      },
+      "AttachToName": "cabin_pivot",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "18B39A10-4F361FEC-A70F9186-F0E6FCA2",
+      "InternalVariableName": "DriverSeat0"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_8",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class VehicleSeatComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "VehicleSeatComponent BPConstructionVehicle_C:OperatorSeat1_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.53"
+      },
+      "AttachToName": "cabin_pivot",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "2759EB67-4AE8674D-23BFDA8B-7798ED81",
+      "InternalVariableName": "OperatorSeat1"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPConstructionVehicle_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPConstructionVehicle_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.39"
+        },
+        {
+          "ObjectName": "SCS_Node BPConstructionVehicle_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.40"
+        },
+        {
+          "ObjectName": "SCS_Node BPConstructionVehicle_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.41"
+        },
+        {
+          "ObjectName": "SCS_Node BPConstructionVehicle_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.42"
+        },
+        {
+          "ObjectName": "SCS_Node BPConstructionVehicle_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.43"
+        },
+        {
+          "ObjectName": "SCS_Node BPConstructionVehicle_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.44"
+        },
+        {
+          "ObjectName": "SCS_Node BPConstructionVehicle_C:SimpleConstructionScript_0.SCS_Node_8",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.45"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPConstructionVehicle_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.39"
+        },
+        {
+          "ObjectName": "SCS_Node BPConstructionVehicle_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.40"
+        },
+        {
+          "ObjectName": "SCS_Node BPConstructionVehicle_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.41"
+        },
+        {
+          "ObjectName": "SCS_Node BPConstructionVehicle_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.42"
+        },
+        {
+          "ObjectName": "SCS_Node BPConstructionVehicle_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.43"
+        },
+        {
+          "ObjectName": "SCS_Node BPConstructionVehicle_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.44"
+        },
+        {
+          "ObjectName": "SCS_Node BPConstructionVehicle_C:SimpleConstructionScript_0.SCS_Node_8",
+          "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.45"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPConstructionVehicle_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.38"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__BPConstructionVehicle_C",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_ConstructionVehicle_C",
+        "ObjectPath": "War/Content/Animation/ConstructionVehicle/ABP_ConstructionVehicle.1"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_ConstructionVehicle",
+        "ObjectPath": "War/Content/Meshes/Vehicles/SK_ConstructionVehicle.0"
+      },
+      "VisibilityBasedAnimTickOption": "EVisibilityBasedAnimTickOption::AlwaysTickPoseAndRefreshBones",
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant ConstructionVehicleTread",
+          "ObjectPath": "War/Content/Materials/Vehicles/ConstructionVehicleTread.0"
+        },
+        {
+          "ObjectName": "MaterialInstanceConstant ConstructionVehicle",
+          "ObjectPath": "War/Content/Materials/Vehicles/ConstructionVehicle.0"
+        },
+        {
+          "ObjectName": "MaterialInstanceConstant ConstructionVehicleTread",
+          "ObjectPath": "War/Content/Materials/Vehicles/ConstructionVehicleTread.0"
+        },
+        {
+          "ObjectName": "MaterialInstanceConstant ConstructionVehicleCanvas",
+          "ObjectPath": "War/Content/Materials/Environment/Props/ConstructionVehicleCanvas.0"
+        }
+      ],
+      "BodyInstance": {
+        "PhysMaterialOverride": {
+          "ObjectName": "PhysicalMaterial MetalPhys",
+          "ObjectPath": "War/Content/PhysicalMaterials/MetalPhys.0"
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPConstructionVehicle_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.11"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -200.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "DestroyedMesh",
+    "Outer": "Default__BPConstructionVehicle_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh ConstructionVehicleDestroyed",
+        "ObjectPath": "War/Content/Meshes/Vehicles/ConstructionVehicleDestroyed.2"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPConstructionVehicle_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicle.11"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": -0.010292649,
+        "Z": -160.37704
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 180.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPConstructionVehicle_C"
+  },
+  {
+    "Type": "VehicleExitComponent",
+    "Name": "DriverExit0_GEN_VARIABLE",
+    "Outer": "BPConstructionVehicle_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": -55.0,
+        "Y": -250.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VehicleExitComponent",
+    "Name": "OperatorExit_GEN_VARIABLE",
+    "Outer": "BPConstructionVehicle_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": -55.0,
+        "Y": 250.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VehicleSeatComponent",
+    "Name": "DriverSeat0_GEN_VARIABLE",
+    "Outer": "BPConstructionVehicle_C",
+    "Properties": {
+      "TriggerName": "DriverTrigger",
+      "ExitName": "DriverExit0",
+      "EnterSFX": {
+        "ObjectName": "SoundCue ConstructionStart_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Vehicles/Construction/ConstructionStart_Cue.0"
+      },
+      "RelativeLocation": {
+        "X": 40.0,
+        "Y": -5.0,
+        "Z": 120.0
+      }
+    }
+  },
+  {
+    "Type": "VehicleSeatComponent",
+    "Name": "OperatorSeat1_GEN_VARIABLE",
+    "Outer": "BPConstructionVehicle_C",
+    "Properties": {
+      "Index": 1,
+      "TriggerName": "OperatorTrigger",
+      "ExitName": "OperatorExit",
+      "MountCodeName": "ConstructionVehicleGunner",
+      "MountComponent": {
+        "ObjectName": "BlueprintGeneratedClass BPConstructionVehicleGunnerComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPConstructionVehicleGunnerComponent.0"
+      },
+      "EnterSFX": {
+        "ObjectName": "SoundCue TruckDoorOpen_cue",
+        "ObjectPath": "War/Content/Audio/SFX/Vehicles/Truck/TruckDoorOpen_cue.0"
+      },
+      "RelativeLocation": {
+        "X": -45.0,
+        "Y": -130.0,
+        "Z": 120.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VehicleTriggerComponent",
+    "Name": "DriverTrigger_GEN_VARIABLE",
+    "Outer": "BPConstructionVehicle_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": -50.0,
+        "Y": -245.0,
+        "Z": -65.0
+      }
+    }
+  },
+  {
+    "Type": "VehicleTriggerComponent",
+    "Name": "OperatorTrigger_GEN_VARIABLE",
+    "Outer": "BPConstructionVehicle_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": -50.0,
+        "Y": 245.0,
+        "Z": -65.0
+      }
+    }
+  }
+]

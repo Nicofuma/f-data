@@ -1,0 +1,105 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "OldBomb04",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 2.0866566,
+              "Y": 9.2901535,
+              "Z": 56.594498
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 5.001598
+            },
+            "X": 41.008415,
+            "Y": 43.827896,
+            "Z": 248.9226,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "OldBomb04",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x7AFF"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "OldBomb04",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant OldBomb01",
+            "ObjectPath": "War/Content/Materials/Environment/Props/OldBomb01.0"
+          },
+          "MaterialSlotName": "OldBomb",
+          "ImportedMaterialSlotName": "RelicBomb",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 279.7055,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 279.7055,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 2.0866566,
+          "Y": 9.2901535,
+          "Z": 56.594498
+        },
+        "BoxExtent": {
+          "X": 28.282576,
+          "Y": 38.356285,
+          "Z": 124.4613
+        },
+        "SphereRadius": 127.463585
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup OldBomb04:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/OldBomb04.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision OldBomb04:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/OldBomb04.1"
+    },
+    "LightingGuid": "93746916-4C785474-BFF1B2AF-FF6B9655",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,663 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPOilTankerW_C",
+    "Super": "BPOilTankerC_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPOilTankerW_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.30"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler BPOilTankerW_C:InheritableComponentHandler",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.10"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass BPOilTankerC_C",
+      "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerC.1"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPOilTankerW_C",
+    "Name": "Default__BPOilTankerW_C",
+    "Properties": {
+      "WorkVolume": {
+        "ObjectName": "BoxComponent Default__BPOilTankerW_C:WorkVolume",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.8"
+      },
+      "IdleLoop": {
+        "ObjectName": "AudioComponent Default__BPOilTankerW_C:IdleLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.5"
+      },
+      "RearLeftTireDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPOilTankerW_C:RearLeftTireDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.16"
+      },
+      "RearLeftTireDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPOilTankerW_C:RearLeftTireDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.15"
+      },
+      "RearRightTireDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPOilTankerW_C:RearRightTireDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.18"
+      },
+      "RearRightTireDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPOilTankerW_C:RearRightTireDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.17"
+      },
+      "MainDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPOilTankerW_C:MainDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.12"
+      },
+      "MainDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPOilTankerW_C:MainDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.11"
+      },
+      "SkiddingDirtPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPOilTankerW_C:SkiddingDirtPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.19"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "D534A2E747FFC7C3A873538F0014F75C",
+        "SourceString": "Dunne Fuelrunner 2d"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "E9F9CCF445D3129FFD5B6D994F788642",
+        "SourceString": "The Fuelrunner is a heavy Dunne rig designed to transport and distribute large quantities of Fuel."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D OilTankerWarIcon",
+        "ObjectPath": "War/Content/Textures/UI/VehicleIcons/OilTankerWarIcon.0"
+      },
+      "FactionVariant": "EFactionId::Wardens",
+      "CodeName": "OilTankerW",
+      "DestroyedMesh": {
+        "ObjectName": "StaticMeshComponent Default__BPOilTankerW_C:DestroyedMesh",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.36"
+      },
+      "MinorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPOilTankerW_C:MinorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.14"
+      },
+      "MajorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPOilTankerW_C:MajorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.13"
+      },
+      "DriveLoop": {
+        "ObjectName": "AudioComponent Default__BPOilTankerW_C:DriveLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.4"
+      },
+      "BackUpSFXLoop": {
+        "ObjectName": "AudioComponent Default__BPOilTankerW_C:BackUpSFXLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.3"
+      },
+      "CameraRigComponent": {
+        "ObjectName": "PlayerCameraRigComponent Default__BPOilTankerW_C:CameraRigVehicle",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.20"
+      },
+      "FrontAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__BPOilTankerW_C:FrontAxelCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.23"
+      },
+      "RearAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__BPOilTankerW_C:RearAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.26"
+      },
+      "FrontLeftRollCastLocation": {
+        "ObjectName": "SceneComponent Default__BPOilTankerW_C:FrontRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.24"
+      },
+      "FrontRightRollCastLocation": {
+        "ObjectName": "SceneComponent Default__BPOilTankerW_C:RearRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.27"
+      },
+      "LeftSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__BPOilTankerW_C:LeftSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.25"
+      },
+      "RightSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__BPOilTankerW_C:RightSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.28"
+      },
+      "VehicleCollision": {
+        "ObjectName": "BoxComponent Default__BPOilTankerW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.7"
+      },
+      "PassengerArea": {
+        "ObjectName": "BoxComponent Default__BPOilTankerW_C:PassengerBaseBox",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.6"
+      },
+      "AFKTimeoutComponent": {
+        "ObjectName": "AFKTimeoutComponent Default__BPOilTankerW_C:AFKTimeoutComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.2"
+      },
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPOilTankerW_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.37"
+      },
+      "Mesh": {
+        "ObjectName": "SkeletalMeshComponent Default__BPOilTankerW_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.31"
+      },
+      "CharacterMovement": {
+        "ObjectName": "RWDVehicleMovementComponent Default__BPOilTankerW_C:CharMoveComp",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.21"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent Default__BPOilTankerW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.9"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPOilTankerW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.7"
+      }
+    }
+  },
+  {
+    "Type": "AFKTimeoutComponent",
+    "Name": "AFKTimeoutComponent",
+    "Outer": "Default__BPOilTankerW_C"
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "BackUpSFXLoop",
+    "Outer": "Default__BPOilTankerW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPOilTankerW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.9"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "DriveLoop",
+    "Outer": "Default__BPOilTankerW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPOilTankerW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.9"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "IdleLoop",
+    "Outer": "Default__BPOilTankerW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPOilTankerW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.7"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "PassengerBaseBox",
+    "Outer": "Default__BPOilTankerW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPOilTankerW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.7"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "VehicleCollision",
+    "Outer": "Default__BPOilTankerW_C",
+    "Properties": {
+      "OnComponentHit": null,
+      "OnComponentBeginOverlap": null
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "WorkVolume",
+    "Outer": "Default__BPOilTankerW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPOilTankerW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.7"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__BPOilTankerW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPOilTankerW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.7"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BPOilTankerW_C",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class StaticMeshComponent",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "StaticMeshComponent BPOilTankerW_C:Light_L_GEN_VARIABLE",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.33"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass BPOilTankerC_C",
+              "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerC.1"
+            },
+            "SCSVariableName": "Light_L",
+            "AssociatedGuid": "83C84E2C-4DAD1D94-328516AE-C2AA224F"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class SpotLightComponent",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SpotLightComponent BPOilTankerW_C:SpotLight2_GEN_VARIABLE",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.32"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass BPOilTankerC_C",
+              "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerC.1"
+            },
+            "SCSVariableName": "SpotLight2",
+            "AssociatedGuid": "60499BE7-4227455F-D9AA16A6-463E955F"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class StaticMeshComponent",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "StaticMeshComponent BPOilTankerW_C:Light_R_GEN_VARIABLE",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.34"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass BPOilTankerC_C",
+              "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerC.1"
+            },
+            "SCSVariableName": "Light_R",
+            "AssociatedGuid": "394043F9-4193242E-3C9BDA9D-FB74FD3D"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class StaticMeshComponent",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "StaticMeshComponent BPOilTankerW_C:RearLight_R_GEN_VARIABLE",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.35"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass BPOilTankerC_C",
+              "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerC.1"
+            },
+            "SCSVariableName": "RearLight_R",
+            "AssociatedGuid": "9A19E765-4F31F83E-3CA2B992-47BA7783"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class VehicleSeatComponent",
+            "ObjectPath": "/Script/War"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "VehicleSeatComponent BPOilTankerW_C:DriverSeat0_GEN_VARIABLE",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.38"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass BPOilTankerC_C",
+              "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerC.1"
+            },
+            "SCSVariableName": "DriverSeat0",
+            "AssociatedGuid": "0194BBD9-447947B9-35CA1884-B4D7CBC5"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MainDirtHighSpeedPS",
+    "Outer": "Default__BPOilTankerW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPOilTankerW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MainDirtLowSpeedPS",
+    "Outer": "Default__BPOilTankerW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPOilTankerW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MajorDamagePS",
+    "Outer": "Default__BPOilTankerW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPOilTankerW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.9"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MinorDamagePS",
+    "Outer": "Default__BPOilTankerW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPOilTankerW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.9"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearLeftTireDirtHighSpeedPS",
+    "Outer": "Default__BPOilTankerW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPOilTankerW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearLeftTireDirtLowSpeedPS",
+    "Outer": "Default__BPOilTankerW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPOilTankerW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearRightTireDirtHighSpeedPS",
+    "Outer": "Default__BPOilTankerW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPOilTankerW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearRightTireDirtLowSpeedPS",
+    "Outer": "Default__BPOilTankerW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPOilTankerW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "SkiddingDirtPS",
+    "Outer": "Default__BPOilTankerW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPOilTankerW_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.7"
+      }
+    }
+  },
+  {
+    "Type": "PlayerCameraRigComponent",
+    "Name": "CameraRigVehicle",
+    "Outer": "Default__BPOilTankerW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPOilTankerW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.9"
+      }
+    }
+  },
+  {
+    "Type": "RWDVehicleMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__BPOilTankerW_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPOilTankerW_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontAxelCastLocation",
+    "Outer": "Default__BPOilTankerW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPOilTankerW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.9"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontRightAxleCastLocation",
+    "Outer": "Default__BPOilTankerW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPOilTankerW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.9"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "LeftSideTrackLocation",
+    "Outer": "Default__BPOilTankerW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPOilTankerW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.9"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearAxleCastLocation",
+    "Outer": "Default__BPOilTankerW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPOilTankerW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.9"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearRightAxleCastLocation",
+    "Outer": "Default__BPOilTankerW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPOilTankerW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.9"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RightSideTrackLocation",
+    "Outer": "Default__BPOilTankerW_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPOilTankerW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.9"
+      }
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPOilTankerW_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.22"
+      },
+      "VariableGuid": "DDBDADFC-430B7E4A-774381B9-005BC73A",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPOilTankerW_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPOilTankerW_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.29"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__BPOilTankerW_C",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_TruckWar_C",
+        "ObjectPath": "War/Content/Animation/Truck/ABP_TruckWar.1"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_OilTankerWar",
+        "ObjectPath": "War/Content/Meshes/Vehicles/SK_OilTankerWar.0"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPOilTankerW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.9"
+      }
+    }
+  },
+  {
+    "Type": "SpotLightComponent",
+    "Name": "SpotLight2_GEN_VARIABLE",
+    "Outer": "BPOilTankerW_C",
+    "Properties": {
+      "bHiddenInGame": true
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Light_L_GEN_VARIABLE",
+    "Outer": "BPOilTankerW_C",
+    "Properties": {
+      "bHiddenInGame": true
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Light_R_GEN_VARIABLE",
+    "Outer": "BPOilTankerW_C",
+    "Properties": {
+      "bHiddenInGame": true
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "RearLight_R_GEN_VARIABLE",
+    "Outer": "BPOilTankerW_C",
+    "Properties": {
+      "bHiddenInGame": true
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "DestroyedMesh",
+    "Outer": "Default__BPOilTankerW_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh OilTankerWarDestroyed",
+        "ObjectPath": "War/Content/Meshes/Vehicles/OilTankerWarDestroyed.2"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPOilTankerW_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/LogisticsVehicles/BPOilTankerW.9"
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPOilTankerW_C"
+  },
+  {
+    "Type": "VehicleSeatComponent",
+    "Name": "DriverSeat0_GEN_VARIABLE",
+    "Outer": "BPOilTankerW_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 84.67362,
+        "Y": 128.01794,
+        "Z": 235.0102
+      }
+    }
+  }
+]

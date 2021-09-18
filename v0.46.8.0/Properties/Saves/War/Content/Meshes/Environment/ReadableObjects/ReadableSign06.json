@@ -1,0 +1,185 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "ReadableText",
+    "Outer": "ReadableSign06_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class ReadableTextComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ReadableSign06_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript ReadableSign06_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Meshes/Environment/ReadableObjects/ReadableSign06.9"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class Actor",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty ReadableSign06_C:ReadableText",
+        "ObjectPath": "War/Content/Meshes/Environment/ReadableObjects/ReadableSign06.0"
+      },
+      {
+        "ObjectName": "ObjectProperty ReadableSign06_C:StaticMesh",
+        "ObjectPath": "War/Content/Meshes/Environment/ReadableObjects/ReadableSign06.3"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "ReadableSign06_C",
+    "Name": "Default__ReadableSign06_C"
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "StaticMesh",
+    "Outer": "ReadableSign06_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ReadableTextComponent",
+    "Name": "ReadableText_GEN_VARIABLE",
+    "Outer": "ReadableSign06_C",
+    "Properties": {
+      "BodyText": {
+        "Namespace": "",
+        "Key": "6D5680CA425F937260C624B1B8EAD278",
+        "SourceString": "Vehicle and Artillery Training"
+      },
+      "HintText": {
+        "Namespace": "",
+        "Key": "77A920E44B9BB5928FCF87994D4F7B73",
+        "SourceString": "read board"
+      },
+      "RelativeLocation": {
+        "X": -2.9181595,
+        "Y": 13.435799,
+        "Z": 140.94504
+      },
+      "RelativeScale3D": {
+        "X": 2.034119,
+        "Y": 2.0,
+        "Z": 3.7466135
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "ReadableSign06_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent ReadableSign06_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Meshes/Environment/ReadableObjects/ReadableSign06.5"
+      },
+      "VariableGuid": "909BD492-4C3044CC-1AAFAC88-D8F01E8E",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent ReadableSign06_C:StaticMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Meshes/Environment/ReadableObjects/ReadableSign06.10"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node ReadableSign06_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Meshes/Environment/ReadableObjects/ReadableSign06.8"
+        }
+      ],
+      "VariableGuid": "CFC6FD2A-4955038C-698F5FA1-5C04E0B5",
+      "InternalVariableName": "StaticMesh"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class ReadableTextComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ReadableTextComponent ReadableSign06_C:ReadableText_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Meshes/Environment/ReadableObjects/ReadableSign06.4"
+      },
+      "VariableGuid": "3BF18340-4AD7A9FC-DA477F8A-EC2A37B0",
+      "InternalVariableName": "ReadableText"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "ReadableSign06_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node ReadableSign06_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Meshes/Environment/ReadableObjects/ReadableSign06.7"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node ReadableSign06_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Meshes/Environment/ReadableObjects/ReadableSign06.7"
+        },
+        {
+          "ObjectName": "SCS_Node ReadableSign06_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Meshes/Environment/ReadableObjects/ReadableSign06.8"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node ReadableSign06_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Meshes/Environment/ReadableObjects/ReadableSign06.6"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh_GEN_VARIABLE",
+    "Outer": "ReadableSign06_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh EnlistmentBoardWarBanner",
+        "ObjectPath": "War/Content/Meshes/Environment/Props/EnlistmentBoardWarBanner.2"
+      }
+    }
+  }
+]

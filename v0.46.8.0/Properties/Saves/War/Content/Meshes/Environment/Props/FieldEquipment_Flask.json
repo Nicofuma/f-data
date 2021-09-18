@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FieldEquipment_Flask",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "FieldEquipment_Flask",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2760"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FieldEquipment_Flask",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FieldEquipment",
+            "ObjectPath": "War/Content/Materials/Environment/Props/FieldEquipment.0"
+          },
+          "MaterialSlotName": "Material #490",
+          "ImportedMaterialSlotName": "Material #490",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 214.58629,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 214.58629,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -1.9073486E-06,
+          "Z": 15.12936
+        },
+        "BoxExtent": {
+          "X": 12.431076,
+          "Y": 3.0198746,
+          "Z": 15.266824
+        },
+        "SphereRadius": 19.687752
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FieldEquipment_Flask:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FieldEquipment_Flask.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FieldEquipment_Flask:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FieldEquipment_Flask.1"
+    },
+    "LightingGuid": "CC9A4C6F-4F1EE565-82CF8987-A14F9A92",
+    "RenderData": null
+  }
+]

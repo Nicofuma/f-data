@@ -1,0 +1,245 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "SideB",
+    "Outer": "BPDestroyedDrawbridgeWood_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPDestroyedDrawbridgeWood_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPDestroyedDrawbridgeWood_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedDrawbridgeWood.10"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class DestroyedStructure",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPDestroyedDrawbridgeWood_C:SideB",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedDrawbridgeWood.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPDestroyedDrawbridgeWood_C:SideA",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedDrawbridgeWood.5"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPDestroyedDrawbridgeWood_C",
+    "Name": "Default__BPDestroyedDrawbridgeWood_C",
+    "Properties": {
+      "bIsScorchable": false,
+      "CodeName": "DestroyedDrawbridgeWood",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPDestroyedDrawbridgeWood_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedDrawbridgeWood.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPDestroyedDrawbridgeWood_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedDrawbridgeWood.4"
+      },
+      "MaxHealth": 100000000,
+      "UpgradeStructureCodeName": "DrawbridgeWood",
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPDestroyedDrawbridgeWood_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedDrawbridgeWood.13"
+      },
+      "NetCullDistanceSquared": 50000000.0,
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPDestroyedDrawbridgeWood_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedDrawbridgeWood.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPDestroyedDrawbridgeWood_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPDestroyedDrawbridgeWood_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 512.0,
+        "Y": 2500.0,
+        "Z": 600.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPDestroyedDrawbridgeWood_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedDrawbridgeWood.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -420.0
+      }
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "SideA",
+    "Outer": "BPDestroyedDrawbridgeWood_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPDestroyedDrawbridgeWood_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPDestroyedDrawbridgeWood_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedDrawbridgeWood.6"
+      },
+      "VariableGuid": "36E3B063-4FF1B69F-5A0C3DB0-F528EA1F",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPDestroyedDrawbridgeWood_C:SideA_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedDrawbridgeWood.11"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "40F6864E-44FADCB9-17413DAE-2A90FEB3",
+      "InternalVariableName": "SideA"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPDestroyedDrawbridgeWood_C:SideB_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedDrawbridgeWood.12"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "6FD0C300-4C6FB497-6B33EFAE-0FA4FC69",
+      "InternalVariableName": "SideB"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPDestroyedDrawbridgeWood_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPDestroyedDrawbridgeWood_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedDrawbridgeWood.8"
+        },
+        {
+          "ObjectName": "SCS_Node BPDestroyedDrawbridgeWood_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedDrawbridgeWood.9"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPDestroyedDrawbridgeWood_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedDrawbridgeWood.8"
+        },
+        {
+          "ObjectName": "SCS_Node BPDestroyedDrawbridgeWood_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedDrawbridgeWood.9"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPDestroyedDrawbridgeWood_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDestroyedDrawbridgeWood.7"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "SideA_GEN_VARIABLE",
+    "Outer": "BPDestroyedDrawbridgeWood_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh DrawBridgeWoodDestroyed",
+        "ObjectPath": "War/Content/Meshes/Structures/DrawBridgeWoodDestroyed.2"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 1840.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "SideB_GEN_VARIABLE",
+    "Outer": "BPDestroyedDrawbridgeWood_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh DrawBridgeWoodDestroyed",
+        "ObjectPath": "War/Content/Meshes/Structures/DrawBridgeWoodDestroyed.2"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": -1840.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPDestroyedDrawbridgeWood_C"
+  }
+]

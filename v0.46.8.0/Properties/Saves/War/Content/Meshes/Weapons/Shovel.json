@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Shovel",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Shovel",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x4E79"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Shovel",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Shovel",
+            "ObjectPath": "War/Content/Materials/Weapons/Shovel.0"
+          },
+          "MaterialSlotName": "Material #210",
+          "ImportedMaterialSlotName": "Material #210",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 79.989876,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 79.989876,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.031443596,
+          "Y": -0.0118637085,
+          "Z": 0.23853302
+        },
+        "BoxExtent": {
+          "X": 15.221691,
+          "Y": 57.99321,
+          "Z": 4.076622
+        },
+        "SphereRadius": 58.49399
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Shovel:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Weapons/Shovel.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Shovel:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Weapons/Shovel.1"
+    },
+    "LightingGuid": "7B879692-42440B44-A454F396-3EB71476",
+    "RenderData": null
+  }
+]

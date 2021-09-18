@@ -1,0 +1,105 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Outer": "ShippingContainer",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 0.29034424,
+              "Z": 168.24753
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 335.47598,
+            "Y": 753.6129,
+            "Z": 336.67926,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_15",
+    "Outer": "ShippingContainer",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x39003"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ShippingContainer",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ShippingContainerBlue",
+            "ObjectPath": "War/Content/Materials/Environment/Props/ShippingContainerBlue.0"
+          },
+          "MaterialSlotName": "default",
+          "ImportedMaterialSlotName": "Material #491",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1429.6207,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1429.6207,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.29034424,
+          "Z": 168.24753
+        },
+        "BoxExtent": {
+          "X": 167.73799,
+          "Y": 376.80646,
+          "Z": 168.33963
+        },
+        "SphereRadius": 434.8842
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ShippingContainer:BodySetup_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ShippingContainer.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ShippingContainer:NavCollision_15",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ShippingContainer.1"
+    },
+    "LightingGuid": "EF95A63F-41D77DCA-C592F682-D3DF91FC",
+    "RenderData": null
+  }
+]

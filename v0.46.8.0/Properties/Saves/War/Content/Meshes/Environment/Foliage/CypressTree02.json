@@ -1,0 +1,136 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "CypressTree02",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": -0.62797546,
+              "Z": 516.7892
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Radius": 35.955925,
+            "Length": 1444.0824,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "CypressTree02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 5521,
+        "SizeOnDisk": 5521,
+        "OffsetInFile": "0x2FAF7"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "CypressTree02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant PinePatch",
+            "ObjectPath": "War/Content/Materials/Environment/Props/PinePatch.0"
+          },
+          "MaterialSlotName": "Decal",
+          "ImportedMaterialSlotName": "Decal",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 306.35898,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant PineBark",
+            "ObjectPath": "War/Content/Materials/Environment/Props/PineBark.0"
+          },
+          "MaterialSlotName": "PineBark",
+          "ImportedMaterialSlotName": "PineBark",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 94.48238,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant CypressBranch",
+            "ObjectPath": "War/Content/Materials/Environment/Props/CypressBranch.0"
+          },
+          "MaterialSlotName": "Material #4134",
+          "ImportedMaterialSlotName": "Material #4134",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 139.45964,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 138.61821,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -0.62797546,
+          "Z": 638.2578
+        },
+        "BoxExtent": {
+          "X": 151.73022,
+          "Y": 152.35818,
+          "Z": 654.8096
+        },
+        "SphereRadius": 670.22687
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup CypressTree02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/CypressTree02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision CypressTree02:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/CypressTree02.1"
+    },
+    "LightingGuid": "F747C323-442EAEE1-543B459B-CC11695F",
+    "RenderData": null
+  }
+]

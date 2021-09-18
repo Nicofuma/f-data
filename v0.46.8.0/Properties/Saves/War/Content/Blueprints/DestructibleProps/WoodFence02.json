@@ -1,0 +1,165 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "StaticMesh",
+    "Outer": "WoodFence02_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WoodFence02_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WoodFence02_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/DestructibleProps/WoodFence02.6"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class DestructibleProp",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty WoodFence02_C:StaticMesh",
+        "ObjectPath": "War/Content/Blueprints/DestructibleProps/WoodFence02.0"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "WoodFence02_C",
+    "Name": "Default__WoodFence02_C",
+    "Properties": {
+      "DestroyedFX": {
+        "ObjectName": "ParticleSystem WoodFenceExplosionMedium",
+        "ObjectPath": "War/Content/FX/WoodFenceExplosionMedium.35"
+      },
+      "DestroyedSoundCue": {
+        "ObjectName": "SoundCue WoodImpact_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Vehicles/WoodImpact_Cue.0"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WoodFence02_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WoodFence02_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/DestructibleProps/WoodFence02.3"
+      },
+      "VariableGuid": "37904242-43247A2B-8FCD6D83-A4DAADA8",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent WoodFence02_C:StaticMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/DestructibleProps/WoodFence02.7"
+      },
+      "VariableGuid": "3296CFD8-4F0FEFD1-3610D19C-B0486E4C",
+      "InternalVariableName": "StaticMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "WoodFence02_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node WoodFence02_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/DestructibleProps/WoodFence02.5"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node WoodFence02_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/DestructibleProps/WoodFence02.5"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WoodFence02_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/DestructibleProps/WoodFence02.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh_GEN_VARIABLE",
+    "Outer": "WoodFence02_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh FenceLargeE",
+        "ObjectPath": "War/Content/Meshes/Environment/Props/FenceLargeE.2"
+      },
+      "bGenerateOverlapEvents": false,
+      "CanCharacterStepUpOn": "ECB_No",
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "DestructiblePropSeeThrough",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapDowncast",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  }
+]

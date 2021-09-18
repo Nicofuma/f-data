@@ -1,0 +1,137 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "OliveTree01Ruined",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -2.0307312,
+              "Y": -21.973663,
+              "Z": 301.42865
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Radius": 109.85083,
+            "Length": 489.92242,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "OliveTree01Ruined",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 5521,
+        "SizeOnDisk": 5521,
+        "OffsetInFile": "0x32B74"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "OliveTree01Ruined",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant OliveTreeRuined",
+            "ObjectPath": "War/Content/Materials/Environment/Props/OliveTreeRuined.0"
+          },
+          "MaterialSlotName": "OliveBark",
+          "ImportedMaterialSlotName": "OliveBark",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 269.49072,
+            "LocalUVDensities": 3.6115227,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TreeInteriorNoDecay",
+            "ObjectPath": "War/Content/Materials/Environment/Props/TreeInteriorNoDecay.0"
+          },
+          "MaterialSlotName": "TreeInterior",
+          "ImportedMaterialSlotName": "TreeInterior",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 110.97732,
+            "LocalUVDensities": 1.5656866,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant PinePatch",
+            "ObjectPath": "War/Content/Materials/Environment/Props/PinePatch.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 670.14966,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 2.7023818,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 158.73238
+        },
+        "BoxExtent": {
+          "X": 332.15134,
+          "Y": 337.30096,
+          "Z": 311.4716
+        },
+        "SphereRadius": 499.2919
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup OliveTree01Ruined:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/OliveTree01Ruined.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision OliveTree01Ruined:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/OliveTree01Ruined.1"
+    },
+    "LightingGuid": "EC1CDD87-44D19394-42FD2DBB-9A88C874",
+    "RenderData": null
+  }
+]

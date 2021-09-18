@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FishermanNetRope01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "FishermanNetRope01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1B8E"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FishermanNetRope01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ClimbingRope",
+            "ObjectPath": "War/Content/Materials/Environment/Props/ClimbingRope.0"
+          },
+          "MaterialSlotName": "ClimbingRope",
+          "ImportedMaterialSlotName": "ClimbingRope",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 322.92395,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 322.92395,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.16194534,
+          "Y": -15.771576,
+          "Z": 26.369522
+        },
+        "BoxExtent": {
+          "X": 4.183563,
+          "Y": 276.41086,
+          "Z": 29.379028
+        },
+        "SphereRadius": 277.5477
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FishermanNetRope01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FishermanNetRope01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FishermanNetRope01:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FishermanNetRope01.1"
+    },
+    "LightingGuid": "5DECA1F3-4FF49602-F983FD8E-F93E3359",
+    "RenderData": null
+  }
+]

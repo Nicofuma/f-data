@@ -1,0 +1,152 @@
+[
+  {
+    "Type": "SoundClass",
+    "Name": "Ambient",
+    "Properties": {
+      "Properties": {
+        "Volume": 0.65
+      },
+      "ChildClasses": [
+        {
+          "ObjectName": "SoundClass AmbientBackground",
+          "ObjectPath": "War/Content/Audio/SoundClasses/AmbientBackground.0"
+        },
+        {
+          "ObjectName": "SoundClass AmbientMidground",
+          "ObjectPath": "War/Content/Audio/SoundClasses/AmbientMidground.0"
+        },
+        {
+          "ObjectName": "SoundClass AmbientForeground",
+          "ObjectPath": "War/Content/Audio/SoundClasses/AmbientForeground.0"
+        },
+        {
+          "ObjectName": "SoundClass Music",
+          "ObjectPath": "War/Content/Audio/SoundClasses/SFX.5"
+        }
+      ],
+      "ParentClass": {
+        "ObjectName": "SoundClass Master",
+        "ObjectPath": "War/Content/Audio/SoundClasses/SFX.4"
+      }
+    }
+  },
+  {
+    "Type": "SoundClass",
+    "Name": "Explosions",
+    "Properties": {
+      "ParentClass": {
+        "ObjectName": "SoundClass SFX",
+        "ObjectPath": "War/Content/Audio/SoundClasses/SFX.6"
+      }
+    }
+  },
+  {
+    "Type": "SoundClass",
+    "Name": "Foley",
+    "Properties": {
+      "ParentClass": {
+        "ObjectName": "SoundClass SFX",
+        "ObjectPath": "War/Content/Audio/SoundClasses/SFX.6"
+      }
+    }
+  },
+  {
+    "Type": "SoundClass",
+    "Name": "Impact",
+    "Properties": {
+      "ParentClass": {
+        "ObjectName": "SoundClass SFX",
+        "ObjectPath": "War/Content/Audio/SoundClasses/SFX.6"
+      }
+    }
+  },
+  {
+    "Type": "SoundClass",
+    "Name": "Master",
+    "Properties": {
+      "ChildClasses": [
+        {
+          "ObjectName": "SoundClass SFX",
+          "ObjectPath": "War/Content/Audio/SoundClasses/SFX.6"
+        },
+        {
+          "ObjectName": "SoundClass Ambient",
+          "ObjectPath": "War/Content/Audio/SoundClasses/SFX.0"
+        },
+        {
+          "ObjectName": "SoundClass UI",
+          "ObjectPath": "War/Content/Audio/SoundClasses/UI.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SoundClass",
+    "Name": "Music",
+    "Properties": {
+      "Properties": {
+        "Volume": 0.75
+      },
+      "ParentClass": {
+        "ObjectName": "SoundClass Ambient",
+        "ObjectPath": "War/Content/Audio/SoundClasses/SFX.0"
+      }
+    }
+  },
+  {
+    "Type": "SoundClass",
+    "Name": "SFX",
+    "Properties": {
+      "ChildClasses": [
+        {
+          "ObjectName": "SoundClass Explosions",
+          "ObjectPath": "War/Content/Audio/SoundClasses/SFX.1"
+        },
+        {
+          "ObjectName": "SoundClass Foley",
+          "ObjectPath": "War/Content/Audio/SoundClasses/SFX.2"
+        },
+        {
+          "ObjectName": "SoundClass Impact",
+          "ObjectPath": "War/Content/Audio/SoundClasses/SFX.3"
+        },
+        {
+          "ObjectName": "SoundClass Weapons",
+          "ObjectPath": "War/Content/Audio/SoundClasses/SFX.7"
+        },
+        {
+          "ObjectName": "SoundClass VehicleDrive",
+          "ObjectPath": "War/Content/Audio/SoundClasses/VehicleDrive.0"
+        },
+        {
+          "ObjectName": "SoundClass VehicleIdle",
+          "ObjectPath": "War/Content/Audio/SoundClasses/VehicleIdle.0"
+        }
+      ],
+      "ParentClass": {
+        "ObjectName": "SoundClass Master",
+        "ObjectPath": "War/Content/Audio/SoundClasses/SFX.4"
+      }
+    }
+  },
+  {
+    "Type": "SoundClass",
+    "Name": "Weapons",
+    "Properties": {
+      "PassiveSoundMixModifiers": [
+        {
+          "SoundMix": {
+            "ObjectName": "SoundMix Ducking",
+            "ObjectPath": "War/Content/Audio/Ducking.0"
+          },
+          "MinVolumeThreshold": 0.0,
+          "MaxVolumeThreshold": 10.0
+        }
+      ],
+      "ParentClass": {
+        "ObjectName": "SoundClass SFX",
+        "ObjectPath": "War/Content/Audio/SoundClasses/SFX.6"
+      }
+    }
+  }
+]

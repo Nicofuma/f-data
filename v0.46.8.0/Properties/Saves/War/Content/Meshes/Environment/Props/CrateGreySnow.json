@@ -1,0 +1,121 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "CrateGreySnow",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 6.0238113,
+              "Y": 11.266602,
+              "Z": 62.953598
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 228.1,
+            "Y": 140.33682,
+            "Z": 127.42068,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "CrateGreySnow",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x9B7F"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "CrateGreySnow",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant WoodBarnPlanksSnow",
+            "ObjectPath": "War/Content/Materials/Environment/Props/WoodBarnPlanksSnow.0"
+          },
+          "MaterialSlotName": "Material #599",
+          "ImportedMaterialSlotName": "WoodbarnplanksCrate",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 321.05334,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MetalBarnAssetsSnow",
+            "ObjectPath": "War/Content/Materials/Environment/Props/MetalBarnAssetsSnow.0"
+          },
+          "MaterialSlotName": "MetalBarnAssets",
+          "ImportedMaterialSlotName": "MetalBarnAssets",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 189.62025,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 301.1736,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 6.0238037,
+          "Y": 11.26659,
+          "Z": 62.953598
+        },
+        "BoxExtent": {
+          "X": 114.049995,
+          "Y": 70.1684,
+          "Z": 63.71034
+        },
+        "SphereRadius": 146.37642
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup CrateGreySnow:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/CrateGreySnow.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision CrateGreySnow:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/CrateGreySnow.1"
+    },
+    "LightingGuid": "B1649840-4D22A874-C420479B-7D48AB37",
+    "RenderData": null
+  }
+]

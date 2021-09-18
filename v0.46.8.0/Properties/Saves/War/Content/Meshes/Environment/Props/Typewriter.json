@@ -1,0 +1,94 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Typewriter",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "BuildScale3D": {
+        "X": 1.5,
+        "Y": 1.5,
+        "Z": 1.5
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "Typewriter",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xE511"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Typewriter",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Typewriter01",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Typewriter01.0"
+          },
+          "MaterialSlotName": "MI_TypeWriter_01a",
+          "ImportedMaterialSlotName": "MI_TypeWriter_01a",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 190.39053,
+            "LocalUVDensities": 301.13327,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 301.13327,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -0.0096206665,
+          "Z": 19.695263
+        },
+        "BoxExtent": {
+          "X": 38.765106,
+          "Y": 36.909157,
+          "Z": 18.354855
+        },
+        "SphereRadius": 51.87636
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Typewriter:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Typewriter.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Typewriter:NavCollision_4",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Typewriter.1"
+    },
+    "LightingGuid": "DC7CAEAF-41CCC313-72A152B2-7B1F495C",
+    "RenderData": null
+  }
+]

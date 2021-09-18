@@ -1,0 +1,184 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "WarMonumentBase",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -266.0069,
+                "Y": 252.89267,
+                "Z": -5.859074
+              },
+              {
+                "X": 260.89404,
+                "Y": 252.89268,
+                "Z": -5.859074
+              },
+              {
+                "X": -266.0069,
+                "Y": -251.64694,
+                "Z": -5.859074
+              },
+              {
+                "X": 260.89404,
+                "Y": -251.64697,
+                "Z": -5.859074
+              },
+              {
+                "X": -266.0069,
+                "Y": 252.89267,
+                "Z": 68.147285
+              },
+              {
+                "X": 260.89404,
+                "Y": 252.89268,
+                "Z": 68.147285
+              },
+              {
+                "X": -266.0069,
+                "Y": -251.64694,
+                "Z": 68.147285
+              },
+              {
+                "X": 260.89404,
+                "Y": -251.64697,
+                "Z": 68.147285
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -266.0069,
+                "Y": -251.64697,
+                "Z": -5.859074
+              },
+              "Max": {
+                "X": 260.89404,
+                "Y": 252.89268,
+                "Z": 68.147285
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_5",
+    "Outer": "WarMonumentBase",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 457,
+        "SizeOnDisk": 457,
+        "OffsetInFile": "0x2FBF"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "WarMonumentBase",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BulwarkLedgeRoof",
+            "ObjectPath": "War/Content/Materials/Environment/BulwarkLedgeRoof.0"
+          },
+          "MaterialSlotName": "GrassBunch2",
+          "ImportedMaterialSlotName": "Material #25",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 503.88846,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ConcreteWorn",
+            "ObjectPath": "War/Content/Materials/Environment/House/ConcreteWorn.0"
+          },
+          "MaterialSlotName": "Grass",
+          "ImportedMaterialSlotName": "grass",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 194.5301,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 474.4678,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.004272461,
+          "Y": -0.0046691895,
+          "Z": 34.86241
+        },
+        "BoxExtent": {
+          "X": 274.511,
+          "Y": 266.4274,
+          "Z": 39.560295
+        },
+        "SphereRadius": 382.71204
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup WarMonumentBase:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/WarMonumentBase.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision WarMonumentBase:NavCollision_5",
+      "ObjectPath": "War/Content/Meshes/Structures/WarMonumentBase.1"
+    },
+    "LightingGuid": "6E4B72A4-489447DA-C794CD8E-52D7B831",
+    "RenderData": null
+  }
+]

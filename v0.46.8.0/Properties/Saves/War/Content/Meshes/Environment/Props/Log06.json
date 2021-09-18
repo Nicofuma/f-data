@@ -1,0 +1,111 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Log06",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -0.060668945,
+              "Y": -12.524268,
+              "Z": 13.254372
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 132.84152,
+            "Y": 31.827078,
+            "Z": 30.229326,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_8",
+    "Outer": "Log06",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0xD50"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Log06",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Log",
+            "ObjectPath": "War/Content/Materials/Environment/Log.0"
+          },
+          "MaterialSlotName": "Log",
+          "ImportedMaterialSlotName": "Log",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 572.09845,
+            "LocalUVDensities": 144.98495,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 144.98495,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.060668945,
+          "Y": -12.524268,
+          "Z": 13.254372
+        },
+        "BoxExtent": {
+          "X": 66.42076,
+          "Y": 15.913539,
+          "Z": 15.114663
+        },
+        "SphereRadius": 69.322754
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Log06:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Log06.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Log06:NavCollision_8",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Log06.1"
+    },
+    "LightingGuid": "E45051F1-48C25581-CE68559B-AFF31AAF",
+    "RenderData": null
+  }
+]

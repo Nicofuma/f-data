@@ -1,0 +1,99 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "DeadTree01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_3",
+    "Outer": "DeadTree01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x22DA"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "DeadTree01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant PineBark",
+            "ObjectPath": "War/Content/Materials/Environment/Props/PineBark.0"
+          },
+          "MaterialSlotName": "Trunk",
+          "ImportedMaterialSlotName": "Trunk",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 211.19589,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant PineBranchDead",
+            "ObjectPath": "War/Content/Materials/Environment/Props/PineBranchDead.0"
+          },
+          "MaterialSlotName": "Material #925",
+          "ImportedMaterialSlotName": "Material #925",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 211.19589,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -9.971436,
+          "Y": -1.5258789E-05,
+          "Z": 1.4582367
+        },
+        "BoxExtent": {
+          "X": 176.18262,
+          "Y": 115.86586,
+          "Z": 24.006561
+        },
+        "SphereRadius": 192.94545
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup DeadTree01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/DeadTree01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision DeadTree01:NavCollision_3",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/DeadTree01.1"
+    },
+    "LightingGuid": "3704367E-4289F2E3-A04531B0-A9CA563A",
+    "RenderData": null
+  }
+]

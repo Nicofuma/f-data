@@ -1,0 +1,645 @@
+[
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "BPSulfurResourceTier3_C",
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPSulfurResourceTier3_C",
+    "Properties": {
+      "Timelines": [
+        {
+          "ObjectName": "TimelineTemplate BPSulfurResourceTier3_C:Timeline_0_Template",
+          "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.34"
+        }
+      ],
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPSulfurResourceTier3_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.30"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty BPSulfurResourceTier3_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.0"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function BPSulfurResourceTier3_C:ExecuteUbergraph_BPSulfurResourceTier3",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.6"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class Resource",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty BPSulfurResourceTier3_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.0"
+      },
+      {
+        "ObjectName": "Function BPSulfurResourceTier3_C:SetEnabled",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.12"
+      },
+      {
+        "ObjectName": "Function BPSulfurResourceTier3_C:Timeline_0__FinishedFunc",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.10"
+      },
+      {
+        "ObjectName": "Function BPSulfurResourceTier3_C:Timeline_0__UpdateFunc",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.9"
+      },
+      {
+        "ObjectName": "Function BPSulfurResourceTier3_C:BPOnGatherHit",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.8"
+      },
+      {
+        "ObjectName": "Function BPSulfurResourceTier3_C:ExecuteUbergraph_BPSulfurResourceTier3",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.6"
+      },
+      {
+        "ObjectName": "ObjectProperty BPSulfurResourceTier3_C:Decal",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.4"
+      },
+      {
+        "ObjectName": "ObjectProperty BPSulfurResourceTier3_C:Box",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.19"
+      },
+      {
+        "ObjectName": "ObjectProperty BPSulfurResourceTier3_C:Resource3",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.21"
+      },
+      {
+        "ObjectName": "StructProperty BPSulfurResourceTier3_C:Timeline_0_NewTrack_0_A5116ABE47B7C7AB1BA658BBC8A44D20",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.33"
+      },
+      {
+        "ObjectName": "ByteProperty BPSulfurResourceTier3_C:Timeline_0__Direction_A5116ABE47B7C7AB1BA658BBC8A44D20",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.15"
+      },
+      {
+        "ObjectName": "ObjectProperty BPSulfurResourceTier3_C:Timeline_0",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.23"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPSulfurResourceTier3_C",
+    "Name": "Default__BPSulfurResourceTier3_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "Timeline_0_NewTrack_0_A5116ABE47B7C7AB1BA658BBC8A44D20": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "HammerImpactEffect": {
+        "ObjectName": "BlueprintGeneratedClass HammerImpactEffectSpecial_C",
+        "ObjectPath": "War/Content/Blueprints/Items/HammerImpactEffectSpecial.1"
+      },
+      "SledgeImpactEffect": {
+        "ObjectName": "BlueprintGeneratedClass SledgeImpactEffectSulfur_C",
+        "ObjectPath": "War/Content/Blueprints/Items/SledgeImpactEffectSulfur.1"
+      },
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPSulfurResourceTier3_C:ResourceArrow",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.3"
+      },
+      "HighYieldEffect": {
+        "ObjectName": "ParticleSystemComponent Default__BPSulfurResourceTier3_C:HighYieldEffect",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.24"
+      },
+      "ResourcePickupClass": {
+        "ObjectName": "BlueprintGeneratedClass BPSulfurPickup_C",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPSulfurPickup.0"
+      },
+      "BaseAmountPerGather": 2,
+      "BonusAmountOnFinalGather": 24,
+      "BaseAmount": 32,
+      "RequiredAmountForSplit": 66,
+      "GatherXP": 2,
+      "ResourceLevel": 1,
+      "NumNextTierResourcesToSpawn": 0,
+      "bShouldPersist": false,
+      "DestroyedFX": {
+        "ObjectName": "ParticleSystem SulfurBasicTransition",
+        "ObjectPath": "War/Content/FX/SulfurBasicTransition.52"
+      },
+      "DestroyedSoundCue": {
+        "ObjectName": "SoundCue SulfurTransition01_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Resources/SulfurTransition01_Cue.0"
+      },
+      "MinNetUpdateFrequency": 1.0,
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPSulfurResourceTier3_C:ResourceArrow",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "ResourceArrow",
+    "Outer": "Default__BPSulfurResourceTier3_C"
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Decal",
+    "Outer": "BPSulfurResourceTier3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class DecalComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_BPSulfurResourceTier3",
+    "PropertyFlags": 148
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BPSulfurResourceTier3",
+    "Outer": "BPSulfurResourceTier3_C",
+    "Children": [
+      {
+        "ObjectName": "IntProperty BPSulfurResourceTier3_C:ExecuteUbergraph_BPSulfurResourceTier3.EntryPoint",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.5"
+      },
+      {
+        "ObjectName": "StructProperty BPSulfurResourceTier3_C:ExecuteUbergraph_BPSulfurResourceTier3.CallFunc_K2_SetRelativeLocation_SweepHitResult",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.32"
+      },
+      {
+        "ObjectName": "ObjectProperty BPSulfurResourceTier3_C:ExecuteUbergraph_BPSulfurResourceTier3.K2Node_Event_Gatherer",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.20"
+      },
+      {
+        "ObjectName": "IntProperty BPSulfurResourceTier3_C:ExecuteUbergraph_BPSulfurResourceTier3.K2Node_Event_GatherLevel",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.18"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Gatherer",
+    "Outer": "BPOnGatherHit",
+    "PropertyFlags": 148,
+    "PropertyClass": {
+      "ObjectName": "Class WarCharacter",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BPOnGatherHit",
+    "Outer": "BPSulfurResourceTier3_C",
+    "SuperStruct": {
+      "ObjectName": "Function Resource:BPOnGatherHit",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPSulfurResourceTier3_C:BPOnGatherHit.Gatherer",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.7"
+      },
+      {
+        "ObjectName": "IntProperty BPSulfurResourceTier3_C:BPOnGatherHit.GatherLevel",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.17"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "Function",
+    "Name": "Timeline_0__UpdateFunc",
+    "Outer": "BPSulfurResourceTier3_C",
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "Function",
+    "Name": "Timeline_0__FinishedFunc",
+    "Outer": "BPSulfurResourceTier3_C",
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "IsEnabled",
+    "Outer": "SetEnabled",
+    "PropertyFlags": 148,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "Function",
+    "Name": "SetEnabled",
+    "Outer": "BPSulfurResourceTier3_C",
+    "Children": [
+      {
+        "ObjectName": "BoolProperty BPSulfurResourceTier3_C:SetEnabled.IsEnabled",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.11"
+      },
+      {
+        "ObjectName": "ObjectProperty BPSulfurResourceTier3_C:SetEnabled.Mesh",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.22"
+      },
+      {
+        "ObjectName": "BoolProperty BPSulfurResourceTier3_C:SetEnabled.CallFunc_Not_PreBool_ReturnValue",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.13"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Not_PreBool_ReturnValue",
+    "Outer": "SetEnabled",
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "Box_GEN_VARIABLE",
+    "Outer": "BPSulfurResourceTier3_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 100.0,
+        "Y": 100.0,
+        "Z": 64.0
+      },
+      "AreaClass": {
+        "ObjectName": "Class NavArea_Obstacle",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "ResourceNoPawnCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapDowncast",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Projectile",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "MassInKgOverride": 1270.6456
+      },
+      "RelativeLocation": {
+        "X": -3.333355,
+        "Y": -4.458312,
+        "Z": 64.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -3.1E-05,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ByteProperty",
+    "Name": "Timeline_0__Direction_A5116ABE47B7C7AB1BA658BBC8A44D20",
+    "Outer": "BPSulfurResourceTier3_C",
+    "Enum": {
+      "ObjectName": "Enum ETimelineDirection",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "DecalComponent",
+    "Name": "Decal_GEN_VARIABLE",
+    "Outer": "BPSulfurResourceTier3_C",
+    "Properties": {
+      "DecalMaterial": {
+        "ObjectName": "MaterialInstanceConstant SulfurGround",
+        "ObjectPath": "War/Content/Materials/Resources/SulfurGround.0"
+      },
+      "RelativeLocation": {
+        "X": -12.027514,
+        "Y": -0.0006904242,
+        "Z": -46.29436
+      },
+      "RelativeRotation": {
+        "Pitch": -90.0,
+        "Yaw": 0.0,
+        "Roll": 150.00012
+      },
+      "RelativeScale3D": {
+        "X": 0.46137506,
+        "Y": 0.7724287,
+        "Z": 0.7778917
+      }
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "GatherLevel",
+    "Outer": "BPOnGatherHit",
+    "PropertyFlags": 150
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "K2Node_Event_GatherLevel",
+    "Outer": "ExecuteUbergraph_BPSulfurResourceTier3",
+    "PropertyFlags": 2
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Box",
+    "Outer": "BPSulfurResourceTier3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BoxComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_Event_Gatherer",
+    "Outer": "ExecuteUbergraph_BPSulfurResourceTier3",
+    "PropertyClass": {
+      "ObjectName": "Class WarCharacter",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Resource3",
+    "Outer": "BPSulfurResourceTier3_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Mesh",
+    "Outer": "SetEnabled",
+    "PropertyFlags": 524436,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Timeline_0",
+    "Outer": "BPSulfurResourceTier3_C",
+    "PropertyFlags": 524292,
+    "PropertyClass": {
+      "ObjectName": "Class TimelineComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "HighYieldEffect",
+    "Outer": "Default__BPSulfurResourceTier3_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPSulfurResourceTier3_C:ResourceArrow",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.3"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPSulfurResourceTier3_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPSulfurResourceTier3_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.25"
+      },
+      "VariableGuid": "1D2A033D-4B64CC3F-021BACBD-61267396",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_14",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPSulfurResourceTier3_C:Resource3_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.31"
+      },
+      "ParentComponentOrVariableName": "ResourceArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "16267473-47B00D39-05A2C0B7-CFDF27D9",
+      "InternalVariableName": "Resource3"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_15",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BoxComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent BPSulfurResourceTier3_C:Box_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.14"
+      },
+      "ParentComponentOrVariableName": "ResourceArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "EC6F48AF-417233BB-1CB0ACA5-19E51CE4",
+      "InternalVariableName": "Box"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_16",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class DecalComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "DecalComponent BPSulfurResourceTier3_C:Decal_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.16"
+      },
+      "ParentComponentOrVariableName": "ResourceArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "6DF0F385-46B135B5-467AB4A7-C5831092",
+      "InternalVariableName": "Decal"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPSulfurResourceTier3_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPSulfurResourceTier3_C:SimpleConstructionScript_0.SCS_Node_14",
+          "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.27"
+        },
+        {
+          "ObjectName": "SCS_Node BPSulfurResourceTier3_C:SimpleConstructionScript_0.SCS_Node_15",
+          "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.28"
+        },
+        {
+          "ObjectName": "SCS_Node BPSulfurResourceTier3_C:SimpleConstructionScript_0.SCS_Node_16",
+          "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.29"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPSulfurResourceTier3_C:SimpleConstructionScript_0.SCS_Node_14",
+          "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.27"
+        },
+        {
+          "ObjectName": "SCS_Node BPSulfurResourceTier3_C:SimpleConstructionScript_0.SCS_Node_15",
+          "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.28"
+        },
+        {
+          "ObjectName": "SCS_Node BPSulfurResourceTier3_C:SimpleConstructionScript_0.SCS_Node_16",
+          "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.29"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPSulfurResourceTier3_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Resources/BPSulfurResourceTier3.26"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Resource3_GEN_VARIABLE",
+    "Outer": "BPSulfurResourceTier3_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh SulfurResource03",
+        "ObjectPath": "War/Content/Meshes/Resources/SulfurResource03.2"
+      },
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_K2_SetRelativeLocation_SweepHitResult",
+    "Outer": "ExecuteUbergraph_BPSulfurResourceTier3",
+    "PropertyFlags": 549755813888,
+    "Struct": {
+      "ObjectName": "ScriptStruct HitResult",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Timeline_0_NewTrack_0_A5116ABE47B7C7AB1BA658BBC8A44D20",
+    "Outer": "BPSulfurResourceTier3_C",
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "TimelineTemplate",
+    "Name": "Timeline_0_Template",
+    "Outer": "BPSulfurResourceTier3_C",
+    "Properties": {
+      "TimelineLength": 0.28,
+      "LengthMode": "TL_LastKeyFrame",
+      "VectorTracks": [
+        {
+          "CurveVector": {
+            "ObjectName": "CurveVector ResourceAnimCurve",
+            "ObjectPath": "War/Content/Blueprints/Resources/ResourceAnimCurve.0"
+          },
+          "PropertyName": "Timeline_0_NewTrack_0_A5116ABE47B7C7AB1BA658BBC8A44D20",
+          "TrackName": "NewTrack_0",
+          "bIsExternalCurve": true
+        }
+      ],
+      "TimelineGuid": "A5116ABE-47B7C7AB-1BA658BB-C8A44D20",
+      "VariableName": "Timeline_0",
+      "DirectionPropertyName": "Timeline_0__Direction_A5116ABE47B7C7AB1BA658BBC8A44D20",
+      "UpdateFunctionName": "Timeline_0__UpdateFunc",
+      "FinishedFunctionName": "Timeline_0__FinishedFunc"
+    }
+  }
+]

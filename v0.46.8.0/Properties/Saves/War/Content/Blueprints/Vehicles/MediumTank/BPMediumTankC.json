@@ -1,0 +1,555 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPMediumTankC_C",
+    "Super": "BPMediumTankBaseC_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPMediumTankC_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.32"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler BPMediumTankC_C:InheritableComponentHandler",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.9"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass BPMediumTankBaseC_C",
+      "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankBaseC.1"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPMediumTankC_C",
+    "Name": "Default__BPMediumTankC_C",
+    "Properties": {
+      "DisabledTurretFX": {
+        "ObjectName": "ParticleSystemComponent Default__BPMediumTankC_C:DisabledTurretFX",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.12"
+      },
+      "DisabledTurret2FX": {
+        "ObjectName": "ParticleSystemComponent Default__BPMediumTankC_C:DisabledTurret2FX",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.11"
+      },
+      "DisabledFuelTankFX": {
+        "ObjectName": "ParticleSystemComponent Default__BPMediumTankC_C:DisabledFuelTankFX",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.10"
+      },
+      "IdleLoop": {
+        "ObjectName": "AudioComponent Default__BPMediumTankC_C:IdleLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.5"
+      },
+      "RearLeftTireDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPMediumTankC_C:RearLeftTireDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.18"
+      },
+      "RearLeftTireDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPMediumTankC_C:RearLeftTireDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.17"
+      },
+      "RearRightTireDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPMediumTankC_C:RearRightTireDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.20"
+      },
+      "RearRightTireDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPMediumTankC_C:RearRightTireDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.19"
+      },
+      "MainDirtLowSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPMediumTankC_C:MainDirtLowSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.14"
+      },
+      "MainDirtHighSpeedPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPMediumTankC_C:MainDirtHighSpeedPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.13"
+      },
+      "SkiddingDirtPS": {
+        "ObjectName": "ParticleSystemComponent Default__BPMediumTankC_C:SkiddingDirtPS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.21"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "AD9C829947EED0DA85CE0FB61E61B5CF",
+        "SourceString": "85K-b “Falchion”"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "26ED399A44B866863CC3E58124AABB22",
+        "SourceString": "Designed for mass-production in Kraunia, this assault tank features a modular turret system for maximum versatility. The “Falchion” class features a powerful if understated, 40mm cannon."
+      },
+      "CodeName": "MediumTankC",
+      "DestroyedMesh": {
+        "ObjectName": "StaticMeshComponent Default__BPMediumTankC_C:DestroyedMesh",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.34"
+      },
+      "MinorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPMediumTankC_C:MinorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.16"
+      },
+      "MajorDamagePS": {
+        "ObjectName": "ParticleSystemComponent Default__BPMediumTankC_C:MajorDamagePS",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.15"
+      },
+      "DriveLoop": {
+        "ObjectName": "AudioComponent Default__BPMediumTankC_C:DriveLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.4"
+      },
+      "BackUpSFXLoop": {
+        "ObjectName": "AudioComponent Default__BPMediumTankC_C:BackUpSFXLoop",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.3"
+      },
+      "CameraRigComponent": {
+        "ObjectName": "PlayerCameraRigComponent Default__BPMediumTankC_C:CameraRigVehicle",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.22"
+      },
+      "FrontAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__BPMediumTankC_C:FrontAxelCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.25"
+      },
+      "RearAxleCastLocation": {
+        "ObjectName": "SceneComponent Default__BPMediumTankC_C:RearAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.28"
+      },
+      "FrontLeftRollCastLocation": {
+        "ObjectName": "SceneComponent Default__BPMediumTankC_C:FrontRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.26"
+      },
+      "FrontRightRollCastLocation": {
+        "ObjectName": "SceneComponent Default__BPMediumTankC_C:RearRightAxleCastLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.29"
+      },
+      "LeftSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__BPMediumTankC_C:LeftSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.27"
+      },
+      "RightSideTrackLocation": {
+        "ObjectName": "SceneComponent Default__BPMediumTankC_C:RightSideTrackLocation",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.30"
+      },
+      "VehicleCollision": {
+        "ObjectName": "BoxComponent Default__BPMediumTankC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.7"
+      },
+      "PassengerArea": {
+        "ObjectName": "BoxComponent Default__BPMediumTankC_C:PassengerBaseBox",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.6"
+      },
+      "AFKTimeoutComponent": {
+        "ObjectName": "AFKTimeoutComponent Default__BPMediumTankC_C:AFKTimeoutComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.2"
+      },
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPMediumTankC_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.35"
+      },
+      "Mesh": {
+        "ObjectName": "SkeletalMeshComponent Default__BPMediumTankC_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.33"
+      },
+      "CharacterMovement": {
+        "ObjectName": "RWDVehicleMovementComponent Default__BPMediumTankC_C:CharMoveComp",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.23"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent Default__BPMediumTankC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.8"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPMediumTankC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.7"
+      }
+    }
+  },
+  {
+    "Type": "AFKTimeoutComponent",
+    "Name": "AFKTimeoutComponent",
+    "Outer": "Default__BPMediumTankC_C"
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "BackUpSFXLoop",
+    "Outer": "Default__BPMediumTankC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPMediumTankC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.8"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "DriveLoop",
+    "Outer": "Default__BPMediumTankC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPMediumTankC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.8"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "IdleLoop",
+    "Outer": "Default__BPMediumTankC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPMediumTankC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.7"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "PassengerBaseBox",
+    "Outer": "Default__BPMediumTankC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPMediumTankC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.7"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "VehicleCollision",
+    "Outer": "Default__BPMediumTankC_C",
+    "Properties": {
+      "OnComponentBeginOverlap": null
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__BPMediumTankC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPMediumTankC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.7"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BPMediumTankC_C",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class VehicleSeatComponent",
+            "ObjectPath": "/Script/War"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "VehicleSeatComponent BPMediumTankC_C:GunnerSeat1_GEN_VARIABLE",
+            "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.36"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass BPMediumTankBase_C",
+              "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankBase.1"
+            },
+            "SCSVariableName": "GunnerSeat1",
+            "AssociatedGuid": "9C45BC12-4120E1BB-D28BEB90-4F5A2F42"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "DisabledFuelTankFX",
+    "Outer": "Default__BPMediumTankC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPMediumTankC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "DisabledTurret2FX",
+    "Outer": "Default__BPMediumTankC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPMediumTankC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "DisabledTurretFX",
+    "Outer": "Default__BPMediumTankC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPMediumTankC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MainDirtHighSpeedPS",
+    "Outer": "Default__BPMediumTankC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPMediumTankC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MainDirtLowSpeedPS",
+    "Outer": "Default__BPMediumTankC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPMediumTankC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MajorDamagePS",
+    "Outer": "Default__BPMediumTankC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPMediumTankC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.8"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "MinorDamagePS",
+    "Outer": "Default__BPMediumTankC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPMediumTankC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.8"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearLeftTireDirtHighSpeedPS",
+    "Outer": "Default__BPMediumTankC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPMediumTankC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearLeftTireDirtLowSpeedPS",
+    "Outer": "Default__BPMediumTankC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPMediumTankC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearRightTireDirtHighSpeedPS",
+    "Outer": "Default__BPMediumTankC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPMediumTankC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RearRightTireDirtLowSpeedPS",
+    "Outer": "Default__BPMediumTankC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPMediumTankC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.7"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "SkiddingDirtPS",
+    "Outer": "Default__BPMediumTankC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPMediumTankC_C:VehicleCollision",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.7"
+      }
+    }
+  },
+  {
+    "Type": "PlayerCameraRigComponent",
+    "Name": "CameraRigVehicle",
+    "Outer": "Default__BPMediumTankC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPMediumTankC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.8"
+      }
+    }
+  },
+  {
+    "Type": "RWDVehicleMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__BPMediumTankC_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPMediumTankC_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontAxelCastLocation",
+    "Outer": "Default__BPMediumTankC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPMediumTankC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "FrontRightAxleCastLocation",
+    "Outer": "Default__BPMediumTankC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPMediumTankC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "LeftSideTrackLocation",
+    "Outer": "Default__BPMediumTankC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPMediumTankC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearAxleCastLocation",
+    "Outer": "Default__BPMediumTankC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPMediumTankC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RearRightAxleCastLocation",
+    "Outer": "Default__BPMediumTankC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPMediumTankC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RightSideTrackLocation",
+    "Outer": "Default__BPMediumTankC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPMediumTankC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.8"
+      }
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPMediumTankC_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.24"
+      },
+      "VariableGuid": "AC527E45-4CB4B0CF-6FB217B6-35F82C26",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPMediumTankC_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPMediumTankC_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.31"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__BPMediumTankC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPMediumTankC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.8"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "DestroyedMesh",
+    "Outer": "Default__BPMediumTankC_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BPMediumTankC_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankC.8"
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPMediumTankC_C"
+  },
+  {
+    "Type": "VehicleSeatComponent",
+    "Name": "GunnerSeat1_GEN_VARIABLE",
+    "Outer": "BPMediumTankC_C",
+    "Properties": {
+      "MountCodeName": "MediumTankCGunner",
+      "MountComponent": {
+        "ObjectName": "BlueprintGeneratedClass BPMediumTankCGunnerMountComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Vehicles/MediumTank/BPMediumTankCGunnerMountComponent.0"
+      }
+    }
+  }
+]

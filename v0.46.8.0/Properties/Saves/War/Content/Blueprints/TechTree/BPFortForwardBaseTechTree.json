@@ -1,0 +1,104 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPFortForwardBaseTechTree_C",
+    "SuperStruct": {
+      "ObjectName": "Class TechTreeComponentData",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPFortForwardBaseTechTree_C",
+    "Name": "Default__BPFortForwardBaseTechTree_C",
+    "Properties": {
+      "Items": [
+        {
+          "TechID": "ETechComponentID::ProvisionalGarrison",
+          "NextTechID": "ETechComponentID::SmallGarrison",
+          "InfrastructureType": "EInfrastructureType::Base",
+          "Requirement": 50,
+          "ModRequirement": 0
+        },
+        {
+          "TechID": "ETechComponentID::SmallGarrison",
+          "NextTechID": "ETechComponentID::LargeGarrison",
+          "InfrastructureType": "EInfrastructureType::Base",
+          "Requirement": 1200,
+          "ModRequirement": 0
+        },
+        {
+          "TechID": "ETechComponentID::LargeGarrison",
+          "NextTechID": "ETechComponentID::None",
+          "InfrastructureType": "EInfrastructureType::Base",
+          "Requirement": 4800,
+          "ModRequirement": 0
+        },
+        {
+          "TechID": "ETechComponentID::RifleGarrison",
+          "NextTechID": "ETechComponentID::MGGarrison",
+          "InfrastructureType": "EInfrastructureType::Garrison",
+          "Requirement": 10,
+          "ModRequirement": 4
+        },
+        {
+          "TechID": "ETechComponentID::MGGarrison",
+          "NextTechID": "ETechComponentID::ATGarrison",
+          "InfrastructureType": "EInfrastructureType::Garrison",
+          "Requirement": 400,
+          "ModRequirement": 8
+        },
+        {
+          "TechID": "ETechComponentID::ATGarrison",
+          "NextTechID": "ETechComponentID::HowitzerGarrison",
+          "InfrastructureType": "EInfrastructureType::Garrison",
+          "Requirement": 600,
+          "ModRequirement": 12
+        },
+        {
+          "TechID": "ETechComponentID::HowitzerGarrison",
+          "NextTechID": "ETechComponentID::None",
+          "InfrastructureType": "EInfrastructureType::Garrison",
+          "Requirement": 4800,
+          "ModRequirement": 24
+        },
+        {
+          "TechID": "ETechComponentID::ObservationBunkers",
+          "NextTechID": "ETechComponentID::Concrete",
+          "InfrastructureType": "EInfrastructureType::Command",
+          "Requirement": 400,
+          "ModRequirement": 6
+        },
+        {
+          "TechID": "ETechComponentID::Concrete",
+          "NextTechID": "ETechComponentID::Deployment",
+          "InfrastructureType": "EInfrastructureType::Command",
+          "Requirement": 2400,
+          "ModRequirement": 12
+        },
+        {
+          "TechID": "ETechComponentID::Deployment",
+          "NextTechID": "ETechComponentID::AdvancedBunkers",
+          "InfrastructureType": "EInfrastructureType::Command",
+          "Requirement": 4800,
+          "ModRequirement": 24
+        },
+        {
+          "TechID": "ETechComponentID::AdvancedBunkers",
+          "NextTechID": "ETechComponentID::None",
+          "InfrastructureType": "EInfrastructureType::Command",
+          "Requirement": 7200,
+          "ModRequirement": 40
+        }
+      ],
+      "bReplicates": true
+    }
+  }
+]

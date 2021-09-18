@@ -1,0 +1,119 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPLightMachineGunPickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPLightMachineGunPickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPLightMachineGunPickup.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class FirearmPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPLightMachineGunPickup_C",
+    "Name": "Default__BPLightMachineGunPickup_C",
+    "Properties": {
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPLightMachineGunItemComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Items/BPLightMachineGunItemComponent.0"
+      },
+      "Encumbrance": 180,
+      "CodeName": "AssaultRifleC",
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "3724375E4840A7A0461F309A89167945",
+        "SourceString": "Light Machine Gun"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "F43E579149C11D7075633BA3DE1C6984",
+        "SourceString": "Catara mo.II"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "2E6C75D0495CA6C289D90DBE479D43F7",
+        "SourceString": "A titanic light machine gun capable of scattering infantry lines with ease, the Catara is a modern weapon for the modern Colonial."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D LightMachineGunIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/LightMachineGunIcon.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Primary",
+      "ItemCategory": "EItemCategory::SmallArms",
+      "ItemFlagsMask": 129,
+      "ItemProfileType": "EItemProfileType::HandheldWeapon",
+      "FactionVariant": "EFactionId::Colonials",
+      "TechID": "ETechID::UnlockAssaultRifle",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPLightMachineGunPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPLightMachineGunPickup.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPLightMachineGunPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPLightMachineGunPickup.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPLightMachineGunPickup_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPLightMachineGunPickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPLightMachineGunPickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPLightMachineGunPickup.3"
+      },
+      "VariableGuid": "FBF04340-40D71A47-9ED11191-32B797F3",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPLightMachineGunPickup_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPLightMachineGunPickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPLightMachineGunPickup.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPLightMachineGunPickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPLightMachineGunPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPLightMachineGunPickup.2"
+      }
+    }
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_2",
+    "Outer": "Fern02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_13",
+    "Outer": "Fern02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x14ED"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Fern02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Fern01",
+            "ObjectPath": "War/Content/Materials/Environment/Fern01.0"
+          },
+          "MaterialSlotName": "Material #25",
+          "ImportedMaterialSlotName": "Material #25",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 66.96599,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 66.96599,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 2.3719635,
+          "Y": 1.9450836,
+          "Z": 47.92602
+        },
+        "BoxExtent": {
+          "X": 68.27327,
+          "Y": 80.8975,
+          "Z": 47.92602
+        },
+        "SphereRadius": 90.9568
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Fern02:BodySetup_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/Fern02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Fern02:NavCollision_13",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/Fern02.1"
+    },
+    "LightingGuid": "5352268C-4B96CB86-E00684BE-915CDCB1",
+    "RenderData": null
+  }
+]

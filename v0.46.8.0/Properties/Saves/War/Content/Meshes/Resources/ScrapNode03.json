@@ -1,0 +1,99 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ScrapNode03",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_3",
+    "Outer": "ScrapNode03",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1D5B"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ScrapNode03",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ScrapNode",
+            "ObjectPath": "War/Content/Materials/Resources/ScrapNode.0"
+          },
+          "MaterialSlotName": "ScrapNode",
+          "ImportedMaterialSlotName": "ScrapNode",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 320.43103,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Tire01",
+            "ObjectPath": "War/Content/Materials/Vehicles/Tire01.0"
+          },
+          "MaterialSlotName": "Material #2",
+          "ImportedMaterialSlotName": "Material #2",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 320.43103,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -11.513069,
+          "Y": -12.475746,
+          "Z": 26.99033
+        },
+        "BoxExtent": {
+          "X": 84.78796,
+          "Y": 70.12018,
+          "Z": 28.819225
+        },
+        "SphereRadius": 95.94007
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ScrapNode03:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Resources/ScrapNode03.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ScrapNode03:NavCollision_3",
+      "ObjectPath": "War/Content/Meshes/Resources/ScrapNode03.1"
+    },
+    "LightingGuid": "2F7C54B5-451ECDCD-FBADC799-6C906CCD",
+    "RenderData": null
+  }
+]

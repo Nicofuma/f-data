@@ -1,0 +1,131 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FestivalFlagBase",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_20",
+    "Outer": "FestivalFlagBase",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x3C65D"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FestivalFlagBase",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant DeadHarvestFlagWave",
+            "ObjectPath": "War/Content/Materials/Event/DeadHarvestFlagWave.0"
+          },
+          "MaterialSlotName": "HalloweenScythe",
+          "ImportedMaterialSlotName": "HalloweenScythe",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Skeleton",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Skeleton.0"
+          },
+          "MaterialSlotName": "Material #495",
+          "ImportedMaterialSlotName": "Material #495",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 168.4594,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FireBarrel",
+            "ObjectPath": "War/Content/FX/Materials/FireBarrel.0"
+          },
+          "MaterialSlotName": "Skeleton",
+          "ImportedMaterialSlotName": "FireBarrel",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 47.813423,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant HalloweenScythe",
+            "ObjectPath": "War/Content/Materials/Character/Event/HalloweenScythe.0"
+          },
+          "MaterialSlotName": "HalloweenScythe",
+          "ImportedMaterialSlotName": "HalloweenScythe_1",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 166.05127,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 153.02542,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -3.9002686,
+          "Y": 7.4027596,
+          "Z": 64.68202
+        },
+        "BoxExtent": {
+          "X": 79.25249,
+          "Y": 62.51221,
+          "Z": 69.41574
+        },
+        "SphereRadius": 100.244675
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FestivalFlagBase:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Event/FestivalFlagBase.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FestivalFlagBase:NavCollision_20",
+      "ObjectPath": "War/Content/Meshes/Environment/Event/FestivalFlagBase.1"
+    },
+    "LightingGuid": "F1172226-42F5128F-FA59769E-4C3991DB",
+    "RenderData": null
+  }
+]

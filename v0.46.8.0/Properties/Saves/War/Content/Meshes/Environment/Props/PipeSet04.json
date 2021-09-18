@@ -1,0 +1,127 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "PipeSet04",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 42.957867,
+              "Y": 3.8825989,
+              "Z": 4.886856
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 80.0,
+            "Y": 600.0,
+            "Z": 205.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": 44.468945,
+              "Y": 12.594257,
+              "Z": 102.45842
+            },
+            "Rotation": {
+              "Pitch": -44.999958,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 100.0,
+            "Y": 375.0,
+            "Z": 100.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "ShootThroughStatic",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "PipeSet04",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 509,
+        "SizeOnDisk": 509,
+        "OffsetInFile": "0x1E1F4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "PipeSet04",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Pipes02",
+            "ObjectPath": "War/Content/Materials/Environment/Pipes02.0"
+          },
+          "MaterialSlotName": "Pipes02",
+          "ImportedMaterialSlotName": "Pipes02",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 348.34778,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 348.34778,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 42.957867,
+          "Y": 2.6270142,
+          "Z": 46.625
+        },
+        "BoxExtent": {
+          "X": 70.973816,
+          "Y": 351.92212,
+          "Z": 179.80313
+        },
+        "SphereRadius": 385.5028
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup PipeSet04:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/PipeSet04.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision PipeSet04:NavCollision_4",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/PipeSet04.1"
+    },
+    "LightingGuid": "A09B8357-404D1947-D319D2BB-294C9BB6",
+    "RenderData": null
+  }
+]

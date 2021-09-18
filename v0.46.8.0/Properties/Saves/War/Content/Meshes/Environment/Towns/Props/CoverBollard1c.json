@@ -1,0 +1,104 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "CoverBollard1c",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 1.9073486E-05,
+              "Y": 3.8146973E-06,
+              "Z": 47.400784
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Radius": 22.05071,
+            "Length": 181.17795,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "CoverBollard1c",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 5521,
+        "SizeOnDisk": 5521,
+        "OffsetInFile": "0x356C"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "CoverBollard1c",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant CoverBollard",
+            "ObjectPath": "War/Content/Materials/Environment/Props/CoverBollard.0"
+          },
+          "MaterialSlotName": "Material #514",
+          "ImportedMaterialSlotName": "Material #514",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 137.52551,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 137.52551,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.9073486E-05,
+          "Y": 3.8146973E-06,
+          "Z": 47.400784
+        },
+        "BoxExtent": {
+          "X": 22.050697,
+          "Y": 22.050701,
+          "Z": 90.58898
+        },
+        "SphereRadius": 93.23409
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup CoverBollard1c:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Props/CoverBollard1c.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision CoverBollard1c:NavCollision_4",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Props/CoverBollard1c.1"
+    },
+    "LightingGuid": "FD960CEF-44B66E2E-1DAF36AD-60B659D2",
+    "RenderData": null
+  }
+]

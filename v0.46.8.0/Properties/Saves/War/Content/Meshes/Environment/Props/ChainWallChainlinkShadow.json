@@ -1,0 +1,89 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ChainWallChainlinkShadow",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "ChainWallChainlinkShadow",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xCCE"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ChainWallChainlinkShadow",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material Flat",
+            "ObjectPath": "War/Content/Materials/Flat.0"
+          },
+          "MaterialSlotName": "Chainlink",
+          "ImportedMaterialSlotName": "Chainlink",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 139.12175,
+            "LocalUVDensities": 1282.962,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1282.962,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.014343262,
+          "Y": -2.147173,
+          "Z": 1.5173035
+        },
+        "BoxExtent": {
+          "X": 600.06854,
+          "Y": 9.291496,
+          "Z": 239.29507
+        },
+        "SphereRadius": 646.02625
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ChainWallChainlinkShadow:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ChainWallChainlinkShadow.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ChainWallChainlinkShadow:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ChainWallChainlinkShadow.1"
+    },
+    "LightingGuid": "F84BE26A-49D6C549-BC912195-7574DC97",
+    "RenderData": null
+  }
+]

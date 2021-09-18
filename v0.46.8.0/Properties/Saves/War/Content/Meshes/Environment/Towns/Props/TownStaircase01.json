@@ -1,0 +1,131 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "TownStaircase01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "TownStaircase01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x11830"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TownStaircase01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownWoodFloor01",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownWoodFloor01.0"
+          },
+          "MaterialSlotName": "Floor",
+          "ImportedMaterialSlotName": "Floor",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 172.5435,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownWoodTrim01",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownWoodTrim01.0"
+          },
+          "MaterialSlotName": "Brick",
+          "ImportedMaterialSlotName": "Brick",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 149.55716,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownWoodBeams01",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownWoodBeams01.0"
+          },
+          "MaterialSlotName": "WoodTrim",
+          "ImportedMaterialSlotName": "WoodTrim",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 169.04248,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownWallpaper02",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownWallpaper02.0"
+          },
+          "MaterialSlotName": "WoodTrim_ncl1_1",
+          "ImportedMaterialSlotName": "WoodBeams",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 302.6954,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 190.4854,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -11.157333,
+          "Y": 167.13681,
+          "Z": 172.84381
+        },
+        "BoxExtent": {
+          "X": 84.537766,
+          "Y": 198.75209,
+          "Z": 176.62712
+        },
+        "SphereRadius": 264.45074
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TownStaircase01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Props/TownStaircase01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TownStaircase01:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Props/TownStaircase01.1"
+    },
+    "LightingGuid": "4A5DC580-42C43509-66C2B0B0-66A681FA",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,89 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_10751",
+    "Outer": "ToolsScrewdriver01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "ToolsScrewdriver01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1CFD"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ToolsScrewdriver01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Tools01",
+            "ObjectPath": "War/Content/Materials/Structures/Tools01.0"
+          },
+          "MaterialSlotName": "Tools01",
+          "ImportedMaterialSlotName": "Tools01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 124.53696,
+            "LocalUVDensities": 33.005257,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 33.005257,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.9073486E-05,
+          "Y": -2.3841858E-07,
+          "Z": -3.8146973E-06
+        },
+        "BoxExtent": {
+          "X": 35.076305,
+          "Y": 2.731464,
+          "Z": 2.7218418
+        },
+        "SphereRadius": 35.10629
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ToolsScrewdriver01:BodySetup_10751",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ToolsScrewdriver01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ToolsScrewdriver01:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/ToolsScrewdriver01.1"
+    },
+    "LightingGuid": "E7CA8330-451C34BD-366918B4-74891FBA",
+    "RenderData": null
+  }
+]

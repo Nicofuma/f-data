@@ -1,0 +1,105 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ShippingContainerShortDamagedCritical",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": -3.966255,
+              "Z": 148.06462
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 306.691,
+            "Y": 302.732,
+            "Z": 296.9381,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "ShippingContainerShortDamagedCritical",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x31D86"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ShippingContainerShortDamagedCritical",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ShippingContainerNormal",
+            "ObjectPath": "War/Content/Materials/Structures/ShippingContainerNormal.0"
+          },
+          "MaterialSlotName": "Material #25",
+          "ImportedMaterialSlotName": "Material #25",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 812.50635,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 812.50635,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -1.9151764,
+          "Y": -5.123169,
+          "Z": 155.60847
+        },
+        "BoxExtent": {
+          "X": 166.9772,
+          "Y": 184.6936,
+          "Z": 156.01291
+        },
+        "SphereRadius": 267.39667
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ShippingContainerShortDamagedCritical:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Shippables/ShippingContainerShortDamagedCritical.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ShippingContainerShortDamagedCritical:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Shippables/ShippingContainerShortDamagedCritical.1"
+    },
+    "LightingGuid": "9E8C83FF-4D3C0876-CC9C01BC-9102AFFA",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,247 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPSandbagPlatform_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPSandbagPlatform_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSandbagPlatform.9"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class MaterialPlatform",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPSandbagPlatform_C",
+    "Name": "Default__BPSandbagPlatform_C",
+    "Properties": {
+      "MeshComponent": {
+        "ObjectName": "StaticMeshComponent Default__BPSandbagPlatform_C:Mesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSandbagPlatform.10"
+      },
+      "BoxCollision": {
+        "ObjectName": "BoxComponent Default__BPSandbagPlatform_C:BoxCollision",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSandbagPlatform.3"
+      },
+      "InstancedStaticMeshComponent": {
+        "ObjectName": "InstancedStaticMeshComponent Default__BPSandbagPlatform_C:InstancedStaticMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSandbagPlatform.6"
+      },
+      "GenericStockpileComponent": {
+        "ObjectName": "GenericItemStockpileComponent Default__BPSandbagPlatform_C:GenericStockpileComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSandbagPlatform.5"
+      },
+      "MaterialCodeName": "SandbagMaterials",
+      "InstanceMeshWidth": 65.0,
+      "InstanceMeshDepth": 75.0,
+      "InstanceMeshOddWidth": 75.0,
+      "InstanceMeshOddDepth": 60.0,
+      "InstanceMeshHeight": 28.0,
+      "InstancesPerRow": 4,
+      "InstancesPerOddRow": 3,
+      "InstancesPerOddColumn": 6,
+      "InstanceYawJitter": 10.0,
+      "InstancePitchJitter": 15.0,
+      "InstanceRollJitter": 2.0,
+      "InstanceOffsetJitter": 3.0,
+      "InstanceScaleJitter": 0.1,
+      "InstanceMeshOffset": {
+        "X": -99.66405,
+        "Y": -140.84703,
+        "Z": 34.311317
+      },
+      "InstanceMeshOddLayerOffset": {
+        "X": 11.383371,
+        "Y": -13.052718,
+        "Z": 0.0
+      },
+      "BuildGhostClass": null,
+      "Description": {
+        "Namespace": "",
+        "Key": "7E782CC347EECF546FA55FB032E68264",
+        "SourceString": "A pallet of Sandbags that's used for the construction of frontline defenses."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D SandbagPlatformItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/SandbagPlatformItemIcon.0"
+      },
+      "BuildLocationType": "EBuildLocationType::ConstructionYard",
+      "CodeName": "SandbagPlatform",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "8064A08E4E06E9E233EAA0AFFC8AB64F",
+        "SourceString": "Sandbag Pallet"
+      },
+      "ArmourType": "EArmourType::Tier1Structure",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPSandbagPlatform_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSandbagPlatform.2"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPSandbagPlatform_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSandbagPlatform.4"
+      },
+      "DestroyedFX": {
+        "ObjectName": "ParticleSystem GrenadeBlast",
+        "ObjectPath": "War/Content/FX/GrenadeBlast.151"
+      },
+      "MaxHealth": 500,
+      "Health": 500,
+      "StructureNetRelevancySize": "EStructureNetRelevancySize::Small",
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPSandbagPlatform_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSandbagPlatform.11"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPSandbagPlatform_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSandbagPlatform.2"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPSandbagPlatform_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxCollision",
+    "Outer": "Default__BPSandbagPlatform_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 100.0,
+        "Y": 210.0,
+        "Z": 55.0
+      },
+      "AttachParent": {
+        "ObjectName": "StaticMeshComponent Default__BPSandbagPlatform_C:Mesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSandbagPlatform.10"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 85.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPSandbagPlatform_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 145.0,
+        "Y": 220.0,
+        "Z": 150.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPSandbagPlatform_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSandbagPlatform.2"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 90.0
+      }
+    }
+  },
+  {
+    "Type": "GenericItemStockpileComponent",
+    "Name": "GenericStockpileComponent",
+    "Outer": "Default__BPSandbagPlatform_C",
+    "Properties": {
+      "Configs": [
+        {
+          "Type": "EStockpileEntryType::Items",
+          "QuantityLimit": 32000,
+          "TotalQuantityLimit": 76,
+          "ValidEntriesOverride": [],
+          "PreStockedEntries": []
+        }
+      ]
+    }
+  },
+  {
+    "Type": "InstancedStaticMeshComponent",
+    "Name": "InstancedStaticMesh",
+    "Outer": "Default__BPSandbagPlatform_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh SandbagMaterial",
+        "ObjectPath": "War/Content/Meshes/Pickups/SandbagMaterial.2"
+      },
+      "AttachParent": {
+        "ObjectName": "StaticMeshComponent Default__BPSandbagPlatform_C:Mesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSandbagPlatform.10"
+      },
+      "RelativeLocation": {
+        "X": -99.66405,
+        "Y": -140.84703,
+        "Z": 34.311317
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPSandbagPlatform_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPSandbagPlatform_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSandbagPlatform.7"
+      },
+      "VariableGuid": "05A7D1CE-44009822-63759F83-36A75871",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPSandbagPlatform_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPSandbagPlatform_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSandbagPlatform.8"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Mesh",
+    "Outer": "Default__BPSandbagPlatform_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh MaterialPlatform",
+        "ObjectPath": "War/Content/Meshes/Shippables/MaterialPlatform.2"
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPSandbagPlatform_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPSandbagPlatform.2"
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPSandbagPlatform_C"
+  }
+]

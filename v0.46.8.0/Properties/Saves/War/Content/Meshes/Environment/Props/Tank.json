@@ -1,0 +1,174 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Tank",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": -64.31244,
+              "Z": 123.41881
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 420.01013,
+            "Y": 719.68524,
+            "Z": 244.04689,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": -51.329407,
+              "Z": 310.10367
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 286.35568,
+            "Y": 309.4039,
+            "Z": 129.52333,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": 2.9036865,
+              "Y": 253.3386,
+              "Z": 320.75052
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 28.481121,
+            "Y": 357.9136,
+            "Z": 33.883656,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_11",
+    "Outer": "Tank",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 753,
+        "SizeOnDisk": 753,
+        "OffsetInFile": "0x45AE7"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Tank",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Tank02",
+            "ObjectPath": "War/Content/Materials/Structures/Tank02.0"
+          },
+          "MaterialSlotName": "Material #6614",
+          "ImportedMaterialSlotName": "Material #6614",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1292.616,
+            "LocalUVDensities": 4696.0435,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant HalfTrack",
+            "ObjectPath": "War/Content/Materials/Vehicles/HalfTrack.0"
+          },
+          "MaterialSlotName": "Material #25",
+          "ImportedMaterialSlotName": "Material #25",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 2001.1377,
+            "LocalUVDensities": 4801.06,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TankTreadDamaged",
+            "ObjectPath": "War/Content/Materials/Vehicles/TankTreadDamaged.0"
+          },
+          "MaterialSlotName": "Material #47",
+          "ImportedMaterialSlotName": "Material #47",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 125.25781,
+            "LocalUVDensities": 4726.795,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 4743.4673,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 216.31459
+        },
+        "BoxExtent": {
+          "X": 202.6765,
+          "Y": 426.64072,
+          "Z": 217.4161
+        },
+        "SphereRadius": 477.07962
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Tank:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Tank.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Tank:NavCollision_11",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Tank.1"
+    },
+    "LightingGuid": "FF4905FF-4647C1EC-45585CAF-13EC209F",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPMGTWGunMount_C",
+    "SuperStruct": {
+      "ObjectName": "Class HitScanMountComponent",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPMGTWGunMount_C",
+    "Name": "Default__BPMGTWGunMount_C",
+    "Properties": {
+      "NumBarrels": 1,
+      "FiringRate": 0.2,
+      "ImpactEffect": {
+        "ObjectName": "BlueprintGeneratedClass RifleImpactEffect_C",
+        "ObjectPath": "War/Content/Blueprints/Items/RifleImpactEffect.1"
+      },
+      "WeaponFireFXClass": {
+        "ObjectName": "BlueprintGeneratedClass TracerFireMG_C",
+        "ObjectPath": "War/Content/Blueprints/TracerFireMG.1"
+      },
+      "WeaponShotSFX": {
+        "FiringLoop": {
+          "ObjectName": "SoundCue MGW-RFShot_Cue",
+          "ObjectPath": "War/Content/Audio/SFX/Weapons/MGW/MGW-RFShot_Cue.0"
+        },
+        "FiringStopped": {
+          "ObjectName": "SoundCue MGW-RFTail_Cue",
+          "ObjectPath": "War/Content/Audio/SFX/Weapons/MGW/MGW-RFTail_Cue.0"
+        }
+      },
+      "MuzzleFlashPS": {
+        "ObjectName": "ParticleSystem MachinegunMF",
+        "ObjectPath": "War/Content/FX/MachinegunMF.41"
+      },
+      "ReloadSoundCue": {
+        "ObjectName": "SoundCue HeavyMGReload",
+        "ObjectPath": "War/Content/Audio/SFX/Weapons/HeavyMG/HeavyMGReload.0"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "04E322B3454ACD0A015A5B8280E12436",
+        "SourceString": "Turret"
+      },
+      "AmmoName": "MGAmmo",
+      "Icon": {
+        "ObjectName": "Texture2D MachineGunAmmoIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/MachineGunAmmoIcon.0"
+      },
+      "EquippedGripType": "EEquippedWeaponGripType::DeployedTwoHandedWeapon",
+      "ActivityStateInfos": {
+        "IsLooping": true
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage ATG_Reloading",
+          "ObjectPath": "War/Content/Animation/Character/ATG_ATRifle/ATG_Reloading.0"
+        }
+      },
+      "bUseCharacterRotationForAim": true,
+      "bIsStationary": true,
+      "bUpdateCharacterRotation": false,
+      "bReplicates": true,
+      "bAutoActivate": true
+    }
+  }
+]

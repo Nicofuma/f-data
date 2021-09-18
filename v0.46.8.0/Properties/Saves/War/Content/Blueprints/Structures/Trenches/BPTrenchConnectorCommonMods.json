@@ -1,0 +1,381 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "RightModSlotSplineTarget",
+    "Outer": "BPTrenchConnectorCommonMods_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SceneComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPTrenchConnectorCommonMods_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPTrenchConnectorCommonMods_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Trenches/BPTrenchConnectorCommonMods.20"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class Template",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPTrenchConnectorCommonMods_C:RightModSlotSplineTarget",
+        "ObjectPath": "War/Content/Blueprints/Structures/Trenches/BPTrenchConnectorCommonMods.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTrenchConnectorCommonMods_C:LeftModSlotSplineTarget",
+        "ObjectPath": "War/Content/Blueprints/Structures/Trenches/BPTrenchConnectorCommonMods.8"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTrenchConnectorCommonMods_C:RightDefenseModSlot",
+        "ObjectPath": "War/Content/Blueprints/Structures/Trenches/BPTrenchConnectorCommonMods.9"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTrenchConnectorCommonMods_C:UnderModSlot",
+        "ObjectPath": "War/Content/Blueprints/Structures/Trenches/BPTrenchConnectorCommonMods.10"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTrenchConnectorCommonMods_C:LeftDefenseModSlot",
+        "ObjectPath": "War/Content/Blueprints/Structures/Trenches/BPTrenchConnectorCommonMods.7"
+      },
+      {
+        "ObjectName": "ObjectProperty BPTrenchConnectorCommonMods_C:DefaultSceneRoot",
+        "ObjectPath": "War/Content/Blueprints/Structures/Trenches/BPTrenchConnectorCommonMods.6"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPTrenchConnectorCommonMods_C",
+    "Name": "Default__BPTrenchConnectorCommonMods_C"
+  },
+  {
+    "Type": "BPTrenchConnectorUnderModSlot_C",
+    "Name": "UnderModSlot_GEN_VARIABLE",
+    "Outer": "BPTrenchConnectorCommonMods_C",
+    "Properties": {
+      "bIsBuildableUnderRoads": true,
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -160.0
+      },
+      "ComponentTags": [
+        "ConnectorCentre",
+        "ShowUnderRoad"
+      ]
+    }
+  },
+  {
+    "Type": "BPTrenchDefenseModSlot_C",
+    "Name": "LeftDefenseModSlot_GEN_VARIABLE",
+    "Outer": "BPTrenchConnectorCommonMods_C",
+    "Properties": {
+      "bOverrideSplineTarget": true,
+      "SplineTargetComponentNameOverride": "LeftModSlotSplineTarget",
+      "RelativeLocation": {
+        "X": -165.0,
+        "Y": -220.0,
+        "Z": 0.0
+      },
+      "ComponentTags": [
+        "ConnectorBack"
+      ]
+    }
+  },
+  {
+    "Type": "BPTrenchDefenseModSlot_C",
+    "Name": "RightDefenseModSlot_GEN_VARIABLE",
+    "Outer": "BPTrenchConnectorCommonMods_C",
+    "Properties": {
+      "bOverrideSplineTarget": true,
+      "SplineTargetComponentNameOverride": "RightModSlotSplineTarget",
+      "RelativeLocation": {
+        "X": 165.0,
+        "Y": 220.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -179.99997,
+        "Roll": 0.0
+      },
+      "ComponentTags": [
+        "ConnectorFront"
+      ]
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "DefaultSceneRoot",
+    "Outer": "BPTrenchConnectorCommonMods_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SceneComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "LeftDefenseModSlot",
+    "Outer": "BPTrenchConnectorCommonMods_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "BlueprintGeneratedClass BPTrenchDefenseModSlot_C",
+      "ObjectPath": "War/Content/Blueprints/Structures/Trenches/Modifications/BPTrenchDefenseModSlot.0"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "LeftModSlotSplineTarget",
+    "Outer": "BPTrenchConnectorCommonMods_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SceneComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "RightDefenseModSlot",
+    "Outer": "BPTrenchConnectorCommonMods_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "BlueprintGeneratedClass BPTrenchDefenseModSlot_C",
+      "ObjectPath": "War/Content/Blueprints/Structures/Trenches/Modifications/BPTrenchDefenseModSlot.0"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "UnderModSlot",
+    "Outer": "BPTrenchConnectorCommonMods_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "BlueprintGeneratedClass BPTrenchConnectorUnderModSlot_C",
+      "ObjectPath": "War/Content/Blueprints/Structures/Trenches/Modifications/BPTrenchConnectorUnderModSlot.0"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPTrenchConnectorCommonMods_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "LeftModSlotSplineTarget_GEN_VARIABLE",
+    "Outer": "BPTrenchConnectorCommonMods_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 160.0,
+        "Y": -220.0,
+        "Z": 0.0
+      },
+      "ComponentTags": [
+        "ModSplineTarget",
+        "ConnectorFront",
+        "IncludeInBuildSite"
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RightModSlotSplineTarget_GEN_VARIABLE",
+    "Outer": "BPTrenchConnectorCommonMods_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": -160.0,
+        "Y": 220.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -179.99997,
+        "Roll": 0.0
+      },
+      "ComponentTags": [
+        "ModSplineTarget",
+        "ConnectorBack",
+        "IncludeInBuildSite"
+      ]
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPTrenchConnectorCommonMods_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Trenches/BPTrenchConnectorCommonMods.11"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node BPTrenchConnectorCommonMods_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Structures/Trenches/BPTrenchConnectorCommonMods.18"
+        },
+        {
+          "ObjectName": "SCS_Node BPTrenchConnectorCommonMods_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Structures/Trenches/BPTrenchConnectorCommonMods.19"
+        },
+        {
+          "ObjectName": "SCS_Node BPTrenchConnectorCommonMods_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/Trenches/BPTrenchConnectorCommonMods.17"
+        },
+        {
+          "ObjectName": "SCS_Node BPTrenchConnectorCommonMods_C:SimpleConstructionScript_0.SCS_Node_12",
+          "ObjectPath": "War/Content/Blueprints/Structures/Trenches/BPTrenchConnectorCommonMods.16"
+        },
+        {
+          "ObjectName": "SCS_Node BPTrenchConnectorCommonMods_C:SimpleConstructionScript_0.SCS_Node_11",
+          "ObjectPath": "War/Content/Blueprints/Structures/Trenches/BPTrenchConnectorCommonMods.15"
+        }
+      ],
+      "VariableGuid": "BAC6F0DD-44D822EF-DA69AF9A-2D9FCDD6",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_11",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPTrenchConnectorCommonMods_C:RightModSlotSplineTarget_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Trenches/BPTrenchConnectorCommonMods.13"
+      },
+      "VariableGuid": "5141B33C-4B3967D2-C32C6C97-D059585E",
+      "InternalVariableName": "RightModSlotSplineTarget"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_12",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPTrenchConnectorCommonMods_C:LeftModSlotSplineTarget_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Trenches/BPTrenchConnectorCommonMods.12"
+      },
+      "VariableGuid": "2FD36801-4281849D-1DCADD82-57E73842",
+      "InternalVariableName": "LeftModSlotSplineTarget"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPTrenchDefenseModSlot_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Trenches/Modifications/BPTrenchDefenseModSlot.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BPTrenchDefenseModSlot_C BPTrenchConnectorCommonMods_C:RightDefenseModSlot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Trenches/BPTrenchConnectorCommonMods.5"
+      },
+      "VariableGuid": "2F61E098-4CA6D604-BE0C42B9-214B4419",
+      "InternalVariableName": "RightDefenseModSlot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPTrenchDefenseModSlot_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Trenches/Modifications/BPTrenchDefenseModSlot.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BPTrenchDefenseModSlot_C BPTrenchConnectorCommonMods_C:LeftDefenseModSlot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Trenches/BPTrenchConnectorCommonMods.4"
+      },
+      "VariableGuid": "8D906FA3-4B08A207-AE9341A1-65802966",
+      "InternalVariableName": "LeftDefenseModSlot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPTrenchConnectorUnderModSlot_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Trenches/Modifications/BPTrenchConnectorUnderModSlot.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BPTrenchConnectorUnderModSlot_C BPTrenchConnectorCommonMods_C:UnderModSlot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Trenches/BPTrenchConnectorCommonMods.3"
+      },
+      "VariableGuid": "4E052816-4F448659-824470B2-F9F4238E",
+      "InternalVariableName": "UnderModSlot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPTrenchConnectorCommonMods_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPTrenchConnectorCommonMods_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "War/Content/Blueprints/Structures/Trenches/BPTrenchConnectorCommonMods.14"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPTrenchConnectorCommonMods_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "War/Content/Blueprints/Structures/Trenches/BPTrenchConnectorCommonMods.14"
+        },
+        {
+          "ObjectName": "SCS_Node BPTrenchConnectorCommonMods_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Structures/Trenches/BPTrenchConnectorCommonMods.18"
+        },
+        {
+          "ObjectName": "SCS_Node BPTrenchConnectorCommonMods_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Structures/Trenches/BPTrenchConnectorCommonMods.19"
+        },
+        {
+          "ObjectName": "SCS_Node BPTrenchConnectorCommonMods_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/Trenches/BPTrenchConnectorCommonMods.17"
+        },
+        {
+          "ObjectName": "SCS_Node BPTrenchConnectorCommonMods_C:SimpleConstructionScript_0.SCS_Node_12",
+          "ObjectPath": "War/Content/Blueprints/Structures/Trenches/BPTrenchConnectorCommonMods.16"
+        },
+        {
+          "ObjectName": "SCS_Node BPTrenchConnectorCommonMods_C:SimpleConstructionScript_0.SCS_Node_11",
+          "ObjectPath": "War/Content/Blueprints/Structures/Trenches/BPTrenchConnectorCommonMods.15"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPTrenchConnectorCommonMods_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Trenches/BPTrenchConnectorCommonMods.14"
+      }
+    }
+  }
+]

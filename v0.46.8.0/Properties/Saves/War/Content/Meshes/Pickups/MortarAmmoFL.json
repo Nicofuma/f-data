@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "MortarAmmoFL",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "MortarAmmoFL",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1F75"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "MortarAmmoFL",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MortarAmmoFL",
+            "ObjectPath": "War/Content/Materials/Pickups/MortarAmmoFL.0"
+          },
+          "MaterialSlotName": "MortarShellFL",
+          "ImportedMaterialSlotName": "MortarShellFL",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 85.50652,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 85.50652,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -1.9073486E-06,
+          "Z": 11.65704
+        },
+        "BoxExtent": {
+          "X": 39.469933,
+          "Y": 11.10943,
+          "Z": 11.10943
+        },
+        "SphereRadius": 41.0036
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup MortarAmmoFL:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Pickups/MortarAmmoFL.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision MortarAmmoFL:NavCollision_4",
+      "ObjectPath": "War/Content/Meshes/Pickups/MortarAmmoFL.1"
+    },
+    "LightingGuid": "8B37AEFC-4274D2A1-76FEAEAD-466F51CF",
+    "RenderData": null
+  }
+]

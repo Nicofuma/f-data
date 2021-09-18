@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SunflowerPickup01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "SunflowerPickup01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x21AF"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SunflowerPickup01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Sunflower01",
+            "ObjectPath": "War/Content/Materials/Environment/Sunflower01.0"
+          },
+          "MaterialSlotName": "Material #25",
+          "ImportedMaterialSlotName": "Material #25",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 76.51684,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 76.51684,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.32671738,
+          "Z": 3.7145128
+        },
+        "BoxExtent": {
+          "X": 67.39206,
+          "Y": 30.892052,
+          "Z": 12.022144
+        },
+        "SphereRadius": 67.54114
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SunflowerPickup01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/SunflowerPickup01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SunflowerPickup01:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/SunflowerPickup01.1"
+    },
+    "LightingGuid": "6DBE2FA2-4C7279BC-AAD134B8-878748EA",
+    "RenderData": null
+  }
+]

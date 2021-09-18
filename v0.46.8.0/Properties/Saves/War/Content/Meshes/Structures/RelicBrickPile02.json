@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "RelicBrickPile02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "RelicBrickPile02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x8826"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "RelicBrickPile02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RelicBrick01",
+            "ObjectPath": "War/Content/Materials/Environment/Props/RelicBrick01.0"
+          },
+          "MaterialSlotName": "Material #36",
+          "ImportedMaterialSlotName": "Material #36",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 289.48282,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 289.48282,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 13.238525,
+          "Y": 4.983902,
+          "Z": 32.540398
+        },
+        "BoxExtent": {
+          "X": 136.71373,
+          "Y": 165.29483,
+          "Z": 33.69969
+        },
+        "SphereRadius": 175.13805
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup RelicBrickPile02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/RelicBrickPile02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision RelicBrickPile02:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Structures/RelicBrickPile02.1"
+    },
+    "LightingGuid": "3279794C-4408BDCE-F7992A96-F1C747D7",
+    "RenderData": null
+  }
+]

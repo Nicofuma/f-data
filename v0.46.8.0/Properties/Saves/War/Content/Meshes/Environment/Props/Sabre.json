@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Sabre",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_5",
+    "Outer": "Sabre",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x78F3"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Sabre",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Sabre",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Sabre.0"
+          },
+          "MaterialSlotName": "Material #25",
+          "ImportedMaterialSlotName": "Material #25",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 104.190346,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 104.190346,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 6.1027565,
+          "Y": 22.156303,
+          "Z": 8.279602
+        },
+        "BoxExtent": {
+          "X": 39.8205,
+          "Y": 76.64495,
+          "Z": 8.286647
+        },
+        "SphereRadius": 81.88769
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Sabre:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Sabre.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Sabre:NavCollision_5",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Sabre.1"
+    },
+    "LightingGuid": "ABB660B8-4DFC40F6-C3F81493-D45F265A",
+    "RenderData": null
+  }
+]

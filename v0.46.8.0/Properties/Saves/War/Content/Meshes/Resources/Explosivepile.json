@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_3884",
+    "Outer": "Explosivepile",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Explosivepile",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x25F0"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Explosivepile",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Explosivepile",
+            "ObjectPath": "War/Content/Materials/Resources/Explosivepile.0"
+          },
+          "MaterialSlotName": "Explosivepile",
+          "ImportedMaterialSlotName": "Explosivepile",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 231.31158,
+            "LocalUVDensities": 234.98186,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 234.98186,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 32.188526
+        },
+        "BoxExtent": {
+          "X": 100.0,
+          "Y": 100.0,
+          "Z": 32.078304
+        },
+        "SphereRadius": 145.01385
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Explosivepile:BodySetup_3884",
+      "ObjectPath": "War/Content/Meshes/Resources/Explosivepile.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Explosivepile:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Resources/Explosivepile.1"
+    },
+    "LightingGuid": "8BD6F1DC-48C9C68E-66C702AC-080972F7",
+    "RenderData": null
+  }
+]

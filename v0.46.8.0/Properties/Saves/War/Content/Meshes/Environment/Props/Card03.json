@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Card03",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "Card03",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xC5A"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Card03",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Paper",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Paper.0"
+          },
+          "MaterialSlotName": "Material #490",
+          "ImportedMaterialSlotName": "Material #490",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 174.9981,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 174.9981,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -1.2130127
+        },
+        "BoxExtent": {
+          "X": 35.44795,
+          "Y": 25.805664,
+          "Z": 0.0
+        },
+        "SphereRadius": 43.8462
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Card03:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Card03.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Card03:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Card03.1"
+    },
+    "LightingGuid": "B618E0FD-42353C50-5499AC80-E1502DBB",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "HangingCloth01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_3",
+    "Outer": "HangingCloth01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2861"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "HangingCloth01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ShopSignCloth3",
+            "ObjectPath": "War/Content/Materials/Environment/Props/ShopSignCloth3.0"
+          },
+          "MaterialSlotName": "Material #1022",
+          "ImportedMaterialSlotName": "Material #1022",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 346.23016,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 346.23016,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 80.378174,
+          "Y": -0.30715942,
+          "Z": -179.98291
+        },
+        "BoxExtent": {
+          "X": 155.01529,
+          "Y": 75.17917,
+          "Z": 204.59729
+        },
+        "SphereRadius": 234.72906
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup HangingCloth01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Props/HangingCloth01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision HangingCloth01:NavCollision_3",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Props/HangingCloth01.1"
+    },
+    "LightingGuid": "43FF8D2A-41CD3D67-1FC575BE-1AFD2310",
+    "RenderData": null
+  }
+]

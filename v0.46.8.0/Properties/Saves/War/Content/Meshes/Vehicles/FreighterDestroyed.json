@@ -1,0 +1,164 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FreighterDestroyed",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "FreighterDestroyed",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xB220F"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FreighterDestroyed",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FreighterDeck",
+            "ObjectPath": "War/Content/Materials/Vehicles/FreighterDeck.0"
+          },
+          "MaterialSlotName": "FreighterDeck",
+          "ImportedMaterialSlotName": "FreighterDeck",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1087.2017,
+            "LocalUVDensities": 1.447754,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ConstructionYardWood",
+            "ObjectPath": "War/Content/Materials/Structures/ConstructionYardWood.0"
+          },
+          "MaterialSlotName": "ConstructionYardWood",
+          "ImportedMaterialSlotName": "ConstructionYardWood",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 756.1926,
+            "LocalUVDensities": 0.99519944,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FreighterSide",
+            "ObjectPath": "War/Content/Materials/Vehicles/FreighterSide.0"
+          },
+          "MaterialSlotName": "FreighterSide",
+          "ImportedMaterialSlotName": "FreighterSide",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1480.8004,
+            "LocalUVDensities": 5.0667095,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FreighterDoors",
+            "ObjectPath": "War/Content/Materials/Vehicles/FreighterDoors.0"
+          },
+          "MaterialSlotName": "FreighterDoors",
+          "ImportedMaterialSlotName": "FreighterDoors",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1000.3763,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ConstructionVehicleCanvas",
+            "ObjectPath": "War/Content/Materials/Environment/Props/ConstructionVehicleCanvas.0"
+          },
+          "MaterialSlotName": "ConstructionVehicleCanvas",
+          "ImportedMaterialSlotName": "ConstructionVehicleCanvas",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 248.96931,
+            "LocalUVDensities": 0.9685459,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ProductionParts",
+            "ObjectPath": "War/Content/Materials/Structures/ProductionParts.0"
+          },
+          "MaterialSlotName": "ProductionParts",
+          "ImportedMaterialSlotName": "ProductionParts",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 895.2076,
+            "LocalUVDensities": 1.0238097,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 3.1687193,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -13.246704,
+          "Y": 169.78656,
+          "Z": 266.30704
+        },
+        "BoxExtent": {
+          "X": 418.28857,
+          "Y": 1062.2769,
+          "Z": 726.0824
+        },
+        "SphereRadius": 1231.9167
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FreighterDestroyed:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Vehicles/FreighterDestroyed.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FreighterDestroyed:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Vehicles/FreighterDestroyed.1"
+    },
+    "LightingGuid": "24F50D62-4A6F2424-CEE5E88B-BF2FD24B",
+    "RenderData": null
+  }
+]

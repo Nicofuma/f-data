@@ -1,0 +1,115 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BattleTankAmmoPickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BattleTankAmmoPickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/TankAmmo/BattleTankAmmoPickup.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class TankAmmoPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BattleTankAmmoPickup_C",
+    "Name": "Default__BattleTankAmmoPickup_C",
+    "Properties": {
+      "ExplosionClass": {
+        "ObjectName": "BlueprintGeneratedClass RPGExplosion_C",
+        "ObjectPath": "War/Content/Blueprints/Items/RPGExplosion.1"
+      },
+      "ShotSoundCue": {
+        "ObjectName": "SoundCue BattleTankBasicShot_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Vehicles/BattleTank/BattleTankBasicShot_Cue.0"
+      },
+      "Encumbrance": 100,
+      "CodeName": "BattleTankAmmo",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "F5FD749449FE686E5F811F860FC01483",
+        "SourceString": "75mm Round"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "531913CD412BC90A3C6FAEBACB8C1364",
+        "SourceString": "Standard payload for battle tanks."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D BattleTankAmmoItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/BattleTankAmmoItemIcon.0"
+      },
+      "ItemCategory": "EItemCategory::HeavyArms",
+      "ItemFlagsMask": 17,
+      "ItemProfileType": "EItemProfileType::HeavyAmmo",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BattleTankAmmoPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/TankAmmo/BattleTankAmmoPickup.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BattleTankAmmoPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/TankAmmo/BattleTankAmmoPickup.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BattleTankAmmoPickup_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BattleTankAmmoPickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BattleTankAmmoPickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/TankAmmo/BattleTankAmmoPickup.3"
+      },
+      "VariableGuid": "4AB0A040-4BAE6732-BE2F2998-1D30A2A5",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BattleTankAmmoPickup_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BattleTankAmmoPickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/TankAmmo/BattleTankAmmoPickup.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BattleTankAmmoPickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BattleTankAmmoPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/TankAmmo/BattleTankAmmoPickup.2"
+      }
+    }
+  }
+]

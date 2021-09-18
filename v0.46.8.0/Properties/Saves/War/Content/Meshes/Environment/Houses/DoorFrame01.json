@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "DoorFrame01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "DoorFrame01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x438F"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "DoorFrame01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant WoodRepeating03",
+            "ObjectPath": "War/Content/Materials/Environment/WoodRepeating03.0"
+          },
+          "MaterialSlotName": "WoodRepeating03",
+          "ImportedMaterialSlotName": "WoodRepeating03",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 118.15765,
+            "LocalUVDensities": 474.41946,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 474.41946,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.08753204,
+          "Y": 0.14558792,
+          "Z": 136.8206
+        },
+        "BoxExtent": {
+          "X": 86.02561,
+          "Y": 31.227589,
+          "Z": 157.45203
+        },
+        "SphereRadius": 181.36751
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup DoorFrame01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Houses/DoorFrame01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision DoorFrame01:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Houses/DoorFrame01.1"
+    },
+    "LightingGuid": "FAFB048F-4A985054-30EA41BF-47ECBD28",
+    "RenderData": null
+  }
+]

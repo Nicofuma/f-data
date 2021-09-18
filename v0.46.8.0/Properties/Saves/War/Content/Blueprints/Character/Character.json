@@ -1,0 +1,1276 @@
+[
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "Character_C",
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Character_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript Character_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.28"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty Character_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.0"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function Character_C:ExecuteUbergraph_Character",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.9"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PlayerCharacter",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty Character_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.0"
+      },
+      {
+        "ObjectName": "Function Character_C:BPUpdateMaterialParameters",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.12"
+      },
+      {
+        "ObjectName": "Function Character_C:ExecuteUbergraph_Character",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.9"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 655360,
+    "ClassWithin": null,
+    "ClassConfigName": "/Game/Animation/Character/ABP_Male_851967",
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "Character_C",
+    "Name": "Default__Character_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "OfflineFxTemplate": {
+        "ObjectName": "ParticleSystem OfflineCharacter",
+        "ObjectPath": "War/Content/FX/OfflineCharacter.43"
+      },
+      "CameraRigComponent": {
+        "ObjectName": "PlayerCameraRigComponent Default__Character_C:CameraRig",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.16"
+      },
+      "TopDownCameraComponent": {
+        "ObjectName": "CameraComponent Default__Character_C:TopDownCamera",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.5"
+      },
+      "LOSPostProcess": {
+        "ObjectName": "PostProcessComponent Default__Character_C:LOSPostProcess",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.19"
+      },
+      "LOSRasterComponent": {
+        "ObjectName": "PlayerLOSRasterComponent Default__Character_C:LOSRasterComponent",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.18"
+      },
+      "GrenadeAimMesh": {
+        "ObjectName": "StaticMeshComponent Default__Character_C:GrenadeAimMesh",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.39"
+      },
+      "Grip_Standing": {
+        "ObjectName": "SceneComponent Default__Character_C:Grip_Standing",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.23"
+      },
+      "Grip_Crouched": {
+        "ObjectName": "SceneComponent Default__Character_C:Grip_Crouched",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.21"
+      },
+      "Grip_Prone": {
+        "ObjectName": "SceneComponent Default__Character_C:Grip_Prone",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.22"
+      },
+      "StanceYawModifiers": 0.3,
+      "StanceYawModifiers": 0.1,
+      "bGiveStarterKit": true,
+      "StarterKitItems": [
+        "Pistol",
+        "PistolAmmo",
+        "PistolAmmo",
+        "WorkHammer"
+      ],
+      "MaxClimbForwardDistance": 75.0,
+      "MaxVaultHeight": 125.0,
+      "MaxClimbHeight": 200.0,
+      "MinClimbOpenDistance": 250.0,
+      "MinShortWallStepOpenDistance": 80.0,
+      "ClamberStandOffset": 16.5,
+      "FootStepCue": {
+        "ObjectName": "SoundCue SnowStep_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Player/SnowStep_Cue.0"
+      },
+      "MaxHealth": 100,
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage RFL_Equipping",
+          "ObjectPath": "War/Content/Animation/Character/RFL_Rifle/RFL_Equipping.0"
+        }
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage RFL_Unequipping",
+          "ObjectPath": "War/Content/Animation/Character/RFL_Rifle/RFL_Unequipping.0"
+        }
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage RFL_Shooting",
+          "ObjectPath": "War/Content/Animation/Character/RFL_Rifle/RFL_Shooting.0"
+        }
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage RFL_Reloading",
+          "ObjectPath": "War/Content/Animation/Character/RFL_Rifle/RFL_Reloading.0"
+        }
+      },
+      "ActivityStateInfos": {
+        "Duration": 1.75
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage SHI_GrenadeThrow",
+          "ObjectPath": "War/Content/Animation/Character/SHI_SingleHandItem/SHI_GrenadeThrow.0"
+        }
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage NWP_Binocular",
+          "ObjectPath": "War/Content/Animation/Character/NWP_NoWeapon/NWP_Binocular.0"
+        },
+        "IsLooping": true
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage NWP_Melee",
+          "ObjectPath": "War/Content/Animation/Character/NWP_NoWeapon/NWP_Melee.0"
+        }
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage ALL_Vault",
+          "ObjectPath": "War/Content/Animation/Character/ALL_Vault.0"
+        }
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage ALL_Climb",
+          "ObjectPath": "War/Content/Animation/Character/ALL_Climb.0"
+        },
+        "SectionName": "Default"
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage ALL_WallClimb",
+          "ObjectPath": "War/Content/Animation/Character/ALL_WallClimb.0"
+        }
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage SHI_GrenadePinPull",
+          "ObjectPath": "War/Content/Animation/Character/SHI_SingleHandItem/SHI_GrenadePinPull.0"
+        },
+        "IsLooping": true
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage NWP_Melee",
+          "ObjectPath": "War/Content/Animation/Character/NWP_NoWeapon/NWP_Melee.0"
+        }
+      },
+      "ActivityStateInfos": {
+        "IsLooping": true
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage NWP_Tinkering",
+          "ObjectPath": "War/Content/Animation/Character/NWP_NoWeapon/NWP_Tinkering.0"
+        },
+        "IsLooping": true
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage ALL_StepUp",
+          "ObjectPath": "War/Content/Animation/Character/ALL_StepUp.0"
+        }
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage SHI_UseBandages",
+          "ObjectPath": "War/Content/Animation/Character/SHI_SingleHandItem/SHI_UseBandages.0"
+        }
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage SHI_MedkitApplication",
+          "ObjectPath": "War/Content/Animation/Character/SHI_SingleHandItem/SHI_MedkitApplication.0"
+        },
+        "IsLooping": true
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage RFL_EncumberedFall",
+          "ObjectPath": "War/Content/Animation/Character/RFL_Rifle/RFL_EncumberedFall.0"
+        },
+        "Duration": 5.0
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage RFL_WoundedOnTheFloor",
+          "ObjectPath": "War/Content/Animation/Character/RFL_Rifle/RFL_WoundedOnTheFloor.0"
+        },
+        "IsLooping": true
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage RFL_WoundedOnTheFloor",
+          "ObjectPath": "War/Content/Animation/Character/RFL_Rifle/RFL_WoundedOnTheFloor.0"
+        },
+        "SectionName": "End"
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage SHI_Revive",
+          "ObjectPath": "War/Content/Animation/Character/SHI_SingleHandItem/SHI_Revive.0"
+        }
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage NWP_Tinkering",
+          "ObjectPath": "War/Content/Animation/Character/NWP_NoWeapon/NWP_Tinkering.0"
+        },
+        "IsLooping": true
+      },
+      "ActivityStateInfos": {
+        "Duration": 0.1
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage RFL_PressOnWounds",
+          "ObjectPath": "War/Content/Animation/Character/RFL_Rifle/RFL_PressOnWounds.0"
+        },
+        "IsLooping": true
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage RFL_PressOnWounds",
+          "ObjectPath": "War/Content/Animation/Character/RFL_Rifle/RFL_PressOnWounds.0"
+        },
+        "SectionName": "End"
+      },
+      "ActivityStateInfos": {
+        "Duration": 2.5
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage NWP_Ladder_mountFromBottom",
+          "ObjectPath": "War/Content/Animation/Character/NWP_NoWeapon/NWP_Ladder_mountFromBottom.0"
+        },
+        "SectionName": "Default"
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage NWP_Ladder_mountFromTop",
+          "ObjectPath": "War/Content/Animation/Character/NWP_NoWeapon/NWP_Ladder_mountFromTop.0"
+        },
+        "SectionName": "Default"
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage NWP_Ladder_dismountFromBottom",
+          "ObjectPath": "War/Content/Animation/Character/NWP_NoWeapon/NWP_Ladder_dismountFromBottom.0"
+        }
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage NWP_Ladder_dismountFromTop",
+          "ObjectPath": "War/Content/Animation/Character/NWP_NoWeapon/NWP_Ladder_dismountFromTop.0"
+        }
+      },
+      "ActivityStateInfos": {
+        "Duration": 1.75
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage Emote_AM_GoForward",
+          "ObjectPath": "War/Content/Animation/Character/Emotes/Emote_AM_GoForward.0"
+        }
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage Emote_AM_Halt",
+          "ObjectPath": "War/Content/Animation/Character/Emotes/Emote_AM_Halt.0"
+        }
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage Emote_AM_Salute",
+          "ObjectPath": "War/Content/Animation/Character/Emotes/Emote_AM_Salute.0"
+        }
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage Emote_AM_Wave",
+          "ObjectPath": "War/Content/Animation/Character/Emotes/Emote_AM_Wave.0"
+        }
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage Emote_AM_rallyPoint",
+          "ObjectPath": "War/Content/Animation/Character/Emotes/Emote_AM_rallyPoint.0"
+        }
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage Emote_AM_Surrender",
+          "ObjectPath": "War/Content/Animation/Character/Emotes/Emote_AM_Surrender.0"
+        }
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage Emote_AM_VictoryCheer",
+          "ObjectPath": "War/Content/Animation/Character/Emotes/Emote_AM_VictoryCheer.0"
+        }
+      },
+      "ActivityStateInfos": {
+        "IsLooping": true
+      },
+      "ActivityStateInfos": {
+        "IsLooping": true
+      },
+      "ActivityStateInfos": {
+        "IsLooping": true
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage NWP_Tinkering",
+          "ObjectPath": "War/Content/Animation/Character/NWP_NoWeapon/NWP_Tinkering.0"
+        },
+        "IsLooping": true
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage NWP_Tinkering",
+          "ObjectPath": "War/Content/Animation/Character/NWP_NoWeapon/NWP_Tinkering.0"
+        },
+        "IsLooping": true
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage NWP_Tinkering",
+          "ObjectPath": "War/Content/Animation/Character/NWP_NoWeapon/NWP_Tinkering.0"
+        },
+        "IsLooping": true
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage LDI_deploying",
+          "ObjectPath": "War/Content/Animation/Character/Carrying_Items/LDI_LargeDeployableItems/LDI_deploying.0"
+        },
+        "Duration": 3.0
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage Zombie_UsingSoulstone",
+          "ObjectPath": "War/Content/Animation/Character/Events/Zombie_UsingSoulstone.0"
+        }
+      },
+      "ActivityStateInfos": {
+        "IsLooping": true
+      },
+      "ActivityStateInfos": {
+        "ActivityMontage": {
+          "ObjectName": "AnimMontage STATUS_freezeToDeath",
+          "ObjectPath": "War/Content/Animation/Character/RFL_Rifle/STATUS_freezeToDeath.0"
+        }
+      },
+      "EmoteActivityOptionsTable": {
+        "ECharacterActivityState::EmoteGoFoward": {
+          "bLockStance": false,
+          "bHideWeapon": false,
+          "AllowedStances": [
+            "ESimCharacterStance::Standing",
+            "ESimCharacterStance::Crouched"
+          ]
+        },
+        "ECharacterActivityState::EmoteHalt": {
+          "bLockStance": true,
+          "bHideWeapon": false,
+          "AllowedStances": [
+            "ESimCharacterStance::Standing"
+          ]
+        },
+        "ECharacterActivityState::EmoteSalute": {
+          "bLockStance": true,
+          "bHideWeapon": true,
+          "AllowedStances": [
+            "ESimCharacterStance::Standing"
+          ]
+        },
+        "ECharacterActivityState::EmoteWave": {
+          "bLockStance": true,
+          "bHideWeapon": false,
+          "AllowedStances": [
+            "ESimCharacterStance::Standing"
+          ]
+        },
+        "ECharacterActivityState::EmoteRallyPoint": {
+          "bLockStance": true,
+          "bHideWeapon": false,
+          "AllowedStances": [
+            "ESimCharacterStance::Standing"
+          ]
+        },
+        "ECharacterActivityState::EmoteSurrender": {
+          "bLockStance": true,
+          "bHideWeapon": true,
+          "AllowedStances": [
+            "ESimCharacterStance::Standing"
+          ]
+        },
+        "ECharacterActivityState::EmoteCheer": {
+          "bLockStance": true,
+          "bHideWeapon": false,
+          "AllowedStances": [
+            "ESimCharacterStance::Standing"
+          ]
+        }
+      },
+      "InVehicleAllowedDeviationOfShootingDirection": 135.0,
+      "SurfaceMovementModifiers": [
+        {
+          "PhysicalMaterial": {
+            "ObjectName": "PhysicalMaterial RoadPhys",
+            "ObjectPath": "War/Content/PhysicalMaterials/RoadPhys.0"
+          },
+          "StaminaDrainModifier": 0.1,
+          "MovementSpeedModifier": 1.0
+        },
+        {
+          "PhysicalMaterial": {
+            "ObjectName": "PhysicalMaterial T1RoadPhys",
+            "ObjectPath": "War/Content/PhysicalMaterials/T1RoadPhys.0"
+          },
+          "StaminaDrainModifier": 0.1,
+          "MovementSpeedModifier": 1.0
+        },
+        {
+          "PhysicalMaterial": {
+            "ObjectName": "PhysicalMaterial T2RoadPhys",
+            "ObjectPath": "War/Content/PhysicalMaterials/T2RoadPhys.0"
+          },
+          "StaminaDrainModifier": 0.1,
+          "MovementSpeedModifier": 1.0
+        },
+        {
+          "PhysicalMaterial": {
+            "ObjectName": "PhysicalMaterial T3RoadPhys",
+            "ObjectPath": "War/Content/PhysicalMaterials/T3RoadPhys.0"
+          },
+          "StaminaDrainModifier": 0.1,
+          "MovementSpeedModifier": 1.0
+        },
+        {
+          "PhysicalMaterial": {
+            "ObjectName": "PhysicalMaterial TownStone",
+            "ObjectPath": "War/Content/PhysicalMaterials/TownStone.0"
+          },
+          "StaminaDrainModifier": 0.1,
+          "MovementSpeedModifier": 1.0
+        },
+        {
+          "PhysicalMaterial": {
+            "ObjectName": "PhysicalMaterial MudPhys",
+            "ObjectPath": "War/Content/PhysicalMaterials/MudPhys.0"
+          },
+          "StaminaDrainModifier": 3.0,
+          "MovementSpeedModifier": 0.3
+        },
+        {
+          "PhysicalMaterial": {
+            "ObjectName": "PhysicalMaterial BarbedWirePhys",
+            "ObjectPath": "War/Content/PhysicalMaterials/BarbedWirePhys.0"
+          },
+          "StaminaDrainModifier": 6.0,
+          "MovementSpeedModifier": 0.02
+        }
+      ],
+      "Head": {
+        "ObjectName": "SkeletalMeshComponent Default__Character_C:Head",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.34"
+      },
+      "Hands": {
+        "ObjectName": "SkeletalMeshComponent Default__Character_C:Hands",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.33"
+      },
+      "Legs": {
+        "ObjectName": "SkeletalMeshComponent Default__Character_C:Legs",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.36"
+      },
+      "Back": {
+        "ObjectName": "SkeletalMeshComponent Default__Character_C:Back",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.30"
+      },
+      "Helmet": {
+        "ObjectName": "SkeletalMeshComponent Default__Character_C:Helmet",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.35"
+      },
+      "EquippedItemMesh": {
+        "ObjectName": "SkeletalMeshComponent Default__Character_C:WeaponMesh",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.37"
+      },
+      "GasMaskMesh": {
+        "ObjectName": "SkeletalMeshComponent Default__Character_C:GasMaskMesh",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.32"
+      },
+      "AccessoryMesh": {
+        "ObjectName": "SkeletalMeshComponent Default__Character_C:AccessoryMesh",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.29"
+      },
+      "Muzzle_Standing": {
+        "ObjectName": "SceneComponent Default__Character_C:Muzzle_Standing",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.26"
+      },
+      "Muzzle_Crouched": {
+        "ObjectName": "SceneComponent Default__Character_C:Muzzle_Crouched",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.24"
+      },
+      "Muzzle_Prone": {
+        "ObjectName": "SceneComponent Default__Character_C:Muzzle_Prone",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.25"
+      },
+      "GroundEquippedItemMesh": {
+        "ObjectName": "StaticMeshComponent Default__Character_C:GroundEquippedItemMesh",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.40"
+      },
+      "ItemHolder": {
+        "ObjectName": "ItemHolderComponent Default__Character_C:ItemHolder",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.13"
+      },
+      "SuppressionSphere": {
+        "ObjectName": "SphereComponent Default__Character_C:SuppressionSphere",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.38"
+      },
+      "EquipmentItemHolder": {
+        "ObjectName": "EquipmentHolderComponent Default__Character_C:EquipmentItemHolder",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.7"
+      },
+      "SwimmingPS": {
+        "ObjectName": "ParticleSystemComponent Default__Character_C:SwimmingPS",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.15"
+      },
+      "EnterWaterPS": {
+        "ObjectName": "ParticleSystemComponent Default__Character_C:EnterWaterPS",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.14"
+      },
+      "SwimmingSFX": {
+        "ObjectName": "AudioComponent Default__Character_C:SwimmingSFX",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.4"
+      },
+      "EnterWaterSFX": {
+        "ObjectName": "AudioComponent Default__Character_C:EnterWaterSFX",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.3"
+      },
+      "MeleeDamageType": {
+        "ObjectName": "Class KarateDamageType",
+        "ObjectPath": "/Script/War"
+      },
+      "MeleeImpactEffect": {
+        "ObjectName": "BlueprintGeneratedClass MeleeImpactEffect_C",
+        "ObjectPath": "War/Content/Blueprints/Items/MeleeImpactEffect.1"
+      },
+      "MeleeAttackSound": {
+        "ObjectName": "SoundCue MeleeWhoosh",
+        "ObjectPath": "War/Content/Audio/SFX/Melee/MeleeWhoosh.0"
+      },
+      "SwimmingBuoyancy": 1.25,
+      "DrowningBuoyancy": 0.925,
+      "SwimmingStaminaDrainRate": 4.0,
+      "SwimmingStaminaDrainDepthCutoff": 0.75,
+      "StabilityMovementDecayRate": 1.2,
+      "StabilityDecayMovementSpeed": 500.0,
+      "StabilityYawDecayRate": 9.0,
+      "StabilityYawDecayTime": 0.1,
+      "StabilityGainRates": 0.36,
+      "StabilityGainRates": 0.52,
+      "StabilityGainRates": 1.0,
+      "StabilityGainRates": 0.25,
+      "BleedingEnabled": true,
+      "BleedDamagePerSecond": 1.0,
+      "BleedingEffectTemplate": {
+        "ObjectName": "ParticleSystem Bleeding",
+        "ObjectPath": "War/Content/FX/Bleeding.25"
+      },
+      "ZombieMeleeReach": 20.0,
+      "ZombieMeleeImpactEffect": {
+        "ObjectName": "BlueprintGeneratedClass ZombieImpactEffect_C",
+        "ObjectPath": "War/Content/Blueprints/Items/ZombieImpactEffect.1"
+      },
+      "ZombieDeathSound": {
+        "ObjectName": "SoundCue ZombieDeath",
+        "ObjectPath": "War/Content/Audio/SFX/Zombie/ZombieDeath.0"
+      },
+      "ZombieHitRadius": 140.0,
+      "ZombieHitHalfHeight": 120.0,
+      "ViewRadiusDegrees": 180.0,
+      "EncumbranceManager": {
+        "bEnableEncumbranceModifiers": true,
+        "EncumbranceModifiers": {
+          "BaselineEnc": 150,
+          "MaxEnc": 400,
+          "ZeroEncTurnRateMod": 1.1,
+          "ZeroEncMoveSpeedMod": 1.2,
+          "MaxEncTurnRateMod": 0.7,
+          "MaxEncWalkingSpeedMod": 0.7,
+          "OverEncWalkingSpeedMod": 0.45,
+          "OverEncTurnRateMod": 0.45,
+          "OverEncMaxStaminaDrainRateMod": 0.2
+        }
+      },
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__Character_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.41"
+      },
+      "Mesh": {
+        "ObjectName": "SkeletalMeshComponent Default__Character_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.31"
+      },
+      "CharacterMovement": {
+        "ObjectName": "PlayerCharacterMovementComponent Default__Character_C:CharMoveComp",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.17"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent Default__Character_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.6"
+      },
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "MinNetUpdateFrequency": 10.0,
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent Default__Character_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.6"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "EnterWaterSFX",
+    "Outer": "Default__Character_C",
+    "Properties": {
+      "Sound": {
+        "ObjectName": "SoundCue LandingSplash_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Player/Swimming/LandingSplash_Cue.0"
+      },
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__Character_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.31"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "SwimmingSFX",
+    "Outer": "Default__Character_C",
+    "Properties": {
+      "Sound": {
+        "ObjectName": "SoundCue Swimming_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Player/Swimming/Swimming_Cue.0"
+      },
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__Character_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.31"
+      }
+    }
+  },
+  {
+    "Type": "CameraComponent",
+    "Name": "TopDownCamera",
+    "Outer": "Default__Character_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "PlayerCameraRigComponent Default__Character_C:CameraRig",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.16"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__Character_C",
+    "Properties": {
+      "CapsuleHalfHeight": 90.0,
+      "CapsuleRadius": 50.0,
+      "BodyInstance": {
+        "MassInKgOverride": 224.214,
+        "PhysMaterialOverride": {
+          "ObjectName": "PhysicalMaterial FleshPhys",
+          "ObjectPath": "War/Content/PhysicalMaterials/FleshPhys.0"
+        }
+      }
+    }
+  },
+  {
+    "Type": "EquipmentHolderComponent",
+    "Name": "EquipmentItemHolder",
+    "Outer": "Default__Character_C"
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_Character",
+    "PropertyFlags": 148
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Character",
+    "Outer": "Character_C",
+    "Children": [
+      {
+        "ObjectName": "IntProperty Character_C:ExecuteUbergraph_Character.EntryPoint",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.8"
+      },
+      {
+        "ObjectName": "StructProperty Character_C:ExecuteUbergraph_Character.K2Node_Event_Position",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.10"
+      },
+      {
+        "ObjectName": "StructProperty Character_C:ExecuteUbergraph_Character.CallFunc_Conv_VectorToLinearColor_ReturnValue",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.42"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_Event_Position",
+    "Outer": "ExecuteUbergraph_Character",
+    "PropertyFlags": 2,
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Position",
+    "Outer": "BPUpdateMaterialParameters",
+    "PropertyFlags": 134218134,
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BPUpdateMaterialParameters",
+    "Outer": "Character_C",
+    "SuperStruct": {
+      "ObjectName": "Function PlayerCharacter:BPUpdateMaterialParameters",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty Character_C:BPUpdateMaterialParameters.Position",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.11"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "ItemHolderComponent",
+    "Name": "ItemHolder",
+    "Outer": "Default__Character_C"
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "EnterWaterPS",
+    "Outer": "Default__Character_C",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem LandingSplash",
+        "ObjectPath": "War/Content/FX/LandingSplash.37"
+      },
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__Character_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.31"
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "SwimmingPS",
+    "Outer": "Default__Character_C",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem Swimming",
+        "ObjectPath": "War/Content/FX/Swimming.38"
+      },
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__Character_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.31"
+      },
+      "RelativeLocation": {
+        "X": -4.331722E-07,
+        "Y": 5.9952043E-15,
+        "Z": 111.23023
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "PlayerCameraRigComponent",
+    "Name": "CameraRig",
+    "Outer": "Default__Character_C",
+    "Properties": {
+      "bEnableCameraLag": true,
+      "MaxDistanceForCameraLerp": 2500.0,
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__Character_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.6"
+      },
+      "RelativeRotation": {
+        "Pitch": -60.0,
+        "Yaw": -45.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "PlayerCharacterMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__Character_C",
+    "Properties": {
+      "ImmersionDepthHeightBias": 40.0,
+      "MaxSwimSpeed": 150.0,
+      "MaxCustomMovementSpeed": 70.0,
+      "Buoyancy": 0.0,
+      "bCanWalkOffLedgesWhenCrouching": true,
+      "MaxSimulationIterations": 2,
+      "NavAgentProps": {
+        "bCanSwim": true
+      }
+    }
+  },
+  {
+    "Type": "PlayerLOSRasterComponent",
+    "Name": "LOSRasterComponent",
+    "Outer": "Default__Character_C",
+    "Properties": {
+      "CharacterOutlineMaterial": {
+        "ObjectName": "Material M_OccludedOutline",
+        "ObjectPath": "War/Content/Materials/PostProcess/M_OccludedOutline.0"
+      },
+      "VisibilityIndicatorMaterial": {
+        "ObjectName": "MaterialInstanceConstant M_Visibility_Inst",
+        "ObjectPath": "War/Content/Materials/PostProcess/M_Visibility_Inst.0"
+      },
+      "AttachParent": {
+        "ObjectName": "PostProcessComponent Default__Character_C:LOSPostProcess",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.19"
+      }
+    }
+  },
+  {
+    "Type": "PostProcessComponent",
+    "Name": "LOSPostProcess",
+    "Outer": "Default__Character_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__Character_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.31"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Character_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "Grip_Crouched",
+    "Outer": "Default__Character_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__Character_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.6"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "Grip_Prone",
+    "Outer": "Default__Character_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__Character_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.6"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "Grip_Standing",
+    "Outer": "Default__Character_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__Character_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.6"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "Muzzle_Crouched",
+    "Outer": "Default__Character_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__Character_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.6"
+      },
+      "RelativeLocation": {
+        "X": 136.0,
+        "Y": 12.0,
+        "Z": 70.0
+      },
+      "bUseAttachParentBound": true
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "Muzzle_Prone",
+    "Outer": "Default__Character_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__Character_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.6"
+      },
+      "RelativeLocation": {
+        "X": 173.0,
+        "Y": 12.0,
+        "Z": -12.0
+      },
+      "bUseAttachParentBound": true
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "Muzzle_Standing",
+    "Outer": "Default__Character_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__Character_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.6"
+      },
+      "RelativeLocation": {
+        "X": 136.0,
+        "Y": 12.0,
+        "Z": 93.0
+      },
+      "bUseAttachParentBound": true
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent Character_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.20"
+      },
+      "VariableGuid": "B89CA7A2-42C86ED5-64D9078E-90FDD823",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Character_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node Character_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.27"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "AccessoryMesh",
+    "Outer": "Default__Character_C",
+    "Properties": {
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 270.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "Back",
+    "Outer": "Default__Character_C",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SoldierBagMC",
+        "ObjectPath": "War/Content/Meshes/Character/Back/SoldierBagMC.0"
+      },
+      "MasterPoseComponent": {
+        "ObjectName": "SkeletalMeshComponent Default__Character_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.31"
+      },
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__Character_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.31"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__Character_C",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_Male_C",
+        "ObjectPath": "War/Content/Animation/Character/ABP_Male.1"
+      },
+      "bEnablePhysicsOnDedicatedServer": false,
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SoldierJacketMC",
+        "ObjectPath": "War/Content/Meshes/Character/Torso/SoldierJacketMC.0"
+      },
+      "bComponentUseFixedSkelBounds": true,
+      "OverrideMaterials": [
+        null
+      ],
+      "bReceivesDecals": false,
+      "BodyInstance": {
+        "MassInKgOverride": 139.19295
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__Character_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.6"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -88.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "GasMaskMesh",
+    "Outer": "Default__Character_C",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh Gasmask",
+        "ObjectPath": "War/Content/Meshes/Wearables/Gasmask.0"
+      },
+      "VisibilityBasedAnimTickOption": "EVisibilityBasedAnimTickOption::OnlyTickPoseWhenRendered",
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__Character_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.6"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "Hands",
+    "Outer": "Default__Character_C",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh HandsM",
+        "ObjectPath": "War/Content/Meshes/Character/Hands/HandsM.0"
+      },
+      "MasterPoseComponent": {
+        "ObjectName": "SkeletalMeshComponent Default__Character_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.31"
+      },
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__Character_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.31"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "Head",
+    "Outer": "Default__Character_C",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh HeadM",
+        "ObjectPath": "War/Content/Meshes/Character/Heads/HeadM.0"
+      },
+      "MasterPoseComponent": {
+        "ObjectName": "SkeletalMeshComponent Default__Character_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.31"
+      },
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__Character_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.31"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "Helmet",
+    "Outer": "Default__Character_C",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SoldierHelmetMC",
+        "ObjectPath": "War/Content/Meshes/Character/Helmets/SoldierHelmetMC.0"
+      },
+      "MasterPoseComponent": {
+        "ObjectName": "SkeletalMeshComponent Default__Character_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.31"
+      },
+      "OverrideMaterials": [
+        null
+      ],
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__Character_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.31"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "Legs",
+    "Outer": "Default__Character_C",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SoldierLegsMC",
+        "ObjectPath": "War/Content/Meshes/Character/Legs/SoldierLegsMC.0"
+      },
+      "MasterPoseComponent": {
+        "ObjectName": "SkeletalMeshComponent Default__Character_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.31"
+      },
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__Character_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.31"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "WeaponMesh",
+    "Outer": "Default__Character_C",
+    "Properties": {
+      "BodyInstance": {
+        "MassInKgOverride": 0.0
+      },
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__Character_C:CharacterMesh0",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.31"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "SuppressionSphere",
+    "Outer": "Default__Character_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__Character_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.6"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "GrenadeAimMesh",
+    "Outer": "Default__Character_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh GrenadeAimMesh",
+        "ObjectPath": "War/Content/Meshes/Character/GrenadeAim/GrenadeAimMesh.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material GrenadeAim",
+          "ObjectPath": "War/Content/Materials/Weapons/GrenadeAim.0"
+        }
+      ],
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__Character_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.6"
+      },
+      "RelativeLocation": {
+        "X": 136.0,
+        "Y": -9.0,
+        "Z": 57.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "GroundEquippedItemMesh",
+    "Outer": "Default__Character_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__Character_C:CollisionCylinder",
+        "ObjectPath": "War/Content/Blueprints/Character/Character.6"
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__Character_C"
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Conv_VectorToLinearColor_ReturnValue",
+    "Outer": "ExecuteUbergraph_Character",
+    "Struct": {
+      "ObjectName": "ScriptStruct LinearColor",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "HomeRegionTarp02Camouflage",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_3",
+    "Outer": "HomeRegionTarp02Camouflage",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x16073"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "HomeRegionTarp02Camouflage",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant HomeRegionTarps02",
+            "ObjectPath": "War/Content/Materials/Environment/Props/HomeRegionTarps02.0"
+          },
+          "MaterialSlotName": "Material #593",
+          "ImportedMaterialSlotName": "Material #593",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 283.97946,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 283.97946,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 25.507507,
+          "Y": 82.76728,
+          "Z": 133.83134
+        },
+        "BoxExtent": {
+          "X": 467.11517,
+          "Y": 183.792,
+          "Z": 140.91927
+        },
+        "SphereRadius": 478.4921
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup HomeRegionTarp02Camouflage:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/HomeRegionTarp02Camouflage.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision HomeRegionTarp02Camouflage:NavCollision_3",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/HomeRegionTarp02Camouflage.1"
+    },
+    "LightingGuid": "B0822CAB-42781C1F-7E245ABE-2C59FC36",
+    "RenderData": null
+  }
+]

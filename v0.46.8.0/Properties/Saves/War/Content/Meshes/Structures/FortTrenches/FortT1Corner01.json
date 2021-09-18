@@ -1,0 +1,100 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FortT1Corner01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "FortT1Corner01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x33BF"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FortT1Corner01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortT1WoodLogs01",
+            "ObjectPath": "War/Content/Materials/Structures/FortT1WoodLogs01.0"
+          },
+          "MaterialSlotName": "T1WoodLogs01",
+          "ImportedMaterialSlotName": "T1WoodLogs01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 315.91476,
+            "LocalUVDensities": 1.003781,
+            "LocalUVDensities": 1.003781,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ShipWreckRope01",
+            "ObjectPath": "War/Content/Materials/Environment/Props/ShipWreckRope01.0"
+          },
+          "MaterialSlotName": "Dirt",
+          "ImportedMaterialSlotName": "Dirt",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 15.600238,
+            "LocalUVDensities": 1.2205857,
+            "LocalUVDensities": 1.2205857,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1.0773506,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 23.129196,
+          "Y": 20.54064,
+          "Z": 210.59819
+        },
+        "BoxExtent": {
+          "X": 26.909714,
+          "Y": 26.97739,
+          "Z": 102.323685
+        },
+        "SphereRadius": 105.83912
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FortT1Corner01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortT1Corner01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FortT1Corner01:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortT1Corner01.1"
+    },
+    "LightingGuid": "C5256556-432DBC12-C44DA7A9-9D7C682A",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FortEnginePipe02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "FortEnginePipe02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2DB1"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FortEnginePipe02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material M_Pipes",
+            "ObjectPath": "War/Content/Materials/Structures/M_Pipes.0"
+          },
+          "MaterialSlotName": "M_Pipes",
+          "ImportedMaterialSlotName": "M_Pipes",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 62.99324,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 62.99324,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -69.51553,
+          "Y": -69.51555,
+          "Z": -6.1035156E-05
+        },
+        "BoxExtent": {
+          "X": 180.48447,
+          "Y": 180.48445,
+          "Z": 30.036833
+        },
+        "SphereRadius": 228.65831
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FortEnginePipe02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortEnginePipe02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FortEnginePipe02:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortEnginePipe02.1"
+    },
+    "LightingGuid": "B66AEC70-4E99195F-9A2A7EA2-33E13316",
+    "RenderData": null
+  }
+]

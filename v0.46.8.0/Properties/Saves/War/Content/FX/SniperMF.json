@@ -1,0 +1,3773 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "ResilienceDistribution",
+    "Outer": "ParticleModuleCollisionGPU_0",
+    "Properties": {
+      "Constant": 0.412844
+    }
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "ResilienceScaleOverLifeDistribution",
+    "Outer": "ParticleModuleCollisionGPU_0",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_0"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_1"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_2"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_3"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_4"
+  },
+  {
+    "Type": "DistributionFloatUniform",
+    "Name": "DistributionFloatUniform_0",
+    "Outer": "ParticleModuleParameterDynamic_0",
+    "Properties": {
+      "Min": -1.0,
+      "Max": 1.0,
+      "bCanBeBaked": false
+    }
+  },
+  {
+    "Type": "DistributionFloatUniform",
+    "Name": "DistributionFloatUniform_0",
+    "Outer": "ParticleModuleParameterDynamic_1",
+    "Properties": {
+      "Min": -1.0,
+      "Max": 1.0,
+      "bCanBeBaked": false
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_0",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired SniperMF:ParticleModuleRequired_0",
+        "ObjectPath": "War/Content/FX/SniperMF.38"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime SniperMF:ParticleModuleLifetime_0",
+          "ObjectPath": "War/Content/FX/SniperMF.28"
+        },
+        {
+          "ObjectName": "ParticleModuleSize SniperMF:ParticleModuleSize_0",
+          "ObjectPath": "War/Content/FX/SniperMF.49"
+        },
+        {
+          "ObjectName": "ParticleModuleColor SniperMF:ParticleModuleColor_0",
+          "ObjectPath": "War/Content/FX/SniperMF.19"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife SniperMF:ParticleModuleSizeMultiplyLife_0",
+          "ObjectPath": "War/Content/FX/SniperMF.54"
+        },
+        {
+          "ObjectName": "ParticleModuleMeshRotation SniperMF:ParticleModuleMeshRotation_0",
+          "ObjectPath": "War/Content/FX/SniperMF.34"
+        },
+        {
+          "ObjectName": "ParticleModuleColorScaleOverLife SniperMF:ParticleModuleColorScaleOverLife_0",
+          "ObjectPath": "War/Content/FX/SniperMF.24"
+        },
+        {
+          "ObjectName": "ParticleModuleMeshRotationRate SniperMF:ParticleModuleMeshRotationRate_0",
+          "ObjectPath": "War/Content/FX/SniperMF.35"
+        }
+      ],
+      "TypeDataModule": {
+        "ObjectName": "ParticleModuleTypeDataMesh SniperMF:ParticleModuleTypeDataMesh_0",
+        "ObjectPath": "War/Content/FX/SniperMF.65"
+      },
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn SniperMF:ParticleModuleSpawn_0",
+        "ObjectPath": "War/Content/FX/SniperMF.59"
+      },
+      "PeakActiveParticles": 4
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_1",
+    "Outer": "ParticleSpriteEmitter_1",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired SniperMF:ParticleModuleRequired_1",
+        "ObjectPath": "War/Content/FX/SniperMF.39"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime SniperMF:ParticleModuleLifetime_1",
+          "ObjectPath": "War/Content/FX/SniperMF.29"
+        },
+        {
+          "ObjectName": "ParticleModuleSize SniperMF:ParticleModuleSize_1",
+          "ObjectPath": "War/Content/FX/SniperMF.50"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity SniperMF:ParticleModuleVelocity_1",
+          "ObjectPath": "War/Content/FX/SniperMF.67"
+        },
+        {
+          "ObjectName": "ParticleModuleColor SniperMF:ParticleModuleColor_1",
+          "ObjectPath": "War/Content/FX/SniperMF.20"
+        },
+        {
+          "ObjectName": "ParticleModuleRotation SniperMF:ParticleModuleRotation_0",
+          "ObjectPath": "War/Content/FX/SniperMF.43"
+        },
+        {
+          "ObjectName": "ParticleModuleParameterDynamic SniperMF:ParticleModuleParameterDynamic_0",
+          "ObjectPath": "War/Content/FX/SniperMF.36"
+        },
+        {
+          "ObjectName": "ParticleModuleRotationRate SniperMF:ParticleModuleRotationRate_0",
+          "ObjectPath": "War/Content/FX/SniperMF.46"
+        },
+        {
+          "ObjectName": "ParticleModuleAccelerationConstant SniperMF:ParticleModuleAccelerationConstant_0",
+          "ObjectPath": "War/Content/FX/SniperMF.14"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife SniperMF:ParticleModuleSizeMultiplyLife_1",
+          "ObjectPath": "War/Content/FX/SniperMF.55"
+        },
+        {
+          "ObjectName": "ParticleModuleColorScaleOverLife SniperMF:ParticleModuleColorScaleOverLife_1",
+          "ObjectPath": "War/Content/FX/SniperMF.25"
+        },
+        {
+          "ObjectName": "ParticleModuleAccelerationDrag SniperMF:ParticleModuleAccelerationDrag_0",
+          "ObjectPath": "War/Content/FX/SniperMF.17"
+        }
+      ],
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn SniperMF:ParticleModuleSpawn_1",
+        "ObjectPath": "War/Content/FX/SniperMF.60"
+      },
+      "PeakActiveParticles": 28
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_2",
+    "Outer": "ParticleSpriteEmitter_2",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired SniperMF:ParticleModuleRequired_2",
+        "ObjectPath": "War/Content/FX/SniperMF.40"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime SniperMF:ParticleModuleLifetime_2",
+          "ObjectPath": "War/Content/FX/SniperMF.30"
+        },
+        {
+          "ObjectName": "ParticleModuleSize SniperMF:ParticleModuleSize_2",
+          "ObjectPath": "War/Content/FX/SniperMF.51"
+        },
+        {
+          "ObjectName": "ParticleModuleColor SniperMF:ParticleModuleColor_2",
+          "ObjectPath": "War/Content/FX/SniperMF.21"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife SniperMF:ParticleModuleSizeMultiplyLife_2",
+          "ObjectPath": "War/Content/FX/SniperMF.56"
+        },
+        {
+          "ObjectName": "ParticleModuleColorScaleOverLife SniperMF:ParticleModuleColorScaleOverLife_2",
+          "ObjectPath": "War/Content/FX/SniperMF.26"
+        },
+        {
+          "ObjectName": "ParticleModuleLight SniperMF:ParticleModuleLight_1",
+          "ObjectPath": "War/Content/FX/SniperMF.33"
+        }
+      ],
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn SniperMF:ParticleModuleSpawn_2",
+        "ObjectPath": "War/Content/FX/SniperMF.61"
+      },
+      "PeakActiveParticles": 4
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_3",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired SniperMF:ParticleModuleRequired_4",
+        "ObjectPath": "War/Content/FX/SniperMF.42"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime SniperMF:ParticleModuleLifetime_4",
+          "ObjectPath": "War/Content/FX/SniperMF.32"
+        },
+        {
+          "ObjectName": "ParticleModuleSize SniperMF:ParticleModuleSize_4",
+          "ObjectPath": "War/Content/FX/SniperMF.53"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife SniperMF:ParticleModuleSizeMultiplyLife_4",
+          "ObjectPath": "War/Content/FX/SniperMF.58"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity SniperMF:ParticleModuleVelocity_2",
+          "ObjectPath": "War/Content/FX/SniperMF.68"
+        },
+        {
+          "ObjectName": "ParticleModuleColor SniperMF:ParticleModuleColor_4",
+          "ObjectPath": "War/Content/FX/SniperMF.23"
+        },
+        {
+          "ObjectName": "ParticleModuleAccelerationConstant SniperMF:ParticleModuleAccelerationConstant_2",
+          "ObjectPath": "War/Content/FX/SniperMF.16"
+        },
+        {
+          "ObjectName": "ParticleModuleRotation SniperMF:ParticleModuleRotation_1",
+          "ObjectPath": "War/Content/FX/SniperMF.44"
+        },
+        {
+          "ObjectName": "ParticleModuleRotationRate SniperMF:ParticleModuleRotationRate_1",
+          "ObjectPath": "War/Content/FX/SniperMF.47"
+        },
+        {
+          "ObjectName": "ParticleModuleCollisionGPU SniperMF:ParticleModuleCollisionGPU_0",
+          "ObjectPath": "War/Content/FX/SniperMF.18"
+        }
+      ],
+      "TypeDataModule": {
+        "ObjectName": "ParticleModuleTypeDataGpu SniperMF:ParticleModuleTypeDataGpu_0",
+        "ObjectPath": "War/Content/FX/SniperMF.64"
+      },
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn SniperMF:ParticleModuleSpawn_4",
+        "ObjectPath": "War/Content/FX/SniperMF.63"
+      },
+      "PeakActiveParticles": 2
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_4",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired SniperMF:ParticleModuleRequired_3",
+        "ObjectPath": "War/Content/FX/SniperMF.41"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime SniperMF:ParticleModuleLifetime_3",
+          "ObjectPath": "War/Content/FX/SniperMF.31"
+        },
+        {
+          "ObjectName": "ParticleModuleSize SniperMF:ParticleModuleSize_3",
+          "ObjectPath": "War/Content/FX/SniperMF.52"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity SniperMF:ParticleModuleVelocity_0",
+          "ObjectPath": "War/Content/FX/SniperMF.66"
+        },
+        {
+          "ObjectName": "ParticleModuleColor SniperMF:ParticleModuleColor_3",
+          "ObjectPath": "War/Content/FX/SniperMF.22"
+        },
+        {
+          "ObjectName": "ParticleModuleRotation SniperMF:ParticleModuleRotation_2",
+          "ObjectPath": "War/Content/FX/SniperMF.45"
+        },
+        {
+          "ObjectName": "ParticleModuleParameterDynamic SniperMF:ParticleModuleParameterDynamic_1",
+          "ObjectPath": "War/Content/FX/SniperMF.37"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocityOverLifetime SniperMF:ParticleModuleVelocityOverLifetime_1",
+          "ObjectPath": "War/Content/FX/SniperMF.69"
+        },
+        {
+          "ObjectName": "ParticleModuleRotationRate SniperMF:ParticleModuleRotationRate_2",
+          "ObjectPath": "War/Content/FX/SniperMF.48"
+        },
+        {
+          "ObjectName": "ParticleModuleAccelerationConstant SniperMF:ParticleModuleAccelerationConstant_1",
+          "ObjectPath": "War/Content/FX/SniperMF.15"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife SniperMF:ParticleModuleSizeMultiplyLife_3",
+          "ObjectPath": "War/Content/FX/SniperMF.57"
+        },
+        {
+          "ObjectName": "ParticleModuleColorScaleOverLife SniperMF:ParticleModuleColorScaleOverLife_3",
+          "ObjectPath": "War/Content/FX/SniperMF.27"
+        }
+      ],
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn SniperMF:ParticleModuleSpawn_3",
+        "ObjectPath": "War/Content/FX/SniperMF.62"
+      },
+      "PeakActiveParticles": 23
+    }
+  },
+  {
+    "Type": "ParticleModuleAccelerationConstant",
+    "Name": "ParticleModuleAccelerationConstant_0",
+    "Outer": "SniperMF",
+    "Properties": {
+      "Acceleration": {
+        "X": -100.0,
+        "Y": 0.0,
+        "Z": 80.0
+      },
+      "bAlwaysInWorldSpace": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleAccelerationConstant",
+    "Name": "ParticleModuleAccelerationConstant_1",
+    "Outer": "SniperMF",
+    "Properties": {
+      "Acceleration": {
+        "X": -100.0,
+        "Y": 0.0,
+        "Z": 80.0
+      },
+      "bAlwaysInWorldSpace": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleAccelerationConstant",
+    "Name": "ParticleModuleAccelerationConstant_2",
+    "Outer": "SniperMF",
+    "Properties": {
+      "Acceleration": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -2000.0
+      },
+      "bAlwaysInWorldSpace": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleAccelerationDrag",
+    "Name": "ParticleModuleAccelerationDrag_0",
+    "Outer": "SniperMF",
+    "Properties": {
+      "DragCoefficientRaw": {
+        "MinValue": 4.5,
+        "MaxValue": 4.5,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            4.5
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "bAlwaysInWorldSpace": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleCollisionGPU",
+    "Name": "ParticleModuleCollisionGPU_0",
+    "Outer": "SniperMF",
+    "Properties": {
+      "Resilience": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant SniperMF:ParticleModuleCollisionGPU_0.ResilienceDistribution",
+          "ObjectPath": "War/Content/FX/SniperMF.0"
+        }
+      },
+      "ResilienceScaleOverLife": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant SniperMF:ParticleModuleCollisionGPU_0.ResilienceScaleOverLifeDistribution",
+          "ObjectPath": "War/Content/FX/SniperMF.1"
+        }
+      },
+      "Friction": 0.3,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColor",
+    "Name": "ParticleModuleColor_0",
+    "Outer": "SniperMF",
+    "Properties": {
+      "StartColor": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "StartAlpha": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColor",
+    "Name": "ParticleModuleColor_1",
+    "Outer": "SniperMF",
+    "Properties": {
+      "StartColor": {
+        "MinValue": 0.725,
+        "MaxValue": 0.725,
+        "MinValueVec": {
+          "X": 0.725,
+          "Y": 0.725,
+          "Z": 0.725
+        },
+        "MaxValueVec": {
+          "X": 0.725,
+          "Y": 0.725,
+          "Z": 0.725
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.725,
+            0.725,
+            0.725
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "StartAlpha": {
+        "MinValue": 0.85,
+        "MaxValue": 0.85,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.85
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColor",
+    "Name": "ParticleModuleColor_2",
+    "Outer": "SniperMF",
+    "Properties": {
+      "StartColor": {
+        "MinValue": 0.207839,
+        "MaxValue": 1.2,
+        "MinValueVec": {
+          "X": 1.2,
+          "Y": 0.73951,
+          "Z": 0.207839
+        },
+        "MaxValueVec": {
+          "X": 1.2,
+          "Y": 0.73951,
+          "Z": 0.207839
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.2,
+            0.73951,
+            0.207839
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "StartAlpha": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColor",
+    "Name": "ParticleModuleColor_3",
+    "Outer": "SniperMF",
+    "Properties": {
+      "StartColor": {
+        "MinValue": 0.77,
+        "MaxValue": 0.77,
+        "MinValueVec": {
+          "X": 0.77,
+          "Y": 0.77,
+          "Z": 0.77
+        },
+        "MaxValueVec": {
+          "X": 0.77,
+          "Y": 0.77,
+          "Z": 0.77
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.77,
+            0.77,
+            0.77
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "StartAlpha": {
+        "MinValue": 0.85,
+        "MaxValue": 0.85,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.85
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColor",
+    "Name": "ParticleModuleColor_4",
+    "Outer": "SniperMF",
+    "Properties": {
+      "StartColor": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "StartAlpha": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColorScaleOverLife",
+    "Name": "ParticleModuleColorScaleOverLife_0",
+    "Outer": "SniperMF",
+    "Properties": {
+      "ColorScaleOverLife": {
+        "MinValue": 0.9994895,
+        "MaxValue": 10.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 0.9998828,
+          "Z": 0.9994895
+        },
+        "MaxValueVec": {
+          "X": 10.0,
+          "Y": 8.098451,
+          "Z": 3.8502927
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 49.999996,
+          "Values": [
+            1.0,
+            1.0,
+            1.0,
+            1.1150277,
+            1.0847921,
+            1.0290349,
+            1.4374102,
+            1.3345373,
+            1.1266018,
+            1.9362407,
+            1.7247356,
+            1.2825086,
+            2.5787578,
+            2.2294116,
+            1.4859495,
+            3.3334575,
+            2.8235915,
+            1.7265346,
+            4.1680546,
+            3.481678,
+            1.9936159,
+            5.0506883,
+            4.178413,
+            2.2766852,
+            5.9493127,
+            4.88839,
+            2.565174,
+            6.831946,
+            5.5862546,
+            2.848534,
+            7.6665444,
+            6.246604,
+            3.1161976,
+            8.421242,
+            6.8441725,
+            3.357654,
+            9.06376,
+            7.3533707,
+            3.5622582,
+            9.56259,
+            7.7492194,
+            3.7196183,
+            9.884973,
+            8.005749,
+            3.8189306,
+            10.0,
+            8.098451,
+            3.85
+          ],
+          "Op": 1,
+          "EntryCount": 16,
+          "EntryStride": 3
+        }
+      },
+      "AlphaScaleOverLife": {
+        "MinValue": -1.0862152E-08,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 6.9999995,
+          "Values": [
+            1.0,
+            0.43237475,
+            0.1474422,
+            0.06780544,
+            0.032229282,
+            0.011697133,
+            0.0022677751,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 8,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColorScaleOverLife",
+    "Name": "ParticleModuleColorScaleOverLife_1",
+    "Outer": "SniperMF",
+    "Properties": {
+      "ColorScaleOverLife": {
+        "MinValue": 0.38,
+        "MaxValue": 0.705,
+        "MinValueVec": {
+          "X": 0.38,
+          "Y": 0.38,
+          "Z": 0.38
+        },
+        "MaxValueVec": {
+          "X": 0.705,
+          "Y": 0.705,
+          "Z": 0.705
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 3.0,
+          "Values": [
+            0.705,
+            0.705,
+            0.705,
+            0.62073624,
+            0.62073624,
+            0.62073624,
+            0.4642637,
+            0.4642637,
+            0.4642637,
+            0.38,
+            0.38,
+            0.38
+          ],
+          "Op": 1,
+          "EntryCount": 4,
+          "EntryStride": 3
+        }
+      },
+      "AlphaScaleOverLife": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 127.0,
+          "Values": [
+            0.0,
+            0.06658911,
+            0.23511228,
+            0.45870322,
+            0.69049585,
+            0.8836238,
+            0.99122083,
+            0.9999132,
+            0.999444,
+            0.9985739,
+            0.9973097,
+            0.9956582,
+            0.99362636,
+            0.9912209,
+            0.9884487,
+            0.9853165,
+            0.9818313,
+            0.97799987,
+            0.973829,
+            0.9693255,
+            0.96449625,
+            0.9593481,
+            0.9538879,
+            0.9481224,
+            0.94205844,
+            0.9357029,
+            0.92906266,
+            0.9221445,
+            0.9149552,
+            0.90750164,
+            0.8997907,
+            0.89182913,
+            0.88362384,
+            0.87518156,
+            0.8665092,
+            0.8576136,
+            0.84850156,
+            0.83917993,
+            0.8296555,
+            0.8199352,
+            0.8100258,
+            0.79993415,
+            0.789667,
+            0.7792313,
+            0.7686338,
+            0.7578814,
+            0.74698085,
+            0.7359391,
+            0.72476286,
+            0.713459,
+            0.7020344,
+            0.69049585,
+            0.6788503,
+            0.6671043,
+            0.655265,
+            0.64333904,
+            0.6313333,
+            0.61925465,
+            0.60710984,
+            0.5949058,
+            0.58264923,
+            0.5703472,
+            0.5580063,
+            0.5456335,
+            0.5332356,
+            0.5208193,
+            0.50839174,
+            0.49595946,
+            0.48352945,
+            0.47110844,
+            0.45870328,
+            0.4463209,
+            0.43396813,
+            0.4216516,
+            0.4093784,
+            0.39715517,
+            0.3849889,
+            0.37288618,
+            0.36085427,
+            0.3488996,
+            0.33702916,
+            0.3252498,
+            0.31356823,
+            0.3019914,
+            0.29052627,
+            0.2791794,
+            0.26795775,
+            0.25686818,
+            0.24591726,
+            0.23511231,
+            0.22445971,
+            0.21396673,
+            0.20363975,
+            0.19348592,
+            0.18351197,
+            0.17372459,
+            0.16413093,
+            0.15473747,
+            0.14555132,
+            0.13657928,
+            0.12782794,
+            0.11930436,
+            0.11101544,
+            0.10296762,
+            0.09516835,
+            0.087623835,
+            0.08034134,
+            0.07332754,
+            0.066589,
+            0.06013322,
+            0.053966284,
+            0.048095703,
+            0.042527914,
+            0.037269592,
+            0.03232813,
+            0.027709842,
+            0.023421764,
+            0.01947081,
+            0.015863538,
+            0.012606978,
+            0.009708047,
+            0.0071733,
+            0.005010128,
+            0.0032247305,
+            0.0018241405,
+            0.00081539154,
+            0.00020503998,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 128,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColorScaleOverLife",
+    "Name": "ParticleModuleColorScaleOverLife_2",
+    "Outer": "SniperMF",
+    "Properties": {
+      "ColorScaleOverLife": {
+        "MinValue": 0.77,
+        "MaxValue": 2.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 0.9880152,
+          "Z": 0.77
+        },
+        "MaxValueVec": {
+          "X": 2.0,
+          "Y": 1.61969,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 6.9999995,
+          "Values": [
+            1.0,
+            1.0,
+            1.0,
+            1.0554098,
+            0.99769306,
+            0.9461053,
+            1.198267,
+            1.0689201,
+            0.90879804,
+            1.3935925,
+            1.1877276,
+            0.88233334,
+            1.6064075,
+            1.3281618,
+            0.8609662,
+            1.801733,
+            1.4642693,
+            0.8389515,
+            1.9445902,
+            1.5700966,
+            0.81054443,
+            2.0,
+            1.61969,
+            0.77
+          ],
+          "Op": 1,
+          "EntryCount": 8,
+          "EntryStride": 3
+        }
+      },
+      "AlphaScaleOverLife": {
+        "MinValue": -1.0862152E-08,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 6.9999995,
+          "Values": [
+            1.0,
+            0.43237475,
+            0.1474422,
+            0.06780544,
+            0.032229282,
+            0.011697133,
+            0.0022677751,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 8,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColorScaleOverLife",
+    "Name": "ParticleModuleColorScaleOverLife_3",
+    "Outer": "SniperMF",
+    "Properties": {
+      "ColorScaleOverLife": {
+        "MinValue": 0.705,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 0.705,
+          "Y": 0.705,
+          "Z": 0.705
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 1.0,
+          "Values": [
+            0.705,
+            0.705,
+            0.705,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 3
+        }
+      },
+      "AlphaScaleOverLife": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 127.0,
+          "Values": [
+            0.0,
+            0.06658911,
+            0.23511228,
+            0.45870322,
+            0.69049585,
+            0.8836238,
+            0.99122083,
+            0.9999132,
+            0.999444,
+            0.9985739,
+            0.9973097,
+            0.9956582,
+            0.99362636,
+            0.9912209,
+            0.9884487,
+            0.9853165,
+            0.9818313,
+            0.97799987,
+            0.973829,
+            0.9693255,
+            0.96449625,
+            0.9593481,
+            0.9538879,
+            0.9481224,
+            0.94205844,
+            0.9357029,
+            0.92906266,
+            0.9221445,
+            0.9149552,
+            0.90750164,
+            0.8997907,
+            0.89182913,
+            0.88362384,
+            0.87518156,
+            0.8665092,
+            0.8576136,
+            0.84850156,
+            0.83917993,
+            0.8296555,
+            0.8199352,
+            0.8100258,
+            0.79993415,
+            0.789667,
+            0.7792313,
+            0.7686338,
+            0.7578814,
+            0.74698085,
+            0.7359391,
+            0.72476286,
+            0.713459,
+            0.7020344,
+            0.69049585,
+            0.6788503,
+            0.6671043,
+            0.655265,
+            0.64333904,
+            0.6313333,
+            0.61925465,
+            0.60710984,
+            0.5949058,
+            0.58264923,
+            0.5703472,
+            0.5580063,
+            0.5456335,
+            0.5332356,
+            0.5208193,
+            0.50839174,
+            0.49595946,
+            0.48352945,
+            0.47110844,
+            0.45870328,
+            0.4463209,
+            0.43396813,
+            0.4216516,
+            0.4093784,
+            0.39715517,
+            0.3849889,
+            0.37288618,
+            0.36085427,
+            0.3488996,
+            0.33702916,
+            0.3252498,
+            0.31356823,
+            0.3019914,
+            0.29052627,
+            0.2791794,
+            0.26795775,
+            0.25686818,
+            0.24591726,
+            0.23511231,
+            0.22445971,
+            0.21396673,
+            0.20363975,
+            0.19348592,
+            0.18351197,
+            0.17372459,
+            0.16413093,
+            0.15473747,
+            0.14555132,
+            0.13657928,
+            0.12782794,
+            0.11930436,
+            0.11101544,
+            0.10296762,
+            0.09516835,
+            0.087623835,
+            0.08034134,
+            0.07332754,
+            0.066589,
+            0.06013322,
+            0.053966284,
+            0.048095703,
+            0.042527914,
+            0.037269592,
+            0.03232813,
+            0.027709842,
+            0.023421764,
+            0.01947081,
+            0.015863538,
+            0.012606978,
+            0.009708047,
+            0.0071733,
+            0.005010128,
+            0.0032247305,
+            0.0018241405,
+            0.00081539154,
+            0.00020503998,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 128,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_0",
+    "Outer": "SniperMF",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 0.2,
+        "MaxValue": 0.25,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.2,
+            0.25
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_1",
+    "Outer": "SniperMF",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 7.0,
+        "MaxValue": 4.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            7.0,
+            4.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_2",
+    "Outer": "SniperMF",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 0.2,
+        "MaxValue": 0.25,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.2,
+            0.25
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_3",
+    "Outer": "SniperMF",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 4.0,
+        "MaxValue": 2.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            4.0,
+            2.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_4",
+    "Outer": "SniperMF",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 3.0,
+        "MaxValue": 4.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            3.0,
+            4.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLight",
+    "Name": "ParticleModuleLight_1",
+    "Outer": "SniperMF",
+    "Properties": {
+      "ColorScaleOverLife": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "BrightnessOverLife": {
+        "MinValue": 2048.0,
+        "MaxValue": 2048.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            2048.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RadiusScale": {
+        "MinValue": 1200.0,
+        "MaxValue": 1200.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1200.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LightExponent": {
+        "MinValue": 16.0,
+        "MaxValue": 16.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            16.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleMeshRotation",
+    "Name": "ParticleModuleMeshRotation_0",
+    "Outer": "SniperMF",
+    "Properties": {
+      "StartRotation": {
+        "MinValue": -1.0,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": -1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleMeshRotationRate",
+    "Name": "ParticleModuleMeshRotationRate_0",
+    "Outer": "SniperMF",
+    "Properties": {
+      "StartRotationRate": {
+        "MinValue": -1.0,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": -1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleParameterDynamic",
+    "Name": "ParticleModuleParameterDynamic_0",
+    "Outer": "SniperMF",
+    "Properties": {
+      "DynamicParams": [
+        {
+          "ParamName": "None",
+          "bUseEmitterTime": false,
+          "bSpawnTimeOnly": true,
+          "ValueMethod": "EDPV_UserSet",
+          "bScaleVelocityByParamValue": false,
+          "ParamValue": {
+            "MinValue": -1.0,
+            "MaxValue": 1.0,
+            "Distribution": null,
+            "Table": {
+              "TimeScale": 0.0,
+              "TimeBias": 0.0,
+              "Values": [
+                -1.0,
+                1.0
+              ],
+              "Op": 2,
+              "EntryCount": 1,
+              "EntryStride": 2,
+              "SubEntryStride": 1,
+              "LockFlag": 0
+            }
+          }
+        },
+        {
+          "ParamName": "None",
+          "bUseEmitterTime": false,
+          "bSpawnTimeOnly": true,
+          "ValueMethod": "EDPV_UserSet",
+          "bScaleVelocityByParamValue": false,
+          "ParamValue": {
+            "MinValue": -1.0,
+            "MaxValue": 1.0,
+            "Distribution": {
+              "ObjectName": "DistributionFloatUniform SniperMF:ParticleModuleParameterDynamic_0.DistributionFloatUniform_0",
+              "ObjectPath": "War/Content/FX/SniperMF.7"
+            },
+            "Table": {
+              "TimeScale": 0.0,
+              "TimeBias": 0.0,
+              "Values": [
+                -1.0,
+                1.0
+              ],
+              "Op": 0,
+              "EntryCount": 0,
+              "EntryStride": 0,
+              "SubEntryStride": 0,
+              "LockFlag": 0
+            }
+          }
+        },
+        {
+          "ParamName": "None",
+          "bUseEmitterTime": false,
+          "bSpawnTimeOnly": false,
+          "ValueMethod": "EDPV_UserSet",
+          "bScaleVelocityByParamValue": false,
+          "ParamValue": {
+            "MinValue": 1.0,
+            "MaxValue": 1.0,
+            "Distribution": null,
+            "Table": {
+              "TimeScale": 0.0,
+              "TimeBias": 0.0,
+              "Values": [
+                1.0
+              ],
+              "Op": 1,
+              "EntryCount": 1,
+              "EntryStride": 1,
+              "SubEntryStride": 0,
+              "LockFlag": 0
+            }
+          }
+        },
+        {
+          "ParamName": "None",
+          "bUseEmitterTime": false,
+          "bSpawnTimeOnly": false,
+          "ValueMethod": "EDPV_UserSet",
+          "bScaleVelocityByParamValue": false,
+          "ParamValue": {
+            "MinValue": 1.0,
+            "MaxValue": 1.0,
+            "Distribution": null,
+            "Table": {
+              "TimeScale": 0.0,
+              "TimeBias": 0.0,
+              "Values": [
+                1.0
+              ],
+              "Op": 1,
+              "EntryCount": 1,
+              "EntryStride": 1,
+              "SubEntryStride": 0,
+              "LockFlag": 0
+            }
+          }
+        }
+      ],
+      "UpdateFlags": 12,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleParameterDynamic",
+    "Name": "ParticleModuleParameterDynamic_1",
+    "Outer": "SniperMF",
+    "Properties": {
+      "DynamicParams": [
+        {
+          "ParamName": "None",
+          "bUseEmitterTime": false,
+          "bSpawnTimeOnly": true,
+          "ValueMethod": "EDPV_UserSet",
+          "bScaleVelocityByParamValue": false,
+          "ParamValue": {
+            "MinValue": -1.0,
+            "MaxValue": 1.0,
+            "Distribution": null,
+            "Table": {
+              "TimeScale": 0.0,
+              "TimeBias": 0.0,
+              "Values": [
+                -1.0,
+                1.0
+              ],
+              "Op": 2,
+              "EntryCount": 1,
+              "EntryStride": 2,
+              "SubEntryStride": 1,
+              "LockFlag": 0
+            }
+          }
+        },
+        {
+          "ParamName": "None",
+          "bUseEmitterTime": false,
+          "bSpawnTimeOnly": true,
+          "ValueMethod": "EDPV_UserSet",
+          "bScaleVelocityByParamValue": false,
+          "ParamValue": {
+            "MinValue": -1.0,
+            "MaxValue": 1.0,
+            "Distribution": {
+              "ObjectName": "DistributionFloatUniform SniperMF:ParticleModuleParameterDynamic_1.DistributionFloatUniform_0",
+              "ObjectPath": "War/Content/FX/SniperMF.8"
+            },
+            "Table": {
+              "TimeScale": 0.0,
+              "TimeBias": 0.0,
+              "Values": [
+                -1.0,
+                1.0
+              ],
+              "Op": 0,
+              "EntryCount": 0,
+              "EntryStride": 0,
+              "SubEntryStride": 0,
+              "LockFlag": 0
+            }
+          }
+        },
+        {
+          "ParamName": "None",
+          "bUseEmitterTime": false,
+          "bSpawnTimeOnly": false,
+          "ValueMethod": "EDPV_UserSet",
+          "bScaleVelocityByParamValue": false,
+          "ParamValue": {
+            "MinValue": 1.0,
+            "MaxValue": 1.0,
+            "Distribution": null,
+            "Table": {
+              "TimeScale": 0.0,
+              "TimeBias": 0.0,
+              "Values": [
+                1.0
+              ],
+              "Op": 1,
+              "EntryCount": 1,
+              "EntryStride": 1,
+              "SubEntryStride": 0,
+              "LockFlag": 0
+            }
+          }
+        },
+        {
+          "ParamName": "None",
+          "bUseEmitterTime": false,
+          "bSpawnTimeOnly": false,
+          "ValueMethod": "EDPV_UserSet",
+          "bScaleVelocityByParamValue": false,
+          "ParamValue": {
+            "MinValue": 1.0,
+            "MaxValue": 1.0,
+            "Distribution": null,
+            "Table": {
+              "TimeScale": 0.0,
+              "TimeBias": 0.0,
+              "Values": [
+                1.0
+              ],
+              "Op": 1,
+              "EntryCount": 1,
+              "EntryStride": 1,
+              "SubEntryStride": 0,
+              "LockFlag": 0
+            }
+          }
+        }
+      ],
+      "UpdateFlags": 12,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_0",
+    "Outer": "SniperMF",
+    "Properties": {
+      "Material": {
+        "ObjectName": "Material RifleMuzzleFlash",
+        "ObjectPath": "War/Content/FX/Materials/Weapons/RifleMuzzleFlash.0"
+      },
+      "bUseLocalSpace": true,
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant SniperMF:ParticleModuleRequired_0.RequiredDistributionSpawnRate",
+          "ObjectPath": "War/Content/FX/SniperMF.2"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "EmitterLoops": 1,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_1",
+    "Outer": "SniperMF",
+    "Properties": {
+      "Material": {
+        "ObjectName": "Material Smoke",
+        "ObjectPath": "War/Content/FX/Materials/Smoke.0"
+      },
+      "EmitterOrigin": {
+        "X": 12.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant SniperMF:ParticleModuleRequired_1.RequiredDistributionSpawnRate",
+          "ObjectPath": "War/Content/FX/SniperMF.3"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "EmitterLoops": 1,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_2",
+    "Outer": "SniperMF",
+    "Properties": {
+      "Material": {
+        "ObjectName": "Material RifleMuzzleFlash",
+        "ObjectPath": "War/Content/FX/Materials/Weapons/RifleMuzzleFlash.0"
+      },
+      "EmitterOrigin": {
+        "X": 0.0,
+        "Y": 50.0,
+        "Z": 0.0
+      },
+      "bUseLocalSpace": true,
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant SniperMF:ParticleModuleRequired_2.RequiredDistributionSpawnRate",
+          "ObjectPath": "War/Content/FX/SniperMF.4"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "EmitterLoops": 1,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_3",
+    "Outer": "SniperMF",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant SmokeGrenade03",
+        "ObjectPath": "War/Content/FX/Materials/SmokeGrenade03.0"
+      },
+      "EmitterOrigin": {
+        "X": 12.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant SniperMF:ParticleModuleRequired_3.RequiredDistributionSpawnRate",
+          "ObjectPath": "War/Content/FX/SniperMF.5"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "EmitterLoops": 1,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_4",
+    "Outer": "SniperMF",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant BulletCasing",
+        "ObjectPath": "War/Content/FX/Materials/BulletCasing.0"
+      },
+      "EmitterOrigin": {
+        "X": -75.0,
+        "Y": 0.0,
+        "Z": 20.0
+      },
+      "ScreenAlignment": "PSA_Rectangle",
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant SniperMF:ParticleModuleRequired_4.RequiredDistributionSpawnRate",
+          "ObjectPath": "War/Content/FX/SniperMF.6"
+        }
+      },
+      "EmitterDelay": 0.3,
+      "RandomImageTime": 1.0,
+      "EmitterLoops": 1,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotation",
+    "Name": "ParticleModuleRotation_0",
+    "Outer": "SniperMF",
+    "Properties": {
+      "StartRotation": {
+        "MinValue": -1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -1.0,
+            1.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotation",
+    "Name": "ParticleModuleRotation_1",
+    "Outer": "SniperMF",
+    "Properties": {
+      "StartRotation": {
+        "MinValue": -1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -1.0,
+            1.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotation",
+    "Name": "ParticleModuleRotation_2",
+    "Outer": "SniperMF",
+    "Properties": {
+      "StartRotation": {
+        "MinValue": -1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -1.0,
+            1.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotationRate",
+    "Name": "ParticleModuleRotationRate_0",
+    "Outer": "SniperMF",
+    "Properties": {
+      "StartRotationRate": {
+        "MinValue": -0.15,
+        "MaxValue": 0.15,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -0.15,
+            0.15
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotationRate",
+    "Name": "ParticleModuleRotationRate_1",
+    "Outer": "SniperMF",
+    "Properties": {
+      "StartRotationRate": {
+        "MinValue": 0.5,
+        "MaxValue": 1.5,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.5,
+            1.5
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotationRate",
+    "Name": "ParticleModuleRotationRate_2",
+    "Outer": "SniperMF",
+    "Properties": {
+      "StartRotationRate": {
+        "MinValue": -0.15,
+        "MaxValue": 0.15,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -0.15,
+            0.15
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_0",
+    "Outer": "SniperMF",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_1",
+    "Outer": "SniperMF",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 30.0,
+        "MaxValue": 15.0,
+        "MinValueVec": {
+          "X": 30.0,
+          "Y": 30.0,
+          "Z": 30.0
+        },
+        "MaxValueVec": {
+          "X": 15.0,
+          "Y": 15.0,
+          "Z": 15.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            30.0,
+            30.0,
+            30.0,
+            15.0,
+            15.0,
+            15.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_2",
+    "Outer": "SniperMF",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_3",
+    "Outer": "SniperMF",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 20.0,
+        "MaxValue": 10.0,
+        "MinValueVec": {
+          "X": 20.0,
+          "Y": 20.0,
+          "Z": 20.0
+        },
+        "MaxValueVec": {
+          "X": 10.0,
+          "Y": 10.0,
+          "Z": 10.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            20.0,
+            20.0,
+            20.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_4",
+    "Outer": "SniperMF",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 15.0,
+        "MaxValue": 30.0,
+        "MinValueVec": {
+          "X": 30.0,
+          "Y": 15.0,
+          "Z": 15.0
+        },
+        "MaxValueVec": {
+          "X": 30.0,
+          "Y": 15.0,
+          "Z": 15.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            30.0,
+            15.0,
+            15.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_0",
+    "Outer": "SniperMF",
+    "Properties": {
+      "LifeMultiplier": {
+        "MaxValue": 1.096954,
+        "MinValueVec": {
+          "X": 0.5,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 1.0097039,
+          "Y": 1.096954,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 30.889566,
+          "Values": [
+            0.5,
+            0.0,
+            1.0,
+            0.5440704,
+            0.35260698,
+            1.0,
+            0.60021853,
+            0.60798395,
+            1.0,
+            0.6594545,
+            0.78028095,
+            1.0,
+            0.7127884,
+            0.8836484,
+            1.0,
+            0.75123024,
+            0.93223614,
+            1.0,
+            0.77586436,
+            0.9527917,
+            1.0,
+            0.7986159,
+            0.9710563,
+            1.0,
+            0.81989896,
+            0.98772055,
+            1.0,
+            0.83975947,
+            1.002857,
+            1.0,
+            0.8582433,
+            1.0165385,
+            1.0,
+            0.87539154,
+            1.0288326,
+            1.0,
+            0.891253,
+            1.0398153,
+            1.0,
+            0.90587616,
+            1.0495619,
+            1.0,
+            0.91930705,
+            1.0581454,
+            1.0,
+            0.9315915,
+            1.0656383,
+            1.0,
+            0.94277555,
+            1.0721133,
+            1.0,
+            0.9529051,
+            1.077643,
+            1.0,
+            0.9620261,
+            1.0823004,
+            1.0,
+            0.9701845,
+            1.0861584,
+            1.0,
+            0.9774263,
+            1.0892891,
+            1.0,
+            0.98379576,
+            1.0917646,
+            1.0,
+            0.98933756,
+            1.0936568,
+            1.0,
+            0.9941011,
+            1.0950412,
+            1.0,
+            0.9981323,
+            1.0959901,
+            1.0,
+            1.001477,
+            1.0965767,
+            1.0,
+            1.0041814,
+            1.0968733,
+            1.0,
+            1.0062912,
+            1.0969529,
+            1.0,
+            1.0078523,
+            1.0968881,
+            1.0,
+            1.0089109,
+            1.0967517,
+            1.0,
+            1.0095128,
+            1.0966163,
+            1.0,
+            1.0097039,
+            1.0965548,
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 32,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_1",
+    "Outer": "SniperMF",
+    "Properties": {
+      "LifeMultiplier": {
+        "MinValue": 1.5,
+        "MaxValue": 6.0,
+        "MinValueVec": {
+          "X": 1.5,
+          "Y": 1.5,
+          "Z": 1.5
+        },
+        "MaxValueVec": {
+          "X": 6.0,
+          "Y": 6.0,
+          "Z": 6.0
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 14.999999,
+          "Values": [
+            1.5,
+            1.5,
+            1.5,
+            1.6046218,
+            1.597553,
+            1.5988042,
+            1.7999761,
+            1.787781,
+            1.7899396,
+            2.071983,
+            2.0563977,
+            2.0591564,
+            2.4057555,
+            2.3882926,
+            2.3913836,
+            2.7869484,
+            2.7689087,
+            2.7721019,
+            3.2008853,
+            3.18335,
+            3.186454,
+            3.6330652,
+            3.616901,
+            3.6197622,
+            4.0689135,
+            4.05477,
+            4.0572734,
+            4.493881,
+            4.4821906,
+            4.48426,
+            4.8933873,
+            4.8843665,
+            4.8859634,
+            5.2529435,
+            5.246593,
+            5.247717,
+            5.557854,
+            5.5539565,
+            5.5546465,
+            5.793801,
+            5.7919245,
+            5.7922564,
+            5.945863,
+            5.9453564,
+            5.945446,
+            6.0,
+            6.0,
+            6.0
+          ],
+          "Op": 1,
+          "EntryCount": 16,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_2",
+    "Outer": "SniperMF",
+    "Properties": {
+      "LifeMultiplier": {
+        "MaxValue": 1.096954,
+        "MinValueVec": {
+          "X": 0.5,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 1.0097039,
+          "Y": 1.096954,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 30.889566,
+          "Values": [
+            0.5,
+            0.0,
+            1.0,
+            0.5440704,
+            0.35260698,
+            1.0,
+            0.60021853,
+            0.60798395,
+            1.0,
+            0.6594545,
+            0.78028095,
+            1.0,
+            0.7127884,
+            0.8836484,
+            1.0,
+            0.75123024,
+            0.93223614,
+            1.0,
+            0.77586436,
+            0.9527917,
+            1.0,
+            0.7986159,
+            0.9710563,
+            1.0,
+            0.81989896,
+            0.98772055,
+            1.0,
+            0.83975947,
+            1.002857,
+            1.0,
+            0.8582433,
+            1.0165385,
+            1.0,
+            0.87539154,
+            1.0288326,
+            1.0,
+            0.891253,
+            1.0398153,
+            1.0,
+            0.90587616,
+            1.0495619,
+            1.0,
+            0.91930705,
+            1.0581454,
+            1.0,
+            0.9315915,
+            1.0656383,
+            1.0,
+            0.94277555,
+            1.0721133,
+            1.0,
+            0.9529051,
+            1.077643,
+            1.0,
+            0.9620261,
+            1.0823004,
+            1.0,
+            0.9701845,
+            1.0861584,
+            1.0,
+            0.9774263,
+            1.0892891,
+            1.0,
+            0.98379576,
+            1.0917646,
+            1.0,
+            0.98933756,
+            1.0936568,
+            1.0,
+            0.9941011,
+            1.0950412,
+            1.0,
+            0.9981323,
+            1.0959901,
+            1.0,
+            1.001477,
+            1.0965767,
+            1.0,
+            1.0041814,
+            1.0968733,
+            1.0,
+            1.0062912,
+            1.0969529,
+            1.0,
+            1.0078523,
+            1.0968881,
+            1.0,
+            1.0089109,
+            1.0967517,
+            1.0,
+            1.0095128,
+            1.0966163,
+            1.0,
+            1.0097039,
+            1.0965548,
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 32,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_3",
+    "Outer": "SniperMF",
+    "Properties": {
+      "LifeMultiplier": {
+        "MinValue": 1.5,
+        "MaxValue": 6.0,
+        "MinValueVec": {
+          "X": 1.5,
+          "Y": 1.5,
+          "Z": 1.5
+        },
+        "MaxValueVec": {
+          "X": 6.0,
+          "Y": 6.0,
+          "Z": 6.0
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 14.999999,
+          "Values": [
+            1.5,
+            1.5,
+            1.5,
+            1.6046218,
+            1.597553,
+            1.5988042,
+            1.7999761,
+            1.787781,
+            1.7899396,
+            2.071983,
+            2.0563977,
+            2.0591564,
+            2.4057555,
+            2.3882926,
+            2.3913836,
+            2.7869484,
+            2.7689087,
+            2.7721019,
+            3.2008853,
+            3.18335,
+            3.186454,
+            3.6330652,
+            3.616901,
+            3.6197622,
+            4.0689135,
+            4.05477,
+            4.0572734,
+            4.493881,
+            4.4821906,
+            4.48426,
+            4.8933873,
+            4.8843665,
+            4.8859634,
+            5.2529435,
+            5.246593,
+            5.247717,
+            5.557854,
+            5.5539565,
+            5.5546465,
+            5.793801,
+            5.7919245,
+            5.7922564,
+            5.945863,
+            5.9453564,
+            5.945446,
+            6.0,
+            6.0,
+            6.0
+          ],
+          "Op": 1,
+          "EntryCount": 16,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_4",
+    "Outer": "SniperMF",
+    "Properties": {
+      "LifeMultiplier": {
+        "MaxValue": 1.0,
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 13.999999,
+          "TimeBias": 0.5,
+          "Values": [
+            1.0,
+            1.0,
+            1.0,
+            0.9445902,
+            0.9445902,
+            0.9445902,
+            0.80173314,
+            0.80173314,
+            0.80173314,
+            0.60640746,
+            0.60640746,
+            0.60640746,
+            0.39359254,
+            0.39359254,
+            0.39359254,
+            0.19826688,
+            0.19826688,
+            0.19826688,
+            0.055409566,
+            0.055409566,
+            0.055409566,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 8,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_0",
+    "Outer": "SniperMF",
+    "Properties": {
+      "Rate": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstList": [
+        {
+          "Count": 2,
+          "CountLow": -1,
+          "Time": 0.0
+        }
+      ],
+      "BurstScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_1",
+    "Outer": "SniperMF",
+    "Properties": {
+      "Rate": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstList": [
+        {
+          "Count": 25,
+          "CountLow": -1,
+          "Time": 0.0
+        }
+      ],
+      "BurstScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_2",
+    "Outer": "SniperMF",
+    "Properties": {
+      "Rate": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstList": [
+        {
+          "Count": 2,
+          "CountLow": -1,
+          "Time": 0.0
+        }
+      ],
+      "BurstScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_3",
+    "Outer": "SniperMF",
+    "Properties": {
+      "Rate": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstList": [
+        {
+          "Count": 20,
+          "CountLow": -1,
+          "Time": 0.0
+        }
+      ],
+      "BurstScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_4",
+    "Outer": "SniperMF",
+    "Properties": {
+      "Rate": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstList": [
+        {
+          "Count": 1,
+          "CountLow": -1,
+          "Time": 0.0
+        }
+      ],
+      "BurstScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleTypeDataGpu",
+    "Name": "ParticleModuleTypeDataGpu_0",
+    "Outer": "SniperMF",
+    "Properties": {
+      "EmitterInfo": {
+        "RequiredModule": {
+          "ObjectName": "ParticleModuleRequired SniperMF:ParticleModuleRequired_4",
+          "ObjectPath": "War/Content/FX/SniperMF.42"
+        },
+        "SpawnModule": {
+          "ObjectName": "ParticleModuleSpawn SniperMF:ParticleModuleSpawn_4",
+          "ObjectPath": "War/Content/FX/SniperMF.63"
+        },
+        "SpawnModules": [
+          {
+            "ObjectName": "ParticleModuleRequired SniperMF:ParticleModuleRequired_4",
+            "ObjectPath": "War/Content/FX/SniperMF.42"
+          },
+          {
+            "ObjectName": "ParticleModuleLifetime SniperMF:ParticleModuleLifetime_4",
+            "ObjectPath": "War/Content/FX/SniperMF.32"
+          },
+          {
+            "ObjectName": "ParticleModuleSize SniperMF:ParticleModuleSize_4",
+            "ObjectPath": "War/Content/FX/SniperMF.53"
+          },
+          {
+            "ObjectName": "ParticleModuleVelocity SniperMF:ParticleModuleVelocity_2",
+            "ObjectPath": "War/Content/FX/SniperMF.68"
+          },
+          {
+            "ObjectName": "ParticleModuleRotation SniperMF:ParticleModuleRotation_1",
+            "ObjectPath": "War/Content/FX/SniperMF.44"
+          },
+          {
+            "ObjectName": "ParticleModuleRotationRate SniperMF:ParticleModuleRotationRate_1",
+            "ObjectPath": "War/Content/FX/SniperMF.47"
+          }
+        ],
+        "ConstantAcceleration": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -2000.0
+        },
+        "InvMaxSize": {
+          "X": 0.033333335,
+          "Y": 0.033333335
+        },
+        "InvRotationRateScale": 0.16666667,
+        "MaxLifetime": 4.0,
+        "MaxParticleCount": 2,
+        "ScreenAlignment": "PSA_Rectangle",
+        "bEnableCollision": true
+      },
+      "ResourceData": {
+        "QuantizedMiscSamples": [
+          {
+            "R": 0,
+            "G": 255,
+            "B": 255,
+            "A": 0,
+            "Hex": "00FFFF"
+          },
+          {
+            "R": 0,
+            "G": 255,
+            "B": 255,
+            "A": 0,
+            "Hex": "00FFFF"
+          },
+          {
+            "R": 0,
+            "G": 255,
+            "B": 255,
+            "A": 0,
+            "Hex": "00FFFF"
+          },
+          {
+            "R": 0,
+            "G": 255,
+            "B": 255,
+            "A": 0,
+            "Hex": "00FFFF"
+          },
+          {
+            "R": 0,
+            "G": 255,
+            "B": 255,
+            "A": 0,
+            "Hex": "00FFFF"
+          },
+          {
+            "R": 0,
+            "G": 255,
+            "B": 255,
+            "A": 0,
+            "Hex": "00FFFF"
+          },
+          {
+            "R": 0,
+            "G": 255,
+            "B": 255,
+            "A": 0,
+            "Hex": "00FFFF"
+          },
+          {
+            "R": 0,
+            "G": 255,
+            "B": 255,
+            "A": 0,
+            "Hex": "00FFFF"
+          },
+          {
+            "R": 0,
+            "G": 255,
+            "B": 255,
+            "A": 0,
+            "Hex": "00FFFF"
+          },
+          {
+            "R": 0,
+            "G": 255,
+            "B": 255,
+            "A": 0,
+            "Hex": "00FFFF"
+          },
+          {
+            "R": 0,
+            "G": 255,
+            "B": 255,
+            "A": 0,
+            "Hex": "00FFFF"
+          },
+          {
+            "R": 0,
+            "G": 255,
+            "B": 255,
+            "A": 0,
+            "Hex": "00FFFF"
+          },
+          {
+            "R": 0,
+            "G": 255,
+            "B": 255,
+            "A": 0,
+            "Hex": "00FFFF"
+          },
+          {
+            "R": 0,
+            "G": 255,
+            "B": 255,
+            "A": 0,
+            "Hex": "00FFFF"
+          },
+          {
+            "R": 0,
+            "G": 255,
+            "B": 255,
+            "A": 0,
+            "Hex": "00FFFF"
+          },
+          {
+            "R": 0,
+            "G": 255,
+            "B": 255,
+            "A": 0,
+            "Hex": "00FFFF"
+          },
+          {
+            "R": 0,
+            "G": 255,
+            "B": 255,
+            "A": 0,
+            "Hex": "00FFFF"
+          },
+          {
+            "R": 0,
+            "G": 255,
+            "B": 255,
+            "A": 0,
+            "Hex": "00FFFF"
+          },
+          {
+            "R": 0,
+            "G": 255,
+            "B": 255,
+            "A": 0,
+            "Hex": "00FFFF"
+          },
+          {
+            "R": 0,
+            "G": 255,
+            "B": 255,
+            "A": 0,
+            "Hex": "00FFFF"
+          },
+          {
+            "R": 0,
+            "G": 255,
+            "B": 255,
+            "A": 0,
+            "Hex": "00FFFF"
+          },
+          {
+            "R": 0,
+            "G": 255,
+            "B": 255,
+            "A": 0,
+            "Hex": "00FFFF"
+          },
+          {
+            "R": 0,
+            "G": 255,
+            "B": 255,
+            "A": 0,
+            "Hex": "00FFFF"
+          },
+          {
+            "R": 0,
+            "G": 255,
+            "B": 255,
+            "A": 0,
+            "Hex": "00FFFF"
+          },
+          {
+            "R": 0,
+            "G": 255,
+            "B": 255,
+            "A": 0,
+            "Hex": "00FFFF"
+          },
+          {
+            "R": 0,
+            "G": 255,
+            "B": 255,
+            "A": 0,
+            "Hex": "00FFFF"
+          },
+          {
+            "R": 0,
+            "G": 255,
+            "B": 255,
+            "A": 0,
+            "Hex": "00FFFF"
+          },
+          {
+            "R": 0,
+            "G": 255,
+            "B": 255,
+            "A": 0,
+            "Hex": "00FFFF"
+          },
+          {
+            "R": 0,
+            "G": 255,
+            "B": 255,
+            "A": 0,
+            "Hex": "00FFFF"
+          },
+          {
+            "R": 0,
+            "G": 255,
+            "B": 255,
+            "A": 0,
+            "Hex": "00FFFF"
+          },
+          {
+            "R": 0,
+            "G": 255,
+            "B": 255,
+            "A": 0,
+            "Hex": "00FFFF"
+          },
+          {
+            "R": 0,
+            "G": 255,
+            "B": 255,
+            "A": 0,
+            "Hex": "00FFFF"
+          },
+          {
+            "R": 0,
+            "G": 254,
+            "B": 254,
+            "A": 0,
+            "Hex": "00FEFE"
+          },
+          {
+            "R": 0,
+            "G": 253,
+            "B": 253,
+            "A": 0,
+            "Hex": "00FDFD"
+          },
+          {
+            "R": 0,
+            "G": 250,
+            "B": 250,
+            "A": 0,
+            "Hex": "00FAFA"
+          },
+          {
+            "R": 0,
+            "G": 246,
+            "B": 246,
+            "A": 0,
+            "Hex": "00F6F6"
+          },
+          {
+            "R": 0,
+            "G": 240,
+            "B": 240,
+            "A": 0,
+            "Hex": "00F0F0"
+          },
+          {
+            "R": 0,
+            "G": 234,
+            "B": 234,
+            "A": 0,
+            "Hex": "00EAEA"
+          },
+          {
+            "R": 0,
+            "G": 226,
+            "B": 226,
+            "A": 0,
+            "Hex": "00E2E2"
+          },
+          {
+            "R": 0,
+            "G": 218,
+            "B": 218,
+            "A": 0,
+            "Hex": "00DADA"
+          },
+          {
+            "R": 0,
+            "G": 209,
+            "B": 209,
+            "A": 0,
+            "Hex": "00D1D1"
+          },
+          {
+            "R": 0,
+            "G": 199,
+            "B": 199,
+            "A": 0,
+            "Hex": "00C7C7"
+          },
+          {
+            "R": 0,
+            "G": 188,
+            "B": 188,
+            "A": 0,
+            "Hex": "00BCBC"
+          },
+          {
+            "R": 0,
+            "G": 177,
+            "B": 177,
+            "A": 0,
+            "Hex": "00B1B1"
+          },
+          {
+            "R": 0,
+            "G": 166,
+            "B": 166,
+            "A": 0,
+            "Hex": "00A6A6"
+          },
+          {
+            "R": 0,
+            "G": 154,
+            "B": 154,
+            "A": 0,
+            "Hex": "009A9A"
+          },
+          {
+            "R": 0,
+            "G": 142,
+            "B": 142,
+            "A": 0,
+            "Hex": "008E8E"
+          },
+          {
+            "R": 0,
+            "G": 130,
+            "B": 130,
+            "A": 0,
+            "Hex": "008282"
+          },
+          {
+            "R": 0,
+            "G": 118,
+            "B": 118,
+            "A": 0,
+            "Hex": "007676"
+          },
+          {
+            "R": 0,
+            "G": 106,
+            "B": 106,
+            "A": 0,
+            "Hex": "006A6A"
+          },
+          {
+            "R": 0,
+            "G": 94,
+            "B": 94,
+            "A": 0,
+            "Hex": "005E5E"
+          },
+          {
+            "R": 0,
+            "G": 82,
+            "B": 82,
+            "A": 0,
+            "Hex": "005252"
+          },
+          {
+            "R": 0,
+            "G": 71,
+            "B": 71,
+            "A": 0,
+            "Hex": "004747"
+          },
+          {
+            "R": 0,
+            "G": 60,
+            "B": 60,
+            "A": 0,
+            "Hex": "003C3C"
+          },
+          {
+            "R": 0,
+            "G": 50,
+            "B": 50,
+            "A": 0,
+            "Hex": "003232"
+          },
+          {
+            "R": 0,
+            "G": 40,
+            "B": 40,
+            "A": 0,
+            "Hex": "002828"
+          },
+          {
+            "R": 0,
+            "G": 32,
+            "B": 32,
+            "A": 0,
+            "Hex": "002020"
+          },
+          {
+            "R": 0,
+            "G": 24,
+            "B": 24,
+            "A": 0,
+            "Hex": "001818"
+          },
+          {
+            "R": 0,
+            "G": 17,
+            "B": 17,
+            "A": 0,
+            "Hex": "001111"
+          },
+          {
+            "R": 0,
+            "G": 11,
+            "B": 11,
+            "A": 0,
+            "Hex": "000B0B"
+          },
+          {
+            "R": 0,
+            "G": 6,
+            "B": 6,
+            "A": 0,
+            "Hex": "000606"
+          },
+          {
+            "R": 0,
+            "G": 2,
+            "B": 2,
+            "A": 0,
+            "Hex": "000202"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 0,
+            "Hex": "000000"
+          },
+          {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 0,
+            "Hex": "000000"
+          }
+        ],
+        "ColorBias": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0,
+          "W": 1.0
+        },
+        "MiscScale": {
+          "X": 12.0,
+          "Y": 12.0,
+          "Z": 0.0,
+          "W": 0.0
+        },
+        "SimulationAttrCurveBias": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0,
+          "W": 1.0
+        },
+        "SubImageSize": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0,
+          "W": 1.0
+        },
+        "SizeBySpeed": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0,
+          "W": 1.0
+        },
+        "ConstantAcceleration": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -2000.0
+        },
+        "PerParticleVectorFieldBias": 1.0,
+        "ResilienceBias": 0.412844,
+        "CollisionRadiusScale": 0.5,
+        "OneMinusFriction": 0.7,
+        "RotationRateScale": 6.0,
+        "ScreenAlignment": "PSA_Rectangle"
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleTypeDataMesh",
+    "Name": "ParticleModuleTypeDataMesh_0",
+    "Outer": "SniperMF",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh RifleMuzzleFlash",
+        "ObjectPath": "War/Content/FX/Mesh/RifleMuzzleFlash.2"
+      },
+      "bOverrideMaterial": true,
+      "RollPitchYawRange": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocity",
+    "Name": "ParticleModuleVelocity_0",
+    "Outer": "SniperMF",
+    "Properties": {
+      "StartVelocity": {
+        "MinValue": -200.0,
+        "MaxValue": 200.0,
+        "MinValueVec": {
+          "X": 200.0,
+          "Y": -200.0,
+          "Z": -3.0
+        },
+        "MaxValueVec": {
+          "X": 10.0,
+          "Y": 200.0,
+          "Z": 3.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            200.0,
+            -200.0,
+            -3.0,
+            10.0,
+            200.0,
+            3.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "StartVelocityRadial": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocity",
+    "Name": "ParticleModuleVelocity_1",
+    "Outer": "SniperMF",
+    "Properties": {
+      "StartVelocity": {
+        "MinValue": -30.0,
+        "MaxValue": 1000.0,
+        "MinValueVec": {
+          "X": 120.0,
+          "Y": -30.0,
+          "Z": -10.0
+        },
+        "MaxValueVec": {
+          "X": 1000.0,
+          "Y": 30.0,
+          "Z": 10.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            120.0,
+            -30.0,
+            -10.0,
+            1000.0,
+            30.0,
+            10.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "StartVelocityRadial": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocity",
+    "Name": "ParticleModuleVelocity_2",
+    "Outer": "SniperMF",
+    "Properties": {
+      "StartVelocity": {
+        "MinValue": -100.0,
+        "MaxValue": 200.0,
+        "MinValueVec": {
+          "X": -100.0,
+          "Y": 50.0,
+          "Z": 400.0
+        },
+        "MaxValueVec": {
+          "X": 100.0,
+          "Y": 20.0,
+          "Z": 200.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -100.0,
+            50.0,
+            400.0,
+            100.0,
+            20.0,
+            200.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "StartVelocityRadial": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocityOverLifetime",
+    "Name": "ParticleModuleVelocityOverLifetime_1",
+    "Outer": "SniperMF",
+    "Properties": {
+      "VelOverLife": {
+        "MinValue": 0.1,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 0.1,
+          "Y": 0.1,
+          "Z": 0.1
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 49.999996,
+          "Values": [
+            1.0,
+            1.0,
+            1.0,
+            0.7412559,
+            0.73763394,
+            0.742982,
+            0.49771804,
+            0.49139798,
+            0.49609768,
+            0.29911754,
+            0.29130983,
+            0.29252437,
+            0.17477635,
+            0.16696617,
+            0.16505268,
+            0.14286149,
+            0.13660094,
+            0.13454074,
+            0.13150957,
+            0.12683478,
+            0.12530178,
+            0.12236275,
+            0.118982024,
+            0.11787798,
+            0.11518137,
+            0.112832636,
+            0.11206944,
+            0.10972797,
+            0.10817845,
+            0.10767807,
+            0.10576631,
+            0.10481243,
+            0.1045068,
+            0.1030564,
+            0.102524236,
+            0.10235546,
+            0.10136367,
+            0.101108216,
+            0.101028316,
+            0.10044733,
+            0.100353405,
+            0.100324616,
+            0.1000727,
+            0.10005402,
+            0.100048475,
+            0.1,
+            0.1,
+            0.1
+          ],
+          "Op": 1,
+          "EntryCount": 16,
+          "EntryStride": 3
+        }
+      },
+      "bInWorldSpace": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_0",
+    "Outer": "SniperMF",
+    "Properties": {
+      "bUseLegacySpawningBehavior": true,
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel SniperMF:ParticleSpriteEmitter_0.ParticleLODLevel_0",
+          "ObjectPath": "War/Content/FX/SniperMF.9"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_1",
+    "Outer": "SniperMF",
+    "Properties": {
+      "bUseLegacySpawningBehavior": true,
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel SniperMF:ParticleSpriteEmitter_1.ParticleLODLevel_1",
+          "ObjectPath": "War/Content/FX/SniperMF.10"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_2",
+    "Outer": "SniperMF",
+    "Properties": {
+      "EmitterRenderMode": "ERM_LightsOnly",
+      "bUseLegacySpawningBehavior": true,
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel SniperMF:ParticleSpriteEmitter_2.ParticleLODLevel_2",
+          "ObjectPath": "War/Content/FX/SniperMF.11"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_3",
+    "Outer": "SniperMF",
+    "Properties": {
+      "bUseLegacySpawningBehavior": true,
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel SniperMF:ParticleSpriteEmitter_3.ParticleLODLevel_0",
+          "ObjectPath": "War/Content/FX/SniperMF.12"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_4",
+    "Outer": "SniperMF",
+    "Properties": {
+      "bUseLegacySpawningBehavior": true,
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel SniperMF:ParticleSpriteEmitter_4.ParticleLODLevel_0",
+          "ObjectPath": "War/Content/FX/SniperMF.13"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "SniperMF",
+    "Properties": {
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter SniperMF:ParticleSpriteEmitter_0",
+          "ObjectPath": "War/Content/FX/SniperMF.70"
+        },
+        {
+          "ObjectName": "ParticleSpriteEmitter SniperMF:ParticleSpriteEmitter_2",
+          "ObjectPath": "War/Content/FX/SniperMF.72"
+        },
+        {
+          "ObjectName": "ParticleSpriteEmitter SniperMF:ParticleSpriteEmitter_1",
+          "ObjectPath": "War/Content/FX/SniperMF.71"
+        },
+        {
+          "ObjectName": "ParticleSpriteEmitter SniperMF:ParticleSpriteEmitter_4",
+          "ObjectPath": "War/Content/FX/SniperMF.74"
+        },
+        {
+          "ObjectName": "ParticleSpriteEmitter SniperMF:ParticleSpriteEmitter_3",
+          "ObjectPath": "War/Content/FX/SniperMF.73"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "FixedRelativeBoundingBox": {
+        "Min": {
+          "X": -20000.0,
+          "Y": -20000.0,
+          "Z": -20000.0
+        },
+        "Max": {
+          "X": 20000.0,
+          "Y": 20000.0,
+          "Z": 20000.0
+        },
+        "IsValid": 1
+      },
+      "bUseFixedRelativeBoundingBox": true,
+      "bShouldResetPeakCounts": true,
+      "CustomOcclusionBounds": {
+        "Min": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Max": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "IsValid": 1
+      }
+    }
+  }
+]

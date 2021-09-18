@@ -1,0 +1,99 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "GourdPlant04",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "GourdPlant04",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x8695"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "GourdPlant04",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant GourdPlant",
+            "ObjectPath": "War/Content/Materials/Environment/GourdPlant.0"
+          },
+          "MaterialSlotName": "GourdLeaves",
+          "ImportedMaterialSlotName": "GourdLeaves",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 115.47227,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Gourds",
+            "ObjectPath": "War/Content/Materials/Environment/Gourds.0"
+          },
+          "MaterialSlotName": "Gourd2",
+          "ImportedMaterialSlotName": "Gourd2",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 296.50635,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 199.37993,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 7.1657333,
+          "Y": 6.124176,
+          "Z": 46.758087
+        },
+        "BoxExtent": {
+          "X": 88.52176,
+          "Y": 94.386826,
+          "Z": 49.1308
+        },
+        "SphereRadius": 109.72222
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup GourdPlant04:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/GourdPlant04.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision GourdPlant04:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/GourdPlant04.1"
+    },
+    "LightingGuid": "33BEEF80-489DA8CA-65B00D82-CEBE45C6",
+    "RenderData": null
+  }
+]

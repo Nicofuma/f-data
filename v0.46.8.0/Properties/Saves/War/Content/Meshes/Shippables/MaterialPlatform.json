@@ -1,0 +1,122 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "MaterialPlatform",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.55867004,
+              "Y": 0.5994568,
+              "Z": 15.279912
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 275.9354,
+            "Y": 425.0631,
+            "Z": 30.483465,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_5",
+    "Outer": "MaterialPlatform",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0xCB6A"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "MaterialPlatform",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownWoodBeams05",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownWoodBeams05.0"
+          },
+          "MaterialSlotName": "FortT2WoodBeam01",
+          "ImportedMaterialSlotName": "FortT2WoodBeam01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 200.67805,
+            "LocalUVDensities": 0.46890798,
+            "LocalUVDensities": 0.46890798,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RepeatingMetal3",
+            "ObjectPath": "War/Content/Materials/Resources/RepeatingMetal3.0"
+          },
+          "MaterialSlotName": "Metal",
+          "ImportedMaterialSlotName": "Metal",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 6.3534927,
+            "LocalUVDensities": 1.2869337,
+            "LocalUVDensities": 1.2869337,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 0.97656214,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.55867004,
+          "Y": 0.5994568,
+          "Z": 15.279912
+        },
+        "BoxExtent": {
+          "X": 137.9677,
+          "Y": 212.53156,
+          "Z": 15.241733
+        },
+        "SphereRadius": 253.56377
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup MaterialPlatform:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Shippables/MaterialPlatform.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision MaterialPlatform:NavCollision_5",
+      "ObjectPath": "War/Content/Meshes/Shippables/MaterialPlatform.1"
+    },
+    "LightingGuid": "324C40C2-4FDD0125-A55FD49B-7CA3613C",
+    "RenderData": null
+  }
+]

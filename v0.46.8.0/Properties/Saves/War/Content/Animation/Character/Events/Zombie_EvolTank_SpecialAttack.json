@@ -1,0 +1,148 @@
+[
+  {
+    "Type": "AnimMontage",
+    "Name": "Zombie_EvolTank_SpecialAttack",
+    "Properties": {
+      "BlendIn": {
+        "BlendTime": 0.1
+      },
+      "CompositeSections": [
+        {
+          "SectionName": "Default",
+          "NextSectionName": "None",
+          "MetaData": [],
+          "LinkedMontage": {
+            "ObjectName": "AnimMontage Zombie_EvolTank_SpecialAttack",
+            "ObjectPath": "War/Content/Animation/Character/Events/Zombie_EvolTank_SpecialAttack.0"
+          },
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 2.0,
+          "LinkValue": 0.0,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence Anim_Zombie_EvolTank_SpecialAttack",
+            "ObjectPath": "War/Content/Animation/Character/Events/Anim_Zombie_EvolTank_SpecialAttack.0"
+          }
+        },
+        {
+          "SectionName": "Crouched",
+          "NextSectionName": "None",
+          "MetaData": [],
+          "LinkedMontage": {
+            "ObjectName": "AnimMontage Zombie_EvolTank_SpecialAttack",
+            "ObjectPath": "War/Content/Animation/Character/Events/Zombie_EvolTank_SpecialAttack.0"
+          },
+          "SlotIndex": 0,
+          "SegmentIndex": 1,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 2.0,
+          "SegmentLength": 2.0,
+          "LinkValue": 2.0,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence Anim_Zombie_EvolTank_SpecialAttack",
+            "ObjectPath": "War/Content/Animation/Character/Events/Anim_Zombie_EvolTank_SpecialAttack.0"
+          }
+        }
+      ],
+      "SlotAnimTracks": [
+        {
+          "SlotName": "FullBody",
+          "AnimTrack": {
+            "AnimSegments": [
+              {
+                "AnimReference": {
+                  "ObjectName": "AnimSequence Anim_Zombie_EvolTank_SpecialAttack",
+                  "ObjectPath": "War/Content/Animation/Character/Events/Anim_Zombie_EvolTank_SpecialAttack.0"
+                },
+                "StartPos": 0.0,
+                "AnimStartTime": 0.0,
+                "AnimEndTime": 2.0,
+                "AnimPlayRate": 1.0,
+                "LoopingCount": 1
+              },
+              {
+                "AnimReference": {
+                  "ObjectName": "AnimSequence Anim_Zombie_EvolTank_SpecialAttack",
+                  "ObjectPath": "War/Content/Animation/Character/Events/Anim_Zombie_EvolTank_SpecialAttack.0"
+                },
+                "StartPos": 2.0,
+                "AnimStartTime": 0.0,
+                "AnimEndTime": 2.0,
+                "AnimPlayRate": 1.0,
+                "LoopingCount": 1
+              }
+            ]
+          }
+        }
+      ],
+      "Notifies": [
+        {
+          "TriggerTimeOffset": 0.0,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "PlaySound",
+          "Notify": {
+            "ObjectName": "AnimNotify_PlaySound Zombie_EvolTank_SpecialAttack:AnimNotify_PlaySound_0",
+            "ObjectPath": "War/Content/Animation/Character/Events/Zombie_EvolTank_SpecialAttack.1"
+          },
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 0.09810194,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 0,
+          "LinkedMontage": {
+            "ObjectName": "AnimMontage Zombie_EvolTank_SpecialAttack",
+            "ObjectPath": "War/Content/Animation/Character/Events/Zombie_EvolTank_SpecialAttack.0"
+          },
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 2.0,
+          "LinkValue": 0.09810194,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence Anim_Zombie_EvolTank_SpecialAttack",
+            "ObjectPath": "War/Content/Animation/Character/Events/Anim_Zombie_EvolTank_SpecialAttack.0"
+          }
+        }
+      ],
+      "SequenceLength": 4.0,
+      "Skeleton": {
+        "ObjectName": "Skeleton Character_Male_Skeleton",
+        "ObjectPath": "War/Content/Meshes/Character/Character_Male_Skeleton.7"
+      }
+    }
+  },
+  {
+    "Type": "AnimNotify_PlaySound",
+    "Name": "AnimNotify_PlaySound_0",
+    "Outer": "Zombie_EvolTank_SpecialAttack",
+    "Properties": {
+      "Sound": {
+        "ObjectName": "SoundCue T3ZombieJump_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Zombie/T3ZombieJump_Cue.0"
+      }
+    }
+  }
+]

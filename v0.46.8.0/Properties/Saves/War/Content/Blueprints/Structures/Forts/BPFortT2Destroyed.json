@@ -1,0 +1,326 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "FortCommonDirt",
+    "Outer": "BPFortT2Destroyed_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class TemplateComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPFortT2Destroyed_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPFortT2Destroyed_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortT2Destroyed.13"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class Fort",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPFortT2Destroyed_C:FortCommonDirt",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortT2Destroyed.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortT2Destroyed_C:FortCommon",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortT2Destroyed.6"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFortT2Destroyed_C:FortT2Destroyed01",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortT2Destroyed.7"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPFortT2Destroyed_C",
+    "Name": "Default__BPFortT2Destroyed_C",
+    "Properties": {
+      "EmplacementLocation": {
+        "ObjectName": "BoxComponent Default__BPFortT2Destroyed_C:EmplacementLocation",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortT2Destroyed.4"
+      },
+      "MinUpgradeTargetDistance": 300.0,
+      "Tier": "EFortTier::T2",
+      "bDisableModificationSlotValidation": true,
+      "bReadOnlyModifications": true,
+      "BuildGhostClass": null,
+      "BuildSiteClass": {
+        "ObjectName": "Class FortBuildSite",
+        "ObjectPath": "/Script/War"
+      },
+      "Icon": {
+        "ObjectName": "Texture2D FortT2Icon",
+        "ObjectPath": "War/Content/Textures/UI/StructureIcons/FortT2Icon.0"
+      },
+      "DestroyedDamageExtent": {
+        "X": 300.0,
+        "Y": 300.0,
+        "Z": 100.0
+      },
+      "bRequiresShovelToBuild": true,
+      "CodeName": "FortDestroyedT2",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "7186F6124437DEBD2F843BB670ACF7A9",
+        "SourceString": "Bunker (Tier 2)"
+      },
+      "ProfileType": "EStructureProfileType::DestroyedFort",
+      "ArmourType": "EArmourType::Tier2Structure",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPFortT2Destroyed_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortT2Destroyed.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPFortT2Destroyed_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortT2Destroyed.5"
+      },
+      "MaxHealth": 1850,
+      "Health": 1850,
+      "UpgradeStructureCodeName": "FortT2",
+      "ClaimStatus": {
+        "bIsEnabled": false
+      },
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPFortT2Destroyed_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortT2Destroyed.15"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPFortT2Destroyed_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortT2Destroyed.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPFortT2Destroyed_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "EmplacementLocation",
+    "Outer": "Default__BPFortT2Destroyed_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFortT2Destroyed_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortT2Destroyed.3"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPFortT2Destroyed_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 300.0,
+        "Y": 300.0,
+        "Z": 100.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFortT2Destroyed_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortT2Destroyed.3"
+      },
+      "RelativeLocation": {
+        "X": -6.1035156E-05,
+        "Y": 1.4084167,
+        "Z": 66.99985
+      }
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "FortCommon",
+    "Outer": "BPFortT2Destroyed_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class TemplateComponent",
+      "ObjectPath": "/Script/War"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "FortT2Destroyed01",
+    "Outer": "BPFortT2Destroyed_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPFortT2Destroyed_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPFortT2Destroyed_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortT2Destroyed.8"
+      },
+      "VariableGuid": "1144E758-45F21128-659C63A0-98B6F24C",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class TemplateComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "TemplateComponent BPFortT2Destroyed_C:FortCommon_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortT2Destroyed.16"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "7EDE5A99-4F8206EE-6B7B869D-D8A5C8F8",
+      "InternalVariableName": "FortCommon"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class TemplateComponent",
+        "ObjectPath": "/Script/War"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "TemplateComponent BPFortT2Destroyed_C:FortCommonDirt_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortT2Destroyed.17"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "BE507C89-4C9F79E1-0ADA90A2-B3098CAF",
+      "InternalVariableName": "FortCommonDirt"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_25",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPFortT2Destroyed_C:FortT2Destroyed01_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortT2Destroyed.14"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "02C718C9-4C13ADC8-5C6740B7-32DB1A1B",
+      "InternalVariableName": "FortT2Destroyed01"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPFortT2Destroyed_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPFortT2Destroyed_C:SimpleConstructionScript_0.SCS_Node_25",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortT2Destroyed.12"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortT2Destroyed_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortT2Destroyed.10"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortT2Destroyed_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortT2Destroyed.11"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPFortT2Destroyed_C:SimpleConstructionScript_0.SCS_Node_25",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortT2Destroyed.12"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortT2Destroyed_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortT2Destroyed.10"
+        },
+        {
+          "ObjectName": "SCS_Node BPFortT2Destroyed_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortT2Destroyed.11"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPFortT2Destroyed_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortT2Destroyed.9"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "FortT2Destroyed01_GEN_VARIABLE",
+    "Outer": "BPFortT2Destroyed_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh FortT2Destroyed01",
+        "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortT2Destroyed01.2"
+      },
+      "bReceivesDecals": false,
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -160.0
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPFortT2Destroyed_C"
+  },
+  {
+    "Type": "TemplateComponent",
+    "Name": "FortCommon_GEN_VARIABLE",
+    "Outer": "BPFortT2Destroyed_C",
+    "Properties": {
+      "TemplateActor": {
+        "ObjectName": "BlueprintGeneratedClass BPFortCommon_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommon.1"
+      }
+    }
+  },
+  {
+    "Type": "TemplateComponent",
+    "Name": "FortCommonDirt_GEN_VARIABLE",
+    "Outer": "BPFortT2Destroyed_C",
+    "Properties": {
+      "TemplateActor": {
+        "ObjectName": "BlueprintGeneratedClass BPFortCommonDirt_C",
+        "ObjectPath": "War/Content/Blueprints/Structures/Forts/BPFortCommonDirt.1"
+      }
+    }
+  }
+]

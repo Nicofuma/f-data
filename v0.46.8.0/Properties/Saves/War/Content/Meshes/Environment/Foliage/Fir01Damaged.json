@@ -1,0 +1,136 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Fir01Damaged",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 2.2655697,
+              "Y": -11.823498,
+              "Z": 155.89061
+            },
+            "Rotation": {
+              "Pitch": 1.9389677,
+              "Yaw": -0.1810298,
+              "Roll": -1.7321956
+            },
+            "Radius": 45.22877,
+            "Length": 282.93774,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "Fir01Damaged",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 5521,
+        "SizeOnDisk": 5521,
+        "OffsetInFile": "0x1735E"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Fir01Damaged",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant PinePatch",
+            "ObjectPath": "War/Content/Materials/Environment/Props/PinePatch.0"
+          },
+          "MaterialSlotName": "Decal",
+          "ImportedMaterialSlotName": "Decal",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 545.98755,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 1.4568598,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant PineBarkDamaged",
+            "ObjectPath": "War/Content/Materials/Environment/Props/PineBarkDamaged.0"
+          },
+          "MaterialSlotName": "PineBark",
+          "ImportedMaterialSlotName": "PineBark",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 142.9396,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 3.7241056,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TreeInterior",
+            "ObjectPath": "War/Content/Materials/Environment/Props/TreeInterior.0"
+          },
+          "MaterialSlotName": "TreeInterior",
+          "ImportedMaterialSlotName": "TreeInterior",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 45.762238,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.6592911,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 179.89954,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 542.2438
+        },
+        "BoxExtent": {
+          "X": 270.94687,
+          "Y": 270.94684,
+          "Z": 558.6479
+        },
+        "SphereRadius": 657.9191
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Fir01Damaged:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/Fir01Damaged.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Fir01Damaged:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/Fir01Damaged.1"
+    },
+    "LightingGuid": "82589848-45DD2D8F-2A325B9F-8EB05A2A",
+    "RenderData": null
+  }
+]

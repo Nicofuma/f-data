@@ -1,0 +1,89 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Apple01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "Apple01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x9354"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Apple01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Food01",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Food01.0"
+          },
+          "MaterialSlotName": "Material #490",
+          "ImportedMaterialSlotName": "Material #490",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 102.82011,
+            "LocalUVDensities": 71.12681,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 71.12681,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 10.328501
+        },
+        "BoxExtent": {
+          "X": 19.020065,
+          "Y": 17.947803,
+          "Z": 10.726381
+        },
+        "SphereRadius": 22.261421
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Apple01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Apple01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Apple01:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Apple01.1"
+    },
+    "LightingGuid": "ED4AF2FD-4CFC3797-6E867ABF-1DF062B6",
+    "RenderData": null
+  }
+]

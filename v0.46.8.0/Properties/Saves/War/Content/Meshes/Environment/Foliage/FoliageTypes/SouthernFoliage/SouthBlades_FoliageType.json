@@ -1,0 +1,95 @@
+[
+  {
+    "Type": "FoliageType_InstancedStaticMesh",
+    "Name": "SouthBlades_FoliageType",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh GrassSouthBlades01",
+        "ObjectPath": "War/Content/Meshes/Environment/Foliage/GrassSouthBlades01.2"
+      },
+      "UpdateGuid": "9F16BFF1-42A268E8-5C92D0AF-A505C71A",
+      "Radius": 25.0,
+      "ScaleX": {
+        "Min": 0.8,
+        "Max": 1.1
+      },
+      "AlignToNormal": false,
+      "RandomPitchAngle": 5.0,
+      "GroundSlopeAngle": {
+        "Max": 90.0
+      },
+      "MeshBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 7.6293945E-06,
+          "Z": 31.20696
+        },
+        "BoxExtent": {
+          "X": 112.15322,
+          "Y": 96.11946,
+          "Z": 31.479372
+        },
+        "SphereRadius": 124.95741
+      },
+      "LowBoundOriginRadius": {
+        "X": 0.0,
+        "Y": 3.8146973E-06,
+        "Z": 147.70679
+      },
+      "CullDistance": {
+        "Min": 7000,
+        "Max": 7000
+      },
+      "CastShadow": false,
+      "bCastDynamicShadow": false,
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::QueryOnly",
+        "CollisionProfileName": "FoliageBush",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapDowncast",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Projectile",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "ChangeCount": 102
+    }
+  }
+]

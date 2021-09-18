@@ -1,0 +1,184 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_4",
+    "Outer": "Pillar-T1",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -50.0,
+                "Y": 49.99999,
+                "Z": -223.35657
+              },
+              {
+                "X": 50.0,
+                "Y": 49.99999,
+                "Z": -223.35657
+              },
+              {
+                "X": -50.0,
+                "Y": -50.00001,
+                "Z": -223.35657
+              },
+              {
+                "X": 50.0,
+                "Y": -50.00001,
+                "Z": -223.35657
+              },
+              {
+                "X": -50.0,
+                "Y": 49.99999,
+                "Z": 442.64343
+              },
+              {
+                "X": 50.0,
+                "Y": 49.99999,
+                "Z": 442.64343
+              },
+              {
+                "X": -50.0,
+                "Y": -50.00001,
+                "Z": 442.64343
+              },
+              {
+                "X": 50.0,
+                "Y": -50.00001,
+                "Z": 442.64343
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -50.0,
+                "Y": -50.00001,
+                "Z": -223.35657
+              },
+              "Max": {
+                "X": 50.0,
+                "Y": 49.99999,
+                "Z": 442.64343
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_8",
+    "Outer": "Pillar-T1",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 457,
+        "SizeOnDisk": 457,
+        "OffsetInFile": "0xA9AD"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Pillar-T1",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RepeatingRope",
+            "ObjectPath": "War/Content/Materials/Environment/Props/RepeatingRope.0"
+          },
+          "MaterialSlotName": "WoodBeamWetland",
+          "ImportedMaterialSlotName": "Material #1622",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 78.06745,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortT1WoodLogs01",
+            "ObjectPath": "War/Content/Materials/Structures/FortT1WoodLogs01.0"
+          },
+          "MaterialSlotName": "RepeatingRope",
+          "ImportedMaterialSlotName": "Wood",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 265.92404,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 199.36734,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.9543266,
+          "Y": 0.90195465,
+          "Z": 75.81183
+        },
+        "BoxExtent": {
+          "X": 39.050213,
+          "Y": 38.017647,
+          "Z": 301.56808
+        },
+        "SphereRadius": 302.83698
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Pillar-T1:BodySetup_4",
+      "ObjectPath": "War/Content/Meshes/Structures/Walls/Pillar-T1.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Pillar-T1:NavCollision_8",
+      "ObjectPath": "War/Content/Meshes/Structures/Walls/Pillar-T1.1"
+    },
+    "LightingGuid": "ADE47D9F-4441D123-D59E60A5-B4F819A2",
+    "RenderData": null
+  }
+]

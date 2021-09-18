@@ -1,0 +1,104 @@
+[
+  {
+    "Type": "SoundCue",
+    "Name": "SimpleBallisticsHit_Cue",
+    "Properties": {
+      "FirstNode": {
+        "ObjectName": "SoundNodeModulator SimpleBallisticsHit_Cue:SoundNodeModulator_2",
+        "ObjectPath": "War/Content/Audio/SFX/SimpleBallisticsHit_Cue.1"
+      },
+      "VolumeMultiplier": 1.0,
+      "AttenuationOverrides": {
+        "DistanceAlgorithm": "EAttenuationDistanceModel::Logarithmic",
+        "FalloffDistance": 2500.0
+      },
+      "SoundClassObject": {
+        "ObjectName": "SoundClass Impact",
+        "ObjectPath": "War/Content/Audio/SoundClasses/SFX.3"
+      },
+      "Duration": 0.61052084,
+      "MaxDistance": 8000.0,
+      "AttenuationSettings": {
+        "ObjectName": "SoundAttenuation BallisticsImpact",
+        "ObjectPath": "War/Content/Audio/Attenuations/BallisticsImpact.0"
+      }
+    }
+  },
+  {
+    "Type": "SoundNodeModulator",
+    "Name": "SoundNodeModulator_2",
+    "Outer": "SimpleBallisticsHit_Cue",
+    "Properties": {
+      "PitchMin": 0.8,
+      "PitchMax": 1.2,
+      "VolumeMin": 0.9,
+      "VolumeMax": 1.1,
+      "ChildNodes": [
+        {
+          "ObjectName": "SoundNodeRandom SimpleBallisticsHit_Cue:SoundNodeRandom_0",
+          "ObjectPath": "War/Content/Audio/SFX/SimpleBallisticsHit_Cue.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SoundNodeRandom",
+    "Name": "SoundNodeRandom_0",
+    "Outer": "SimpleBallisticsHit_Cue",
+    "Properties": {
+      "Weights": [
+        1.0,
+        1.0,
+        0.5
+      ],
+      "bRandomizeWithoutReplacement": false,
+      "ChildNodes": [
+        {
+          "ObjectName": "SoundNodeWavePlayer SimpleBallisticsHit_Cue:SoundNodeWavePlayer_1",
+          "ObjectPath": "War/Content/Audio/SFX/SimpleBallisticsHit_Cue.3"
+        },
+        {
+          "ObjectName": "SoundNodeWavePlayer SimpleBallisticsHit_Cue:SoundNodeWavePlayer_2",
+          "ObjectPath": "War/Content/Audio/SFX/SimpleBallisticsHit_Cue.4"
+        },
+        {
+          "ObjectName": "SoundNodeWavePlayer SimpleBallisticsHit_Cue:SoundNodeWavePlayer_3",
+          "ObjectPath": "War/Content/Audio/SFX/SimpleBallisticsHit_Cue.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SoundNodeWavePlayer",
+    "Name": "SoundNodeWavePlayer_1",
+    "Outer": "SimpleBallisticsHit_Cue",
+    "Properties": {
+      "SoundWaveAssetPtr": {
+        "AssetPathName": "/Game/Audio/SFX/SimpleBallisticsHit01.SimpleBallisticsHit01",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "SoundNodeWavePlayer",
+    "Name": "SoundNodeWavePlayer_2",
+    "Outer": "SimpleBallisticsHit_Cue",
+    "Properties": {
+      "SoundWaveAssetPtr": {
+        "AssetPathName": "/Game/Audio/SFX/SimpleBallisticsHit02.SimpleBallisticsHit02",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "SoundNodeWavePlayer",
+    "Name": "SoundNodeWavePlayer_3",
+    "Outer": "SimpleBallisticsHit_Cue",
+    "Properties": {
+      "SoundWaveAssetPtr": {
+        "AssetPathName": "/Game/Audio/SFX/SimpleBallisticsHit03.SimpleBallisticsHit03",
+        "SubPathString": ""
+      }
+    }
+  }
+]

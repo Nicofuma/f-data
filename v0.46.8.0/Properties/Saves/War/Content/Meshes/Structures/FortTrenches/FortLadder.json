@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FortLadder",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "FortLadder",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x30DA"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FortLadder",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant LadderMetal",
+            "ObjectPath": "War/Content/Materials/Environment/Props/LadderMetal.0"
+          },
+          "MaterialSlotName": "LadderMetal",
+          "ImportedMaterialSlotName": "LadderMetal",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 133.67047,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 133.67047,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.1444092E-05,
+          "Y": 77.696175,
+          "Z": 178.16112
+        },
+        "BoxExtent": {
+          "X": 37.5003,
+          "Y": 30.063898,
+          "Z": 178.16159
+        },
+        "SphereRadius": 184.48518
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FortLadder:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortLadder.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FortLadder:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/FortLadder.1"
+    },
+    "LightingGuid": "ACF513B2-46908FDA-063A8593-D9594446",
+    "RenderData": null
+  }
+]

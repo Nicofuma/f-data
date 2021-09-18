@@ -1,0 +1,200 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_2",
+    "Outer": "HeavyArtilleryCPacked",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -137.5,
+                "Y": 299.99997,
+                "Z": 275.00006
+              },
+              {
+                "X": 137.5,
+                "Y": 299.99997,
+                "Z": 275.00006
+              },
+              {
+                "X": 137.5,
+                "Y": 300.0,
+                "Z": 4.8876205E-05
+              },
+              {
+                "X": -137.5,
+                "Y": 300.0,
+                "Z": 4.8876205E-05
+              },
+              {
+                "X": 137.5,
+                "Y": -300.0,
+                "Z": -4.8876205E-05
+              },
+              {
+                "X": 137.5,
+                "Y": -300.00003,
+                "Z": 274.99994
+              },
+              {
+                "X": -137.5,
+                "Y": -300.0,
+                "Z": -4.8876205E-05
+              },
+              {
+                "X": -137.5,
+                "Y": -300.00003,
+                "Z": 274.99994
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -137.5,
+                "Y": -300.00003,
+                "Z": -4.8876205E-05
+              },
+              "Max": {
+                "X": 137.5,
+                "Y": 300.0,
+                "Z": 275.00006
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "HeavyArtilleryCPacked",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 457,
+        "SizeOnDisk": 457,
+        "OffsetInFile": "0x4ADC9"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "HeavyArtilleryCPacked",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant HeavyArtilleryC",
+            "ObjectPath": "War/Content/Materials/Structures/HeavyArtilleryC.0"
+          },
+          "MaterialSlotName": "HeavyArtilleryC",
+          "ImportedMaterialSlotName": "HeavyArtilleryC",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 853.7907,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RepeatingRope",
+            "ObjectPath": "War/Content/Materials/Environment/Props/RepeatingRope.0"
+          },
+          "MaterialSlotName": "rope",
+          "ImportedMaterialSlotName": "rope",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 44.09467,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ProductionPartsTarp",
+            "ObjectPath": "War/Content/Materials/Environment/Props/ProductionPartsTarp.0"
+          },
+          "MaterialSlotName": "Tarp",
+          "ImportedMaterialSlotName": "Tarp",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 552.6585,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 700.1518,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -1.2238312,
+          "Y": 28.17923,
+          "Z": 123.663445
+        },
+        "BoxExtent": {
+          "X": 158.53598,
+          "Y": 342.85092,
+          "Z": 130.28862
+        },
+        "SphereRadius": 362.8959
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup HeavyArtilleryCPacked:BodySetup_2",
+      "ObjectPath": "War/Content/Meshes/Structures/HeavyArtilleryCPacked.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision HeavyArtilleryCPacked:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Structures/HeavyArtilleryCPacked.1"
+    },
+    "LightingGuid": "878E6E9F-4B2263A1-A6D974B2-5C782888",
+    "RenderData": null
+  }
+]

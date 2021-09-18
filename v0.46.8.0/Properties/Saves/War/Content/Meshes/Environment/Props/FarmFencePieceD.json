@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FarmFencePieceD",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "FarmFencePieceD",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2743"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FarmFencePieceD",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FarmFence02",
+            "ObjectPath": "War/Content/Materials/Environment/Props/FarmFence02.0"
+          },
+          "MaterialSlotName": "FarmFence",
+          "ImportedMaterialSlotName": "FarmFence",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 449.59644,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 449.59644,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 78.08197,
+          "Y": 13.1623745,
+          "Z": 17.654861
+        },
+        "SphereRadius": 80.32686
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FarmFencePieceD:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FarmFencePieceD.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FarmFencePieceD:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FarmFencePieceD.1"
+    },
+    "LightingGuid": "DF13A3F1-48083C29-BF9FEFA3-8ED3FEDF",
+    "RenderData": null
+  }
+]

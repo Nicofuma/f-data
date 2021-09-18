@@ -1,0 +1,115 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "CoverStreetlamp1aSouth",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "CoverStreetlamp1aSouth",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xB125"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "CoverStreetlamp1aSouth",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "Engine/Content/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "FireBarrel",
+          "ImportedMaterialSlotName": "FireBarrel",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 30.358824,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "Engine/Content/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "StreetLamp",
+          "ImportedMaterialSlotName": "StreetLamp",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 418.5509,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "Engine/Content/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "GlassBasic",
+          "ImportedMaterialSlotName": "GlassBasic",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 85.235405,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 395.84058,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -2.6333485,
+          "Z": 244.82307
+        },
+        "BoxExtent": {
+          "X": 26.37385,
+          "Y": 26.373856,
+          "Z": 296.47855
+        },
+        "SphereRadius": 297.6493
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup CoverStreetlamp1aSouth:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Props/CoverStreetlamp1aSouth.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision CoverStreetlamp1aSouth:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/Props/CoverStreetlamp1aSouth.1"
+    },
+    "LightingGuid": "45A4178D-4209A196-B0D8E2AC-8E9A5208",
+    "RenderData": null
+  }
+]

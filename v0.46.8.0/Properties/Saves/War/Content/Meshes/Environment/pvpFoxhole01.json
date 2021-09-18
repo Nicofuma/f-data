@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "pvpFoxhole01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "pvpFoxhole01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1D687"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "pvpFoxhole01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant pvpFoxhole",
+            "ObjectPath": "War/Content/Materials/Environment/pvpFoxhole.0"
+          },
+          "MaterialSlotName": "PvpFoxhole",
+          "ImportedMaterialSlotName": "PvpFoxhole",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 879.2897,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 879.2897,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 5.0879517,
+          "Y": -2.0065918,
+          "Z": -4.9715157
+        },
+        "BoxExtent": {
+          "X": 420.2088,
+          "Y": 402.01086,
+          "Z": 48.328022
+        },
+        "SphereRadius": 430.75293
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup pvpFoxhole01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/pvpFoxhole01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision pvpFoxhole01:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/pvpFoxhole01.1"
+    },
+    "LightingGuid": "55F3D641-4A1FCBE7-56F750A6-CF6D6ADB",
+    "RenderData": null
+  }
+]

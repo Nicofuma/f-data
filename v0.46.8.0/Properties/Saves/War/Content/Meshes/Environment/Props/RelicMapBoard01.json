@@ -1,0 +1,105 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "RelicMapBoard01",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 0.8760147,
+              "Z": 158.36227
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 387.97885,
+            "Y": 17.974169,
+            "Z": 316.72455,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "RelicMapBoard01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x1776"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "RelicMapBoard01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RelicMapBoard01",
+            "ObjectPath": "War/Content/Materials/Environment/Props/RelicMapBoard01.0"
+          },
+          "MaterialSlotName": "RelicMapBoard01",
+          "ImportedMaterialSlotName": "Material #30",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 475.09265,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 475.09265,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.8760147,
+          "Z": 158.36227
+        },
+        "BoxExtent": {
+          "X": 193.98943,
+          "Y": 32.675117,
+          "Z": 158.36227
+        },
+        "SphereRadius": 250.54047
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup RelicMapBoard01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/RelicMapBoard01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision RelicMapBoard01:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/RelicMapBoard01.1"
+    },
+    "LightingGuid": "832008D5-46EDFB36-27B122BF-23E7711B",
+    "RenderData": null
+  }
+]

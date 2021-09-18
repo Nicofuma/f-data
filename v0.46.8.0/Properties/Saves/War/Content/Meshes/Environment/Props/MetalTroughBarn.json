@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "MetalTroughBarn",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "MetalTroughBarn",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x6D4A"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "MetalTroughBarn",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MetalBarnAssets",
+            "ObjectPath": "War/Content/Materials/Environment/Props/MetalBarnAssets.0"
+          },
+          "MaterialSlotName": "MetalBarnAssets",
+          "ImportedMaterialSlotName": "MetalBarnAssets",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 480.50848,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 480.50848,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 3.8146973E-06,
+          "Z": 30.225061
+        },
+        "BoxExtent": {
+          "X": 66.20114,
+          "Y": 39.71018,
+          "Z": 30.35285
+        },
+        "SphereRadius": 72.084305
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup MetalTroughBarn:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/MetalTroughBarn.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision MetalTroughBarn:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/MetalTroughBarn.1"
+    },
+    "LightingGuid": "8ED7269F-4412E242-0425DDA1-1C62B746",
+    "RenderData": null
+  }
+]

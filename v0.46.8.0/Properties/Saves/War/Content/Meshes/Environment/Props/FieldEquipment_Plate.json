@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FieldEquipment_Plate",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "FieldEquipment_Plate",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x257C"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FieldEquipment_Plate",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FieldEquipment",
+            "ObjectPath": "War/Content/Materials/Environment/Props/FieldEquipment.0"
+          },
+          "MaterialSlotName": "Material #490",
+          "ImportedMaterialSlotName": "Material #490",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 197.73138,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 197.73138,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.026004791,
+          "Y": 0.0081214905,
+          "Z": 3.3359652
+        },
+        "BoxExtent": {
+          "X": 32.579388,
+          "Y": 17.873241,
+          "Z": 3.3359668
+        },
+        "SphereRadius": 32.760952
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FieldEquipment_Plate:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FieldEquipment_Plate.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FieldEquipment_Plate:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FieldEquipment_Plate.1"
+    },
+    "LightingGuid": "E84DA1D9-4C3B0408-73ECC2B3-198FBC91",
+    "RenderData": null
+  }
+]

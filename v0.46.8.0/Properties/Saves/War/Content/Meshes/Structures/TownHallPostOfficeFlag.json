@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "TownHallPostOfficeFlag",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "TownHallPostOfficeFlag",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1263"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TownHallPostOfficeFlag",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FlagHangingColonialsTownHall",
+            "ObjectPath": "War/Content/Materials/Structures/FlagHangingColonialsTownHall.0"
+          },
+          "MaterialSlotName": "FlagHangingColonials",
+          "ImportedMaterialSlotName": "FlagHangingColonials",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 198.00304,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 198.00304,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 27.785645,
+          "Y": 151.16394,
+          "Z": 612.70526
+        },
+        "BoxExtent": {
+          "X": 756.24756,
+          "Y": 632.80927,
+          "Z": 225.06038
+        },
+        "SphereRadius": 1009.27
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TownHallPostOfficeFlag:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/TownHallPostOfficeFlag.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TownHallPostOfficeFlag:NavCollision_4",
+      "ObjectPath": "War/Content/Meshes/Structures/TownHallPostOfficeFlag.1"
+    },
+    "LightingGuid": "C1261AD0-4BD27C25-BF8D3399-26BC8626",
+    "RenderData": null
+  }
+]

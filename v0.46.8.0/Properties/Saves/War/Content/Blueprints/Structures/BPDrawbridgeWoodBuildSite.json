@@ -1,0 +1,605 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "CollisionB",
+    "Outer": "BPDrawbridgeWoodBuildSite_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BoxComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPDrawbridgeWoodBuildSite_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPDrawbridgeWoodBuildSite_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.23"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class DrawbridgeBuildSite",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPDrawbridgeWoodBuildSite_C:CollisionB",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.0"
+      },
+      {
+        "ObjectName": "ObjectProperty BPDrawbridgeWoodBuildSite_C:BuildSiteB",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.9"
+      },
+      {
+        "ObjectName": "ObjectProperty BPDrawbridgeWoodBuildSite_C:ReferenceB",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.12"
+      },
+      {
+        "ObjectName": "ObjectProperty BPDrawbridgeWoodBuildSite_C:ReferenceA",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.11"
+      },
+      {
+        "ObjectName": "ObjectProperty BPDrawbridgeWoodBuildSite_C:BuildSite",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.8"
+      },
+      {
+        "ObjectName": "ObjectProperty BPDrawbridgeWoodBuildSite_C:CollisionA",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.10"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPDrawbridgeWoodBuildSite_C",
+    "Name": "Default__BPDrawbridgeWoodBuildSite_C",
+    "Properties": {
+      "SideAProxy": {
+        "ObjectName": "PersistentProxyComponent Default__BPDrawbridgeWoodBuildSite_C:SideAProxy",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.13"
+      },
+      "SideBProxy": {
+        "ObjectName": "PersistentProxyComponent Default__BPDrawbridgeWoodBuildSite_C:SideBProxy",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.14"
+      },
+      "ObstructionCheckVolume": {
+        "ObjectName": "BoxComponent Default__BPDrawbridgeWoodBuildSite_C:ObstructionCheckVolume",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.6"
+      },
+      "CodeName": "DrawbridgeWoodBuildSite",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPDrawbridgeWoodBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPDrawbridgeWoodBuildSite_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.7"
+      },
+      "Health": 0,
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPDrawbridgeWoodBuildSite_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.28"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPDrawbridgeWoodBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPDrawbridgeWoodBuildSite_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "CollisionA_GEN_VARIABLE",
+    "Outer": "BPDrawbridgeWoodBuildSite_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 217.0,
+        "Y": 45.0,
+        "Z": 200.0
+      },
+      "AreaClass": {
+        "ObjectName": "Class NavArea_Obstacle",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "CanCharacterStepUpOn": "ECB_No",
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "BlockAllDynamic",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 1812.0,
+        "Z": 51.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "CollisionB_GEN_VARIABLE",
+    "Outer": "BPDrawbridgeWoodBuildSite_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 256.0,
+        "Y": 45.0,
+        "Z": 200.0
+      },
+      "AreaClass": {
+        "ObjectName": "Class NavArea_Obstacle",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "CanCharacterStepUpOn": "ECB_No",
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "BlockAllDynamic",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": -1812.0,
+        "Z": 51.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ObstructionCheckVolume",
+    "Outer": "Default__BPDrawbridgeWoodBuildSite_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPDrawbridgeWoodBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.3"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPDrawbridgeWoodBuildSite_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPDrawbridgeWoodBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.3"
+      }
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "BuildSite",
+    "Outer": "BPDrawbridgeWoodBuildSite_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "BuildSiteB",
+    "Outer": "BPDrawbridgeWoodBuildSite_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CollisionA",
+    "Outer": "BPDrawbridgeWoodBuildSite_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BoxComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "ReferenceA",
+    "Outer": "BPDrawbridgeWoodBuildSite_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "ReferenceB",
+    "Outer": "BPDrawbridgeWoodBuildSite_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "PersistentProxyComponent",
+    "Name": "SideAProxy",
+    "Outer": "Default__BPDrawbridgeWoodBuildSite_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPDrawbridgeWoodBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.3"
+      }
+    }
+  },
+  {
+    "Type": "PersistentProxyComponent",
+    "Name": "SideBProxy",
+    "Outer": "Default__BPDrawbridgeWoodBuildSite_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPDrawbridgeWoodBuildSite_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.3"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPDrawbridgeWoodBuildSite_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPDrawbridgeWoodBuildSite_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.15"
+      },
+      "VariableGuid": "9F0F82E2-48A06A94-CF3C729E-CBE544C8",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPDrawbridgeWoodBuildSite_C:BuildSite_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.24"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "5899F096-4D0FAB9D-A72E26BD-449BDAC2",
+      "InternalVariableName": "BuildSite"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPDrawbridgeWoodBuildSite_C:ReferenceA_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.26"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "755D71F8-464F15E9-1142A5A7-ED6CFF7C",
+      "InternalVariableName": "ReferenceA"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BoxComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent BPDrawbridgeWoodBuildSite_C:CollisionA_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.4"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "EB001AD3-413D22A5-2FB73D92-9E8C3FF5",
+      "InternalVariableName": "CollisionA"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPDrawbridgeWoodBuildSite_C:ReferenceB_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.27"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "55F0D943-44D5CDFF-41266885-85924D0D",
+      "InternalVariableName": "ReferenceB"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPDrawbridgeWoodBuildSite_C:BuildSiteB_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.25"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "411B524A-4FD44642-B517B691-81E542CB",
+      "InternalVariableName": "BuildSiteB"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_8",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BoxComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent BPDrawbridgeWoodBuildSite_C:CollisionB_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.5"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "C72D015A-4353B100-4F413F88-562B21DB",
+      "InternalVariableName": "CollisionB"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPDrawbridgeWoodBuildSite_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPDrawbridgeWoodBuildSite_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.19"
+        },
+        {
+          "ObjectName": "SCS_Node BPDrawbridgeWoodBuildSite_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.17"
+        },
+        {
+          "ObjectName": "SCS_Node BPDrawbridgeWoodBuildSite_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.18"
+        },
+        {
+          "ObjectName": "SCS_Node BPDrawbridgeWoodBuildSite_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.20"
+        },
+        {
+          "ObjectName": "SCS_Node BPDrawbridgeWoodBuildSite_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.21"
+        },
+        {
+          "ObjectName": "SCS_Node BPDrawbridgeWoodBuildSite_C:SimpleConstructionScript_0.SCS_Node_8",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.22"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPDrawbridgeWoodBuildSite_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.19"
+        },
+        {
+          "ObjectName": "SCS_Node BPDrawbridgeWoodBuildSite_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.17"
+        },
+        {
+          "ObjectName": "SCS_Node BPDrawbridgeWoodBuildSite_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.18"
+        },
+        {
+          "ObjectName": "SCS_Node BPDrawbridgeWoodBuildSite_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.20"
+        },
+        {
+          "ObjectName": "SCS_Node BPDrawbridgeWoodBuildSite_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.21"
+        },
+        {
+          "ObjectName": "SCS_Node BPDrawbridgeWoodBuildSite_C:SimpleConstructionScript_0.SCS_Node_8",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.22"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPDrawbridgeWoodBuildSite_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPDrawbridgeWoodBuildSite.16"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "BuildSite_GEN_VARIABLE",
+    "Outer": "BPDrawbridgeWoodBuildSite_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh DrawBridgeWoodGhost",
+        "ObjectPath": "War/Content/Meshes/Structures/DrawBridgeWoodGhost.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material BuildSite",
+          "ObjectPath": "War/Content/Materials/Structures/BuildSite.0"
+        }
+      ],
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 2.8312208E-05,
+        "Y": -1850.0,
+        "Z": 65.5
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "BuildSiteB_GEN_VARIABLE",
+    "Outer": "BPDrawbridgeWoodBuildSite_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh DrawBridgeWoodGhost",
+        "ObjectPath": "War/Content/Meshes/Structures/DrawBridgeWoodGhost.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material BuildSite",
+          "ObjectPath": "War/Content/Materials/Structures/BuildSite.0"
+        }
+      ],
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 1850.0,
+        "Z": 65.5
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ReferenceA_GEN_VARIABLE",
+    "Outer": "BPDrawbridgeWoodBuildSite_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh DrawBridgeWoodDestroyed",
+        "ObjectPath": "War/Content/Meshes/Structures/DrawBridgeWoodDestroyed.2"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 1840.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ReferenceB_GEN_VARIABLE",
+    "Outer": "BPDrawbridgeWoodBuildSite_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh DrawBridgeWoodDestroyed",
+        "ObjectPath": "War/Content/Meshes/Structures/DrawBridgeWoodDestroyed.2"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": -1840.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPDrawbridgeWoodBuildSite_C"
+  }
+]

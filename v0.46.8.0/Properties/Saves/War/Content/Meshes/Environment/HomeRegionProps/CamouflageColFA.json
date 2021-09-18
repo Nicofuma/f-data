@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "CamouflageColFA",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "CamouflageColFA",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x12BBE"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "CamouflageColFA",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Camoflauge",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Camoflauge.0"
+          },
+          "MaterialSlotName": "FieldGun01",
+          "ImportedMaterialSlotName": "FieldGun01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 169.65567,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 169.65567,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 36.898094,
+          "Y": 19.544983,
+          "Z": 105.62737
+        },
+        "BoxExtent": {
+          "X": 147.9355,
+          "Y": 195.17169,
+          "Z": 101.93044
+        },
+        "SphereRadius": 230.87854
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup CamouflageColFA:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/HomeRegionProps/CamouflageColFA.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision CamouflageColFA:NavCollision_4",
+      "ObjectPath": "War/Content/Meshes/Environment/HomeRegionProps/CamouflageColFA.1"
+    },
+    "LightingGuid": "1D4C2F3F-4C01B2F8-5A1E9C91-5FD99054",
+    "RenderData": null
+  }
+]

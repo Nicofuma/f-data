@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_87",
+    "Outer": "PistolPickup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "PistolPickup",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x937A"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "PistolPickup",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Pistol",
+            "ObjectPath": "War/Content/Materials/Weapons/Pistol.0"
+          },
+          "MaterialSlotName": "Pistol",
+          "ImportedMaterialSlotName": "Pistol",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 50.730793,
+            "LocalUVDensities": 66.63008,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 66.63008,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 23.123098,
+          "Z": 13.371589
+        },
+        "BoxExtent": {
+          "X": 3.5040135,
+          "Y": 26.159626,
+          "Z": 13.419139
+        },
+        "SphereRadius": 28.696692
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup PistolPickup:BodySetup_87",
+      "ObjectPath": "War/Content/Meshes/Weapons/PistolPickup.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision PistolPickup:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Weapons/PistolPickup.1"
+    },
+    "LightingGuid": "175957D5-4D4B6B35-59BA069A-AAA7E8F8",
+    "RenderData": null
+  }
+]

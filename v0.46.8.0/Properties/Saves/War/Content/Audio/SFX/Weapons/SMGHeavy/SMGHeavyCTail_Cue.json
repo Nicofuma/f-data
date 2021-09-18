@@ -1,0 +1,43 @@
+[
+  {
+    "Type": "SoundCue",
+    "Name": "SMGHeavyCTail_Cue",
+    "Properties": {
+      "FirstNode": {
+        "ObjectName": "SoundNodeWavePlayer SMGHeavyCTail_Cue:SoundNodeWavePlayer_0",
+        "ObjectPath": "War/Content/Audio/SFX/Weapons/SMGHeavy/SMGHeavyCTail_Cue.1"
+      },
+      "VolumeMultiplier": 1.0,
+      "AttenuationOverrides": {
+        "DistanceAlgorithm": "EAttenuationDistanceModel::Inverse",
+        "AttenuationShapeExtents": {
+          "X": 1900.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "FalloffDistance": 10000.0
+      },
+      "SoundClassObject": {
+        "ObjectName": "SoundClass Weapons",
+        "ObjectPath": "War/Content/Audio/SoundClasses/SFX.7"
+      },
+      "Duration": 1.2062292,
+      "MaxDistance": 11400.0,
+      "AttenuationSettings": {
+        "ObjectName": "SoundAttenuation SmallArms",
+        "ObjectPath": "War/Content/Audio/Attenuations/SmallArms.0"
+      }
+    }
+  },
+  {
+    "Type": "SoundNodeWavePlayer",
+    "Name": "SoundNodeWavePlayer_0",
+    "Outer": "SMGHeavyCTail_Cue",
+    "Properties": {
+      "SoundWaveAssetPtr": {
+        "AssetPathName": "/Game/Audio/SFX/Weapons/SMGHeavy/SMGHeavyCTail.SMGHeavyCTail",
+        "SubPathString": ""
+      }
+    }
+  }
+]

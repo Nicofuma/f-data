@@ -1,0 +1,726 @@
+[
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "BPFestivalFlagHolder_C",
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPFestivalFlagHolder_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPFestivalFlagHolder_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.34"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty BPFestivalFlagHolder_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.0"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function BPFestivalFlagHolder_C:ExecuteUbergraph_BPFestivalFlagHolder",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class FestivalFlagHolder",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty BPFestivalFlagHolder_C:UberGraphFrame",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.0"
+      },
+      {
+        "ObjectName": "Function BPFestivalFlagHolder_C:ReceiveBeginPlay",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.16"
+      },
+      {
+        "ObjectName": "Function BPFestivalFlagHolder_C:ExecuteUbergraph_BPFestivalFlagHolder",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.7"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFestivalFlagHolder_C:StaticMesh1",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.5"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFestivalFlagHolder_C:Collsiion",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.18"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFestivalFlagHolder_C:ParticleSystem1",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.21"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFestivalFlagHolder_C:Audio",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.17"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFestivalFlagHolder_C:Decal",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.19"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFestivalFlagHolder_C:ParticleSystem",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.20"
+      },
+      {
+        "ObjectName": "ObjectProperty BPFestivalFlagHolder_C:StaticMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.22"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 524288,
+    "ClassWithin": null,
+    "ClassConfigName": "/Game/Audio/Ambient/Bonfire_Cue_1114111",
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPFestivalFlagHolder_C",
+    "Name": "Default__BPFestivalFlagHolder_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "DropOffLocation": {
+        "ObjectName": "CapsuleComponent Default__BPFestivalFlagHolder_C:Drop Off Location",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.14"
+      },
+      "ProceduralUseVolumeFactor": 1.0,
+      "CodeName": "FestivalFlagHolder",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "5D4BA53346F736ABEE0EAB9D69E97963",
+        "SourceString": "Festival Flag Holder"
+      },
+      "ProfileType": "EStructureProfileType::GenericWorldStructure",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__BPFestivalFlagHolder_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__BPFestivalFlagHolder_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.12"
+      },
+      "MaxHealth": 10000,
+      "StructureNetRelevancySize": "EStructureNetRelevancySize::Small",
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__BPFestivalFlagHolder_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.38"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__BPFestivalFlagHolder_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__BPFestivalFlagHolder_C"
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "Audio_GEN_VARIABLE",
+    "Outer": "BPFestivalFlagHolder_C",
+    "Properties": {
+      "Sound": {
+        "ObjectName": "SoundCue Bonfire_Cue",
+        "ObjectPath": "War/Content/Audio/Ambient/Bonfire_Cue.0"
+      },
+      "VolumeMultiplier": 0.25
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "StaticMesh1",
+    "Outer": "BPFestivalFlagHolder_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_BPFestivalFlagHolder",
+    "PropertyFlags": 148
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BPFestivalFlagHolder",
+    "Outer": "BPFestivalFlagHolder_C",
+    "Children": [
+      {
+        "ObjectName": "IntProperty BPFestivalFlagHolder_C:ExecuteUbergraph_BPFestivalFlagHolder.EntryPoint",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.6"
+      },
+      {
+        "ObjectName": "BoolProperty BPFestivalFlagHolder_C:ExecuteUbergraph_BPFestivalFlagHolder.CallFunc_SetStaticMesh_ReturnValue",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.11"
+      },
+      {
+        "ObjectName": "ByteProperty BPFestivalFlagHolder_C:ExecuteUbergraph_BPFestivalFlagHolder.CallFunc_GetLocalRole_ReturnValue",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.13"
+      },
+      {
+        "ObjectName": "BoolProperty BPFestivalFlagHolder_C:ExecuteUbergraph_BPFestivalFlagHolder.CallFunc_EqualEqual_ByteByte_ReturnValue",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.9"
+      },
+      {
+        "ObjectName": "BoolProperty BPFestivalFlagHolder_C:ExecuteUbergraph_BPFestivalFlagHolder.CallFunc_EqualEqual_ByteByte_ReturnValue_1",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.10"
+      },
+      {
+        "ObjectName": "BoolProperty BPFestivalFlagHolder_C:ExecuteUbergraph_BPFestivalFlagHolder.CallFunc_BooleanAND_ReturnValue",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.8"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_BooleanAND_ReturnValue",
+    "Outer": "ExecuteUbergraph_BPFestivalFlagHolder",
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue",
+    "Outer": "ExecuteUbergraph_BPFestivalFlagHolder",
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue_1",
+    "Outer": "ExecuteUbergraph_BPFestivalFlagHolder",
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_SetStaticMesh_ReturnValue",
+    "Outer": "ExecuteUbergraph_BPFestivalFlagHolder",
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__BPFestivalFlagHolder_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 200.0,
+        "Y": 200.0,
+        "Z": 256.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFestivalFlagHolder_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.3"
+      }
+    }
+  },
+  {
+    "Type": "ByteProperty",
+    "Name": "CallFunc_GetLocalRole_ReturnValue",
+    "Outer": "ExecuteUbergraph_BPFestivalFlagHolder",
+    "Enum": {
+      "ObjectName": "Enum ENetRole",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "Drop Off Location",
+    "Outer": "Default__BPFestivalFlagHolder_C",
+    "Properties": {
+      "CapsuleHalfHeight": 256.0,
+      "CapsuleRadius": 100.0,
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__BPFestivalFlagHolder_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.00012207031,
+        "Z": 156.02734
+      }
+    }
+  },
+  {
+    "Type": "DecalComponent",
+    "Name": "Decal_GEN_VARIABLE",
+    "Outer": "BPFestivalFlagHolder_C",
+    "Properties": {
+      "DecalMaterial": {
+        "ObjectName": "MaterialInstanceConstant DirtPatch",
+        "ObjectPath": "War/Content/Materials/Decals/DirtPatch.0"
+      },
+      "RelativeLocation": {
+        "X": 2E-06,
+        "Y": 0.0,
+        "Z": -35.0
+      },
+      "RelativeRotation": {
+        "Pitch": -90.0,
+        "Yaw": 0.0,
+        "Roll": -0.0
+      },
+      "RelativeScale3D": {
+        "X": 0.501893,
+        "Y": 1.0,
+        "Z": 1.0
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BPFestivalFlagHolder_C",
+    "SuperStruct": {
+      "ObjectName": "Function Actor:ReceiveBeginPlay",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Audio",
+    "Outer": "BPFestivalFlagHolder_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class AudioComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Collsiion",
+    "Outer": "BPFestivalFlagHolder_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SphereComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Decal",
+    "Outer": "BPFestivalFlagHolder_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class DecalComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "ParticleSystem",
+    "Outer": "BPFestivalFlagHolder_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class ParticleSystemComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "ParticleSystem1",
+    "Outer": "BPFestivalFlagHolder_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class ParticleSystemComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "StaticMesh",
+    "Outer": "BPFestivalFlagHolder_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ParticleSystem1_GEN_VARIABLE",
+    "Outer": "BPFestivalFlagHolder_C",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem Fire",
+        "ObjectPath": "War/Content/FX/Fire.63"
+      },
+      "RelativeLocation": {
+        "X": 93.9129,
+        "Y": 50.060204,
+        "Z": 135.53882
+      },
+      "RelativeScale3D": {
+        "X": 0.5,
+        "Y": 0.5,
+        "Z": 0.5
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ParticleSystem_GEN_VARIABLE",
+    "Outer": "BPFestivalFlagHolder_C",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem Fire",
+        "ObjectPath": "War/Content/FX/Fire.63"
+      },
+      "RelativeLocation": {
+        "X": -105.03504,
+        "Y": -21.772148,
+        "Z": 153.91618
+      },
+      "RelativeScale3D": {
+        "X": 0.5,
+        "Y": 0.5,
+        "Z": 0.5
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPFestivalFlagHolder_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPFestivalFlagHolder_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.25"
+      },
+      "VariableGuid": "FE1B2CD9-47F71C86-DEB6D9BD-3267125A",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPFestivalFlagHolder_C:StaticMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.37"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "952778A1-4999E36E-C94E7884-BED3E6F4",
+      "InternalVariableName": "StaticMesh"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class ParticleSystemComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ParticleSystemComponent BPFestivalFlagHolder_C:ParticleSystem_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.24"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "C40004FF-4BE81A6C-44891FA6-25FC84AF",
+      "InternalVariableName": "ParticleSystem"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class DecalComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "DecalComponent BPFestivalFlagHolder_C:Decal_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.15"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "B2C70F3C-445A1C62-2A6343BB-ACC9C13A",
+      "InternalVariableName": "Decal"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class AudioComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "AudioComponent BPFestivalFlagHolder_C:Audio_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.4"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "1D5CC3C4-48BAF1FC-4EC76F9B-727AA11B",
+      "InternalVariableName": "Audio"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class ParticleSystemComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ParticleSystemComponent BPFestivalFlagHolder_C:ParticleSystem1_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.23"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "C6FC3EB3-42AF8418-A5C7DBAD-791ED1F8",
+      "InternalVariableName": "ParticleSystem1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BPFestivalFlagHolder_C:StaticMesh1_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.36"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "D1619E29-44ABF75D-28A85494-B746035E",
+      "InternalVariableName": "StaticMesh1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_8",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SphereComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SphereComponent BPFestivalFlagHolder_C:Collsiion_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.35"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "29E80BA7-458EEE35-2461B6BB-2F049E9B",
+      "InternalVariableName": "Collsiion"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPFestivalFlagHolder_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPFestivalFlagHolder_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.27"
+        },
+        {
+          "ObjectName": "SCS_Node BPFestivalFlagHolder_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.28"
+        },
+        {
+          "ObjectName": "SCS_Node BPFestivalFlagHolder_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.29"
+        },
+        {
+          "ObjectName": "SCS_Node BPFestivalFlagHolder_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.30"
+        },
+        {
+          "ObjectName": "SCS_Node BPFestivalFlagHolder_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.31"
+        },
+        {
+          "ObjectName": "SCS_Node BPFestivalFlagHolder_C:SimpleConstructionScript_0.SCS_Node_8",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.33"
+        },
+        {
+          "ObjectName": "SCS_Node BPFestivalFlagHolder_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.32"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPFestivalFlagHolder_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.27"
+        },
+        {
+          "ObjectName": "SCS_Node BPFestivalFlagHolder_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.28"
+        },
+        {
+          "ObjectName": "SCS_Node BPFestivalFlagHolder_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.29"
+        },
+        {
+          "ObjectName": "SCS_Node BPFestivalFlagHolder_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.30"
+        },
+        {
+          "ObjectName": "SCS_Node BPFestivalFlagHolder_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.31"
+        },
+        {
+          "ObjectName": "SCS_Node BPFestivalFlagHolder_C:SimpleConstructionScript_0.SCS_Node_8",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.33"
+        },
+        {
+          "ObjectName": "SCS_Node BPFestivalFlagHolder_C:SimpleConstructionScript_0.SCS_Node_7",
+          "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.32"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPFestivalFlagHolder_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/BPFestivalFlagHolder.26"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "Collsiion_GEN_VARIABLE",
+    "Outer": "BPFestivalFlagHolder_C",
+    "Properties": {
+      "SphereRadius": 90.0,
+      "AreaClass": {
+        "ObjectName": "Class NavArea_Obstacle",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -45.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh1_GEN_VARIABLE",
+    "Outer": "BPFestivalFlagHolder_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh GateFactionMarker",
+        "ObjectPath": "War/Content/Meshes/Structures/Walls/GateFactionMarker.2"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": -140.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh_GEN_VARIABLE",
+    "Outer": "BPFestivalFlagHolder_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh FestivalFlagBase",
+        "ObjectPath": "War/Content/Meshes/Environment/Event/FestivalFlagBase.2"
+      },
+      "bReceivesDecals": false,
+      "BodyInstance": {
+        "CollisionProfileName": "StructureDamageableMesh",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Excavate",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -20.0,
+        "Roll": 0.0
+      },
+      "RelativeScale3D": {
+        "X": 1.5,
+        "Y": 1.5,
+        "Z": 1.5
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__BPFestivalFlagHolder_C"
+  }
+]

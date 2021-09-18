@@ -1,0 +1,172 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_3",
+    "Outer": "RodIronFence1",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -13.113419,
+                "Y": 6.1793976,
+                "Z": -53.129517
+              },
+              {
+                "X": 299.192,
+                "Y": 6.1793976,
+                "Z": -53.129517
+              },
+              {
+                "X": -13.113419,
+                "Y": -6.1793966,
+                "Z": -53.129517
+              },
+              {
+                "X": 299.192,
+                "Y": -6.1793966,
+                "Z": -53.129517
+              },
+              {
+                "X": -13.113419,
+                "Y": 6.1793976,
+                "Z": 280.34335
+              },
+              {
+                "X": 299.192,
+                "Y": 6.1793976,
+                "Z": 280.34335
+              },
+              {
+                "X": -13.113419,
+                "Y": -6.1793966,
+                "Z": 280.34335
+              },
+              {
+                "X": 299.192,
+                "Y": -6.1793966,
+                "Z": 280.34335
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -13.113419,
+                "Y": -6.1793966,
+                "Z": -53.129517
+              },
+              "Max": {
+                "X": 299.192,
+                "Y": 6.1793976,
+                "Z": 280.34335
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "ShootThroughStatic",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "RodIronFence1",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 457,
+        "SizeOnDisk": 457,
+        "OffsetInFile": "0x6835"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "RodIronFence1",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RodIronFence",
+            "ObjectPath": "War/Content/Materials/Environment/Props/RodIronFence.0"
+          },
+          "MaterialSlotName": "RodIronFence",
+          "ImportedMaterialSlotName": "RodIronFence",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 520.8073,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 520.8073,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 143.11214,
+          "Y": 0.047050476,
+          "Z": 114.14448
+        },
+        "BoxExtent": {
+          "X": 155.6171,
+          "Y": 11.830657,
+          "Z": 167.86482
+        },
+        "SphereRadius": 225.81815
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup RodIronFence1:BodySetup_3",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/RodIronFence1.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision RodIronFence1:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/RodIronFence1.1"
+    },
+    "LightingGuid": "D788BAEA-4BF7558A-B21E4BB1-CFB54253",
+    "RenderData": null
+  }
+]

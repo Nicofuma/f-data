@@ -1,0 +1,316 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "Box",
+    "Outer": "DestroyedWoodBridge_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class BoxComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "DestroyedWoodBridge_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript DestroyedWoodBridge_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/DestroyedWoodBridge.13"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class DestroyedStructure",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty DestroyedWoodBridge_C:Box",
+        "ObjectPath": "War/Content/Blueprints/Structures/DestroyedWoodBridge.0"
+      },
+      {
+        "ObjectName": "ObjectProperty DestroyedWoodBridge_C:BridgeWood01Broken",
+        "ObjectPath": "War/Content/Blueprints/Structures/DestroyedWoodBridge.7"
+      },
+      {
+        "ObjectName": "ObjectProperty DestroyedWoodBridge_C:BridgeMesh",
+        "ObjectPath": "War/Content/Blueprints/Structures/DestroyedWoodBridge.6"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "DestroyedWoodBridge_C",
+    "Name": "Default__DestroyedWoodBridge_C",
+    "Properties": {
+      "bIsScorchable": false,
+      "CodeName": "DestroyedWoodBridge",
+      "ArrowComponent": {
+        "ObjectName": "ArrowComponent Default__DestroyedWoodBridge_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/DestroyedWoodBridge.3"
+      },
+      "UseAreaBox": {
+        "ObjectName": "BoxComponent Default__DestroyedWoodBridge_C:UseAreaBox",
+        "ObjectPath": "War/Content/Blueprints/Structures/DestroyedWoodBridge.4"
+      },
+      "MaxHealth": 100000000,
+      "UpgradeStructureCodeName": "WoodBridge",
+      "StealthComponent": {
+        "ObjectName": "StealthComponent Default__DestroyedWoodBridge_C:StealthComponent",
+        "ObjectPath": "War/Content/Blueprints/Structures/DestroyedWoodBridge.16"
+      },
+      "NetCullDistanceSquared": 50000000.0,
+      "RootComponent": {
+        "ObjectName": "ArrowComponent Default__DestroyedWoodBridge_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/DestroyedWoodBridge.3"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "StructureArrow",
+    "Outer": "Default__DestroyedWoodBridge_C"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UseAreaBox",
+    "Outer": "Default__DestroyedWoodBridge_C",
+    "Properties": {
+      "BoxExtent": {
+        "X": 2100.0,
+        "Y": 250.0,
+        "Z": 400.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent Default__DestroyedWoodBridge_C:StructureArrow",
+        "ObjectPath": "War/Content/Blueprints/Structures/DestroyedWoodBridge.3"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.00048828125,
+        "Z": -129.13824
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "Box_GEN_VARIABLE",
+    "Outer": "DestroyedWoodBridge_C",
+    "Properties": {
+      "AreaClass": {
+        "ObjectName": "Class NavArea_Obstacle",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "BlockAllDynamic",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Work",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 230.0,
+        "Y": 0.0,
+        "Z": -270.0
+      },
+      "RelativeScale3D": {
+        "X": 0.76808894,
+        "Y": 5.901037,
+        "Z": 2.799762
+      }
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "BridgeMesh",
+    "Outer": "DestroyedWoodBridge_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "BridgeWood01Broken",
+    "Outer": "DestroyedWoodBridge_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "DestroyedWoodBridge_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent DestroyedWoodBridge_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/DestroyedWoodBridge.8"
+      },
+      "VariableGuid": "9F5807D8-4ABE093C-D558EE9C-100DC3EF",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent DestroyedWoodBridge_C:BridgeMesh_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/DestroyedWoodBridge.14"
+      },
+      "ParentComponentOrVariableName": "StructureArrow",
+      "bIsParentComponentNative": true,
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node DestroyedWoodBridge_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/DestroyedWoodBridge.11"
+        },
+        {
+          "ObjectName": "SCS_Node DestroyedWoodBridge_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/DestroyedWoodBridge.12"
+        }
+      ],
+      "VariableGuid": "307480EC-4F70E8BA-E264B2B8-4C352C7E",
+      "InternalVariableName": "BridgeMesh"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent DestroyedWoodBridge_C:BridgeWood01Broken_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/DestroyedWoodBridge.15"
+      },
+      "VariableGuid": "2BE7F5A8-47278B3A-4ED175B7-08562742",
+      "InternalVariableName": "BridgeWood01Broken"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class BoxComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent DestroyedWoodBridge_C:Box_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Structures/DestroyedWoodBridge.5"
+      },
+      "VariableGuid": "3B9644E4-4127928B-DACC6EB0-DDB6CB25",
+      "InternalVariableName": "Box"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "DestroyedWoodBridge_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node DestroyedWoodBridge_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/DestroyedWoodBridge.10"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node DestroyedWoodBridge_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/Structures/DestroyedWoodBridge.10"
+        },
+        {
+          "ObjectName": "SCS_Node DestroyedWoodBridge_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "War/Content/Blueprints/Structures/DestroyedWoodBridge.11"
+        },
+        {
+          "ObjectName": "SCS_Node DestroyedWoodBridge_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "War/Content/Blueprints/Structures/DestroyedWoodBridge.12"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node DestroyedWoodBridge_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Structures/DestroyedWoodBridge.9"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "BridgeMesh_GEN_VARIABLE",
+    "Outer": "DestroyedWoodBridge_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh BridgeWood01Broken",
+        "ObjectPath": "War/Content/Meshes/Structures/BridgeWood01Broken.2"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "BridgeWood01Broken_GEN_VARIABLE",
+    "Outer": "DestroyedWoodBridge_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh SM_WoodBeam_01",
+        "ObjectPath": "War/Content/Meshes/Environment/Props/SM_WoodBeam_01.2"
+      },
+      "RelativeLocation": {
+        "X": 240.0,
+        "Y": 11.847883,
+        "Z": -287.44806
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": 20.000021
+      },
+      "RelativeScale3D": {
+        "X": 0.3816572,
+        "Y": 0.80858374,
+        "Z": 1.0
+      }
+    }
+  },
+  {
+    "Type": "StealthComponent",
+    "Name": "StealthComponent",
+    "Outer": "Default__DestroyedWoodBridge_C"
+  }
+]

@@ -1,0 +1,116 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "HalfTrackDestroyed",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_8",
+    "Outer": "HalfTrackDestroyed",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xAFD"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "HalfTrackDestroyed",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant HalfTrackDamaged",
+            "ObjectPath": "War/Content/Materials/Vehicles/HalfTrackDamaged.0"
+          },
+          "MaterialSlotName": "HalfTrackDamaged",
+          "ImportedMaterialSlotName": "HalfTrackDamaged",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1442.7966,
+            "LocalUVDensities": 2.074952,
+            "LocalUVDensities": 4660.8555,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant HalfTrackTire",
+            "ObjectPath": "War/Content/Materials/Vehicles/HalfTrackTire.0"
+          },
+          "MaterialSlotName": "HalfTrackTire",
+          "ImportedMaterialSlotName": "HalfTrackTire",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 198.84319,
+            "LocalUVDensities": 1.2294635,
+            "LocalUVDensities": 4523.9946,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TankTreadDamaged",
+            "ObjectPath": "War/Content/Materials/Vehicles/TankTreadDamaged.0"
+          },
+          "MaterialSlotName": "TankTreadDamaged",
+          "ImportedMaterialSlotName": "TankTreadDamaged",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 91.91466,
+            "LocalUVDensities": 4.776058,
+            "LocalUVDensities": 4702.7427,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 4653.957,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 2,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 18.849731,
+          "Y": 19.13205,
+          "Z": 131.7476
+        },
+        "BoxExtent": {
+          "X": 441.87137,
+          "Y": 362.2213,
+          "Z": 190.00652
+        },
+        "SphereRadius": 522.19574
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup HalfTrackDestroyed:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Vehicles/HalfTrackDestroyed.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision HalfTrackDestroyed:NavCollision_8",
+      "ObjectPath": "War/Content/Meshes/Vehicles/HalfTrackDestroyed.1"
+    },
+    "LightingGuid": "B4FDB9CA-49D2B375-3CF050B2-083BC7A2",
+    "RenderData": null
+  }
+]

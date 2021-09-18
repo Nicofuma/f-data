@@ -1,0 +1,104 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_TruckUtilityW_DumpBed",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "SM_TruckUtilityW_DumpBed",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xF76D"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_TruckUtilityW_DumpBed",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TruckWarDumpbed",
+            "ObjectPath": "War/Content/Materials/Vehicles/TruckWarDumpbed.0"
+          },
+          "MaterialSlotName": "TruckWarDumpBed",
+          "ImportedMaterialSlotName": "TruckWarDumpBed",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 929.08,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TruckWar",
+            "ObjectPath": "War/Content/Materials/Vehicles/TruckWar.0"
+          },
+          "MaterialSlotName": "TruckWar",
+          "ImportedMaterialSlotName": "TruckWar",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1335.5385,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1050.3214,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -148.64185,
+          "Z": 237.94368
+        },
+        "BoxExtent": {
+          "X": 155.00905,
+          "Y": 300.13837,
+          "Z": 151.72412
+        },
+        "SphereRadius": 366.00006
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_TruckUtilityW_DumpBed:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Vehicles/PrototypeVehicles/SM_TruckUtilityW_DumpBed.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_TruckUtilityW_DumpBed:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Vehicles/PrototypeVehicles/SM_TruckUtilityW_DumpBed.1"
+    },
+    "LightingGuid": "42CBC40D-46A0B804-3BBFDF9A-B8A18AD0",
+    "RenderData": null
+  }
+]

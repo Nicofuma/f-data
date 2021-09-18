@@ -1,0 +1,89 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_65",
+    "Outer": "Rope01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_36",
+    "Outer": "Rope01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x6754"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Rope01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RepeatingRope",
+            "ObjectPath": "War/Content/Materials/Environment/Props/RepeatingRope.0"
+          },
+          "MaterialSlotName": "RepeatingRope",
+          "ImportedMaterialSlotName": "RepeatingRope",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 69.753265,
+            "LocalUVDensities": 171.109,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 171.109,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -17.165947,
+          "Y": 26.829308,
+          "Z": 7.14503
+        },
+        "BoxExtent": {
+          "X": 91.97623,
+          "Y": 102.697296,
+          "Z": 8.845216
+        },
+        "SphereRadius": 129.8936
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Rope01:BodySetup_65",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Rope01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Rope01:NavCollision_36",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Rope01.1"
+    },
+    "LightingGuid": "B0022814-41E070AA-46AF6DA9-33479572",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FactorySpecialWeaponsFacility",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "FactorySpecialWeaponsFacility",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x22F18"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FactorySpecialWeaponsFacility",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FactorySpecialWeapons",
+            "ObjectPath": "War/Content/Materials/Environment/Props/FactorySpecialWeapons.0"
+          },
+          "MaterialSlotName": "Material #238",
+          "ImportedMaterialSlotName": "Material #238",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 122.52117,
+            "LocalUVDensities": 428.1131,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 428.1131,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 166.08519,
+          "Y": 664.72284,
+          "Z": 117.7439
+        },
+        "BoxExtent": {
+          "X": 108.102646,
+          "Y": 114.45447,
+          "Z": 118.54874
+        },
+        "SphereRadius": 188.81181
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FactorySpecialWeaponsFacility:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FactorySpecialWeaponsFacility.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FactorySpecialWeaponsFacility:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FactorySpecialWeaponsFacility.1"
+    },
+    "LightingGuid": "5411F2FA-4F021653-F0F0A081-D195E3C2",
+    "RenderData": null
+  }
+]

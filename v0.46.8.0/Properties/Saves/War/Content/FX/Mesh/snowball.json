@@ -1,0 +1,78 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "snowball",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "snowball",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x9AD"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "snowball",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant SnowballMesh",
+            "ObjectPath": "War/Content/Materials/Environment/SnowballMesh.0"
+          },
+          "MaterialSlotName": "SnowballMesh",
+          "ImportedMaterialSlotName": "SnowballMesh",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 44.881435,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 44.881435,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 11.782861,
+          "Y": 11.782861,
+          "Z": 11.782861
+        },
+        "SphereRadius": 11.782862
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup snowball:BodySetup_0",
+      "ObjectPath": "War/Content/FX/Mesh/snowball.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision snowball:NavCollision_0",
+      "ObjectPath": "War/Content/FX/Mesh/snowball.1"
+    },
+    "LightingGuid": "CED5EAD1-446E94EB-6F0DFF97-CB0E1F67",
+    "RenderData": null
+  }
+]

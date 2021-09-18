@@ -1,0 +1,114 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPATGrenadeWPickup_C",
+    "Super": "GrenadeWPickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPATGrenadeWPickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPATGrenadeWPickup.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass GrenadeWPickup_C",
+      "ObjectPath": "War/Content/Blueprints/ItemPickups/GrenadeWPickup.0"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPATGrenadeWPickup_C",
+    "Name": "Default__BPATGrenadeWPickup_C",
+    "Properties": {
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPATGrenadeWComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Items/BPATGrenadeWComponent.0"
+      },
+      "Encumbrance": 90,
+      "CodeName": "ATGrenadeW",
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "5A46915A45815F648E76D5B15E42D7E8",
+        "SourceString": "Anti-Tank Grenade"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "65BE890348230448957CD091D35DCFF6",
+        "SourceString": "BF5 White Ash Flask Grenade"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "1A4965A840057F1C18D592AEA3A3425E",
+        "SourceString": "An explosive flask used for melting enemy armour. This carefully designed liquid bomb explodes into a dazzling flash of molten debris upon impact."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D ATGrenadeWIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/ATGrenadeWIcon.0"
+      },
+      "TechID": "ETechID::UnlockATGrenade",
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPATGrenadeWPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPATGrenadeWPickup.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPATGrenadeWPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPATGrenadeWPickup.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPATGrenadeWPickup_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPATGrenadeWPickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPATGrenadeWPickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPATGrenadeWPickup.3"
+      },
+      "VariableGuid": "B95C60CA-4423DED7-DD56F397-0B0C0533",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPATGrenadeWPickup_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPATGrenadeWPickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPATGrenadeWPickup.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPATGrenadeWPickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPATGrenadeWPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPATGrenadeWPickup.2"
+      }
+    }
+  }
+]

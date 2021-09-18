@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "TownCenterFlag",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "TownCenterFlag",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xD43"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TownCenterFlag",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FlagHangingColonialsTownHall",
+            "ObjectPath": "War/Content/Materials/Structures/FlagHangingColonialsTownHall.0"
+          },
+          "MaterialSlotName": "FlagHangingColonials",
+          "ImportedMaterialSlotName": "FlagHangingColonials",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 250.26573,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 250.26573,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.7509995,
+          "Y": 932.3569,
+          "Z": 246.05144
+        },
+        "BoxExtent": {
+          "X": 95.89317,
+          "Y": 5.9210205,
+          "Z": 167.08582
+        },
+        "SphereRadius": 192.50458
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TownCenterFlag:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/TownCenterFlag.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TownCenterFlag:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Structures/TownCenterFlag.1"
+    },
+    "LightingGuid": "59EF2094-427E0CAA-B697E78F-5EA64E8F",
+    "RenderData": null
+  }
+]

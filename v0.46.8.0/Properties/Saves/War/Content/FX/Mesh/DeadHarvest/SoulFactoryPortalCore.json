@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SoulFactoryPortalCore",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "SoulFactoryPortalCore",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2FE2"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SoulFactoryPortalCore",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "Engine/Content/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "Material #494",
+          "ImportedMaterialSlotName": "Material #494",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 262.84793,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 262.84793,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.078682,
+          "Y": -9.436801E-06,
+          "Z": -0.22229004
+        },
+        "BoxExtent": {
+          "X": 116.038284,
+          "Y": 1.1029961E-05,
+          "Z": 190.38715
+        },
+        "SphereRadius": 190.57674
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SoulFactoryPortalCore:BodySetup_0",
+      "ObjectPath": "War/Content/FX/Mesh/DeadHarvest/SoulFactoryPortalCore.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SoulFactoryPortalCore:NavCollision_1",
+      "ObjectPath": "War/Content/FX/Mesh/DeadHarvest/SoulFactoryPortalCore.1"
+    },
+    "LightingGuid": "013635CF-46228C42-B7B386AB-E75716F9",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,108 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPATRPGIndirectAmmo_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPATRPGIndirectAmmo_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPATRPGIndirectAmmo.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class AmmoPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPATRPGIndirectAmmo_C",
+    "Name": "Default__BPATRPGIndirectAmmo_C",
+    "Properties": {
+      "Encumbrance": 95,
+      "CodeName": "ATRPGIndirectAmmo",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "C25296FB4F4A74C6FF34DD95FCD07EB1",
+        "SourceString": "A.T.R.P.G. Indirect Shell"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "832392B8474D40A6190254A8F9410735",
+        "SourceString": "An anti-tank projectile fired from indirect R.P.G. weapons."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D ATMortarAmmoItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/ATMortarAmmoItemIcon.0"
+      },
+      "ItemCategory": "EItemCategory::HeavyArms",
+      "ItemFlagsMask": 17,
+      "ItemProfileType": "EItemProfileType::HeavyAmmo",
+      "FactionVariant": "EFactionId::Wardens",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPATRPGIndirectAmmo_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPATRPGIndirectAmmo.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPATRPGIndirectAmmo_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPATRPGIndirectAmmo.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPATRPGIndirectAmmo_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPATRPGIndirectAmmo_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPATRPGIndirectAmmo_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPATRPGIndirectAmmo.3"
+      },
+      "VariableGuid": "BAE6D160-4654521D-F027E5B0-08BF61E3",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPATRPGIndirectAmmo_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPATRPGIndirectAmmo_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPATRPGIndirectAmmo.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPATRPGIndirectAmmo_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPATRPGIndirectAmmo_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPATRPGIndirectAmmo.2"
+      }
+    }
+  }
+]

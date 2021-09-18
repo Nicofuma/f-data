@@ -1,0 +1,107 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GasMaskPickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript GasMaskPickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/GasMaskPickup.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class WearablePickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "GasMaskPickup_C",
+    "Name": "Default__GasMaskPickup_C",
+    "Properties": {
+      "CodeName": "GasMask",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "CD94F99F497B1785DDBCA5A4CE172A0B",
+        "SourceString": "Gas Mask"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "6E5DDF09409408E832AF3CBB62442397",
+        "SourceString": "Protects against poison gas"
+      },
+      "Icon": {
+        "ObjectName": "Texture2D GasmaskIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/GasmaskIcon.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Head",
+      "ItemCategory": "EItemCategory::Utility",
+      "ItemProfileType": "EItemProfileType::Accessory",
+      "TechID": "ETechID::UnlockGasMask",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__GasMaskPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/GasMaskPickup.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__GasMaskPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/GasMaskPickup.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__GasMaskPickup_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "GasMaskPickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent GasMaskPickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/GasMaskPickup.3"
+      },
+      "VariableGuid": "CAA0B5A3-425DB3A2-60A1ED8F-8900AA27",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "GasMaskPickup_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node GasMaskPickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/GasMaskPickup.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__GasMaskPickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__GasMaskPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/GasMaskPickup.2"
+      }
+    }
+  }
+]

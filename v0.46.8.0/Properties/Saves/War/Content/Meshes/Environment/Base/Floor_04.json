@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_262",
+    "Outer": "Floor_04",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Floor_04",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x5DF7"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Floor_04",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant WoodRepeating03",
+            "ObjectPath": "War/Content/Materials/Environment/WoodRepeating03.0"
+          },
+          "MaterialSlotName": "WoodRepeating03",
+          "ImportedMaterialSlotName": "WoodRepeating03",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 853.97675,
+            "LocalUVDensities": 526.1085,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 526.1085,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.26457214,
+          "Y": 26.608887,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 155.20525,
+          "Y": 557.2588,
+          "Z": 4.9823575
+        },
+        "SphereRadius": 578.4845
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Floor_04:BodySetup_262",
+      "ObjectPath": "War/Content/Meshes/Environment/Base/Floor_04.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Floor_04:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Base/Floor_04.1"
+    },
+    "LightingGuid": "E65181A2-4D5ADA88-4C944EBE-61BF6DE5",
+    "RenderData": null
+  }
+]

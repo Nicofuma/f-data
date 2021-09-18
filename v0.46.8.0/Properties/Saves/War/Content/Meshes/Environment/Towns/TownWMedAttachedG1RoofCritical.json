@@ -1,0 +1,243 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "TownWMedAttachedG1RoofCritical",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "TownWMedAttachedG1RoofCritical",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x410C5"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TownWMedAttachedG1RoofCritical",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownBrickWall01",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownBrickWall01.0"
+          },
+          "MaterialSlotName": "Brick",
+          "ImportedMaterialSlotName": "Brick",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 292.6524,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.97106034,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownBrickWall03",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownBrickWall03.0"
+          },
+          "MaterialSlotName": "Brick02",
+          "ImportedMaterialSlotName": "Brick02",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 281.04767,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.973235,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownBrickWall03",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownBrickWall03.0"
+          },
+          "MaterialSlotName": "Wallpaper",
+          "ImportedMaterialSlotName": "Wallpaper",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 160.52356,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 1.4782957,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownWoodBeams01",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownWoodBeams01.0"
+          },
+          "MaterialSlotName": "WoodBeams",
+          "ImportedMaterialSlotName": "WoodBeams",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 264.37912,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownWoodTrim01",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownWoodTrim01.0"
+          },
+          "MaterialSlotName": "WoodTrim",
+          "ImportedMaterialSlotName": "WoodTrim",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 205.72647,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownWindowGlass",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownWindowGlass.0"
+          },
+          "MaterialSlotName": "TownWindowGlass",
+          "ImportedMaterialSlotName": "TownWindowGlass",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 211.3214,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownWoodBeams02",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownWoodBeams02.0"
+          },
+          "MaterialSlotName": "Material #1020",
+          "ImportedMaterialSlotName": "Material #1020",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 232.326,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownWoodFloor01",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownWoodFloor01.0"
+          },
+          "MaterialSlotName": "Floor",
+          "ImportedMaterialSlotName": "Floor",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 273.78558,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownRoofShingles05",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownRoofShingles05.0"
+          },
+          "MaterialSlotName": "RoofShingles",
+          "ImportedMaterialSlotName": "RoofShingles",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 295.86142,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownRoofGravel01",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownRoofGravel01.0"
+          },
+          "MaterialSlotName": "Roof02",
+          "ImportedMaterialSlotName": "Roof02",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 295.80035,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownRainGutter01",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownRainGutter01.0"
+          },
+          "MaterialSlotName": "RoofTrim",
+          "ImportedMaterialSlotName": "RoofTrim",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 245.96481,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 399.31833,
+          "Y": 645.5051,
+          "Z": 715.4672
+        },
+        "BoxExtent": {
+          "X": 405.4553,
+          "Y": 697.08887,
+          "Z": 411.63727
+        },
+        "SphereRadius": 886.12445
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TownWMedAttachedG1RoofCritical:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/TownWMedAttachedG1RoofCritical.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TownWMedAttachedG1RoofCritical:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Towns/TownWMedAttachedG1RoofCritical.1"
+    },
+    "LightingGuid": "A6CD5DAB-46ED8E73-F3382BBE-3930C16C",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,635 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_OilWell_PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup SK_OilWell_PhysicsAsset:SkeletalBodySetup_0",
+          "ObjectPath": "War/Content/Meshes/Structures/SK_OilWell_PhysicsAsset.10"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup SK_OilWell_PhysicsAsset:SkeletalBodySetup_1",
+          "ObjectPath": "War/Content/Meshes/Structures/SK_OilWell_PhysicsAsset.11"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup SK_OilWell_PhysicsAsset:SkeletalBodySetup_2",
+          "ObjectPath": "War/Content/Meshes/Structures/SK_OilWell_PhysicsAsset.12"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup SK_OilWell_PhysicsAsset:SkeletalBodySetup_3",
+          "ObjectPath": "War/Content/Meshes/Structures/SK_OilWell_PhysicsAsset.13"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup SK_OilWell_PhysicsAsset:SkeletalBodySetup_4",
+          "ObjectPath": "War/Content/Meshes/Structures/SK_OilWell_PhysicsAsset.14"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup SK_OilWell_PhysicsAsset:SkeletalBodySetup_5",
+          "ObjectPath": "War/Content/Meshes/Structures/SK_OilWell_PhysicsAsset.15"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup SK_OilWell_PhysicsAsset:SkeletalBodySetup_6",
+          "ObjectPath": "War/Content/Meshes/Structures/SK_OilWell_PhysicsAsset.16"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup SK_OilWell_PhysicsAsset:SkeletalBodySetup_7",
+          "ObjectPath": "War/Content/Meshes/Structures/SK_OilWell_PhysicsAsset.17"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup SK_OilWell_PhysicsAsset:SkeletalBodySetup_8",
+          "ObjectPath": "War/Content/Meshes/Structures/SK_OilWell_PhysicsAsset.18"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup SK_OilWell_PhysicsAsset:SkeletalBodySetup_9",
+          "ObjectPath": "War/Content/Meshes/Structures/SK_OilWell_PhysicsAsset.19"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate SK_OilWell_PhysicsAsset:PhysicsConstraintTemplate_0",
+          "ObjectPath": "War/Content/Meshes/Structures/SK_OilWell_PhysicsAsset.1"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate SK_OilWell_PhysicsAsset:PhysicsConstraintTemplate_1",
+          "ObjectPath": "War/Content/Meshes/Structures/SK_OilWell_PhysicsAsset.2"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate SK_OilWell_PhysicsAsset:PhysicsConstraintTemplate_2",
+          "ObjectPath": "War/Content/Meshes/Structures/SK_OilWell_PhysicsAsset.3"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate SK_OilWell_PhysicsAsset:PhysicsConstraintTemplate_3",
+          "ObjectPath": "War/Content/Meshes/Structures/SK_OilWell_PhysicsAsset.4"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate SK_OilWell_PhysicsAsset:PhysicsConstraintTemplate_4",
+          "ObjectPath": "War/Content/Meshes/Structures/SK_OilWell_PhysicsAsset.5"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate SK_OilWell_PhysicsAsset:PhysicsConstraintTemplate_5",
+          "ObjectPath": "War/Content/Meshes/Structures/SK_OilWell_PhysicsAsset.6"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate SK_OilWell_PhysicsAsset:PhysicsConstraintTemplate_6",
+          "ObjectPath": "War/Content/Meshes/Structures/SK_OilWell_PhysicsAsset.7"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate SK_OilWell_PhysicsAsset:PhysicsConstraintTemplate_7",
+          "ObjectPath": "War/Content/Meshes/Structures/SK_OilWell_PhysicsAsset.8"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate SK_OilWell_PhysicsAsset:PhysicsConstraintTemplate_8",
+          "ObjectPath": "War/Content/Meshes/Structures/SK_OilWell_PhysicsAsset.9"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Outer": "SK_OilWell_PhysicsAsset",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "smallSpool",
+        "ConstraintBone1": "smallSpool",
+        "ConstraintBone2": "root",
+        "Pos2": {
+          "X": -1.1368684E-13,
+          "Y": -234.76364,
+          "Z": 157.23572
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_1",
+    "Outer": "SK_OilWell_PhysicsAsset",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "largeSpool",
+        "ConstraintBone1": "largeSpool",
+        "ConstraintBone2": "root",
+        "Pos2": {
+          "X": 0.0,
+          "Y": -36.735012,
+          "Z": 209.65271
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_2",
+    "Outer": "SK_OilWell_PhysicsAsset",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "hammerPivot",
+        "ConstraintBone1": "hammerPivot",
+        "ConstraintBone2": "root",
+        "Pos2": {
+          "X": 0.0,
+          "Y": -111.82556,
+          "Z": 364.29987
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_3",
+    "Outer": "SK_OilWell_PhysicsAsset",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "axelPivot",
+        "ConstraintBone1": "axelPivot",
+        "ConstraintBone2": "hammerPivot",
+        "Pos2": {
+          "X": 0.0,
+          "Y": 224.25558,
+          "Z": 158.82063
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_4",
+    "Outer": "SK_OilWell_PhysicsAsset",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "axelConnection_hammerSide",
+        "ConstraintBone1": "axelConnection_hammerSide",
+        "ConstraintBone2": "axelPivot",
+        "Pos2": {
+          "X": 0.0,
+          "Y": -126.251236,
+          "Z": -263.2849
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_5",
+    "Outer": "SK_OilWell_PhysicsAsset",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "cable_03",
+        "ConstraintBone1": "cable_03",
+        "ConstraintBone2": "hammerPivot",
+        "Pos2": {
+          "X": 0.0,
+          "Y": 309.35773,
+          "Z": 189.26582
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_6",
+    "Outer": "SK_OilWell_PhysicsAsset",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "cable_02",
+        "ConstraintBone1": "cable_02",
+        "ConstraintBone2": "cable_03",
+        "Pos2": {
+          "X": 0.0,
+          "Y": 30.16092,
+          "Z": -76.15098
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_7",
+    "Outer": "SK_OilWell_PhysicsAsset",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "cable_01",
+        "ConstraintBone1": "cable_01",
+        "ConstraintBone2": "cable_02",
+        "Pos2": {
+          "X": 0.0,
+          "Y": 20.749,
+          "Z": -66.097336
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_8",
+    "Outer": "SK_OilWell_PhysicsAsset",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "cable_endConnection",
+        "ConstraintBone1": "cable_endConnection",
+        "ConstraintBone2": "cable_01",
+        "Pos2": {
+          "X": 0.0,
+          "Y": -0.5499098,
+          "Z": -51.476585
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "SK_OilWell_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 1.2727265,
+              "Y": 19.2472,
+              "Z": 146.31528
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -3.872615,
+              "Roll": -80.19174
+            },
+            "Radius": 217.23439,
+            "Length": 322.47498,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "root",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "SK_OilWell_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 3.05188E-05,
+              "Y": 0.00011062459,
+              "Z": -0.00025177057
+            },
+            "Rotation": {
+              "Pitch": -6.830189E-06,
+              "Yaw": -90.00305,
+              "Roll": -89.998924
+            },
+            "Radius": 35.322872,
+            "Length": 158.42088,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "smallSpool",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_2",
+    "Outer": "SK_OilWell_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 6.107022E-05,
+              "Y": 3.05445E-05,
+              "Z": 0.000167829
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -89.97474,
+              "Roll": -89.98342
+            },
+            "Radius": 127.81346,
+            "Length": 143.98885,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "largeSpool",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_3",
+    "Outer": "SK_OilWell_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 0.8066472,
+              "Y": 132.40393,
+              "Z": 26.49636
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -179.919,
+              "Roll": -49.573803
+            },
+            "Radius": 133.48915,
+            "Length": 263.0486,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "hammerPivot",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_4",
+    "Outer": "SK_OilWell_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -0.046913147,
+              "Y": -66.44562,
+              "Z": -138.63557
+            },
+            "Rotation": {
+              "Pitch": 25.62527,
+              "Yaw": -89.99999,
+              "Roll": -0.009900889
+            },
+            "Radius": 26.654297,
+            "Length": 170.23256,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "axelPivot",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_5",
+    "Outer": "SK_OilWell_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -0.04545021,
+              "Y": 7.6200813E-06,
+              "Z": 4.7795475E-06
+            },
+            "Rotation": {
+              "Pitch": 6.830189E-06,
+              "Yaw": -89.999985,
+              "Roll": -89.999985
+            },
+            "Radius": 13.583279,
+            "Length": 22.416265,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "axelConnection_hammerSide",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_6",
+    "Outer": "SK_OilWell_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -7.6293945E-06,
+              "Y": 12.80674,
+              "Z": -27.15924
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -90.0,
+              "Roll": -90.0
+            },
+            "Radius": 2.5809216,
+            "Length": 24.996233,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "cable_03",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_7",
+    "Outer": "SK_OilWell_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -8.583069E-06,
+              "Y": -4.2522116,
+              "Z": 12.242481
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -89.99998,
+              "Roll": -89.99999
+            },
+            "Radius": 13.311562,
+            "Length": 24.996233,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "cable_02",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_8",
+    "Outer": "SK_OilWell_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -9.059906E-06,
+              "Y": -1.5501013,
+              "Z": 1.6037607
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 90.000015,
+              "Roll": -89.99999
+            },
+            "Radius": 16.286589,
+            "Length": 24.99623,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "cable_01",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_9",
+    "Outer": "SK_OilWell_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -1.579523E-05,
+              "Y": 0.4967622,
+              "Z": -173.37662
+            },
+            "Rotation": {
+              "Pitch": 0.04007955,
+              "Yaw": -90.00001,
+              "Roll": 1.8676303E-07
+            },
+            "Radius": 33.479546,
+            "Length": 284.61426,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "cable_endConnection",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    }
+  }
+]

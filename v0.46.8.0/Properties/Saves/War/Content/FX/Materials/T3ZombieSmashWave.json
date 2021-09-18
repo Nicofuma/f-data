@@ -1,0 +1,159 @@
+[
+  {
+    "Type": "MaterialInstanceConstant",
+    "Name": "T3ZombieSmashWave",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Material BloodWave",
+        "ObjectPath": "War/Content/FX/Materials/BloodWave.0"
+      },
+      "bHasStaticPermutationResource": true,
+      "ScalarParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "Roughness",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 1.0,
+          "ExpressionGUID": "AFA009D4-44DFD252-220DF999-BF0D4D00"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "RefractionDepthBias",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "VectorParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "BlendGradientMask",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 1.0,
+            "A": 0.0,
+            "Hex": "0000FF"
+          },
+          "ExpressionGUID": "7AF09D22-4BE0FA90-0DD52382-E89F5F21"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "GradientMask",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "R": 0.0,
+            "G": 1.0,
+            "B": 0.0,
+            "A": 0.0,
+            "Hex": "00FF00"
+          },
+          "ExpressionGUID": "5FA16C6D-4D214FB3-117E3DA0-7EC0679F"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "colour",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "R": 0.824277,
+            "G": 1.0,
+            "B": 0.448408,
+            "A": 1.0,
+            "Hex": "D2FF72"
+          },
+          "ExpressionGUID": "252F9146-47327438-A38FE299-9EC8048D"
+        }
+      ],
+      "TextureParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "Blend GradientTexture",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "ObjectName": "Texture2D 2GradientHorizontal",
+            "ObjectPath": "War/Content/FX/Textures/2GradientHorizontal.0"
+          },
+          "ExpressionGUID": "B406624D-4FCA2A30-1F94BCA8-9D67852B"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "GradientTexture",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "ObjectName": "Texture2D T_BeamGradient",
+            "ObjectPath": "War/Content/Captain/Effects/Textures/Particles/Generic/T_BeamGradient.0"
+          },
+          "ExpressionGUID": "FB7B2479-4F010346-52C30381-7A5AB064"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "WaveTexture",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "ObjectName": "Texture2D T3SmashWave",
+            "ObjectPath": "War/Content/FX/Textures/T3SmashWave.0"
+          },
+          "ExpressionGUID": "6472907B-47B7C163-BF42FEB2-D05B044B"
+        }
+      ],
+      "BasePropertyOverrides": {
+        "TwoSided": true,
+        "BlendMode": "BLEND_Translucent",
+        "OpacityMaskClipValue": 0.3333
+      },
+      "StaticParameters": {
+        "StaticSwitchParameters": [
+          {
+            "Value": true,
+            "ParameterInfo": {
+              "Name": "Gradient Blend",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "73DD774D-4EAB3699-E1163F9C-3D20FDE5"
+          },
+          {
+            "Value": true,
+            "ParameterInfo": {
+              "Name": "Particle Colour Multiply",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "F71E4E42-4F335A07-8D5F7288-88DCA78A"
+          }
+        ]
+      },
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "2GradientHorizontal"
+        },
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "T_BeamGradient"
+        }
+      ]
+    }
+  }
+]

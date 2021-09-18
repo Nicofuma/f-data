@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "BoneSkull02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_5",
+    "Outer": "BoneSkull02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x4202"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "BoneSkull02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Skeleton",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Skeleton.0"
+          },
+          "MaterialSlotName": "Skeleton",
+          "ImportedMaterialSlotName": "Skeleton",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 169.32283,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 169.32283,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -1.5883675,
+          "Y": 0.86823654,
+          "Z": 9.719737
+        },
+        "BoxExtent": {
+          "X": 9.538183,
+          "Y": 12.689314,
+          "Z": 10.526693
+        },
+        "SphereRadius": 15.70299
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup BoneSkull02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/BoneSkull02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision BoneSkull02:NavCollision_5",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/BoneSkull02.1"
+    },
+    "LightingGuid": "B06EA781-4CC84E7D-79EB46A6-EAC86085",
+    "RenderData": null
+  }
+]

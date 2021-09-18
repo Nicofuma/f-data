@@ -1,0 +1,130 @@
+[
+  {
+    "Type": "SoundCue",
+    "Name": "ZombieTransform_Cue",
+    "Properties": {
+      "FirstNode": {
+        "ObjectName": "SoundNodeModulator ZombieTransform_Cue:SoundNodeModulator_0",
+        "ObjectPath": "War/Content/Audio/SFX/Zombie/ZombieTransform_Cue.4"
+      },
+      "VolumeMultiplier": 1.0,
+      "SoundClassObject": {
+        "ObjectName": "SoundClass Explosions",
+        "ObjectPath": "War/Content/Audio/SoundClasses/SFX.1"
+      },
+      "bHasDelayNode": true,
+      "Duration": 6.4133334,
+      "MaxDistance": 15200.0,
+      "AttenuationSettings": {
+        "ObjectName": "SoundAttenuation Grenades",
+        "ObjectPath": "War/Content/Audio/Attenuations/Grenades.0"
+      }
+    }
+  },
+  {
+    "Type": "SoundNodeDelay",
+    "Name": "SoundNodeDelay_0",
+    "Outer": "ZombieTransform_Cue",
+    "Properties": {
+      "DelayMin": 0.4,
+      "DelayMax": 0.4,
+      "ChildNodes": [
+        {
+          "ObjectName": "SoundNodeWavePlayer ZombieTransform_Cue:SoundNodeWavePlayer_0",
+          "ObjectPath": "War/Content/Audio/SFX/Zombie/ZombieTransform_Cue.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SoundNodeDelay",
+    "Name": "SoundNodeDelay_1",
+    "Outer": "ZombieTransform_Cue",
+    "Properties": {
+      "DelayMin": 2.752,
+      "DelayMax": 2.752,
+      "ChildNodes": [
+        {
+          "ObjectName": "SoundNodeWavePlayer ZombieTransform_Cue:SoundNodeWavePlayer_1",
+          "ObjectPath": "War/Content/Audio/SFX/Zombie/ZombieTransform_Cue.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SoundNodeMixer",
+    "Name": "SoundNodeMixer_0",
+    "Outer": "ZombieTransform_Cue",
+    "Properties": {
+      "InputVolume": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ChildNodes": [
+        {
+          "ObjectName": "SoundNodeDelay ZombieTransform_Cue:SoundNodeDelay_0",
+          "ObjectPath": "War/Content/Audio/SFX/Zombie/ZombieTransform_Cue.1"
+        },
+        {
+          "ObjectName": "SoundNodeDelay ZombieTransform_Cue:SoundNodeDelay_1",
+          "ObjectPath": "War/Content/Audio/SFX/Zombie/ZombieTransform_Cue.2"
+        },
+        {
+          "ObjectName": "SoundNodeWavePlayer ZombieTransform_Cue:SoundNodeWavePlayer_3",
+          "ObjectPath": "War/Content/Audio/SFX/Zombie/ZombieTransform_Cue.7"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SoundNodeModulator",
+    "Name": "SoundNodeModulator_0",
+    "Outer": "ZombieTransform_Cue",
+    "Properties": {
+      "PitchMin": 0.9,
+      "PitchMax": 1.1,
+      "VolumeMin": 0.7,
+      "VolumeMax": 1.3,
+      "ChildNodes": [
+        {
+          "ObjectName": "SoundNodeMixer ZombieTransform_Cue:SoundNodeMixer_0",
+          "ObjectPath": "War/Content/Audio/SFX/Zombie/ZombieTransform_Cue.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SoundNodeWavePlayer",
+    "Name": "SoundNodeWavePlayer_0",
+    "Outer": "ZombieTransform_Cue",
+    "Properties": {
+      "SoundWaveAssetPtr": {
+        "AssetPathName": "/Game/Audio/SFX/Zombie/ZombieTransformSpirit.ZombieTransformSpirit",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "SoundNodeWavePlayer",
+    "Name": "SoundNodeWavePlayer_1",
+    "Outer": "ZombieTransform_Cue",
+    "Properties": {
+      "SoundWaveAssetPtr": {
+        "AssetPathName": "/Game/Audio/SFX/Zombie/ZombieTransformExplosion.ZombieTransformExplosion",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "SoundNodeWavePlayer",
+    "Name": "SoundNodeWavePlayer_3",
+    "Outer": "ZombieTransform_Cue",
+    "Properties": {
+      "SoundWaveAssetPtr": {
+        "AssetPathName": "/Game/Audio/SFX/Zombie/ZombieTransformBacking.ZombieTransformBacking",
+        "SubPathString": ""
+      }
+    }
+  }
+]

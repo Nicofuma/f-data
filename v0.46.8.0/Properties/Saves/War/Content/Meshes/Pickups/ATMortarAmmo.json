@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ATMortarAmmo",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "ATMortarAmmo",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x76E9"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ATMortarAmmo",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ATMortarAmmo",
+            "ObjectPath": "War/Content/Materials/Weapons/ATMortarAmmo.0"
+          },
+          "MaterialSlotName": "ATMortarAmmo",
+          "ImportedMaterialSlotName": "ATMortarAmmo",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 53.2981,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 53.2981,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 3.1471252E-05,
+          "Y": 31.623617,
+          "Z": -3.194809E-05
+        },
+        "BoxExtent": {
+          "X": 6.86839,
+          "Y": 33.2733,
+          "Z": 6.868394
+        },
+        "SphereRadius": 33.717415
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ATMortarAmmo:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Pickups/ATMortarAmmo.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ATMortarAmmo:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Pickups/ATMortarAmmo.1"
+    },
+    "LightingGuid": "07239B04-4571459D-4C104B9F-B6FBCD26",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "WetlandsWalkwayPlanks06",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "WetlandsWalkwayPlanks06",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x21F8"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "WetlandsWalkwayPlanks06",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant WoodBeamWetland",
+            "ObjectPath": "War/Content/Materials/Environment/Town/WoodBeamWetland.0"
+          },
+          "MaterialSlotName": "WetlandsBeam",
+          "ImportedMaterialSlotName": "WetlandsBeam",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 410.7659,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 410.7659,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -2.924881,
+          "Y": 0.0,
+          "Z": 2.3750286
+        },
+        "BoxExtent": {
+          "X": 143.51212,
+          "Y": 251.7024,
+          "Z": 12.251207
+        },
+        "SphereRadius": 287.17474
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup WetlandsWalkwayPlanks06:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/WetlandsWalkwayPlanks06.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision WetlandsWalkwayPlanks06:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/WetlandsWalkwayPlanks06.1"
+    },
+    "LightingGuid": "7C2EBBCE-4D80D765-2C22BCB3-4DEEA211",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SingleRoadBrick03",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SingleRoadBrick03",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x147F"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SingleRoadBrick03",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RoadBrick",
+            "ObjectPath": "War/Content/Materials/Environment/RoadBrick.0"
+          },
+          "MaterialSlotName": "RoadBrick",
+          "ImportedMaterialSlotName": "RoadBrick",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 111.41608,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 111.41608,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -1.9073486E-06,
+          "Y": -5.722046E-06,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 24.551311,
+          "Y": 11.7243805,
+          "Z": 3.3429546
+        },
+        "SphereRadius": 26.734676
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SingleRoadBrick03:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Base/SingleRoadBrick03.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SingleRoadBrick03:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Base/SingleRoadBrick03.1"
+    },
+    "LightingGuid": "4B500ED4-42F96B7E-E09D4C91-3354815B",
+    "RenderData": null
+  }
+]

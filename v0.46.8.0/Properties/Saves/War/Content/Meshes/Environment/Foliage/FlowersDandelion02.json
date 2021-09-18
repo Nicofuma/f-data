@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FlowersDandelion02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "FlowersDandelion02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x238C"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FlowersDandelion02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Flowers",
+            "ObjectPath": "War/Content/Materials/Environment/Flowers.0"
+          },
+          "MaterialSlotName": "Material #854",
+          "ImportedMaterialSlotName": "Material #854",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 166.26178,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 166.26178,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.1444092E-05,
+          "Y": 1.5258789E-05,
+          "Z": 48.53097
+        },
+        "BoxExtent": {
+          "X": 42.89484,
+          "Y": 38.915634,
+          "Z": 46.09983
+        },
+        "SphereRadius": 60.713398
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FlowersDandelion02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/FlowersDandelion02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FlowersDandelion02:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/FlowersDandelion02.1"
+    },
+    "LightingGuid": "D5CF555B-4F65FE74-D8EF22AD-14569E31",
+    "RenderData": null
+  }
+]

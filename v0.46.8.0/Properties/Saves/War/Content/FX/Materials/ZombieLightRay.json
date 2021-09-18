@@ -1,0 +1,121 @@
+[
+  {
+    "Type": "MaterialInstanceConstant",
+    "Name": "ZombieLightRay",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Material EmissiveParticles",
+        "ObjectPath": "War/Content/FX/Materials/EmissiveParticles.0"
+      },
+      "bHasStaticPermutationResource": true,
+      "ScalarParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "Blend Gradient Rotation",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.25,
+          "ExpressionGUID": "6DA3D587-4B888541-95B054AD-A3DAF89A"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Gradient Levels",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 2.0,
+          "ExpressionGUID": "4694FC7C-4CBCE53D-4FB61B8D-F89D026A"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "RefractionDepthBias",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "TextureParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "Mask",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "ObjectName": "Texture2D TrailGradients",
+            "ObjectPath": "War/Content/FX/Textures/Trail/TrailGradients.0"
+          },
+          "ExpressionGUID": "7E649898-44CFADA0-01831192-72605B39"
+        }
+      ],
+      "BasePropertyOverrides": {
+        "TwoSided": true,
+        "BlendMode": "BLEND_Translucent",
+        "ShadingModel": "MSM_Unlit",
+        "OpacityMaskClipValue": 0.3333
+      },
+      "StaticParameters": {
+        "StaticSwitchParameters": [
+          {
+            "Value": true,
+            "ParameterInfo": {
+              "Name": "GradientRotation?",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "1CC3F69E-41349ADD-A089EE88-67F0F8F5"
+          },
+          {
+            "Value": true,
+            "ParameterInfo": {
+              "Name": "Gradient",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "819D609B-490EF487-901C6BB1-F1C0261F"
+          }
+        ],
+        "StaticComponentMaskParameters": [
+          {
+            "R": false,
+            "G": false,
+            "B": true,
+            "A": false,
+            "ParameterInfo": {
+              "Name": "Particle Gradient  Selector",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "EB2F31AB-47F4ECBD-7635E69C-91189FC0"
+          },
+          {
+            "R": false,
+            "G": true,
+            "B": false,
+            "A": false,
+            "ParameterInfo": {
+              "Name": "Particle Mask Selector",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "8B2274E6-4C40E6E8-6936A1A6-A9AD0F25"
+          }
+        ]
+      },
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "2GradientHorizontal"
+        }
+      ]
+    }
+  }
+]

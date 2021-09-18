@@ -1,0 +1,51 @@
+[
+  {
+    "Type": "SoundCue",
+    "Name": "ATRPGLightCShot_Cue",
+    "Properties": {
+      "FirstNode": {
+        "ObjectName": "SoundNodeModulator ATRPGLightCShot_Cue:SoundNodeModulator_0",
+        "ObjectPath": "War/Content/Audio/SFX/Weapons/RPG-C/ATRPGLightCShot_Cue.1"
+      },
+      "VolumeMultiplier": 1.0,
+      "SoundClassObject": {
+        "ObjectName": "SoundClass Explosions",
+        "ObjectPath": "War/Content/Audio/SoundClasses/SFX.1"
+      },
+      "Duration": 2.3859167,
+      "MaxDistance": 15200.0,
+      "AttenuationSettings": {
+        "ObjectName": "SoundAttenuation Grenades",
+        "ObjectPath": "War/Content/Audio/Attenuations/Grenades.0"
+      }
+    }
+  },
+  {
+    "Type": "SoundNodeModulator",
+    "Name": "SoundNodeModulator_0",
+    "Outer": "ATRPGLightCShot_Cue",
+    "Properties": {
+      "PitchMin": 0.9,
+      "PitchMax": 1.1,
+      "VolumeMin": 1.0,
+      "VolumeMax": 1.3,
+      "ChildNodes": [
+        {
+          "ObjectName": "SoundNodeWavePlayer ATRPGLightCShot_Cue:SoundNodeWavePlayer_2",
+          "ObjectPath": "War/Content/Audio/SFX/Weapons/RPG-C/ATRPGLightCShot_Cue.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SoundNodeWavePlayer",
+    "Name": "SoundNodeWavePlayer_2",
+    "Outer": "ATRPGLightCShot_Cue",
+    "Properties": {
+      "SoundWaveAssetPtr": {
+        "AssetPathName": "/Game/Audio/SFX/Weapons/RPG-C/ATRPGLightCShot01.ATRPGLightCShot01",
+        "SubPathString": ""
+      }
+    }
+  }
+]

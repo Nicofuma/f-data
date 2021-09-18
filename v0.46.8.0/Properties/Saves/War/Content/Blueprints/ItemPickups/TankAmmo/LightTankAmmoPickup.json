@@ -1,0 +1,115 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "LightTankAmmoPickup_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript LightTankAmmoPickup_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/TankAmmo/LightTankAmmoPickup.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class TankAmmoPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "LightTankAmmoPickup_C",
+    "Name": "Default__LightTankAmmoPickup_C",
+    "Properties": {
+      "ExplosionClass": {
+        "ObjectName": "BlueprintGeneratedClass RPGExplosion_C",
+        "ObjectPath": "War/Content/Blueprints/Items/RPGExplosion.1"
+      },
+      "ShotSoundCue": {
+        "ObjectName": "SoundCue LightTankColonialShot_Cue",
+        "ObjectPath": "War/Content/Audio/SFX/Vehicles/LightTanks/Colonial/LightTankColonialShot_Cue.0"
+      },
+      "Encumbrance": 135,
+      "CodeName": "LightTankAmmo",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "66EBC10E429949FDC60C42942BF01BEC",
+        "SourceString": "40mm Round"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "5D9905B245522C620FABBAAF2D7B7D9E",
+        "SourceString": "Standard payload for light tanks."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D LightTankAmmoItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/LightTankAmmoItemIcon.0"
+      },
+      "ItemCategory": "EItemCategory::HeavyArms",
+      "ItemFlagsMask": 17,
+      "ItemProfileType": "EItemProfileType::HeavyAmmo",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__LightTankAmmoPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/TankAmmo/LightTankAmmoPickup.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__LightTankAmmoPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/TankAmmo/LightTankAmmoPickup.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__LightTankAmmoPickup_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "LightTankAmmoPickup_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent LightTankAmmoPickup_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/TankAmmo/LightTankAmmoPickup.3"
+      },
+      "VariableGuid": "4AB0A040-4BAE6732-BE2F2998-1D30A2A5",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "LightTankAmmoPickup_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node LightTankAmmoPickup_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/TankAmmo/LightTankAmmoPickup.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__LightTankAmmoPickup_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__LightTankAmmoPickup_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/TankAmmo/LightTankAmmoPickup.2"
+      }
+    }
+  }
+]

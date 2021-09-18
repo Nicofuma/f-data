@@ -1,0 +1,100 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "CamoTent",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "CamoTent",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x549BA"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "CamoTent",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TrenchWoodPlanks",
+            "ObjectPath": "War/Content/Materials/Environment/Props/TrenchWoodPlanks.0"
+          },
+          "MaterialSlotName": "Material #627",
+          "ImportedMaterialSlotName": "Material #627",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 314.10648,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Camoflauge",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Camoflauge.0"
+          },
+          "MaterialSlotName": "Material #7962",
+          "ImportedMaterialSlotName": "Material #7962",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 296.7619,
+            "LocalUVDensities": 3.0453794,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 3.0453794,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -3.5404358,
+          "Y": 5.196106,
+          "Z": 291.9052
+        },
+        "BoxExtent": {
+          "X": 367.48798,
+          "Y": 355.78467,
+          "Z": 304.51132
+        },
+        "SphereRadius": 537.40985
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup CamoTent:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/BaseBuildingPrototype/CamoTent.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision CamoTent:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/BaseBuildingPrototype/CamoTent.1"
+    },
+    "LightingGuid": "4642A682-43B2C263-0D5BB680-406727AA",
+    "RenderData": null
+  }
+]

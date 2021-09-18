@@ -1,0 +1,191 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "ItemMeshSK",
+    "Outer": "BPSandbagMaterials_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SkeletalMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPSandbagMaterials_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPSandbagMaterials_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/LargeResources/BPSandbagMaterials.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class GearPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty BPSandbagMaterials_C:ItemMeshSK",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/LargeResources/BPSandbagMaterials.0"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPSandbagMaterials_C",
+    "Name": "Default__BPSandbagMaterials_C",
+    "Properties": {
+      "ItemComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass BPSandbagMaterialsComponent_C",
+        "ObjectPath": "War/Content/Blueprints/Items/BPSandbagMaterialsComponent.0"
+      },
+      "Encumbrance": 300,
+      "CodeName": "SandbagMaterials",
+      "ChassisName": {
+        "Namespace": "",
+        "Key": "4D6316844A5303FF778312B26105C574",
+        "SourceString": "Large Material"
+      },
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "BB4E983B4E3C590F9BCEB39D8A4D5CA9",
+        "SourceString": "Sandbags"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "5CB9198241BCC29671E2F0B6C3EC5DE5",
+        "SourceString": "Used to construct Sandbag defenses."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D SandbagMaterialItemIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/SandbagMaterialItemIcon.0"
+      },
+      "EquipmentSlot": "EEquipmentSlot::Large",
+      "ItemCategory": "EItemCategory::Supplies",
+      "ItemProfileType": "EItemProfileType::LargeResource",
+      "bIsLarge": true,
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPSandbagMaterials_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/LargeResources/BPSandbagMaterials.3"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPSandbagMaterials_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/LargeResources/BPSandbagMaterials.3"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPSandbagMaterials_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPSandbagMaterials_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPSandbagMaterials_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/LargeResources/BPSandbagMaterials.4"
+      },
+      "VariableGuid": "25E2F609-4EFE723F-7D3AF29B-4E876B09",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SkeletalMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SkeletalMeshComponent BPSandbagMaterials_C:ItemMeshSK_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/LargeResources/BPSandbagMaterials.8"
+      },
+      "ParentComponentOrVariableName": "ItemBox",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "77231694-4D403C5A-880C4D96-90A0B4F6",
+      "InternalVariableName": "ItemMeshSK"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPSandbagMaterials_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BPSandbagMaterials_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/ItemPickups/LargeResources/BPSandbagMaterials.6"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BPSandbagMaterials_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "War/Content/Blueprints/ItemPickups/LargeResources/BPSandbagMaterials.6"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPSandbagMaterials_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/LargeResources/BPSandbagMaterials.5"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "ItemMeshSK_GEN_VARIABLE",
+    "Outer": "BPSandbagMaterials_C",
+    "Properties": {
+      "bEnablePhysicsOnDedicatedServer": false,
+      "ClothingSimulationFactory": {
+        "ObjectName": "Class ClothingSimulationFactoryNv",
+        "ObjectPath": "/Script/ClothingSystemRuntimeNv"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_SandbagMaterial",
+        "ObjectPath": "War/Content/Meshes/Pickups/SK_SandbagMaterial.0"
+      },
+      "bReceivesDecals": false,
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 20.0
+      },
+      "RelativeScale3D": {
+        "X": 1.5,
+        "Y": 1.5,
+        "Z": 1.5
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPSandbagMaterials_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPSandbagMaterials_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/LargeResources/BPSandbagMaterials.3"
+      }
+    }
+  }
+]

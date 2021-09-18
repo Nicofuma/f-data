@@ -1,0 +1,131 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "BusDestroyed",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "BusDestroyed",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x4B9D9"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "BusDestroyed",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Bus",
+            "ObjectPath": "War/Content/Materials/Vehicles/Bus.0"
+          },
+          "MaterialSlotName": "Bus",
+          "ImportedMaterialSlotName": "Material #25",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1141.5377,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Tire01",
+            "ObjectPath": "War/Content/Materials/Vehicles/Tire01.0"
+          },
+          "MaterialSlotName": "Tire",
+          "ImportedMaterialSlotName": "Material #494",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 157.68958,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material SimpleEmissive",
+            "ObjectPath": "War/Content/Materials/SimpleEmissive.0"
+          },
+          "MaterialSlotName": "Light",
+          "ImportedMaterialSlotName": "Bus",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Bus",
+            "ObjectPath": "War/Content/Materials/Vehicles/Bus.0"
+          },
+          "MaterialSlotName": "Tire",
+          "ImportedMaterialSlotName": "Tire",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1056.0396,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 922.52686,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.4367523,
+          "Y": -1.661499,
+          "Z": 161.78494
+        },
+        "BoxExtent": {
+          "X": 176.58987,
+          "Y": 526.079,
+          "Z": 162.77036
+        },
+        "SphereRadius": 539.84705
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup BusDestroyed:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Vehicles/BusDestroyed.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision BusDestroyed:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Vehicles/BusDestroyed.1"
+    },
+    "LightingGuid": "C0128375-447E5AA5-493CC088-3EE3B160",
+    "RenderData": null
+  }
+]

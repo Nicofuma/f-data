@@ -1,0 +1,99 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FortIModToilets01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "FortIModToilets01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x16E7B"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FortIModToilets01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FortIModKitchen",
+            "ObjectPath": "War/Content/Materials/Structures/FortIModKitchen.0"
+          },
+          "MaterialSlotName": "Kitchen",
+          "ImportedMaterialSlotName": "Kitchen",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 906.38153,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant BasicWater_LatrineWater",
+            "ObjectPath": "War/Content/Materials/BasicWater_LatrineWater.0"
+          },
+          "MaterialSlotName": "Dirt Water",
+          "ImportedMaterialSlotName": "Dirt Water",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 88.64557,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 869.1941,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.791626,
+          "Y": 38.336617,
+          "Z": 66.022896
+        },
+        "BoxExtent": {
+          "X": 256.52087,
+          "Y": 52.14187,
+          "Z": 66.678345
+        },
+        "SphereRadius": 268.9437
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FortIModToilets01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/FortIModToilets01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FortIModToilets01:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Structures/FortTrenches/InfastructureMod/FortIModToilets01.1"
+    },
+    "LightingGuid": "BDD1FB18-4868561A-83F437AF-CC616C13",
+    "RenderData": null
+  }
+]

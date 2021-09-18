@@ -1,0 +1,89 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Guitar",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "Guitar",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xEDC5"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Guitar",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Guitar",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Guitar.0"
+          },
+          "MaterialSlotName": "Guitar",
+          "ImportedMaterialSlotName": "Guitar",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 142.41519,
+            "LocalUVDensities": 228.59378,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 228.59378,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.49406433,
+          "Y": 1.15205,
+          "Z": -0.0015583038
+        },
+        "BoxExtent": {
+          "X": 92.17888,
+          "Y": 11.170655,
+          "Z": 30.964252
+        },
+        "SphereRadius": 92.4867
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Guitar:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Guitar.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Guitar:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/Guitar.1"
+    },
+    "LightingGuid": "4F98886F-40953E7A-14DDF1B0-F604A68F",
+    "RenderData": null
+  }
+]

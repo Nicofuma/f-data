@@ -1,0 +1,115 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_3426",
+    "Outer": "CorrugatedSheet03",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 1.9275088
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 129.27704,
+            "Y": 115.56731,
+            "Z": 3.7058344,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "PhysMaterial": {
+        "ObjectName": "PhysicalMaterial MetalPhys",
+        "ObjectPath": "War/Content/PhysicalMaterials/MetalPhys.0"
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_34",
+    "Outer": "CorrugatedSheet03",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x1142"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "CorrugatedSheet03",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant CorrugatedSheetsRust1",
+            "ObjectPath": "War/Content/Materials/Resources/CorrugatedSheetsRust1.0"
+          },
+          "MaterialSlotName": "CorrugatedSheetsRust1",
+          "ImportedMaterialSlotName": "CorrugatedSheetsRust1",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 556.3242,
+            "LocalUVDensities": 126.25766,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 126.25766,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.9275088
+        },
+        "BoxExtent": {
+          "X": 64.63852,
+          "Y": 57.783653,
+          "Z": 1.8529172
+        },
+        "SphereRadius": 86.72094
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup CorrugatedSheet03:BodySetup_3426",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/CorrugatedSheet03.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision CorrugatedSheet03:NavCollision_34",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/CorrugatedSheet03.1"
+    },
+    "LightingGuid": "C98E0CE8-48733CD9-A80A5AB5-F29A729B",
+    "RenderData": null
+  }
+]

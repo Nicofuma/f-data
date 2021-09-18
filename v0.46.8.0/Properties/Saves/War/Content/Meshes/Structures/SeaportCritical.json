@@ -1,0 +1,201 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SeaportCritical",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 4.10144,
+              "Z": 15.581848
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 1617.688,
+            "Y": 2588.4622,
+            "Z": 1901.6638,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "SeaportCritical",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x6AE32"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SeaportCritical",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant RelicBunkerMetalParts",
+            "ObjectPath": "War/Content/Materials/Environment/Props/RelicBunkerMetalParts.0"
+          },
+          "MaterialSlotName": "Metalbar",
+          "ImportedMaterialSlotName": "Metalbar",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 461.20105,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant StorageFacility",
+            "ObjectPath": "War/Content/Materials/Structures/StorageFacility.0"
+          },
+          "MaterialSlotName": "Gate",
+          "ImportedMaterialSlotName": "Gate",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 713.1569,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ConveyorWoodPlanks",
+            "ObjectPath": "War/Content/Materials/Structures/ConveyorWoodPlanks.0"
+          },
+          "MaterialSlotName": "Wall",
+          "ImportedMaterialSlotName": "Wall",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 315.52472,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Conveyor",
+            "ObjectPath": "War/Content/Materials/Structures/Conveyor.0"
+          },
+          "MaterialSlotName": "Conveyor",
+          "ImportedMaterialSlotName": "Conveyor",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 800.68695,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TownWindowGlass",
+            "ObjectPath": "War/Content/Materials/Environment/Town/TownWindowGlass.0"
+          },
+          "MaterialSlotName": "Glass",
+          "ImportedMaterialSlotName": "Glass",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 361.63742,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant SeaportUnique",
+            "ObjectPath": "War/Content/Materials/Structures/SeaportUnique.0"
+          },
+          "MaterialSlotName": "Unique",
+          "ImportedMaterialSlotName": "Unique",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1327.0173,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant SeaportRoof",
+            "ObjectPath": "War/Content/Materials/Structures/SeaportRoof.0"
+          },
+          "MaterialSlotName": "Roof",
+          "ImportedMaterialSlotName": "Roof",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 2364.966,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1149.7084,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 7.123047,
+          "Z": 16.074097
+        },
+        "BoxExtent": {
+          "X": 808.844,
+          "Y": 1297.2527,
+          "Z": 951.32416
+        },
+        "SphereRadius": 1757.4105
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SeaportCritical:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/SeaportCritical.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SeaportCritical:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Structures/SeaportCritical.1"
+    },
+    "LightingGuid": "432127A7-4B8869B8-08A715A2-DF0145B4",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,219 @@
+[
+  {
+    "Type": "Material",
+    "Name": "Flares02",
+    "Properties": {
+      "EmissiveColor": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMultiply_2",
+        "UseConstant": false,
+        "Constant": {
+          "R": 0,
+          "G": 0,
+          "B": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "BlendMode": "BLEND_Translucent",
+      "ShadingModel": "MSM_Unlit",
+      "ShadingModels": {
+        "ShadingModelField": 1
+      },
+      "TwoSided": true,
+      "bGenerateSphericalParticleNormals": true,
+      "bUsedWithParticleSprites": true,
+      "bUsedWithBeamTrails": true,
+      "Expressions": [
+        null,
+        {
+          "ObjectName": "MaterialExpressionStaticSwitchParameter Flares02:MaterialExpressionStaticSwitchParameter_0",
+          "ObjectPath": "War/Content/FX/Materials/Flares02.2"
+        },
+        null,
+        {
+          "ObjectName": "MaterialExpressionChannelMaskParameter Flares02:MaterialExpressionChannelMaskParameter_0",
+          "ObjectPath": "War/Content/FX/Materials/Flares02.1"
+        },
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSample Flares02:MaterialExpressionTextureSample_1",
+          "ObjectPath": "War/Content/FX/Materials/Flares02.3"
+        },
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSample Flares02:MaterialExpressionTextureSample_2",
+          "ObjectPath": "War/Content/FX/Materials/Flares02.4"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSampleParameter2D Flares02:MaterialExpressionTextureSampleParameter2D_0",
+          "ObjectPath": "War/Content/FX/Materials/Flares02.5"
+        },
+        null,
+        null
+      ],
+      "bCanMaskedBeAssumedOpaque": true,
+      "StateId": "A1B55300-4577F06A-74C218A1-1FFFFB4B",
+      "CachedQualityLevelsUsed": [
+        false,
+        true,
+        false
+      ],
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "Flares"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MaterialExpressionChannelMaskParameter",
+    "Name": "MaterialExpressionChannelMaskParameter_0",
+    "Outer": "Flares02",
+    "Properties": {
+      "MaskChannel": "EChannelMaskParameterColor::Blue",
+      "Input": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 1,
+        "MaskR": 1,
+        "MaskG": 1,
+        "MaskB": 1,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionTextureSampleParameter2D_0"
+      },
+      "DefaultValue": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 1.0,
+        "A": 0.0,
+        "Hex": "0000FF"
+      },
+      "ParameterName": "Masks",
+      "ExpressionGUID": "193B6F47-4E5CABE9-6AA36AA7-2C3E95A3",
+      "Material": {
+        "ObjectName": "Material Flares02",
+        "ObjectPath": "War/Content/FX/Materials/Flares02.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionStaticSwitchParameter",
+    "Name": "MaterialExpressionStaticSwitchParameter_0",
+    "Outer": "Flares02",
+    "Properties": {
+      "A": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMultiply_0"
+      },
+      "B": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMultiply_3"
+      },
+      "ParameterName": "DepthFade",
+      "ExpressionGUID": "0AE47FA1-4A31304A-B9815FB3-335C3E19",
+      "Material": {
+        "ObjectName": "Material Flares02",
+        "ObjectPath": "War/Content/FX/Materials/Flares02.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_1",
+    "Outer": "Flares02",
+    "Properties": {
+      "Coordinates": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionPanner_0"
+      },
+      "Texture": {
+        "ObjectName": "Texture2D Flares",
+        "ObjectPath": "War/Content/FX/Textures/Flares.0"
+      },
+      "SamplerType": "SAMPLERTYPE_LinearColor",
+      "Material": {
+        "ObjectName": "Material Flares02",
+        "ObjectPath": "War/Content/FX/Materials/Flares02.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_2",
+    "Outer": "Flares02",
+    "Properties": {
+      "Coordinates": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionPanner_1"
+      },
+      "Texture": {
+        "ObjectName": "Texture2D Flares",
+        "ObjectPath": "War/Content/FX/Textures/Flares.0"
+      },
+      "SamplerType": "SAMPLERTYPE_LinearColor",
+      "Material": {
+        "ObjectName": "Material Flares02",
+        "ObjectPath": "War/Content/FX/Materials/Flares02.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSampleParameter2D",
+    "Name": "MaterialExpressionTextureSampleParameter2D_0",
+    "Outer": "Flares02",
+    "Properties": {
+      "ParameterName": "Texture",
+      "ExpressionGUID": "C7545CF4-4B053FBB-038018AB-25953354",
+      "Texture": {
+        "ObjectName": "Texture2D Flares",
+        "ObjectPath": "War/Content/FX/Textures/Flares.0"
+      },
+      "SamplerType": "SAMPLERTYPE_LinearColor",
+      "Material": {
+        "ObjectName": "Material Flares02",
+        "ObjectPath": "War/Content/FX/Materials/Flares02.0"
+      }
+    }
+  }
+]

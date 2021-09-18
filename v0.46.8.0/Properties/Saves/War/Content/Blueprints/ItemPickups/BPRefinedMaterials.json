@@ -1,0 +1,107 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPRefinedMaterials_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BPRefinedMaterials_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPRefinedMaterials.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class BasicItemPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BPRefinedMaterials_C",
+    "Name": "Default__BPRefinedMaterials_C",
+    "Properties": {
+      "Encumbrance": 15,
+      "CodeName": "Wood",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "9DD813F04A28F1C94A782F8F071082C0",
+        "SourceString": "Refined Materials"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "9F651E4149FC5945E4C7CFB74344C744",
+        "SourceString": "Resource used for building advanced structures and producing special items."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D RefinedMaterialsIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/RefinedMaterialsIcon.0"
+      },
+      "ItemCategory": "EItemCategory::Supplies",
+      "ItemFlagsMask": 257,
+      "ItemProfileType": "EItemProfileType::RefinedResource",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BPRefinedMaterials_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPRefinedMaterials.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BPRefinedMaterials_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPRefinedMaterials.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BPRefinedMaterials_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPRefinedMaterials_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BPRefinedMaterials_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPRefinedMaterials.3"
+      },
+      "VariableGuid": "7DFC56CB-4050DE35-BFFBD28A-174B5F02",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPRefinedMaterials_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BPRefinedMaterials_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPRefinedMaterials.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BPRefinedMaterials_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BPRefinedMaterials_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BPRefinedMaterials.2"
+      }
+    }
+  }
+]

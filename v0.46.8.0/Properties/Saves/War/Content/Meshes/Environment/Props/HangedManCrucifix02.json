@@ -1,0 +1,123 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "HangedManCrucifix02",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 10.070826,
+              "Y": -0.6728287,
+              "Z": 146.56482
+            },
+            "Rotation": {
+              "Pitch": 47.61666,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 46.606422,
+            "Y": 32.41613,
+            "Z": 477.9007,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": -0.78949165,
+              "Y": -2.5788956,
+              "Z": 153.3104
+            },
+            "Rotation": {
+              "Pitch": -44.867153,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 46.606422,
+            "Y": 32.41613,
+            "Z": 477.9007,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "HangedManCrucifix02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 509,
+        "SizeOnDisk": 509,
+        "OffsetInFile": "0x4410"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "HangedManCrucifix02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant HangedManCrucifix01",
+            "ObjectPath": "War/Content/Materials/Environment/Props/HangedManCrucifix01.0"
+          },
+          "MaterialSlotName": "HangedManCrucifix",
+          "ImportedMaterialSlotName": "HangedManCrucifix",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 412.13174,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 412.13174,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 4.138962,
+          "Y": -0.6728897,
+          "Z": 154.57898
+        },
+        "BoxExtent": {
+          "X": 183.54495,
+          "Y": 16.208065,
+          "Z": 173.8601
+        },
+        "SphereRadius": 244.4227
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup HangedManCrucifix02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/HangedManCrucifix02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision HangedManCrucifix02:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/HangedManCrucifix02.1"
+    },
+    "LightingGuid": "4979DBA6-42AC3F5B-1A75C28C-B06F1E96",
+    "RenderData": null
+  }
+]

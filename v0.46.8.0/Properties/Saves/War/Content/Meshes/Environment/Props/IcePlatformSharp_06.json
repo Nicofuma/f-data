@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Outer": "IcePlatformSharp_06",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "IcePlatformSharp_06",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x283E"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "IcePlatformSharp_06",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant IcePlatforms",
+            "ObjectPath": "War/Content/Materials/Environment/Props/IcePlatforms.0"
+          },
+          "MaterialSlotName": "IceBurg",
+          "ImportedMaterialSlotName": "IcePlatforms",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1567.3058,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1567.3058,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.10986328,
+          "Y": 0.1675415,
+          "Z": -50.36051
+        },
+        "BoxExtent": {
+          "X": 267.68536,
+          "Y": 114.61038,
+          "Z": 50.299706
+        },
+        "SphereRadius": 278.73352
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup IcePlatformSharp_06:BodySetup_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/IcePlatformSharp_06.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision IcePlatformSharp_06:NavCollision_1",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/IcePlatformSharp_06.1"
+    },
+    "LightingGuid": "8E022134-42409F66-BC36A7B0-B0CD6905",
+    "RenderData": null
+  }
+]

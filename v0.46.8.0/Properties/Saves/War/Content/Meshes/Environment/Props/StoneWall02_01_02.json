@@ -1,0 +1,169 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "StoneWall02_01_02",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": 95.627014,
+                "Y": 2.1087532,
+                "Z": 151.77235
+              },
+              {
+                "X": 95.627014,
+                "Y": -67.89125,
+                "Z": 151.77235
+              },
+              {
+                "X": -2.3209534,
+                "Y": -67.89125,
+                "Z": 151.77235
+              },
+              {
+                "X": -2.3209534,
+                "Y": 2.1087532,
+                "Z": 151.77235
+              },
+              {
+                "X": -2.3209534,
+                "Y": -67.891235,
+                "Z": 50.216156
+              },
+              {
+                "X": -2.3209534,
+                "Y": 2.1087608,
+                "Z": 50.216156
+              },
+              {
+                "X": 128.98622,
+                "Y": -67.89125,
+                "Z": 93.121056
+              },
+              {
+                "X": 128.98622,
+                "Y": 2.1087532,
+                "Z": 93.121025
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -2.3209534,
+                "Y": -67.89125,
+                "Z": 50.216156
+              },
+              "Max": {
+                "X": 128.98622,
+                "Y": 2.1087608,
+                "Z": 151.77235
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "SizeSquared": 1.0,
+                "Size": 1.0,
+                "IsNormalized": true
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "StoneWall02_01_02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 457,
+        "SizeOnDisk": 457,
+        "OffsetInFile": "0x2853"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "StoneWall02_01_02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant StoneWall02",
+            "ObjectPath": "War/Content/Materials/Environment/StoneWall02.0"
+          },
+          "MaterialSlotName": "StoneWall02",
+          "ImportedMaterialSlotName": "StoneWall02",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1626.7821,
+            "LocalUVDensities": 284.0424,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 284.0424,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 62.541214,
+          "Y": -34.38423,
+          "Z": 88.794014
+        },
+        "BoxExtent": {
+          "X": 68.192215,
+          "Y": 35.091675,
+          "Z": 64.271194
+        },
+        "SphereRadius": 91.38919
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup StoneWall02_01_02:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/StoneWall02_01_02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision StoneWall02_01_02:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/StoneWall02_01_02.1"
+    },
+    "LightingGuid": "A7BD0D1D-4970553E-9B999381-DF7BD87C",
+    "RenderData": null
+  }
+]

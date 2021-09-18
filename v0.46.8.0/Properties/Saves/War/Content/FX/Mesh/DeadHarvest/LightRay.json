@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "LightRay",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_5",
+    "Outer": "LightRay",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1632"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "LightRay",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant ZombieLightRay",
+            "ObjectPath": "War/Content/FX/Materials/ZombieLightRay.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 71.19164,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 71.19164,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 4.414053E-07,
+          "Y": -0.004266739,
+          "Z": 101.8431
+        },
+        "BoxExtent": {
+          "X": 3.2551338E-06,
+          "Y": 22.410574,
+          "Z": 101.8431
+        },
+        "SphereRadius": 104.27968
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup LightRay:BodySetup_0",
+      "ObjectPath": "War/Content/FX/Mesh/DeadHarvest/LightRay.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision LightRay:NavCollision_5",
+      "ObjectPath": "War/Content/FX/Mesh/DeadHarvest/LightRay.1"
+    },
+    "LightingGuid": "87016679-41E10DA1-BDDD45B1-4EE1970E",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "BridgeWood01Ghost",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "BridgeWood01Ghost",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x10AD3"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "BridgeWood01Ghost",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "Engine/Content/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 320.98178,
+            "LocalUVDensities": 2350.5796,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 2350.5796,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -162.91797,
+          "Y": 6.8670044,
+          "Z": -360.26526
+        },
+        "BoxExtent": {
+          "X": 868.45337,
+          "Y": 219.92221,
+          "Z": 539.39545
+        },
+        "SphereRadius": 1019.898
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup BridgeWood01Ghost:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Structures/BridgeWood01Ghost.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision BridgeWood01Ghost:NavCollision_4",
+      "ObjectPath": "War/Content/Meshes/Structures/BridgeWood01Ghost.1"
+    },
+    "LightingGuid": "00806675-45253E1D-5A88BD9F-83EA16C6",
+    "RenderData": null
+  }
+]

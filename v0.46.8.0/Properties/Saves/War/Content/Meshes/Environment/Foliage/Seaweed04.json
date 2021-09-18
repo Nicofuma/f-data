@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Seaweed04",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "Seaweed04",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1385"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Seaweed04",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Seaweed01",
+            "ObjectPath": "War/Content/Materials/Environment/Seaweed01.0"
+          },
+          "MaterialSlotName": "Material #25",
+          "ImportedMaterialSlotName": "Material #25",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 348.2664,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 348.2664,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 7.6293945E-06,
+          "Y": 0.0,
+          "Z": 60.40513
+        },
+        "BoxExtent": {
+          "X": 100.851944,
+          "Y": 94.91588,
+          "Z": 69.31355
+        },
+        "SphereRadius": 111.61089
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Seaweed04:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/Seaweed04.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Seaweed04:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Foliage/Seaweed04.1"
+    },
+    "LightingGuid": "BEECE753-412C9642-535093BB-0D25F0B2",
+    "RenderData": null
+  }
+]

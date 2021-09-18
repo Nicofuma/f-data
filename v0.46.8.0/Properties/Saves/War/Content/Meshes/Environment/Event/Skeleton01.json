@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Skeleton01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Damage",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "Skeleton01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x3906D"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Skeleton01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant Skeleton",
+            "ObjectPath": "War/Content/Materials/Environment/Props/Skeleton.0"
+          },
+          "MaterialSlotName": "Skeleton",
+          "ImportedMaterialSlotName": "Skeleton",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 168.05515,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 168.05515,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -60.207787,
+          "Y": -0.9204521,
+          "Z": 52.16351
+        },
+        "BoxExtent": {
+          "X": 72.8294,
+          "Y": 57.28082,
+          "Z": 56.69265
+        },
+        "SphereRadius": 87.9925
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Skeleton01:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Event/Skeleton01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Skeleton01:NavCollision_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Event/Skeleton01.1"
+    },
+    "LightingGuid": "4AC07C3E-4E9E482B-462233BB-F76CCD37",
+    "RenderData": null
+  }
+]

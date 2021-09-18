@@ -1,0 +1,128 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "DefaultSceneRoot",
+    "Outer": "HammerImpactEffectSpecial_C",
+    "PropertyFlags": 17180393476,
+    "PropertyClass": {
+      "ObjectName": "Class SceneComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "HammerImpactEffectSpecial_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript HammerImpactEffectSpecial_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/Items/HammerImpactEffectSpecial.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class ImpactEffect",
+      "ObjectPath": "/Script/War"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty HammerImpactEffectSpecial_C:DefaultSceneRoot",
+        "ObjectPath": "War/Content/Blueprints/Items/HammerImpactEffectSpecial.0"
+      }
+    ],
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "HammerImpactEffectSpecial_C",
+    "Name": "Default__HammerImpactEffectSpecial_C",
+    "Properties": {
+      "EffectOverrides": [
+        {
+          "PhysicalSurface": "SurfaceType_Default",
+          "EmitterTemplate": {
+            "ObjectName": "ParticleSystem HammerImpact",
+            "ObjectPath": "War/Content/FX/HammerImpact.54"
+          },
+          "HitSound": {
+            "ObjectName": "SoundCue HammerHitSpecial_Cue",
+            "ObjectPath": "War/Content/Audio/SFX/Weapons/Hammer/HammerHitSpecial_Cue.0"
+          },
+          "Decal": {
+            "DecalMaterial": null,
+            "DecalSize": {
+              "X": 32.0,
+              "Y": 32.0,
+              "Z": 32.0
+            },
+            "LifeSpan": 10.0,
+            "FadeScreenSize": 0.01
+          },
+          "bOrientToHitDirection": false,
+          "DamageThreshold": 0.0
+        }
+      ],
+      "FleshBloodSplatterDecal": {
+        "DecalMaterial": {
+          "ObjectName": "Material BloodDecal01",
+          "ObjectPath": "War/Content/FX/Materials/BloodDecal01.0"
+        },
+        "DecalSize": {
+          "X": 100.0,
+          "Y": 100.0,
+          "Z": 300.0
+        },
+        "LifeSpan": 500.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "HammerImpactEffectSpecial_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent HammerImpactEffectSpecial_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/Items/HammerImpactEffectSpecial.3"
+      },
+      "VariableGuid": "04535695-47D39B74-0CF183A6-99947170",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "HammerImpactEffectSpecial_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node HammerImpactEffectSpecial_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "War/Content/Blueprints/Items/HammerImpactEffectSpecial.4"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node HammerImpactEffectSpecial_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "War/Content/Blueprints/Items/HammerImpactEffectSpecial.4"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node HammerImpactEffectSpecial_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/Items/HammerImpactEffectSpecial.4"
+      }
+    }
+  }
+]

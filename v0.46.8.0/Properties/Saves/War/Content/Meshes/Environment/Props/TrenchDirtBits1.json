@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "TrenchDirtBits1",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "TrenchDirtBits1",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x6134"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "TrenchDirtBits1",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant TrenchDirtMount",
+            "ObjectPath": "War/Content/Materials/Environment/TrenchDirtMount.0"
+          },
+          "MaterialSlotName": "TrenchDirtMount",
+          "ImportedMaterialSlotName": "TrenchDirtMount",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 915.9052,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 915.9052,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 23.450989,
+          "Y": 3.065445,
+          "Z": 11.212154
+        },
+        "BoxExtent": {
+          "X": 411.38007,
+          "Y": 92.93773,
+          "Z": 22.732601
+        },
+        "SphereRadius": 413.55588
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup TrenchDirtBits1:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/TrenchDirtBits1.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision TrenchDirtBits1:NavCollision_2",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/TrenchDirtBits1.1"
+    },
+    "LightingGuid": "5D69E465-44079391-7B4B8B83-E3AAECC8",
+    "RenderData": null
+  }
+]

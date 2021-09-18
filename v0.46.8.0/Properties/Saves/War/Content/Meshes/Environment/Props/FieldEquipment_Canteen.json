@@ -1,0 +1,93 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "FieldEquipment_Canteen",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_9",
+    "Outer": "FieldEquipment_Canteen",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlag": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x3154"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "FieldEquipment_Canteen",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant FieldEquipment",
+            "ObjectPath": "War/Content/Materials/Environment/Props/FieldEquipment.0"
+          },
+          "MaterialSlotName": "Material #490",
+          "ImportedMaterialSlotName": "Material #490",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 216.6146,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 216.6146,
+      "LightMapResolution": 64,
+      "PositiveBoundsExtension": {
+        "X": 500.0,
+        "Y": 500.0,
+        "Z": 500.0
+      },
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 250.0,
+          "Y": 250.0,
+          "Z": 273.5005
+        },
+        "BoxExtent": {
+          "X": 265.52118,
+          "Y": 259.53076,
+          "Z": 273.4958
+        },
+        "SphereRadius": 461.1482
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup FieldEquipment_Canteen:BodySetup_0",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FieldEquipment_Canteen.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision FieldEquipment_Canteen:NavCollision_9",
+      "ObjectPath": "War/Content/Meshes/Environment/Props/FieldEquipment_Canteen.1"
+    },
+    "LightingGuid": "F350ED90-4DAE8B81-1C105B94-D3909B28",
+    "RenderData": null
+  }
+]

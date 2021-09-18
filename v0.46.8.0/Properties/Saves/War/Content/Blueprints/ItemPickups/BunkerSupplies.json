@@ -1,0 +1,107 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BunkerSupplies_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BunkerSupplies_C:SimpleConstructionScript_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BunkerSupplies.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class BasicItemPickup",
+      "ObjectPath": "/Script/War"
+    },
+    "FuncMap": {},
+    "ClassFlags": 0,
+    "ClassWithin": null,
+    "ClassConfigName": null,
+    "ClassGeneratedBy": null,
+    "Interfaces": null,
+    "bCooked": false,
+    "ClassDefaultObject": null
+  },
+  {
+    "Type": "BunkerSupplies_C",
+    "Name": "Default__BunkerSupplies_C",
+    "Properties": {
+      "Encumbrance": 40,
+      "CodeName": "BunkerSupplies",
+      "DisplayName": {
+        "Namespace": "",
+        "Key": "7E4FF54C4223F4319C2879B9276C08D9",
+        "SourceString": "Bunker Supplies"
+      },
+      "Description": {
+        "Namespace": "",
+        "Key": "7865BC7648E9D87A420B9799C9A17983",
+        "SourceString": "Supplies for maintaining structures. Store at Bases to prevent decay on surrounding Bunker/Trench structures when Garrison Supplies are not available."
+      },
+      "Icon": {
+        "ObjectName": "Texture2D BunkerSuppliesIcon",
+        "ObjectPath": "War/Content/Textures/UI/ItemIcons/BunkerSuppliesIcon.0"
+      },
+      "ItemCategory": "EItemCategory::Supplies",
+      "ItemProfileType": "EItemProfileType::Supplies",
+      "TechID": "ETechID::UnlockGarrisonSupplies",
+      "ItemMesh": null,
+      "ItemBox": {
+        "ObjectName": "BoxComponent Default__BunkerSupplies_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BunkerSupplies.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent Default__BunkerSupplies_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BunkerSupplies.2"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ItemBox",
+    "Outer": "Default__BunkerSupplies_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BunkerSupplies_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BunkerSupplies_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BunkerSupplies.3"
+      },
+      "VariableGuid": "45A57A6F-468C52B1-5687A28D-A161DA72",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BunkerSupplies_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BunkerSupplies_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BunkerSupplies.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ItemMesh",
+    "Outer": "Default__BunkerSupplies_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent Default__BunkerSupplies_C:ItemBox",
+        "ObjectPath": "War/Content/Blueprints/ItemPickups/BunkerSupplies.2"
+      }
+    }
+  }
+]
